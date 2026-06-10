@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_1488d843_marine_gps_denied_1488d843_20260315T124550Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:45:50.748624Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1488d843_marine_gps_denied_1488d843_20260315T124550Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 301.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is nearly fully charged, and the current readings suggest a slight deviation from the expected path. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating that the system is maintaining its position accurately. The time is 301.0, which is within the expected range for the mission. The velocity is slow, which is expected for a marine GPS system. The waypoint is at 0, which suggests that the mission has not yet begun."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters, with only minor deviations from expected values. The battery is nearly fully charged, and the current readings suggest a slight deviation from the expected path. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating that the system is maintaining its position accurately. The time is 301.0, which is within the expected range for the mission. The velocity is slow, which is expected for a marine GPS system. The waypoint is at 0, which suggests that the mission has not yet begun.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing within normal parameters, with only minor deviations from expected values. The battery is nearly fully charged, and the current readings suggest a slight deviation from the expected path. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating that the system is maintaining its position accurately. The time is 301.0, which is within the expected range for the mission. The velocity is slow, which is expected for a marine GPS system. The waypoint is at 0, which suggests that the mission has not yet begun.",
+      "mitigation_strategy": "Continue monitoring the system and adjust the mission parameters if necessary. If the depth is a concern, consider adjusting the mission to a shallower area. If the drift is a concern, consider adjusting the mission parameters to reduce drift."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring the system and adjust the mission parameters if necessary",
+      "expected_outcome": "The system will continue to perform within normal parameters, and the mission will be adjusted if necessary to ensure success."
+    },
+    "self_reflection": "The system is performing within normal parameters, with only minor deviations from expected values. The battery is nearly fully charged, and the current readings suggest a slight deviation from the expected path. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating that the system is maintaining its position accurately. The time is 301.0, which is within the expected range for the mission. The velocity is slow, which is expected for a marine GPS system. The waypoint is at 0, which suggests that the mission has not yet begun."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1488d843",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "2fcb7bbdfd1480b47e4adc65562acfdd68fe442588ff2943e2cd21f35ccce406"
+  },
+  "sha256_proof": "fca67f4d779fc2c0c04b7be5279d34dc0f130bdcce716a03b9e4f84bfe33d84b"
+}

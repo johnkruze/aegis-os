@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_50bcb6d6_marine_gps_denied_50bcb6d6_20260315T104704Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:47:04.439132Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_50bcb6d6_marine_gps_denied_50bcb6d6_20260315T104704Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "negative current values",
+        "small depth",
+        "high drift",
+        "small navigation error",
+        "negative p-values",
+        "high temperature",
+        "small velocity",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies including low battery, negative current values, and high drift. The temperature is also high, which could be affecting the system's performance. The navigation error is small, but the drift is concerning. The system is at a small depth and is not at the expected waypoint."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery and negative current values suggest a potential failure of the power supply or sensors. The high drift indicates the system is not accurately following the course. The high temperature could be causing thermal issues. The small depth and waypoint 0 suggest the system is not in the expected location.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The system may fail due to the low battery and negative current values, leading to a loss of control. The high drift could cause the system to collide with obstacles or drift off course.",
+      "mitigation_strategy": "Immediately initiate a power management protocol to conserve battery life. Perform a system health check to identify and address any sensor failures. Implement a course correction algorithm to reduce drift."
+    },
+    "decision": {
+      "actuator_command": "power_management_protocol, system_health_check, course_correction",
+      "expected_outcome": "The system will conserve battery life, identify and address sensor failures, and correct its course to prevent further anomalies."
+    },
+    "self_reflection": "The system is experiencing multiple critical anomalies that could lead to failure. Immediate action is required to mitigate these risks and ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_50bcb6d6",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "c519eb92176a61995eac3feb21197a686fa16f2f6ab8fb7dbbd7471f39ab994e"
+  },
+  "sha256_proof": "e223d4f8b9fff424163ca506daec227a073f36ee5b426c1e94a4c9ddb13bd742"
+}

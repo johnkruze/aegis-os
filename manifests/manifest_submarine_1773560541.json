@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_e0c72d8e_marine_gps_denied_e0c72d8e_20260315T074210Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:42:10.440405Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e0c72d8e_marine_gps_denied_e0c72d8e_20260315T074210Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "pitch and roll angles are within normal range",
+        "temperature is high",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The battery level is high, which suggests sufficient power for continued operation. The shallow depth and low velocity indicate that the system is likely in a controlled environment, possibly near the surface or in a calm area of the ocean."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external factors such as currents or wind. The inconsistent current readings suggest potential issues with the current sensors. The shallow depth and low velocity indicate that the system is likely in a controlled environment, possibly near the surface or in a calm area of the ocean.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to operate within normal parameters, but the high drift could lead to a deviation from the intended path. The inconsistent current readings could indicate a sensor failure or a change in the environment.",
+      "mitigation_strategy": "Monitor the system closely and perform a sensor check to verify the current readings. If the drift continues to increase, consider adjusting the course to compensate for the drift."
+    },
+    "decision": {
+      "actuator_command": "continue mission with caution",
+      "expected_outcome": "The system will continue to operate within normal parameters, but the high drift could lead to a deviation from the intended path. The system will be monitored closely to ensure that the drift does not become a significant issue."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low velocity indicate that the system is likely in a controlled environment, possibly near the surface or in a calm area of the ocean. The high drift could be due to external factors such as currents or wind. The inconsistent current readings suggest potential issues with the current sensors. The system will continue to operate within normal parameters, but the high drift could lead to a deviation from the intended path. The system will be monitored closely to ensure that the drift does not become a significant issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e0c72d8e",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "7f04292eeae328df5f91d1e13a565b0e92db4f67f2e640f6fca003de39201982"
+  },
+  "sha256_proof": "d044e805092581f9d43a6f84ca0b18047734b986195a5f6ebc7fc80a68ae64b9"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_3e373b8a_marine_gps_denied_3e373b8a_20260315T043449Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:34:49.393066Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3e373b8a_marine_gps_denied_3e373b8a_20260315T043449Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ANOMALY",
+        "DEPTH_STABLE",
+        "DRIFT_LOW",
+        "NAV_ERROR_MINIMAL",
+        "POSITION_UNKNOWN",
+        "TIME_UNKNOWN",
+        "VELOCITY_MODERATE",
+        "WAYPOINT_AT_ZERO"
+      ],
+      "interpretation": "The battery level is critically low, indicating imminent failure. The current readings suggest the vehicle is oscillating, possibly due to an anomaly. Depth is stable, drift is low, and navigation error is minimal. The position and time are unknown, and velocity is moderate. The waypoint is at zero, which could indicate a failure to reach the intended destination."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which is a critical failure mode. The oscillating current suggests a potential system fault. The waypoint is at zero, which is concerning. The vehicle's position and time are unknown, which increases uncertainty.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle is likely to fail completely within the next few minutes, leading to a potential loss of control and potential damage to the vehicle.",
+      "mitigation_strategy": "Initiate emergency shutdown procedures to prevent further damage and ensure the safety of the vehicle and any crew members. If possible, attempt to communicate with the mission control to report the anomaly and request assistance."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN",
+      "expected_outcome": "The vehicle will shut down safely, preventing further damage and ensuring the safety of the mission."
+    },
+    "self_reflection": "The critical battery degradation and oscillating current readings indicate a severe system failure. The decision to initiate an emergency shutdown is based on the potential for complete failure and the need to prevent further damage. The mission must be reassessed and potentially redirected or aborted if possible."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3e373b8a",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "5e2c886f7c7fe159ec4acf14e8a1784af5edfc6bc8680a5dc99dae7fbbbc5e50"
+  },
+  "sha256_proof": "1ca2e9a1725c7278f7170b4dba708ed13a7f329c009387a4f1c657dd755d9f12"
+}

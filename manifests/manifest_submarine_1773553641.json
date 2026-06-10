@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_7c19b572_marine_gps_denied_7c19b572_20260315T054715Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:47:15.095829Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7c19b572_marine_gps_denied_7c19b572_20260315T054715Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating potential issues with the navigation system or external forces affecting the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a navigation error or external factors like strong currents or waves. Immediate action is needed to ensure the vessel remains on course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may deviate from its intended course, potentially leading to a collision or loss of control.",
+      "mitigation_strategy": "Implement a manual override of the navigation system to correct the drift and re-establish the course."
+    },
+    "decision": {
+      "actuator_command": "MANUAL_NAV_OVERRIDE",
+      "expected_outcome": "The vessel will be manually navigated to correct the drift and return to the intended course."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate attention to prevent potential hazards. The decision to manually override the navigation system is based on the current telemetry and the potential risks involved."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7c19b572",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "d00d54eb3dc4298e19ea25233952eb8d36bcf4617afce8ffcd324879bb5b5561"
+  },
+  "sha256_proof": "5ccc8581045b29adf674fd8d5ff92aa1ebea64273a197255556819dda01ebbd3"
+}

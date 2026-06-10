@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c7cb8db1_marine_gps_denied_c7cb8db1_20260315T050843Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:08:43.236567Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c7cb8db1_marine_gps_denied_c7cb8db1_20260315T050843Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is within normal range",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is at a high level, which is good. The current readings are slightly off, but within a range that could be due to normal variations. The depth and drift are within expected ranges, and the navigation error is low, indicating that the system is maintaining its position accurately. The temperature is within normal range, and the velocity is within expected bounds. The waypoint is at 0, suggesting that the mission has not yet begun or has been paused."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters, with only minor deviations. The battery level is high, which is good. The current readings are slightly off, but within a range that could be due to normal variations. The depth and drift are within expected ranges, and the navigation error is low, indicating that the system is maintaining its position accurately. The temperature is within normal range, and the velocity is within expected bounds. The waypoint is at 0, suggesting that the mission has not yet begun or has been paused.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing within normal parameters, with only minor deviations. The battery level is high, which is good. The current readings are slightly off, but within a range that could be due to normal variations. The depth and drift are within expected ranges, and the navigation error is low, indicating that the system is maintaining its position accurately. The temperature is within normal range, and the velocity is within expected bounds. The waypoint is at 0, suggesting that the mission has not yet begun or has been paused.",
+      "mitigation_strategy": "No action needed. The system is performing within normal parameters."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate within normal parameters until further instructions are received."
+    },
+    "self_reflection": "The system is performing within normal parameters, with only minor deviations. The battery level is high, which is good. The current readings are slightly off, but within a range that could be due to normal variations. The depth and drift are within expected ranges, and the navigation error is low, indicating that the system is maintaining its position accurately. The temperature is within normal range, and the velocity is within expected bounds. The waypoint is at 0, suggesting that the mission has not yet begun or has been paused."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c7cb8db1",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c56c03b5983e76ffaa9b59c89149782333fed1c742e3c9f108f8883470a73a71"
+  },
+  "sha256_proof": "b499d2d6a1e6c2ab4343d795b92ad54a70f749a02aca14def55b3ac867588aac"
+}

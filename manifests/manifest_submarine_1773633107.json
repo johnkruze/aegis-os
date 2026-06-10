@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_6812f2da_marine_gps_denied_6812f2da_20260316T035140Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:51:40.315927Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6812f2da_marine_gps_denied_6812f2da_20260316T035140Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thrusters have failed, causing the vessel to drift and potentially lose control. The battery level is still high, indicating that power is not the immediate issue."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is critical as it affects the vessel's ability to maintain position and navigate. Immediate action is required to prevent further drift and potential collision with obstacles.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel will continue to drift and may collide with obstacles or other vessels if not corrected. The navigation error will increase, and the waypoint will not be reached.",
+      "mitigation_strategy": "Activate emergency thrusters or use backup propulsion systems if available. If not, initiate a manual override to steer the vessel using rudder or other available controls."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency thrusters or use backup propulsion systems if available. If not, initiate a manual override to steer the vessel using rudder or other available controls.",
+      "expected_outcome": "The vessel should be able to maintain control and prevent further drift. If emergency thrusters are not available, the vessel should be able to be steered to a safe position."
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate attention. The vessel's ability to navigate and maintain position is compromised, and action must be taken to prevent further damage or loss of control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6812f2da",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "90e020aedee7efbda4d66cb9ca2f9526cf2a37709466e917fa1eaf11379fa071"
+  },
+  "sha256_proof": "e09f843d43338956ef2046c16a9636892feb48947efab7548cd7f8c2453da32e"
+}

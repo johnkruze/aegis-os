@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_62d549d5_marine_gps_denied_62d549d5_20260315T111038Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:10:38.338152Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_62d549d5_marine_gps_denied_62d549d5_20260315T111038Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the sensors or the environment. The shallow depth and high drift suggest the vehicle may be in a challenging or unexpected location. The low navigation error and normal temperature indicate that the system is otherwise performing well."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are concerning, but the system is otherwise stable. I need to investigate the cause of the anomaly and determine if it is a temporary issue or a more serious problem.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly could cause the vehicle to drift further from the intended path or fail to navigate correctly.",
+      "mitigation_strategy": "Perform a sensor calibration and recheck the current readings. If the issue persists, initiate a manual override to return to the previous waypoint and investigate the cause."
+    },
+    "decision": {
+      "actuator_command": "sensor_calibrate",
+      "expected_outcome": "The sensors will be recalibrated, and the system will recheck the current readings."
+    },
+    "self_reflection": "The anomaly in current readings is concerning, but the system is otherwise stable. I need to investigate the cause and take appropriate action to ensure the mission continues safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_62d549d5",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "242392cebd8fc2e75f1742ea04c0d3a60d0ff61e61fd28c4b018ac59702dca4a"
+  },
+  "sha256_proof": "6cb7b9e039003186e827ba815370aaf22f98cb376d1a3bc86e867a2f7595c305"
+}

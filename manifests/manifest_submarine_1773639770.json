@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_cbdfce1d_marine_gps_denied_cbdfce1d_20260316T054242Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:42:42.847690Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cbdfce1d_marine_gps_denied_cbdfce1d_20260316T054242Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and low velocity. The battery is at a high level, and the navigation error is minimal. However, the drift and low velocity suggest that the system may be struggling to maintain its position accurately."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within expected parameters, but the drift and low velocity indicate potential issues with the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to drift and lose position over time.",
+      "mitigation_strategy": "Increase the power to the navigation system and adjust the waypoints to compensate for drift."
+    },
+    "decision": {
+      "actuator_command": "Increase power to navigation system and adjust waypoints",
+      "expected_outcome": "The system should be able to maintain its position more accurately and complete the mission successfully."
+    },
+    "self_reflection": "The system is currently operating within expected parameters, but the drift and low velocity suggest potential issues with the navigation system. Increasing power to the navigation system and adjusting waypoints should mitigate these issues and allow the mission to be completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cbdfce1d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "47ecb5419d698ac5f4c46fe3e15555522d926f7031e3832225caea15a924a2c2"
+  },
+  "sha256_proof": "1a04de6878b2eb40699e93633ae59652fac6ca5e08023c66c86cf3f394b3c4aa"
+}

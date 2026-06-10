@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8687d700_marine_gps_denied_8687d700_20260316T020928Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:09:28.313777Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8687d700_marine_gps_denied_8687d700_20260316T020928Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 417.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is moving in the expected direction. The slight drift and negative velocity indicate a minor deviation from the intended course, but the navigation error is low, suggesting the system is still on track. The shallow depth and low risk level indicate that the system is operating in a safe environment."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters, with only minor deviations from expected values. The slight drift and negative velocity indicate a minor deviation from the intended course, but the navigation error is low, suggesting the system is still on track. The shallow depth and low risk level indicate that the system is operating in a safe environment.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating within normal parameters, with only minor deviations from expected values. The slight drift and negative velocity indicate a minor deviation from the intended course, but the navigation error is low, suggesting the system is still on track. The shallow depth and low risk level indicate that the system is operating in a safe environment.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary. The system is expected to continue operating within normal parameters."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to operate within normal parameters, with only minor deviations from expected values. The slight drift and negative velocity indicate a minor deviation from the intended course, but the navigation error is low, suggesting the system is still on track. The shallow depth and low risk level indicate that the system is operating in a safe environment."
+    },
+    "self_reflection": "The system is operating within normal parameters, with only minor deviations from expected values. The slight drift and negative velocity indicate a minor deviation from the intended course, but the navigation error is low, suggesting the system is still on track. The shallow depth and low risk level indicate that the system is operating in a safe environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8687d700",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "1d15d30fe00fb9152f663f7df949859c5634bffd556f04c0a0116950304164fb"
+  },
+  "sha256_proof": "d0aa2087f18c6b7966ad13ce2865c24e26097b1e927819432efab54e4f7707b2"
+}

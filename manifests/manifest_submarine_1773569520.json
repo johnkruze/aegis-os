@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_93015d72_marine_gps_denied_93015d72_20260315T101153Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:11:53.488527Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_93015d72_marine_gps_denied_93015d72_20260315T101153Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings indicating potential propulsion issues, slight depth error, high drift, and low navigation error. The mission is currently at waypoint 0."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The unusual current readings suggest a problem with the propulsion system. The slight depth error and high drift are concerning but not immediately critical.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potentially leading to loss of control and mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery and perform a system check to identify and fix the propulsion issue."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "Battery recharged and system stability restored."
+    },
+    "self_reflection": "The anomaly highlights the importance of regular system checks and maintaining sufficient battery levels to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_93015d72",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "756a056143c9c02d2bf20c28b7b7870af9b7c831782fac77894a91b0fa95865a"
+  },
+  "sha256_proof": "794e9463812b65a2cc5635a35a4d69fea4bf5b608a3f38097260f35106bd404d"
+}

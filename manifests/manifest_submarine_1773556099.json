@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5cc7c4b7_marine_gps_denied_5cc7c4b7_20260315T062810Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:28:10.509345Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5cc7c4b7_marine_gps_denied_5cc7c4b7_20260315T062810Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is 97.5%",
+        "current readings are [-0.38, -0.05, 0.02]",
+        "depth is 0.5 meters",
+        "drift is 18.62 meters",
+        "navigation error is 0.01",
+        "position is [110.26, -186.79, -0.5]",
+        "time is 350.0",
+        "velocity is [-0.22, 0.18, 0.1]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight drift and a small navigation error. The battery level is high, indicating sufficient power for continued operation. The current readings suggest a stable environment, and the depth is within expected limits for the mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission is incomplete, but the system is functioning normally. The drift and navigation error are within acceptable limits.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system will continue to operate normally until the battery depletes or the mission is manually terminated.",
+      "mitigation_strategy": "Monitor battery level and adjust mission parameters if drift or navigation error increases."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue to operate normally until the battery depletes or the mission is manually terminated."
+    },
+    "self_reflection": "The system is performing as expected, and there are no immediate issues that require intervention. The mission will continue until further instructions are received."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5cc7c4b7",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "119899db87241fc5be1756dd8271cc39af86690bfc277369094e80277e4c482b"
+  },
+  "sha256_proof": "f2b7d69dad03fc721611c782ae3f86d02ba2daf3d75b9c28c3f26bda1562f9ca"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_eaeb9c48_marine_gps_denied_eaeb9c48_20260315T202809Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:28:09.384863Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_eaeb9c48_marine_gps_denied_eaeb9c48_20260315T202809Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift and depth, indicating an unexpected current surge."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift and increase in depth, which could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may drift out of the designated waypoint or sink if the current surge is not mitigated.",
+      "mitigation_strategy": "Increase engine power to counteract the current surge and adjust the vessel's course to maintain the intended path."
+    },
+    "decision": {
+      "actuator_command": "Increase engine power to 100% and adjust course to compensate for the current surge.",
+      "expected_outcome": "The vessel will be able to counteract the current surge and maintain its course."
+    },
+    "self_reflection": "The current surge is an unexpected challenge, but with increased engine power and course adjustment, the mission can be completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_eaeb9c48",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 2,
+      "waypoints_total": 7
+    },
+    "physics_proof": "45761c272d3b512a9bd9aa22a69862e31b33c306c8e9cf15278f66c8364ef169"
+  },
+  "sha256_proof": "c504d05677173f0767cc56099ee6460842c565161fa31f94c480dd1e1593e1a5"
+}

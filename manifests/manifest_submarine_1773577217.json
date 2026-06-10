@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8e840d51_marine_gps_denied_8e840d51_20260315T122006Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:20:06.616355Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8e840d51_marine_gps_denied_8e840d51_20260315T122006Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation issue. The battery level is high, indicating sufficient power. The depth is shallow, which is expected in marine environments. The temperature is high, which could indicate a thermal anomaly. The velocity is slow, which is expected at the start of a mission. The navigation error is low, which is positive. The waypoint is at the start, which is expected."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and high drift suggest a potential navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is expected. The temperature is high, which could indicate a thermal anomaly. The velocity is slow, which is expected at the start of a mission. The navigation error is low, which is positive. The waypoint is at the start, which is expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail due to the inconsistent current readings and high drift, which could cause the vehicle to deviate from its intended path.",
+      "mitigation_strategy": "Perform a recalibration of the navigation system and check the current readings for any anomalies. If the issue persists, initiate a manual override to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_navigation_system",
+      "expected_outcome": "The navigation system will be recalibrated, and the vehicle will attempt to correct its drift."
+    },
+    "self_reflection": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is expected. The temperature is high, which could indicate a thermal anomaly. The velocity is slow, which is expected at the start of a mission. The navigation error is low, which is positive. The waypoint is at the start, which is expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8e840d51",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "cc00798867aa323fb238d07014fcec96c94fa8c2a1efb076e98595dbe44f2428"
+  },
+  "sha256_proof": "733e9f7f4a5ab55a53623a7b494b6635c0c1229bee9d3ec28bc07741141d82be"
+}

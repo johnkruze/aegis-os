@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_969ac311_marine_gps_denied_969ac311_20260315T042730Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:27:30.663015Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_969ac311_marine_gps_denied_969ac311_20260315T042730Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is within expected range",
+        "navigation error is low",
+        "position is within expected waypoint",
+        "time is within expected range",
+        "velocity is within expected range"
+      ],
+      "interpretation": "The system is functioning nominally with high battery, low navigation error, and expected depth and velocity. However, there are abnormal current readings which could indicate a problem with the propulsion system or an external force affecting the vessel."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The abnormal current readings could be due to a malfunctioning propeller or an external force such as a strong current or a collision with an object. Given the high battery level and low navigation error, the system is still capable of maintaining control. However, the anomaly should be investigated to prevent potential damage or loss of the vessel.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could be affected by the abnormal current readings, potentially leading to a loss of control or damage to the propulsion system.",
+      "mitigation_strategy": "Perform a thorough inspection of the propulsion system and surroundings to identify the cause of the abnormal current readings. If the issue is confirmed, take corrective action to prevent further damage."
+    },
+    "decision": {
+      "actuator_command": "Perform a thorough inspection of the propulsion system and surroundings.",
+      "expected_outcome": "The issue causing the abnormal current readings will be identified and corrected, allowing the vessel to continue its mission safely."
+    },
+    "self_reflection": "The system is currently functioning within expected parameters, but the anomaly should be investigated to prevent potential damage or loss of the vessel. The decision to perform a thorough inspection is based on the potential risks and the system's current state."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_969ac311",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "1354ab857da27f1d2157af9d9d68ae50ede8ed6e9fbeb2a463aff2403125b57d"
+  },
+  "sha256_proof": "483f6330d7a74568bb8ef8176e4ebb3851d9d98e72d22b9009f6623ffe173637"
+}

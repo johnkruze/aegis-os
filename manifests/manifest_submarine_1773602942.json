@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_967809ef_marine_gps_denied_967809ef_20260315T192852Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:28:52.812984Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_967809ef_marine_gps_denied_967809ef_20260315T192852Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "pressure is normal",
+        "temperature is normal",
+        "velocity is minimal",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The battery level is high, which suggests sufficient power for continued operation. The shallow depth and normal pressure indicate that the system is likely in a safe operational area. The low navigation error suggests that the system is accurately tracking its position. The minimal velocity and normal temperature further support the system's stability. However, the significant drift could indicate a potential issue with the system's orientation or navigation capabilities."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The system's battery level is high, which suggests sufficient power for continued operation. The shallow depth and normal pressure indicate that the system is likely in a safe operational area. The low navigation error suggests that the system is accurately tracking its position. The minimal velocity and normal temperature further support the system's stability. However, the significant drift could indicate a potential issue with the system's orientation or navigation capabilities.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The significant drift could cause the system to lose its position or orientation, leading to mission failure.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the orientation sensors to ensure accurate navigation."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate its orientation sensors, allowing it to regain accurate navigation and continue the mission."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the significant drift. The decision to reset and recalibrate the orientation sensors is based on the potential risk of losing position or orientation due to the drift. This action is expected to resolve the issue and allow the system to continue the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_967809ef",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "6d2e68ccbefb99b69e5f39f8142bae338b99d65879da9b131714237dac549078"
+  },
+  "sha256_proof": "1c2b7fa6b1de26a3e60a2ca28f31c297166181bcd5e3100ee7e7792128871f15"
+}

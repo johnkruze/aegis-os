@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_456d222d_marine_gps_denied_456d222d_20260316T014321Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:43:21.167667Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_456d222d_marine_gps_denied_456d222d_20260316T014321Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "position is at waypoint 0",
+        "velocity is very low"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant power issues. The depth and drift are within acceptable ranges, and the navigation error is minimal, indicating the system is accurately tracking its position. The velocity is very low, which could be due to the system being stationary or approaching a waypoint."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes are predicted. The system is stable and within expected operational parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in performance."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected, maintaining its current position and parameters."
+    },
+    "self_reflection": "The system is performing as expected with no critical anomalies detected. The battery is healthy, and the current readings are within acceptable limits. The system is stable and within expected operational parameters."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_456d222d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "d3c997fc3870aea01e9521b3f6d5a057c8ed179a22f59061316b75c57c32d79e"
+  },
+  "sha256_proof": "6b95519b026d174cf7f0567ed966e7517763b36a8cbe77a367697e34a34c45a8"
+}

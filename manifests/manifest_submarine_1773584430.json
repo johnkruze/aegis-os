@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_757cf111_marine_gps_denied_757cf111_20260315T142022Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:20:22.744842Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_757cf111_marine_gps_denied_757cf111_20260315T142022Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest a potential issue with the propulsion system. The depth is shallow, and the drift is significant, indicating that the vessel may be moving away from the intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak could be a critical issue that requires immediate attention to prevent further damage or loss of the vessel. The propulsion system anomaly could be related to the leak, and it is essential to investigate further.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking. The propulsion system anomaly could exacerbate the situation, causing the vessel to drift away from the intended course.",
+      "mitigation_strategy": "Initiate emergency procedures to investigate the leak and stabilize the vessel. Activate the emergency propulsion system if available. Notify the command center and request assistance."
+    },
+    "decision": {
+      "actuator_command": "INITIATE_EMERGENCY_PROCEDURES",
+      "expected_outcome": "The vessel will be stabilized, and the leak will be investigated. Assistance will be requested from the command center."
+    },
+    "self_reflection": "The detection of a leak on the surface of the water is a critical anomaly that requires immediate attention. The propulsion system anomaly could be related to the leak, and it is essential to investigate further to prevent further damage or loss of the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_757cf111",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": true,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "98259ef9c9d282a6b3b78be92f45bc542f856028cf458e88c6483a533a6eac66"
+  },
+  "sha256_proof": "fed02861875c1a8a5d8d4282395ed6318a188943234ddf60a4d499533515f97c"
+}

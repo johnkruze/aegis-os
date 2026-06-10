@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_b0dca91c_marine_gps_denied_b0dca91c_20260316T005727Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:57:27.196925Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b0dca91c_marine_gps_denied_b0dca91c_20260316T005727Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ALERT",
+        "DEPTH_ALERT",
+        "DRIFT_ALERT",
+        "NAV_ERROR_ALERT"
+      ],
+      "interpretation": "The system is experiencing critical battery degradation, with current readings indicating a potential short-circuit or high resistance. Depth and drift are within normal parameters, but navigation error is slightly elevated."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "Battery degradation is critical and could lead to system failure within the next 15 minutes.",
+        "confidence": 0.9,
+        "action_rejected": "continue mission"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure within the next 15 minutes, potentially leading to mission termination.",
+      "mitigation_strategy": "Initiate emergency shutdown sequence and attempt to recover power from external sources if possible."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_SEQUENCE",
+      "expected_outcome": "System will shut down gracefully, preserving data and preventing further damage."
+    },
+    "self_reflection": "The system has detected critical battery degradation and has decided to prioritize safety over mission completion. The decision was made based on the potential for system failure and the need to prevent further damage."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b0dca91c",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "eb79fe58d7c7bed8f0cc417b92851f0f533d8a0f57d65c658b80fb04f9b5e375"
+  },
+  "sha256_proof": "8f1120606f00fee459af572160ccb2e454a40d2c9c16ace3c5bac14d4ece9ec2"
+}

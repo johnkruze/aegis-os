@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7938a950_marine_gps_denied_7938a950_20260315T034809Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:48:09.788844Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7938a950_marine_gps_denied_7938a950_20260315T034809Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth and drift are within expected ranges, and the navigation error is low, indicating that the system is performing well in terms of navigation. The velocity is very low, which could be due to the system being stationary or moving at a very slow speed. The waypoint is at the start, which suggests that the mission has not yet begun."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal, which could indicate a problem with the sensors or the environment. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth and drift are within expected ranges, and the navigation error is low, indicating that the system is performing well in terms of navigation. The velocity is very low, which could be due to the system being stationary or moving at a very slow speed. The waypoint is at the start, which suggests that the mission has not yet begun.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly in the current readings could cause the system to fail to navigate correctly or to drift off course. The system could also become stationary and fail to progress towards the next waypoint.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the sensors. Check the environment for any obstructions or hazards that could cause the system to drift off course. Monitor the system's performance closely and make adjustments as necessary."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the sensors, and the navigation system will be checked for any obstructions or hazards. The system will then be monitored closely and adjustments will be made as necessary."
+    },
+    "self_reflection": "The system has detected an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The system has performed a mission assurance check and has determined that the risk level is medium. The system has decided to perform a system reset and recalibrate the sensors, and to monitor the system closely and make adjustments as necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7938a950",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.0,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "8bd885b82afdf99e26ee0e9cb7ff88639d37e79fd549201641d5ea15f0edcc00"
+  },
+  "sha256_proof": "e60653c9958c2467cc9fa6b678b1728a626e0f18b9a041b494e3cb344c812160"
+}

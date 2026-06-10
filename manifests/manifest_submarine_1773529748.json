@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_1129d185_marine_gps_denied_1129d185_20260314T230859Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:08:59.173857Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1129d185_marine_gps_denied_1129d185_20260314T230859Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally, but there are some anomalies in the current readings and drift. The shallow depth and low navigation error suggest that the system is operating in a controlled environment. The slow velocity and slight drift indicate that the system is not actively engaged in a mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are unusual, but the system is not in a critical state. The shallow depth and low error suggest that the system is in a safe environment. The slight drift and slow velocity suggest that the system is not actively engaged in a mission. The waypoint is at the start, which is normal for a new mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is not in a critical state and appears to be functioning normally. The slight drift and slow velocity suggest that the system is not actively engaged in a mission. The waypoint is at the start, which is normal for a new mission.",
+      "mitigation_strategy": "Continue monitoring the system and wait for further instructions. If the drift or velocity becomes more significant, investigate the cause and take appropriate action."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to monitor its environment and wait for further instructions."
+    },
+    "self_reflection": "The system is functioning normally, but there are some anomalies in the current readings and drift. The shallow depth and low error suggest that the system is in a safe environment. The slight drift and slow velocity suggest that the system is not actively engaged in a mission. The waypoint is at the start, which is normal for a new mission. The system will continue to monitor its environment and wait for further instructions."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1129d185",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "f817c69e34d8692968ef92a01ec427d85bcade78dedbf275032c27ea9a5e70b8"
+  },
+  "sha256_proof": "437c3ac85d6e9467dfa651222230f20e16a6b94eba5b6f09bb3105431cf1e855"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_89faad3d_marine_gps_denied_89faad3d_20260315T102613Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:26:13.875188Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_89faad3d_marine_gps_denied_89faad3d_20260315T102613Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control of the mission."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_89faad3d",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "215e6b3ce046164f56309704a6005fb0c0c0a5731e9bc4d04a727856ca92ec17"
+  },
+  "sha256_proof": "935719f0b676297d937d4ab86d526cd34c301824cddb68fcca3e0da23bf87e62"
+}

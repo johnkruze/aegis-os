@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_df6010d8_marine_gps_denied_df6010d8_20260316T030013Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:00:13.861827Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_df6010d8_marine_gps_denied_df6010d8_20260316T030013Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position is accurate",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally, with the exception of the current readings which are significantly lower than expected. This could indicate a problem with the current sensors or the system's ability to interpret them."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal, which could indicate a problem with the current sensors or the system's ability to interpret them. However, the battery level is high and the navigation error is low, which suggests that the system is still capable of performing its primary function.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may be unable to accurately interpret the current readings, leading to potential navigation errors.",
+      "mitigation_strategy": "Verify the accuracy of the current sensors and recalibrate if necessary. Monitor the system's performance closely."
+    },
+    "decision": {
+      "actuator_command": "continue mission with caution",
+      "expected_outcome": "The system will continue to operate, but the pilot should be prepared to intervene if the current readings do not stabilize."
+    },
+    "self_reflection": "The system appears to be functioning normally, but the abnormal current readings require close monitoring. The pilot should be prepared to intervene if the issue persists."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_df6010d8",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "e6d37ec2614da2595b3ca33cc0a22869335e0fc47ab4cf1e54a0f3cc6f1220fd"
+  },
+  "sha256_proof": "a1e48ed9f11e90077b873f730d71bb01eb360ffafa296553736f3da1d9af450f"
+}

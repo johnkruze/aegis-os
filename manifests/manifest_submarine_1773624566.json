@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_54679c12_marine_gps_denied_54679c12_20260316T012918Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:29:18.393506Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_54679c12_marine_gps_denied_54679c12_20260316T012918Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 396.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift and a slight negative current reading. The shallow depth and low navigation error suggest the vehicle is in a stable position relative to the seabed. The time and velocity readings indicate the vehicle is moving slightly downwards and to the left."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight negative current and drift suggest the vehicle may be moving against the current or in an unexpected direction. This could lead to a loss of position over time.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may lose position over time due to drift and current effects.",
+      "mitigation_strategy": "Adjust the vehicle's heading to counteract the current and reduce drift."
+    },
+    "decision": {
+      "actuator_command": "adjust_heading(10 degrees right)",
+      "expected_outcome": "The vehicle's heading will be adjusted to counteract the current and reduce drift, maintaining its position."
+    },
+    "self_reflection": "The system is performing as expected, but there is a risk of losing position due to drift and current effects. Adjusting the heading is a simple and effective mitigation strategy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_54679c12",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "39eac30dba39291211f9ceab5b112b9b06d389dfb289c5334a629ed0d68111f0"
+  },
+  "sha256_proof": "33e77cfa702f6a6f2cb8abef1357dbfd3f44feb2eabf9f037acf0841f37abaf3"
+}

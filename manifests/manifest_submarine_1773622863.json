@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_7c9de452_marine_gps_denied_7c9de452_20260316T010055Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:00:55.779400Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7c9de452_marine_gps_denied_7c9de452_20260316T010055Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing high current readings and slight drift, which could indicate a problem with the propulsion system or navigation sensors. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slow velocity and starting waypoint indicate the mission is paused or at the beginning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high current readings and drift suggest a potential propulsion issue. The shallow depth and low error indicate the vehicle is in a controlled environment. The slow velocity and starting waypoint suggest the mission is paused or at the beginning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The propulsion system may be malfunctioning, causing drift and high current readings. The vehicle may be in a potentially hazardous area if the drift is not corrected.",
+      "mitigation_strategy": "Perform a system check on the propulsion system and navigation sensors. If the issue persists, initiate a safe return to base or emergency stop."
+    },
+    "decision": {
+      "actuator_command": "system_check propulsion navigation",
+      "expected_outcome": "The system will perform a check on the propulsion and navigation systems to identify and correct any issues."
+    },
+    "self_reflection": "The system is experiencing anomalies that could impact mission success. A thorough system check is necessary to ensure safe and reliable operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7c9de452",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "e566826e9231bfaffbcbe30a049ca772089d44627d1d2e5faced1d038eb9da88"
+  },
+  "sha256_proof": "8224fdc4f23888ab824047d97eb3e2bca6dffd370a5b76a0a0a472d18e6cef2b"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_0250808e_marine_gps_denied_0250808e_20260314T231226Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:12:26.575554Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0250808e_marine_gps_denied_0250808e_20260314T231226Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could collide with an obstacle or lose control, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE; ADJUST_COURSE",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid the current surge and potential collision hazard."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a decisive action was taken to mitigate the risk. The mission is now on hold until the surge is resolved."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0250808e",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "98e8c3214a061e985e5921b1d83763893d8dd63315ce1bd2698f97342a22c71b"
+  },
+  "sha256_proof": "19a7a5c619ca9876fb049b3ebb4d51864eab860b3a68be77e9f5594ee0911572"
+}

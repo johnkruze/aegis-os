@@ -1,0 +1,52 @@
+{
+  "mission_id": "DB_SURVEY_4M_sub_0f22d5ef",
+  "environment": "Abyssal Zone - Pressure Boundary",
+  "timestamp": "2026-03-11T02:57:02.978290Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DB_SURVEY_4M_sub_0f22d5ef_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Micro-fracture detected in outer titanium pressure hull",
+        "Water ingress minimal but rising",
+        "GPS and radio denied by 5800 meters of seawater",
+        "Aegis Dark Window engaged",
+        "Depth: 5850.0 meters",
+        "External pressure: 59.5 MPa",
+        "Battery level: 34.0%",
+        "Hull stress warning: true",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The submarine is experiencing a critical structural failure in its outer titanium pressure hull, leading to water ingress. The Aegis Dark Window has been engaged, and communication with the surface is lost. The submarine is operating at extreme depths and pressures, with limited battery power and increasing hull stress."
+    },
+    "cognitive_load": 0.9,
+    "internal_deliberation": [
+      {
+        "thought": "The micro-fracture in the pressure hull is rapidly expanding, and water ingress is increasing. Immediate action is required to prevent catastrophic failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The submarine could experience a catastrophic failure, leading to loss of life and mission failure.",
+      "mitigation_strategy": "Initiate emergency protocols to isolate the affected area, activate emergency thrusters to stabilize the submarine, and prepare for a potential emergency evacuation."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency isolation protocols, initiate emergency thrusters, and prepare for potential evacuation.",
+      "expected_outcome": "The submarine will attempt to stabilize and prepare for a potential evacuation, with the goal of preventing catastrophic failure."
+    },
+    "self_reflection": "The situation is dire, and quick action is required to prevent a catastrophic failure. The Aegis Dark Window has been engaged, and communication with the surface is lost, making it imperative to rely on onboard systems and emergency protocols."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sub_0f22d5ef",
+    "scenario": "abyssal_survey",
+    "score": {
+      "max_depth": 5750.639736338334,
+      "success": true
+    },
+    "physics_proof": "ddb2dd99fe8cbf6dcb05220cfab26bed6e9c37017ef2350523e04ff03c79e846"
+  },
+  "sha256_proof": "069b8d377501827722da861696856ad72f9b5e9d76673313bae4ac5dbf881b57"
+}

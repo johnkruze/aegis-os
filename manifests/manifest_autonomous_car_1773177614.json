@@ -1,0 +1,45 @@
+{
+  "mission_id": "TA_ROUTING_5",
+  "environment": "Highway Kinematics - Rain Conditions",
+  "timestamp": "2026-03-10T21:20:05.199333Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TA_ROUTING_5_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "High tire slip (hydroplaning)",
+        "LiDAR confidence dropping",
+        "Cloud link severed"
+      ],
+      "interpretation": "The vehicle is experiencing severe hydroplaning due to heavy braking and rain conditions, leading to a significant drop in LiDAR confidence and a loss of communication with the mission control center."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with high tire slip and low LiDAR confidence, increasing the risk of collision.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may collide with an obstacle or lose control due to the loss of communication and reduced sensor data.",
+      "mitigation_strategy": "Activate emergency braking, deploy emergency steering, and initiate autonomous emergency braking if available."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency braking, deploy emergency steering, and initiate autonomous emergency braking if available.",
+      "expected_outcome": "Reduce speed and maintain control to avoid collision and ensure safe landing."
+    },
+    "self_reflection": "The system has detected an anomaly and is prioritizing safety by initiating emergency braking and deploying emergency steering. The loss of communication with mission control is concerning and may impact the ability to receive further instructions."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "auto_car_a7031db8_Fog",
+    "scenario": "Fog_cruising",
+    "score": {
+      "success": true
+    },
+    "physics_proof": "5ebc5ff7f7d184fc37239a7ee8e7dbdb84a5e621dde59a2617ccb597f702e0db"
+  },
+  "sha256_proof": "5a685238aeaaf6353055025bc0994e3bb6ad5b800ecb0abfe80c27f55aa700be"
+}

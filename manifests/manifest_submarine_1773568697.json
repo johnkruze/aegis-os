@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_e539e30e_marine_gps_denied_e539e30e_20260315T095807Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:58:07.482732Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e539e30e_marine_gps_denied_e539e30e_20260315T095807Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is minimal",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is near zero",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system appears to be functioning normally with minor inconsistencies in current readings. The battery level is high, indicating sufficient power. Depth and drift are within acceptable limits, and the navigation error is minimal. The position is accurate, and the velocity is near zero, suggesting the system is stationary or moving very slowly. The waypoint is at zero, which could indicate the end of a mission or a reset point."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly inconsistent, but within expected ranges. The battery level is high, so power is not an issue. The system appears to be stationary or moving very slowly, which is within expected parameters for a waypoint. The waypoint is at zero, which could indicate the end of a mission or a reset point.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stationary or moving very slowly, and the battery level is high. There is no immediate risk of failure.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in behavior. If the system begins to move or the battery level drops, take appropriate action."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to monitor its environment and report any changes in behavior."
+    },
+    "self_reflection": "The system appears to be functioning normally, with minor inconsistencies in current readings. The battery level is high, and the system is stationary or moving very slowly. The waypoint is at zero, which could indicate the end of a mission or a reset point. The system is within expected parameters, and there is no immediate risk of failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e539e30e",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "c4c2b4c74d870cbab732b4b30f6a47fad8f0aee2ad05516921cf1f59cca61720"
+  },
+  "sha256_proof": "c8430151c5ebb4df58949becd2c8cd8f1792076b73df198f6c85ee00dcdbdb0e"
+}

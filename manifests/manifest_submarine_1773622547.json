@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_45146652_marine_gps_denied_45146652_20260316T005537Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:55:37.985615Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_45146652_marine_gps_denied_45146652_20260316T005537Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "minor navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies. The battery is low, which could lead to system failure if not addressed soon. The current readings are inconsistent, indicating potential issues with the propulsion system. The slight depth error suggests a minor navigation problem. The high drift and minor navigation error imply that the vehicle is not following the intended course accurately. The waypoint has not been reached, which is a critical failure for the mission."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low and needs immediate attention to prevent system failure. The current readings are concerning and should be investigated to ensure the propulsion system is functioning correctly. The navigation errors suggest a need for recalibration or correction of the navigation system. The waypoint not being reached is a critical failure that must be resolved to complete the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potential propulsion system failure, and navigation errors could lead to mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery, investigate and repair the propulsion system, and recalibrate the navigation system. If the propulsion system cannot be repaired, consider using backup propulsion or manual control to reach the waypoint."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, investigate_propulsion, recalibrate_navigation",
+      "expected_outcome": "System stability restored, propulsion system repaired or alternative propulsion method engaged, navigation system recalibrated, and mission completed."
+    },
+    "self_reflection": "The mission is at risk due to multiple critical anomalies. Immediate action is required to prevent system failure and complete the mission. The internal agent has assessed the risks and developed a mitigation strategy to address the issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_45146652",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.5,
+      "mission_success": false,
+      "nav_error_m": 0.18,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "9db976ac3420d3a453a16a4864cbcdc8fc8dd0b44cc7ad738201359d2b7372e2"
+  },
+  "sha256_proof": "0ec663cde215651ae81bc36c0574a2fe1a310fa9a1eed1c026ec29bbe91e3bad"
+}

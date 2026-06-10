@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_735c07d4_marine_gps_denied_735c07d4_20260316T050550Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:05:50.582997Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_735c07d4_marine_gps_denied_735c07d4_20260316T050550Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 436.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation issue. The battery level is high, indicating sufficient power. The depth is shallow, which is expected in marine environments. The navigation error is low, but the drift is high, which could lead to a significant deviation from the intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the environment. The high drift suggests a need to correct the course to maintain mission integrity.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail if the drift is not corrected, leading to a potential collision with obstacles or the loss of the mission objective.",
+      "mitigation_strategy": "Correct the course by adjusting the heading and speed to compensate for the drift. Monitor the current readings and adjust as necessary."
+    },
+    "decision": {
+      "actuator_command": "adjust_heading(10 degrees left), adjust_speed(0.5 units faster)",
+      "expected_outcome": "The course will be corrected, and the mission will continue on the intended path."
+    },
+    "self_reflection": "The system detected an anomaly in the current readings and drift, which could potentially lead to mission failure. The decision to adjust the course was made based on the internal assessment of the risk and the available data. The system will continue to monitor the current readings and adjust the course as necessary to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_735c07d4",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "ad2e61c9114fb414a8d9cc849102651ed72de4a75ab29422ed2549d7d0f2cba9"
+  },
+  "sha256_proof": "f270c60037293f4b5f7f92da7b485a6e59a8e537808f765bb84545f0156057ac"
+}

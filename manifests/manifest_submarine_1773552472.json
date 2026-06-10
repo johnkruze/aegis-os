@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_469c25cc_marine_gps_denied_469c25cc_20260315T052739Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:27:39.895119Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_469c25cc_marine_gps_denied_469c25cc_20260315T052739Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "negative current readings",
+        "small depth",
+        "high drift",
+        "small navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. Negative current readings suggest a problem with the power supply or consumption. The small depth and high drift indicate the vehicle may be in an unexpected location or experiencing movement issues. The small navigation error suggests the system is performing adequately in terms of positioning. The vehicle is at waypoint 0, which may indicate a failure to progress to the next waypoint."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery and negative current readings are concerning, as they could lead to system failure. The high drift and small depth suggest the vehicle may be in an unsafe or unexpected location. The small navigation error indicates the system is performing adequately in terms of positioning. The vehicle is at waypoint 0, which may indicate a failure to progress to the next waypoint.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may fail due to the low battery and negative current readings, leading to a loss of control or power. The high drift and small depth suggest the vehicle may be in an unsafe or unexpected location, which could result in damage or loss of the vehicle.",
+      "mitigation_strategy": "Increase power supply to the system to prevent battery failure. Check the power supply and consumption to identify the source of the negative current readings. Investigate the cause of the high drift and small depth to ensure the vehicle is in a safe location. If the vehicle is in an unsafe location, attempt to return to a safe position or abort the mission."
+    },
+    "decision": {
+      "actuator_command": "increase power supply, check power supply and consumption, investigate high drift and small depth",
+      "expected_outcome": "The system power will be increased, the power supply and consumption will be checked, and the cause of the high drift and small depth will be investigated. This should help to mitigate the risks and ensure the system continues to operate safely."
+    },
+    "self_reflection": "The system is experiencing multiple issues that could lead to failure. The low battery and negative current readings are concerning, as they could result in a loss of control or power. The high drift and small depth suggest the vehicle may be in an unsafe or unexpected location, which could result in damage or loss of the vehicle. The system is performing adequately in terms of positioning, but the vehicle is at waypoint 0, which may indicate a failure to progress to the next waypoint. The decision to increase power supply, check power supply and consumption, and investigate high drift and small depth should help to mitigate the risks and ensure the system continues to operate safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_469c25cc",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "0e9bec8b5eb33f21f71714bd7c109bb91f9a26b14a62652af758fac6512624b7"
+  },
+  "sha256_proof": "58217ad119bea05c92a45d0142bdf48a2fb44a8be4987d86383d76e7a27b8c86"
+}

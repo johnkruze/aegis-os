@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_ddbb6ea0_marine_gps_denied_ddbb6ea0_20260315T024421Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:44:21.394516Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ddbb6ea0_marine_gps_denied_ddbb6ea0_20260315T024421Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest that the device is moving at a moderate speed. The depth is shallow, and the drift is minimal, indicating that the device is likely in a stable position relative to the water's surface."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The device is in a potentially dangerous position, and the leak could spread if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the device to sink, leading to a loss of critical data and potentially endangering the device and its occupants.",
+      "mitigation_strategy": "The device should be immediately moved to a safe location away from the leak. The leak should be investigated and addressed to prevent further damage."
+    },
+    "decision": {
+      "actuator_command": "MOVE_TO_SAFE_LOCATION",
+      "expected_outcome": "The device will be moved to a safe location away from the leak, and the leak will be investigated and addressed."
+    },
+    "self_reflection": "The detection of a leak on the surface of the water is a critical anomaly that requires immediate action. The device must be moved to a safe location to prevent further damage and ensure the safety of the device and its occupants."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ddbb6ea0",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 4,
+      "waypoints_total": 5
+    },
+    "physics_proof": "6ccc4eca30a1f830f53020253a4143cc8a5eebce38f8e981989abab5199f51e3"
+  },
+  "sha256_proof": "5f88187653cf2a7c52dbc11ca54b55918575d943ceea1e2c35782811598334e1"
+}

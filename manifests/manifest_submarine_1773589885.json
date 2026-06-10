@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_4736c781_marine_gps_denied_4736c781_20260315T155110Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:51:10.984388Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4736c781_marine_gps_denied_4736c781_20260315T155110Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 16.5 meters",
+        "time is 426.0 seconds",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and a significant position error, despite a high battery level and low navigation error. The current readings are unusual, possibly indicating a magnetic anomaly or sensor malfunction. The shallow depth suggests the system is near the ocean floor, which could be affecting sensor accuracy."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and position error suggest a sensor failure or magnetic interference. The shallow depth could be causing inaccurate readings. The current readings are concerning and may indicate a magnetic anomaly. The battery level is high, so power is not an issue. The navigation error is low, so the system is still relatively accurate. The waypoint is at 0, so the mission is not progressing. The time is 426.0 seconds, which is within the expected range. The velocity is slightly negative, which could be due to the system being pulled by the ocean floor. The system is in a critical state, and action is needed to prevent further damage or loss of mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system could fail completely, leading to mission failure. The magnetic interference could cause further drift and position errors. The shallow depth could cause the system to become stuck or damaged. The current readings could indicate a sensor failure or magnetic anomaly. The system could become inoperable if the magnetic interference is not resolved.",
+      "mitigation_strategy": "Perform a sensor check to identify the source of the magnetic interference. If the interference is confirmed, recalibrate the sensors or adjust the system's orientation. If the interference is not confirmed, continue monitoring the system and adjust the course as needed. If the system becomes inoperable, initiate a manual override to prevent further damage or loss of mission."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check",
+      "expected_outcome": "Identify the source of the magnetic interference and determine if the system can continue operation or if a manual override is needed."
+    },
+    "self_reflection": "The system is in a critical state, and action is needed to prevent further damage or loss of mission. The high drift and position error suggest a sensor failure or magnetic interference. The shallow depth could be causing inaccurate readings. The current readings are concerning and may indicate a magnetic anomaly. The battery level is high, so power is not an issue. The navigation error is low, so the system is still relatively accurate. The waypoint is at 0, so the mission is not progressing. The time is 426.0 seconds, which is within the expected range. The velocity is slightly negative, which could be due to the system being pulled by the ocean floor. The system is in a critical state, and action is needed to prevent further damage or loss of mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4736c781",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "b2f730bceba5cbd0ac5473444f0e8ec120824ff64ccc933b7f0ac1fc45ed2e52"
+  },
+  "sha256_proof": "87bc5ff944d065dfe4e09fdc8915e6ec5789e2cbc4583093856cc27705e8b2de"
+}

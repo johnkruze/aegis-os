@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d71ac42b_marine_gps_denied_d71ac42b_20260315T075559Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:55:59.936164Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d71ac42b_marine_gps_denied_d71ac42b_20260315T075559Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery level is high, which suggests that the vessel is still operational but at risk of losing control due to the current surge."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift, which could lead to a collision with the seabed or other obstacles. The battery level is high, so there is enough power to attempt a correction. However, the drift is significant and could be difficult to correct without additional information.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could lose control and collide with the seabed or other obstacles if the current surge is not corrected. The battery level is high, so there is enough power to attempt a correction, but the drift is significant and could be difficult to correct without additional information.",
+      "mitigation_strategy": "Attempt to correct the drift by adjusting the vessel's heading and speed. If the drift is too significant to correct, consider initiating an emergency stop and assessing the situation before proceeding."
+    },
+    "decision": {
+      "actuator_command": "Adjust heading to counteract current surge and reduce drift",
+      "expected_outcome": "The vessel should be able to counteract the current surge and reduce drift, allowing it to maintain control and continue on its mission."
+    },
+    "self_reflection": "The current surge is a significant threat to the vessel's control and safety. The decision to adjust the heading to counteract the current surge is based on the available information and the potential consequences of not doing so. The mission assurance check indicates that there is a medium risk of failure if the current surge is not corrected, and the mitigation strategy is to attempt to correct the drift and assess the situation before proceeding."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d71ac42b",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "19763f561da6bde089a60e1e5649d70a5b11dadeb93785c670915bd9956236d8"
+  },
+  "sha256_proof": "b268c66295d4317bc14890708535c02c6cfd871f9dff93bf4b9af93217d29650"
+}

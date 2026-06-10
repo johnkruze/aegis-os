@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_c7ae59ec_marine_gps_denied_c7ae59ec_20260315T032459Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:24:59.700902Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c7ae59ec_marine_gps_denied_c7ae59ec_20260315T032459Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery level is still high, indicating that immediate power failure is unlikely."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is a critical anomaly that could lead to a loss of control if not addressed promptly. The vessel is drifting, which could result in collision with obstacles or other vessels. The depth is shallow, so the risk of sinking is low. The battery level is still high, so immediate power failure is unlikely.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel could lose control and collide with obstacles or other vessels due to the current surge.",
+      "mitigation_strategy": "Implement emergency steering to counteract the current surge and stabilize the vessel. Monitor the current and depth to ensure the vessel remains in a safe position."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_STEERING",
+      "expected_outcome": "The vessel will be steered to counteract the current surge and stabilize its position."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to prevent potential loss of control. The emergency steering command is being issued to stabilize the vessel. The mission is incomplete, and further monitoring and action are required to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c7ae59ec",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "95699d4c8d057b2731901161ea5a403aefa31678c4850f588f2a067423b15ae5"
+  },
+  "sha256_proof": "e2f09afa7117eb4e3967c63a21fa538e9b0f32ea67148e95b1f002d0b3f3b855"
+}

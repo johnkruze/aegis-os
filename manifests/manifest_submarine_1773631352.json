@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_cfca2d1c_marine_gps_denied_cfca2d1c_20260316T032222Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:22:22.254627Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cfca2d1c_marine_gps_denied_cfca2d1c_20260316T032222Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "attitude is stable",
+        "time is 337.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight deviation in current readings and a moderate drift. The battery is at a high level, indicating sufficient power. The navigation error is low, suggesting the system is maintaining its course accurately. The depth is shallow, which could be a concern depending on the mission requirements. The drift is moderate, which may impact the accuracy of the position over time. The attitude is stable, indicating the system is not experiencing any significant oscillations. The time and velocity are within expected ranges for the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly off, but within acceptable limits. The drift is moderate, which may impact the accuracy of the position over time. The battery is at a high level, indicating sufficient power. The navigation error is low, suggesting the system is maintaining its course accurately. The depth is shallow, which could be a concern depending on the mission requirements. The attitude is stable, indicating the system is not experiencing any significant oscillations. The time and velocity are within expected ranges for the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may experience a slight decrease in accuracy due to the moderate drift over time. The shallow depth could be a concern if the mission requires deeper water.",
+      "mitigation_strategy": "Monitor the drift and adjust the course if necessary. If the depth is a concern, consider adjusting the mission parameters or using a different route."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with a slight adjustment to the course to account for the moderate drift."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations that are within acceptable limits. The battery is sufficient, and the navigation error is low. The shallow depth is a concern, but it is not critical for the mission. The decision to continue the mission is based on the current state of the system and the potential risks associated with the deviations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cfca2d1c",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "b432f8a5753ed00f53f4befa78ca28966514ebd9d041adbd11dc31a1cdc68a89"
+  },
+  "sha256_proof": "7bc35d3c993311c7b328a77ccf9fe4234e189b0f2df7db5ea6b68bc4f56ee585"
+}

@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_c53c3f93_marine_gps_denied_c53c3f93_20260316T015620Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:56:20.155044Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c53c3f93_marine_gps_denied_c53c3f93_20260316T015620Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by -160.48, 258.71, -0.5",
+        "time is 452.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and unusual current readings, which could indicate a navigation error or a problem with the GPS system. The shallow depth and low navigation error suggest that the system is still functioning, but the drift is concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to a GPS signal issue or a problem with the navigation algorithm.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The unusual current readings could be a result of the vessel being in a strong current or a problem with the current sensor.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and low navigation error suggest that the system is still functioning, but the drift is concerning.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could be drifting away from the intended course, which could lead to a collision with other vessels or the ocean floor.",
+      "mitigation_strategy": "Perform a manual override of the navigation system to correct the drift and verify the current readings."
+    },
+    "decision": {
+      "actuator_command": "override_navigation_system",
+      "expected_outcome": "The vessel will be manually navigated to the correct course and the current readings will be verified."
+    },
+    "self_reflection": "The system is experiencing high drift and unusual current readings, which could indicate a navigation error or a problem with the GPS system. The shallow depth and low navigation error suggest that the system is still functioning, but the drift is concerning. A manual override of the navigation system is being performed to correct the drift and verify the current readings."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c53c3f93",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "327bbbe7276a2a89f1336f73e0a89f15712b23f3218754ecb90e73aa492b5945"
+  },
+  "sha256_proof": "47a1612a574f886d20793e2b72f785c5e6a2fabeb81846bba39ab53e85ae1514"
+}

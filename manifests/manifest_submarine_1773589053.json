@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_dbecb53f_marine_gps_denied_dbecb53f_20260315T153727Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:37:27.587875Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_dbecb53f_marine_gps_denied_dbecb53f_20260315T153727Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position and time data are accurate",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be on track with no critical issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring and maintain current course."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_dbecb53f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "26244d39949c4b8d52bc29fe3e9b548d92b4b4bf121e56cd8266fc81054452de"
+  },
+  "sha256_proof": "a31a8ea28d10f601253eae6bf5527bb41a17e42526fd75688c36721dadf408be"
+}

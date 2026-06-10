@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_4cdab319_marine_gps_denied_4cdab319_20260315T092419Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:24:19.266046Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4cdab319_marine_gps_denied_4cdab319_20260315T092419Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is stable",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with minor deviations in current readings and velocity. The battery is healthy, and the depth is stable, indicating that the vehicle is likely in a safe position. The slight drift and velocity errors suggest minor adjustments may be needed to maintain course, but overall, the system is performing as expected."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current and velocity readings are within acceptable limits. The battery is sufficient to continue operations. The vehicle is in a stable position. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and within normal parameters. No immediate failure is predicted.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current course and continue mission"
+    },
+    "self_reflection": "The system is performing as expected with minor deviations that are within acceptable limits. No immediate action is required, and the mission can continue as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4cdab319",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 3.0,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "6d37f6307987d97000c222773337b054ba9526cbcc22ad0d9e419db8759696c1"
+  },
+  "sha256_proof": "2cf435eff8b2268d1c6653868e4bb852f1ee075abe6f29992c27d686be5fe10d"
+}

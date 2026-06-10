@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_60f58d09_marine_gps_denied_60f58d09_20260315T002613Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:26:13.065162Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_60f58d09_marine_gps_denied_60f58d09_20260315T002613Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are negative and indicate a potential issue with the propulsion system",
+        "depth is within safe limits",
+        "drift is high, indicating a need for course correction",
+        "navigation error is low, suggesting the system is performing well",
+        "position and time data are accurate",
+        "velocity is close to zero, indicating the vehicle is stationary or moving very slowly",
+        "waypoint is at zero, suggesting the mission has not started or has been reset"
+      ],
+      "interpretation": "The vehicle appears to be experiencing issues with its propulsion system, as indicated by the negative current readings. The high drift suggests a need for immediate course correction. Despite these issues, the navigation system is performing well, and the vehicle is stationary or moving very slowly. The mission has not started or has been reset."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The negative current readings suggest a problem with the propulsion system, which could lead to a loss of control if not addressed. The high drift indicates a need for immediate course correction to prevent the vehicle from drifting out of control. The navigation system is performing well, so the mission can continue if the propulsion issue is resolved. The vehicle is stationary or moving very slowly, so the risk of collision is low. The mission has not started or has been reset, so there is no need to complete the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "If the propulsion system issue is not resolved, the vehicle could drift out of control and potentially collide with other objects in the ocean. The navigation system is performing well, so the mission can continue if the propulsion issue is resolved.",
+      "mitigation_strategy": "Initiate a course correction to prevent the vehicle from drifting out of control. Check the propulsion system for any issues and attempt to resolve them. If the issue cannot be resolved, consider aborting the mission and returning to a safe location."
+    },
+    "decision": {
+      "actuator_command": "course correction, propulsion system check",
+      "expected_outcome": "The vehicle will be corrected to its intended course and the propulsion system will be checked for any issues. If the issue is resolved, the mission can continue. If the issue cannot be resolved, the mission will be aborted and the vehicle will return to a safe location."
+    },
+    "self_reflection": "The vehicle appears to be experiencing issues with its propulsion system, which could lead to a loss of control if not addressed. The high drift indicates a need for immediate course correction to prevent the vehicle from drifting out of control. Despite these issues, the navigation system is performing well, so the mission can continue if the propulsion issue is resolved. The vehicle is stationary or moving very slowly, so the risk of collision is low. The mission has not started or has been reset, so there is no need to complete the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_60f58d09",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "c19debe657b25f90fab00f3ff3fc89ca3d1142166c9da4f32326275ba74bd22c"
+  },
+  "sha256_proof": "a0127f022d17fdc2848a8a819616a749cb155430ecf07a6dc115b5118ad800c4"
+}

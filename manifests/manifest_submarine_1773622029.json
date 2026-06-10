@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_9edb3e72_marine_gps_denied_9edb3e72_20260316T004701Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:47:01.122357Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9edb3e72_marine_gps_denied_9edb3e72_20260316T004701Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 334.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the vehicle is moving in the expected direction. The shallow depth and moderate drift indicate the vehicle is operating in a controlled manner. The low navigation error and slow velocity suggest the vehicle is maintaining its course accurately. The waypoint is at 0, which could indicate the start of a new mission or a reset point."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is stable and within operational parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and within operational parameters. No immediate failure is predicted.",
+      "mitigation_strategy": "Continue monitoring the system and maintain current course."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to operate within normal parameters and maintain its course."
+    },
+    "self_reflection": "The system is stable and within operational parameters. No immediate action is required. The vehicle is maintaining its course and operating as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9edb3e72",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "6a569721d0cdd4daa0e0d70ec0ed1f7b3e511c21050cf0b8a0c8d6f5bd443af4"
+  },
+  "sha256_proof": "a31141b7ac399306ca06aefe6f8416b1470b81674f13a1962ef621cc93e0bdbf"
+}

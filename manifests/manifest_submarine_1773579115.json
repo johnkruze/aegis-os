@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0b0eb920_marine_gps_denied_0b0eb920_20260315T125147Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:51:47.744582Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0b0eb920_marine_gps_denied_0b0eb920_20260315T125147Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 454.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slight position off indicates minor navigation issues."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external factors or sensor inaccuracies. The inconsistent current readings need to be investigated further.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the vehicle to deviate from its intended path, but it is unlikely to cause a critical failure.",
+      "mitigation_strategy": "Monitor the drift and current readings closely. If drift continues to increase, adjust the course corrections."
+    },
+    "decision": {
+      "actuator_command": "Adjust course corrections to reduce drift",
+      "expected_outcome": "The drift should decrease, allowing the vehicle to stay on course."
+    },
+    "self_reflection": "The system is performing as expected, with minor issues that can be addressed through course adjustments. The high drift is the primary concern that needs to be monitored."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0b0eb920",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "07bd38fd0c427dc3b17488b3e8ec9b3ffd1719ec9a266666f41ed6826767fef2"
+  },
+  "sha256_proof": "b219e249ad15c95f7dc5d2dfda3e89c9e9d0369238a39d52207874fa37a424fd"
+}

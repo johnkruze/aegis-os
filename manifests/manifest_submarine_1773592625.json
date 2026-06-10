@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_d2dfe0b4_marine_gps_denied_d2dfe0b4_20260315T163658Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:36:58.036287Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d2dfe0b4_marine_gps_denied_d2dfe0b4_20260315T163658Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with minor deviations in current readings and position. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its course. However, the slight drift and position error suggest that the system may need to adjust its course to maintain accuracy."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is within operational parameters, but minor adjustments are needed to maintain accuracy.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may drift slightly over time, but it is expected to recover automatically.",
+      "mitigation_strategy": "Monitor the system for any further drift or errors and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "adjust_course 0.1 degrees left",
+      "expected_outcome": "The system should adjust its course to minimize drift and maintain accuracy."
+    },
+    "self_reflection": "The system is performing well within normal parameters, but minor adjustments are necessary to maintain accuracy. The decision to adjust the course is based on the current telemetry and the system's ability to recover automatically."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d2dfe0b4",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.5,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "bc8eb92706f0bc6e4d9df6455b7de5c141c8024c6c05c0315bcce91cf06cfc80"
+  },
+  "sha256_proof": "3826d6175637ebdacfeda8874eeb81f39ef0473ed13bf45ab28aff2eeec46ff2"
+}

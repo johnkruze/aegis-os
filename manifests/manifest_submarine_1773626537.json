@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_b6496425_marine_gps_denied_b6496425_20260316T020209Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:02:09.916545Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b6496425_marine_gps_denied_b6496425_20260316T020209Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is 36.9 meters",
+        "drift is 15.87 meters",
+        "navigation error is low",
+        "position is at waypoint 0",
+        "time is 417.0 seconds",
+        "velocity is very low"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight negative current reading which could indicate a minor issue with the propulsion system. The depth and drift are within expected ranges for the mission. The navigation error is low, and the system is at the intended waypoint. The velocity is very low, which is expected at the end of a mission or during a resting phase."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly negative, but within normal operational parameters. The system appears to be functioning as intended.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted based on the current telemetry.",
+      "mitigation_strategy": "Continue monitoring the system and maintain current course."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as intended until further instructions are received."
+    },
+    "self_reflection": "The system is performing as expected with no immediate anomalies detected. The slight negative current readings are within normal operational parameters and do not indicate a critical issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b6496425",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "28d12ef5fb15db87057114db253211db1434b11e9e49554279060dccd579a632"
+  },
+  "sha256_proof": "70b9778eefc14f9008e1fb57eb3d4d9e970d633be81f01fc097fe4cba2b985a3"
+}

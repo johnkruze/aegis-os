@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_39fd580a_marine_gps_denied_39fd580a_20260315T234619Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:46:19.633248Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_39fd580a_marine_gps_denied_39fd580a_20260315T234619Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 329.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly with the current readings, which could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and slightly negative velocity suggest that the vehicle is moving in the correct direction, but the drift and shallow depth indicate that the vehicle may be off course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and slightly negative velocity suggest that the vehicle is moving in the correct direction, but the drift and shallow depth indicate that the vehicle may be off course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in a challenging or unexpected location, which could lead to a collision or other failure mode.",
+      "mitigation_strategy": "Perform a manual override of the navigation system to correct the drift and adjust the position to a safe location. Monitor the system closely to ensure that the issue is resolved."
+    },
+    "decision": {
+      "actuator_command": "manual override of navigation system",
+      "expected_outcome": "The vehicle will be manually overridden to correct the drift and adjust the position to a safe location. The system will be monitored closely to ensure that the issue is resolved."
+    },
+    "self_reflection": "The anomaly detected suggests that the navigation system may be experiencing issues. A manual override of the system is necessary to ensure that the vehicle remains safe and on course. The system will be monitored closely to ensure that the issue is resolved."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_39fd580a",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "9e77364c53544ef71e944ae0ba04cced8b6cafb8240cb9e252baf2f22ef30364"
+  },
+  "sha256_proof": "962d102a834e2fa44a640edf616dab01f13e21118f54886e60c0e277b24e8876"
+}

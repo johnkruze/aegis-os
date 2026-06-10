@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_019ffd1f_marine_gps_denied_019ffd1f_20260315T092717Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:27:17.820854Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_019ffd1f_marine_gps_denied_019ffd1f_20260315T092717Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. This could be a critical issue that requires immediate attention to prevent further damage or loss of the vessel."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is detected on the surface, which suggests it may be a minor issue that can be addressed with immediate action. However, it is crucial to investigate further to ensure it does not escalate into a more serious problem.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "If the leak is not addressed promptly, it could lead to increased water ingress, potentially causing the vessel to lose buoyancy and sink.",
+      "mitigation_strategy": "Initiate a surface scan to locate the source of the leak and deploy emergency repair equipment if available. If not, prepare for a surface evacuation if necessary."
+    },
+    "decision": {
+      "actuator_command": "INITIATE_SURFACE_SCAN",
+      "expected_outcome": "The system will perform a surface scan to locate the source of the leak and provide real-time data to the operator."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate attention. The decision to initiate a surface scan is based on the potential for the leak to escalate if not addressed promptly. The mission assurance check highlights the risk of increased water ingress and the need for a mitigation strategy to prevent further damage."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_019ffd1f",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.9,
+      "mission_success": true,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c8beba2e0f366e14e122c39d68c54b6f957b16c2ba19b4549d3f279b0e324bde"
+  },
+  "sha256_proof": "7ef79a13c0a351846043ddcf0eeb237dd7fc08803a2ff3421b879a2146602d0e"
+}

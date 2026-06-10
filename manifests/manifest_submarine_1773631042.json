@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_f54c5085_marine_gps_denied_f54c5085_20260316T031717Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:17:17.570194Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f54c5085_marine_gps_denied_f54c5085_20260316T031717Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or issues detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no anomalies detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring the system for any changes."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f54c5085",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "5a6f2749091f86a335510a0df0916d1f5f47c6c4e81a1199a0e84bdca1ebaf43"
+  },
+  "sha256_proof": "eb199bda81cb9e196b2fc264d95e9b1b21757d5939c66e76907870145d897abc"
+}

@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_fc34ea04_marine_gps_denied_fc34ea04_20260315T125348Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:53:48.278154Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fc34ea04_marine_gps_denied_fc34ea04_20260315T125348Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is slightly negative",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The battery level is high, which suggests sufficient power for continued operation. The shallow depth and low navigation error indicate that the system is likely in a controlled environment. The slight negative velocity and off-position suggest that the system may need to adjust its course to reach the intended waypoint."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": "ignore the inconsistency"
+      },
+      {
+        "thought": "The significant drift suggests that the system may be losing its position over time.",
+        "confidence": 0.9,
+        "action_rejected": "ignore the drift"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may lose its position and drift further, potentially leading to mission failure.",
+      "mitigation_strategy": "Perform a recalibration of the current sensors and adjust the course to compensate for the drift."
+    },
+    "decision": {
+      "actuator_command": "recalibrate current sensors and adjust course",
+      "expected_outcome": "The system should be able to correct the drift and maintain its position, allowing the mission to continue."
+    },
+    "self_reflection": "The system is currently operating within normal parameters, but the significant drift and inconsistent current readings suggest potential issues that need to be addressed to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fc34ea04",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "c1f514838038735dd1592ccebd5d25769b24bf2b732f17dfd42966f60fe52860"
+  },
+  "sha256_proof": "5276afa503eed7e16ae669e490283efcad2e8ab6c3149ab2bd3ac8af3769ec22"
+}

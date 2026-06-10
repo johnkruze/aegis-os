@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c115162a_marine_gps_denied_c115162a_20260315T223615Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:36:15.279625Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c115162a_marine_gps_denied_c115162a_20260315T223615Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 474.0",
+        "velocity is very slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight deviation from the intended waypoint. The battery is healthy, and the current readings suggest stable conditions. The depth is within safe limits, and the drift is manageable. The navigation error is low, indicating the system is maintaining its course. The velocity is extremely slow, which could be due to the system being stationary or moving very slowly. The waypoint is at 0, suggesting the system is at the start of its mission or has not yet moved to the next waypoint."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters. The slight deviation from the waypoint could be due to drift or a minor error in the navigation system. The slow velocity suggests the system is either stationary or moving very slowly, which is expected at the start of a mission or in a stationary position.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally, maintaining its position or moving very slowly towards the next waypoint.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in behavior or errors. If the velocity remains slow or if the deviation from the waypoint increases, investigate further."
+    },
+    "decision": {
+      "actuator_command": "continue current operation",
+      "expected_outcome": "The system will continue to operate normally, maintaining its position or moving very slowly towards the next waypoint."
+    },
+    "self_reflection": "The system is performing as expected, with no immediate signs of failure. The slight deviation from the waypoint could be due to drift or a minor error in the navigation system. The slow velocity suggests the system is either stationary or moving very slowly, which is expected at the start of a mission or in a stationary position."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c115162a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "9c57bd3ca41a3e7df21ab81d1ec4cc56cbb9c4640660b0a3bcd9b94c1370996f"
+  },
+  "sha256_proof": "e7b5d7c883d49dd9330ce6189b4c236b3605f3bb2bf9b3b85b41b556374e875b"
+}

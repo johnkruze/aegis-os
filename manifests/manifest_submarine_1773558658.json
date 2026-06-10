@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_86e86447_marine_gps_denied_86e86447_20260315T071045Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:10:45.382968Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_86e86447_marine_gps_denied_86e86447_20260315T071045Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 321.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with minor deviations in current, drift, and velocity. The battery is at a high level, indicating sufficient power. The depth is shallow, which could be a concern in marine environments. The drift is high, which may impact navigation accuracy. The navigation error is low, suggesting the system is maintaining its position relatively well. The time and position are within expected ranges. The velocity is slightly off, which could indicate minor movement or disturbances in the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current, drift, and velocity are within acceptable limits. The battery level is high, indicating sufficient power. The depth is shallow, which could be a concern in marine environments. The drift is high, which may impact navigation accuracy. The navigation error is low, suggesting the system is maintaining its position relatively well. The time and position are within expected ranges. The velocity is slightly off, which could indicate minor movement or disturbances in the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations in current, drift, and velocity are within acceptable limits. The battery level is high, indicating sufficient power. The depth is shallow, which could be a concern in marine environments. The drift is high, which may impact navigation accuracy. The navigation error is low, suggesting the system is maintaining its position relatively well. The time and position are within expected ranges. The velocity is slightly off, which could indicate minor movement or disturbances in the environment.",
+      "mitigation_strategy": "Monitor the system closely and adjust course if necessary. Ensure that the environment is stable and that there are no unexpected disturbances affecting the system."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to operate within normal parameters, with minor adjustments to course if necessary."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, with minor deviations in current, drift, and velocity. The battery level is high, indicating sufficient power. The depth is shallow, which could be a concern in marine environments. The drift is high, which may impact navigation accuracy. The navigation error is low, suggesting the system is maintaining its position relatively well. The time and position are within expected ranges. The velocity is slightly off, which could indicate minor movement or disturbances in the environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_86e86447",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "1e6d643c5acb9c2b2b971c8ab72bb381e3b5c38f692059adc733bbd444076e5d"
+  },
+  "sha256_proof": "04f5cda73fc4a89852fd40ce66702dd1cf1f9e51f828cf4650c3c4fff87c27ec"
+}

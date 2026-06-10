@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_7649a8cd_marine_gps_denied_7649a8cd_20260315T000053Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:00:53.649330Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7649a8cd_marine_gps_denied_7649a8cd_20260315T000053Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the mission being aborted or the vehicle drifting uncontrollably. The current battery level is high, suggesting that power is not the immediate issue."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical anomaly that must be addressed immediately to prevent mission failure. The vehicle is currently drifting and may not reach the intended waypoint.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may drift away from the intended path and potentially collide with obstacles or other vessels.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vehicle and attempt to return to the last known waypoint or a safe location."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vehicle and attempt to return to the last known waypoint or a safe location."
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate attention. The vehicle's current state is unstable, and action must be taken to prevent further damage or loss of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7649a8cd",
+    "scenario": "gps_denied_autonomous_boat_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "bdf21a605c5e17052a47093e98a4a2db03387764ea552db69e463435c5624f06"
+  },
+  "sha256_proof": "e5c12f13da256c42b777a50d12e3142935b2900b92e0619deaa7c16523986313"
+}

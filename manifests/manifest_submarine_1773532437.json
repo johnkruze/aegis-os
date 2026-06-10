@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_eb8e78ec_marine_gps_denied_eb8e78ec_20260314T235350Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:53:50.544865Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_eb8e78ec_marine_gps_denied_eb8e78ec_20260314T235350Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected movement that could compromise the mission's integrity."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge suggests a potential failure in the navigation system or an external disturbance.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may deviate from its intended course, leading to potential collision with obstacles or loss of mission objectives.",
+      "mitigation_strategy": "Initiate emergency navigation protocol, including manual override of the autopilot and increased monitoring of the environment."
+    },
+    "decision": {
+      "actuator_command": "override_autopilot, increase_manual_control, activate_emergency_navigation",
+      "expected_outcome": "The vessel will be manually controlled to stabilize its position and prevent further deviation from the mission path."
+    },
+    "self_reflection": "The anomaly highlights the importance of robust navigation systems and the need for fallback procedures in critical situations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_eb8e78ec",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "3081bde6cb5c521e50d7c7847e6b85886cf726d1c4926008e5d50d91d259067f"
+  },
+  "sha256_proof": "3f6bf01e7f2fe3439df028063c4dd68c533a847e662ddfc5642046f6f0888210"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_a807dec1_marine_gps_denied_a807dec1_20260316T010030Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:00:30.259174Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a807dec1_marine_gps_denied_a807dec1_20260316T010030Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in the current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery level is high, which suggests that the vessel is still functional but at risk of losing control due to the surge."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift, which could lead to a collision with the seabed or other obstacles. The battery level is high, so immediate power failure is unlikely. However, the drift is increasing, and the vessel may not be able to maintain its position.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose control and collide with the seabed or other obstacles if the current surge continues. The vessel may also be unable to maintain its position and may drift further.",
+      "mitigation_strategy": "Implement a course correction to counteract the current surge and maintain the vessel's position. Monitor the vessel's position and depth to ensure that it does not drift further. If the surge continues, consider implementing a backup power source to maintain control of the vessel."
+    },
+    "decision": {
+      "actuator_command": "course_correction",
+      "expected_outcome": "The vessel will be able to counteract the current surge and maintain its position. The vessel's position and depth will be monitored to ensure that it does not drift further."
+    },
+    "self_reflection": "The current surge is a significant threat to the vessel's control and position. The internal agent has assessed the risk and implemented a course correction to mitigate the threat. The agent will continue to monitor the vessel's position and depth to ensure that it does not drift further."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a807dec1",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "89d24b92868640469134faba7410a3349f0eddeefb14fdfb20c0f5d9e26bb7d0"
+  },
+  "sha256_proof": "3a3b27c83ff7b19a72573ff587810d636b818f8c869051deae514cb9a302925b"
+}

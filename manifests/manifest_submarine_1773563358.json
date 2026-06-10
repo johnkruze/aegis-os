@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_0094e85b_marine_gps_denied_0094e85b_20260315T082910Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:29:10.141466Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0094e85b_marine_gps_denied_0094e85b_20260315T082910Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The battery level is still high, but the current readings suggest a potential issue with the propulsion system or the navigation sensors."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift, which could lead to a collision with other vessels or the ocean floor. The battery level is still high, so there is some time to address the issue before the battery drains.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could lose control and collide with other vessels or the ocean floor if the current surge is not addressed. The battery could also drain if the propulsion system is not fixed soon.",
+      "mitigation_strategy": "Activate the emergency propulsion system to counteract the current surge and stabilize the vessel. Monitor the battery level and ensure it does not drain before the issue is resolved."
+    },
+    "decision": {
+      "actuator_command": "activate_emergency_propulsion_system",
+      "expected_outcome": "The vessel should stabilize and the current surge should be mitigated, allowing for a safer navigation."
+    },
+    "self_reflection": "The current surge is a critical issue that requires immediate attention to ensure the safety of the vessel and the mission. The emergency propulsion system should be activated to stabilize the vessel and prevent any potential collisions or damage to the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0094e85b",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "44280d1b17bd91a9eb0628283ec26545031985380d7777a0f143ab535f005a63"
+  },
+  "sha256_proof": "20531e74c9598aedc0087cdecdaa8ec7c5f8008dc052cbd4a336de96ea090683"
+}

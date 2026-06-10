@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b303ab08_marine_gps_denied_b303ab08_20260315T041516Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:15:16.185695Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b303ab08_marine_gps_denied_b303ab08_20260315T041516Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 579.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with high battery, but current readings indicate a potential issue with the propulsion system. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The high drift and low velocity suggest the vehicle is not moving effectively towards its intended destination. The waypoint is at 0, indicating the start of the mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The negative current readings could indicate a problem with the thrusters or propellers. The high drift suggests the vehicle is not compensating for its own motion effectively. The shallow depth and low velocity suggest the vehicle is not moving towards its intended destination. The waypoint is at 0, indicating the start of the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may not reach its intended destination due to insufficient propulsion and drift issues.",
+      "mitigation_strategy": "Increase propulsion power and adjust navigation algorithms to compensate for drift."
+    },
+    "decision": {
+      "actuator_command": "Increase propulsion power and adjust navigation algorithms",
+      "expected_outcome": "The vehicle should be able to move more effectively towards its intended destination."
+    },
+    "self_reflection": "The system is operating within expected parameters, but there are indications of potential issues with propulsion and navigation. Immediate action is required to ensure the mission is completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b303ab08",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "b9d5301374ae960926c78a6122cef411fb2a3eba4e1956364f104e66a34533aa"
+  },
+  "sha256_proof": "70294b5fc8c8cf68305c3122bf025769ed57150375a63a8243d4ff14bb64d781"
+}

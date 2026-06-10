@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_fcbc3b2d_marine_gps_denied_fcbc3b2d_20260315T042114Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:21:14.503295Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fcbc3b2d_marine_gps_denied_fcbc3b2d_20260315T042114Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 305.42, -113.03, -0.5",
+        "time is 416.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the other indicators suggest a potential issue with the mission's progress."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a navigation error, possibly due to GPS denial or interference. The battery level is high, so power is not an issue. The shallow depth and slow velocity indicate that the mission is not progressing as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission may fail to reach the intended waypoint due to the navigation error. The GPS system may be compromised, leading to further issues.",
+      "mitigation_strategy": "Recheck the GPS system for any signs of interference or damage. If confirmed, attempt to recalibrate the GPS or switch to an alternative navigation method."
+    },
+    "decision": {
+      "actuator_command": "recheck_gps",
+      "expected_outcome": "The GPS system is rechecked for any signs of interference or damage. If confirmed, the GPS is recalibrated or an alternative navigation method is switched to."
+    },
+    "self_reflection": "The mission is experiencing unexpected issues due to high drift and abnormal current readings. The GPS system may be compromised, leading to further issues. The decision to recheck the GPS system is based on the high confidence in the interpretation of the sensor data and the potential impact of the navigation error on the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fcbc3b2d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "5af61c36b1bb774933bee46836a885158b35b8eb36e52e59ac0aa52d7f78c28c"
+  },
+  "sha256_proof": "d14fe34f3b96cc465df23809db4e096fd12f9ea3c9197a18bfcc3438abbbd727"
+}

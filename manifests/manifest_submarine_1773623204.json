@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_d3e43af0_marine_gps_denied_d3e43af0_20260316T010637Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:06:37.697119Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d3e43af0_marine_gps_denied_d3e43af0_20260316T010637Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate a strong current",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position and time data are accurate",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is operating within normal parameters, but the significant drift suggests potential issues with the navigation system or environmental conditions."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The drift could be due to strong currents or inaccuracies in the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could lead to a deviation from the intended course, potentially causing the mission to be delayed or require recalibration.",
+      "mitigation_strategy": "Monitor the drift closely and adjust the navigation parameters if necessary."
+    },
+    "decision": {
+      "actuator_command": "monitor navigation system and adjust parameters if drift exceeds 50 units",
+      "expected_outcome": "Maintain mission integrity by correcting any drift issues."
+    },
+    "self_reflection": "The system is performing well, but the significant drift requires close monitoring to ensure the mission remains on course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d3e43af0",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "cb62c5f09f7fc03070d7f297618ced5d63dfd3b942ee2ad9888fe9b5b192a9da"
+  },
+  "sha256_proof": "d65898322a15d0915ed24443aaeb875ca8f400c4ad3e79038dbf446104ce179e"
+}

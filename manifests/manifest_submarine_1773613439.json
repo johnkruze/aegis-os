@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_359bbccd_marine_gps_denied_359bbccd_20260315T222353Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:23:53.949610Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_359bbccd_marine_gps_denied_359bbccd_20260315T222353Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating potential issues with the navigation system or external forces affecting the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a navigation error or external factors like strong currents or waves. We need to verify the navigation system and adjust course if necessary.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift out of the designated area or collide with obstacles if the issue is not addressed promptly.",
+      "mitigation_strategy": "Verify the navigation system, adjust course if necessary, and monitor the vessel's position closely."
+    },
+    "decision": {
+      "actuator_command": "Verify navigation system and adjust course if necessary",
+      "expected_outcome": "The vessel's position will be confirmed and adjusted to maintain the intended course."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_359bbccd",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "d7401a3af31a031aa463d1a326db2c6e7a7363697ae542aecf889b6a7e3fdfaf"
+  },
+  "sha256_proof": "075026651e2e1e2675ae09799f0ac5b057a485d43d31fcb598be2973f45f986c"
+}

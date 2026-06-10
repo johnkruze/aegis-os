@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b2237664_marine_gps_denied_b2237664_20260316T061317Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:13:17.002344Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b2237664_marine_gps_denied_b2237664_20260316T061317Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is at 1.0",
+        "drift is 45.23 degrees",
+        "navigation error is 0.12",
+        "position is at [-266.27, 59.9, -1.0]",
+        "time is 371.0",
+        "velocity is [0.65, -0.25, 0.4]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight negative current reading and a moderate drift. The navigation error is within acceptable limits, and the battery level is high. The system is at waypoint 0, indicating the start of the mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is functioning normally and within expected parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted. The system is stable and within normal operating parameters.",
+      "mitigation_strategy": "Continue monitoring the system and maintain current course."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "Maintain current course and continue mission."
+    },
+    "self_reflection": "The system is performing as expected. No anomalies detected at this time. Continuing mission as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b2237664",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "72ed866918ce9ddc2021f0d423115ede93d4a14154358bf704a80c60b17b91f1"
+  },
+  "sha256_proof": "9440ea5380b6794bdb58a5fc379f02f9d4c19831049b2f3b8b4f7540bc1637d3"
+}

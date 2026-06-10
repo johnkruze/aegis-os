@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_4732b31e_marine_gps_denied_4732b31e_20260315T131003Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:10:03.983157Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4732b31e_marine_gps_denied_4732b31e_20260315T131003Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current battery level is high, and the drift is within acceptable limits, but the failure of the thrusters is a significant concern."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent the vessel from drifting out of control. The current battery level is sufficient to perform a quick diagnostic and initiate a backup thruster if available.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "Without a functioning thruster, the vessel may drift out of control, potentially leading to a collision with other vessels or the ocean floor.",
+      "mitigation_strategy": "Initiate a backup thruster if available, or perform a manual override to control the vessel using the rudder and propellers if necessary. If no backup thruster is available, prepare for an emergency evacuation."
+    },
+    "decision": {
+      "actuator_command": "INITIATE_BACKUP_THRUSTER",
+      "expected_outcome": "The backup thruster should engage, allowing the vessel to regain control. If the backup thruster is not available, the vessel may drift out of control."
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate attention. The current battery level is sufficient to perform a quick diagnostic and initiate a backup thruster if available. The mission is at risk, and the crew must act quickly to prevent further complications."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4732b31e",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "4c6e87a964360c0cc42c59133e5c0908c6c2f39cd4f5c6d52db7e2f4498a5a8b"
+  },
+  "sha256_proof": "36ac0a9bb4bf7d2d7cf7cedf94580b5cb2bd4edd0bea5c64d84ccd06f5bca10a"
+}

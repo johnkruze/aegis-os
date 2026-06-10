@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_95a37106_marine_gps_denied_95a37106_20260316T030106Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:01:06.921544Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_95a37106_marine_gps_denied_95a37106_20260316T030106Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 91.92, -134.64, -0.67",
+        "time is 526.0",
+        "velocity is slightly negative",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation error. The battery level is high, indicating sufficient power. The depth is shallow, which could be a factor in the inconsistent current readings. The navigation error is low, but the drift is high, indicating that the system is not accurately following the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and high drift suggest a navigation error. The shallow depth could be a factor in this issue. The battery level is high, so power is not a concern. The navigation error is low, but the drift is high, indicating that the system is not accurately following the intended path.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and potentially lose its position, leading to mission failure.",
+      "mitigation_strategy": "Increase the frequency of navigation checks and adjust the course to correct the drift. Monitor the current readings and adjust the system if necessary."
+    },
+    "decision": {
+      "actuator_command": "Adjust course to correct drift",
+      "expected_outcome": "The system should be able to correct the drift and maintain its position more accurately."
+    },
+    "self_reflection": "The system is experiencing inconsistent current readings and high drift, which suggests a potential navigation error. The battery level is high, so power is not a concern. The navigation error is low, but the drift is high, indicating that the system is not accurately following the intended path. The system should be able to correct the drift and maintain its position more accurately."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_95a37106",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "d988a53ee757cc40a0279348134d879d0f64be45005c8ffa6622694073ff6705"
+  },
+  "sha256_proof": "9415d6ebe71c0b48a9515cdbb03ff0f087bbbb2c9e6ba7441ab9fd2453bba4f8"
+}

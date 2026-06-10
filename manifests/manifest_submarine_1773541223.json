@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_1e806251_marine_gps_denied_1e806251_20260315T022015Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:20:15.585807Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1e806251_marine_gps_denied_1e806251_20260315T022015Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position is at waypoint 0",
+        "velocity is zero"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight inconsistency in current readings. The battery level is high, indicating sufficient power. The depth and drift are within expected parameters, and the navigation error is low, suggesting accurate positioning. The system is at waypoint 0 with zero velocity, indicating it is stationary or at a stop."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly inconsistent, but within normal operational parameters. The system appears to be stable and at a waypoint. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted. The system is stable and within operational parameters.",
+      "mitigation_strategy": "Continue monitoring current readings and system performance."
+    },
+    "decision": {
+      "actuator_command": "none",
+      "expected_outcome": "System continues to monitor and maintain current state."
+    },
+    "self_reflection": "The system is stable and within expected parameters. No immediate action is required. The current readings are slightly inconsistent, but within normal operational parameters. The system is at waypoint 0 with zero velocity, indicating it is stationary or at a stop."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1e806251",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "0ebabb9216a613eeeb593cda820b71c711e2474ca0f23b95f914443ba45e24c8"
+  },
+  "sha256_proof": "cb9484d3f1e26b74469f20f7cf6f1d693d1aa1e7315782fdb5df646a193747cb"
+}

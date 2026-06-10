@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_58a7069f_marine_gps_denied_58a7069f_20260315T222612Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:26:12.528984Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_58a7069f_marine_gps_denied_58a7069f_20260315T222612Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is 93.2%",
+        "current readings are [-0.08, 2.03, -0.01]",
+        "depth is 0.5 meters",
+        "drift is 35.39 meters",
+        "navigation error is 0.01 meters",
+        "position is [244.76, 357.16, -0.5]",
+        "time is 359.0",
+        "velocity is [-0.19, 0.9, -0.0]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is healthy, the current readings are within expected ranges, and the depth is stable. However, there is a slight drift and navigation error, which may impact the accuracy of the position and waypoint tracking."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The battery level is sufficient for the current operation. The slight drift and navigation error are within acceptable limits for the current conditions.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The slight drift and navigation error may cause a minor deviation from the intended waypoint, but the system is designed to handle such deviations.",
+      "mitigation_strategy": "Continue monitoring the system and adjust the waypoints if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue current operation",
+      "expected_outcome": "The system will continue to operate within normal parameters, maintaining the current waypoint and adjusting for any minor drift or navigation errors."
+    },
+    "self_reflection": "The system is performing as expected with no critical anomalies detected. The slight drift and navigation error are within acceptable limits and do not require immediate intervention."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_58a7069f",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 6.8,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "d768db92fafa60aefb26cf99adc0f52282d1617d642035d87d135948c0cbbae5"
+  },
+  "sha256_proof": "9b1876ab72d905ba2794f563cd2b6a854145baf8d91f13c2441d778c2c925305"
+}

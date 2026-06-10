@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_816bf3d4_marine_gps_denied_816bf3d4_20260315T080141Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:01:41.124083Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_816bf3d4_marine_gps_denied_816bf3d4_20260315T080141Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 417.01 units",
+        "time is 317.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and an off-position, which could indicate a navigation error or a malfunction in the positioning system. The current readings are abnormal, which could be due to a sensor failure or interference. The battery level is high, which suggests that the system has sufficient power to continue operation."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and off-position suggest a navigation error. The abnormal current readings could be due to sensor failure or interference. The battery level is high, so power is not an issue. The system should be able to recover from this error if the navigation system is functioning correctly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could continue to drift and become more off-position over time, potentially leading to a mission failure if not corrected.",
+      "mitigation_strategy": "Perform a system reset and reinitialize the navigation system. If the issue persists, investigate the current readings for sensor failure or interference."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The system should recover from the navigation error and return to the correct position."
+    },
+    "self_reflection": "The system is experiencing high drift and an off-position, which could indicate a navigation error or a malfunction in the positioning system. The current readings are abnormal, which could be due to a sensor failure or interference. The battery level is high, so power is not an issue. The system should be able to recover from this error if the navigation system is functioning correctly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_816bf3d4",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "9f5cbd8935007a9bc9deb460bfbb6ef8e193cdf5a3d4f6302506857a4dcc23b7"
+  },
+  "sha256_proof": "6f6c14a139fd7906bc30b280d3b6879154528bc3cea02283cdc49feae7663839"
+}

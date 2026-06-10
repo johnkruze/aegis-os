@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_eb9aaf3b_marine_gps_denied_eb9aaf3b_20260315T193652Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:36:52.322973Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_eb9aaf3b_marine_gps_denied_eb9aaf3b_20260315T193652Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak has been detected, which could compromise the vessel's integrity and safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking.",
+      "mitigation_strategy": "Activate emergency leak containment protocols and initiate a distress signal."
+    },
+    "decision": {
+      "actuator_command": "ACTIVATE_EMERGENCY_LEAK_CONTAINMENT; INITIATE_DISTRESS_SIGNAL",
+      "expected_outcome": "The leak is contained and a distress signal is sent to rescue services."
+    },
+    "self_reflection": "The detection of a surface leak is a critical anomaly that requires immediate attention to prevent potential catastrophic failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_eb9aaf3b",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": true,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "332d2614dcdbcc29f1d2f9109923a7e76d86af4bfe0e466a61665e294b82bb2f"
+  },
+  "sha256_proof": "ffbe651a77c171e5dae4e2d856398782ee9d443d14700d05951b7f33454469f7"
+}

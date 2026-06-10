@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_f6090760_marine_gps_denied_f6090760_20260315T200206Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:02:06.833560Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f6090760_marine_gps_denied_f6090760_20260315T200206Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within safe range",
+        "drift within acceptable limits",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is experiencing low battery levels and some anomalies in the current readings. Despite these issues, the depth and drift are within acceptable limits, and the navigation error is minimal. The mission is currently at waypoint 0."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "Battery is critical, need to conserve power.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Current anomalies could indicate a problem with the sensors.",
+        "confidence": 0.7,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Navigation error is small, mission can continue.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "Battery depletion could lead to mission termination. Sensor anomalies could result in inaccurate navigation.",
+      "mitigation_strategy": "Reduce power consumption, investigate sensor anomalies, monitor navigation error closely."
+    },
+    "decision": {
+      "actuator_command": "reduce_power",
+      "expected_outcome": "Battery life extended, system stability maintained."
+    },
+    "self_reflection": "The system is operating within safe parameters but requires immediate attention to battery levels and sensor anomalies to ensure mission continuity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f6090760",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "8fcccf2ad8bb78f4a1789caefc048016bd383ab1a3b1eab3f7d05fbd280a2f97"
+  },
+  "sha256_proof": "377ae4be6848eb888a09a0d213bb6fad009f6853e4c146c69b04f53a3c3055ac"
+}

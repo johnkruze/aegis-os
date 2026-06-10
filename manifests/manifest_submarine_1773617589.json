@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_943c7b90_marine_gps_denied_943c7b90_20260315T233256Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:32:56.352880Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_943c7b90_marine_gps_denied_943c7b90_20260315T233256Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "pitch and roll angles are extreme",
+        "time is 422.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and extreme pitch and roll angles, which suggest a potential failure in the navigation system. The current readings are also abnormal, indicating a possible issue with the sensors. Despite the high battery level and low navigation error, the drift and pitch/roll angles are concerning and could lead to mission failure if not addressed."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The extreme pitch and roll angles indicate a potential failure in the navigation system. The current readings are also abnormal, suggesting a possible issue with the sensors. The drift is high, which could lead to mission failure if not addressed. The battery level is high, so power is not a concern. The navigation error is low, so the system is not entirely off course. The velocity is low, which could be due to the drift or the system being stationary. The waypoint is at 0, which suggests that the system is not at the intended destination. The time is 422.0, which is not a concern. The system is in a critical state and requires immediate attention.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system could fail due to the extreme pitch and roll angles, which could cause the vehicle to collide with the ocean floor or other obstacles. The current readings could also indicate a failure in the sensors, which could lead to inaccurate navigation and further failure.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the sensors. If the issue persists, perform a manual override to bring the vehicle to a safe location. If the system reset and recalibration do not resolve the issue, perform a full system check to identify the root cause of the failure."
+    },
+    "decision": {
+      "actuator_command": "system_reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the sensors, which should resolve the issue and allow the vehicle to continue on its mission."
+    },
+    "self_reflection": "The system is in a critical state and requires immediate attention. The extreme pitch and roll angles indicate a potential failure in the navigation system, and the current readings suggest a possible issue with the sensors. The drift is high, which could lead to mission failure if not addressed. The battery level is high, so power is not a concern. The navigation error is low, so the system is not entirely off course. The velocity is low, which could be due to the drift or the system being stationary. The waypoint is at 0, which suggests that the system is not at the intended destination. The time is 422.0, which is not a concern. The system is in a critical state and requires immediate attention."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_943c7b90",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "8156dbbe5671248d8845b741d31907873acf180b04d7aec5ac2948a741f061c2"
+  },
+  "sha256_proof": "ccb7ddbbf510bbbf31ffcb14f8ee0ca966b6464b1dd9af9620423c11798b4fdf"
+}

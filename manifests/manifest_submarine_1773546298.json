@@ -1,0 +1,50 @@
+{
+  "mission_id": "marine_gps_denied_d2af0b1b_marine_gps_denied_d2af0b1b_20260315T034451Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:44:51.294300Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d2af0b1b_marine_gps_denied_d2af0b1b_20260315T034451Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are inconsistent, suggesting a possible fault in the current sensors. The drift and small navigation error indicate that the system is not maintaining its position accurately."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The inconsistent current readings and drift suggest a potential hardware fault that needs to be diagnosed and fixed. The small navigation error is manageable but should be monitored closely.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery or hardware fault, potentially leading to mission termination.",
+      "mitigation_strategy": "Immediately recharge the battery and perform a hardware diagnostic to identify and fix the current sensor issue."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, perform_hardware_diagnostic",
+      "expected_outcome": "Battery recharged and hardware issue identified and fixed, allowing the system to continue operation."
+    },
+    "self_reflection": "The system is in a critical state due to low battery and inconsistent current readings. Immediate action is required to prevent mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d2af0b1b",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "1003f0645109d73e51f92d76f7e98d346e3d739304bfb149fd96a2535ac3efd8"
+  },
+  "sha256_proof": "c7f75d535d88ea861befe256edea1eee6c6d6ab585bf886c73dbda9bdec9fc64"
+}

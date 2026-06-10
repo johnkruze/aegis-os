@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_6801bb8d_marine_gps_denied_6801bb8d_20260316T005944Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:59:44.208057Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6801bb8d_marine_gps_denied_6801bb8d_20260316T005944Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with the seabed or another object, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid the surge."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid the surge, potentially saving the mission."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a decisive action was taken to mitigate the risk. The mission is now at a critical juncture, and further monitoring is essential."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6801bb8d",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.3,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "4e336f6a686dc78dff675521256e4a17dd7563456f7e98803501f24ae6d26e54"
+  },
+  "sha256_proof": "0a7356be3ca84eb33484a5678acdae5b77cfb2f50f68a32cdbc6b2aac770c6f2"
+}

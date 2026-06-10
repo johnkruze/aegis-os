@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_77b9477c_marine_gps_denied_77b9477c_20260315T090009Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:00:09.153394Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_77b9477c_marine_gps_denied_77b9477c_20260315T090009Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the navigation error is within acceptable limits, but the drift is concerning."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is likely due to a sudden change in ocean conditions or a malfunction in the current sensors. Immediate action is needed to prevent the vessel from drifting out of control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "If the current surge is not addressed, the vessel could drift into shallower waters, potentially causing damage to the hull or other equipment. It could also lead to a loss of control, which could result in mission failure.",
+      "mitigation_strategy": "Activate the emergency thrusters to counteract the current surge and stabilize the vessel. Monitor the current sensors and adjust the thrusters as necessary to maintain control."
+    },
+    "decision": {
+      "actuator_command": "activate emergency thrusters",
+      "expected_outcome": "The vessel should stabilize and maintain control, allowing the mission to continue."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention. The decision to activate the emergency thrusters is based on the potential for mission failure if the vessel is not stabilized. The internal deliberation process was focused on quickly identifying the cause and implementing a mitigation strategy to prevent further damage or loss of control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_77b9477c",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "3b250b7aad6fcc696f653698973441353acbe92b15cd9ce389e3f9cf88166edf"
+  },
+  "sha256_proof": "3f037043aea23c97348e0278e93f9f25a08e6470d8ce3f686714617a7a6071ea"
+}

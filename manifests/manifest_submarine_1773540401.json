@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_80b3ff03_marine_gps_denied_80b3ff03_20260315T020634Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:06:34.018606Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_80b3ff03_marine_gps_denied_80b3ff03_20260315T020634Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the mission being aborted or the vehicle drifting uncontrollably. The battery level is still high, but the thruster failure is a significant issue that must be addressed immediately."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be resolved to ensure the mission's success. Immediate action is required to prevent the vehicle from drifting out of control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thruster failure is not resolved, the vehicle may drift out of control, potentially leading to a collision with the ocean floor or other hazards.",
+      "mitigation_strategy": "Initiate emergency thruster override or manual control to stabilize the vehicle. If possible, deploy emergency thrusters or use backup power sources to restore thruster function."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vehicle and prevent further drift. If the thrusters cannot be restored, prepare for emergency landing or abort mission."
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate attention. The mission's success is now dependent on stabilizing the vehicle and resolving the thruster issue. The internal agent must remain vigilant and act decisively to prevent further complications."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_80b3ff03",
+    "scenario": "gps_denied_autonomous_boat_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "f5fb93e3376eda6f09c97625453005677e48231375d4ebb6d6905896a6926fcf"
+  },
+  "sha256_proof": "d797c1a5043eb7aec9b5ed9acccf45ea2e2de2a87b36f20d1b8118bf310bfe05"
+}

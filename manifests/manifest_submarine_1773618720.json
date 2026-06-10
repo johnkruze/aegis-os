@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_a33c6ad8_marine_gps_denied_a33c6ad8_20260315T235151Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:51:51.381354Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a33c6ad8_marine_gps_denied_a33c6ad8_20260315T235151Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slightly off",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The battery level is high, which suggests sufficient power for continued operation. The shallow depth and low navigation error indicate that the system is likely in a controlled environment. The slight drift and velocity discrepancies suggest minor issues that could be addressed to maintain precise navigation."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and inconsistent current readings could be due to external factors such as water currents or magnetic interference. The slight velocity and position discrepancies are within acceptable limits for the current mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to operate within normal parameters, but the drift could accumulate over time, potentially leading to a significant deviation from the intended course.",
+      "mitigation_strategy": "Monitor the system closely and adjust the course if necessary to compensate for the drift. Ensure that the system is not exposed to potential sources of magnetic interference."
+    },
+    "decision": {
+      "actuator_command": "continue mission with minor adjustments",
+      "expected_outcome": "The system will continue to operate within normal parameters, and any drift will be monitored and corrected as needed."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, with only minor issues that are within acceptable limits for the current mission. The high drift and inconsistent current readings suggest that the system may be exposed to external factors that could impact navigation. The slight velocity and position discrepancies are within acceptable limits for the current mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a33c6ad8",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "241c85a8297fa40868afe04ed643205312703f43d9a9c09c0876350becb5b839"
+  },
+  "sha256_proof": "5b05308f7a07b3fc5deb0b02cf79719bacffb217e4e1bb45e38f44a8c2d571aa"
+}

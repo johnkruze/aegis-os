@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_6c71c39e_marine_gps_denied_6c71c39e_20260315T032052Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:20:52.018044Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6c71c39e_marine_gps_denied_6c71c39e_20260315T032052Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak has been detected, which could compromise the vessel's integrity and safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The leak could lead to a loss of pressure, causing the vessel to sink or lose control.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying emergency ballast tanks, and initiating a distress call."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, DEPLOY_EMERGENCY_BALLAST_TANKS, INITIATE_DISTRESS_CALL",
+      "expected_outcome": "The vessel will attempt to stabilize and initiate a distress signal to nearby vessels or authorities."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate attention to prevent potential catastrophic failure. The decision to activate emergency protocols is based on the high risk level and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6c71c39e",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": true,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "043198af81a5338532e0f0ba21ebef86f96e3567f83cacd7f29da3484fc36d0c"
+  },
+  "sha256_proof": "4b7cd3ca80076b8402acfcfe0af42b4b886f65710ad3ff069672ed296c852db1"
+}

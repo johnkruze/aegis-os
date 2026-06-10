@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_dafaa417_marine_gps_denied_dafaa417_20260315T143115Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:31:15.726645Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_dafaa417_marine_gps_denied_dafaa417_20260315T143115Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and minimal velocity suggest that the vehicle is likely in a calm or stationary environment. The slight position error and minimal velocity indicate that the vehicle is not actively engaged in navigation or exploration."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest the vehicle is in a stationary or slow-moving environment. The drift could be due to wind or water currents. The slight position error could be due to minor sensor drift or calibration issues.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may continue to drift slightly or experience minor sensor drift over time.",
+      "mitigation_strategy": "Monitor the drift and position error closely. If drift becomes significant, adjust the vehicle's orientation or use external reference points to correct the position."
+    },
+    "decision": {
+      "actuator_command": "monitor",
+      "expected_outcome": "Continue monitoring the vehicle's position and orientation to ensure it remains within acceptable limits."
+    },
+    "self_reflection": "The system appears to be operating within normal parameters, with only minor issues that are likely due to environmental factors or minor sensor drift. The decision to monitor the vehicle's position and orientation is based on the low risk level and the potential for minor adjustments to maintain the vehicle's stability."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_dafaa417",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "8bb85afb90ed4a6ed32bfaf4a79c8d6ba16abd7ec61ce08973dc0b630d3ddfc5"
+  },
+  "sha256_proof": "f05171459ddce5570612bf2b2c8ae2f519b2b352f1e2b6f2b85cea36d91f4f70"
+}

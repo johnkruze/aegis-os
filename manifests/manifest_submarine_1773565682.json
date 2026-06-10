@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_975b44b0_marine_gps_denied_975b44b0_20260315T090755Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:07:55.034611Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_975b44b0_marine_gps_denied_975b44b0_20260315T090755Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 81.96, -152.46, -0.5",
+        "time is 456.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation error. The battery level is high, so power is not an immediate concern. The shallow depth and low navigation error suggest the system is not in a critical location. The slow velocity and low waypoint suggest the system is not actively engaged in a mission."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and inconsistent current readings suggest a navigation error. The system should be recalibrated to correct this issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and lose accuracy over time if not corrected.",
+      "mitigation_strategy": "Recalibrate the navigation system and adjust the current readings."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_navigation_system",
+      "expected_outcome": "The system should correct the drift and improve navigation accuracy."
+    },
+    "self_reflection": "The system is experiencing minor navigation issues that could impact mission accuracy. Recalibration is a straightforward solution to mitigate these risks."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_975b44b0",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "2b3ec1c9ed9769e13f1ea7b7a9564456d99d67e1d61cbae726de9026c568631d"
+  },
+  "sha256_proof": "5a17befe4aac83250540e427a6248ba53f4786c7118ed06370c4dcdc49a4b37d"
+}

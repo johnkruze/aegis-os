@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_9c7b54bb_marine_gps_denied_9c7b54bb_20260315T040240Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:02:40.677822Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9c7b54bb_marine_gps_denied_9c7b54bb_20260315T040240Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ANOMALY",
+        "DEPTH_STABLE",
+        "DRIFT_HIGH",
+        "NAV_ERROR_LOW",
+        "POSITION_ESTABLISHED",
+        "TEMPERATURE_NORMAL",
+        "VELOCITY_STABLE",
+        "WAYPOINT_AT_ZERO"
+      ],
+      "interpretation": "The battery level is critically low, indicating imminent failure. The current readings suggest a potential anomaly, possibly due to an electrical fault. Depth and temperature are stable, but drift is high, which could lead to navigation errors. Navigation error is low, but the waypoint is at zero, which is unusual. Velocity is stable, but the drift could cause the mission to fail if not corrected."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low and must be replaced immediately to prevent mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift could cause the mission to fail if not corrected. Navigation error is low, but the waypoint is at zero, which is unusual.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission will likely fail due to the critical battery level and high drift, leading to navigation errors.",
+      "mitigation_strategy": "Replace the battery immediately and correct the drift to ensure mission completion."
+    },
+    "decision": {
+      "actuator_command": "REPLACE_BATTERY",
+      "expected_outcome": "The battery is replaced, and the mission can continue."
+    },
+    "self_reflection": "The mission is critically endangered due to battery degradation and high drift. Immediate action is required to prevent failure. The high drift suggests an electrical fault that must be addressed to ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9c7b54bb",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 41.3,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "316e27c3933f902ed8939786ce6d943faf17ce6c68776ef99d01bd11e66941f1"
+  },
+  "sha256_proof": "3c5695abd853ded67a6162a92ad16fee1dfb83d17cdb5d2baf31aa090a9fab49"
+}

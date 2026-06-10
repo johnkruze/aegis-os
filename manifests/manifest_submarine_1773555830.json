@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_3011fe5f_marine_gps_denied_3011fe5f_20260315T062341Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:23:41.038311Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3011fe5f_marine_gps_denied_3011fe5f_20260315T062341Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within safe limits",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is within normal range",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning normally with high battery, moderate drift, and low error. However, there are abnormal current readings which could indicate a problem with the propulsion system or an external force affecting the vessel."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The abnormal current readings could be due to a malfunctioning propeller or an external force like a strong current or a collision with an object. Given the high battery level and low error, the system is still capable of operation. However, the drift is moderate and could potentially lead to a deviation from the planned route if not addressed. The waypoint is at the start, so there is no immediate need to change the course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The abnormal current readings could cause the vessel to drift off course or lose power, potentially leading to a collision with an object or the loss of control.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the course if necessary. If the current readings persist, investigate the cause and take corrective action."
+    },
+    "decision": {
+      "actuator_command": "Monitor current readings and adjust course if necessary",
+      "expected_outcome": "The vessel will continue to operate within safe parameters and maintain its course if the current readings are not a result of a critical issue."
+    },
+    "self_reflection": "The system is currently operating within normal parameters, but the abnormal current readings require close monitoring. The decision to monitor and adjust the course is based on the low risk level and the system's ability to continue operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3011fe5f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "4f8773ecc2aaf306d5003459602ca2fd349fa20ac570e4c06fd68f36060aa31e"
+  },
+  "sha256_proof": "a7c291e1b06c54c58a6aa541b3ea92e245b3d9b4090c3df12f93f452e9e14c65"
+}

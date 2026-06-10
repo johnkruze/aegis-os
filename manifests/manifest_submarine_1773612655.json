@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_122660ef_marine_gps_denied_122660ef_20260315T221047Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:10:47.052740Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_122660ef_marine_gps_denied_122660ef_20260315T221047Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are slightly off, which could be due to a minor fault or environmental interference. There is a slight drift, which is within acceptable limits. The navigation error is minimal, suggesting the system is still performing adequately. The system is currently at waypoint 0, which is expected."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a concern, but the system is still functional. The current readings and drift are within acceptable limits. The navigation error is minimal. The system is at waypoint 0, which is expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to operate with reduced performance due to the low battery. The current readings and drift are within acceptable limits, so the system is likely to complete the mission without significant issues.",
+      "mitigation_strategy": "Monitor the battery level and current readings closely. If the battery level drops further, consider initiating a manual shutdown to prevent damage. If the current readings continue to be off, investigate the cause and take appropriate action."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate with reduced performance due to the low battery. The current readings and drift are within acceptable limits, so the system is likely to complete the mission without significant issues."
+    },
+    "self_reflection": "The system is still functional, but the low battery is a concern. The current readings and drift are within acceptable limits, so the system is likely to complete the mission without significant issues. The system is at waypoint 0, which is expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_122660ef",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.9,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "cf01019f8b13a18900dd6eb1edc5629db1a794dcef1409e755e930dd413689c8"
+  },
+  "sha256_proof": "439e7066d287aad42e130113c1aa0da75f75efb38a6e549b03a47b23ceccce5a"
+}

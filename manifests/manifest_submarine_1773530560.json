@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_97e0efbb_marine_gps_denied_97e0efbb_20260314T232232Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:22:32.132850Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_97e0efbb_marine_gps_denied_97e0efbb_20260314T232232Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "minor navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing minor issues with battery life, current stability, depth, drift, and navigation. The waypoint has not been reached, indicating a potential failure in the mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is nearly depleted, which could cause the system to shut down unexpectedly. The current readings are inconsistent, which could indicate a problem with the sensors or the environment. The slight depth error and high drift suggest that the system is not accurately tracking its position. The waypoint has not been reached, which is a critical failure in the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may shut down unexpectedly, leading to mission failure. The current readings could be inaccurate, causing further navigation errors. The waypoint not being reached could result in the mission being aborted.",
+      "mitigation_strategy": "Increase battery power, recalibrate sensors, and reposition to correct drift. Ensure the system is in a stable environment to minimize navigation errors."
+    },
+    "decision": {
+      "actuator_command": "recharge battery, recalibrate sensors, correct drift, and reposition to waypoint",
+      "expected_outcome": "The system should be able to recover from the anomalies and complete the mission."
+    },
+    "self_reflection": "The system has encountered several anomalies during the mission. The battery is nearly depleted, and the current readings are inconsistent. The slight depth error and high drift suggest that the system is not accurately tracking its position. The waypoint has not been reached, which is a critical failure in the mission. The system should be able to recover from the anomalies and complete the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_97e0efbb",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "8302d96dc789ff69a32b32d48d6e679b35650c0125a21012604cb71ed959d898"
+  },
+  "sha256_proof": "9e7d5b14c7ac38dc08a60576b559df10fe4c6319532fb1328f6268519b01cbe3"
+}

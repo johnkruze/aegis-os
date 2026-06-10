@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8adb76ec_marine_gps_denied_8adb76ec_20260316T012726Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:27:26.712757Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8adb76ec_marine_gps_denied_8adb76ec_20260316T012726Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The battery level is high, which is good, but the drift and current readings suggest potential issues that need to be addressed to maintain mission integrity."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to sensor malfunction or environmental factors. I need to investigate further to determine the cause.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly could lead to a loss of control or deviation from the mission path if not addressed promptly.",
+      "mitigation_strategy": "Perform a sensor calibration or check for environmental factors that could be causing the anomaly. If the issue persists, initiate a manual override to return to a safe position."
+    },
+    "decision": {
+      "actuator_command": "perform sensor calibration",
+      "expected_outcome": "The anomaly may be resolved by recalibrating the sensors. If the issue persists, a manual override will be necessary."
+    },
+    "self_reflection": "The anomaly detected in the current readings requires immediate attention to ensure the mission's safety and integrity. The decision to perform sensor calibration is based on the potential impact of the anomaly and the available resources."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8adb76ec",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "b0df578e80e2268f1b8a00295197bfd400aec788775fe6aafe2396c0c6e95d59"
+  },
+  "sha256_proof": "c81c32fffd15cb9d676f167d5d1b77e5710d001aaf80560b3bebc8842c15a840"
+}

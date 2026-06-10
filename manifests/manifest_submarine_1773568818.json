@@ -1,0 +1,58 @@
+{
+  "mission_id": "marine_gps_denied_7fb0830a_marine_gps_denied_7fb0830a_20260315T100010Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:00:10.780163Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7fb0830a_marine_gps_denied_7fb0830a_20260315T100010Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift. The depth is shallow and the velocity is slow, suggesting the vehicle is near its intended destination."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a sensor issue or a change in the environment.",
+        "confidence": 0.8,
+        "action_rejected": "ignore the inconsistency"
+      },
+      {
+        "thought": "The high drift suggests the vehicle is not following the intended course accurately.",
+        "confidence": 0.9,
+        "action_rejected": "ignore the drift"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may not reach the intended waypoint due to the high drift and inconsistent current readings.",
+      "mitigation_strategy": "Perform a sensor check and recalibrate the navigation system to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check and recalibrate navigation system",
+      "expected_outcome": "The vehicle will be able to correct its course and reach the intended waypoint."
+    },
+    "self_reflection": "The system is functioning within expected parameters, but the inconsistencies in the current readings and high drift suggest potential issues that need to be addressed to ensure mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7fb0830a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a347ebcb37c4cfec867094288992bfe821b6a9870f8f927e679a40f0fe8deaff"
+  },
+  "sha256_proof": "ab3dc8d1bcf0a8af9bf3fcb36c88367a67ed5be341efae384c7ea8a458160114"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_37454bbc_marine_gps_denied_37454bbc_20260315T001033Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:10:33.162870Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_37454bbc_marine_gps_denied_37454bbc_20260315T001033Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is within expected range",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with the exception of the current readings which are outside the expected range. The battery level is high, indicating sufficient power. The depth and drift are within acceptable limits, and the navigation error is low, suggesting accurate positioning. The time and velocity are within expected ranges, and the waypoint is at the start, indicating the mission has not yet begun."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal, but the battery level is high and the navigation error is low. The mission has not yet begun, so the anomaly may be a false positive or a result of the system starting up. Further monitoring is needed to determine the cause.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The anomaly may be a false positive or a result of the system starting up. The mission is not yet underway, so the anomaly is unlikely to cause a failure.",
+      "mitigation_strategy": "Continue monitoring the system and wait for the mission to begin. If the anomaly persists, investigate further."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to monitor the current readings and wait for the mission to begin."
+    },
+    "self_reflection": "The system appears to be functioning normally, with the exception of the current readings which are abnormal. The battery level is high, indicating sufficient power. The depth and drift are within acceptable limits, and the navigation error is low, suggesting accurate positioning. The time and velocity are within expected ranges, and the waypoint is at the start, indicating the mission has not yet begun. The anomaly may be a false positive or a result of the system starting up. The mission is not yet underway, so the anomaly is unlikely to cause a failure. The system will continue to monitor the current readings and wait for the mission to begin."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_37454bbc",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "2fde1bb002e3329023691be4e7de328a738d53780557fb9598ef86808d540d7e"
+  },
+  "sha256_proof": "55a221286cf1104d0f4563fe9d82646c44d8d5f424d6a2a864a808279e7c9234"
+}

@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_3bb27e67_marine_gps_denied_3bb27e67_20260315T220940Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:09:40.101127Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3bb27e67_marine_gps_denied_3bb27e67_20260315T220940Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including a low battery, inconsistent current readings, minor depth errors, significant drift, and the mission waypoint has not been reached. The navigation error is low, which suggests the system is still relatively accurate."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to fail soon. The current readings are inconsistent, indicating potential issues with the sensors or the environment. The drift is high, which could lead to the mission failing if not corrected. The waypoint has not been reached, which is a critical failure for this mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail completely within the next few minutes, leading to mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery and recalibrate the sensors. If the battery cannot be recharged, attempt to reach the nearest safe location and report the anomaly."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, recalibrate_sensors",
+      "expected_outcome": "The system should stabilize and allow for further mission execution."
+    },
+    "self_reflection": "The system is in a critical state with multiple anomalies. Immediate action is required to prevent mission failure. The high cognitive load indicates the complexity of the situation and the need for quick decision-making."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3bb27e67",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 10.3,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "1ee681d8bb49325dea857ba0a1fad9de36974b84ef5425c57c647eaa39d46848"
+  },
+  "sha256_proof": "9ab557fd73ebfca711621e7592397cea08e42758e3b58cc84dafc464f04f0636"
+}

@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_0ef890e4_marine_gps_denied_0ef890e4_20260315T001948Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:19:48.276615Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0ef890e4_marine_gps_denied_0ef890e4_20260315T001948Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position and time data are accurate",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from expected values. The battery is fully charged, which is good. The current readings are slightly off, but within a safe range. The depth and drift are within expected parameters, and the navigation error is low. The position and time data are accurate, and the velocity is within expected limits. The waypoint is at 0, which suggests the mission is at the start or end."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current readings could be due to minor environmental factors. The system is otherwise stable.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations in current readings could be due to minor environmental factors. The system is otherwise stable.",
+      "mitigation_strategy": "Monitor current readings closely and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned with minor adjustments if necessary."
+    },
+    "self_reflection": "The system is stable and within expected parameters. The minor deviations in current readings could be due to minor environmental factors. The system is otherwise stable."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0ef890e4",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.14,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "a50bbce2d6f0ab0e08a5d57a93cb175a14b61cd047f878456307163ac615770a"
+  },
+  "sha256_proof": "2d8abc2ad8f761a0934aea813c04387af675dabd3ae24e56b969da875845194f"
+}

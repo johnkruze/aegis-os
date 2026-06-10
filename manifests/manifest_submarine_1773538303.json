@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ac4cdfbe_marine_gps_denied_ac4cdfbe_20260315T013135Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:31:35.851149Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ac4cdfbe_marine_gps_denied_ac4cdfbe_20260315T013135Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with high battery, low navigation error, and accurate position. However, the current readings are unusual and may indicate a potential issue with the propulsion system."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a problem with the propulsion system, which could lead to mission failure if not addressed. However, the battery level is high and the navigation error is low, which suggests the system is still capable of maintaining its position.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The propulsion system may fail, causing the vehicle to drift or lose control.",
+      "mitigation_strategy": "Perform a system check to identify the cause of the unusual current readings and address the issue before proceeding."
+    },
+    "decision": {
+      "actuator_command": "perform system check",
+      "expected_outcome": "Identify and resolve the issue with the propulsion system, allowing the mission to continue."
+    },
+    "self_reflection": "The system is currently stable, but the unusual current readings indicate a potential issue that could compromise the mission. A system check is necessary to ensure the safety and success of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ac4cdfbe",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "e9779b9f9caa2751aaa49f1d1507a70c4520a58af73607345bc689aeac4ad6ca"
+  },
+  "sha256_proof": "6bc57107a14d983e693c2ac22fe030b5877d5d0650897913c77cc78daa431107"
+}

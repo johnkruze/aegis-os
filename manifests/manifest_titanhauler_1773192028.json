@@ -1,0 +1,48 @@
+{
+  "mission_id": "TH_OP_77",
+  "environment": "Terran Resource Extraction - Sand Sector",
+  "timestamp": "2026-03-11T01:20:17.834946Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TH_OP_77_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive track slip detected",
+        "Soil yielding beneath left tread",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The vehicle has experienced significant track slip on the left side, indicating severe soil compaction and instability. The cloud link has been severed, isolating the vehicle from external communications. The Aegis Dark Window has been engaged, further reducing the vehicle's ability to receive or transmit information."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with severe track slip and soil compaction. Communication with the mission control is lost, and the Aegis Dark Window is engaged, limiting our ability to respond. Immediate action is required to prevent further damage and ensure the safety of the vehicle and crew.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle could become stuck or overturned due to the severe track slip and soil compaction. Communication with mission control is lost, making it difficult to receive further instructions or support.",
+      "mitigation_strategy": "Initiate emergency stabilization procedures to reduce track slip and prevent further soil compaction. Use available sensors to assess the vehicle's stability and position. Attempt to re-establish communication with mission control if possible."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency stabilization protocols; engage all available sensors for assessment; attempt re-establishment of communication with mission control",
+      "expected_outcome": "Stabilize the vehicle to prevent further damage and assess the situation. If communication is re-established, follow mission control's instructions. If not, proceed with local emergency procedures."
+    },
+    "self_reflection": "The event highlights the importance of robust emergency protocols and the need for continuous monitoring of vehicle stability and communication systems. The Aegis Dark Window has limited our ability to respond effectively, emphasizing the need for alternative communication methods in future operations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "titanhauler_4ed83a94_clay",
+    "scenario": "clay_titanhauler",
+    "score": {
+      "compaction": 0.0,
+      "mission_success": true,
+      "pressure_yield_ratio": 0.83
+    },
+    "physics_proof": "a60fbfb2745fbee9b89a2be7480568cee50b40a37730aed8033df30c4709c831"
+  },
+  "sha256_proof": "e7e16c183f7e02d4b0606f5bf4c84a62a298eae114ec5b7c592bc8fbdc648205"
+}

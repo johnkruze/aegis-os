@@ -1,0 +1,18 @@
+{
+  "compute_time_ms": 0,
+  "domain": "Terran",
+  "final_state": {
+    "v_x": 0.0005079999986622764,
+    "v_y": 0.0,
+    "v_z": -588.6000000003926,
+    "x": 65.63849074391956,
+    "y": 0.0,
+    "z": -17558.294300003483
+  },
+  "integration_frequency": "1000Hz",
+  "recovery_time_s": 60.0,
+  "sovereignty_seal": "c83179d2d7a91a72e5949d5a878e683ef9fc45ffd0d01128847588ec57a1bfef",
+  "status": "OUROBOROS_RECOVERY_COMPLETE",
+  "mission_id": "ouroboros_terran_mission_theta_pilot_strike_terran_01_20260610T025627Z",
+  "anomaly_desc": "Total sensor blackout encountered in terran theater. Engaging dead-reckoning protocols."
+}

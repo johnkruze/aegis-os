@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_a692e66d_marine_gps_denied_a692e66d_20260314T223850Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:38:50.233552Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a692e66d_marine_gps_denied_a692e66d_20260314T223850Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings are unusual, with two negative values and one positive value, which could indicate a problem with the current sensors or the system's power distribution. There is a slight drift in the navigation, which is within acceptable limits, but the small navigation error suggests that the system is not perfectly aligned with the intended path. Overall, the system appears to be functioning but with some concerning trends."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The unusual current readings could be due to a faulty sensor or a power distribution issue, which could affect the system's performance.",
+        "confidence": 0.7,
+        "action_rejected": "check current sensors and power distribution"
+      },
+      {
+        "thought": "The slight drift and small navigation error suggest that the system is not perfectly aligned, which could lead to mission failure if not corrected.",
+        "confidence": 0.9,
+        "action_rejected": "adjust the navigation system"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down unexpectedly due to the low battery, leading to mission failure. The unusual current readings could cause a power distribution issue, further affecting the system's performance. The slight drift and small navigation error could lead to mission failure if not corrected.",
+      "mitigation_strategy": "Recharge the battery, check current sensors and power distribution, and adjust the navigation system."
+    },
+    "decision": {
+      "actuator_command": "recharge battery, check current sensors and power distribution, adjust navigation system",
+      "expected_outcome": "The system should be able to continue operating with the battery recharged, the current sensors and power distribution checked, and the navigation system adjusted, allowing the mission to continue."
+    },
+    "self_reflection": "The system is currently operating with some concerning trends, including a low battery, unusual current readings, slight drift, and small navigation error. These issues could potentially lead to mission failure if not addressed. The internal deliberation process has identified potential risks and proposed mitigation strategies to ensure the system's continued operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a692e66d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "309f370710c9ef5ad870ef60833182fe50c2a44676d9ef6c91dd22811adfe5aa"
+  },
+  "sha256_proof": "d1478520a84019055fd9bde32375a4ac3fe48daabbc905f3bfa02ac9293b332a"
+}

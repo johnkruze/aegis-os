@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_76a676c1_marine_gps_denied_76a676c1_20260315T232722Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:27:22.966043Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_76a676c1_marine_gps_denied_76a676c1_20260315T232722Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is expected in marine environments. The temperature is high, which could affect the system's performance. The velocity is slow, which is normal for marine operations. The navigation error is low, but the drift is high, which suggests the system is not accurately following the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to a malfunction in the navigation system or an error in the waypoint data.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The inconsistent current readings could be due to external factors such as ocean currents or a malfunction in the current sensor.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high temperature could affect the system's performance, so it is important to monitor the system's temperature and ensure it stays within safe limits.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could continue to drift and potentially lose its position, leading to mission failure.",
+      "mitigation_strategy": "Perform a system reset and reinitialize the navigation system. Monitor the system's temperature and ensure it stays within safe limits. Verify the waypoint data and correct any errors."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The system will reset and reinitialize the navigation system, which should help to correct the drift and maintain the correct position."
+    },
+    "self_reflection": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is expected in marine environments. The temperature is high, which could affect the system's performance. The velocity is slow, which is normal for marine operations. The navigation error is low, but the drift is high, which suggests the system is not accurately following the intended path."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_76a676c1",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.7,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "6531e17e64edfe941f230966288ee1391dd44fbc2b43c465e22952b8ad00f014"
+  },
+  "sha256_proof": "f30bebfa766c156697963bb5296d214463a957f97f88e94b2f925e40e223a100"
+}

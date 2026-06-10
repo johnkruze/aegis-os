@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0a43ca8f_marine_gps_denied_0a43ca8f_20260315T233818Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:38:18.235367Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0a43ca8f_marine_gps_denied_0a43ca8f_20260315T233818Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The high temperature and low velocity suggest that the system may be operating in a stressful or inefficient manner."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The high temperature and low velocity suggest that the system may be operating in a stressful or inefficient manner.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in a dangerous or unexpected location, and the navigation system may be malfunctioning. The system may be operating in a stressful or inefficient manner.",
+      "mitigation_strategy": "Perform a system check to verify the integrity of the navigation system and the environment. If the system check is successful, continue the mission. If the system check fails, initiate an emergency procedure to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "perform system check",
+      "expected_outcome": "The system check will verify the integrity of the navigation system and the environment. If the system check is successful, the mission can continue. If the system check fails, an emergency procedure will be initiated to return to a safe location."
+    },
+    "self_reflection": "The system is experiencing an anomaly in current readings, which could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The high temperature and low velocity suggest that the system may be operating in a stressful or inefficient manner. The decision to perform a system check is based on the potential risks and the need to ensure the safety and integrity of the system."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0a43ca8f",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "4325bc2da91833362cd0cac1a6831ef671fa581891eb41fb1303736c3374d9e6"
+  },
+  "sha256_proof": "34df7d8237452017779669cafcd0e9eb1529123b89a72849864a5370c61143d1"
+}

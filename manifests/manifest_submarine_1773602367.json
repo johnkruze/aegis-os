@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_27380448_marine_gps_denied_27380448_20260315T191919Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:19:19.025266Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_27380448_marine_gps_denied_27380448_20260315T191919Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "depth at 70.0 meters",
+        "drift of 8.28 meters",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are slightly off, which could be due to a minor fault or environmental factors. The depth and drift are within expected parameters, but the waypoint is at 0, suggesting the mission may not be proceeding as intended."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, potentially ending the mission prematurely. The unusual current readings should be investigated to ensure there are no hardware issues. The waypoint at 0 suggests the mission may be stuck or not advancing as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could be halted due to the low battery or an unexpected fault in the current readings.",
+      "mitigation_strategy": "Monitor the battery level and current readings closely. If the battery drops below a critical threshold, initiate a safe shutdown. If the current readings persistently deviate, perform a system reset or contact support for further assistance."
+    },
+    "decision": {
+      "actuator_command": "monitor_battery, monitor_current, reset_if_needed",
+      "expected_outcome": "The system will continue to monitor the battery and current readings. If necessary, a reset will be initiated to prevent mission failure."
+    },
+    "self_reflection": "The system is experiencing minor anomalies that could impact mission completion. Immediate action is required to ensure the mission can proceed safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_27380448",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "ea0b4407ac8ddcb4dc673da980474b98a983bb8f85e7e2f8313019995d376a9a"
+  },
+  "sha256_proof": "0775409f219d4389cdaea782e2608e4c77a6b9a41f8942849b0765f83f1ec490"
+}

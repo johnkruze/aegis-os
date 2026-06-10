@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_6e42bad5_marine_gps_denied_6e42bad5_20260315T201255Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:12:55.073389Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6e42bad5_marine_gps_denied_6e42bad5_20260315T201255Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the unusual current readings and high drift. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and slight position off indicate the vehicle is not actively engaged in navigation."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings could indicate a magnetic anomaly or interference affecting the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift suggests the vehicle is not following the intended course, which could be due to the magnetic anomaly or a programming error.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and low error indicate the vehicle is close to a known waypoint, which could be a safe point to stop and investigate.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may continue to drift or veer off course due to the magnetic anomaly, potentially leading to a collision with the ocean floor or other obstacles.",
+      "mitigation_strategy": "Perform a manual override to correct the course and investigate the magnetic anomaly. If the anomaly persists, consider recalibrating the navigation system or adjusting the vehicle's course to avoid the area."
+    },
+    "decision": {
+      "actuator_command": "override_course 180 degrees left, speed 0.5",
+      "expected_outcome": "The vehicle should correct its course and slow down to a safe speed, allowing for a more accurate navigation check."
+    },
+    "self_reflection": "The anomaly detected suggests a potential issue with the navigation system, which could impact the mission's success. It is crucial to address this issue promptly to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6e42bad5",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0d6ea479603cbf39e6493082b67d806cc2fec97e03b108c089582746173c9a8a"
+  },
+  "sha256_proof": "fce0f0bbfcc98c718ae91492fc886e0b5df83f8a1ee977b25aa40b23463d9c6d"
+}

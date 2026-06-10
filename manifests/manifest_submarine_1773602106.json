@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_59c385e6_marine_gps_denied_59c385e6_20260315T191458Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:14:58.788971Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_59c385e6_marine_gps_denied_59c385e6_20260315T191458Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the vessel is experiencing some drift. The depth is shallow, and the navigation error is low, indicating the vessel is close to the surface."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vessel is close to the surface, which could complicate the leak repair process. The battery is sufficient for the current operation, but the vessel should be prepared for potential power consumption during the repair.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause significant damage to the vessel if not addressed promptly. The vessel may also be at risk of sinking if the leak is not contained.",
+      "mitigation_strategy": "Initiate emergency procedures to contain the leak and prepare for a potential evacuation if necessary. Notify the command center and request assistance from other vessels or rescue teams."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_LEAK_CONTAINMENT",
+      "expected_outcome": "The leak should be contained, and the vessel should be prepared for potential evacuation if necessary."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical event that requires immediate action. The vessel is close to the surface, which could complicate the repair process. The battery is sufficient for the current operation, but the vessel should be prepared for potential power consumption during the repair."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_59c385e6",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": true,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "355337472f19e8240a9c8851d266f43f02644af9d95d2dfe1ecd63244e9f216b"
+  },
+  "sha256_proof": "2907e6961556fe71f56ec5c723fe7cf7dd606d06e7a4e52e248f5f46a96cff38"
+}

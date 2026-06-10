@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_90e3b972_marine_gps_denied_90e3b972_20260315T124311Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:43:11.168926Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_90e3b972_marine_gps_denied_90e3b972_20260315T124311Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 506.0",
+        "velocity is very low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation issue. Despite the low battery level and low navigation error, the system is not at the designated waypoint and is moving very slowly. The shallow depth and low velocity indicate that the system is likely in a restricted area or experiencing limited mobility."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and high drift suggest a navigation issue that needs to be addressed immediately to prevent the mission from failing.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may fail to reach the next waypoint or become stuck in a restricted area due to the navigation issue.",
+      "mitigation_strategy": "Reorient the system to correct the drift and ensure it reaches the next waypoint. Monitor the system's performance closely to ensure it does not become stuck."
+    },
+    "decision": {
+      "actuator_command": "reorient 10 degrees to the right and increase speed by 0.1 units",
+      "expected_outcome": "The system should be able to correct its drift and move towards the next waypoint."
+    },
+    "self_reflection": "The system is experiencing some anomalies, but with quick action, it should be able to recover and complete the mission. The high cognitive load is due to the need to quickly assess and correct the navigation issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_90e3b972",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.9,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "892217d4e2c05724a4255d86dcef8c7a99679f2dc01dab41acd7b1faf3332d92"
+  },
+  "sha256_proof": "f197c03a4768300a579ec49d18dcab54b109086c74e90f4f25dd4d85171fb01f"
+}

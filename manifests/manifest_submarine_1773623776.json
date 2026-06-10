@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_a1e482ac_marine_gps_denied_a1e482ac_20260316T011609Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:16:09.385573Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a1e482ac_marine_gps_denied_a1e482ac_20260316T011609Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is within safe limits",
+        "drift is significant",
+        "navigation error is minor",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing low battery, significant drift, and minor navigation error. The current readings suggest the vehicle is not on course and may be in a potentially hazardous position."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, must prioritize power management to prevent system failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Drift is significant, must adjust course to maintain mission integrity.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Navigation error is minor, can be corrected with minor adjustments.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "System failure due to low battery, potential collision with obstacles due to drift.",
+      "mitigation_strategy": "Reduce power consumption, adjust course to minimize drift, correct minor navigation error."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, adjust_course, correct_navigation_error",
+      "expected_outcome": "System power is reduced, course is adjusted to minimize drift, navigation error is corrected, mission is maintained."
+    },
+    "self_reflection": "The system is in a critical state with low battery and significant drift. Immediate action is required to prevent system failure and maintain mission integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a1e482ac",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 5.9,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "30915e77a2c4e098ca098f6270b782a71ace03100d4619c8de9a45e261ef73f5"
+  },
+  "sha256_proof": "9a0b7b9f102b857823ee270fe87c3d07ec48c925879cd08c4a71d24af8121c8f"
+}

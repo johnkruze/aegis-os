@@ -1,0 +1,50 @@
+{
+  "mission_id": "marine_gps_denied_7e4b423e_marine_gps_denied_7e4b423e_20260315T145626Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:56:26.777294Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7e4b423e_marine_gps_denied_7e4b423e_20260315T145626Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "drift",
+        "navigation error"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings, significant drift, and a slight navigation error. The current readings suggest a potential issue with the propulsion system, which could be causing the drift. The navigation error indicates that the system is not accurately following the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that needs to be addressed immediately to prevent system failure. The unusual current readings and drift suggest a problem with the propulsion system, which could be causing the drift. The navigation error indicates that the system is not accurately following the intended path.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system could fail completely, leading to a loss of control and potential damage to the vessel.",
+      "mitigation_strategy": "Immediately recharge the battery and investigate the propulsion system for any issues. If the propulsion system is found to be faulty, repair or replace it as soon as possible."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery will be recharged, and the system will be able to continue operating."
+    },
+    "self_reflection": "The system is experiencing multiple critical issues that could lead to a complete failure. Immediate action is required to prevent any potential damage to the vessel and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7e4b423e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 3.6,
+      "mission_success": false,
+      "nav_error_m": 0.15,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "b2633e5defa17fafd65cf754caa207fce3fbcd5ac96bde60200d911327073121"
+  },
+  "sha256_proof": "1424a581e944ac71cf0e4a2e099c6bbbc8e837288e7bbdac2623e692c2379811"
+}

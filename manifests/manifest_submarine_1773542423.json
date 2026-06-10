@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_ac70f513_marine_gps_denied_ac70f513_20260315T024014Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:40:14.950419Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ac70f513_marine_gps_denied_ac70f513_20260315T024014Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and slightly off position indicate the vehicle may be struggling to maintain its intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest the vehicle may be in a strong current or near a strong current source.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The slight drift and off position could be due to the current or an error in the navigation system.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The battery level is high, so power is not a concern.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to maintain its course due to the strong current, leading to a potential collision with obstacles or the loss of control.",
+      "mitigation_strategy": "Increase the frequency of navigation updates and monitor the current readings closely. If the drift persists, consider implementing a course correction maneuver."
+    },
+    "decision": {
+      "actuator_command": "Increase navigation update frequency and monitor current readings",
+      "expected_outcome": "The vehicle will be able to maintain its course and avoid potential collisions with obstacles."
+    },
+    "self_reflection": "The system is performing well within normal parameters, but the significant drift and inconsistent current readings suggest a potential issue that requires attention. The increased frequency of navigation updates and close monitoring of current readings should help mitigate any risks."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ac70f513",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "7aab99148fb844b949dcd4e4cb628cc4d6bbb0be7664a70d2fd9429cdf782542"
+  },
+  "sha256_proof": "cf08592140588dad56ece76b909a3245b7e5d8db9424be075ee68ddee6759b22"
+}

@@ -1,0 +1,63 @@
+{
+  "mission_id": "marine_gps_denied_771af5dd_marine_gps_denied_771af5dd_20260316T044345Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:43:45.585424Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_771af5dd_marine_gps_denied_771af5dd_20260316T044345Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minor",
+        "temperature is high",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings suggest the vehicle is drifting significantly, which could lead to navigation errors. The shallow depth and high temperature are within expected parameters for marine operations. The slow velocity is normal for marine navigation."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is significant, need to correct course.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Navigation error is minor, can be managed.",
+        "confidence": 0.6,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "Battery depletion could cause system failure, drift could lead to navigation errors, and high temperature could affect performance.",
+      "mitigation_strategy": "Reduce power usage, correct course, and monitor temperature."
+    },
+    "decision": {
+      "actuator_command": "Reduce power, correct course, monitor temperature",
+      "expected_outcome": "System power is conserved, course is corrected, and temperature is monitored to prevent further issues."
+    },
+    "self_reflection": "The system is operating within expected parameters but requires immediate attention to conserve power and correct course to avoid potential navigation errors."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_771af5dd",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 5.2,
+      "mission_success": false,
+      "nav_error_m": 0.14,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "d3147111604d9bc0127ffb7a691dd28e30db935f717f8bfd1cc084f3add6da1b"
+  },
+  "sha256_proof": "525c32f270220caebabf4e7d145e1b2a7e011831e423a513393e1ace9ee45589"
+}

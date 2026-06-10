@@ -1,0 +1,72 @@
+{
+  "mission_id": "marine_gps_denied_e562699c_marine_gps_denied_e562699c_20260315T203315Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:33:15.117538Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e562699c_marine_gps_denied_e562699c_20260315T203315Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, slight depth error, high drift, and low navigation error. The waypoint has not been reached, indicating a potential mission failure."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery is critical, need to conserve power and prioritize safety.",
+        "confidence": 0.9,
+        "action_rejected": "continue mission"
+      },
+      {
+        "thought": "Current readings are unstable, possibly due to environmental factors.",
+        "confidence": 0.8,
+        "action_rejected": "ignore"
+      },
+      {
+        "thought": "Depth error is minor, but should be monitored.",
+        "confidence": 0.7,
+        "action_rejected": "ignore"
+      },
+      {
+        "thought": "High drift indicates potential loss of control.",
+        "confidence": 0.9,
+        "action_rejected": "ignore"
+      },
+      {
+        "thought": "Navigation error is low, but waypoint not reached.",
+        "confidence": 0.6,
+        "action_rejected": "ignore"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "Possible loss of control and mission failure due to low battery and high drift.",
+      "mitigation_strategy": "Initiate emergency power conservation and attempt to reach the nearest safe waypoint or return to base."
+    },
+    "decision": {
+      "actuator_command": "halt mission, conserve power, initiate emergency protocol",
+      "expected_outcome": "System will halt, conserve power, and initiate emergency protocol to ensure safety."
+    },
+    "self_reflection": "The system has detected critical anomalies that could lead to mission failure. Immediate action is required to ensure the safety of the system and crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e562699c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "20bc2b9b4efb663c372976a22a34c2e9214681ae505c66204c86afe31c75b116"
+  },
+  "sha256_proof": "83740326559226a364ccb9569b01835e73f8e0a06cf33974c396e41493029fe9"
+}

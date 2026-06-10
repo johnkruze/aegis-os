@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_dac0e2de_marine_gps_denied_dac0e2de_20260315T011408Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:14:08.807397Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_dac0e2de_marine_gps_denied_dac0e2de_20260315T011408Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The battery level is still high, but the drift and navigation error are concerning."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a drift of 15.61 meters, which is outside the safe operational range. The navigation error is also increasing, which could lead to a collision with the seabed or other obstacles.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could lose control, collide with the seabed, or drift off course, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking to reduce drift and stabilize the vessel. Monitor the navigation error and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking",
+      "expected_outcome": "Reduce drift and stabilize the vessel to prevent collision and maintain control."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety of the mission. The emergency braking command is a necessary action to mitigate the risk of collision and maintain control of the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_dac0e2de",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "1f78dbee05c9479ad9f2709aed572aa47538a16ed1993398f9f17aab4c2187d8"
+  },
+  "sha256_proof": "be41f525d986f42dd957707ea51558edc402d8309df10918fcba89f083ff8fff"
+}

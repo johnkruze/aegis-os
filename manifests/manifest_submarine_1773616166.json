@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_1c727ab1_marine_gps_denied_1c727ab1_20260315T230920Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:09:20.423043Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1c727ab1_marine_gps_denied_1c727ab1_20260315T230920Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings inconsistent",
+        "depth within expected range",
+        "drift within acceptable limits",
+        "navigation error low",
+        "position and time data accurate",
+        "velocity within expected range",
+        "waypoint at zero"
+      ],
+      "interpretation": "The system is experiencing low battery, inconsistent current readings, and a waypoint at zero, which suggests the mission may be incomplete or paused."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, must recharge or replace battery to continue mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "Mission may fail to complete due to insufficient battery power.",
+      "mitigation_strategy": "Recharge or replace battery immediately."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "Battery recharged, mission can continue."
+    },
+    "self_reflection": "The system detected a critical anomaly due to low battery power. Immediate action is required to prevent mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1c727ab1",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 5.9,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "2a4b326a8584bbc4940e5c8d4976bd608c02493f417f74df767aa45f245965f3"
+  },
+  "sha256_proof": "34541417b667865ebd678f7ece1ee16a910917213e095d4c81ac1a1c7500e263"
+}

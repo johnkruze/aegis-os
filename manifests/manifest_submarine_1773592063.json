@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_28cf7924_marine_gps_denied_28cf7924_20260315T162730Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:27:30.652194Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_28cf7924_marine_gps_denied_28cf7924_20260315T162730Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within safe limits",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within mission window",
+        "velocity is low",
+        "waypoint is at start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the navigation system or the environment. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is within safe limits, and the navigation error is low, indicating that the system is still on course. The drift is high, which could be due to external factors or a malfunction in the navigation system. The velocity is low, which suggests that the system is moving slowly or is stationary. The waypoint is at the start, which suggests that the mission has not yet begun."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a problem with the navigation system or the environment. The drift is high, which could be due to external factors or a malfunction in the navigation system. The velocity is low, which suggests that the system is moving slowly or is stationary. The waypoint is at the start, which suggests that the mission has not yet begun.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could be experiencing a navigation error or a problem with the environment, which could cause the mission to fail. The drift could also be due to external factors, which could cause the system to move off course.",
+      "mitigation_strategy": "Perform a system check to verify the integrity of the navigation system and the environment. If the system check is successful, continue the mission. If the system check fails, investigate the cause of the problem and take appropriate action to fix it."
+    },
+    "decision": {
+      "actuator_command": "perform system check",
+      "expected_outcome": "The system check will verify the integrity of the navigation system and the environment. If the system check is successful, the mission can continue. If the system check fails, the cause of the problem will be identified and appropriate action will be taken to fix it."
+    },
+    "self_reflection": "The system is experiencing an anomaly in current readings, which could indicate a problem with the navigation system or the environment. The drift is high, which could be due to external factors or a malfunction in the navigation system. The velocity is low, which suggests that the system is moving slowly or is stationary. The waypoint is at the start, which suggests that the mission has not yet begun. The system check will be performed to verify the integrity of the navigation system and the environment. If the system check is successful, the mission can continue. If the system check fails, the cause of the problem will be identified and appropriate action will be taken to fix it."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_28cf7924",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "0bb5e289e7924557ae3d0032757f337530ae711995852669ae91ae814ba3f493"
+  },
+  "sha256_proof": "d7e43df7aaf4ce6eb59efca3ecd983f9d42b5287cc68fb7f2a9bae03ceafb44e"
+}

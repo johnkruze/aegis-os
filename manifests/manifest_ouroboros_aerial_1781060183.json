@@ -1,0 +1,18 @@
+{
+  "compute_time_ms": 0,
+  "domain": "Aerial",
+  "final_state": {
+    "v_x": 136.47771209723436,
+    "v_y": 0.0,
+    "v_z": -588.6000000003926,
+    "x": 6402.094777963231,
+    "y": 0.0,
+    "z": -17558.294300003483
+  },
+  "integration_frequency": "1000Hz",
+  "recovery_time_s": 60.0,
+  "sovereignty_seal": "0e9bf244af7b9e6203a8523a5ffd6f64899b4938ff1513b1b6057a97e6814117",
+  "status": "OUROBOROS_RECOVERY_COMPLETE",
+  "mission_id": "ouroboros_aerial_mission_theta_pilot_strike_aerial_01_20260610T025623Z",
+  "anomaly_desc": "Total sensor blackout encountered in aerial theater. Engaging dead-reckoning protocols."
+}

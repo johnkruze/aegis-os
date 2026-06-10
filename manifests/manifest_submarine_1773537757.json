@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_f6344c12_marine_gps_denied_f6344c12_20260315T012228Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:22:28.253878Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f6344c12_marine_gps_denied_f6344c12_20260315T012228Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is within expected operational limits. The navigation error is low, suggesting the system is still relatively accurate. The position is near the starting waypoint, which could be a point of reference for the anomaly. The velocity is slow, which is consistent with the system being stationary or moving very slowly."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a navigation issue. The system is near the starting waypoint, which could be a point of reference for the anomaly. The velocity is slow, which is consistent with the system being stationary or moving very slowly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may be stuck or moving in an unintended direction due to the high drift and abnormal current readings.",
+      "mitigation_strategy": "Reset the navigation system to the starting waypoint and recalibrate the current readings."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The navigation system will be reset to the starting waypoint and recalibrated, which should resolve the high drift and abnormal current readings."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation issue. The system is near the starting waypoint, which could be a point of reference for the anomaly. The velocity is slow, which is consistent with the system being stationary or moving very slowly. The system will be reset to the starting waypoint and recalibrated to resolve the issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f6344c12",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "44170d4a11cb115d3a73cc00d9612c1e519d2f432e4ca5b52664cc5e810903eb"
+  },
+  "sha256_proof": "185124dd7857f921b09cd048247c30f49edaf6f17026d3d646709ca806d5a224"
+}

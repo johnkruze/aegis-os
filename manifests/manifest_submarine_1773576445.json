@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_4b389b2c_marine_gps_denied_4b389b2c_20260315T120716Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:07:16.340168Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4b389b2c_marine_gps_denied_4b389b2c_20260315T120716Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 378.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, which suggests the vehicle may be off course or experiencing unexpected currents."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the vehicle's orientation.",
+        "confidence": 0.8,
+        "action_rejected": "ignore the current readings"
+      },
+      {
+        "thought": "The high drift suggests the vehicle may be off course, which could lead to mission failure if not corrected.",
+        "confidence": 0.9,
+        "action_rejected": "ignore the drift"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may drift further off course, leading to mission failure if not corrected.",
+      "mitigation_strategy": "Reorient the vehicle using the heading and pitch sensors, and adjust the current readings to compensate for any drift."
+    },
+    "decision": {
+      "actuator_command": "reorient vehicle and adjust current readings",
+      "expected_outcome": "The vehicle will be reoriented and the current readings will be adjusted, reducing the risk of mission failure."
+    },
+    "self_reflection": "The system is functioning well, but there are inconsistencies in the current readings and a high drift, which could lead to mission failure if not corrected. The decision to reorient the vehicle and adjust the current readings is based on the internal deliberation and mission assurance check."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4b389b2c",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "75af55b3e4cb44a6746e187d7d3b9877de58e0f8c2b7529af208bab07bafe4ea"
+  },
+  "sha256_proof": "65ea08e56926aa286b3bc8e931635e62530298b395701f4510fb865c1dfa8103"
+}

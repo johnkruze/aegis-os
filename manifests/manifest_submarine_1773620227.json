@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b10d9772_marine_gps_denied_b10d9772_20260316T001702Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:17:02.678925Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b10d9772_marine_gps_denied_b10d9772_20260316T001702Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with the seabed or another object, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid the surge."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL",
+      "expected_outcome": "The vessel will decelerate and attempt to stabilize its position."
+    },
+    "self_reflection": "The anomaly was detected promptly, and an emergency braking command was issued to mitigate the risk of mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b10d9772",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "0b4659155a599b240420d118cce774a3b9944e0e55fdfe16bcb767654f8aeaf4"
+  },
+  "sha256_proof": "9fa2d8ec769bffa858a43af9dbfb391d740b2fa99b31b02ff657c7f396cca54e"
+}

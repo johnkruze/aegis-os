@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_97c7e30c_marine_gps_denied_97c7e30c_20260315T130157Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:01:57.128639Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_97c7e30c_marine_gps_denied_97c7e30c_20260315T130157Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 70.77 units in p-axis",
+        "time is 340.0",
+        "velocity is slightly negative in v-axis",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a malfunction in the navigation system or a magnetic anomaly affecting the compass. The battery level is high, which suggests there is enough power to continue operations. The depth is within expected range, and the navigation error is low, indicating that the system is still able to maintain a basic level of accuracy."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a potential failure in the navigation system or a magnetic anomaly affecting the compass. The battery level is high, so there is enough power to continue operations. The depth is within expected range, and the navigation error is low, indicating that the system is still able to maintain a basic level of accuracy.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and lose accuracy over time, potentially leading to a complete loss of navigation capability.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. If the issue persists, investigate the magnetic environment and adjust the system's magnetic field compensation."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate_navigation",
+      "expected_outcome": "The system will reset and recalibrate the navigation system, potentially resolving the drift and current readings issues."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a malfunction in the navigation system or a magnetic anomaly affecting the compass. The battery level is high, so there is enough power to continue operations. The depth is within expected range, and the navigation error is low, indicating that the system is still able to maintain a basic level of accuracy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_97c7e30c",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "cf348bd829c45b5f86b958e2edd44090a1a13afc4105bb8603f004e612f63635"
+  },
+  "sha256_proof": "a7713436ad58363156b147e92db1e9e781c79b04d905b6be3b70a75b40e3b786"
+}

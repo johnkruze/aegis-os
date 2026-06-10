@@ -1,0 +1,49 @@
+{
+  "mission_id": "marine_gps_denied_ee176f38_marine_gps_denied_ee176f38_20260315T065432Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:54:32.823119Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ee176f38_marine_gps_denied_ee176f38_20260315T065432Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is operating with a slight battery drain, experiencing a moderate amount of drift, and has a minor navigation error. The current is slightly negative, which could indicate a problem with the propulsion system or an imbalance in the thrusters."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The battery level is sufficient to complete the mission, but the drift and navigation error should be addressed to ensure accuracy.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission could be completed with minor adjustments to the navigation system.",
+      "mitigation_strategy": "Adjust the thrusters to reduce drift and correct the navigation error."
+    },
+    "decision": {
+      "actuator_command": "adjust thrusters to reduce drift and correct navigation error",
+      "expected_outcome": "The drift and navigation error will be corrected, allowing the mission to be completed successfully."
+    },
+    "self_reflection": "The system is performing within expected parameters, but minor adjustments are necessary to ensure mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ee176f38",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.7,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "31f6e6c9e9500eaeaebd276c05957637544982900a4018a8ca4896368947863e"
+  },
+  "sha256_proof": "27681b350e1830e5886fd75b6c3a95988b7d2ea1c1b2284783db566d93d7ec02"
+}

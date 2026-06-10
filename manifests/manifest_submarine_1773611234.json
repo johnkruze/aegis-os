@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_b0e12585_marine_gps_denied_b0e12585_20260315T214705Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:47:05.580149Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b0e12585_marine_gps_denied_b0e12585_20260315T214705Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are negative and fluctuating",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is zero",
+        "position is slightly off",
+        "time is 420 seconds",
+        "velocity is slow",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system is operating with high battery, but current readings are concerning. The shallow depth and high drift suggest potential issues with navigation. The navigation error being zero is unexpected given the drift. The slow velocity and zero waypoint indicate the mission may be paused or not progressing as expected."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are negative and fluctuating, which could indicate a problem with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift and shallow depth suggest the vehicle may be off course or in an unexpected location.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The navigation error being zero is unexpected given the drift, indicating a potential discrepancy between the system's position and the actual position.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in an incorrect location or experiencing sensor issues, leading to mission failure.",
+      "mitigation_strategy": "Perform a sensor recalibration and reposition the vehicle to the correct waypoint."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_sensors, reposition_to_waypoint",
+      "expected_outcome": "The vehicle will attempt to recalibrate its sensors and reposition to the correct waypoint, resolving the anomalies and continuing the mission."
+    },
+    "self_reflection": "The system detected anomalies in current readings, drift, and navigation error, which could indicate a critical issue. The decision to recalibrate sensors and reposition is based on the potential risks and the need to ensure mission integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b0e12585",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "85e6c110009c4f9673811f0f5a998a7fa69cc5b77a098fac81c0af23cdda8290"
+  },
+  "sha256_proof": "b44b24ab500b4034b9a2aa7d557e6be348a32dea72a58cf59973e4893748c62c"
+}

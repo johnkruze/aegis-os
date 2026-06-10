@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_e7e70fa8_marine_gps_denied_e7e70fa8_20260315T135625Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:56:25.435484Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e7e70fa8_marine_gps_denied_e7e70fa8_20260315T135625Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within safe range",
+        "drift within acceptable limits",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a minor battery drain and some current anomalies. The depth and drift are within acceptable limits, and the navigation error is minimal. The mission is at waypoint 0, which suggests the start of the mission or a potential issue with the waypoint system."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, should be monitored closely.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Current anomalies could indicate a problem with the current sensors or the environment.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Waypoint 0 suggests the start of the mission or a potential issue with the waypoint system.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission could be delayed or aborted if the battery drains further or if the current anomalies persist.",
+      "mitigation_strategy": "Monitor battery level closely and investigate the current anomalies. If necessary, abort the mission and return to base."
+    },
+    "decision": {
+      "actuator_command": "monitor_battery, investigate_current_anomalies",
+      "expected_outcome": "Battery level and current anomalies will be monitored and investigated. If necessary, the mission will be aborted."
+    },
+    "self_reflection": "The system is performing within expected parameters, but the critical battery level and current anomalies require close monitoring. The mission should be paused to ensure safety and prevent potential failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e7e70fa8",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "ab88609d0509c6b1ec1edf4bc803754fdf13cbc5fe2084e103cf58f6b02e3df0"
+  },
+  "sha256_proof": "8ea6032a667b6e5a5437ac78b8eed27c057f70361aa084c57651f87e3543bd0b"
+}

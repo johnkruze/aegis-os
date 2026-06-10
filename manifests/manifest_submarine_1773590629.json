@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7678caf0_marine_gps_denied_7678caf0_20260315T160340Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:03:40.148761Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7678caf0_marine_gps_denied_7678caf0_20260315T160340Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ALERT",
+        "DEPTH_ALERT",
+        "DRIFT_ALERT",
+        "NAV_ERROR_ALERT",
+        "POSITION_ALERT",
+        "TIME_ALERT",
+        "VELOCITY_ALERT",
+        "WAYPOINT_ALERT"
+      ],
+      "interpretation": "The system is experiencing partial success due to battery degradation. The current readings are slightly off, indicating potential issues with the navigation system. The depth and drift are within acceptable limits, but the navigation error is slightly high. The position and velocity are within expected ranges, but the waypoint is not yet reached."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is at 58.5%, which is below the critical threshold of 60%. The current readings suggest a minor issue with the navigation system. The depth and drift are within acceptable limits, but the navigation error is slightly high. The position and velocity are within expected ranges, but the waypoint is not yet reached.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The battery may fail completely within the next 10 minutes, leading to a loss of control. The navigation system may become unreliable, causing the vessel to drift off course.",
+      "mitigation_strategy": "Initiate emergency battery power management and activate the backup navigation system. Monitor the battery level and navigation system performance closely."
+    },
+    "decision": {
+      "actuator_command": "BATTERY_MANAGE, NAV_SYSTEM_CHECK",
+      "expected_outcome": "The battery will be managed to extend its life, and the navigation system will be checked for any issues."
+    },
+    "self_reflection": "The system is experiencing partial success due to battery degradation. The current readings suggest a minor issue with the navigation system. The depth and drift are within acceptable limits, but the navigation error is slightly high. The position and velocity are within expected ranges, but the waypoint is not yet reached."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7678caf0",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 41.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 3,
+      "waypoints_total": 5
+    },
+    "physics_proof": "b72698314bb9e6fcdfef9669d5a2d4288d65d904a1173dfb0ec8c6a701851fc9"
+  },
+  "sha256_proof": "9ac68f6cd8542f036fc920c4b9593777b01115bbe961e882c7f32c78c51904a3"
+}

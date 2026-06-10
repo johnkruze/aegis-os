@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_294a76bd_marine_gps_denied_294a76bd_20260316T014907Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:49:07.886761Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_294a76bd_marine_gps_denied_294a76bd_20260316T014907Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "time is 340.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with no significant issues detected. The battery is at a healthy level, and the current readings are within expected parameters. The depth is shallow, which is typical for marine operations. The drift is moderate, which is manageable. The navigation error is low, indicating accurate positioning. The time and velocity suggest a steady operation. The waypoint is at 0, which could indicate the start of a new mission or a return to a base point."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The telemetry data is within normal operating parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No failure is predicted based on the current telemetry data.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in parameters."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "Maintain current operation and monitor for any changes in telemetry data."
+    },
+    "self_reflection": "The system is performing as expected with no anomalies detected. The battery level is sufficient, and the current readings are within normal parameters. The shallow depth and moderate drift suggest a stable operation. The low navigation error and slow velocity indicate a controlled and predictable movement. The waypoint at 0 suggests the start of a new mission or a return to a base point. No immediate action is required, and the system will continue to be monitored."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_294a76bd",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "49626a2768fbe8f064d9973b428d8378a5118f40702582d5b19f78a7c96ead6a"
+  },
+  "sha256_proof": "b5e021b136a13dafe86678ec8667eaff8ace127943cb40bfbf478b3c2eba7df3"
+}

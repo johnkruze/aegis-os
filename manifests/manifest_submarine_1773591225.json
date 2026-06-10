@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_f0ac9e8b_marine_gps_denied_f0ac9e8b_20260315T161336Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:13:36.807907Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f0ac9e8b_marine_gps_denied_f0ac9e8b_20260315T161336Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings, slight depth error, high drift, and the waypoint has not been reached. The navigation error is low, which suggests the system is still relatively accurate."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to fail soon. The current readings are unusual, possibly indicating a problem with the propellers or thrusters. The slight depth error and high drift suggest the system is not maintaining its position accurately. The waypoint has not been reached, which is a critical failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail completely within the next few minutes, leading to a potential loss of control and potential damage to the vessel.",
+      "mitigation_strategy": "Immediately initiate emergency shutdown procedures, activate backup power sources if available, and attempt to communicate with the mission control to report the anomaly and request assistance."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "The system will shut down to prevent further damage and ensure the safety of the vessel and crew."
+    },
+    "self_reflection": "The anomaly is critical and requires immediate action to prevent a catastrophic failure. The system's low battery and unusual current readings are concerning, and the waypoint not being reached is a clear indication of a failure in the navigation system. The decision to shut down the system is based on the potential risks and the need to prioritize safety."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f0ac9e8b",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 4.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0f44e4d7064a3b4c1e687bb0e6e5dd496b4e195e8a02174b4aca4af80179ad26"
+  },
+  "sha256_proof": "a244e5c7f3e58754a17402e5c00411a5b347f8f149bc2457df2dc55b0f511d47"
+}

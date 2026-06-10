@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_66e4f675_marine_gps_denied_66e4f675_20260315T005339Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:53:39.947304Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_66e4f675_marine_gps_denied_66e4f675_20260315T005339Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the vessel is moving. The depth is shallow, and the drift is significant, indicating the vessel may be in a challenging navigation environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vessel is in a potentially dangerous situation due to the leak and the high drift. The battery is sufficient to handle the immediate needs.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to sink, leading to a potential loss of life and equipment damage.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying lifeboats, and attempting to navigate to a safe location."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_SHUTDOWN, DEPLOY_LIFEBOATS, NAVIGATE_TO_SAFE_LOCATION",
+      "expected_outcome": "The vessel will attempt to shut down non-essential systems, deploy lifeboats, and navigate to a safe location to mitigate the risk of sinking."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate action to ensure the safety of the vessel and its crew. The high cognitive load reflects the urgency of the situation. The decision to activate emergency protocols is based on the potential for catastrophic failure if the leak is not addressed promptly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_66e4f675",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": true,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "1aebf4da25dae775e646b8eb0272f2146f85a25ab64742a995201611eddcb8c7"
+  },
+  "sha256_proof": "d2b23ecc4b1d33ceef8fd46cd726591ba334246081cb346676547efa1c75de9a"
+}

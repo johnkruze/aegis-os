@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_3517000b_marine_gps_denied_3517000b_20260315T165823Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:58:23.884323Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3517000b_marine_gps_denied_3517000b_20260315T165823Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vehicle."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could result in mission failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control and drift away from the intended path, potentially leading to a collision with the ocean floor or other hazards.",
+      "mitigation_strategy": "Initiate emergency braking and activate the emergency steering system to regain control of the vehicle."
+    },
+    "decision": {
+      "actuator_command": "brake_full, steer_center",
+      "expected_outcome": "The vehicle should slow down and stabilize its position to prevent further drift."
+    },
+    "self_reflection": "The anomaly detected is a critical failure in the navigation system. Immediate action is required to prevent mission failure and ensure the safety of the vehicle and its occupants."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3517000b",
+    "scenario": "gps_denied_submarine_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.18,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "5a7964b80c664d723b950e5e03d9a3d842aafdd7b16037cac9119c208edc979a"
+  },
+  "sha256_proof": "1ba778b28d500edb3eb2be6afa6bb8a03f2e384ec03950b1a16db694c14bb9d8"
+}

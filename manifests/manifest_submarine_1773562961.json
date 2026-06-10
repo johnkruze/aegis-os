@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_4c53adf8_marine_gps_denied_4c53adf8_20260315T082235Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:22:35.089805Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4c53adf8_marine_gps_denied_4c53adf8_20260315T082235Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking to reduce speed and stabilize the vessel. Monitor the surge and adjust course as necessary."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_BRAKING",
+      "expected_outcome": "Reduce speed and stabilize the vessel to prevent further surge and potential mission failure."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4c53adf8",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "377eef8fe37e27bbac904406ca28bb783390b21947dc804c781f7cc30eb363ad"
+  },
+  "sha256_proof": "e62cb0dcad3f855bb5677fe6cfcbf102e9541b12e9d465a2d36266564738f0e9"
+}

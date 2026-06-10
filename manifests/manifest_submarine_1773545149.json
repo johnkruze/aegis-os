@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_4da28677_marine_gps_denied_4da28677_20260315T032542Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:25:42.273660Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4da28677_marine_gps_denied_4da28677_20260315T032542Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is normal",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is accurate",
+        "temperature is normal",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from expected values. The battery is fully charged, and the current readings suggest a slight deviation from the expected path, but this is within the acceptable range. The depth and temperature are within normal parameters, and the navigation error is low, indicating that the system is accurately tracking its position. The velocity is within expected range, and the waypoint is at 0, suggesting that the mission is at the start or end point."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure is predicted. The system is performing within normal parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in performance."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected."
+    },
+    "self_reflection": "The system is performing within normal parameters. No immediate action is required. The mission is proceeding as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4da28677",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c53da5a7b7c28871b1abbec553d24808dc47c6b991874089ec47b561f180c634"
+  },
+  "sha256_proof": "ace2ffdd886b56d6c01101e91ea03ec610b0b80a1179408a1fb1a859febb9da3"
+}

@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_eec6907f_marine_gps_denied_eec6907f_20260316T004906Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:49:06.833970Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_eec6907f_marine_gps_denied_eec6907f_20260316T004906Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are inconsistent, suggesting possible sensor anomalies. The small depth and high drift indicate the vehicle may be in an unexpected location. The low navigation error suggests the system is performing well in terms of navigation, but the drift and current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The inconsistent current readings could indicate a fault in the current sensors.",
+        "confidence": 0.6,
+        "action_rejected": "check current sensors"
+      },
+      {
+        "thought": "The high drift suggests the vehicle may be off course, which could lead to mission failure.",
+        "confidence": 0.9,
+        "action_rejected": "adjust course"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down due to low battery, leading to mission failure. The inconsistent current readings could indicate a sensor fault, which could also lead to mission failure. The high drift could cause the vehicle to be off course, leading to mission failure.",
+      "mitigation_strategy": "Recharge the battery, check the current sensors, and adjust the course to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "recharge battery, check current sensors, adjust course",
+      "expected_outcome": "The system should be able to continue operating with a full battery, the sensor issue should be identified and resolved, and the course should be corrected to ensure mission success."
+    },
+    "self_reflection": "The system is operating with some anomalies that could potentially lead to mission failure. Immediate action is required to mitigate these risks and ensure the mission can be completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_eec6907f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "f1a304582fccbfb7f5d6ab9218f48fc0a93db97491ea859ddeee8571272ca6f2"
+  },
+  "sha256_proof": "d89497692b924366704d802d46649b4299770eab11a42a68fd4c68973758fd1c"
+}

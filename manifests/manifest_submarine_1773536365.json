@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_9b37a36f_marine_gps_denied_9b37a36f_20260315T005913Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:59:13.101816Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9b37a36f_marine_gps_denied_9b37a36f_20260315T005913Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_OUT_OF_RANGE",
+        "DEPTH_OUT_OF_RANGE",
+        "DRIFT_OUT_OF_RANGE",
+        "NAV_ERROR_OUT_OF_RANGE",
+        "P_OUT_OF_RANGE",
+        "T_OUT_OF_RANGE",
+        "V_OUT_OF_RANGE",
+        "WAYPOINT_OUT_OF_RANGE"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including battery degradation, current readings outside expected ranges, depth and drift issues, and errors in navigation and position. The system is operating in an environment where it cannot rely on GPS, which further complicates the situation."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could lead to system failure if not addressed immediately. The current readings are inconsistent, indicating potential issues with the power supply or sensors. The depth and drift are outside expected ranges, suggesting the system may be in an unexpected location or experiencing motion issues. The navigation and position errors are significant, which could lead to mission failure if not corrected. The system is operating in an environment where it cannot rely on GPS, which further complicates the situation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail due to battery depletion, leading to a loss of control and potential damage to the equipment. The system may also fail to navigate correctly, leading to a collision with obstacles or failure to reach the intended waypoint.",
+      "mitigation_strategy": "Immediately initiate a battery recharge sequence. If the battery cannot be recharged, initiate a manual override to navigate to the nearest safe location. If the system cannot be navigated to a safe location, initiate an emergency shutdown sequence."
+    },
+    "decision": {
+      "actuator_command": "RECHARGE_BATTERY",
+      "expected_outcome": "The battery will be recharged, allowing the system to continue operating. If the battery cannot be recharged, the system will be manually navigated to a safe location or an emergency shutdown sequence will be initiated."
+    },
+    "self_reflection": "The system has experienced multiple anomalies, including battery degradation, current readings outside expected ranges, depth and drift issues, and errors in navigation and position. The system is operating in an environment where it cannot rely on GPS, which further complicates the situation. The system has initiated a battery recharge sequence as a priority to ensure continued operation. If the battery cannot be recharged, the system will be manually navigated to a safe location or an emergency shutdown sequence will be initiated."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9b37a36f",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 43.0,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "280215061cf4c2b0a100c5c22ce500093ce03d5a6838a8edd94021e40dd331e6"
+  },
+  "sha256_proof": "178f8222796e397a6fb4983d44b2938d311648b5b103994fb86aace0e18517c8"
+}

@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_05c215b5_marine_gps_denied_05c215b5_20260315T195000Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:50:00.218997Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_05c215b5_marine_gps_denied_05c215b5_20260315T195000Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "depth within expected range",
+        "drift within expected range",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for the low battery level and unusual current readings. The depth and drift are within expected ranges, and the navigation error is minimal. The waypoint is at 0, indicating the start of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a concern, but the current readings are within expected ranges. The mission is at the start, so the waypoint is at 0. The navigation error is minimal, and the depth and drift are within expected ranges.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission is expected to continue as planned, but the low battery level may cause the system to shut down unexpectedly.",
+      "mitigation_strategy": "Monitor the battery level and plan for a safe shutdown if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, and the system will monitor the battery level."
+    },
+    "self_reflection": "The system is operating within normal parameters, except for the low battery level. The mission is at the start, and the waypoint is at 0. The navigation error is minimal, and the depth and drift are within expected ranges. The system will continue the mission and monitor the battery level."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_05c215b5",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "38e29fe0bd88c2d5298516a17004e6595179fcefd8f4320fcd9b651a3ba507ee"
+  },
+  "sha256_proof": "d0831d245c43fb741776ad87f7437443524865a651389516607744073cf609ff"
+}

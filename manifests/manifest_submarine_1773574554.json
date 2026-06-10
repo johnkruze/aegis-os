@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_b8aaf5c2_marine_gps_denied_b8aaf5c2_20260315T113546Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:35:46.244346Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b8aaf5c2_marine_gps_denied_b8aaf5c2_20260315T113546Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current anomaly",
+        "depth within safe range",
+        "drift within acceptable limits",
+        "navigation error minor",
+        "position and time data available",
+        "velocity within normal range",
+        "waypoint at zero"
+      ],
+      "interpretation": "The system is experiencing a minor anomaly in the current sensor readings, which could indicate a potential issue with the current sensor or the environment. The battery level is slightly low, which may impact system performance over time. All other sensor readings are within normal operational parameters."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current anomaly could be a false positive or a minor issue that can be ignored. However, the low battery level should be addressed to prevent potential system failure.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The anomaly may cause a minor deviation from the planned course, but it is unlikely to result in a complete mission failure.",
+      "mitigation_strategy": "Monitor the current sensor readings closely and address the low battery level by recharging the system or switching to a backup power source if available."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery level will be restored, allowing the system to continue operating without significant performance degradation."
+    },
+    "self_reflection": "The system is functioning within normal parameters, but the low battery level requires immediate attention to prevent potential issues. The current anomaly is minor and does not appear to be a critical threat to the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b8aaf5c2",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "e697aa759f0e1d523518c92c4b91aa765b316e3b96a71dc58b2f2aff04d72f03"
+  },
+  "sha256_proof": "f99db2211479c5e64fe7b162e2b57f853d65adf9d250579637e50eb14cebcf67"
+}

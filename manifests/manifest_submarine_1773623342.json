@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_2b7b565d_marine_gps_denied_2b7b565d_20260316T010853Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:08:53.719555Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2b7b565d_marine_gps_denied_2b7b565d_20260316T010853Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings are slightly off, which could indicate a minor electrical issue. The depth is shallow, and the drift is moderate, suggesting the vehicle is moving in a controlled manner. The navigation error is low, and the velocity is within expected parameters."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is concerning, but the battery level is high, and the current readings are within normal limits. The vehicle is in a controlled state, and the navigation error is low. The most immediate concern is to investigate the leak and ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause a significant issue if not addressed promptly, potentially leading to a loss of control or a failure of the vehicle's systems.",
+      "mitigation_strategy": "Initiate a visual inspection of the vehicle's exterior and internal systems to identify the source of the leak. If the leak is confirmed, prepare to divert the mission to a safe location and initiate emergency procedures."
+    },
+    "decision": {
+      "actuator_command": "INITIATE_INSPECTION",
+      "expected_outcome": "The vehicle will perform a visual inspection to identify the source of the leak. If the leak is confirmed, the mission will be diverted to a safe location."
+    },
+    "self_reflection": "The detection of a leak on the surface of the water is a significant anomaly. The vehicle's systems appear to be functioning within normal parameters, but the leak must be addressed to ensure the safety of the mission. Initiating an inspection is the most prudent course of action at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2b7b565d",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": true,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "4cadd9a3a2cd4279e6de600cb6f39f63a437cbda96f4d2938fe847303ad0d148"
+  },
+  "sha256_proof": "fe273d285fbf4a5493ab7fd81a1411dfa96a9181802edfa70361c8a618f570b7"
+}

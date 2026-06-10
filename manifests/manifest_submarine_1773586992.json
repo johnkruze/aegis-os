@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_bf8f1315_marine_gps_denied_bf8f1315_20260315T150306Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:03:06.034269Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_bf8f1315_marine_gps_denied_bf8f1315_20260315T150306Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an anomaly in the navigation system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be a temporary phenomenon, but it requires immediate attention to ensure the safety of the mission and crew.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to a loss of control, causing the vessel to drift off course or collide with obstacles.",
+      "mitigation_strategy": "Initiate a manual override of the navigation system to stabilize the vessel and monitor the situation closely."
+    },
+    "decision": {
+      "actuator_command": "MANUAL_NAV_OVERRIDE",
+      "expected_outcome": "Stabilize the vessel and allow for a more controlled navigation to the next waypoint."
+    },
+    "self_reflection": "The anomaly requires immediate action to prevent potential mission failure. The manual override should help stabilize the vessel and allow for a more controlled navigation to the next waypoint."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_bf8f1315",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "292a4122a262b732ba9c4a31f720fee7654d229c3bef1b9c8ca9a8226b9db3d6"
+  },
+  "sha256_proof": "8472fadf9c64aa2d4fb6ff61babe059ad3dd2ab772f1fb89ff7384d57bf01fbe"
+}

@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_4534a227_marine_gps_denied_4534a227_20260315T001447Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:14:47.143366Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4534a227_marine_gps_denied_4534a227_20260315T001447Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is high",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in current readings and high drift, which could indicate a problem with the navigation system or the environment. The depth is shallow, which is expected in marine environments, but the drift and velocity suggest potential issues with maintaining course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to a malfunction in the current sensors or the environment. The high drift suggests the system is not accurately maintaining course. The shallow depth is expected, but the high velocity and drift are concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may lose control and drift away from the intended course, potentially leading to a collision with the environment or other vessels.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the current sensors. If the issue persists, initiate a manual override to navigate to the next waypoint."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the current sensors, and if the issue persists, manual override will be initiated."
+    },
+    "self_reflection": "The system is currently experiencing inconsistencies in current readings and high drift, which could indicate a problem with the navigation system or the environment. The shallow depth is expected, but the high velocity and drift are concerning. A system reset and recalibration are being initiated to address the issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4534a227",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0725b57ade59ecf8a0e72d161a0d4357354766925e3f2e5fe821c018ee50bc69"
+  },
+  "sha256_proof": "df043141c1596955c4a1b8d2318b905d79acb1faf237fba78a3bbb9501b6f2be"
+}

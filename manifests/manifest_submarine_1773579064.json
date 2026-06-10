@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_077efec9_marine_gps_denied_077efec9_20260315T125058Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:50:58.929315Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_077efec9_marine_gps_denied_077efec9_20260315T125058Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift and velocity, indicating an unexpected surge in the ocean current."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The surge could be due to a sudden change in ocean conditions or a malfunction in the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to a collision with other vessels or the loss of control over the vessel.",
+      "mitigation_strategy": "Implement emergency braking and adjust the course to avoid potential collisions."
+    },
+    "decision": {
+      "actuator_command": "BRAKE; ADJUST_COURSE",
+      "expected_outcome": "The vessel will decelerate and adjust its course to mitigate the risk of collision."
+    },
+    "self_reflection": "The anomaly suggests a need for enhanced monitoring of ocean conditions and regular maintenance of navigation systems to prevent such incidents in the future."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_077efec9",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "dbee456d6727e321d6334c8e2c21878139355115edd2b1a27d87454950597380"
+  },
+  "sha256_proof": "7b7b5fc92f195298478aa24171e7465e371fd30326ca89aa26cf4cb9c56cfc41"
+}

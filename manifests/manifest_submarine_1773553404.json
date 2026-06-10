@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_8b717d8d_marine_gps_denied_8b717d8d_20260315T054317Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:43:17.113345Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8b717d8d_marine_gps_denied_8b717d8d_20260315T054317Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The battery level is still high, but the current readings suggest an imbalance that could lead to a failure of the propulsion system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is a critical anomaly that could lead to a loss of control. Immediate action is required to stabilize the vessel.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel could lose control and drift off course, potentially leading to a collision or other maritime disaster.",
+      "mitigation_strategy": "Activate emergency thrusters to counteract the current surge and stabilize the vessel. Monitor the battery level and current readings to ensure the propulsion system remains functional."
+    },
+    "decision": {
+      "actuator_command": "ACTIVATE_EMERGENCY_THRUSTERS",
+      "expected_outcome": "Stabilize the vessel and prevent further drift."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate action to prevent a loss of control. The emergency thrusters should be activated to stabilize the vessel and ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8b717d8d",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "9bc73b1b906ee4c32534b6c14a3f46dc20091bbaf8399e4f7c9e65ef82eacde2"
+  },
+  "sha256_proof": "f13f8ecea5eaad1057ea25b50b9a490ebcdb84217e9e4d8f680fe3e11057dc61"
+}

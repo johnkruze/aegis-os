@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7333b176_marine_gps_denied_7333b176_20260315T140907Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:09:07.629374Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7333b176_marine_gps_denied_7333b176_20260315T140907Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ALERT",
+        "DEPTH_ALERT",
+        "DRIFT_ALERT",
+        "NAV_ERROR_ALERT",
+        "P_ALERT",
+        "T_ALERT",
+        "V_ALERT",
+        "WAYPOINT_ALERT"
+      ],
+      "interpretation": "The system is experiencing critical battery degradation, with current readings indicating a significant power drain. Depth and drift are within normal parameters, but navigation error is high, and velocity is minimal. The waypoint is at 0, suggesting the mission may be stuck or not progressing as expected."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could lead to system failure if not addressed immediately. The current readings suggest a power drain that needs to be mitigated. The navigation error is high, which could cause the mission to fail if not corrected. The velocity is minimal, indicating the vehicle may be stuck or not moving as expected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to battery depletion, potentially leading to mission termination.",
+      "mitigation_strategy": "Initiate emergency power management protocols, including shutting down non-essential systems and attempting to recharge the battery. If battery cannot be recharged, prepare for mission termination and initiate emergency recovery procedures."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, INITIATE_BATTERY_RECHARGING",
+      "expected_outcome": "System power is managed to prevent failure, and an attempt is made to recharge the battery. If successful, the mission can continue. If not, the system will be prepared for termination."
+    },
+    "self_reflection": "The system has detected critical battery degradation, which is a severe issue that could lead to mission failure. Immediate action is required to manage power and attempt to recharge the battery. If the battery cannot be recharged, the system must be prepared for termination to prevent further damage."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7333b176",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.7,
+      "mission_success": false,
+      "nav_error_m": 0.13,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "f7a3cf4f6fe1a5550055020474a87a805f6a8f59f009d83f8ad8cff88aa588de"
+  },
+  "sha256_proof": "e716a26bba05d4a15933775535edbe8f319800fd179ce24d70e83a517b665e52"
+}

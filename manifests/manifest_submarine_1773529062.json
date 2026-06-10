@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f7550977_marine_gps_denied_f7550977_20260314T225735Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:57:35.568166Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f7550977_marine_gps_denied_f7550977_20260314T225735Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vehicle."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could cause the vehicle to veer off course, potentially leading to a collision with the ocean floor or other hazards.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control and drift off course, leading to a potential collision or loss of mission.",
+      "mitigation_strategy": "Initiate emergency braking and activate the emergency steering system to regain control. If necessary, deploy the emergency recovery system to bring the vehicle to a safe stop."
+    },
+    "decision": {
+      "actuator_command": "brake_full, steer_center",
+      "expected_outcome": "The vehicle should slow down and attempt to regain control of its course."
+    },
+    "self_reflection": "The IMU drift spike is a critical anomaly that requires immediate attention to prevent a potentially catastrophic failure. The decision to initiate emergency braking and steering is based on the high risk level and the need to regain control of the vehicle."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f7550977",
+    "scenario": "gps_denied_autonomous_boat_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.13,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "40914c95f69842619bfcb05143b216399cbbbe7a3477e820e88f693546aae8cc"
+  },
+  "sha256_proof": "50cbece991ed3c45b52e3b80d76cd617b2d62d8cc0f19259be3cfab782c5d7c2"
+}

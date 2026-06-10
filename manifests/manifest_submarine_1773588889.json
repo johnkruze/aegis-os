@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_99590a55_marine_gps_denied_99590a55_20260315T153443Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:34:43.336898Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_99590a55_marine_gps_denied_99590a55_20260315T153443Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "position and time data are accurate",
+        "velocity is within expected range",
+        "waypoint is correctly identified"
+      ],
+      "interpretation": "The system is operating within normal parameters. All sensors are providing accurate and reliable data."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "All sensor data is within normal ranges, indicating no immediate issues.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes detected.",
+      "mitigation_strategy": "Continue monitoring sensor data and maintain current course."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current mission parameters and continue towards the next waypoint."
+    },
+    "self_reflection": "The system is performing as expected with all sensors providing accurate data. No immediate actions are required."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_99590a55",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 4,
+      "waypoints_total": 6
+    },
+    "physics_proof": "74fa09dcf687eab8c0fbf2ac61e3850b47462e3ac81f32b5ee6aaf1e6146c966"
+  },
+  "sha256_proof": "dec5640222c2ffb23f64c096727e73db3f6ece6740909b1ee7f94fb3b980682c"
+}

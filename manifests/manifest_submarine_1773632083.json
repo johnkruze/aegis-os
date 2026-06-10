@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_dc449f34_marine_gps_denied_dc449f34_20260316T033434Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:34:34.928282Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_dc449f34_marine_gps_denied_dc449f34_20260316T033434Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the aircraft. The current sensor readings suggest that the aircraft is drifting and may be unable to maintain its position or navigate to the next waypoint."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of control. The current battery level is high, which suggests that we have enough power to perform a manual override of the thrusters. However, this will require significant manual intervention and could result in further drift or loss of control if not executed carefully.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thruster failure is not addressed, the aircraft may drift further away from the intended course, potentially leading to a collision with the ocean floor or other obstacles. The aircraft may also lose control and crash.",
+      "mitigation_strategy": "Perform a manual override of the thrusters to regain control of the aircraft. This will require significant manual intervention and could result in further drift or loss of control if not executed carefully."
+    },
+    "decision": {
+      "actuator_command": "Override thrusters to regain control",
+      "expected_outcome": "Regain control of the aircraft and prevent further drift or loss of control. However, this may result in further drift or loss of control if not executed carefully."
+    },
+    "self_reflection": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of control. The current battery level is high, which suggests that we have enough power to perform a manual override of the thrusters. However, this will require significant manual intervention and could result in further drift or loss of control if not executed carefully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_dc449f34",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.2,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "5446c2c82f0ec444786fb049e2fe31d35e504183feb363797bd8f53d766f02d7"
+  },
+  "sha256_proof": "a33c728674dee7d638ff63703f394511720ab52d3fe568e4b1a6dc477d2146d9"
+}

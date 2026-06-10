@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_e27b21ae_marine_gps_denied_e27b21ae_20260315T024915Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:49:15.692094Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e27b21ae_marine_gps_denied_e27b21ae_20260315T024915Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint",
+        "time is 440.0",
+        "velocity is slightly negative"
+      ],
+      "interpretation": "The system is operating with high battery and near the waypoint, but there are inconsistencies in the current readings and a high drift. The navigation error is low, which is positive. The time is at 440.0, and the velocity is slightly negative, indicating a slight downward motion."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The high drift could be due to external factors or sensor inaccuracies.",
+        "confidence": 0.7,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The shallow depth and near waypoint suggest that the mission is progressing as planned.",
+        "confidence": 0.9,
+        "action_rejected": "string"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistency in current readings could lead to navigation errors or collisions with the environment.",
+      "mitigation_strategy": "Perform a sensor recalibration and check the environment for any obstructions or changes."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_sensors",
+      "expected_outcome": "The sensors will be recalibrated, and the system will re-evaluate its position and environment."
+    },
+    "self_reflection": "The system is functioning within expected parameters, but the inconsistencies in current readings require attention to ensure safe navigation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e27b21ae",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "936e00db5811e131973ad05d3055cc9d0e17bb20cb2dd7c6509629da83a915fb"
+  },
+  "sha256_proof": "84fbffe4aa6860e48bcfe0ffa4285797575068a9aca3509cf316da36d890546d"
+}

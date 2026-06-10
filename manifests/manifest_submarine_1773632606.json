@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_50e627be_marine_gps_denied_50e627be_20260316T034317Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:43:17.792469Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_50e627be_marine_gps_denied_50e627be_20260316T034317Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 362.0",
+        "velocity is very low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and low navigation error. The battery is at 99.5%, indicating sufficient power. The current readings are slightly negative, which could be due to the orientation of the sensors or the environment. The depth is shallow, which is expected in marine environments. The velocity is very low, suggesting the system is stationary or moving at a negligible speed. The waypoint is at 0, indicating the system is at the start of its mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within expected parameters, with only minor issues. The drift could be due to environmental factors or sensor inaccuracies. The low navigation error suggests the system is maintaining its position accurately.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally, with the drift potentially increasing over time.",
+      "mitigation_strategy": "Monitor the drift and adjust the system's orientation if necessary. Ensure the sensors are calibrated and the environment is stable."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate as expected, with the drift potentially increasing over time."
+    },
+    "self_reflection": "The system is performing as expected, with only minor issues that are within acceptable limits. The drift could be due to environmental factors or sensor inaccuracies. The system will continue to operate as expected, with the drift potentially increasing over time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_50e627be",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "a3e7db9f5501f6e44d85af065497a9e8b1e7be5866c691837512544c4ebd1cca"
+  },
+  "sha256_proof": "fa1e4215fdb1c72bb8934ff93135588462498d8f4e652675cbc172322516a457"
+}

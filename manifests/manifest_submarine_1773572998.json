@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8b35583d_marine_gps_denied_8b35583d_20260315T110948Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:09:48.861371Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8b35583d_marine_gps_denied_8b35583d_20260315T110948Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight deviation from the expected position. The battery is healthy, and the current readings suggest stable conditions. The depth is within safe limits, and the drift is manageable. The navigation error is low, indicating the system is maintaining its course. The velocity is slow, which is expected at the start of a mission. The waypoint is at the beginning, which is consistent with the start of a new mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters. The slight deviation from the expected position could be due to minor drift or a change in the environment. The battery is healthy, so there is no immediate concern about power.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally. The slight deviation could be resolved by adjusting the course or compensating for drift.",
+      "mitigation_strategy": "Monitor the system closely and adjust the course if necessary. Ensure that the navigation system is functioning correctly and that there are no external factors affecting the mission."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned. The slight deviation will be addressed if necessary."
+    },
+    "self_reflection": "The system is performing as expected. The slight deviation from the expected position is within acceptable limits and can be managed. The battery is healthy, and there are no immediate concerns about power. The mission will continue as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8b35583d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "a5ee0d98fd826e4145aba184ee3f2255807198637fb9ccdf4b1bc0c69fcb2874"
+  },
+  "sha256_proof": "ff0a4387206e2618aec3164cdde4ae257949963564e28fcfb836eb9ce6c45ace"
+}

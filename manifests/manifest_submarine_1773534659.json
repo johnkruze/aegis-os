@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_a1b2abff_marine_gps_denied_a1b2abff_20260315T003049Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:30:49.076931Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a1b2abff_marine_gps_denied_a1b2abff_20260315T003049Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and time data are valid",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally, but there is an unusual current reading that could indicate a problem with the propulsion system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and valid position data suggest that the system is still able to maintain its position, but the drift and unusual current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The unusual current readings could be due to a malfunction in the propulsion system or an external force affecting the vehicle. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and valid position data suggest that the system is still able to maintain its position, but the drift and unusual current readings are concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The unusual current readings could cause the vehicle to lose control or drift further from the intended path. The shallow depth could lead to the vehicle running out of battery or being unable to maintain its position.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the propulsion system as necessary. If the current readings persist, investigate the cause and make any necessary repairs. If the vehicle is in a shallow depth, adjust the depth control system to maintain a safe depth."
+    },
+    "decision": {
+      "actuator_command": "Monitor current readings and adjust propulsion system as necessary. If current readings persist, investigate cause and make necessary repairs. If vehicle is in shallow depth, adjust depth control system to maintain safe depth.",
+      "expected_outcome": "The vehicle will continue to operate within its operational parameters, but the unusual current readings and shallow depth could cause issues if not addressed."
+    },
+    "self_reflection": "The system appears to be functioning normally, but there are some concerning readings that could indicate a problem with the propulsion system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and valid position data suggest that the system is still able to maintain its position, but the drift and unusual current readings are concerning."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a1b2abff",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "233e70b1c0e72493aeb55caff6e526d77c6f3a1f7db7d55c8c45a81da1718104"
+  },
+  "sha256_proof": "f809766705e16e0a7a974326a81125f4da1c3eea26c6bf1b228a63eb5aacb386"
+}

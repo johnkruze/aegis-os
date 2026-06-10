@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_c9c2e2e6_marine_gps_denied_c9c2e2e6_20260316T032157Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:21:57.002551Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c9c2e2e6_marine_gps_denied_c9c2e2e6_20260316T032157Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 314.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the shallow depth and slow velocity suggest that the vehicle may be in a potentially dangerous or unexpected location."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential GPS denial or interference issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and slow velocity indicate that the vehicle may be in a potentially dangerous or unexpected location.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in a potentially dangerous or unexpected location due to GPS denial or interference, leading to a loss of control or collision with obstacles.",
+      "mitigation_strategy": "Perform a manual override of the navigation system and use onboard sensors to determine the vehicle's position and adjust course accordingly. If the issue persists, initiate an emergency protocol to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "override navigation system and use onboard sensors for position determination",
+      "expected_outcome": "The vehicle will use onboard sensors to determine its position and adjust course accordingly, allowing it to continue the mission without relying on the potentially faulty GPS system."
+    },
+    "self_reflection": "The system has detected an anomaly in the GPS system and is taking action to mitigate the risk. The decision to override the navigation system and use onboard sensors is based on the potential danger of relying on a potentially faulty GPS system. The mission assurance check indicates that the risk level is medium, and the mitigation strategy is to return to a safe location if the issue persists."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c9c2e2e6",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "5a1a387c0c624565a184eda7bad64194236baf30447e2c3c7633fd43d12b7d91"
+  },
+  "sha256_proof": "6e93aba5d7a3bb4278b39592ebd95a751650b23cd3d8908245d1c6c35fc4cee3"
+}

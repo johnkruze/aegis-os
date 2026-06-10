@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_e192e7de_marine_gps_denied_e192e7de_20260315T232307Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:23:07.233458Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e192e7de_marine_gps_denied_e192e7de_20260315T232307Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The battery level is high, so immediate power failure is unlikely.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could lose control and drift off course, potentially leading to a collision or other hazards.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to minimize drift."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "The vessel will slow down and attempt to maintain course, reducing the risk of loss of control."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety of the mission and the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e192e7de",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 2,
+      "waypoints_total": 6
+    },
+    "physics_proof": "7ac27c71425976b1e1fe81886bd0bcb85b7b5841a788c1bec787376c7a54d5ed"
+  },
+  "sha256_proof": "6062b0e0bdad49d63520299c073898cc25c4539e7060121d8ec80f654e82b998"
+}

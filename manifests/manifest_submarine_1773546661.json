@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_cb78b793_marine_gps_denied_cb78b793_20260315T035052Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:50:52.034277Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cb78b793_marine_gps_denied_cb78b793_20260315T035052Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is moving through the water as intended. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which may impact the accuracy of the position over time. The navigation error is low, indicating the system is maintaining its course. The temperature is normal, and the velocity is slow, which is consistent with the mission requirements. The waypoint is at the start, suggesting the mission has not yet begun."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters, with only minor deviations. The mission has not yet begun, and there are no immediate risks. The current readings suggest the system is moving through the water as intended. The shallow depth may be a concern, but it does not appear to be a critical issue at this point.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally until the mission begins. The shallow depth may impact the mission, but it does not appear to be a critical issue at this point.",
+      "mitigation_strategy": "Continue monitoring the system and prepare for the start of the mission. If the shallow depth becomes a concern, adjust the mission plan accordingly."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to operate normally until the mission begins."
+    },
+    "self_reflection": "The system is operating within normal parameters, and there are no immediate risks. The current readings suggest the system is moving through the water as intended. The shallow depth may be a concern, but it does not appear to be a critical issue at this point. The mission has not yet begun, and there are no immediate actions required."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cb78b793",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 4.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "2b4ecf78a3341447d4e7b584d5c2221242fa4aaff7d3ab148c1d09ab5b0229dc"
+  },
+  "sha256_proof": "a483e0cad1a79ef9a7b2cb272df5e237876351db90bc152462db36914f711d2f"
+}

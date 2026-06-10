@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_c72a5c4e_marine_gps_denied_c72a5c4e_20260316T030347Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:03:47.065442Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c72a5c4e_marine_gps_denied_c72a5c4e_20260316T030347Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ALERT",
+        "DEPTH_ALERT",
+        "DRIFT_ALERT",
+        "NAV_ERROR_ALERT",
+        "P_ALERT",
+        "T_ALERT",
+        "V_ALERT",
+        "WAYPOINT_ALERT"
+      ],
+      "interpretation": "The system is experiencing critical battery degradation, with current readings indicating a significant power drain. Depth and drift are within normal parameters, but navigation error is slightly elevated. The system is at waypoint 0, and there are alerts from various sensors."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could lead to system failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The current readings suggest a power drain that needs to be mitigated to prevent further degradation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Navigation error is within acceptable limits, but should be monitored closely.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to battery depletion, potentially leading to mission termination.",
+      "mitigation_strategy": "Initiate emergency shutdown sequence and attempt to recover power from external sources if possible."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_SEQUENCE",
+      "expected_outcome": "System will enter emergency shutdown mode, attempting to save power and prevent further damage."
+    },
+    "self_reflection": "The system has detected critical battery degradation, which is a severe issue that could jeopardize the mission. Immediate action is required to prevent system failure and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c72a5c4e",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.5,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "048d7b5756b8ccee3dfc184e5233a1e9d9d5bffe9cd300ab6d21dfb3ab5cf2ee"
+  },
+  "sha256_proof": "6c2962d96f2e7174280634455d6fe101e83bd0becd060c3d2b82c5a435cefd28"
+}

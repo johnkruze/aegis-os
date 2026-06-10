@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_6aae0699_marine_gps_denied_6aae0699_20260315T202638Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:26:38.831773Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6aae0699_marine_gps_denied_6aae0699_20260315T202638Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings are unusual, with two negative values, which could indicate a problem with the current sensors or the system's power distribution. There is a slight drift and a small navigation error, which are within acceptable limits but may indicate minor system issues. The system is currently at waypoint 0, which suggests that the mission has not yet begun or has been paused."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, which would result in mission failure. The unusual current readings could be due to a faulty sensor or a power distribution issue. The slight drift and navigation error are within acceptable limits but should be monitored. The system is at waypoint 0, which suggests that the mission has not yet begun or has been paused.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down unexpectedly due to the low battery, leading to mission failure. The unusual current readings could indicate a more serious issue that could affect the system's performance.",
+      "mitigation_strategy": "Monitor the battery level and current readings closely. If the battery level drops below a critical threshold, initiate a safe shutdown sequence. If the current readings remain unusual, investigate the cause and take appropriate action to correct it."
+    },
+    "decision": {
+      "actuator_command": "monitor_battery_and_current",
+      "expected_outcome": "Monitor the battery level and current readings to ensure the system remains operational. If the battery level drops below a critical threshold, initiate a safe shutdown sequence. If the current readings remain unusual, investigate the cause and take appropriate action to correct it."
+    },
+    "self_reflection": "The system is operating with a slightly low battery and unusual current readings, which could indicate a problem with the current sensors or the system's power distribution. The slight drift and navigation error are within acceptable limits but should be monitored. The system is at waypoint 0, which suggests that the mission has not yet begun or has been paused. The risk level is medium, and the failure mode prediction is that the system could shut down unexpectedly, leading to mission failure. The mitigation strategy is to monitor the battery level and current readings closely and take appropriate action if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6aae0699",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "9ec9e6538bd4b79afbfdb8b113f85fd66e4b1dee6b72c013beb982003dd570dc"
+  },
+  "sha256_proof": "859d340c50287eec8ac50734dae9bd510cce4d54902e388ad20beb80de148665"
+}

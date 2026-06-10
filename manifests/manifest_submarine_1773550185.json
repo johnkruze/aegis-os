@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_ffb3dafc_marine_gps_denied_ffb3dafc_20260315T044936Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:49:36.951109Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ffb3dafc_marine_gps_denied_ffb3dafc_20260315T044936Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery levels and unstable current readings, which could indicate a potential failure of the power supply or sensors. The small depth and high drift suggest the vehicle may be in a challenging environment or experiencing navigation issues. The low navigation error and waypoint 0 indicate that the system is not progressing as expected."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a critical issue that could lead to system failure if not addressed soon. The unstable current readings suggest a potential power supply issue. The high drift and small depth indicate a navigation problem that needs to be resolved. The low navigation error and waypoint 0 suggest that the system is not progressing as expected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery or power supply issues, potentially leading to loss of control or mission failure.",
+      "mitigation_strategy": "Immediately initiate power management protocols to conserve battery life. Perform a system health check to identify and address the unstable current readings. Adjust navigation parameters to correct the drift and improve depth accuracy."
+    },
+    "decision": {
+      "actuator_command": "power_management_protocol, system_health_check, adjust_navigation_parameters",
+      "expected_outcome": "System battery life is conserved, system health is assessed, and navigation is corrected to ensure mission progress."
+    },
+    "self_reflection": "The system is experiencing multiple critical issues that could jeopardize the mission. Immediate action is required to mitigate these risks and ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ffb3dafc",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.2,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "c93ffac58d7907e3f0fd7d236f5c9d30ab2d89b5cf67f4c3249eca17ea0c27ea"
+  },
+  "sha256_proof": "a365579a8155ee37c51669010f444db8d4db8eedbe16b6bfab4ba409658ccdb3"
+}

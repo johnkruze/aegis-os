@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b0797e85_marine_gps_denied_b0797e85_20260316T060157Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:01:57.924565Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b0797e85_marine_gps_denied_b0797e85_20260316T060157Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with the seabed or another object, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid the surge."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid the surge, potentially saving the mission."
+    },
+    "self_reflection": "The anomaly was detected early, and the decision to implement emergency braking and course adjustment was made based on the potential for mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b0797e85",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "0eca8dac9106b0321a71b796a4f0f06c7bf4547becdd19df81605011935a2fb7"
+  },
+  "sha256_proof": "55ca57c32ec9d8e06e566b46d8d78fea0d39669f83b2ecbd45385fe821318fa4"
+}

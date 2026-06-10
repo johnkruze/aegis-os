@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_aa2882cf_marine_gps_denied_aa2882cf_20260315T195915Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:59:15.041567Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_aa2882cf_marine_gps_denied_aa2882cf_20260315T195915Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from the expected parameters. The battery is well-charged, and the current readings are within the acceptable range. The depth is shallow, which is expected in marine environments. The drift is moderate, and the navigation error is low, indicating that the system is maintaining its course. The position is slightly off, which could be due to drift or minor navigation errors. The time is within the expected range, and the velocity is slow, which is consistent with the system being in a stationary or slow-moving state. The waypoint is at the start, which suggests that the mission is beginning or has just started."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters, with only minor deviations. The battery is sufficient, and the current readings are within the expected range. The depth is shallow, which is expected in marine environments. The drift is moderate, and the navigation error is low, indicating that the system is maintaining its course. The position is slightly off, which could be due to drift or minor navigation errors. The time is within the expected range, and the velocity is slow, which is consistent with the system being in a stationary or slow-moving state. The waypoint is at the start, which suggests that the mission is beginning or has just started.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally, with only minor deviations from the expected parameters. The battery is sufficient, and the current readings are within the expected range. The depth is shallow, which is expected in marine environments. The drift is moderate, and the navigation error is low, indicating that the system is maintaining its course. The position is slightly off, which could be due to drift or minor navigation errors. The time is within the expected range, and the velocity is slow, which is consistent with the system being in a stationary or slow-moving state. The waypoint is at the start, which suggests that the mission is beginning or has just started.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary. If the drift or navigation error becomes significant, adjust the course to correct the deviation."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate normally, with only minor deviations from the expected parameters. The battery is sufficient, and the current readings are within the expected range. The depth is shallow, which is expected in marine environments. The drift is moderate, and the navigation error is low, indicating that the system is maintaining its course. The position is slightly off, which could be due to drift or minor navigation errors. The time is within the expected range, and the velocity is slow, which is consistent with the system being in a stationary or slow-moving state. The waypoint is at the start, which suggests that the mission is beginning or has just started."
+    },
+    "self_reflection": "The system is operating within normal parameters, with only minor deviations from the expected parameters. The battery is sufficient, and the current readings are within the expected range. The depth is shallow, which is expected in marine environments. The drift is moderate, and the navigation error is low, indicating that the system is maintaining its course. The position is slightly off, which could be due to drift or minor navigation errors. The time is within the expected range, and the velocity is slow, which is consistent with the system being in a stationary or slow-moving state. The waypoint is at the start, which suggests that the mission is beginning or has just started."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_aa2882cf",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "06db5a3e0634cee5415f4dc08495c0d89e7a94b391efdfab1df2a4062579d6c6"
+  },
+  "sha256_proof": "3f70808364cfaee235da9d7a6c72d46f9ed43051c8706f02f15746d5550a1427"
+}

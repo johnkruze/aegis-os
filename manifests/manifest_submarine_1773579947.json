@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_8914ecc6_marine_gps_denied_8914ecc6_20260315T130537Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:05:37.797848Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8914ecc6_marine_gps_denied_8914ecc6_20260315T130537Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is within expected range",
+        "drift is high",
+        "navigation error is low",
+        "position and time data are valid",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a malfunction or interference with the navigation system. The high drift suggests the vehicle is not following the intended course accurately. Despite the high battery level and low navigation error, the drift is a critical issue that needs to be addressed to ensure mission success."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent with the expected values, which could be due to a hardware failure or external interference. The high drift indicates a significant deviation from the planned course, which could lead to mission failure if not corrected. The battery level is sufficient to continue operations for a short period, but the drift is the primary concern.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "If the drift is not corrected, the vehicle may deviate significantly from the intended course, leading to mission failure. The high current readings could also indicate a system failure that could affect the vehicle's performance.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. If the issue persists, initiate an emergency stop and assess the situation."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will reset and recalibrate, potentially correcting the drift and allowing the vehicle to follow the intended course."
+    },
+    "self_reflection": "The anomaly detected in the current readings and high drift are critical issues that require immediate attention. The system's high battery level and low navigation error suggest that the vehicle is still capable of performing basic functions, but the drift is a significant concern that could lead to mission failure if not corrected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8914ecc6",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "d4941fcbb276a545a46a0325b618fb5192d90759dcad338f8c2682bf6cc90684"
+  },
+  "sha256_proof": "a04e818b9daceaeef2aa8b211bf15c75ca1731a9ed21fd73eb260f9c8e8d9722"
+}

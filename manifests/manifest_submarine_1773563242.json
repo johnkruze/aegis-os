@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_9dbba69b_marine_gps_denied_9dbba69b_20260315T082714Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:27:14.876919Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9dbba69b_marine_gps_denied_9dbba69b_20260315T082714Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth and drift are within normal range",
+        "navigation error is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight inconsistency in current readings. The battery level is high, indicating sufficient power. Depth and drift are within expected parameters, and the navigation error is minimal. The waypoint is at 0, suggesting the mission has not started or has been paused."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly inconsistent, but within normal operational parameters. The battery level is high, so power is not an issue. The mission has not started or is paused at waypoint 0.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission is either not started or paused. The system is stable and within normal operational parameters.",
+      "mitigation_strategy": "No action needed. Monitor the system and wait for the mission to start or resume."
+    },
+    "decision": {
+      "actuator_command": "NO_ACTION",
+      "expected_outcome": "Monitor the system and wait for the mission to start or resume."
+    },
+    "self_reflection": "The system is stable and within normal operational parameters. The current readings are slightly inconsistent, but within normal operational parameters. The battery level is high, so power is not an issue. The mission has not started or is paused at waypoint 0."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9dbba69b",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "8b69315c7cadad7c74d52ba670abfe351f31861f1fe5c3048955f5f5b45de99f"
+  },
+  "sha256_proof": "8212d6799550e622a9298a9cad2b564664ce04348e2e2acc613b0f1764d6048d"
+}

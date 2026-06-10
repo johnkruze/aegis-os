@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_90a01c06_marine_gps_denied_90a01c06_20260316T022545Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:25:45.974390Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_90a01c06_marine_gps_denied_90a01c06_20260316T022545Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slow velocity and start waypoint indicate the vehicle is at the beginning of its mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external currents or inaccuracies in the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The inconsistent current readings might indicate a change in the underwater environment.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and low error suggest the vehicle is in a safe and controlled environment.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may continue to drift or encounter unexpected currents, potentially leading to a slight deviation from the planned path.",
+      "mitigation_strategy": "Monitor the current readings and adjust the navigation system if necessary. Continue monitoring the drift and adjust course if the drift becomes excessive."
+    },
+    "decision": {
+      "actuator_command": "continue mission with caution",
+      "expected_outcome": "The vehicle will continue its mission, maintaining a cautious approach to any unexpected changes in the underwater environment."
+    },
+    "self_reflection": "The system is performing within expected parameters, with the primary concern being the high drift. The shallow depth and low error suggest a safe and controlled environment. The mission will continue with caution to ensure safety and accuracy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_90a01c06",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "c792fc91f02030446d5ac1bd5181480b8da717cba6737ffd66ca82ecc1e7bc07"
+  },
+  "sha256_proof": "7e35c3fd0838c0a87d7c27a87addf8e88001fe3941b3e9d1449ecfa64dc456bb"
+}

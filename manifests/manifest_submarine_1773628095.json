@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8616b3f5_marine_gps_denied_8616b3f5_20260316T022807Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:28:07.472633Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8616b3f5_marine_gps_denied_8616b3f5_20260316T022807Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is moving in the intended direction. The slight drift and navigation error indicate minor adjustments may be needed to maintain course. The shallow depth and slow velocity suggest the system is operating in a controlled manner."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is within operational parameters, but minor adjustments are needed to maintain course and depth.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating within normal parameters, with minor adjustments to maintain course and depth.",
+      "mitigation_strategy": "Monitor system performance closely and make minor adjustments to course and depth as needed."
+    },
+    "decision": {
+      "actuator_command": "Adjust course slightly to the right and increase depth slightly.",
+      "expected_outcome": "The system will maintain course and depth, ensuring mission completion."
+    },
+    "self_reflection": "The system is performing as expected, with only minor adjustments needed to maintain course and depth. The battery is healthy, and the current readings suggest the system is moving in the intended direction. The slight drift and navigation error indicate minor adjustments may be needed to maintain course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8616b3f5",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "0e9352911a2d7f5804d0b03692659ea321f3e3028f3ea3c705a0e3ec662f43e4"
+  },
+  "sha256_proof": "d4a953c0aed54e18a414a8e6778bfa62f22debe40db14cb68232fe5b7c74d581"
+}

@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_165bd3df_marine_gps_denied_165bd3df_20260315T151200Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:12:00.968749Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_165bd3df_marine_gps_denied_165bd3df_20260315T151200Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or issues detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no anomalies detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring the system for any changes."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_165bd3df",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "dc8eb5c3851f1c4d3f7578cda41e96268d9795ee2cbae1c16c1d11455302ebb9"
+  },
+  "sha256_proof": "90987e7ca85b2a5eb59bc04d49d404ad631cea452fdbcb040132ea8debbf9c45"
+}

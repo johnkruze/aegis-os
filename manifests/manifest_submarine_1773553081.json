@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_3c518fa0_marine_gps_denied_3c518fa0_20260315T053755Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:37:55.830135Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3c518fa0_marine_gps_denied_3c518fa0_20260315T053755Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an anomaly in the navigation system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be a result of a sudden change in the ocean currents or a navigation error. We need to verify the navigation system and adjust the course if necessary.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to a collision with other vessels or the vessel could be damaged if not addressed promptly.",
+      "mitigation_strategy": "Verify the navigation system, check for any navigation errors, and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "CHECK_NAVIGATION_SYSTEM, ADJUST_COURSE",
+      "expected_outcome": "The navigation system is verified, and the course is adjusted to avoid any potential collisions or damage."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety of the mission and the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3c518fa0",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 4.1,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "159434d68bc4344b832a8a994fab05fb62182782fec7b29656831581182065a3"
+  },
+  "sha256_proof": "397f139b605a36ebecc8d1b9c19773e5d4621a15c3fe381eda1a5119084c5a06"
+}

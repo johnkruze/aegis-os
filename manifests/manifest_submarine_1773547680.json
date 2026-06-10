@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_06859836_marine_gps_denied_06859836_20260315T040752Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:07:52.057307Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_06859836_marine_gps_denied_06859836_20260315T040752Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in the current readings and a slight drift. The depth is shallow, which could be a concern if the mission requires deeper waters. The navigation error is low, but the position is slightly off, which could impact mission accuracy. The temperature is high, which might affect battery performance. The velocity is moderate, which is within expected parameters. The waypoint is at the start, which suggests the mission is beginning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The slight drift could be corrected by adjusting the heading.",
+        "confidence": 0.6,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The high temperature could impact battery performance, so monitoring battery life is crucial.",
+        "confidence": 0.9,
+        "action_rejected": "string"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistent current readings could lead to navigation errors, which could impact mission success.",
+      "mitigation_strategy": "Monitor battery life closely and adjust heading to correct drift."
+    },
+    "decision": {
+      "actuator_command": "Adjust heading to correct drift and monitor battery life.",
+      "expected_outcome": "Correcting the drift and monitoring battery life should help maintain mission integrity."
+    },
+    "self_reflection": "The system is performing well, but the inconsistencies in current readings and the slight drift require attention. Monitoring battery life and adjusting heading are critical actions to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_06859836",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "ff906183f47adfd05d4dd225e0225b762924e028d34459aaba7550675a986de3"
+  },
+  "sha256_proof": "37975d29fe6cf322e81a5c8e164b302d5e6c5e4ea29adb6d4a83044581342dae"
+}

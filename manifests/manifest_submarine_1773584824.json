@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_6f7d3e69_marine_gps_denied_6f7d3e69_20260315T142655Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:26:55.970997Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6f7d3e69_marine_gps_denied_6f7d3e69_20260315T142655Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the vessel is moving. The depth is shallow, and the drift is significant, indicating the vessel may be in a challenging navigation environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vessel is in a potentially dangerous situation due to the leak and the high drift. The battery is sufficient for a short period of operation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to sink, leading to a potential loss of life and equipment damage.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying lifeboats, and attempting to navigate to a safe location."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_SHUTDOWN, DEPLOY_LIFEBOATS, NAVIGATE_TO_SAFE_LOCATION",
+      "expected_outcome": "The vessel will attempt to shut down non-essential systems, deploy lifeboats, and navigate to a safe location to mitigate the risk of sinking."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate action to ensure the safety of the vessel and its crew. The high drift and shallow depth add to the complexity of the situation, necessitating a coordinated response to address the leak and navigate to a safe location."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6f7d3e69",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": true,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "f0eb560441bd4da8add25b533bc03e786fc0c3e043d778424359c45de14070f8"
+  },
+  "sha256_proof": "301f016ab42a4d2b0032531962d3db28a4a59036c40262e4d7b862e7ee0879a7"
+}

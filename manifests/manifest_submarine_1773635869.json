@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_1035baaa_marine_gps_denied_1035baaa_20260316T043741Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:37:41.893074Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1035baaa_marine_gps_denied_1035baaa_20260316T043741Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are inconsistent and suggest a possible malfunction. The drift and small navigation error indicate the system is not performing as expected."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The inconsistent current readings could be due to a hardware fault or interference.",
+        "confidence": 0.6,
+        "action_rejected": "check for hardware issues"
+      },
+      {
+        "thought": "The drift and small navigation error suggest the system is not accurately tracking its position.",
+        "confidence": 0.7,
+        "action_rejected": "adjust navigation parameters"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down unexpectedly, leading to mission failure.",
+      "mitigation_strategy": "Recharge the battery and check for hardware issues. Adjust navigation parameters to minimize drift."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery is recharged, and the system should continue to operate."
+    },
+    "self_reflection": "The system is experiencing multiple anomalies that could impact mission success. Immediate action is required to mitigate these risks."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1035baaa",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "d9728415ec4320d302c118113fff311f3fdaf2207c8ca3056ecf2e22ecddcb73"
+  },
+  "sha256_proof": "f77be2109b3a664afb50168ae9d4c5a6e5a84e8f030c44c756723c8aaf1ad302"
+}

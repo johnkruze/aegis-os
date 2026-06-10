@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_06a5f825_marine_gps_denied_06a5f825_20260316T004347Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:43:47.280687Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_06a5f825_marine_gps_denied_06a5f825_20260316T004347Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate slight drift",
+        "depth is stable",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 332.0",
+        "velocity is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight drift and minor navigation error. The battery is fully charged, and the depth is stable. The current readings suggest a slight deviation from the intended course, which could be due to drift or external factors. The system is functioning as expected, but the drift needs to be addressed to maintain the mission's integrity."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight drift could be due to external currents or inaccuracies in the navigation system. It is important to correct this to maintain the mission's accuracy.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the mission to deviate from the planned route, but it is unlikely to cause a critical failure.",
+      "mitigation_strategy": "Correct the drift by adjusting the course or compensating for the current."
+    },
+    "decision": {
+      "actuator_command": "adjust_course 0.5 degrees left",
+      "expected_outcome": "The course is adjusted to compensate for the drift, maintaining the mission's integrity."
+    },
+    "self_reflection": "The system is performing as expected, with only minor issues that can be easily addressed. The drift needs to be corrected to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_06a5f825",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "7de98fb43ce090f6119ba81917d756ed446ad2f6abc4cbd4e164bb20bddb5d16"
+  },
+  "sha256_proof": "fb139a310cbeeacf44c3978cae1ef13be133f125a2ffdffca73fbc754358259d"
+}

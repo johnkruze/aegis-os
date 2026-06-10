@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5b3cd0de_marine_gps_denied_5b3cd0de_20260315T080805Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:08:05.079036Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5b3cd0de_marine_gps_denied_5b3cd0de_20260315T080805Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight drift and a shallow depth. The battery is at a high level, and the current readings are within expected parameters. The navigation error is low, and the position is slightly off, which could be due to drift. The velocity is low, and the waypoint is at the start, indicating the beginning of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight drift could be due to the current conditions or the system's inherent drift. The shallow depth is within expected parameters. The battery level is high, so power is not an issue. The navigation error is low, so the system is likely on the correct course. The velocity is low, which is expected at the start of the mission. The waypoint is at the start, so the mission is beginning as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The slight drift could cause the system to deviate from the intended course, but it is within expected parameters.",
+      "mitigation_strategy": "Monitor the drift closely and adjust the course if necessary. Ensure that the system's sensors are functioning correctly."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as expected, with the system monitoring the drift and adjusting the course if necessary."
+    },
+    "self_reflection": "The system is functioning normally, and the mission is beginning as expected. The slight drift is within expected parameters, and the battery level is high, so power is not an issue. The system is on the correct course, and the navigation error is low. The velocity is low, which is expected at the start of the mission. The waypoint is at the start, so the mission is beginning as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5b3cd0de",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "c624d7e79bd81e702ba560f0307fcf79c4b04e868475643ceccf8c32ec3ec7d0"
+  },
+  "sha256_proof": "2109a30e6108f28024f80dea9c195140b6cc14c1c35ab5d253a9c2936c8ccd40"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_6dc0f3a5_marine_gps_denied_6dc0f3a5_20260314T234000Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:40:00.942505Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6dc0f3a5_marine_gps_denied_6dc0f3a5_20260314T234000Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is normal",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is normal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from expected values. The battery is at a high level, which is good. The current readings are slightly off, but within a normal range. The depth and drift are within acceptable limits, and the navigation error is low, indicating accurate positioning. The time is within the expected range, and the velocity is normal. The waypoint is at 0, suggesting the mission has not yet started."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted. The system is stable and within normal operating parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in performance."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected until further changes are detected."
+    },
+    "self_reflection": "The system is performing as expected with no immediate issues. The battery level is high, and all sensor readings are within normal ranges. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6dc0f3a5",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "540ff8a6341c4f066d10baf953522657057ad1f1d3e506e449e36fc4f7582df0"
+  },
+  "sha256_proof": "4247393a4e4c458645a6a1db8b3870a65a070ed74a3fa38caf9a82b9b67e41f0"
+}

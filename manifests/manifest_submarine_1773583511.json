@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_5c021597_marine_gps_denied_5c021597_20260315T140504Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:05:04.777508Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5c021597_marine_gps_denied_5c021597_20260315T140504Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a sudden change in water conditions or a problem with the propulsion system. Immediate action is needed to ensure the vessel's safety and stability.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to a loss of control, causing the vessel to drift off course or collide with other objects.",
+      "mitigation_strategy": "Activate the emergency propulsion system and adjust the course to maintain stability and navigate to the nearest safe location."
+    },
+    "decision": {
+      "actuator_command": "activate_emergency_propulsion_system, adjust_course_to_stay_on_course",
+      "expected_outcome": "The vessel will attempt to stabilize and navigate to a safe location."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to prevent potential loss of control. The emergency propulsion system and course adjustment are critical actions to mitigate the risk."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5c021597",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "b68a83a062e6fe5e6ed3111f6f5768df0d4479fc0616494fc6b50cb2345f942b"
+  },
+  "sha256_proof": "1dcc620f307bd275adecb1d62511f1b7453f286623173e2f90ab6baf02365bde"
+}

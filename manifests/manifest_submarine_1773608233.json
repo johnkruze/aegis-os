@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_05c2fbcb_marine_gps_denied_05c2fbcb_20260315T205657Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:56:57.135982Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_05c2fbcb_marine_gps_denied_05c2fbcb_20260315T205657Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 305.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth is stable, and the drift is moderate, indicating the system is maintaining its position. The navigation error is low, and the position is slightly off, which could be due to minor drift or waypoint misalignment. The time is at 305.0, and the velocity is slightly negative, which could indicate a slight movement in the wrong direction. The waypoint is at 0, suggesting the system is at the start of its mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth is stable, and the drift is moderate, indicating the system is maintaining its position. The navigation error is low, and the position is slightly off, which could be due to minor drift or waypoint misalignment. The time is at 305.0, and the velocity is slightly negative, which could indicate a slight movement in the wrong direction. The waypoint is at 0, suggesting the system is at the start of its mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth is stable, and the drift is moderate, indicating the system is maintaining its position. The navigation error is low, and the position is slightly off, which could be due to minor drift or waypoint misalignment. The time is at 305.0, and the velocity is slightly negative, which could indicate a slight movement in the wrong direction. The waypoint is at 0, suggesting the system is at the start of its mission.",
+      "mitigation_strategy": "Continue monitoring the system and adjust the waypoint if necessary. If the drift or velocity continues to be an issue, consider implementing a correction strategy."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth is stable, and the drift is moderate, indicating the system is maintaining its position. The navigation error is low, and the position is slightly off, which could be due to minor drift or waypoint misalignment. The time is at 305.0, and the velocity is slightly negative, which could indicate a slight movement in the wrong direction. The waypoint is at 0, suggesting the system is at the start of its mission."
+    },
+    "self_reflection": "The system is operating within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth is stable, and the drift is moderate, indicating the system is maintaining its position. The navigation error is low, and the position is slightly off, which could be due to minor drift or waypoint misalignment. The time is at 305.0, and the velocity is slightly negative, which could indicate a slight movement in the wrong direction. The waypoint is at 0, suggesting the system is at the start of its mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_05c2fbcb",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "bdc190990ff40b82f266fa4d33800d45ecad01637659eda5d472117aa8a15873"
+  },
+  "sha256_proof": "a1d8f3f8389a4e0b28c66b1ec385c09bf5e26845b15da63654d7b79d87ebe4b3"
+}

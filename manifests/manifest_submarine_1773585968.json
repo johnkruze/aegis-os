@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_af0c47b0_marine_gps_denied_af0c47b0_20260315T144552Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:45:52.792879Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_af0c47b0_marine_gps_denied_af0c47b0_20260315T144552Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "pressure readings are normal",
+        "time is within expected range",
+        "velocity is within expected range",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is shallow, which is within expected parameters for the mission. The drift is high, which could indicate a problem with the navigation system. The navigation error is low, which suggests that the system is performing well in terms of navigation. The pressure readings are normal, which suggests that the system is operating in the correct environment. The time is within expected range, which suggests that the system is functioning correctly. The velocity is within expected range, which suggests that the system is moving at the correct speed. The waypoint is at the start, which suggests that the mission has not yet begun."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a problem with the sensors or the environment. The drift is high, which could indicate a problem with the navigation system. The navigation error is low, which suggests that the system is performing well in terms of navigation. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is shallow, which is within expected parameters for the mission. The pressure readings are normal, which suggests that the system is operating in the correct environment. The time is within expected range, which suggests that the system is functioning correctly. The velocity is within expected range, which suggests that the system is moving at the correct speed. The waypoint is at the start, which suggests that the mission has not yet begun.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly in the current readings could cause the system to fail, leading to mission failure. The high drift could cause the system to drift off course, leading to mission failure. The shallow depth could cause the system to encounter unexpected obstacles, leading to mission failure.",
+      "mitigation_strategy": "Perform a system reset to ensure that the sensors are functioning correctly. Check the navigation system to ensure that it is functioning correctly. Check the environment to ensure that there are no unexpected obstacles. If the system fails to reset, perform a manual override to ensure that the mission continues."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will reset and the mission will continue."
+    },
+    "self_reflection": "The system has detected an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The drift is high, which could indicate a problem with the navigation system. The navigation error is low, which suggests that the system is performing well in terms of navigation. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is shallow, which is within expected parameters for the mission. The pressure readings are normal, which suggests that the system is operating in the correct environment. The time is within expected range, which suggests that the system is functioning correctly. The velocity is within expected range, which suggests that the system is moving at the correct speed. The waypoint is at the start, which suggests that the mission has not yet begun."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_af0c47b0",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 3.0,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "87219f244d248073941d1e785f470a669b8a1e29608c6a9ff2f69c02dd2eb0b1"
+  },
+  "sha256_proof": "f900d9f1ac34d636209171db999211c740d6860a02144ae2217ee07b6e43106f"
+}

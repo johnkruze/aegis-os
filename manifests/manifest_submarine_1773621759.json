@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_60062cac_marine_gps_denied_60062cac_20260316T004231Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:42:31.034823Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_60062cac_marine_gps_denied_60062cac_20260316T004231Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 174.35 units",
+        "time is 328.0",
+        "velocity is slightly negative in the y direction",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation error. The battery level is high, so power is not a concern. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, suggesting a need for recalibration or correction."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and inconsistent current readings suggest a navigation error. Recalibrating the position might resolve the issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The navigation error could lead to the mission being delayed or potentially failing if not corrected.",
+      "mitigation_strategy": "Recalibrate the position using the available sensors and adjust the course accordingly."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_position",
+      "expected_outcome": "The position should be corrected, and the mission should continue on course."
+    },
+    "self_reflection": "The system detected an anomaly in the navigation data, which could impact the mission. Recalibrating the position is a prudent action to ensure the mission continues without further issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_60062cac",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a1e9b304e720461b301455875ed06f7004ee122c54abe7083b6526b412dd3c75"
+  },
+  "sha256_proof": "0e61bc989f2e9505863839762ff489a875867d0101bc252926b74694a954ba03"
+}

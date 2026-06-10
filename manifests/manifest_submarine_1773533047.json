@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ca27f7fc_marine_gps_denied_ca27f7fc_20260315T000357Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:03:57.771313Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ca27f7fc_marine_gps_denied_ca27f7fc_20260315T000357Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and slight negative current readings. The battery level is high, which suggests sufficient power for continued operation. The shallow depth and normal temperature indicate that the system is in a suitable environment. The low navigation error and minimal velocity suggest that the system is not experiencing significant issues with its primary functions. However, the high drift could indicate a problem with the system's alignment or control."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to a misalignment or control error. The slight negative current readings could be a temporary anomaly or a result of the system's operation in the water. The system appears to be otherwise stable.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The high drift could cause the system to deviate from its intended path, potentially leading to a minor deviation from the waypoint. The slight negative current readings could be a temporary anomaly and do not indicate a critical failure.",
+      "mitigation_strategy": "Monitor the system's performance closely and adjust the control parameters if necessary. If the drift persists, consider recalibrating the system's alignment or control settings."
+    },
+    "decision": {
+      "actuator_command": "continue with current settings",
+      "expected_outcome": "The system will continue to operate as intended, with close monitoring of the drift and current readings."
+    },
+    "self_reflection": "The system appears to be stable and within normal operating parameters. The high drift is the primary concern, and close monitoring is recommended to ensure the system remains on course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ca27f7fc",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "3ae7039b7286bf6779c8d7a7e9d7a2e68fa7097ce043935db6e317c34eb35f29"
+  },
+  "sha256_proof": "046e7fb70463053ba43bd920cfdd8199a24bd7e881a74d23f470dbf669eb24d6"
+}

@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_4fe292c0_marine_gps_denied_4fe292c0_20260316T034516Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:45:16.100896Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4fe292c0_marine_gps_denied_4fe292c0_20260316T034516Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 316.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly with the current readings, which could indicate a problem with the sensors or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and slow velocity suggest that the system is still functioning, but the drift and abnormal current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a sensor failure or environmental issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The low navigation error and slow velocity suggest that the system is still functioning, but the drift and abnormal current readings are concerning.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in a dangerous location or the sensors may be malfunctioning, leading to a loss of control or mission failure.",
+      "mitigation_strategy": "Perform a sensor check to verify the accuracy of the current readings. If the readings are confirmed to be abnormal, adjust the vehicle's course to a safer location or initiate a manual override to regain control."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check",
+      "expected_outcome": "The sensor check will confirm the accuracy of the current readings and help determine if the vehicle is in a safe location or if a manual override is necessary."
+    },
+    "self_reflection": "The system is experiencing an anomaly with the current readings, which could indicate a problem with the sensors or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and slow velocity suggest that the system is still functioning, but the drift and abnormal current readings are concerning. A sensor check is recommended to verify the accuracy of the current readings and help determine if the vehicle is in a safe location or if a manual override is necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4fe292c0",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.3,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "7bc946dbd9df84c39a60d56bfa3018ef472c7f39637c328066f76d59d4586cd3"
+  },
+  "sha256_proof": "0694b19c59e88b3c1cd18c6a1e3d77df88fa2d045c86dcb9f8d663de120ad8d5"
+}

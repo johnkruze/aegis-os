@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_a7152ee9_marine_gps_denied_a7152ee9_20260314T224025Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:40:25.886875Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a7152ee9_marine_gps_denied_a7152ee9_20260314T224025Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 405.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its position and course. However, the slight drift and velocity discrepancies suggest that the system may be experiencing minor disturbances or inaccuracies."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within expected parameters, with only minor deviations. The battery is healthy, and the navigation error is low. The slight drift and velocity discrepancies suggest that the system may be experiencing minor disturbances or inaccuracies. However, the mission is complete, and there are no anomalies reported. Therefore, no action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing within expected parameters, and there are no signs of failure. The slight drift and velocity discrepancies suggest that the system may be experiencing minor disturbances or inaccuracies, but these are within acceptable limits.",
+      "mitigation_strategy": "No action is required as the system is performing within expected parameters."
+    },
+    "decision": {
+      "actuator_command": "none",
+      "expected_outcome": "No change in system operation"
+    },
+    "self_reflection": "The system is performing within expected parameters, and there are no signs of failure. The slight drift and velocity discrepancies suggest that the system may be experiencing minor disturbances or inaccuracies, but these are within acceptable limits. The mission is complete, and there are no anomalies reported. Therefore, no action is required."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a7152ee9",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "f58623a00ea3347f2f29c1459703964c7966705c93d98ee583130a66ca705d35"
+  },
+  "sha256_proof": "f5d932f4af8f7391785a6dfaecb6cbf23e38ef1e77ec0fbc85f2aa44bf30ae52"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_575988ce_marine_gps_denied_575988ce_20260315T013454Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:34:54.610728Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_575988ce_marine_gps_denied_575988ce_20260315T013454Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vehicle."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could cause the vehicle to veer off course, potentially leading to a mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control and drift away from the intended path, leading to mission failure.",
+      "mitigation_strategy": "Initiate emergency braking and return to the last known safe position."
+    },
+    "decision": {
+      "actuator_command": "brake_emergency",
+      "expected_outcome": "The vehicle will attempt to stop and return to a safe position."
+    },
+    "self_reflection": "The anomaly detected is critical and requires immediate action to prevent mission failure. The decision to initiate emergency braking is based on the high risk level and the potential for severe consequences if not addressed promptly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_575988ce",
+    "scenario": "gps_denied_autonomous_boat_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "13d62e22b00ce363862958926dd4e614aa15344193c06c9cb96792c8c7afa014"
+  },
+  "sha256_proof": "ea7b4fe593bef4b4d70a0cc136586d63c1a8b96ee76fd6593f43368a61a2c311"
+}

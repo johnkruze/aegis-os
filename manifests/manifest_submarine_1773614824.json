@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_847bf417_marine_gps_denied_847bf417_20260315T224658Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:46:58.235575Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_847bf417_marine_gps_denied_847bf417_20260315T224658Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ALERT",
+        "DEPTH_ALERT",
+        "DRIFT_ALERT",
+        "NAV_ERROR_ALERT"
+      ],
+      "interpretation": "The system is experiencing critical battery degradation, with current readings indicating a significant power drain. Depth and drift are within normal operational parameters, but navigation error is slightly elevated."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "Battery degradation is critical and must be addressed immediately to prevent mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission may be aborted if battery degradation continues at this rate.",
+      "mitigation_strategy": "Initiate emergency power management protocols and attempt to return to the last known safe waypoint."
+    },
+    "decision": {
+      "actuator_command": "ABORT_MISSION",
+      "expected_outcome": "Return to the last known safe waypoint and initiate emergency power management."
+    },
+    "self_reflection": "The system has detected a critical failure in battery power, which is essential for mission continuity. Immediate action is required to prevent mission failure and ensure the safety of the system and crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_847bf417",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 2,
+      "waypoints_total": 5
+    },
+    "physics_proof": "f1451e82869d8f467c8c150fbb88bffc56dba025b556d16af381592a1c8c6276"
+  },
+  "sha256_proof": "af8cfab0180b935911998cc2d98e080289d5f6d931ae2f428947d9c7f29caf4e"
+}

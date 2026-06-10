@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_087673e8_marine_gps_denied_087673e8_20260315T093240Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:32:40.632809Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_087673e8_marine_gps_denied_087673e8_20260315T093240Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current battery level is high, and the depth is relatively shallow, which suggests that the vessel is in a potentially dangerous situation if the thruster fails to operate."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent the vessel from drifting out of control. The current battery level is sufficient to perform a quick diagnostic and attempt a manual override of the thrusters if necessary.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thruster failure is not resolved, the vessel could drift out of control, potentially leading to a collision with other vessels or the ocean floor.",
+      "mitigation_strategy": "Initiate a manual override of the thrusters to regain control of the vessel. If manual override is not possible, prepare for an emergency evacuation of the vessel."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Regain control of the vessel and prevent further drift."
+    },
+    "self_reflection": "The thruster failure is a significant anomaly that requires immediate attention. The vessel's current state is stable, but the potential consequences of the failure are severe. The decision to override the thrusters is based on the critical nature of the issue and the need to prevent further damage to the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_087673e8",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.2,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "b57a1b6d15d4c32e4e375d284948a8bc6be7e14ef01ae8d170d4cf7d45f5079d"
+  },
+  "sha256_proof": "00d4bd678b5a5145125f21761017d8798598a4ed2642a854bb9585aef8df93a0"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_c31ffdfb_marine_gps_denied_c31ffdfb_20260315T094838Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:48:38.652000Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c31ffdfb_marine_gps_denied_c31ffdfb_20260315T094838Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with an obstacle or lose control if the surge is not mitigated.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid the current surge and potential collision hazard."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate attention to ensure the safety of the mission and the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c31ffdfb",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "00780f8e615fdb755cc934fc5763084bc170ab33d61bf046e46d9706a037b30d"
+  },
+  "sha256_proof": "c416931e94beee70b5f1563de7cc87d4263ab1b9229c3bed196a7663cf192b9d"
+}

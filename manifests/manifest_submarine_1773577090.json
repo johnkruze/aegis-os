@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7112972c_marine_gps_denied_7112972c_20260315T121800Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:18:00.828488Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7112972c_marine_gps_denied_7112972c_20260315T121800Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 408.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings and drift, which could indicate a problem with the navigation system or the environment. The battery level is high, which is good, but the shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a potential navigation error. The shallow depth and high drift could be due to the vehicle being in a tight or unexpected area. The battery level is high, so immediate power issues are unlikely.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in a difficult location that could cause further issues with navigation or stability. The shallow depth and high drift suggest that the vehicle may be in a tight or unexpected area.",
+      "mitigation_strategy": "Perform a detailed navigation check to identify the cause of the drift and adjust the course accordingly. If necessary, deploy emergency protocols to ensure the safety of the mission."
+    },
+    "decision": {
+      "actuator_command": "perform navigation check",
+      "expected_outcome": "Identify the cause of the drift and adjust the course to ensure safe and accurate navigation."
+    },
+    "self_reflection": "The anomaly detected suggests that the vehicle may be in a challenging or unexpected location. The high battery level indicates that immediate power issues are unlikely, but the shallow depth and high drift suggest that the vehicle may be in a tight or unexpected area. A detailed navigation check is necessary to identify the cause of the drift and adjust the course accordingly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7112972c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "40f59cfb0b0f08cf2626481c359512338407371979904996c80e42e06041e3b2"
+  },
+  "sha256_proof": "4eb30c6bf7f02c2e2cc9d248e9f84cdac764d08f59978a0ff4120d4b152f0860"
+}

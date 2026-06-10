@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_82aec4eb_marine_gps_denied_82aec4eb_20260315T164106Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:41:06.428095Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_82aec4eb_marine_gps_denied_82aec4eb_20260315T164106Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is still high, and the current readings suggest that the vehicle is experiencing some drift. The depth is shallow, and the navigation error is low."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vehicle is still functional, but the leak could cause significant damage if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vehicle to sink or lose power, leading to a potential loss of the mission.",
+      "mitigation_strategy": "Initiate emergency procedures to contain the leak and attempt to return to a safe location. If necessary, deploy an emergency recovery vehicle to assist."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_LEAK_CONTAINMENT",
+      "expected_outcome": "The leak is contained, and the vehicle is prepared for a return to a safe location."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate action to prevent further damage. The vehicle is still functional, but the leak must be addressed to ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_82aec4eb",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 5.8,
+      "mission_success": true,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "af800f2be8f602c5a2858b98afdf5e3b6fa5ffecc2b8a49e392198a413713e63"
+  },
+  "sha256_proof": "329d3bee36c65550a50614282ced3a1dd6a6ce82d0669d1eb396b27233f7967f"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_8a5006d4_marine_gps_denied_8a5006d4_20260315T232700Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:27:00.061351Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8a5006d4_marine_gps_denied_8a5006d4_20260315T232700Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the vehicle is moving. The depth is shallow, and the drift is significant, indicating the vehicle may be in a challenging environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vehicle's current state is stable, but the leak could compromise the vessel's integrity. The mission should be paused to address the leak.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking. The navigation error is low, but the drift is significant, which could exacerbate the situation if not addressed promptly.",
+      "mitigation_strategy": "Pause the mission, deploy emergency flotation devices, and assess the leak's source and severity. Once the leak is controlled, resume the mission with caution."
+    },
+    "decision": {
+      "actuator_command": "PAUSE_MISSION",
+      "expected_outcome": "The mission will be paused to address the critical leak issue."
+    },
+    "self_reflection": "The detection of a leak on the surface is a significant anomaly that requires immediate attention. The current state of the vehicle is stable, but the leak could compromise the vessel's integrity. The mission should be paused to address the leak and ensure the safety of the vessel and its occupants."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8a5006d4",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "685439c8e4f4103035243ea0ec7ba94cd9a20ba19c7fc5183323bd652c88207d"
+  },
+  "sha256_proof": "4c4f7453766e9ed4ce869fd950f0cbab90aa67a1eb61278d3f63593e938af49c"
+}

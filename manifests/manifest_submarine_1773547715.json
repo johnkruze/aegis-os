@@ -1,0 +1,49 @@
+{
+  "mission_id": "marine_gps_denied_bc6545c5_marine_gps_denied_bc6545c5_20260315T040816Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:08:16.065913Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_bc6545c5_marine_gps_denied_bc6545c5_20260315T040816Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "ANOMALY_DETECTED",
+        "TELEMETRY_VARIANCE_HIGH",
+        "LINK_STATUS_BLACKOUT"
+      ],
+      "interpretation": "[Isolated (Dark Window)] System detecting non-nominal state: MISSION_INCOMPLETE: NONE. Sensors reporting divergence from expected trajectory."
+    },
+    "cognitive_load": 0.85,
+    "internal_deliberation": [
+      {
+        "thought": "Trajectory exceeds 2-sigma deviation. No external link available. Parameters may be compromised.",
+        "confidence": 0.9,
+        "action_rejected": "MAINTAIN_CURRENT_ATTITUDE"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "Potential uncontrolled drift or system degradation.",
+      "mitigation_strategy": "Engage stabilization. Prioritize power conservation."
+    },
+    "decision": {
+      "actuator_command": "HOLD_POSITION",
+      "expected_outcome": "Maintain stability and wait for conditions to improve."
+    },
+    "self_reflection": "Operating in epistemic isolation. Physical intuition suggests conservative action."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_bc6545c5",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "46957c0ac1bbbd7e7626a531069ad2eec5068c629fc5da8b0a0a280fc9cc6f63"
+  },
+  "sha256_proof": "10972b019fe97d40bdc7cd1cda0808c8b47e0f1df195656998eaf3941d49a1a0"
+}

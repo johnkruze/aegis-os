@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_23e2f0c7_marine_gps_denied_23e2f0c7_20260316T044851Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:48:51.496008Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_23e2f0c7_marine_gps_denied_23e2f0c7_20260316T044851Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is zero",
+        "position and time data are accurate",
+        "velocity is very low",
+        "waypoint is 1"
+      ],
+      "interpretation": "The system appears to be functioning normally with minor deviations in current readings. The battery is at a high level, indicating sufficient power. Depth and drift are within acceptable limits, and the navigation error is zero, suggesting accurate positioning. The velocity is very low, which could indicate a stationary or slow-moving object. The waypoint is 1, which is the expected starting point."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current readings could be due to environmental factors or sensor drift. However, the system is otherwise stable and within operational parameters.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations in current readings could be temporary and may resolve on their own. If they persist, the system may need recalibration.",
+      "mitigation_strategy": "Monitor current readings over the next few minutes to see if they stabilize. If they continue to drift, recalibrate the current sensors."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with the system monitored for any further deviations in current readings."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations in current readings. The mission will continue as planned, and any further issues will be addressed through monitoring and recalibration if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_23e2f0c7",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 1,
+      "waypoints_total": 5
+    },
+    "physics_proof": "ed057c255e8e46408d7e3bea2e4e11c8e5f45e92660b39ef2d380906b059eb1e"
+  },
+  "sha256_proof": "4169eea46200b19fabac25ac46e14e8d0b03fb3812687649ceebaf2fbfafe572"
+}

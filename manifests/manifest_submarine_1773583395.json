@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_c859ac0d_marine_gps_denied_c859ac0d_20260315T140307Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:03:07.720506Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c859ac0d_marine_gps_denied_c859ac0d_20260315T140307Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak, which is a critical anomaly in an oceanic environment. The leak is surfacing, which suggests it may be a significant issue that requires immediate attention."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is surfacing, indicating a potential safety hazard. Immediate action is required to prevent further damage or loss of life.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could lead to a catastrophic failure, such as a vessel sinking or a fire outbreak.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying emergency containment barriers, and initiating a distress signal."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_ALL_NON_ESSENTIAL_SYSTEMS; DEPLOY_EMERGENCY_CONTAINMENT_BARRIERS; INITIATE_DISTRESS_SIGNAL",
+      "expected_outcome": "Mitigate the leak and ensure the safety of the vessel and crew."
+    },
+    "self_reflection": "The detection of a leak in an oceanic environment is a critical anomaly that requires immediate and decisive action to prevent further damage or loss of life. The activation of emergency protocols is a necessary step to ensure the safety of the vessel and crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c859ac0d",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.1,
+      "mission_success": true,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "041de7bbec9591752cfcb20887ea38e1961c1294e97044beab356de85fcd4686"
+  },
+  "sha256_proof": "6f3e63a34581169f20abcb0b7510ea77bcb46d17b7f570c7200d26c7d2b08dba"
+}

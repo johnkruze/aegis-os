@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_da9f9fc8_marine_gps_denied_da9f9fc8_20260315T004425Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:44:25.326506Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_da9f9fc8_marine_gps_denied_da9f9fc8_20260315T004425Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vehicle's position and orientation."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could result in mission failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control, leading to potential damage or loss of the mission.",
+      "mitigation_strategy": "Initiate emergency protocol to stabilize the vehicle and attempt to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "initiate_emergency_stabilization",
+      "expected_outcome": "Stabilize the vehicle and attempt to return to a safe location."
+    },
+    "self_reflection": "The anomaly highlights the critical nature of the navigation system and the importance of robust error handling protocols."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_da9f9fc8",
+    "scenario": "gps_denied_autonomous_boat_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 2.3,
+      "mission_success": false,
+      "nav_error_m": 0.2,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "887c543fd50dccab4987c28deefcf0f1203dc573f1d6b06ea0f3f41ce977c3a9"
+  },
+  "sha256_proof": "5c9027219fc6b326e72dbfdb67e35dc63433e585bb859b32de120ce144de3737"
+}

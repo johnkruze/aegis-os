@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_b86871eb_marine_gps_denied_b86871eb_20260315T045431Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:54:31.912157Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b86871eb_marine_gps_denied_b86871eb_20260315T045431Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery low",
+        "current anomalies",
+        "depth near surface",
+        "drift high",
+        "small navigation error",
+        "position near waypoint"
+      ],
+      "interpretation": "The system is operating with a low battery, experiencing unusual current readings, and is near the surface. The vessel is drifting significantly and has a minor navigation error, but is close to the intended waypoint."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery is critical, need to conserve power.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Current anomalies could indicate a magnetic field issue.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is high, need to adjust course.",
+        "confidence": 0.7,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "Battery depletion could lead to system failure, current anomalies could cause navigation errors, and drift could result in missing the waypoint.",
+      "mitigation_strategy": "Reduce power consumption, investigate current anomalies, and adjust course to minimize drift."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, investigate_current, adjust_course",
+      "expected_outcome": "System power is conserved, current anomalies are investigated, and course is adjusted to minimize drift."
+    },
+    "self_reflection": "The system is operating under critical conditions, and immediate action is required to ensure mission completion. The battery is the primary concern, followed by current anomalies and drift. The team must prioritize power conservation while addressing the other issues to maintain mission integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b86871eb",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "73d2f6d5c45ebad9e1c9d350173db9d353ebb590ad22099d86f8b7eaee273c68"
+  },
+  "sha256_proof": "f6ca98f5c30eb0de55b4e1726a7de15c9dba961d8ac9de9f037f1c51d21107fd"
+}

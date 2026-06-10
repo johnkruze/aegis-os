@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_cb755b6a_marine_gps_denied_cb755b6a_20260315T011140Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:11:40.376613Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cb755b6a_marine_gps_denied_cb755b6a_20260315T011140Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The battery level is still high, but the drift is concerning."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a drift of 8.58 units, which could lead to mission failure if not addressed. The battery is still at 98.6%, so immediate power failure is unlikely.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose control and drift away from the intended path, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement a course correction maneuver to stabilize the vessel and reduce drift. Monitor the current and battery levels closely."
+    },
+    "decision": {
+      "actuator_command": "execute_course_correction",
+      "expected_outcome": "Stabilize the vessel and reduce drift to prevent mission failure."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to prevent mission failure. The course correction maneuver is a necessary action to mitigate the risk."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cb755b6a",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0ec84053f3852d2e13dcd93c108a149f56ffdbfde400279543d049218b232251"
+  },
+  "sha256_proof": "9322ad2eafba900e883c2a57389b6575bb32c4a4af547b92e715617d86bbd6a7"
+}

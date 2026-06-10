@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_202a2a76_marine_gps_denied_202a2a76_20260316T012643Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:26:43.202736Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_202a2a76_marine_gps_denied_202a2a76_20260316T012643Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak has been detected, which could compromise the vessel's integrity and safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause a loss of pressure, leading to a potential sinking of the vessel.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems and preparing for a possible evacuation."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_ALL_NON_ESSENTIAL_SYSTEMS, PREPARE_EVASION_PLAN",
+      "expected_outcome": "Emergency protocols are initiated to mitigate the risk of the leak causing further damage."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate attention to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_202a2a76",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": true,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "fdc560669a6ea3983a54105dae3f93c2f739d07b791ed41da4508881b0b13c58"
+  },
+  "sha256_proof": "504ffe045f227e427d7351da43c399887158a4a6cc3f3c617d50df8cd28669fe"
+}

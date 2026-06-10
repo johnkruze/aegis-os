@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_70cc5ffe_marine_gps_denied_70cc5ffe_20260315T205844Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:58:44.741213Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_70cc5ffe_marine_gps_denied_70cc5ffe_20260315T205844Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery level is high, which suggests that the vessel is still operational but at risk of losing control due to the current surge."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery level is high, which suggests that the vessel is still operational but at risk of losing control due to the current surge.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose control and drift off course, potentially leading to a collision with other vessels or structures.",
+      "mitigation_strategy": "Implement emergency braking to slow down the vessel and reduce the drift. Monitor the current and adjust the course as necessary."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_BRAKING",
+      "expected_outcome": "The vessel will slow down and reduce the drift, allowing for better control of the vessel."
+    },
+    "self_reflection": "The current surge is a significant threat to the vessel's control and safety. The decision to implement emergency braking is based on the potential for loss of control and the need to maintain the vessel's position in the water."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_70cc5ffe",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "c1d09d071d03d5b5b94e36e3e28faf9be5ac54a20a239741e1af4d764be76515"
+  },
+  "sha256_proof": "02f611cae5edfd03c488b7bd19474054633866adbd96ceba848c43814951999e"
+}

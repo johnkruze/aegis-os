@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5047f982_marine_gps_denied_5047f982_20260316T005510Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:55:10.696250Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5047f982_marine_gps_denied_5047f982_20260316T005510Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 383.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly with the current readings, which could indicate a problem with the sensors or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and low velocity indicate that the system is not actively moving, which could be a result of being stationary or in a stationary mode. The battery level is high, which is good, but the current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a sensor failure or environmental issue. The shallow depth and high drift suggest a potential hazard. The system is not actively moving, which could be a result of being stationary or in a stationary mode. The battery level is high, which is good, but the current readings are concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly could cause the system to fail to detect or respond to environmental changes, leading to potential damage or loss of the mission.",
+      "mitigation_strategy": "Perform a sensor calibration or reset to verify the accuracy of the current readings. If the issue persists, consider a manual override to adjust the system's position or mode."
+    },
+    "decision": {
+      "actuator_command": "sensor_calibration",
+      "expected_outcome": "The system will perform a sensor calibration to verify the accuracy of the current readings. If the issue persists, a manual override to adjust the system's position or mode may be necessary."
+    },
+    "self_reflection": "The system has detected an anomaly with the current readings, which could indicate a sensor failure or environmental issue. The shallow depth and high drift suggest a potential hazard. The system is not actively moving, which could be a result of being stationary or in a stationary mode. The battery level is high, which is good, but the current readings are concerning. The system will perform a sensor calibration to verify the accuracy of the current readings. If the issue persists, a manual override to adjust the system's position or mode may be necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5047f982",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "5ebd7f220951ada854a919e756e7e8c9acc1ce1c1f294644b083e02cab2c9866"
+  },
+  "sha256_proof": "06e9edf72019ee72032e8eafc8c6c167e840232aa06569e54d7c3f850fd269a0"
+}

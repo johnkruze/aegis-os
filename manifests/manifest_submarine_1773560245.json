@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_8a9409c3_marine_gps_denied_8a9409c3_20260315T073717Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:37:17.368369Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8a9409c3_marine_gps_denied_8a9409c3_20260315T073717Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery level is still high, indicating that immediate power failure is unlikely."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a drift of 35.52 units, which could lead to a collision with the seabed or other obstacles. The vessel's position is not far from the waypoint, and the navigation error is minimal. The battery level is sufficient to continue operations for a short period.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could collide with the seabed or other obstacles due to the current surge. The navigation system may become unreliable if the drift continues.",
+      "mitigation_strategy": "Implement a course correction to reduce the drift and ensure the vessel remains within safe parameters. Monitor the navigation system closely and prepare for potential manual intervention if necessary."
+    },
+    "decision": {
+      "actuator_command": "course_correction",
+      "expected_outcome": "The vessel will be steered to reduce drift and maintain a safe course."
+    },
+    "self_reflection": "The current surge is a significant anomaly that requires immediate attention to ensure the safety of the mission. The vessel's position is close to the waypoint, and the battery level is sufficient to continue operations for a short period. The internal agent has assessed the risk and implemented a course correction to mitigate the potential collision risk."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8a9409c3",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "8d8ab48eee7d8b544c27193eb5c9a1b691fa7cfd9137048b2fd17a9bbb18c1d3"
+  },
+  "sha256_proof": "34695757a5d3c5962cbfa052f9ff24a44d84f5f70a14872acbcc5af72776120a"
+}

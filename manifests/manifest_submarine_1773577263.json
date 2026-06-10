@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_aa69cab8_marine_gps_denied_aa69cab8_20260315T122053Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:20:53.421615Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_aa69cab8_marine_gps_denied_aa69cab8_20260315T122053Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak in the marine environment. The battery level is high, and the current readings suggest movement, but the depth is shallow and the drift is significant. The navigation error is low, and the velocity is moderate."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "A leak has been detected in the marine environment. The current battery level is high, which suggests that the system can continue to operate for some time. The shallow depth and significant drift indicate that the leak may be near the surface. The navigation error is low, which suggests that the system can still maintain its position. The velocity is moderate, which suggests that the system can still move to a safe location if necessary.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause further damage to the system or the environment. The system may also be at risk of being detected by other vessels or entities.",
+      "mitigation_strategy": "The system should be moved to a safe location away from the leak. The system should also be monitored for any further damage or changes in the environment."
+    },
+    "decision": {
+      "actuator_command": "MOVE_TO_SAFE_LOCATION",
+      "expected_outcome": "The system will be moved to a safe location away from the leak. The system will be monitored for any further damage or changes in the environment."
+    },
+    "self_reflection": "The system has detected a leak in the marine environment. The current battery level is high, and the system can continue to operate for some time. The shallow depth and significant drift indicate that the leak may be near the surface. The navigation error is low, which suggests that the system can still maintain its position. The velocity is moderate, which suggests that the system can still move to a safe location if necessary. The system should be moved to a safe location away from the leak. The system should also be monitored for any further damage or changes in the environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_aa69cab8",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": true,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "e2ad86633f4cb6db7052ca865c06cd2d08c34f1dc6f1cc44376cd15c91f8f7d7"
+  },
+  "sha256_proof": "e04e64b925529ac5901510cbc197426d867334f6ce32404d42cb36f6fac53bb9"
+}

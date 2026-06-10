@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_376cb4cf_marine_gps_denied_376cb4cf_20260316T011214Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:12:14.617673Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_376cb4cf_marine_gps_denied_376cb4cf_20260316T011214Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The battery level is still high, but the drift is concerning."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a drift that could lead to mission failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose control and drift out of the designated area, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking to reduce drift and stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking",
+      "expected_outcome": "Stabilize the vessel and reduce drift to prevent mission failure."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure mission success. The actuator command to apply emergency braking is a decisive step to mitigate the risk of mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_376cb4cf",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "2766d57ebfad4169e67da183afda50f9af488cfa389eb4f20bd2ff99fbb9c635"
+  },
+  "sha256_proof": "43cc7a018229615a9c8da3f7815fa7fc783bdccb1baf1017e8db2c7b6fe4768d"
+}

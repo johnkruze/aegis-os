@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_703fd9dc_marine_gps_denied_703fd9dc_20260315T020018Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:00:18.278238Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_703fd9dc_marine_gps_denied_703fd9dc_20260315T020018Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is moving through the water efficiently. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which may impact the accuracy of the position. The navigation error is low, indicating the system is maintaining its course. The position is slightly off, which could be due to drift or other factors. The temperature is normal, and the velocity is slow, which is expected for the mission. The waypoint is at the start, which is consistent with the mission plan."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within expected parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is moving through the water efficiently. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which may impact the accuracy of the position. The navigation error is low, indicating the system is maintaining its course. The position is slightly off, which could be due to drift or other factors. The temperature is normal, and the velocity is slow, which is expected for the mission. The waypoint is at the start, which is consistent with the mission plan.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing within expected parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is moving through the water efficiently. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which may impact the accuracy of the position. The navigation error is low, indicating the system is maintaining its course. The position is slightly off, which could be due to drift or other factors. The temperature is normal, and the velocity is slow, which is expected for the mission. The waypoint is at the start, which is consistent with the mission plan.",
+      "mitigation_strategy": "Continue monitoring the system and adjust the course if necessary to maintain the desired depth and position. If the drift becomes significant, consider implementing a correction strategy to maintain the desired course."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate within expected parameters, with only minor deviations. The battery will remain healthy, and the current readings will suggest the system is moving through the water efficiently. The depth will be maintained, and the position will be adjusted as necessary to maintain the desired course. The temperature will remain normal, and the velocity will be slow, which is expected for the mission. The waypoint will be at the start, which is consistent with the mission plan."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is moving through the water efficiently. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which may impact the accuracy of the position. The navigation error is low, indicating the system is maintaining its course. The position is slightly off, which could be due to drift or other factors. The temperature is normal, and the velocity is slow, which is expected for the mission. The waypoint is at the start, which is consistent with the mission plan."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_703fd9dc",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c900c164e5ed7b7e7fdcde35ef3e553ab3b588d04b665d2b90604c2f62bfe1c1"
+  },
+  "sha256_proof": "31355a191919066693978aa92dabedbd468de16ec4481a5c70b5c7f572fc3ff5"
+}

@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_95a18554_marine_gps_denied_95a18554_20260315T204246Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:42:46.421153Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_95a18554_marine_gps_denied_95a18554_20260315T204246Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "time is 300.0 seconds",
+        "velocity is low"
+      ],
+      "interpretation": "The system is experiencing unusual current readings and high drift, which could indicate a navigation issue. The battery is still at a high level, and the depth is shallow, suggesting the system is likely in a confined area. The navigation error is low, which is positive, but the drift is concerning. The system is near waypoint 0, which could be a point of reference or a potential issue if the waypoint is not correctly set."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a potential navigation error. The system is near waypoint 0, which could be a point of reference or a potential issue if the waypoint is not correctly set.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may be unable to maintain its intended course and could drift away from the intended path.",
+      "mitigation_strategy": "Verify the current waypoint and adjust the navigation parameters if necessary. Check the system's current position and ensure it is on the correct course."
+    },
+    "decision": {
+      "actuator_command": "RECALCULATE_NAVIGATION_PARAMETERS",
+      "expected_outcome": "The system will recalculate its navigation parameters and attempt to correct the drift."
+    },
+    "self_reflection": "The system detected an anomaly in the current readings and drift, which could indicate a navigation issue. The decision was made to recalibrate the navigation parameters to ensure the system remains on course. This decision is based on the current state of the system and the potential risks associated with the anomaly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_95a18554",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "3d6c1b9054e74a0ff9873da94cb2dfa2fff80e535c1f42b99e5e30bc0babcdb6"
+  },
+  "sha256_proof": "9d25a96d281f2f4838177c14e6fdf44a817ce8f324110bcf8a390b3507ddc1c5"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f912ed8f_marine_gps_denied_f912ed8f_20260315T031031Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:10:31.895958Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f912ed8f_marine_gps_denied_f912ed8f_20260315T031031Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected movement that could compromise the mission's integrity."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a collision with obstacles or the loss of control over the vessel.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may drift out of the designated area or collide with obstacles.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to return to the safe zone."
+    },
+    "decision": {
+      "actuator_command": "BRAKE; ADJUST_COURSE",
+      "expected_outcome": "The vessel will decelerate and adjust its course to mitigate the current surge and return to the safe area."
+    },
+    "self_reflection": "The anomaly highlights the importance of maintaining constant vigilance and being prepared for unexpected challenges in marine environments."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f912ed8f",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "c4b67d1feb6471a6fa1bb2bddd8bebd6380e89e33c7244cf7df0c37eb25cf10e"
+  },
+  "sha256_proof": "8a378ac9ae581f920761209f2caccdda2e1039ef6405e103e874f94a2e92f212"
+}

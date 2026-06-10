@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ce46c3be_marine_gps_denied_ce46c3be_20260315T094817Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:48:17.608239Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ce46c3be_marine_gps_denied_ce46c3be_20260315T094817Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is within normal operating parameters",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no critical issues.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring system parameters."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current mission parameters and continue towards the next waypoint."
+    },
+    "self_reflection": "The system is performing well and no anomalies have been detected. The mission is proceeding as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ce46c3be",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "98312ac3da0663cff4414ac97d3adc2677bcb70d88505b926d0fc1da8c026d19"
+  },
+  "sha256_proof": "185ead3334af8a73bb8b561042e45b7edc5a845e703ae47d7deb332937b814d4"
+}

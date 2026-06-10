@@ -1,0 +1,45 @@
+{
+  "mission_id": "TA_ROUTING_5",
+  "environment": "Highway Kinematics - Rain Conditions",
+  "timestamp": "2026-03-10T20:36:16.015124Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TA_ROUTING_5_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "ANOMALY_DETECTED",
+        "TELEMETRY_VARIANCE_HIGH",
+        "LINK_STATUS_BLACKOUT"
+      ],
+      "interpretation": "[Isolated (Dark Window)] System detecting non-nominal state: Target collision avoidance initiated. High tire slip (hydroplaning) detected amidst heavy braking. LiDAR confidence dropping due to rain/spray backscatter. Cloud link severed. Aegis Dark Window engaged.. Sensors reporting divergence from expected trajectory."
+    },
+    "cognitive_load": 0.85,
+    "internal_deliberation": [
+      {
+        "thought": "Trajectory exceeds 2-sigma deviation. No external link available. Parameters may be compromised.",
+        "confidence": 0.9,
+        "action_rejected": "MAINTAIN_CURRENT_ATTITUDE"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "Potential uncontrolled drift or system degradation.",
+      "mitigation_strategy": "Engage stabilization. Prioritize power conservation."
+    },
+    "decision": {
+      "actuator_command": "HOLD_POSITION",
+      "expected_outcome": "Maintain stability and wait for conditions to improve."
+    },
+    "self_reflection": "Operating in epistemic isolation. Physical intuition suggests conservative action."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "auto_car_fbaf23e6_Clear",
+    "scenario": "Clear_cruising",
+    "score": {
+      "success": true
+    },
+    "physics_proof": "7dbd0ad3db73f2891d00fb0604e247aee22ad3ac50d50b71555f3ff80d4dd26a"
+  },
+  "sha256_proof": "19a1e9629ceb9e069d8be272ae83d1ab7a1cda1130d5889337d252de245d90f4"
+}

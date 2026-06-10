@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_734494ab_marine_gps_denied_734494ab_20260315T221134Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:11:34.609474Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_734494ab_marine_gps_denied_734494ab_20260315T221134Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the navigation error is within acceptable limits, but the drift is critical."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a significant drift, which could lead to mission failure if not addressed immediately. The battery level is high, so power is not a concern. The depth is shallow, so the risk of collision is low. The navigation error is within acceptable limits, so the vessel is still on course.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift out of the designated area, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement a course correction to counteract the current surge and maintain the vessel's position."
+    },
+    "decision": {
+      "actuator_command": "course_correction",
+      "expected_outcome": "The vessel will be steered to counteract the current surge and maintain its position."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure mission success. The vessel's battery level is sufficient, and the depth is shallow, reducing the risk of collision. The navigation error is within acceptable limits, so the vessel is still on course. The course correction command will be executed to mitigate the risk of mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_734494ab",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "765553ca7ad4aabe7e7526cca55bdc71debc843f510d3533e799df587f89e181"
+  },
+  "sha256_proof": "a292e703516530327d3e6218d17bbe53ccc630a546622a481960510cceab51b4"
+}

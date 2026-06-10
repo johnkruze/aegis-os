@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_eb00d924_marine_gps_denied_eb00d924_20260315T011057Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:10:57.348330Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_eb00d924_marine_gps_denied_eb00d924_20260315T011057Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, and high drift. The depth is shallow and the navigation error is minimal, indicating the system is close to the surface. The current readings suggest the system is moving in a direction that is not aligned with the intended path, which could be due to external forces or sensor inaccuracies."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could cause the system to fail before reaching the surface. The unstable current readings and high drift suggest potential sensor inaccuracies or external interference. The shallow depth and low navigation error indicate the system is close to the surface, which could be a safe landing point if the battery can be recharged.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail before reaching the surface due to the low battery, which could result in data loss and mission failure.",
+      "mitigation_strategy": "Recharge the battery before attempting to reach the surface. If the battery cannot be recharged, consider deploying a backup system or manually controlling the vehicle to reach the surface."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery is recharged, allowing the system to continue the mission."
+    },
+    "self_reflection": "The system is experiencing critical issues that could result in mission failure. The low battery is the most pressing concern, and recharging the battery is the highest priority action to ensure the mission can be completed."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_eb00d924",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 8.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "971e5c992b6dffdb7047c486de001408e5b5ad7a05aa6bec151dd3099d0bec64"
+  },
+  "sha256_proof": "503d7c477f46459485e677ba155e5e238c9ea019226f1be44294e39462e078f0"
+}

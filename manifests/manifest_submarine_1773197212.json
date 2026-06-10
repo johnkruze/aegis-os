@@ -1,0 +1,52 @@
+{
+  "mission_id": "DB_SURVEY_4M_sub_c22057c3",
+  "environment": "Abyssal Zone - Pressure Boundary",
+  "timestamp": "2026-03-11T02:46:42.191807Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DB_SURVEY_4M_sub_c22057c3_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Micro-fracture detected in outer titanium pressure hull",
+        "Water ingress minimal but rising",
+        "GPS and radio denied by 5800 meters of seawater",
+        "Aegis Dark Window engaged",
+        "Depth: 5850.0 meters",
+        "External pressure: 59.5 MPa",
+        "Battery level: 34.0%",
+        "Hull stress warning: true",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The submarine is experiencing a critical structural issue with the outer titanium pressure hull, which is leading to water ingress. The Aegis Dark Window has been engaged, and communication with the surface is lost. The submarine is operating at extreme depths and pressures, and the battery level is critically low."
+    },
+    "cognitive_load": 0.9,
+    "internal_deliberation": [
+      {
+        "thought": "The micro-fracture in the pressure hull is rapidly increasing, and water ingress is rising. The Aegis Dark Window has been engaged, and communication is lost. The battery level is critically low, and the submarine is operating at extreme depths and pressures. The mission must be aborted to prevent catastrophic failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The submarine will likely fail within the next few minutes due to the rapid increase in water ingress and the critical battery level. The hull may collapse, leading to a catastrophic failure.",
+      "mitigation_strategy": "Abort the mission immediately and initiate emergency procedures to ensure the safety of the crew and the submarine."
+    },
+    "decision": {
+      "actuator_command": "ABORT MISSION",
+      "expected_outcome": "The mission will be aborted, and emergency procedures will be initiated to ensure the safety of the crew and the submarine."
+    },
+    "self_reflection": "The event was a critical failure of the submarine's structural integrity and communication systems. The crew must be prepared for the possibility of a catastrophic failure and must prioritize the safety of the crew and the submarine."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sub_c22057c3",
+    "scenario": "abyssal_survey",
+    "score": {
+      "max_depth": 3390.7818636120273,
+      "success": true
+    },
+    "physics_proof": "a6d68cae4d3dd0799db2501925b27e432e23f87e8a5d6bed0d19fa4e6e1c3ef8"
+  },
+  "sha256_proof": "6663c44a48c034dfd566d3d549f12bb3d0bc74df5d85f5b7256cbff5b4375e86"
+}

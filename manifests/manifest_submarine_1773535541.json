@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_6401730d_marine_gps_denied_6401730d_20260315T004532Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:45:32.107095Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6401730d_marine_gps_denied_6401730d_20260315T004532Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 375.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and low battery level indicate the system is conservatively operating."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The drift could be due to external currents or sensor inaccuracies. The inconsistent current readings need to be verified. The shallow depth and low error suggest the vehicle is in a safe position. The slow velocity and low battery level indicate the system is conservatively operating.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the vehicle to move away from the intended path, but the shallow depth and low error suggest it is in a safe position. The inconsistent current readings should be verified to ensure the system is not being affected by external factors.",
+      "mitigation_strategy": "Verify the current readings and adjust the system if necessary. Monitor the drift and adjust the course if it continues to be significant."
+    },
+    "decision": {
+      "actuator_command": "Verify current readings and adjust course if necessary",
+      "expected_outcome": "The system will be verified and adjusted if needed, ensuring it remains on course and within safe parameters."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and low error suggest the vehicle is in a safe position. The slow velocity and low battery level indicate the system is conservatively operating. The drift could be due to external currents or sensor inaccuracies. The inconsistent current readings need to be verified. The shallow depth and low error suggest the vehicle is in a safe position. The slow velocity and low battery level indicate the system is conservatively operating."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6401730d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "9685a68b6654bcd90a611c33c0f177d3ee3d54c1de046116590647446dfe7e66"
+  },
+  "sha256_proof": "f6f7091a0d5fa5bbf05a24a6413e4a9e17116b5f02271af71cd5a50238eaf063"
+}

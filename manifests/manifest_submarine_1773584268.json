@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_52fc4a13_marine_gps_denied_52fc4a13_20260315T141743Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:17:43.046092Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_52fc4a13_marine_gps_denied_52fc4a13_20260315T141743Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control of the mission."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_52fc4a13",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "abd2344f9938cbe5e53eff8a6637da2c5994735bebc9f38a4dac8dca3c7129c5"
+  },
+  "sha256_proof": "3dfa57e7cb4fbab8940eecb3b16cad45445e91189dc10753007419ff10ffcc13"
+}

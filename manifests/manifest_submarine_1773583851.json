@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_85a3254e_marine_gps_denied_85a3254e_20260315T141040Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:10:40.811234Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_85a3254e_marine_gps_denied_85a3254e_20260315T141040Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by -154.37, -243.11, -0.49",
+        "time is 428.0",
+        "velocity is low",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the shallow depth and low velocity suggest that the system may be in a restricted area or not moving as expected."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a potential navigation error. The shallow depth and low velocity indicate that the system may be in a restricted area or not moving as expected. The battery level is high, which is good, but the shallow depth and low velocity suggest that the system may be in a restricted area or not moving as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may be in a restricted area or not moving as expected, which could lead to a collision or a failure to reach the next waypoint.",
+      "mitigation_strategy": "Perform a manual override to check the current sensor readings and adjust the course if necessary. If the issue persists, perform a system reset and reinitialize the navigation system."
+    },
+    "decision": {
+      "actuator_command": "manual override",
+      "expected_outcome": "The system will be manually overridden to check the current sensor readings and adjust the course if necessary."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the current sensor. The shallow depth and low velocity suggest that the system may be in a restricted area or not moving as expected. The battery level is high, which is good, but the shallow depth and low velocity suggest that the system may be in a restricted area or not moving as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_85a3254e",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "611bda23e525b14699842bb7d942569ac366f747ff41fab64686e26706f9ab98"
+  },
+  "sha256_proof": "4a4fa3a28486908efc875b80d1f3ad4c729e518b0743484ceddceac5b226a2a4"
+}

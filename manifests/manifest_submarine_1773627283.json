@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_55a455d0_marine_gps_denied_55a455d0_20260316T021433Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:14:33.238819Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_55a455d0_marine_gps_denied_55a455d0_20260316T021433Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is within normal range",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from the expected parameters. The battery is fully charged, and the current readings are within the acceptable range. The depth is shallow, which is expected in marine environments. The drift is moderate, and the navigation error is low, indicating that the system is maintaining its course. The position is slightly off, but this is within the expected range for a marine GPS system. The time is within the expected range, and the velocity is within normal bounds. The waypoint is at the start, which is consistent with the mission objectives."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes are predicted. The system is performing as expected.",
+      "mitigation_strategy": "No action is required at this time."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned without any changes."
+    },
+    "self_reflection": "The system is performing as expected with no immediate issues. The battery is fully charged, and the current readings are within the acceptable range. The depth is shallow, which is expected in marine environments. The drift is moderate, and the navigation error is low, indicating that the system is maintaining its course. The position is slightly off, but this is within the expected range for a marine GPS system. The time is within the expected range, and the velocity is within normal bounds. The waypoint is at the start, which is consistent with the mission objectives."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_55a455d0",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "83602210b6cae4922984764a03e209bbdd18540904452e5b4ca85e0a925f52b8"
+  },
+  "sha256_proof": "ef1eb3e4b63e30693c8a8fd227c3e76cb01440e7d1e6bca2fb443de27507294d"
+}

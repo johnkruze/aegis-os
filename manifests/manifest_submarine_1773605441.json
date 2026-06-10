@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_9b33ed7e_marine_gps_denied_9b33ed7e_20260315T201036Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:10:36.024175Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9b33ed7e_marine_gps_denied_9b33ed7e_20260315T201036Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected change in the current or a potential navigational error."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a change in the ocean current or a navigational error. We need to verify the current position and adjust the course if necessary.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift out of the designated area or collide with obstacles.",
+      "mitigation_strategy": "Verify the current position using the GPS and adjust the course if necessary. Monitor the drift and adjust the speed and direction as needed."
+    },
+    "decision": {
+      "actuator_command": "Verify GPS position and adjust course if necessary",
+      "expected_outcome": "The vessel will either remain on course or adjust to avoid the current surge."
+    },
+    "self_reflection": "The current surge is an unexpected event that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9b33ed7e",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "0313da844487ee76b30b225ddac79c8cd047eb02788a778c416d35e91f73ad79"
+  },
+  "sha256_proof": "65f42d37ca297fe8f51a2f0177ff612b2b87900cda4d8e0f03125d7f733af5af"
+}

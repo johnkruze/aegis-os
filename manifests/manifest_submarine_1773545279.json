@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_2e17cab8_marine_gps_denied_2e17cab8_20260315T032753Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:27:53.719526Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2e17cab8_marine_gps_denied_2e17cab8_20260315T032753Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "depth within expected range",
+        "drift within acceptable limits",
+        "small navigation error",
+        "waypoint 1 reached"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery level and some minor fluctuations in current readings. The depth and drift are within expected ranges, and the navigation error is minimal. The mission has reached waypoint 1 as intended."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, requiring immediate action to prevent shutdown.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "System may shut down unexpectedly if battery is not replenished soon.",
+      "mitigation_strategy": "Initiate battery recharge sequence immediately."
+    },
+    "decision": {
+      "actuator_command": "RECHARGE_BATTERY",
+      "expected_outcome": "Battery level will be restored, allowing the system to continue operation."
+    },
+    "self_reflection": "The system has completed the intended waypoint and is operating within normal parameters. However, the low battery level is a critical issue that requires immediate attention to prevent system failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2e17cab8",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 1,
+      "waypoints_total": 7
+    },
+    "physics_proof": "8081dd6837b527a908427084903fa71923b96a0e0f818c6db1572fed36cbadbb"
+  },
+  "sha256_proof": "d4e79f76d3b1abefc77d324f677bd400331dfd45733884eff239796fcd8414d4"
+}

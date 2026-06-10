@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_a1cbec0c_marine_gps_denied_a1cbec0c_20260315T151611Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:16:11.278859Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a1cbec0c_marine_gps_denied_a1cbec0c_20260315T151611Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and the slight negative current readings. The temperature is high, which could indicate a thermal anomaly. The navigation error is low, suggesting the system is maintaining its course. The battery level is high, indicating sufficient power. The velocity is slow, which is expected at the start of a mission. The depth is shallow, which is within expected operational limits. The waypoint is at the start, indicating the mission has not yet begun."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to wind or current affecting the vessel. The slight negative current readings are concerning but not immediately critical. The temperature is high, which could be a thermal anomaly that needs to be monitored. The mission has not yet begun, so there is no immediate failure mode to predict.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The high drift could cause the vessel to deviate from its course, but it is not immediately critical. The slight negative current readings could indicate a problem with the vessel's propulsion system, but it is not immediately critical. The temperature is high, which could be a thermal anomaly that needs to be monitored.",
+      "mitigation_strategy": "Monitor the drift and current readings closely. If the drift continues to increase, adjust the course to compensate. If the current readings continue to be negative, investigate the propulsion system. Monitor the temperature and take appropriate action if it continues to rise."
+    },
+    "decision": {
+      "actuator_command": "Monitor drift and current readings. Adjust course if necessary. Monitor temperature.",
+      "expected_outcome": "The mission will continue to monitor the critical parameters and take appropriate action if necessary."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the high drift and the slight negative current readings. The temperature is high, which could indicate a thermal anomaly. The mission has not yet begun, so there is no immediate failure mode to predict. The system will continue to monitor the critical parameters and take appropriate action if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a1cbec0c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c501fbce83302005a8fb0e54725eee9859229ebed5320cd074d3fa72c49433b4"
+  },
+  "sha256_proof": "cbe69903216278e69173c79ba28dd0dae72af7354b9cc89d7e46d0eb022945e4"
+}

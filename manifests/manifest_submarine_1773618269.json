@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_b1b35764_marine_gps_denied_b1b35764_20260315T234422Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:44:22.270775Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b1b35764_marine_gps_denied_b1b35764_20260315T234422Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, slight depth error, high drift, and the waypoint has not been reached. The navigation error is low, which suggests the system is still relatively accurate."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to fail soon. The unstable current readings and high drift suggest a potential issue with the propulsion system. The waypoint has not been reached, which indicates a failure in the mission objective.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail soon, leading to a potential loss of control and mission failure.",
+      "mitigation_strategy": "Immediately initiate a return to base procedure. Activate emergency power management to conserve battery life. Initiate communication with the ground control to report the anomaly and request assistance."
+    },
+    "decision": {
+      "actuator_command": "return_to_base",
+      "expected_outcome": "The system will initiate a return to base procedure, conserving battery life and attempting to reach a safe location."
+    },
+    "self_reflection": "The system has detected critical anomalies that could lead to mission failure. Immediate action is required to ensure the safety of the system and the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b1b35764",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "426f4e872bd3e7ca3ac92340090d1b1e7ae6cc1474516dfbf0b2d1b258f859a7"
+  },
+  "sha256_proof": "5ad419d5c13cc8be760f13d2d73b85637182749ebfef6af0c0ea94e0496a94ec"
+}

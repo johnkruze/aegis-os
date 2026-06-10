@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_a3f8057f_marine_gps_denied_a3f8057f_20260315T055424Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:54:24.456890Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a3f8057f_marine_gps_denied_a3f8057f_20260315T055424Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION"
+      ],
+      "interpretation": "The battery level is critically low, indicating that the system is running on very little power. This could lead to a complete shutdown of the system if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is at 59.1% capacity, which is dangerously low. Immediate action is required to prevent a complete system failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system will likely shut down completely within the next few minutes if no action is taken.",
+      "mitigation_strategy": "Initiate emergency power management protocols to conserve battery life and attempt to reach the nearest safe location."
+    },
+    "decision": {
+      "actuator_command": "initiate_emergency_power_management",
+      "expected_outcome": "The system will enter emergency power mode, attempting to conserve battery life and prepare for a safe shutdown."
+    },
+    "self_reflection": "The critical battery degradation has been detected, and immediate action is necessary to prevent a complete system failure. The decision to initiate emergency power management is based on the critical nature of the situation and the potential for a complete shutdown if no action is taken."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a3f8057f",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.9,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "a123145187cec23738a2179db2d7ac0fc0e78c1a23190bcb266cc908d221504d"
+  },
+  "sha256_proof": "831850dae87ad6756ddb9d116151daf5a68602462f55c74b51f79a11736b4a00"
+}

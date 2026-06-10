@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7a9654b9_marine_gps_denied_7a9654b9_20260315T070326Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:03:26.939036Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7a9654b9_marine_gps_denied_7a9654b9_20260315T070326Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and low velocity suggest the vehicle is in a calm and stable environment. The slight position error and low navigation error indicate the system is maintaining a relatively accurate course."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the environment is more complex than expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The inconsistent current readings could lead to a slight deviation from the planned course, but the system is otherwise stable.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue_course",
+      "expected_outcome": "The vehicle will continue on its current course, and the system will monitor the current readings for any further anomalies."
+    },
+    "self_reflection": "The system is performing as expected, with the exception of the significant drift. The current readings are inconsistent, which could indicate a problem with the current sensors or the environment is more complex than expected. The system will continue on its current course and monitor the current readings closely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7a9654b9",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c7f742e82efd65d2a8d78f46aabe73a563a8d45db3eff2dbc43202109cccaaa9"
+  },
+  "sha256_proof": "2a0767e472ff12b0006eb94d28f781b7720e2ea0c97374131342b501bdd424b2"
+}

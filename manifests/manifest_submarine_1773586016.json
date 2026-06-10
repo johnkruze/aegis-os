@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_40a064de_marine_gps_denied_40a064de_20260315T144648Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:46:48.777474Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_40a064de_marine_gps_denied_40a064de_20260315T144648Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is within expected range",
+        "navigation error is low",
+        "position is at waypoint 0",
+        "time is 596.0",
+        "velocity is near zero"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the abnormal current readings which could indicate a potential issue with the propulsion system or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are outside the expected range, which could be due to a malfunction in the propulsion system or an external factor in the water.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The propulsion system may be damaged or the environment may be more turbulent than expected, causing the current readings to be abnormal.",
+      "mitigation_strategy": "Perform a system check to verify the propulsion system and monitor the current readings closely. If the issue persists, consider a manual override to adjust the propulsion settings."
+    },
+    "decision": {
+      "actuator_command": "system_check",
+      "expected_outcome": "The propulsion system will be checked for any damage or issues, and the current readings will be monitored closely."
+    },
+    "self_reflection": "The anomaly detected is concerning, but the system appears to be otherwise stable. A system check is the most prudent action to ensure the safety and integrity of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_40a064de",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.13,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "9e590b8f7ae96a1df1db4bc1f55d3aaee56176e632a82199d8135224877dd890"
+  },
+  "sha256_proof": "c7b135cde7ca1d48b1f3c94eab5a85e7d18f66655877b01fc2357b07360fb891"
+}

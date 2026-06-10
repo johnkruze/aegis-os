@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f5954906_marine_gps_denied_f5954906_20260315T203009Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:30:09.062387Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f5954906_marine_gps_denied_f5954906_20260315T203009Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 394.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the vehicle is moving in a predictable manner. The shallow depth and moderate drift indicate the vehicle is operating in a controlled environment. The low navigation error and slightly off position suggest the vehicle is close to its intended path. The time and velocity readings are within expected ranges, and the vehicle is at the start of its mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is operating within normal parameters and is close to its intended path. The minor deviations are within acceptable limits.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle is expected to continue operating as intended without significant issues.",
+      "mitigation_strategy": "No action required at this time."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The vehicle will continue to operate as intended and complete the mission successfully."
+    },
+    "self_reflection": "The vehicle is performing as expected, and there are no immediate issues that require intervention. The minor deviations from expected values are within acceptable limits and do not pose a risk to the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f5954906",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "f1672847f3c342e46e39e10c4ef7cb8ad3abd930ea4b0b46f0ebe8891cec6de2"
+  },
+  "sha256_proof": "30905166d114beee367a4f327383e490f9ef40b6bf034196bf71c87e36922424"
+}

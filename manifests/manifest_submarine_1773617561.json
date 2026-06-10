@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_ae3daaf9_marine_gps_denied_ae3daaf9_20260315T233232Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:32:32.432647Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ae3daaf9_marine_gps_denied_ae3daaf9_20260315T233232Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel. The battery level is high, and the current readings suggest a potential issue with the propulsion system. The depth is shallow, and the drift is significant, indicating that the vessel may be moving away from the intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vessel is in a potentially dangerous situation due to the leak and the high drift. The propulsion system may be compromised, leading to further damage or loss of control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause significant damage to the vessel, leading to a loss of control or sinking. The high drift could result in the vessel being lost at sea.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down the propulsion system, deploying emergency flotation devices, and initiating a distress signal. Notify the command center and request assistance from rescue vessels."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_PROPULSION, DEPLOY_FLT_DEVICES, INITIATE_DISTRESS_SIGNAL",
+      "expected_outcome": "The propulsion system will be shut down to prevent further damage, flotation devices will be deployed to keep the vessel afloat, and a distress signal will be sent to request assistance."
+    },
+    "self_reflection": "The detection of a leak on the surface of the vessel is a critical event that requires immediate action to prevent further damage or loss of control. The high drift and potential issues with the propulsion system add to the urgency of the situation. The decision to activate emergency protocols is based on the critical nature of the leak and the potential risks involved."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ae3daaf9",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": true,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "d7f9bcf86d6518f71b1ae2f017494284ebd3aa1e8cdbe87ce4221793e3d0090f"
+  },
+  "sha256_proof": "faad6f5e211e96a8ae31d54c2d238475ac24bac6534dd15f98fa318b2b216c69"
+}

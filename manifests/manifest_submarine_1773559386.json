@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_07cf324e_marine_gps_denied_07cf324e_20260315T072258Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:22:58.892305Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_07cf324e_marine_gps_denied_07cf324e_20260315T072258Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "small depth",
+        "high drift",
+        "moderate navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, unstable current readings, and a small depth. The vessel is experiencing high drift and moderate navigation error, which could lead to mission failure if not addressed promptly."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery level is critical and needs to be addressed immediately to prevent system failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The unstable current readings suggest potential issues with the propulsion system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift and navigation error indicate a need for precise control to maintain the mission.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery and unstable current readings, potentially leading to mission termination.",
+      "mitigation_strategy": "Increase battery power, stabilize current readings, and implement precise control measures to maintain navigation."
+    },
+    "decision": {
+      "actuator_command": "increase battery power, stabilize current readings, implement precise control measures",
+      "expected_outcome": "Stabilize system performance and maintain mission integrity."
+    },
+    "self_reflection": "The current state of the system is critical and requires immediate attention to prevent mission failure. The high drift and navigation error indicate a need for precise control to maintain the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_07cf324e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.14,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "398cbd65861f459eb383f73cb5cba740d3bf070c585cd0b6876808e3b89d8853"
+  },
+  "sha256_proof": "b4b59bf1c40ca246c2127a3a1b21f0d6dc8e67a83af2b648a4ea0bd0731f9688"
+}

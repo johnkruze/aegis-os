@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c91112de_marine_gps_denied_c91112de_20260315T093722Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:37:22.184453Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c91112de_marine_gps_denied_c91112de_20260315T093722Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from the expected path. The battery is well-charged, and the current and depth are within safe limits. The slight drift and navigation error suggest a minor deviation from the intended course, but the system is otherwise stable."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters. The minor deviations are within acceptable limits.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system will continue to operate normally until the next waypoint is reached.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to operate normally and reach the next waypoint."
+    },
+    "self_reflection": "The system is performing as expected with only minor deviations from the intended course. The battery is well-charged, and the current and depth are within safe limits. The slight drift and navigation error suggest a minor deviation from the intended course, but the system is otherwise stable."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c91112de",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "ccffd4abc1ca038b647e2fd63e05e87a20d397128ac2d7b9e4116e76656c468f"
+  },
+  "sha256_proof": "f2ae58108959475b1df91c79fb60bf45998e03a30a8ae0f51fbe1636ab0afc0c"
+}

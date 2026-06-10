@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_01de1507_marine_gps_denied_01de1507_20260315T040111Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:01:11.355821Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_01de1507_marine_gps_denied_01de1507_20260315T040111Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 300.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly with the current readings, which are significantly lower than expected. The shallow depth and high drift suggest that the vehicle may be in a difficult or unexpected location. The low navigation error indicates that the system is still performing well in terms of positioning, but the drift and shallow depth are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a problem with the current sensors or the vehicle's orientation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and high drift suggest that the vehicle may be in a difficult or unexpected location. This could be due to a navigation error or an unexpected obstacle.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The low navigation error indicates that the system is still performing well in terms of positioning, but the drift and shallow depth are concerning. This suggests that the vehicle may be in a difficult or unexpected location.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in a difficult or unexpected location, which could lead to a collision or loss of control.",
+      "mitigation_strategy": "Perform a manual override of the current navigation system and verify the vehicle's position. If the vehicle is in a difficult or unexpected location, adjust the navigation system to correct the drift and depth."
+    },
+    "decision": {
+      "actuator_command": "manual override of navigation system",
+      "expected_outcome": "The vehicle's position will be verified and adjusted if necessary."
+    },
+    "self_reflection": "The anomaly detected suggests that the vehicle may be in a difficult or unexpected location. The current readings are abnormal and could indicate a problem with the current sensors or the vehicle's orientation. The shallow depth and high drift suggest that the vehicle may be in a difficult or unexpected location. The low navigation error indicates that the system is still performing well in terms of positioning, but the drift and shallow depth are concerning. The decision to perform a manual override of the current navigation system is based on the potential risk of collision or loss of control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_01de1507",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "556f28b6627c30e49256594b4a0ea2e4683203e80f4bc7ffed3eed1ff7256bb6"
+  },
+  "sha256_proof": "e77d2bc116bde333b1a01902ed3344b8b1300301c938cc5b7509a0c0acb84813"
+}

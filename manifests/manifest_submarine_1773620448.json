@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_4f20a159_marine_gps_denied_4f20a159_20260316T002040Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:20:40.116919Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4f20a159_marine_gps_denied_4f20a159_20260316T002040Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is 180.5 meters",
+        "drift is 12.31 meters",
+        "navigation error is minimal",
+        "position is at waypoint 1",
+        "time is 339.0 seconds",
+        "velocity is [1.31, -1.84, 1.28]"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight negative current reading and a minor drift. The navigation error is within acceptable limits, and the mission is at the expected waypoint. The battery level is high, indicating sufficient power for continued operation."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly negative, but within expected operational parameters.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The drift is within acceptable limits, and the navigation error is minimal.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The battery level is high, ensuring sufficient power for the mission.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted based on current telemetry.",
+      "mitigation_strategy": "Continue monitoring current readings and maintain course."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. No immediate actions are required. Continue monitoring and maintain course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4f20a159",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 1,
+      "waypoints_total": 6
+    },
+    "physics_proof": "5c3674c36508c586eb29490d3c37d20df8c25192e93ab49394ed5c9f584d667f"
+  },
+  "sha256_proof": "1d45475d9f1cd9e9504e6285731253b71c5610fc65b6bfb0a956201355a84d10"
+}

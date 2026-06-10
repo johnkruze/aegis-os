@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_26592d6a_marine_gps_denied_26592d6a_20260315T070824Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:08:24.437558Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_26592d6a_marine_gps_denied_26592d6a_20260315T070824Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The temperature is high, which could indicate a potential issue with the system's cooling mechanism. The navigation error is low, suggesting that the system is maintaining a relatively accurate position."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external factors such as currents or wind. The inconsistent current readings suggest a potential issue with the current sensors. The high temperature could be a concern, but it is not immediately critical given the low navigation error.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could lead to a loss of position accuracy over time, potentially causing the mission to fail. The inconsistent current readings could indicate a sensor failure or a need for recalibration.",
+      "mitigation_strategy": "Monitor the drift and current readings closely. If the drift continues to increase, consider implementing a correction algorithm. If the current readings remain inconsistent, recalibrate the sensors or replace them if necessary. Monitor the temperature to ensure it does not exceed safe operating limits."
+    },
+    "decision": {
+      "actuator_command": "Monitor drift and current readings. Implement correction algorithm if drift increases. Recalibrate sensors if current readings remain inconsistent. Monitor temperature.",
+      "expected_outcome": "The system will continue to monitor the critical parameters and take appropriate action to mitigate any potential issues. The mission will be completed successfully if the anomalies are addressed in a timely manner."
+    },
+    "self_reflection": "The system is performing within expected parameters, but the high drift and inconsistent current readings are concerning. The high temperature is a potential issue that should be monitored. The internal agent is confident in the system's ability to address these anomalies and complete the mission successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_26592d6a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.13,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "93b0657a4caa1d443ac6a8cf81e0d9cf3381a448009c6acc0628606625e700bf"
+  },
+  "sha256_proof": "d4c25ceaad6388279e234309efe7e0beadf49d6971d58b39cf78da91ad66f23c"
+}

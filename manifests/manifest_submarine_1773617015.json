@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_c1e5e45f_marine_gps_denied_c1e5e45f_20260315T232329Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:23:29.822252Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c1e5e45f_marine_gps_denied_c1e5e45f_20260315T232329Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is close to waypoint",
+        "velocity is slow"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or issues detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission is complete as there are no anomalies reported.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "No action required."
+    },
+    "decision": {
+      "actuator_command": "none",
+      "expected_outcome": "No change in system state."
+    },
+    "self_reflection": "The system has completed its mission without any issues. All parameters are within acceptable limits."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c1e5e45f",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "f34a9291988d862f67e207a2c388961687d565d92ecfea0a8ed4fdf372ba4e7a"
+  },
+  "sha256_proof": "07c45ecb9b780e952be9102a0a0d0a64eb399f340099fe414fe7c25afb6c0828"
+}

@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_9c6c0b5d_marine_gps_denied_9c6c0b5d_20260315T044221Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:42:21.993100Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9c6c0b5d_marine_gps_denied_9c6c0b5d_20260315T044221Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no critical issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission."
+    },
+    "self_reflection": "The system is performing within normal parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9c6c0b5d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "b9e41795efc98c91e360a5f7961c7f6e4ef506a0726bc28225b91a4a2c3a631e"
+  },
+  "sha256_proof": "6c9c3ff1f77677842d80b9eacafb4e216fab5808a967224901b74a5c6703bec1"
+}

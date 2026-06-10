@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_69712cfc_marine_gps_denied_69712cfc_20260316T033214Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:32:14.683167Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_69712cfc_marine_gps_denied_69712cfc_20260316T033214Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 320.0",
+        "velocity is slightly negative"
+      ],
+      "interpretation": "The system is experiencing high drift and slightly negative velocity, which suggests the vehicle is not following the intended course. The current readings are abnormal, indicating potential issues with the navigation system. The shallow depth and low navigation error suggest the vehicle is in a safe location, but the drift is concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is experiencing high drift and slightly negative velocity, which suggests the vehicle is not following the intended course. The current readings are abnormal, indicating potential issues with the navigation system. The shallow depth and low navigation error suggest the vehicle is in a safe location, but the drift is concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may continue to drift and potentially collide with obstacles or other vessels.",
+      "mitigation_strategy": "Realign the vehicle's course to the intended path and perform a system check to identify and correct the navigation error."
+    },
+    "decision": {
+      "actuator_command": "realign_course_and_perform_system_check",
+      "expected_outcome": "The vehicle will realign to the intended course and the system will be checked for errors."
+    },
+    "self_reflection": "The vehicle is experiencing high drift and slightly negative velocity, which suggests the vehicle is not following the intended course. The current readings are abnormal, indicating potential issues with the navigation system. The shallow depth and low navigation error suggest the vehicle is in a safe location, but the drift is concerning. The system will be realigned to the intended path and a system check will be performed to identify and correct the navigation error."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_69712cfc",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "097b662b649d005ab71945bd3a761c800974b0972a30b653f712b2dc396670d3"
+  },
+  "sha256_proof": "9438645a573321cd13c5e130173990dcfcddd580a786ba9965ac9fd25bde1b38"
+}

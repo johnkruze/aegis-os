@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_aaaedd6e_marine_gps_denied_aaaedd6e_20260316T025113Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:51:13.567722Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_aaaedd6e_marine_gps_denied_aaaedd6e_20260316T025113Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 405.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its position and course. However, the slight drift and velocity discrepancies suggest that the system may be experiencing minor disturbances or inaccuracies."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations from expected values are within acceptable limits. The system is maintaining its position and course, which is the primary mission objective.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue functioning normally, maintaining its position and course.",
+      "mitigation_strategy": "No action required. The system is within normal operating parameters."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to maintain its position and course as intended."
+    },
+    "self_reflection": "The system is performing as expected, with only minor deviations from expected values. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its position and course. The slight drift and velocity discrepancies suggest that the system may be experiencing minor disturbances or inaccuracies, but these are within acceptable limits and do not pose a significant risk to the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_aaaedd6e",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.3,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0728a13139c7763a936d19c6e5f92f35c9bdd8bc4d4045ca6e6e54ff24e097cf"
+  },
+  "sha256_proof": "6182bea755d06cb26bb6086ef6007645480c5fa7b2d8e92355d3180c265d1f4c"
+}

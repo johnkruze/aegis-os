@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_aa475870_marine_gps_denied_aa475870_20260315T062208Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:22:08.515811Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_aa475870_marine_gps_denied_aa475870_20260315T062208Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is within expected range",
+        "waypoint is on course"
+      ],
+      "interpretation": "The system appears to be functioning normally with minor deviations in current readings. The depth, drift, and navigation error are within acceptable limits, indicating that the mission is proceeding as intended."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current readings could be due to minor sensor drift or environmental factors. However, the system is otherwise stable and on course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations in current readings are unlikely to cause a failure. The system is otherwise stable and on course.",
+      "mitigation_strategy": "Continue monitoring the current readings and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as intended with minimal impact on the overall mission success."
+    },
+    "self_reflection": "The system is performing within expected parameters, and there are no immediate concerns that would require a change in course. The minor deviations in current readings are within acceptable limits and are unlikely to cause a failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_aa475870",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 1,
+      "waypoints_total": 6
+    },
+    "physics_proof": "fc1890ce491c31089fe02128a32d5e78f57c2245c173141c5917613ce11d0a8d"
+  },
+  "sha256_proof": "621eeb218e0a41af4be4ff2badf9a4295a24761d7a8c7819ea0d0eb7f341fa0a"
+}

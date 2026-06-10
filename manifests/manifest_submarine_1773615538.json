@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_68339842_marine_gps_denied_68339842_20260315T225850Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:58:50.634378Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_68339842_marine_gps_denied_68339842_20260315T225850Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 231.61, -254.97, -0.5",
+        "time is 356.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the drift and current readings suggest that the vehicle is not on course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a navigation issue. The GPS system might be denied or malfunctioning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle could continue to drift and potentially collide with obstacles or other vessels.",
+      "mitigation_strategy": "Recheck the GPS system and recalibrate the position. If the issue persists, initiate a manual override to return to the last known waypoint."
+    },
+    "decision": {
+      "actuator_command": "recheck_gps_and_calibrate_position",
+      "expected_outcome": "The vehicle will attempt to recheck the GPS system and recalibrate its position to correct the drift."
+    },
+    "self_reflection": "The system detected an anomaly in the current readings and drift, which could indicate a problem with the GPS system. The decision was made to recheck the GPS and recalibrate the position to ensure the vehicle remains on course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_68339842",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "395765530797abb9c812ea894a265f009069a6220134093db22cde4d68d5a928"
+  },
+  "sha256_proof": "73e80a287ffc04bef7d54f45ce3398477f1cb2810d28b04fb684a92c2b7176eb"
+}

@@ -1,0 +1,58 @@
+{
+  "mission_id": "DO_MAC_99_humanoid_e323e881_clay",
+  "environment": "Urban Disaster Response - Rubble Navigation",
+  "timestamp": "2026-03-11T02:45:50.068436Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DO_MAC_99_humanoid_e323e881_clay_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Zero Moment Point divergence detected",
+        "Substrate yielding under left foot",
+        "Imminent fall state",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The humanoid is experiencing severe instability during a right step, with the left foot encountering a yielding substrate. The communication link is also severed, and the Aegis Dark Window is engaged, limiting external assistance."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "Evaluate the immediate risk and stability of the humanoid",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Initiate emergency stabilization procedures",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Attempt to re-establish communication link",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The humanoid may fall, causing injury or death. Communication with mission control is lost.",
+      "mitigation_strategy": "Activate emergency stabilization protocols and attempt to re-establish communication link"
+    },
+    "decision": {
+      "actuator_command": "Activate emergency stabilization protocols",
+      "expected_outcome": "Stabilize the humanoid to prevent fall and maintain control"
+    },
+    "self_reflection": "The system detected a critical anomaly and immediately prioritized emergency stabilization to prevent a catastrophic failure. The decision to activate emergency protocols was made with high confidence based on the severity of the situation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "humanoid_e323e881_clay",
+    "scenario": "clay_humanoid",
+    "score": {
+      "max_compaction": 0.0,
+      "success": true
+    },
+    "physics_proof": "59cc544307b79b6ee6629e796a430d0d67ec579f3fb76787922d30f1615e6896"
+  },
+  "sha256_proof": "b3723126b92f90feb96e962f99e4d724ddb8edc734f493727d8f25bc9cc761e8"
+}

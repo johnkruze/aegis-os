@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_e328dbde_marine_gps_denied_e328dbde_20260316T025948Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:59:48.382873Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e328dbde_marine_gps_denied_e328dbde_20260316T025948Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift. The depth is shallow, which could indicate a potential issue with the depth sensor or the vehicle's position relative to the ocean floor. The slow velocity suggests that the vehicle is not actively moving towards its waypoint."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a sensor failure or a problem with the vehicle's orientation. The high drift suggests that the vehicle is not accurately following its course. The shallow depth could be a false reading or an indication of the vehicle being too close to the ocean floor.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to accurately navigate its course due to the inconsistencies in the current readings and the high drift. The shallow depth could also lead to issues with the vehicle's stability or the accuracy of its depth sensor.",
+      "mitigation_strategy": "Perform a sensor check to verify the accuracy of the current readings and the depth sensor. Adjust the vehicle's orientation to minimize drift and ensure accurate navigation. If the issue persists, consider a manual override to guide the vehicle to the next waypoint."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check and adjust orientation",
+      "expected_outcome": "The vehicle will perform a sensor check and adjust its orientation to minimize drift and ensure accurate navigation. If the issue persists, a manual override will be considered."
+    },
+    "self_reflection": "The vehicle is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift. The shallow depth could be a potential issue with the depth sensor or the vehicle's position relative to the ocean floor. The internal agent has decided to perform a sensor check and adjust the vehicle's orientation to minimize drift and ensure accurate navigation. If the issue persists, a manual override will be considered."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e328dbde",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "d2d4ddeaf11648de1c026297a2d10a61be86ec774af33a719bdfb7b043294d6a"
+  },
+  "sha256_proof": "947433ff77f1434e2257f3799f25764c4e1da26b69d82e8a9b190834d690d4ac"
+}

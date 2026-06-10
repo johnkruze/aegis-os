@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_bd664638_marine_gps_denied_bd664638_20260315T203909Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:39:09.591604Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_bd664638_marine_gps_denied_bd664638_20260315T203909Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 351.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and low velocity suggest that the system is still functioning, but the drift and current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and low velocity suggest that the system is still functioning, but the drift and current readings are concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in a location that is not suitable for its mission, or the navigation system may be malfunctioning.",
+      "mitigation_strategy": "Perform a system reset and recheck the current location. If the issue persists, initiate an emergency protocol to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will be reset and the current location will be rechecked. If the issue persists, the emergency protocol will be initiated."
+    },
+    "self_reflection": "The system is experiencing an anomaly in current readings, which could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and low velocity suggest that the system is still functioning, but the drift and current readings are concerning. The decision to reset the system and recheck the current location is based on the potential risks and the need to ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_bd664638",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "245578be8598d030f406e0ba45cd7dca1cfe859be1d82e73037de1ec98a914e6"
+  },
+  "sha256_proof": "006e21f97acc3191fa2569571b4a7f5dffd4362fd9ee41c45a7160a967dac896"
+}

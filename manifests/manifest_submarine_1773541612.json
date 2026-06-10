@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_45dfe752_marine_gps_denied_45dfe752_20260315T022647Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:26:47.071592Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_45dfe752_marine_gps_denied_45dfe752_20260315T022647Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected current or wave impact."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift significantly, which could lead to navigation errors and potentially mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose its position, leading to mission failure.",
+      "mitigation_strategy": "Implement a course correction to stabilize the vessel and reduce drift."
+    },
+    "decision": {
+      "actuator_command": "course_correction",
+      "expected_outcome": "Stabilize the vessel and reduce drift to maintain navigation accuracy."
+    },
+    "self_reflection": "The current surge is an unexpected challenge, but with a course correction, we can mitigate the risk and complete the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_45dfe752",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "d58d6e5f6cc2ecd60020bd1dd049bbf40839d7bee89813e0a08167d6d19a7b09"
+  },
+  "sha256_proof": "9dda796c2a9ef6c2216f22a5db2a051aa8dcd65fc46230234b9e0784596e65bf"
+}

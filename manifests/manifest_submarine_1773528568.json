@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_86cbb36c_marine_gps_denied_86cbb36c_20260314T224922Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:49:22.676600Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_86cbb36c_marine_gps_denied_86cbb36c_20260314T224922Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control of the mission."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_86cbb36c",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "6775cfce9faaaf0bf449df2c77af6f96bc6422afc7ff5f21a9e055f10659aa04"
+  },
+  "sha256_proof": "c41fb57f53d3fa61dd41f45449d59d6b3320a171f044d7222b57fafd836a3f15"
+}

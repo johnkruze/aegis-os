@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_74df09ba_marine_gps_denied_74df09ba_20260315T202830Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:28:30.551080Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_74df09ba_marine_gps_denied_74df09ba_20260315T202830Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "minor navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing minor issues with battery life, current stability, depth, drift, and navigation. The waypoint has not been reached, indicating a potential failure in the mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is nearly depleted, which could cause the system to shut down unexpectedly. The current readings are inconsistent, which could indicate a problem with the sensors or the environment. The slight depth error and high drift suggest that the system is not accurately tracking its position. The waypoint has not been reached, which is a critical failure in the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may shut down unexpectedly, leading to mission failure. The waypoint may not be reached, causing the mission to be incomplete.",
+      "mitigation_strategy": "Increase battery power, recalibrate sensors, and adjust navigation parameters to ensure accurate position tracking and waypoint reach."
+    },
+    "decision": {
+      "actuator_command": "increase battery power, recalibrate sensors, adjust navigation parameters",
+      "expected_outcome": "The system should be able to continue the mission with improved performance."
+    },
+    "self_reflection": "The system is experiencing multiple issues that could lead to mission failure. Immediate action is required to mitigate these risks and ensure the mission completes successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_74df09ba",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "46840b7b02db931c1436c4dd50d397eedec5fc8af09a96bb30ea72cf9e8a8235"
+  },
+  "sha256_proof": "e9b0137bd608d147773b204d7ed3f93ca533c98ba77b068b6da5c725561bb3f3"
+}

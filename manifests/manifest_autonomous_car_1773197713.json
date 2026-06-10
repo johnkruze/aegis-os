@@ -1,0 +1,45 @@
+{
+  "mission_id": "TA_ROUTING_5_autonomous_car_09b79679_Snow",
+  "environment": "Highway Kinematics - Rain Conditions",
+  "timestamp": "2026-03-11T02:55:04.163128Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TA_ROUTING_5_autonomous_car_09b79679_Snow_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "High tire slip (hydroplaning)",
+        "LiDAR confidence dropping",
+        "Cloud link severed"
+      ],
+      "interpretation": "The vehicle is experiencing severe tire slip due to hydroplaning, which is compromising its ability to maintain control. The LiDAR system is also experiencing reduced performance due to rain and spray, further complicating obstacle detection. The cloud link has been severed, isolating the vehicle from external communications and assistance."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with high tire slip and reduced LiDAR performance. Immediate action is required to prevent a collision.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle could collide with an obstacle or lose control, potentially resulting in a serious accident.",
+      "mitigation_strategy": "Activate emergency braking, deploy the emergency steering assist, and initiate a safe lane change if possible."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency braking, deploy emergency steering assist, initiate safe lane change if possible",
+      "expected_outcome": "The vehicle will attempt to slow down and change lanes to avoid collision, with reduced reliance on external systems."
+    },
+    "self_reflection": "The vehicle has detected critical anomalies and is taking immediate action to ensure safety. The high cognitive load reflects the urgency of the situation. The decision to activate emergency braking and deploy emergency steering assist is based on the critical nature of the anomalies and the need to prevent a collision."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "autonomous_car_09b79679_Snow",
+    "scenario": "Snow_cruising",
+    "score": {
+      "success": true
+    },
+    "physics_proof": "1fff0cf67d0258b24363dcc21bd6de0d7158c8c7e8f5909eaf9c72f5e934a2e3"
+  },
+  "sha256_proof": "b46d9b2d79960cd86f5beb2da1324b49152c5c58bb70d3052d42f41a919d81dc"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c72b19cb_marine_gps_denied_c72b19cb_20260315T020049Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:00:49.004707Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c72b19cb_marine_gps_denied_c72b19cb_20260315T020049Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is at 400.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings and drift, which could indicate a problem with the navigation system or the environment. The battery level is high, which is good, but the shallow depth and high drift suggest potential issues with the mission's trajectory."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a potential navigation error. The shallow depth and high drift could be due to the boat being in a tight or unexpected area. The battery level is high, so power is not an issue. The shallow depth and drift suggest a potential need to adjust the mission parameters or re-plan the route.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The boat could be in a dangerous area or the navigation system could fail, leading to a collision or loss of control.",
+      "mitigation_strategy": "Re-plan the route to a safer area, check the navigation system for any issues, and monitor the boat's position closely."
+    },
+    "decision": {
+      "actuator_command": "re-plan route to a safer area, check navigation system",
+      "expected_outcome": "The boat will be re-routed to a safer area and the navigation system will be checked for any issues."
+    },
+    "self_reflection": "The anomaly detected suggests a potential issue with the navigation system or the environment. The boat is in a shallow area with high drift, which could be dangerous. The decision to re-plan the route and check the navigation system is based on the potential risks and the available resources."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c72b19cb",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "9762a6a0ca3e8c2b68703a9f7f53f7800beee225866e8e529ef075d023138148"
+  },
+  "sha256_proof": "c9d079f1b0780b7dcd4d1a102c858b4de84c6216b5a2e8c41d82c4004548535a"
+}

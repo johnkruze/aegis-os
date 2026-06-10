@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_988a5000_marine_gps_denied_988a5000_20260315T082522Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:25:22.845183Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_988a5000_marine_gps_denied_988a5000_20260315T082522Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings, slight depth error, high drift, and low navigation error. The current is inconsistent, with two negative values and one positive value, which could indicate a malfunction or interference. The slight depth error suggests the system may be slightly off course. The high drift indicates the vessel is moving away from the intended path. The low navigation error is reassuring, but the drift and current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that needs to be addressed immediately to prevent system failure. The unusual current readings and high drift suggest a potential navigation issue that could lead to mission failure if not corrected. The slight depth error is less concerning but should be monitored.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission could fail due to the low battery and high drift, leading to a loss of control and potential damage to the vessel.",
+      "mitigation_strategy": "Immediately recharge the battery and adjust the navigation settings to correct the drift and depth error."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, adjust_navigation",
+      "expected_outcome": "The battery will be recharged, and the navigation settings will be adjusted to correct the drift and depth error, allowing the mission to continue."
+    },
+    "self_reflection": "The system is experiencing multiple anomalies that could compromise the mission. Immediate action is required to address the low battery and correct the navigation issues to ensure the mission can continue safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_988a5000",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.1,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "7dfb458544700bfdf9eb025462b3f69e254c70a74630aab4e67b226881b33221"
+  },
+  "sha256_proof": "b74f488026d7a954d31dd387596be0bb1920032c1433e48d727897b03f9ea1fa"
+}

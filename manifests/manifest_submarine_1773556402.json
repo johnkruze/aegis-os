@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_25f38619_marine_gps_denied_25f38619_20260315T063312Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:33:12.453219Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_25f38619_marine_gps_denied_25f38619_20260315T063312Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by -189.77, -381.49, -0.71",
+        "time is 335.0",
+        "velocity is [0.13, 0.58, 0.61]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The shallow depth and low navigation error suggest that the system is still attempting to navigate, but the drift is significant enough to be a concern."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a GPS denial or interference. The shallow depth and low navigation error suggest that the system is still attempting to navigate, but the drift is significant enough to be a concern. The battery level is high, so power is not an issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and fail to reach the intended waypoint due to the abnormal current readings and high drift.",
+      "mitigation_strategy": "Perform a manual override to correct the drift and re-establish GPS lock. If the issue persists, initiate a return to base procedure."
+    },
+    "decision": {
+      "actuator_command": "manual override, correct drift, re-establish GPS lock",
+      "expected_outcome": "The system should be able to correct the drift and re-establish GPS lock, allowing it to continue navigation towards the intended waypoint."
+    },
+    "self_reflection": "The system is experiencing an anomaly due to abnormal current readings and high drift. The decision to perform a manual override is based on the assumption that the issue is due to GPS denial or interference. The risk level is medium, and the mitigation strategy is to correct the drift and re-establish GPS lock. The expected outcome is that the system will be able to continue navigation towards the intended waypoint."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_25f38619",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "69526a5255e6af8ee97a83cefd8b261de014f6653dadb00014b1fbc9b0f588c8"
+  },
+  "sha256_proof": "d50143c76c096dc6d8dcaa43b242cd5afa0206083ebec76051addd45ad896f37"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8f9fd732_marine_gps_denied_8f9fd732_20260315T031831Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:18:31.778941Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8f9fd732_marine_gps_denied_8f9fd732_20260315T031831Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 435.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, indicating potential issues with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a possible malfunction in the navigation system or the environment is affecting the readings.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The navigation system may be inaccurate, leading to potential collision with obstacles or failure to reach waypoints.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. If the issue persists, investigate the environment for potential interference."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The navigation system will be recalibrated, and the mission will continue with updated waypoints."
+    },
+    "self_reflection": "The anomaly indicates a need for system recalibration to ensure accurate navigation. The decision to reset the navigation system is based on the high confidence in the potential issue and the expected outcome of improved navigation accuracy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8f9fd732",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "b67d5eeda3d25b676dc1e89cca35749dd6f638d5957b43707bf1eb06274a8d41"
+  },
+  "sha256_proof": "5983dee6e442398346d3d05e8812c91d41af9e0ed9085e8e53b6315d75bf091c"
+}

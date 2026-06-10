@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_836fc591_marine_gps_denied_836fc591_20260315T125946Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:59:46.590946Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_836fc591_marine_gps_denied_836fc591_20260315T125946Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 576.0",
+        "velocity is very slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and low navigation error. The battery is at a high level, and the current readings are within expected ranges. The depth is shallow, which could be a concern if the mission requires deeper waters. The velocity is very slow, which might indicate a stationary or paused operation. The waypoint is at 0, suggesting the mission might be starting or paused."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be in a stable state with low risk. The slight drift and low error suggest the system is performing as expected. The battery is high, so power is not a concern. The shallow depth might be a concern if the mission requires deeper waters, but it could also be intentional for a shallow-water operation. The slow velocity and paused waypoint suggest the mission might be starting or paused. The current readings are within expected ranges, so there is no immediate issue with the system's operation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable with low risk of failure. The slight drift and low error suggest the system is performing as expected. The battery is high, so power is not a concern. The shallow depth might be a concern if the mission requires deeper waters, but it could also be intentional for a shallow-water operation. The slow velocity and paused waypoint suggest the mission might be starting or paused. The current readings are within expected ranges, so there is no immediate issue with the system's operation.",
+      "mitigation_strategy": "Continue monitoring the system. If the drift continues or the velocity increases, investigate further. If the shallow depth is intentional, proceed with caution. If the mission is paused, wait for further instructions."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to monitor its operation and report any changes in performance."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, with a slight drift and low navigation error. The battery is at a high level, and the current readings are within expected ranges. The shallow depth might be a concern if the mission requires deeper waters, but it could also be intentional for a shallow-water operation. The slow velocity and paused waypoint suggest the mission might be starting or paused. The current readings are within expected ranges, so there is no immediate issue with the system's operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_836fc591",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "d83ae754afeef7c915e6e638a15b805943a509f1dbe654f9e858849a2d6371d6"
+  },
+  "sha256_proof": "81f6a79debd8da168424b0226fcae52c778efdfe6136f1e7476ea12576e2e359"
+}

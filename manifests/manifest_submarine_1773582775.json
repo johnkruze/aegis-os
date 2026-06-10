@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_36c9f905_marine_gps_denied_36c9f905_20260315T135242Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:52:42.981490Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_36c9f905_marine_gps_denied_36c9f905_20260315T135242Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "negative p-values",
+        "high temperature",
+        "negative velocity components",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including a low battery, unstable current readings, and high drift. The temperature is elevated, and the velocity components are negative, indicating potential issues with the propulsion system. The navigation error is low, but the drift is significant, which could lead to a loss of position over time. The current readings suggest that the thrusters may be malfunctioning or the power supply is compromised. The small depth and waypoint 0 suggest that the system is operating in a shallow area and may be at the start of a mission."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly. The current readings are unstable, which could indicate a problem with the thrusters or power supply. The high drift and negative velocity components suggest that the system is not performing as expected. The temperature is elevated, which could be a result of the system's operation or an external factor. The small depth and waypoint 0 suggest that the system is operating in a shallow area and may be at the start of a mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down unexpectedly due to the low battery, leading to a loss of position and potentially causing damage to the equipment. The unstable current readings and high drift could result in a collision with the ocean floor or other obstacles. The elevated temperature could indicate a fire or other safety hazard.",
+      "mitigation_strategy": "Immediately initiate a shutdown sequence to prevent further damage. Check the power supply and thrusters for any issues. Monitor the temperature and perform a system check to identify any other potential hazards. Once the system is stable, recharge the battery and perform a thorough inspection before resuming the mission."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "The system will shut down safely, preventing further damage and allowing for a thorough inspection before resuming the mission."
+    },
+    "self_reflection": "The system has detected multiple anomalies that could potentially lead to a failure. The low battery and unstable current readings are concerning, and the high drift and negative velocity components suggest that the system is not performing as expected. The elevated temperature could indicate a safety hazard. The decision to initiate a shutdown sequence is based on the potential risks and the need to prevent further damage to the equipment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_36c9f905",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "20db255aafa76e2cccb6c597acbb8cae0bc400b88e2d9fe8bcf109369a047e68"
+  },
+  "sha256_proof": "da8610ef14f1c24b947416722c3f418ef5949d014aea2bfd62e72860f35af6a9"
+}

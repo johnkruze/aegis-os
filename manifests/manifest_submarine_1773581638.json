@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b71bd663_marine_gps_denied_b71bd663_20260315T133352Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:33:52.074773Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b71bd663_marine_gps_denied_b71bd663_20260315T133352Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vessel."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could result in a collision with the ocean floor or other obstacles. Immediate action is required to prevent this.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel could lose control and potentially sink if the drift is not corrected.",
+      "mitigation_strategy": "Activate emergency braking and deploy the emergency anchor to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_BRAKING, DEPLOY_EMERGENCY_ANCHOR",
+      "expected_outcome": "The vessel will be slowed down and stabilized, preventing further drift and potential collision."
+    },
+    "self_reflection": "The IMU drift spike is a critical anomaly that requires immediate attention to ensure the safety of the mission and the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b71bd663",
+    "scenario": "gps_denied_autonomous_boat_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "5901223ab1b0531a46627a94dab678e754f3a5fc7140c57f38ea6a6d998742b9"
+  },
+  "sha256_proof": "d9448fcf871cc13c61b7cbdcd3d657c98a33e5a764497d7d5d331e12495a0c31"
+}

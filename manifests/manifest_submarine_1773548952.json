@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_5d9ace39_marine_gps_denied_5d9ace39_20260315T042904Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:29:04.341621Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5d9ace39_marine_gps_denied_5d9ace39_20260315T042904Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak, which is a critical anomaly in an underwater environment. The leak is surfacing, which could indicate a breach in the hull or a failure in the containment system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is surfacing, which could lead to rapid loss of pressure and potentially endanger the crew. Immediate action is required to prevent further damage and ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to rapid descent and potential sinking. The crew may also be exposed to harmful substances if the leak is not contained.",
+      "mitigation_strategy": "Activate emergency containment protocols, deploy emergency ballast tanks, and initiate a distress signal to nearby vessels or rescue teams."
+    },
+    "decision": {
+      "actuator_command": "ACTIVATE_EMERGENCY_CONTAINMENT; DEPLOY_EMERGENCY_BALLAST_TANKS; INITIATE_DISTRESS_SIGNAL",
+      "expected_outcome": "Contain the leak, stabilize the vessel, and initiate rescue procedures to ensure the safety of the crew and mission."
+    },
+    "self_reflection": "The detection of a leak in an underwater environment is a critical event that requires immediate and decisive action to prevent further damage and ensure the safety of the mission. The crew must act quickly and follow established emergency protocols to mitigate the risk and protect the vessel and crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5d9ace39",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": true,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "4d63c9caac68662736149b1067aea0711e02b5301b2b2e942f0b125a97e9f483"
+  },
+  "sha256_proof": "0ce1043bbad6c64bb18bf06e7c118cbec3166973ce38554bc350e2a0a4121e01"
+}

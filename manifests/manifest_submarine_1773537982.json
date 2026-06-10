@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_68100114_marine_gps_denied_68100114_20260315T012615Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:26:15.034996Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_68100114_marine_gps_denied_68100114_20260315T012615Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the vessel is moving. The depth is relatively shallow, and the drift is moderate. The navigation error is low, and the vessel is moving towards waypoint 1."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "A leak on the surface could indicate a structural issue or a problem with the hull. The vessel is moving, so immediate action is needed to ensure safety and prevent further damage.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking. The current could increase, causing the vessel to drift away from the intended course.",
+      "mitigation_strategy": "Activate emergency leak containment protocols, initiate a slow descent to a safe depth, and monitor the leak for any changes. Notify the mission control team immediately."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_LEAK_CONTAINMENT, SLOW_DESCENT, MONITOR_LEAK",
+      "expected_outcome": "The vessel will attempt to contain the leak and descend to a safer depth to prevent further damage."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate attention to ensure the safety of the vessel and its crew. The decision to activate emergency protocols and initiate a slow descent is based on the potential risks and the need to prevent further damage."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_68100114",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": true,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 1,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0d829623c63c7afa0c4120824757a5160a9d07080664be5bcd8e84805e9e60fa"
+  },
+  "sha256_proof": "6855116a3163084ea47932fd065fa86ba09cef1f3f9b8a03f97ab391b4981196"
+}

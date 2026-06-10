@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_645c5818_marine_gps_denied_645c5818_20260315T221221Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:12:21.059989Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_645c5818_marine_gps_denied_645c5818_20260315T221221Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "position is at waypoint 0",
+        "velocity is very low"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth and drift are within acceptable ranges, and the navigation error is minimal. The system is at waypoint 0, and the velocity is very low, indicating a stationary or paused state."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is stable and within normal parameters. There are no immediate threats or anomalies that require urgent action.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and within normal parameters. There are no immediate threats or anomalies that require urgent action.",
+      "mitigation_strategy": "Continue monitoring the system and maintain current operations."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected, maintaining its current state."
+    },
+    "self_reflection": "The system is stable and within normal parameters. There are no immediate threats or anomalies that require urgent action. The system will continue to operate as expected, maintaining its current state."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_645c5818",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "d2f1d884c8132f60c974a6062dea067ec4fda445d8ba556ebf2415f4c50ce311"
+  },
+  "sha256_proof": "e06eab6b1f5434c0cb9fb64374d1acced79d73979ad8ef9ddbc0d4ebc1804aa6"
+}

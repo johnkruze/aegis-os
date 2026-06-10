@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_41eadc6c_marine_gps_denied_41eadc6c_20260315T103612Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:36:12.574011Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_41eadc6c_marine_gps_denied_41eadc6c_20260315T103612Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected movement that could compromise the mission's integrity."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge suggests a potential failure in the navigation system or an external disturbance.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may deviate from the intended course, leading to potential collision with obstacles or loss of mission objectives.",
+      "mitigation_strategy": "Initiate emergency navigation protocol, including recalculating the course and increasing the frequency of sensor checks."
+    },
+    "decision": {
+      "actuator_command": "execute emergency navigation protocol",
+      "expected_outcome": "The vessel will attempt to stabilize its position and return to the intended course."
+    },
+    "self_reflection": "The anomaly highlights the importance of robust navigation systems and the need for continuous monitoring during critical missions."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_41eadc6c",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "fece97706fb4b232279830ef7442edeceef6b776c52d204d495bb955e96632b6"
+  },
+  "sha256_proof": "3d994c085cfe7bb7017389cecad6f05f8075cf4516ab62e4039680602dcd1a2d"
+}

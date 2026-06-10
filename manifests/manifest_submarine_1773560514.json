@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_8dda9bd0_marine_gps_denied_8dda9bd0_20260315T074146Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:41:46.845367Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8dda9bd0_marine_gps_denied_8dda9bd0_20260315T074146Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 303.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, which suggests potential issues with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift suggests that the navigation system may be off, which could lead to mission failure if not corrected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail due to the high drift and inconsistent current readings, leading to a potential collision or loss of control.",
+      "mitigation_strategy": "Perform a recalibration of the navigation system and verify the current sensor readings."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_navigation_system",
+      "expected_outcome": "The navigation system should be recalibrated, and the current sensor readings should be verified to ensure the mission can continue safely."
+    },
+    "self_reflection": "The system is currently operating within normal parameters, but the inconsistencies in the current readings and high drift suggest potential issues that need to be addressed to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8dda9bd0",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "ffff9e49b4087b38ad41d425a990d176b801919186aeac1f2b83f103aa50c723"
+  },
+  "sha256_proof": "d79fe1233c2252d327691d216cd9504b817bcd6a398f658ee3d034be3b5dd2b0"
+}

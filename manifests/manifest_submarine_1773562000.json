@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_4a53b466_marine_gps_denied_4a53b466_20260315T080633Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:06:33.966435Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4a53b466_marine_gps_denied_4a53b466_20260315T080633Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minor",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing low battery, significant drift, and minor navigation error. The current readings suggest the vehicle is not on course and is drifting away from the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power and prioritize navigation correction.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may drift further away from the intended path and potentially lose navigation accuracy.",
+      "mitigation_strategy": "Reduce power consumption and correct the drift by adjusting the course."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, correct_drift",
+      "expected_outcome": "Power consumption is reduced and the vehicle's drift is corrected, maintaining navigation accuracy."
+    },
+    "self_reflection": "The system is operating under critical conditions. Immediate action is required to prevent further drift and ensure mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4a53b466",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 11.7,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "3ad6e528f07268e594d67cfb3ec1af29483ec3b4beff79d3f01b07db84477828"
+  },
+  "sha256_proof": "13ce4067b731cbce4acbaad6936f89b2cc4254a2ab0b9c40b6af0016db67fd08"
+}

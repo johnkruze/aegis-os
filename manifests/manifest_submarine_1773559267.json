@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_e659293a_marine_gps_denied_e659293a_20260315T072059Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:20:59.157552Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e659293a_marine_gps_denied_e659293a_20260315T072059Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are slightly off, which could be due to a minor fault or environmental interference. The slight depth error suggests the system may be slightly off course. The high drift indicates the vessel is moving away from the intended path. The low navigation error is reassuring, but the drift and current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The unusual current readings could indicate a magnetic anomaly or a fault in the current sensors.",
+        "confidence": 0.6,
+        "action_rejected": "check current sensors"
+      },
+      {
+        "thought": "The slight depth error could be corrected by adjusting the navigation parameters.",
+        "confidence": 0.5,
+        "action_rejected": "adjust navigation parameters"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down due to the low battery, leading to mission failure.",
+      "mitigation_strategy": "Recharge the battery and check the current sensors for any faults."
+    },
+    "decision": {
+      "actuator_command": "recharge battery, check current sensors",
+      "expected_outcome": "The system should be able to continue operating with a fully charged battery and corrected current readings."
+    },
+    "self_reflection": "The system is operating with some anomalies, but the risk is manageable with the proposed mitigation strategies. The mission should be able to continue with these actions."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e659293a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "608696ffc512cda4897b0345d9c4d730d5d17f29ef205d64a4c1a28a06b73089"
+  },
+  "sha256_proof": "335a0b05ec4c789753e165a61fbbe6adf3db507bdb42ad0886ff739af33cef3b"
+}

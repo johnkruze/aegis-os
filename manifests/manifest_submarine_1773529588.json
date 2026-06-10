@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_eaa7bce1_marine_gps_denied_eaa7bce1_20260314T230618Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:06:18.988175Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_eaa7bce1_marine_gps_denied_eaa7bce1_20260314T230618Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 330.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is nearly fully charged, and the navigation error is low, indicating that the system is performing well. However, the slight negative current readings and moderate drift suggest that the system may be experiencing minor issues that could impact its performance over time."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters, but minor issues are present. The battery is nearly fully charged, which reduces the risk of a battery failure. The slight negative current readings and moderate drift suggest that the system may be experiencing minor issues that could impact its performance over time.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor issues present may lead to a slight decrease in performance over time, but the system is otherwise functioning well.",
+      "mitigation_strategy": "Monitor the system closely and perform regular maintenance to ensure that the minor issues do not become more significant."
+    },
+    "decision": {
+      "actuator_command": "continue mission with increased monitoring",
+      "expected_outcome": "The system will continue to perform well, and the minor issues will be monitored closely to ensure that they do not become more significant."
+    },
+    "self_reflection": "The system is performing well, but minor issues are present. The battery is nearly fully charged, which reduces the risk of a battery failure. The slight negative current readings and moderate drift suggest that the system may be experiencing minor issues that could impact its performance over time. The decision to continue the mission with increased monitoring is based on the low risk level and the expected outcome of continued performance."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_eaa7bce1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "97352a2f65f44b795e1daa135773a2e21c1afafb69d30bf90dfb8a35066b7c66"
+  },
+  "sha256_proof": "3e5520d1acbaa65d4aca5a308c30528e8e6426510dd05110b27bc6ea60865e2b"
+}

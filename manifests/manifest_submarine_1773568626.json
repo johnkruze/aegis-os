@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_96187e0b_marine_gps_denied_96187e0b_20260315T095657Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:56:57.974574Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_96187e0b_marine_gps_denied_96187e0b_20260315T095657Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minor",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings suggest the vehicle is drifting significantly, which could lead to navigation errors and loss of control. The shallow depth and minor navigation error suggest the system is functioning within expected parameters, but the drift is concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is significant, need to correct course.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Waypoint is at 0, need to re-evaluate mission objectives.",
+        "confidence": 0.7,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "System may lose power, drift further, or fail to reach waypoints due to drift and power issues.",
+      "mitigation_strategy": "Reduce power consumption, correct drift, and re-evaluate mission objectives."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, correct_drift, reevaluate_waypoints",
+      "expected_outcome": "System power is conserved, drift is corrected, and mission objectives are re-evaluated."
+    },
+    "self_reflection": "The system is operating within expected parameters but requires immediate attention to power and drift issues to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_96187e0b",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 6.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "9f2896a8cf8ea98aa5ae48267b07cdfcfd66fe38b54d4292729c2e9ac44d26e2"
+  },
+  "sha256_proof": "1ef6051f349862f2a9f8c94e89604cb9aeeca4eb0287cdc7c7baae3504b33fac"
+}

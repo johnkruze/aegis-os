@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_4af3e2d4_marine_gps_denied_4af3e2d4_20260315T225232Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:52:32.373084Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4af3e2d4_marine_gps_denied_4af3e2d4_20260315T225232Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected change in the current or a potential navigational error."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a change in the ocean current or a navigational error. We need to verify the current position and adjust the course if necessary.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift out of the designated area or collide with obstacles.",
+      "mitigation_strategy": "Verify the current position using the GPS and adjust the course if necessary. Monitor the drift and adjust the speed and direction as needed."
+    },
+    "decision": {
+      "actuator_command": "Verify GPS position and adjust course if necessary",
+      "expected_outcome": "The vessel will either remain on course or adjust to avoid the current surge."
+    },
+    "self_reflection": "The current surge is an unexpected event that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4af3e2d4",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 7.9,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "8b0db5531f2faff1f615d60fda8fdfb5ad6ec43b7cfdf02350de47ee99b9b7d2"
+  },
+  "sha256_proof": "34a5d270df6f6b975b0e2dcd7d7f0eba1dc759176322309ad84200ba25744a7b"
+}

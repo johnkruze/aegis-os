@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_d7a107d1_marine_gps_denied_d7a107d1_20260315T192121Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:21:21.502232Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d7a107d1_marine_gps_denied_d7a107d1_20260315T192121Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or issues detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no anomalies detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring the system for any changes."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d7a107d1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "481b6022d66572d851f7ca3bc56c13e7330a4e6bb31319e6ab4663225c3c8f1b"
+  },
+  "sha256_proof": "a180d2574cae4beef509d3eeaa13f7dcde8ff90c6bbc162d45f54def5ce98b47"
+}

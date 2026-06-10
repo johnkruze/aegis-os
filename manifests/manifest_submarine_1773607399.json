@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_40667892_marine_gps_denied_40667892_20260315T204313Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:43:13.460271Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_40667892_marine_gps_denied_40667892_20260315T204313Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "time is 475.0",
+        "velocity is slightly negative"
+      ],
+      "interpretation": "The system is operating with high battery and near the intended waypoint, but there are inconsistencies in the current readings and a high drift, which could indicate a navigation issue."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential navigation error, possibly due to drift.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The drone may not reach the intended waypoint or may drift off course.",
+      "mitigation_strategy": "Adjust the navigation parameters to compensate for drift and ensure accurate positioning."
+    },
+    "decision": {
+      "actuator_command": "adjust navigation parameters",
+      "expected_outcome": "The drone should be able to correct its drift and reach the intended waypoint."
+    },
+    "self_reflection": "The system is functioning within expected parameters, but the high drift indicates a need for navigation adjustments to ensure mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_40667892",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "d191fb5b52675755431533bd7a5d56fae0f5a1e02b964e938ddbfc800f219f43"
+  },
+  "sha256_proof": "a820efac71dd1be5875b684e6a2e9d534a2700d98a06923a5dafbe3dd45e064a"
+}

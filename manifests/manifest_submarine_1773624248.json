@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_9bb378f7_marine_gps_denied_9bb378f7_20260316T012352Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:23:52.766237Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9bb378f7_marine_gps_denied_9bb378f7_20260316T012352Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 427.0",
+        "velocity is very low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift and low velocity, which could indicate a navigation issue. The battery level is high, which is good. The depth is shallow, which is expected in marine environments. The current readings are slightly negative, which could be due to water currents or magnetic fields. The navigation error is low, which is positive. The position is slightly off, which could be due to drift or sensor inaccuracies. The time is 427.0, which is not a standard time format. The velocity is very low, which could indicate a problem with the propulsion system or navigation. The waypoint is at 0, which could indicate that the mission has not started or has been paused."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The drift and low velocity suggest a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, so the environment is likely safe. The current readings are slightly negative, which could be due to water currents or magnetic fields. The navigation error is low, so the system is likely still on course. The position is slightly off, which could be due to drift or sensor inaccuracies. The time is 427.0, which is not a standard time format. The velocity is very low, which could indicate a problem with the propulsion system or navigation. The waypoint is at 0, which could indicate that the mission has not started or has been paused.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission may not progress as expected due to the low velocity and drift. The navigation system may be malfunctioning or the propulsion system may be underperforming.",
+      "mitigation_strategy": "Check the navigation system for any errors. Check the propulsion system for any issues. If the propulsion system is underperforming, try to increase power or adjust the navigation settings. If the navigation system is malfunctioning, try to reset it or contact support for assistance."
+    },
+    "decision": {
+      "actuator_command": "Check navigation system and propulsion system",
+      "expected_outcome": "The navigation system and propulsion system will be checked for any errors or issues. If the propulsion system is underperforming, power will be increased or the navigation settings will be adjusted. If the navigation system is malfunctioning, it will be reset or support will be contacted for assistance."
+    },
+    "self_reflection": "The system is operating within normal parameters, but there is a significant drift and low velocity, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, so the environment is likely safe. The current readings are slightly negative, which could be due to water currents or magnetic fields. The navigation error is low, so the system is likely still on course. The position is slightly off, which could be due to drift or sensor inaccuracies. The time is 427.0, which is not a standard time format. The velocity is very low, which could indicate a problem with the propulsion system or navigation. The waypoint is at 0, which could indicate that the mission has not started or has been paused."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9bb378f7",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "2160d233fe0a716e512886dde30b0b882bbf2b148c692b3aeb6e4fa274c1034a"
+  },
+  "sha256_proof": "8caf1a669d8675b9e7d4b5ca480fe8d576c21e70f884d64b29fc0449cd86dff2"
+}

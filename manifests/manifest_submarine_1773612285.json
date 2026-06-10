@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_d8e90067_marine_gps_denied_d8e90067_20260315T220438Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:04:38.092546Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d8e90067_marine_gps_denied_d8e90067_20260315T220438Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and low navigation error. The battery is at a high level, and the current readings are within expected ranges. The depth is shallow, which could be a concern if the system is not designed for deep water operations. The velocity is very low, which might indicate that the system is not actively moving or is in a stationary position. The waypoint is at the start, which suggests that the mission has not yet begun."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is within normal operational parameters, but the drift is concerning. The shallow depth might be a limitation if the mission requires deeper water operations.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system might drift further if not corrected, potentially leading to a loss of position accuracy.",
+      "mitigation_strategy": "Implement a correction algorithm to reduce drift and maintain position accuracy."
+    },
+    "decision": {
+      "actuator_command": "apply correction algorithm to reduce drift",
+      "expected_outcome": "The system's position will be corrected, and drift will be minimized."
+    },
+    "self_reflection": "The system is performing as expected, but the drift is a concern that needs to be addressed to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d8e90067",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0e4dda07991a5d97e8b157f1f3408fa9f7c7a008c48d855437e586758da32415"
+  },
+  "sha256_proof": "3382a142ee8df901bbb8cf3ecba57123579c552bdbb0aa5e85e4fe9fc9eac3f0"
+}

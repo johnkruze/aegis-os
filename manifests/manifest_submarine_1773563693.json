@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_901e5648_marine_gps_denied_901e5648_20260315T083434Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:34:34.143801Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_901e5648_marine_gps_denied_901e5648_20260315T083434Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is within normal range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is at a high level, which is good. The current readings are slightly off, which could indicate minor issues with the magnetic field or sensor drift. The depth is within safe limits, and the drift is within acceptable range, suggesting the system is maintaining its course. The navigation error is low, and the position is slightly off, which could be due to minor inaccuracies in the GPS or sensor readings. The time is within expected range, and the velocity is within normal range, indicating the system is moving as expected. The waypoint is at 0, which suggests the system is at the start of its mission or has completed a task."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters, with only minor deviations. The battery level is high, which is good. The current readings are slightly off, which could indicate minor issues with the magnetic field or sensor drift. The depth is within safe limits, and the drift is within acceptable range, suggesting the system is maintaining its course. The navigation error is low, and the position is slightly off, which could be due to minor inaccuracies in the GPS or sensor readings. The time is within expected range, and the velocity is within normal range, indicating the system is moving as expected. The waypoint is at 0, which suggests the system is at the start of its mission or has completed a task.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing within normal parameters, with only minor deviations. The battery level is high, which is good. The current readings are slightly off, which could indicate minor issues with the magnetic field or sensor drift. The depth is within safe limits, and the drift is within acceptable range, suggesting the system is maintaining its course. The navigation error is low, and the position is slightly off, which could be due to minor inaccuracies in the GPS or sensor readings. The time is within expected range, and the velocity is within normal range, indicating the system is moving as expected. The waypoint is at 0, which suggests the system is at the start of its mission or has completed a task.",
+      "mitigation_strategy": "Monitor the system closely and perform a thorough check of the magnetic field and sensor readings to ensure there are no issues. If the current readings continue to be slightly off, consider recalibrating the sensors or adjusting the system's magnetic field compensation."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to perform within normal parameters, with only minor deviations. The battery level is high, which is good. The current readings are slightly off, which could indicate minor issues with the magnetic field or sensor drift. The depth is within safe limits, and the drift is within acceptable range, suggesting the system is maintaining its course. The navigation error is low, and the position is slightly off, which could be due to minor inaccuracies in the GPS or sensor readings. The time is within expected range, and the velocity is within normal range, indicating the system is moving as expected. The waypoint is at 0, which suggests the system is at the start of its mission or has completed a task."
+    },
+    "self_reflection": "The system is performing within normal parameters, with only minor deviations. The battery level is high, which is good. The current readings are slightly off, which could indicate minor issues with the magnetic field or sensor drift. The depth is within safe limits, and the drift is within acceptable range, suggesting the system is maintaining its course. The navigation error is low, and the position is slightly off, which could be due to minor inaccuracies in the GPS or sensor readings. The time is within expected range, and the velocity is within normal range, indicating the system is moving as expected. The waypoint is at 0, which suggests the system is at the start of its mission or has completed a task."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_901e5648",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "cffa23ee850537652573718470c807fbaca7135ff90d1aae64b1395322530e51"
+  },
+  "sha256_proof": "b9630ba1a392ff490451d8c1c0c3f3d8d8d457a340c676e3780650491205d09d"
+}

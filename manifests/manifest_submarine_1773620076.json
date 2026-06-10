@@ -1,0 +1,72 @@
+{
+  "mission_id": "marine_gps_denied_e26433a7_marine_gps_denied_e26433a7_20260316T001427Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:14:27.484599Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e26433a7_marine_gps_denied_e26433a7_20260316T001427Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, slight depth error, high drift, and low navigation error. The waypoint has not been reached, indicating a potential mission failure."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery is critical, need to conserve power and prioritize essential functions.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Current readings are unstable, possibly due to environmental factors or sensor issues.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Depth error is minor, but should be monitored to avoid potential hazards.",
+        "confidence": 0.7,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "High drift indicates a need to adjust course to reach the waypoint.",
+        "confidence": 0.6,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Navigation error is low, but should be continuously monitored.",
+        "confidence": 0.5,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission may fail to reach the waypoint due to drift and low battery. The system may also experience sensor drift or failure.",
+      "mitigation_strategy": "Reduce power consumption, adjust course to reach the waypoint, and monitor sensor health. If battery drops below a critical threshold, initiate emergency landing or return to base."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, adjust_course, monitor_sensors",
+      "expected_outcome": "System power is reduced, course is adjusted to reach the waypoint, and sensor health is monitored to prevent failure."
+    },
+    "self_reflection": "The system is operating under critical conditions. Immediate action is required to ensure the mission completes successfully. Continuous monitoring and adjustments are necessary to mitigate risks and ensure safety."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e26433a7",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 6.2,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "e43b0814ae23573d615421f2ab788ee3ee6a9c48f165c74595cd3428a358c655"
+  },
+  "sha256_proof": "817ea05912a040d31b3373f2c9cd8ac67be82b137c9955d44b66a082d232dc72"
+}

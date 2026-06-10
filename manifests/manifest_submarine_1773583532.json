@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_1fc4a155_marine_gps_denied_1fc4a155_20260315T140526Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:05:26.388429Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1fc4a155_marine_gps_denied_1fc4a155_20260315T140526Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge in current, which is causing drift and increasing navigation error."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing drift and increasing navigation error, which could lead to a collision with the waypoint.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may drift out of the designated waypoint, potentially causing a collision or loss of control.",
+      "mitigation_strategy": "Implement a course correction to compensate for the current surge and reduce drift."
+    },
+    "decision": {
+      "actuator_command": "course_correction",
+      "expected_outcome": "The vessel will adjust its course to compensate for the current surge and reduce drift, maintaining its position relative to the waypoint."
+    },
+    "self_reflection": "The current surge is a significant anomaly that requires immediate attention to ensure the safety of the mission. The course correction command is a proactive measure to mitigate the risk of collision and maintain control of the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1fc4a155",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 5,
+      "waypoints_total": 7
+    },
+    "physics_proof": "82856f550e52d3ebd3008836494ef77918bb7bbdd20bcfd7fc480754b586a886"
+  },
+  "sha256_proof": "b77965136aa5780e7b739161d50fc2469864b93d0a1949fe08e031ddbb6b1200"
+}

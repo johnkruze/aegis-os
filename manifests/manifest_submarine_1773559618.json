@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d93a965e_marine_gps_denied_d93a965e_20260315T072651Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:26:51.927318Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d93a965e_marine_gps_denied_d93a965e_20260315T072651Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift and velocity, indicating an unexpected surge in the ocean current."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift away from the intended course and may lead to mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may not reach the next waypoint on time and could potentially be lost at sea.",
+      "mitigation_strategy": "Implement emergency navigation protocol to correct the course and ensure the vessel remains on track."
+    },
+    "decision": {
+      "actuator_command": "correct_course",
+      "expected_outcome": "The vessel will be redirected to the intended course and the mission will be completed."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a decisive action was taken to mitigate the risk. The mission is still on track, and the crew is prepared to handle any further challenges."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d93a965e",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "e12307723ec04a0a2fc27bd05c8c44f2167203a1beec6469a2bb8221490fa709"
+  },
+  "sha256_proof": "5dab794b792690800e4c7966165add5a5893d5969986f2c2052942489de83bbb"
+}

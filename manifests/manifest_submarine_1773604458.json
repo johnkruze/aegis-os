@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_bd750d49_marine_gps_denied_bd750d49_20260315T195408Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:54:08.320677Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_bd750d49_marine_gps_denied_bd750d49_20260315T195408Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 411.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in the current readings and a high drift, indicating potential issues with the navigation system. The depth is shallow, which could be a concern in marine environments. The navigation error is low, but the drift suggests the vehicle is not accurately following the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a fault in the current sensors or the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The high drift suggests the vehicle is not following the intended path, which could lead to mission failure.",
+        "confidence": 0.9,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The shallow depth could be a concern, but it is not immediately critical given the current battery level and low navigation error.",
+        "confidence": 0.6,
+        "action_rejected": "string"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may drift away from the intended path, leading to mission failure.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system to correct the drift. Monitor the current readings and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate, correcting the drift and allowing the vehicle to follow the intended path."
+    },
+    "self_reflection": "The system is currently functioning, but there are inconsistencies that could lead to mission failure. A system reset and recalibration are necessary to ensure the vehicle follows the intended path and completes the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_bd750d49",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "7258ac161cb9bf7b997bc15db84077e025e62899e6db926c225ceafa78e0f219"
+  },
+  "sha256_proof": "c836241fdc91d2ca9bf9bfdf45b59d87de43cf30cca0a0238ad2fc5d00ff751d"
+}

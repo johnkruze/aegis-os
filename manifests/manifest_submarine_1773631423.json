@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_90f4bdcf_marine_gps_denied_90f4bdcf_20260316T032333Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:23:33.679469Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_90f4bdcf_marine_gps_denied_90f4bdcf_20260316T032333Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is normal",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 340.29, 116.03, -0.97",
+        "time is 319.0",
+        "velocity is slightly negative",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the drift is concerning. The navigation error is low, which is positive, but the drift suggests that the system is not accurately following the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to a malfunction in the current sensor or a navigation error. The battery level is high, so power is not an issue. The navigation error is low, so the system is not completely lost.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could continue to drift and potentially lose its position, leading to mission failure.",
+      "mitigation_strategy": "Perform a recalibration of the current sensor and check the navigation system for any errors."
+    },
+    "decision": {
+      "actuator_command": "recalibrate current sensor; check navigation system",
+      "expected_outcome": "The system should be able to correct the drift and maintain its position, allowing the mission to continue."
+    },
+    "self_reflection": "The system is experiencing high drift, which could be due to a malfunction in the current sensor or a navigation error. The battery level is high, so power is not an issue. The navigation error is low, so the system is not completely lost. Recalibrating the current sensor and checking the navigation system should help to mitigate the risk and allow the mission to continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_90f4bdcf",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "d8bd01d283d21cd23313a34d82544fa204b7ddc225e8b71c621fa143907128fd"
+  },
+  "sha256_proof": "52ef5e71363c8cdba7912bcde0a22233a587cb55bd62414eba213b26114bd0e0"
+}

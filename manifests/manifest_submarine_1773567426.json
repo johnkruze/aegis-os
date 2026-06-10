@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_96a09cf8_marine_gps_denied_96a09cf8_20260315T093658Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:36:58.396398Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_96a09cf8_marine_gps_denied_96a09cf8_20260315T093658Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is stable",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "time is stable",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight anomaly in current readings. The battery level is high, indicating sufficient power. The depth is stable, and the navigation error is low, suggesting accurate positioning. The drift is moderate, which is within acceptable limits. The velocity is moderate, and the waypoint is at 0, indicating the mission is at the start."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly inconsistent, but within expected parameters. The battery level is high, so power is not an issue. The mission is at the start, and the system is performing as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted. The system is performing within normal parameters.",
+      "mitigation_strategy": "Continue monitoring current readings and maintain course."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as expected, with the system performing within normal parameters."
+    },
+    "self_reflection": "The system is performing as expected, with no immediate issues. The current readings are slightly inconsistent, but within expected parameters. The battery level is high, so power is not an issue. The mission is at the start, and the system is performing as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_96a09cf8",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "e337d64feea192fe2586e5f1d956bad5b50d8742bec09ef9c36ca8f3f71ff1fd"
+  },
+  "sha256_proof": "7087e6a4ae33624d02ff5e729e75bf340da3e40c88726cd3bbac4bc956be4298"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_06cb3b76_marine_gps_denied_06cb3b76_20260315T061033Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:10:33.879571Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_06cb3b76_marine_gps_denied_06cb3b76_20260315T061033Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected current or wave impact."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift significantly, which could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may overshoot its waypoints or collide with obstacles due to the increased drift.",
+      "mitigation_strategy": "Implement a course correction maneuver to realign with the intended path."
+    },
+    "decision": {
+      "actuator_command": "execute_course_correction(10 degrees left, 2 knots speed reduction)",
+      "expected_outcome": "The vessel will be realigned with its intended path, preventing mission failure."
+    },
+    "self_reflection": "The anomaly was detected early, allowing for a timely course correction. The system's ability to detect and respond to unexpected conditions is crucial for mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_06cb3b76",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0c6c07086c0ed76e675fd2ae831ba127ae9b581be85759fed8aaabbd4e663204"
+  },
+  "sha256_proof": "91859a56534124e77ca6fb7ae82e8579a5c0e75b3d47c62984a18daa90b26830"
+}

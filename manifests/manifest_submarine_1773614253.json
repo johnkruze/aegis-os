@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_8c3c491c_marine_gps_denied_8c3c491c_20260315T223726Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:37:26.202923Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8c3c491c_marine_gps_denied_8c3c491c_20260315T223726Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest a slight deviation from the expected path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical anomaly that requires immediate attention to prevent further damage. The current readings indicate a slight deviation from the expected path, which could be due to the leak or other factors.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause significant damage to the system, potentially leading to a complete failure of the mission.",
+      "mitigation_strategy": "Initiate emergency protocol to isolate the leak and perform repairs. Notify mission control of the situation and request assistance."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_PROTOCOL_INITIATE",
+      "expected_outcome": "The system will isolate the leak and attempt repairs. Mission control will be notified of the situation."
+    },
+    "self_reflection": "The detection of a leak on the surface of the water is a critical anomaly that requires immediate attention. The current readings suggest a slight deviation from the expected path, which could be due to the leak or other factors. The emergency protocol has been initiated to isolate the leak and perform repairs. Mission control will be notified of the situation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8c3c491c",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": true,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "7776dd9d8ab21aa0aa8bb34fae7a31d954a99c46c417cbe5f291b56d4457cd9f"
+  },
+  "sha256_proof": "1e230565c9bb4fda1d2048ad651baa236ccc4a7f2607657f0fbf1841f7fa2e48"
+}

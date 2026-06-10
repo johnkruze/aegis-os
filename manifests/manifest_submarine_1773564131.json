@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_2bed92f8_marine_gps_denied_2bed92f8_20260315T084202Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:42:02.893028Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2bed92f8_marine_gps_denied_2bed92f8_20260315T084202Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations in current readings. The battery level is high, indicating sufficient power for continued operation. The depth and drift are within expected ranges, and the navigation error is low, suggesting accurate positioning. The waypoint is at 0, which could indicate the start of a new mission or a reset."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current readings could be due to environmental factors or sensor drift. However, the system is otherwise stable and within operational parameters.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations in current readings could lead to slight inaccuracies in navigation over time, but the system is otherwise stable.",
+      "mitigation_strategy": "Monitor current readings closely and perform a recalibration if significant drift is observed."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with ongoing monitoring of current readings."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations in current readings. The battery level is high, indicating sufficient power for continued operation. The depth and drift are within expected ranges, and the navigation error is low, suggesting accurate positioning. The waypoint is at 0, which could indicate the start of a new mission or a reset."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2bed92f8",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "06a52d56999db53c79b5fcd04e1c574bf21871aa422bf2285014fc9ca6a03ac3"
+  },
+  "sha256_proof": "89e57f59f2aaed2514b06811eda156569b3915aa0b38c4b65561a93c5e863f66"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_886636e4_marine_gps_denied_886636e4_20260315T121712Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:17:12.200041Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_886636e4_marine_gps_denied_886636e4_20260315T121712Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery, but current readings are inconsistent, indicating potential issues with the current sensors. The depth is shallow, which is expected in the ocean environment. High drift suggests the system is not accurately tracking its position. The temperature is high, which could affect sensor performance. The velocity is slow, which is expected in the marine environment. The navigation error is low, indicating the system is performing well in terms of navigation. The waypoint is at the start, which is expected at the beginning of a mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a sensor failure or interference. The high drift suggests the system is not accurately tracking its position, which could lead to mission failure if not addressed. The high temperature could affect sensor performance, which could impact the accuracy of the system. The slow velocity is expected in the marine environment, but the high drift is concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could fail to accurately track its position, leading to mission failure. The high temperature could affect sensor performance, which could impact the accuracy of the system.",
+      "mitigation_strategy": "Perform a sensor check to identify and replace any faulty sensors. Monitor the temperature and ensure it remains within safe operating parameters. Adjust the system settings to account for the high temperature."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check and monitor temperature",
+      "expected_outcome": "The system will be able to identify and replace any faulty sensors, and the temperature will be monitored to ensure it remains within safe operating parameters."
+    },
+    "self_reflection": "The system is functioning with high battery, but current readings are inconsistent, indicating potential issues with the current sensors. The high drift suggests the system is not accurately tracking its position, which could lead to mission failure if not addressed. The high temperature could affect sensor performance, which could impact the accuracy of the system. The slow velocity is expected in the marine environment, but the high drift is concerning."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_886636e4",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "a34a0805354720d88894e5905cd44bca721c3d92764b9a63a0aabafd768b9be0"
+  },
+  "sha256_proof": "98d1106598bcb9781486e8c3c1917aaac7eb09f179c91275d7783f6b7b4f90c6"
+}

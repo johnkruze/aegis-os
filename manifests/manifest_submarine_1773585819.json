@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d5e3d088_marine_gps_denied_d5e3d088_20260315T144333Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:43:33.501566Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d5e3d088_marine_gps_denied_d5e3d088_20260315T144333Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vehicle's position and orientation."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could result in mission failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control, leading to potential damage or loss of the mission.",
+      "mitigation_strategy": "Initiate emergency protocol to land the vehicle safely or return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "initiate_emergency_landing",
+      "expected_outcome": "The vehicle will attempt to land safely to prevent further damage and ensure the mission is completed."
+    },
+    "self_reflection": "The anomaly highlights the critical nature of the navigation system and the importance of robust error detection and mitigation protocols."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d5e3d088",
+    "scenario": "gps_denied_submarine_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 5.9,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "74cc884f9cc9baad23f4f7c3a6f44138d7001be63c2813cfa94b074289c50e50"
+  },
+  "sha256_proof": "6589cde176318f713341e87432551920f050c256ff653f976575dc80ca9fd496"
+}

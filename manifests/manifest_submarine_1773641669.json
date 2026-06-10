@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_ec25ff73_marine_gps_denied_ec25ff73_20260316T061420Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:14:20.262763Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ec25ff73_marine_gps_denied_ec25ff73_20260316T061420Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with minor deviations in current readings and position. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its course and depth. However, the slight drift and position error suggest that the system may be experiencing minor issues that could impact mission accuracy."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current readings and position are within acceptable limits. The system is maintaining its course and depth, which is the primary mission objective. The battery is healthy, and the navigation error is low, which suggests that the system is performing as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations in current readings and position are likely due to minor sensor inaccuracies or environmental factors. The system is maintaining its course and depth, which is the primary mission objective.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary. If the deviations persist, consider recalibrating the sensors or adjusting the system parameters."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to maintain its course and depth, and the mission will be completed successfully."
+    },
+    "self_reflection": "The system is performing as expected, with minor deviations that are within acceptable limits. The battery is healthy, and the navigation error is low, which suggests that the system is performing as expected. The decision to continue the mission is based on the current state of the system and the mission objective."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ec25ff73",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "23a58ac096965a8d407c69714fc416007a58e6c641c26eb4be5cd1d2b5854539"
+  },
+  "sha256_proof": "713950a412967918bcf7b13c84bfbe60071a0d7c5a8ff2ec2a43c4c6c142abcf"
+}

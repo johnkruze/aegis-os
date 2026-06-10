@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_7bd9e667_marine_gps_denied_7bd9e667_20260314T215753Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T21:57:53.937785Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7bd9e667_marine_gps_denied_7bd9e667_20260314T215753Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery level is high, which suggests that the vessel is still operational but at risk of losing control due to the current surge."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a significant drift, which could lead to a collision with the seabed or other obstacles. The vessel's depth is shallow, which increases the risk of such an event. The battery level is high, so immediate power failure is unlikely.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could collide with the seabed or other obstacles due to the current surge, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking to reduce the drift and stabilize the vessel. If necessary, initiate a controlled descent to a safer depth."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_BRAKING",
+      "expected_outcome": "The vessel will attempt to reduce its drift and stabilize. If the current surge persists, a controlled descent will be initiated to a safer depth."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate action to prevent mission failure. The vessel's shallow depth and high battery level provide some margin for error, but the risk of collision is significant. The decision to implement emergency braking is based on the potential for collision and the need to stabilize the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7bd9e667",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "8ef70d105babe011168bc9c106684e6017959940dcb560fb7181a68ef360cc87"
+  },
+  "sha256_proof": "6d62f40f6c38cf1a8f876422c8de2ac9e7fbd13234735f186473f4dff0ac40e8"
+}

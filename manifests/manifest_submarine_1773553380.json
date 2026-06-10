@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8e64bf84_marine_gps_denied_8e64bf84_20260315T054251Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:42:51.658656Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8e64bf84_marine_gps_denied_8e64bf84_20260315T054251Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is stable",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with minor deviations in current readings and velocity. The battery is healthy, and the depth is stable, indicating that the vehicle is likely in a safe position. The slight drift and navigation error suggest that the vehicle may need to adjust its course to maintain its intended path."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current and velocity readings could be due to minor environmental factors or sensor inaccuracies. The slight drift and navigation error suggest a need for course correction. The battery is healthy, so there is no immediate concern about power.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations are within expected parameters and are unlikely to cause a critical failure. The vehicle is likely to continue functioning as intended.",
+      "mitigation_strategy": "Monitor the current and velocity readings closely. If the deviations persist, consider implementing a minor course correction to maintain the intended path."
+    },
+    "decision": {
+      "actuator_command": "adjust_course 0.5 degrees left",
+      "expected_outcome": "The vehicle will adjust its course slightly to the left to compensate for the slight drift and maintain its intended path."
+    },
+    "self_reflection": "The system is performing within expected parameters, and the minor deviations are likely due to normal environmental factors or sensor inaccuracies. The decision to adjust the course is based on the minor drift and navigation error, and the expected outcome is that the vehicle will maintain its intended path."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8e64bf84",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "b298f66e76c15b3affceca5a1235a5557338252f9d40e9cc123c05772a21b1d3"
+  },
+  "sha256_proof": "39036b6ebc03d2f76035514f1526eb17f331665e4bfcffa52b86d1a33979478d"
+}

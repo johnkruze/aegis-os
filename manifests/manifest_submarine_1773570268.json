@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_86c8334c_marine_gps_denied_86c8334c_20260315T102422Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:24:22.601755Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_86c8334c_marine_gps_denied_86c8334c_20260315T102422Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with an obstacle or lose control if the surge is not mitigated.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid the current surge and potential collision hazard."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a decisive action was taken to mitigate the risk. The mission is now on hold until the surge is resolved."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_86c8334c",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "82fdcf077ddce46844563e8d2aa2175b15c24bcd39eab25c8261ddebcae0e29e"
+  },
+  "sha256_proof": "6c7f06f55d321a8e5715eb2c36cf50ea371c7c9a8588762845d0e6ea6cd6ca02"
+}

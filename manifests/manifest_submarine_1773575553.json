@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_08912dff_marine_gps_denied_08912dff_20260315T115223Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:52:23.901902Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_08912dff_marine_gps_denied_08912dff_20260315T115223Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 362.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and a slight drift, which could indicate a navigation issue. The battery level is high, which is good. The depth is shallow, which is expected in marine environments. The navigation error is low, which is positive. The time and velocity are within expected ranges. The waypoint is at 0, which suggests the mission has not started."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and slight drift suggest a potential navigation issue. The battery level is high, so power is not a concern. The depth and time are within expected ranges. The navigation error is low, so the system is not significantly off course. The waypoint is at 0, so the mission has not started. The velocity is slightly off, but not critically so.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission may not start due to the slight drift and inconsistent current readings.",
+      "mitigation_strategy": "Monitor the current readings and drift more closely. If the issue persists, initiate a manual override to correct the position."
+    },
+    "decision": {
+      "actuator_command": "monitor current readings and drift",
+      "expected_outcome": "The system will continue to monitor the current readings and drift to ensure the mission can start safely."
+    },
+    "self_reflection": "The system is functioning within expected parameters, but the slight drift and inconsistent current readings suggest a potential issue that needs to be addressed to ensure the mission can start."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_08912dff",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "f10f8e0d4e09d41e4fdc1f06f471d26051f8899b61ff95854c6f370163fc747e"
+  },
+  "sha256_proof": "1f8337105386708e3daa349d5c25a712f73bba889203526124d5cf0595dce5fd"
+}

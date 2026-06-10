@@ -1,0 +1,50 @@
+{
+  "mission_id": "marine_gps_denied_87b4fcfd_marine_gps_denied_87b4fcfd_20260316T041522Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:15:22.034971Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_87b4fcfd_marine_gps_denied_87b4fcfd_20260316T041522Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings are inconsistent, which could be due to a malfunctioning sensor or an external interference. There is a slight drift in the navigation, which may affect the accuracy of the mission. The navigation error is minimal, suggesting that the system is still performing within acceptable limits."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, which would result in mission failure. The inconsistent current readings could indicate a sensor failure or interference. The slight drift could lead to a deviation from the planned route. The small navigation error is manageable.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down unexpectedly due to the low battery, leading to mission failure. The inconsistent current readings could indicate a sensor failure, which could also lead to mission failure. The slight drift could lead to a deviation from the planned route, which could result in mission failure.",
+      "mitigation_strategy": "Increase the battery power to ensure it lasts throughout the mission. Check the current readings to determine if the sensor is malfunctioning or if there is external interference. Adjust the navigation parameters to compensate for the slight drift."
+    },
+    "decision": {
+      "actuator_command": "Increase battery power and check current readings",
+      "expected_outcome": "The system should be able to continue operating with the increased battery power and the issue with the current readings should be resolved, allowing the mission to continue."
+    },
+    "self_reflection": "The system is operating within acceptable limits, but there are potential risks that need to be addressed to ensure the mission's success. The low battery and inconsistent current readings are the most concerning issues that require immediate attention."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_87b4fcfd",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "71705b3698e32b3913dda9b6f69f40b52655b4a082849039b11fd1ee1662eea2"
+  },
+  "sha256_proof": "d1c7cd2cdf8d54689dc6655295af88632e71a3d52e92050bb0d3769711fab0bf"
+}

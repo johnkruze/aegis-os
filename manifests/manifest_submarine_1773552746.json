@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_1bdbc45a_marine_gps_denied_1bdbc45a_20260315T053211Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:32:11.404837Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1bdbc45a_marine_gps_denied_1bdbc45a_20260315T053211Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel. The battery level is high, and the current readings suggest a potential issue with the propulsion system. The depth is relatively shallow, and the drift is moderate. The navigation error is low, and the velocity is normal. The waypoint is 5."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "A leak on the surface could be a critical issue that requires immediate attention to prevent further damage or loss of the vessel. The propulsion system anomaly could be related to the leak, and it should be investigated further. The current readings suggest a potential issue with the thrusters or propellers. The depth is shallow, so the leak could be easily contained. The navigation error is low, so the vessel is likely on course. The velocity is normal, so the vessel is moving at a steady speed. The waypoint is 5, so the vessel is on its way to the next destination. The battery level is high, so there is enough power to investigate the issue. The current readings suggest a potential issue with the propulsion system. The depth is shallow, so the leak could be easily contained. The navigation error is low, so the vessel is likely on course. The velocity is normal, so the vessel is moving at a steady speed. The waypoint is 5, so the vessel is on its way to the next destination.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause significant damage to the vessel, leading to a loss of propulsion and potentially sinking the vessel. The propulsion system anomaly could be related to the leak, and it should be investigated further. The current readings suggest a potential issue with the thrusters or propellers. The depth is shallow, so the leak could be easily contained. The navigation error is low, so the vessel is likely on course. The velocity is normal, so the vessel is moving at a steady speed. The waypoint is 5, so the vessel is on its way to the next destination.",
+      "mitigation_strategy": "The vessel should be immediately stopped and the leak should be contained. The propulsion system should be investigated further to determine the cause of the anomaly. The vessel should be towed to a safe location if necessary. The leak should be contained and the propulsion system should be repaired or replaced as necessary."
+    },
+    "decision": {
+      "actuator_command": "STOP",
+      "expected_outcome": "The vessel should be stopped to prevent further damage to the vessel and to investigate the leak and propulsion system anomaly."
+    },
+    "self_reflection": "The leak on the surface is a critical issue that requires immediate attention to prevent further damage or loss of the vessel. The propulsion system anomaly could be related to the leak, and it should be investigated further. The current readings suggest a potential issue with the thrusters or propellers. The depth is shallow, so the leak could be easily contained. The navigation error is low, so the vessel is likely on course. The velocity is normal, so the vessel is moving at a steady speed. The waypoint is 5, so the vessel is on its way to the next destination."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1bdbc45a",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 5,
+      "waypoints_total": 5
+    },
+    "physics_proof": "61bed0cc45f9c453b8f2cbb8baa9ad846716ef85720217bc965c46a4de81aa71"
+  },
+  "sha256_proof": "2a12e47d6422641484f7fa7df49bce55503d2db517eb43b56591af8f1aa313f6"
+}

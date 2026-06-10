@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8fe5ee7a_marine_gps_denied_8fe5ee7a_20260316T052410Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:24:10.134620Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8fe5ee7a_marine_gps_denied_8fe5ee7a_20260316T052410Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 714.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slow velocity and low waypoint indicate the vehicle is stationary or moving very slowly."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external factors such as currents or wind. The inconsistent current readings need to be investigated further.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the vehicle to move out of the designated area, but it is unlikely to cause a critical failure.",
+      "mitigation_strategy": "Monitor the current readings and adjust the vehicle's course if necessary. Perform a more detailed analysis of the current conditions."
+    },
+    "decision": {
+      "actuator_command": "monitor currents and adjust course if necessary",
+      "expected_outcome": "The vehicle will continue to operate within the designated area and the drift will be monitored and adjusted if needed."
+    },
+    "self_reflection": "The system is performing within expected parameters, but the high drift and inconsistent current readings require further investigation to ensure the vehicle remains in the correct position."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8fe5ee7a",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "752a7e70fb2c382309ee7465294a9dfa11b7e4765eca6757cde2e1ad7b207f09"
+  },
+  "sha256_proof": "c92cddb1ba4ed0c9de7f573f77f97557c41a53b4365369cb3cc161e452e57fda"
+}

@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_c36900fe_marine_gps_denied_c36900fe_20260314T231708Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:17:08.111521Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c36900fe_marine_gps_denied_c36900fe_20260314T231708Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery low",
+        "current anomalies",
+        "depth within safe range",
+        "drift within acceptable limits",
+        "navigation error minimal",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery and some anomalies in the current readings. The depth and drift are within acceptable limits, and the navigation error is minimal. The mission is at waypoint 0, which suggests the start of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "Battery is critically low, which could cause system failure if not addressed soon.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "System failure due to low battery",
+      "mitigation_strategy": "Initiate battery recharging sequence immediately"
+    },
+    "decision": {
+      "actuator_command": "RECHARGE_BATTERY",
+      "expected_outcome": "Battery recharged, system stability restored"
+    },
+    "self_reflection": "The mission is proceeding as expected, but the low battery is a critical issue that requires immediate attention to prevent system failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c36900fe",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "36dcdf791fbc95425cb3a6ccdfb68855c30b63d63d69568795b6dd8f3ee9ca5d"
+  },
+  "sha256_proof": "4b1a03dc029d128585741c0140e38b00fbb5a93c9274ada6fdb7a8404000a576"
+}

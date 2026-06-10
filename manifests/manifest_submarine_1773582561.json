@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_4ed58f5d_marine_gps_denied_4ed58f5d_20260315T134906Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:49:06.189169Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4ed58f5d_marine_gps_denied_4ed58f5d_20260315T134906Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth and drift are within acceptable ranges, and the navigation error is minimal. The position is slightly off, but this could be due to the start of a new mission or a minor navigation error. The velocity is very low, which is expected at the start of a mission. The waypoint is at the beginning, which is consistent with the start of a new mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth and drift are within acceptable ranges, and the navigation error is minimal. The position is slightly off, but this could be due to the start of a new mission or a minor navigation error. The velocity is very low, which is expected at the start of a mission. The waypoint is at the beginning, which is consistent with the start of a new mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth and drift are within acceptable ranges, and the navigation error is minimal. The position is slightly off, but this could be due to the start of a new mission or a minor navigation error. The velocity is very low, which is expected at the start of a mission. The waypoint is at the beginning, which is consistent with the start of a new mission.",
+      "mitigation_strategy": "Continue monitoring the system and adjust the mission parameters as needed. If the position is significantly off, adjust the navigation parameters to correct the drift. If the velocity is not increasing as expected, check the propulsion system for any issues."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate normally, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth and drift are within acceptable ranges, and the navigation error is minimal. The position is slightly off, but this could be due to the start of a new mission or a minor navigation error. The velocity is very low, which is expected at the start of a mission. The waypoint is at the beginning, which is consistent with the start of a new mission."
+    },
+    "self_reflection": "The system is operating within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is not experiencing significant currents. The depth and drift are within acceptable ranges, and the navigation error is minimal. The position is slightly off, but this could be due to the start of a new mission or a minor navigation error. The velocity is very low, which is expected at the start of a mission. The waypoint is at the beginning, which is consistent with the start of a new mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4ed58f5d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "491f92cdd14eb178ad608caae926bab35042c3033377b66be047ed579c09a46e"
+  },
+  "sha256_proof": "8403d3ae808ba8f552abff71a3fae2817122cc3d69cec2dcd4760afd43ace5ac"
+}

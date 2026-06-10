@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_25f6c4bf_marine_gps_denied_25f6c4bf_20260315T211715Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:17:15.665139Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_25f6c4bf_marine_gps_denied_25f6c4bf_20260315T211715Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is near zero",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift. The depth is shallow, which could be a concern in marine environments. The navigation error is low, but the position is slightly off, which could indicate a minor misalignment. The velocity is near zero, suggesting the system is stationary or moving very slowly. The waypoint is at zero, which could indicate the mission has not started or has been reset."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to sensor drift or interference. The slight drift and position error suggest a minor alignment issue. The velocity is near zero, which could be due to the system being stationary or moving very slowly. The waypoint is at zero, which could indicate the mission has not started or has been reset.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could be experiencing sensor drift or interference, leading to a minor alignment issue. The mission could fail to start or progress if the waypoint is not properly set.",
+      "mitigation_strategy": "Reset the system and recalibrate the sensors. Check for any interference sources and ensure the system is properly aligned with the intended waypoint."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will be reset and recalibrated, and the sensors will be checked for any interference sources. The system should then be aligned with the intended waypoint and the mission should be started."
+    },
+    "self_reflection": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift. The depth is shallow, which could be a concern in marine environments. The navigation error is low, but the position is slightly off, which could indicate a minor misalignment. The velocity is near zero, suggesting the system is stationary or moving very slowly. The waypoint is at zero, which could indicate the mission has not started or has been reset. The system will be reset and recalibrated, and the sensors will be checked for any interference sources. The system should then be aligned with the intended waypoint and the mission should be started."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_25f6c4bf",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "eda8e740722d459c7f88ada08cf75fbd5decfff6c5ce6bce767d474fd56bf7e4"
+  },
+  "sha256_proof": "8ba5b3d6e84218067e769c4d81492b32a2a1a6e1bb41ab5767b41d316a2e79dc"
+}

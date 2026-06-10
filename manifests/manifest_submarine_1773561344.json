@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_a38e9f44_marine_gps_denied_a38e9f44_20260315T075536Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:55:36.795070Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a38e9f44_marine_gps_denied_a38e9f44_20260315T075536Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak in the marine environment. The battery level is high, and the current readings suggest movement. The depth is shallow, and the drift is moderate. The navigation error is low, and the velocity is normal. The waypoint is at 0, indicating the system is at the start of the mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "A leak has been detected in the marine environment. This could be a critical issue that requires immediate attention to prevent further damage or loss of equipment.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the system to malfunction or fail, potentially leading to the loss of the equipment or the mission.",
+      "mitigation_strategy": "Initiate emergency protocols, such as shutting down non-essential systems, and activate the leak detection and response system. Notify the mission control team immediately."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, ACTIVATE_LEAK_DETECTION_RESPONSE_SYSTEM, NOTIFY_MISSION_CONTROL",
+      "expected_outcome": "The system will shut down non-essential systems, activate the leak detection and response system, and notify mission control of the anomaly."
+    },
+    "self_reflection": "The detection of a leak in the marine environment is a critical anomaly that requires immediate attention. The system has been designed with safety protocols to handle such situations, and the decision to initiate emergency procedures is based on the potential risks and the available mitigation strategies."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a38e9f44",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": true,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "6530fab0e41585b8fafdb158fc1c4ef77eaaf9101ac68a50bdf9c3b2bf509331"
+  },
+  "sha256_proof": "f682a6ffa58c68f39f7a5113d14964e23c3c87ce484d128e5be4f79bc7e99f33"
+}

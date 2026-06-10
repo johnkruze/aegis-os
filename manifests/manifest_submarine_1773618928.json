@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_0134bd1d_marine_gps_denied_0134bd1d_20260315T235520Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:55:20.135558Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0134bd1d_marine_gps_denied_0134bd1d_20260315T235520Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is still above 90%, and the current readings suggest the vessel is moving. The depth is shallow, and the drift is moderate. The navigation error is low, and the vessel is on waypoint 0."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "A leak on the surface could indicate a structural issue or a problem with the hull. The vessel is still operational, but the leak needs to be addressed to prevent further damage. The current readings suggest the vessel is moving, so immediate action is needed to ensure the leak is contained and the vessel is not compromised.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause water ingress, leading to structural damage or loss of propulsion. The vessel could also become unstable if the leak is not contained.",
+      "mitigation_strategy": "Activate the emergency leak containment system and initiate a slow, controlled descent to the nearest safe location. Notify the mission control team and request assistance."
+    },
+    "decision": {
+      "actuator_command": "ACTIVATE_EMERGENCY_LEAK_CONTAINMENT; INITIATE_SLOW_DESCENT; NOTIFY_MISSION_CONTROL",
+      "expected_outcome": "The leak is contained, and the vessel is safely descending to a secure location. Mission control is informed of the situation."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly. The immediate action taken is to activate the emergency leak containment system and initiate a controlled descent to ensure the safety of the vessel and the crew. The mission control team needs to be informed to coordinate any necessary assistance."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0134bd1d",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 6.4,
+      "mission_success": true,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "b14b6dacd64d1f53c3266b4fdc407ca5d8f2a388fb4a85fc15cc04ad0d63338e"
+  },
+  "sha256_proof": "de0036d1f20e01c98573d36fa2b9962cab1014142557bdc381c265a1340ac91b"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_24e3e3b6_marine_gps_denied_24e3e3b6_20260314T231616Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:16:16.959177Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_24e3e3b6_marine_gps_denied_24e3e3b6_20260314T231616Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thrusters have failed, causing the vehicle to drift and potentially lose control. The battery level is still high, but the drift and navigation error suggest a critical issue with the propulsion system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical anomaly that could lead to mission failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may drift out of control and potentially collide with obstacles or other vessels.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vehicle and attempt to return to the last known waypoint."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vehicle and attempt to return to the last known waypoint."
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate attention to prevent mission failure. The emergency thruster override is the best course of action to stabilize the vehicle and return to safety."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_24e3e3b6",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "f637c0f7ce64644c88b4aa9f222a5a2990f4965733620e434579ae836ffeec12"
+  },
+  "sha256_proof": "c83e5b082a6df8b5cb4e0f55a48b1141c541e8ca3bfae3183d4873df4b0cc725"
+}

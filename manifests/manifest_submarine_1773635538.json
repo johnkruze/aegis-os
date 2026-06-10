@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_61890a2b_marine_gps_denied_61890a2b_20260316T043208Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:32:08.065326Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_61890a2b_marine_gps_denied_61890a2b_20260316T043208Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 86.82 meters in the x-direction, 32.99 meters in the y-direction, and 0.5 meters in the z-direction",
+        "time is 472.0 seconds",
+        "velocity is slightly negative in the y-direction",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation error. The shallow depth and low battery level suggest that the system is operating in a potentially hazardous environment. The low navigation error and slightly negative velocity suggest that the system is making progress towards its goal, but the drift is a significant concern."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and inconsistent current readings suggest a navigation error. The shallow depth and low battery level suggest that the system is operating in a potentially hazardous environment. The low navigation error and slightly negative velocity suggest that the system is making progress towards its goal, but the drift is a significant concern.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and potentially collide with obstacles in the shallow water. The low battery level may cause the system to shut down unexpectedly.",
+      "mitigation_strategy": "Increase the frequency of navigation checks and adjust the course to compensate for drift. Monitor the battery level and plan for a safe landing or recharging."
+    },
+    "decision": {
+      "actuator_command": "Adjust course to compensate for drift and monitor battery level",
+      "expected_outcome": "The system will adjust its course to compensate for drift and monitor the battery level to ensure safe operation."
+    },
+    "self_reflection": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation error. The shallow depth and low battery level suggest that the system is operating in a potentially hazardous environment. The low navigation error and slightly negative velocity suggest that the system is making progress towards its goal, but the drift is a significant concern. The system will adjust its course to compensate for drift and monitor the battery level to ensure safe operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_61890a2b",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.1,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "07ff8fa0b69324b0a6559ae09cf2c40ee545a39b1b6bc57a4cc049584a54f11f"
+  },
+  "sha256_proof": "a1324592f3772ded2138c6b4f1098d21cd27e844dc770030284497b68effedb1"
+}

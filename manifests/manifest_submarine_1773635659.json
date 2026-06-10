@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_cc926e5e_marine_gps_denied_cc926e5e_20260316T043409Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:34:09.717166Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cc926e5e_marine_gps_denied_cc926e5e_20260316T043409Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally, but there are some anomalies in the current readings and drift. The shallow depth and low velocity suggest that the vehicle is in a calm area of the ocean. The slight position error could be due to minor drift or sensor inaccuracies."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are unusual, but the system is otherwise stable. The drift could be due to minor sensor inaccuracies or external factors. The shallow depth and low velocity suggest that the vehicle is in a calm area of the ocean. The slight position error could be due to minor drift or sensor inaccuracies.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable, and the anomalies are likely due to minor sensor inaccuracies or external factors. The drift could be corrected by adjusting the heading or speed.",
+      "mitigation_strategy": "Monitor the system closely and adjust the heading or speed if necessary. If the drift persists, consider recalibrating the sensors."
+    },
+    "decision": {
+      "actuator_command": "continue mission with minor adjustments",
+      "expected_outcome": "The system will continue to operate normally, and the drift will be corrected if necessary."
+    },
+    "self_reflection": "The system appears to be functioning normally, but there are some anomalies in the current readings and drift. The shallow depth and low velocity suggest that the vehicle is in a calm area of the ocean. The slight position error could be due to minor drift or sensor inaccuracies. The system is stable, and the anomalies are likely due to minor sensor inaccuracies or external factors. The drift could be corrected by adjusting the heading or speed."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cc926e5e",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "834c93dd289285d803b8aa4831ca6969cb5694356779cb6136c7e1ae36012425"
+  },
+  "sha256_proof": "35d462725e01c6ee03a8d142a37fb488a831dbcb6d882910df6f060b568ad730"
+}

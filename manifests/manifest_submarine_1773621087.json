@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_1b77140f_marine_gps_denied_1b77140f_20260316T003122Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:31:22.299423Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1b77140f_marine_gps_denied_1b77140f_20260316T003122Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control to complete the mission."
+    },
+    "self_reflection": "The surge is a critical anomaly that requires immediate attention to ensure the mission can be completed safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1b77140f",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "54371dd34c44b5f3aa810ebbebecb480af38962bd7860c683cb540bd52be2fb0"
+  },
+  "sha256_proof": "98eb632a7ff3ac430a290ec14af27750906148283e8ffe2fe107fc81815cb63d"
+}

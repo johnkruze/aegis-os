@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_3ad117c1_marine_gps_denied_3ad117c1_20260315T042330Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:23:30.267949Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3ad117c1_marine_gps_denied_3ad117c1_20260315T042330Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and slight position error indicate the vehicle is moving cautiously or is in a constrained area."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest the vehicle may be in a strong current or near a current anomaly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The slight drift and position error could be due to the vehicle being in a tight or shallow area.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The battery level is high, so there is enough power to continue operations.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may be caught in a strong current or near a current anomaly, leading to drift or position error.",
+      "mitigation_strategy": "Monitor current readings closely and adjust course if necessary. If drift persists, consider using thrusters to correct position."
+    },
+    "decision": {
+      "actuator_command": "monitor current readings and adjust course if necessary",
+      "expected_outcome": "The vehicle will continue to operate within the current parameters until further action is required."
+    },
+    "self_reflection": "The system is performing as expected, with only minor issues related to drift and position error. The current readings suggest the vehicle may be in a challenging environment, and close monitoring is warranted."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3ad117c1",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 4.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "5df04b8ce24c826c73edb03d126fb85a5b669769193c7e1ef1f0a0413c99cacd"
+  },
+  "sha256_proof": "e60fd6b39c1f72295e9d3f526874751c89da67005520b85947f4bb8fd661b764"
+}

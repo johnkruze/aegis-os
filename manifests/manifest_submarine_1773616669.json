@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b7729947_marine_gps_denied_b7729947_20260315T231742Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:17:42.146954Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b7729947_marine_gps_denied_b7729947_20260315T231742Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 372.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The aircraft is experiencing unusual current readings and a high drift, which could indicate a navigation issue. The shallow depth and low navigation error suggest the aircraft is close to the surface. The slow velocity and low waypoint indicate the mission is not progressing as expected."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a navigation issue. The shallow depth and low error indicate the aircraft is close to the surface. The slow velocity and low waypoint suggest the mission is not progressing as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The aircraft may be unable to reach the intended waypoint due to navigation issues.",
+      "mitigation_strategy": "Increase the power to the thrusters to correct the drift and increase the speed to reach the waypoint."
+    },
+    "decision": {
+      "actuator_command": "Increase power to thrusters and adjust heading to correct drift",
+      "expected_outcome": "The aircraft should be able to correct its drift and increase its speed to reach the waypoint."
+    },
+    "self_reflection": "The aircraft is experiencing unexpected behavior due to navigation issues. The current readings and drift suggest a need for immediate action to correct the course and ensure the mission can be completed."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b7729947",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "4279b9dfdfab77d5fcb5a06625f4365b90781e81942cfaa3650a72070a1326d0"
+  },
+  "sha256_proof": "530e62872eaa6f5f05fbd3be8fb6d189b1b6daa11be92e19c17e81a596f919e0"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_ab30a71b_marine_gps_denied_ab30a71b_20260315T011430Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:14:30.075170Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ab30a71b_marine_gps_denied_ab30a71b_20260315T011430Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings are within normal parameters. The depth is shallow, and the drift is moderate. The navigation error is low, and the velocity is within expected ranges. The waypoint is at the start of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "A leak on the surface could indicate a breach in the hull or a malfunctioning system. The current readings are stable, so it's not an immediate safety concern. However, the leak must be addressed to prevent further damage. The mission should be paused to investigate the leak.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause water ingress, potentially leading to a loss of buoyancy or a complete failure of the system.",
+      "mitigation_strategy": "Pause the mission, investigate the leak, and repair or replace the affected component before resuming the mission."
+    },
+    "decision": {
+      "actuator_command": "PAUSE_MISSION",
+      "expected_outcome": "The mission will be paused to allow for the investigation and repair of the leak."
+    },
+    "self_reflection": "The detection of a leak on the surface is a significant anomaly that requires immediate attention. The current system status is stable, but the leak must be addressed to prevent potential damage to the system or loss of buoyancy. The mission should be paused to ensure the safety and integrity of the system."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ab30a71b",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": true,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "325afe70a903a32619d5ec056e55bd4d7a5bc057372c1cf41d381e2d91051bbf"
+  },
+  "sha256_proof": "d805c4740119f273f5f129069fa4bb1d0dac838a4315eb26b1963f6374e9d072"
+}

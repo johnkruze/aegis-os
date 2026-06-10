@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_046a4afd_marine_gps_denied_046a4afd_20260315T061837Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:18:37.750992Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_046a4afd_marine_gps_denied_046a4afd_20260315T061837Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control of the mission."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_046a4afd",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "611809a52e3edfdc511fb0894c287401029c25da38b17c5c342ae55dd33b39f5"
+  },
+  "sha256_proof": "47b312c978a6a084ebdc712ca2eb8d99c64837889bcd6d115b60aaa9455734c9"
+}

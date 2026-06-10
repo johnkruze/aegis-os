@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_7eded11c_marine_gps_denied_7eded11c_20260315T053147Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:31:47.093788Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7eded11c_marine_gps_denied_7eded11c_20260315T053147Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings, slight depth error, high drift, and the waypoint has not been reached. The navigation error is low, which suggests the system is still relatively accurate."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to fail soon. The current readings are inconsistent, which could indicate a problem with the propellers or thrusters. The slight depth error and high drift suggest the system is not maintaining its position accurately. The waypoint has not been reached, which is a critical failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail soon, leading to a loss of control and potential damage to the vessel.",
+      "mitigation_strategy": "Immediately recharge the battery and check the current readings to identify and fix the issue with the propellers or thrusters. Ensure the system is maintaining its position accurately and reach the waypoint."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, check_current_readings, adjust_position",
+      "expected_outcome": "The battery is recharged, the current readings are checked, and the system's position is adjusted to reach the waypoint."
+    },
+    "self_reflection": "The system is in a critical state with a low battery and inconsistent current readings. Immediate action is required to prevent a failure that could result in significant damage or loss of control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7eded11c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "51b7689322df37df5ee76448b41b5298e96bd4db5a9f5f15d210d1be35dcd253"
+  },
+  "sha256_proof": "dbcb5ace2d2c5b1fd8efe7495e972bc93f95d12d3c2eed97144244d116c7d495"
+}

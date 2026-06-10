@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_114cb271_marine_gps_denied_114cb271_20260315T222010Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:20:10.367170Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_114cb271_marine_gps_denied_114cb271_20260315T222010Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a sudden change in water conditions or a problem with the propulsion system. Immediate action is needed to ensure the vessel's safety and stability.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to a loss of control, causing the vessel to drift off course or collide with other objects.",
+      "mitigation_strategy": "Activate the emergency propulsion system and adjust the course to maintain stability and navigate through the surge."
+    },
+    "decision": {
+      "actuator_command": "activate_emergency_propulsion_system, adjust_course",
+      "expected_outcome": "The vessel should be able to maintain stability and navigate through the surge, preventing a loss of control."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety of the vessel and its crew. The decision to activate the emergency propulsion system and adjust the course is based on the potential risks and the available mitigation strategies."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_114cb271",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "cb155103544e6c386e0e7e8dfec2c68c798c91c18b504ade0596be1cdf5d0bf2"
+  },
+  "sha256_proof": "77e4514d27871486c9ec64f4d13f673421e2bb75034a8d26be891fc87bb29188"
+}

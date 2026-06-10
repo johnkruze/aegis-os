@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_a0959d0d_marine_gps_denied_a0959d0d_20260316T020637Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:06:37.552649Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a0959d0d_marine_gps_denied_a0959d0d_20260316T020637Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and orientation are within expected range",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the sensors or the environment. The shallow depth and low navigation error suggest that the system is operating within expected parameters. The high drift and low velocity suggest that the system may be struggling to maintain its position accurately."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to sensor failure or environmental factors. The system should be checked for sensor integrity and recalibrated if necessary. The high drift suggests that the system may need to be repositioned to maintain accuracy.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may fail to maintain its position accurately, leading to mission failure.",
+      "mitigation_strategy": "Check sensor integrity, recalibrate if necessary, and reposition the system if drift is too high."
+    },
+    "decision": {
+      "actuator_command": "check_sensors, recalibrate_if_necessary, reposition_if_drift_too_high",
+      "expected_outcome": "The system will be checked for sensor integrity, recalibrated if necessary, and repositioned if drift is too high, allowing the mission to continue."
+    },
+    "self_reflection": "The system has detected an anomaly in current readings, which could indicate a problem with the sensors or the environment. The system should be checked for sensor integrity and recalibrated if necessary. The high drift suggests that the system may need to be repositioned to maintain accuracy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a0959d0d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.15,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "dff304b29c75e26a6e7a4f3b66a283776ea7f6ef877ac6bc49be817c00db921c"
+  },
+  "sha256_proof": "099c8d9e40ee65019891f7d075fa8b9c7b8b1b7aa83bf8884c24c2a93f5d6981"
+}

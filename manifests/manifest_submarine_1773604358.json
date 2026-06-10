@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_26168572_marine_gps_denied_26168572_20260315T195229Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:52:29.347079Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_26168572_marine_gps_denied_26168572_20260315T195229Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest that the vehicle is experiencing some instability. The depth is shallow, and the drift is significant, indicating that the vehicle may be moving away from its intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vehicle's stability is compromised, and it may be difficult to control. The battery is sufficient for a short period, but the leak could cause significant damage if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vehicle to sink, leading to a loss of control and potential damage to the equipment. The vehicle may also become difficult to maneuver due to the instability.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, and attempt to navigate to a safe location. If possible, deploy a rescue team to assist in containing the leak and stabilizing the vehicle."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, NAVIGATE_TO_SAFE_LOCATION",
+      "expected_outcome": "The vehicle will attempt to shut down non-essential systems and navigate to a safe location to mitigate the risk of further damage."
+    },
+    "self_reflection": "The detection of a leak on the surface of the water is a critical anomaly that requires immediate attention. The vehicle's stability is compromised, and it may be difficult to control. The battery is sufficient for a short period, but the leak could cause significant damage if not addressed promptly. The decision to activate emergency protocols and navigate to a safe location is based on the potential risks and the available resources."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_26168572",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": true,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "e4862b649dc84ff491a53aa7db8ee9ffa4689caeb55f627c04acd5ddb74ce5fa"
+  },
+  "sha256_proof": "0df99c96de53ae7e7545934469e7bc5105967fca64ec7333014b542cf0dce9d3"
+}

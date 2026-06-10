@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_ac7aef7b_marine_gps_denied_ac7aef7b_20260315T080033Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:00:33.680133Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ac7aef7b_marine_gps_denied_ac7aef7b_20260315T080033Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the vehicle is moving at a slight drift. The depth is shallow, and the navigation error is minimal."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vehicle is in a potentially dangerous situation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vehicle to sink, leading to a loss of control and potential danger to the crew.",
+      "mitigation_strategy": "Initiate emergency procedures to stop the leak and return to a safe location. Activate the emergency beacon and alert the rescue team."
+    },
+    "decision": {
+      "actuator_command": "STOP_ENGINE; ACTIVATE_EMERGENCY_BEAcon; RETURN_TO_SAFE_LOCATION",
+      "expected_outcome": "The vehicle will stop, the emergency beacon will be activated, and the vehicle will attempt to return to a safe location."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate action to ensure the safety of the mission and crew. The decision to stop the engine, activate the emergency beacon, and return to a safe location is based on the potential risks and the available resources."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ac7aef7b",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 2.7,
+      "mission_success": true,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "d3b69377dfe3f5d096dd801424f492ef352c53e509360787b0a291dd572fed48"
+  },
+  "sha256_proof": "1fdf090980fa2daef2620eef0ab0c86b69f984a81e9244f1c47c04dd0f4b2d0d"
+}

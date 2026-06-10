@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_e5e06a26_marine_gps_denied_e5e06a26_20260314T220935Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:09:35.687490Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e5e06a26_marine_gps_denied_e5e06a26_20260314T220935Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for a slight drift and velocity discrepancy. The battery level is high, indicating sufficient power. The navigation error is low, suggesting the system is maintaining its course. The depth is stable, and the time is within expected parameters. The current readings are slightly off, which could indicate minor issues with the current sensors. The waypoint is at 0, which suggests the mission has not started or has been paused."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight drift and velocity discrepancies could be due to minor sensor inaccuracies or environmental factors. The battery level is high, so power is not an issue. The navigation error is low, so the system is maintaining its course. The depth is stable, and the time is within expected parameters. The current readings are slightly off, which could indicate minor issues with the current sensors. The waypoint is at 0, which suggests the mission has not started or has been paused.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The slight drift and velocity discrepancies could be due to minor sensor inaccuracies or environmental factors. The system is maintaining its course and the navigation error is low, so the mission is likely to continue as planned.",
+      "mitigation_strategy": "Monitor the system closely and perform a sensor calibration if the drift and velocity discrepancies persist. If the issue persists, consider a manual override to adjust the course."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with the system monitoring the drift and velocity discrepancies closely."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for a slight drift and velocity discrepancy. The battery level is high, indicating sufficient power. The navigation error is low, suggesting the system is maintaining its course. The depth is stable, and the time is within expected parameters. The current readings are slightly off, which could indicate minor issues with the current sensors. The waypoint is at 0, which suggests the mission has not started or has been paused."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e5e06a26",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "58f89e13d707d900a76fd4132eb2a08613e29ed5116163a5db1dc24a91c73b50"
+  },
+  "sha256_proof": "be2680a69a25f4738d277d3bb734e5bff3c96dd0f80103420ddd9bfbb364c12a"
+}

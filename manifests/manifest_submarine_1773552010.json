@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_3f212195_marine_gps_denied_3f212195_20260315T052004Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:20:04.694087Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3f212195_marine_gps_denied_3f212195_20260315T052004Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within safe range",
+        "drift within acceptable limits",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery level and some minor current anomalies. The depth and drift are within acceptable ranges, and the navigation error is minimal. The mission is at waypoint 0, which suggests the start of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, must recharge soon to avoid mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "Battery depletion could lead to mission termination.",
+      "mitigation_strategy": "Initiate battery recharging procedure immediately."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "Battery recharged, mission can continue."
+    },
+    "self_reflection": "The system is performing as expected, but the low battery level is a critical concern that requires immediate attention to prevent mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3f212195",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.1,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "cf031a95df20eaa0d9161c7b5e662b3b3342f28a6e2cb5b46b121ca16a407da3"
+  },
+  "sha256_proof": "f09de48b376c6c5b83d2783f36e676181a44219bd27f27c6c218add19c8a23f7"
+}

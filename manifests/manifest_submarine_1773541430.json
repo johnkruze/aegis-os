@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_da2f3d72_marine_gps_denied_da2f3d72_20260315T022341Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:23:41.047954Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_da2f3d72_marine_gps_denied_da2f3d72_20260315T022341Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings are unusual, with a significant negative value in the first component, which could indicate a problem with the propulsion system or an error in the current sensor. There is a slight drift and a small navigation error, which are within acceptable limits but may indicate minor issues with the positioning system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "ignore battery warning"
+      },
+      {
+        "thought": "The unusual current readings suggest a potential issue with the propulsion system, which could affect the mission's ability to reach waypoints.",
+        "confidence": 0.9,
+        "action_rejected": "ignore current readings"
+      },
+      {
+        "thought": "The slight drift and navigation error are within acceptable limits, but should be monitored closely to ensure accuracy.",
+        "confidence": 0.6,
+        "action_rejected": "ignore drift and error"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail due to the low battery or propulsion system issues, leading to the loss of control and potential damage to the system.",
+      "mitigation_strategy": "Increase power supply to the system and perform a system check to identify and fix the propulsion system issue."
+    },
+    "decision": {
+      "actuator_command": "increase power supply to propulsion system",
+      "expected_outcome": "The propulsion system should be able to operate normally, allowing the system to continue the mission."
+    },
+    "self_reflection": "The system is operating with some anomalies that require attention. The low battery and unusual current readings are concerning, and should be addressed to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_da2f3d72",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "1bac7493c5a961123c266c7de391b3c4c9d5e6f2da7b8f4348efafc26fdc9ac1"
+  },
+  "sha256_proof": "b4283e13c07a24c99ce7f6e2a6031112c6c21e06cfe1250ba80875d04503e969"
+}

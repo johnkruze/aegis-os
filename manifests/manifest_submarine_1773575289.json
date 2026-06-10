@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b8949f1c_marine_gps_denied_b8949f1c_20260315T114756Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:47:56.794588Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b8949f1c_marine_gps_denied_b8949f1c_20260315T114756Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 410.05, -64.68, -0.5",
+        "time is 359.0",
+        "velocity is [-1.04, 0.4, 0.0]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation error. The battery level is high, which is good. The depth is shallow, which is expected in marine environments. The navigation error is low, which is positive. The position is slightly off, but the error is manageable. The velocity is slightly off, which could be due to drift. The waypoint is at 0, which suggests the mission has not started or is at the beginning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and inconsistent current readings suggest a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is expected. The navigation error is low, so the system is not severely off course. The position is slightly off, but the error is manageable. The velocity is slightly off, which could be due to drift. The waypoint is at 0, which suggests the mission has not started or is at the beginning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission may fail to start or progress due to the high drift and inconsistent current readings. The system may not be able to maintain its position or velocity, leading to a loss of control.",
+      "mitigation_strategy": "Calibrate the navigation system to account for drift and inconsistent current readings. Ensure that the system is properly aligned with the intended course before starting the mission."
+    },
+    "decision": {
+      "actuator_command": "Calibrate navigation system",
+      "expected_outcome": "The navigation system will be calibrated to account for drift and inconsistent current readings, allowing the mission to start or progress as intended."
+    },
+    "self_reflection": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is expected. The navigation error is low, so the system is not severely off course. The position is slightly off, but the error is manageable. The velocity is slightly off, which could be due to drift. The waypoint is at 0, which suggests the mission has not started or is at the beginning."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b8949f1c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "b42543a5510bddc20fbfbf95b4faac70d26d1a021e2abf8ac2822764914cc457"
+  },
+  "sha256_proof": "55bb230867218e9a1933e17edebe5d36b13777589e02ae0aece2271008065c5e"
+}

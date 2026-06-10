@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_38390962_marine_gps_denied_38390962_20260314T231924Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:19:24.930370Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_38390962_marine_gps_denied_38390962_20260314T231924Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and time data are valid",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is shallow, which is within expected limits for marine operations. The drift is high, which could lead to a loss of position accuracy if not corrected. The navigation error is low, which indicates that the system is performing well in terms of navigation. The position and time data are valid, which suggests that the system is accurately tracking its location. The velocity is moderate, which is within expected limits for marine operations. The waypoint is at the start, which suggests that the mission is beginning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a problem with the sensors or the environment. The drift is high, which could lead to a loss of position accuracy if not corrected. The navigation error is low, which indicates that the system is performing well in terms of navigation. The position and time data are valid, which suggests that the system is accurately tracking its location. The velocity is moderate, which is within expected limits for marine operations. The waypoint is at the start, which suggests that the mission is beginning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could lead to a loss of position accuracy, which could result in the mission being incomplete. The abnormal current readings could indicate a problem with the sensors or the environment, which could also result in the mission being incomplete.",
+      "mitigation_strategy": "Perform a sensor check to verify the accuracy of the current readings. If the current readings are confirmed to be abnormal, adjust the system settings to compensate for the drift. If the current readings are confirmed to be normal, continue the mission as planned."
+    },
+    "decision": {
+      "actuator_command": "Perform a sensor check to verify the accuracy of the current readings. If the current readings are confirmed to be abnormal, adjust the system settings to compensate for the drift. If the current readings are confirmed to be normal, continue the mission as planned.",
+      "expected_outcome": "The mission will either be completed successfully or the system will be adjusted to compensate for the drift and the mission will continue."
+    },
+    "self_reflection": "The system is experiencing an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The drift is high, which could lead to a loss of position accuracy if not corrected. The navigation error is low, which indicates that the system is performing well in terms of navigation. The position and time data are valid, which suggests that the system is accurately tracking its location. The velocity is moderate, which is within expected limits for marine operations. The waypoint is at the start, which suggests that the mission is beginning."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_38390962",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "5a8056add7ec7383ca069c2e72083efebeb034d85cf9ed3246f777892ef4bd44"
+  },
+  "sha256_proof": "8882f6e9690dadf20b582a4846a36c566d9572e354f00652bde3ff53d9b2df08"
+}

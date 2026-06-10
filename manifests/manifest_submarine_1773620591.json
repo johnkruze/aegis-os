@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_c9f2eb32_marine_gps_denied_c9f2eb32_20260316T002303Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:23:03.897514Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c9f2eb32_marine_gps_denied_c9f2eb32_20260316T002303Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery low",
+        "current anomalies",
+        "depth near surface",
+        "drift high",
+        "navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including a low battery, inconsistent current readings, near-surface depth, high drift, and navigation errors. The waypoint has not been reached, indicating a potential failure in the mission."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly. The current anomalies suggest a potential issue with the navigation system. The high drift and navigation error indicate that the vehicle is not following the intended path. The waypoint has not been reached, which is a critical failure in the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down, leading to a loss of control and potentially causing damage to the vehicle or the environment. The vehicle may drift off course, leading to further navigation errors and the failure to reach waypoints.",
+      "mitigation_strategy": "Immediately initiate a manual override to land the vehicle safely. If manual control is not possible, prepare for an emergency shutdown and await rescue."
+    },
+    "decision": {
+      "actuator_command": "manual_override",
+      "expected_outcome": "The vehicle will attempt to land safely. If manual control is not possible, the system will prepare for an emergency shutdown."
+    },
+    "self_reflection": "The system has detected multiple critical anomalies that could lead to mission failure. Immediate action is required to ensure the safety of the vehicle and the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c9f2eb32",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "687c19097e2819b0dffaf5b7239bf3f6595ccf5a9212eca24edb3c5992a6f1b6"
+  },
+  "sha256_proof": "990375df28d0252931ded86eec1d65cefed2c61336894138b62a9e18cd7ded73"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_94008a8e_marine_gps_denied_94008a8e_20260315T101059Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:10:59.208300Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_94008a8e_marine_gps_denied_94008a8e_20260315T101059Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 166.38 units",
+        "time is 360.0",
+        "velocity is slightly positive in the y-direction",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be experiencing significant drift and an unusual current reading, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the drift and current readings suggest that the system is not accurately tracking its position."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a navigation error. The system should be recalibrated to correct this error.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and lose accuracy over time if not corrected.",
+      "mitigation_strategy": "Recalibrate the system using the current position and heading."
+    },
+    "decision": {
+      "actuator_command": "recalibrate",
+      "expected_outcome": "The system should be able to correct its position and continue on the intended course."
+    },
+    "self_reflection": "The system is experiencing drift and unusual current readings, which could indicate a navigation error. The decision to recalibrate is based on the high confidence in the internal agent's thought and the potential risk of continued drift if not corrected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_94008a8e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "380eedfb9e3e087f8061003f408544c9286980fc77f53f2e97bfc0f4c2a8f4ae"
+  },
+  "sha256_proof": "8be02f3cb07eac27e85eb7cb49dcefdaf357946f57aff7bb594135c6cff5848e"
+}

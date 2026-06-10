@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f60acccf_marine_gps_denied_f60acccf_20260316T051940Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:19:40.495728Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f60acccf_marine_gps_denied_f60acccf_20260316T051940Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 420.13 units",
+        "time is 680.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings and a high drift, which suggests a potential issue with the navigation system or the environment. The battery level is high, which is positive. The depth is shallow, which could be a normal condition for the mission. The navigation error is low, indicating that the system is still able to track its position relatively accurately. The position is off by a significant amount, which is concerning. The time and velocity readings are within expected ranges."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and off position suggest a navigation error. The current readings are abnormal, which could indicate a problem with the sensors or the environment. The battery level is high, so power is not an issue. The depth is shallow, which could be a normal condition for the mission. The navigation error is low, indicating that the system is still able to track its position relatively accurately. The position is off by a significant amount, which is concerning. The time and velocity readings are within expected ranges.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The navigation error could lead to the mission being incomplete if not addressed. The abnormal current readings could indicate a problem with the sensors or the environment, which could affect the mission's success.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. Check the current readings and ensure that the sensors are functioning correctly. If the issue persists, consider aborting the mission and returning to a safe location."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The navigation system will be reset and recalibrated, and the mission will be reassessed."
+    },
+    "self_reflection": "The system is experiencing an anomaly in current readings and a high drift, which suggests a potential issue with the navigation system or the environment. The battery level is high, which is positive. The depth is shallow, which could be a normal condition for the mission. The navigation error is low, indicating that the system is still able to track its position relatively accurately. The position is off by a significant amount, which is concerning. The time and velocity readings are within expected ranges."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f60acccf",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.15,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "c05af2aaa41b52ad45f7625935ffe00ac38176663644a16d70fe92df5e278a90"
+  },
+  "sha256_proof": "b0d6a323561f1ed012596a28b772b6858d74343380a12786aa63f1b97af84acc"
+}

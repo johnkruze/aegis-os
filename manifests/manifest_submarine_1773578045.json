@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_23d25b28_marine_gps_denied_23d25b28_20260315T123351Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:33:51.615459Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_23d25b28_marine_gps_denied_23d25b28_20260315T123351Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is within expected range",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is at a high level, which is good. The current readings are slightly off, which could indicate minor issues with the current sensors. The depth is within expected range, and the drift is within acceptable limits. The navigation error is minimal, and the position is slightly off, which could be due to minor drift or sensor inaccuracies. The time is within expected range, and the velocity is within expected range. The waypoint is at the start, which is expected at the beginning of a mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations from expected values are within acceptable limits. The battery level is high, which is good. The current readings are slightly off, which could indicate minor issues with the current sensors. The depth is within expected range, and the drift is within acceptable limits. The navigation error is minimal, and the position is slightly off, which could be due to minor drift or sensor inaccuracies. The time is within expected range, and the velocity is within expected range. The waypoint is at the start, which is expected at the beginning of a mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations from expected values are within acceptable limits and are unlikely to cause a failure. The battery level is high, which is good. The current readings are slightly off, which could indicate minor issues with the current sensors. The depth is within expected range, and the drift is within acceptable limits. The navigation error is minimal, and the position is slightly off, which could be due to minor drift or sensor inaccuracies. The time is within expected range, and the velocity is within expected range. The waypoint is at the start, which is expected at the beginning of a mission.",
+      "mitigation_strategy": "Monitor the current readings closely and perform a sensor calibration if necessary. Continue monitoring the system for any further deviations from expected values."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with close monitoring of the current readings and sensor performance."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery level is high, which is good. The current readings are slightly off, which could indicate minor issues with the current sensors. The depth is within expected range, and the drift is within acceptable limits. The navigation error is minimal, and the position is slightly off, which could be due to minor drift or sensor inaccuracies. The time is within expected range, and the velocity is within expected range. The waypoint is at the start, which is expected at the beginning of a mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_23d25b28",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "ae3c81c6e3721b5e6095a137869984e3d08a1b0d451cfb2cf2f62ee8915fdb5c"
+  },
+  "sha256_proof": "98794c51cc80fc249c1f1e37f6adc0ccb041276676a2a820820d26ce8ccda81a"
+}

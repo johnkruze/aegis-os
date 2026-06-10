@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ff1497a0_marine_gps_denied_ff1497a0_20260315T021421Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:14:21.040069Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ff1497a0_marine_gps_denied_ff1497a0_20260315T021421Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is zero",
+        "position is slightly off",
+        "time is 455.0",
+        "velocity is slightly negative",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is healthy, the current readings are stable, and the depth is within safe limits. The slight drift and negative velocity suggest minor adjustments are needed to maintain course. The navigation error is zero, indicating the system is accurately tracking its position. The time is at 455.0, which is a specific timestamp. The waypoint is at zero, suggesting the mission has not yet begun or is at the start point."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is functioning normally, but slight adjustments are needed to maintain course.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system will continue to operate normally as long as the current conditions remain stable.",
+      "mitigation_strategy": "Monitor the system for any changes in parameters that could indicate a potential issue."
+    },
+    "decision": {
+      "actuator_command": "adjust course slightly to the right",
+      "expected_outcome": "The system will correct the slight drift and maintain course."
+    },
+    "self_reflection": "The system is performing as expected, with only minor adjustments needed to maintain course. The battery is healthy, and the current readings are stable. The slight drift and negative velocity suggest minor adjustments are required to maintain course. The navigation error is zero, indicating the system is accurately tracking its position. The time is at 455.0, which is a specific timestamp. The waypoint is at zero, suggesting the mission has not yet begun or is at the start point."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ff1497a0",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "747c59ccbab8ad8144ff6c5594ab687bcd16f7ca34a1f1c81029b320e0654d47"
+  },
+  "sha256_proof": "e1a538369b1e7f07ce5002a295218623ac9eda1a219211f2738562998f86f4e2"
+}

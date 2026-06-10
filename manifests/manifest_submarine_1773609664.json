@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f079fa64_marine_gps_denied_f079fa64_20260315T212058Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:20:58.699632Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f079fa64_marine_gps_denied_f079fa64_20260315T212058Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak has been detected, which could compromise the vessel's integrity and safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause a loss of pressure, leading to a potential sinking of the vessel.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems and preparing for a possible evacuation."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_ALL_NON_ESSENTIAL_SYSTEMS, PREPARE_EVASION_PLAN",
+      "expected_outcome": "Emergency protocols are initiated to mitigate the risk of the leak causing further damage."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate attention to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f079fa64",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "0c4c3bb9a6dcee787971647e502ef8ba8a8197945efb580b9d3f5ba3e7b07968"
+  },
+  "sha256_proof": "ef76c402e68eb64c1a15a85bf8b0f61c162f0b0241fa8d7ab87344c2e5380197"
+}

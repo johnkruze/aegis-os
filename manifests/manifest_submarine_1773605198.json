@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_ac0676f4_marine_gps_denied_ac0676f4_20260315T200631Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:06:31.272191Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ac0676f4_marine_gps_denied_ac0676f4_20260315T200631Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within safe limits",
+        "drift within acceptable range",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery level and some anomalies in the current readings. The depth and drift are within acceptable limits, and the navigation error is minimal. The mission is at waypoint 0, which suggests the start of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a concern, but the current and depth are within safe limits. The mission is at the start, so the anomaly might be a false positive or a normal part of the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission could continue with reduced battery life, but the anomaly in current readings should be investigated.",
+      "mitigation_strategy": "Monitor the battery level and investigate the current anomalies. If the battery level drops below a critical threshold, initiate a safe return to base."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue with reduced battery life, and the anomaly will be monitored."
+    },
+    "self_reflection": "The system is functioning within normal parameters, except for a low battery level. The anomaly in current readings should be investigated to ensure the mission's safety and accuracy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ac0676f4",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 6.3,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "2860c4e7d9970c3dc06ea91d7a51b1ed17f7586b473e81a5f6ae18282d52f00d"
+  },
+  "sha256_proof": "7fbdcfe2ee72239cc9be472d3811bedd40a5536936d926160fc996edde1c7598"
+}

@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_57cf524f_marine_gps_denied_57cf524f_20260315T121556Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:15:56.936483Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_57cf524f_marine_gps_denied_57cf524f_20260315T121556Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "depth within expected range",
+        "drift within expected range",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is experiencing low battery levels and unusual current readings, which could indicate a potential issue with the propulsion system or the navigation sensors. The depth and drift are within expected ranges, and the navigation error is minimal. The waypoint is at 0, suggesting the mission has not started or has been paused."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is concerning and could lead to a system failure if not addressed soon. The unusual current readings suggest a potential issue with the propulsion system. The navigation error is small, but the unusual current readings should be investigated further.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could fail due to the low battery level, potentially leading to a loss of control or mission failure. The unusual current readings could indicate a more serious issue with the propulsion system.",
+      "mitigation_strategy": "Immediately recharge the battery and perform a thorough check of the propulsion system. If the issue persists, initiate an emergency stop and await further instructions."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery level will be restored, allowing the system to continue operating safely."
+    },
+    "self_reflection": "The anomaly highlights the importance of regular system checks and maintaining sufficient battery levels to ensure mission continuity. The unusual current readings require further investigation to prevent potential system failures."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_57cf524f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.9,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "6f9dd3aaa24fad012c2555c099877e1a093fadc76280b9cc5a636ea9827ac509"
+  },
+  "sha256_proof": "645d6503ee81b1539c9f04bb017e514bd8c8f324110cb33e09a1c73b1ecc2e43"
+}

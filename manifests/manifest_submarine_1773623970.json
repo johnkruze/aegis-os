@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_37fb3c2a_marine_gps_denied_37fb3c2a_20260316T011921Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:19:21.665423Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_37fb3c2a_marine_gps_denied_37fb3c2a_20260316T011921Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and time data are valid",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a malfunction in the current sensors or a magnetic interference issue. The shallow depth and high drift suggest the vehicle may be in an unexpected location or facing navigation challenges. The battery level is high, which is positive, but the current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to sensor failure or magnetic interference. The shallow depth and high drift suggest the vehicle may be in an unexpected location or facing navigation challenges. The battery level is high, which is positive, but the current readings are concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in an unexpected location or facing navigation challenges due to the abnormal current readings and high drift. The battery level is high, which is positive, but the current readings are concerning.",
+      "mitigation_strategy": "Perform a sensor check to verify the current readings. If the issue persists, recalibrate the sensors or adjust the navigation parameters."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check",
+      "expected_outcome": "The sensor check will confirm if the current readings are due to sensor failure or magnetic interference. If the issue persists, recalibrate the sensors or adjust the navigation parameters."
+    },
+    "self_reflection": "The anomaly in current readings is concerning, but the battery level is high. The shallow depth and high drift suggest the vehicle may be in an unexpected location or facing navigation challenges. The decision to perform a sensor check is based on the internal deliberation and mission assurance check."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_37fb3c2a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "b1dfb7e3152a5abfee1838ca4e9d2eefda076a69c0b67f8d4826efb9cabaf8c1"
+  },
+  "sha256_proof": "d31cca5449475dbf7dcdb6f4697d2e8128b84eead74a1536e4a025b1d19dfdb9"
+}

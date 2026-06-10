@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_4ad17376_marine_gps_denied_4ad17376_20260315T123243Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:32:43.510774Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4ad17376_marine_gps_denied_4ad17376_20260315T123243Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate a strong current",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 491.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, but the significant drift and current readings suggest potential issues with navigation accuracy and possibly a need for recalibration of the system's orientation."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest the system may be struggling with its orientation in the water.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The battery level is high, so power is not an immediate concern.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The navigation error is low, so the system is not immediately failing.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may lose orientation and drift further, potentially leading to a loss of control or collision with obstacles.",
+      "mitigation_strategy": "Recalibrate the system's orientation using the current position and heading data."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_orientation",
+      "expected_outcome": "The system's orientation should be corrected, reducing the drift and improving navigation accuracy."
+    },
+    "self_reflection": "The system is performing well within normal parameters, but the significant drift and current readings indicate potential issues with orientation. Recalibrating the system's orientation is the most immediate action to mitigate the risk of further drift and potential failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4ad17376",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "82ad1399a5de1998302d55421be2f24325932a9944839aa7e9f653e11b1ebbe8"
+  },
+  "sha256_proof": "e8bce1cb823c5adbdbb94cf0639c0749039aec63ac38894eb66713a878539def"
+}

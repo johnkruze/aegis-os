@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_b8481b9a_marine_gps_denied_b8481b9a_20260314T233640Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:36:40.779564Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b8481b9a_marine_gps_denied_b8481b9a_20260314T233640Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is close to midnight",
+        "velocity is slightly off"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings and drift, which could indicate a malfunction or interference with the navigation system. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is shallow, which is within expected operational parameters. The navigation error is low, indicating that the system is still able to maintain a relatively accurate position. The time is close to midnight, which could be a factor in the anomaly. The velocity is slightly off, which could indicate that the system is not moving as expected."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a potential issue with the navigation system. The battery level is high, so power is not a concern. The depth and navigation error are within expected parameters. The time is close to midnight, which could be a factor in the anomaly. The velocity is slightly off, which could indicate that the system is not moving as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly could cause the system to drift off course or fail to reach the next waypoint. It could also cause the system to consume more power than expected, leading to a battery drain.",
+      "mitigation_strategy": "Perform a system reset and reinitialize the navigation system. Check the current readings and adjust the system as necessary. Monitor the system closely to ensure that it is functioning properly."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will be reset and reinitialized, and the navigation system will be checked for any issues. The system will then be monitored closely to ensure that it is functioning properly."
+    },
+    "self_reflection": "The anomaly in current readings and drift suggests that there may be an issue with the navigation system. The system has been reset and reinitialized, and the navigation system will be checked for any issues. The system will then be monitored closely to ensure that it is functioning properly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b8481b9a",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 1,
+      "waypoints_total": 7
+    },
+    "physics_proof": "740ef218634ce2129e4c46e547c99d2eb7a39b0a90c3e041d32e16610ea94ec7"
+  },
+  "sha256_proof": "68fe9f458b60c7cc1af9efa21999475453725fce5cef3b1790e92440caa3944a"
+}

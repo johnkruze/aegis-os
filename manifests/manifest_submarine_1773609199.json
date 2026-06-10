@@ -1,0 +1,67 @@
+{
+  "mission_id": "marine_gps_denied_6fbe4d2b_marine_gps_denied_6fbe4d2b_20260315T211309Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:13:09.122738Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6fbe4d2b_marine_gps_denied_6fbe4d2b_20260315T211309Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings are inconsistent, with two negative values and one positive, which could indicate a problem with the current sensors or the system's ability to interpret them. The slight depth error suggests a minor discrepancy in the depth sensor's accuracy. The high drift value indicates that the system is not maintaining its position accurately, which could be due to wind, currents, or sensor inaccuracies. The low navigation error is positive, indicating that the system is performing well in terms of navigation. The system is currently at waypoint 0, which is expected at the start of the mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The inconsistent current readings could be due to sensor malfunction or interference.",
+        "confidence": 0.6,
+        "action_rejected": "check current sensor integrity"
+      },
+      {
+        "thought": "The slight depth error is manageable and does not pose an immediate threat.",
+        "confidence": 0.5,
+        "action_rejected": "ignore for now"
+      },
+      {
+        "thought": "The high drift could cause the system to lose its position, leading to mission failure.",
+        "confidence": 0.9,
+        "action_rejected": "adjust course to compensate"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down due to low battery or lose its position due to high drift, leading to mission failure.",
+      "mitigation_strategy": "Recharge the battery and adjust the course to compensate for high drift."
+    },
+    "decision": {
+      "actuator_command": "recharge battery, adjust course to compensate for high drift",
+      "expected_outcome": "The system will be able to continue the mission with a full battery and a more accurate position."
+    },
+    "self_reflection": "The system is currently operating within expected parameters, but the low battery and high drift pose potential risks. Immediate action is required to mitigate these risks and ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6fbe4d2b",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "26545237c8f0cb4d1343f3b6502ac1006556dcd597861e7ea55dcf3da1b6bae4"
+  },
+  "sha256_proof": "5c9d02d4ef29b0d36754d3d1eaa376be2f1a13eebd294c90387d7f2a0c5ae8b6"
+}

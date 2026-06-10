@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0808f99a_marine_gps_denied_0808f99a_20260315T031651Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:16:51.973911Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0808f99a_marine_gps_denied_0808f99a_20260315T031651Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 317.0",
+        "velocity is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, indicating potential issues with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a possible malfunction in the navigation system or the environment is affecting the sensors.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The navigation system may fail, leading to a loss of control or deviation from the intended course.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. If the issue persists, initiate an emergency protocol to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The navigation system will be recalibrated, and the vessel will attempt to return to the intended course."
+    },
+    "self_reflection": "The anomaly indicates a potential failure in the navigation system, which could lead to a loss of control. Immediate action is required to mitigate the risk and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0808f99a",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "2040231de685bff77a2fc2ffc36618c1c0c809777a7b6d372a926d1fc9132174"
+  },
+  "sha256_proof": "1882db36e5b6ddc30cd2122d153bdca35a3c83234f0026f95efdddc0f1a70331"
+}

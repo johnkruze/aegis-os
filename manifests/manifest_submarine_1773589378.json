@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_34a7bb4b_marine_gps_denied_34a7bb4b_20260315T154250Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:42:50.132150Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_34a7bb4b_marine_gps_denied_34a7bb4b_20260315T154250Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 40.89 units",
+        "time is 331.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation error. The battery level is high, so power is not an issue. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, suggesting a need for recalibration or correction."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and inconsistent current readings suggest a navigation error. Recalibrating the position might resolve the issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission might fail if the navigation error is not corrected, leading to potential collision with obstacles or loss of mission objectives.",
+      "mitigation_strategy": "Recalibrate the position using the available sensors and adjust the course accordingly."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_position",
+      "expected_outcome": "The position should be corrected, and the mission should continue on the correct course."
+    },
+    "self_reflection": "The system detected an anomaly in navigation, which could potentially lead to mission failure. The decision to recalibrate the position is based on the high confidence in the internal deliberation and the potential risks associated with continuing the mission without correction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_34a7bb4b",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "01018c236838f66f1ef0f6715965ff913c19fb7c5016c027fbc9921384bbaf37"
+  },
+  "sha256_proof": "fab76a88a17d56564917cf225b63fbe9306e6cbda81be91bcca629725c2cc243"
+}

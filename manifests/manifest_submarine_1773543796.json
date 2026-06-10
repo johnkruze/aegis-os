@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_44ae3d74_marine_gps_denied_44ae3d74_20260315T030308Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:03:08.238554Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_44ae3d74_marine_gps_denied_44ae3d74_20260315T030308Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is operating with a slight battery drain, indicating that the power is being used efficiently. The current readings are slightly off, which could be due to minor electrical interference or a need for recalibration. The slight drift suggests that the system is not perfectly aligned with the intended path, but it is within acceptable limits. The small navigation error indicates that the system is maintaining its position accurately."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The battery level is sufficient for the current mission, but the unusual current readings should be investigated.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The slight drift and navigation error are within acceptable limits, so no immediate action is necessary.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may experience minor performance degradation due to the slight drift and navigation error, but it is unlikely to cause a complete failure.",
+      "mitigation_strategy": "Monitor the system closely and perform a recalibration if the drift or error persists."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned with minor adjustments to the system."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor issues that are unlikely to impact the mission. The current battery level is sufficient, and the slight drift and navigation error are within acceptable limits."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_44ae3d74",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "d53840fbe012e3947bb319fc2a918206540354d6c9f5453d9311556856db0815"
+  },
+  "sha256_proof": "8d581258ce07c0d66c15fdd4f827be664d43266dd6f445943877933b794a395e"
+}

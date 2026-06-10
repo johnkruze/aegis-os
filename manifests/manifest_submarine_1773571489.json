@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_bdbdcfba_marine_gps_denied_bdbdcfba_20260315T104443Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:44:43.486709Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_bdbdcfba_marine_gps_denied_bdbdcfba_20260315T104443Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a collision with the seabed or other vessels if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could collide with the seabed or other vessels, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate attention to prevent mission failure. The decision to implement emergency braking and adjust course is based on the potential for collision and the critical nature of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_bdbdcfba",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "fd7394412ed9f0f5e2b8c8a0b33d9074488b173bd39610500e4fc3d24deef81a"
+  },
+  "sha256_proof": "28ca4ab065ea8f40e0c3f326fd296c3d9aa4fe273d0ec15c3bdb7488f944bb7a"
+}

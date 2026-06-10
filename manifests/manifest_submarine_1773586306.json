@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_1b1714d5_marine_gps_denied_1b1714d5_20260315T145137Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:51:37.519989Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1b1714d5_marine_gps_denied_1b1714d5_20260315T145137Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for a slight drift and a minor deviation from the intended position. The battery is at a high level, which suggests sufficient power for continued operation. The current readings are slightly off, which could indicate minor issues with the current sensors or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight drift and minor deviation from the waypoint are within acceptable limits. The battery level is sufficient for continued operation. The current readings are slightly off, which could be due to environmental factors or sensor drift. The system is otherwise stable.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and within normal parameters. The slight drift and minor deviation are within acceptable limits. The battery level is sufficient for continued operation.",
+      "mitigation_strategy": "Continue monitoring the system and adjust the course if necessary. Check the current sensors for any drift or calibration issues."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate within normal parameters until further issues arise."
+    },
+    "self_reflection": "The system is stable and within normal parameters. The slight drift and minor deviation are within acceptable limits. The battery level is sufficient for continued operation. The current readings are slightly off, which could be due to environmental factors or sensor drift. The system is otherwise stable."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1b1714d5",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "97d62f036441704819dca4ab0e27cbc8865d0f5769d07dbb3a2969c6ab34ea22"
+  },
+  "sha256_proof": "6e95b4f78796bf3f4f30507cdcacd50fe239c2f2898bf5b5e1cad88f9ff4ee77"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_3401b7d8_marine_gps_denied_3401b7d8_20260316T060304Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:03:04.586191Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3401b7d8_marine_gps_denied_3401b7d8_20260316T060304Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to mission failure if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The IMU drift spike suggests a critical failure in the navigation system, which could result in the mission being aborted. Immediate action is required to ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission could be aborted if the IMU drift is not corrected, leading to potential loss of the vessel or crew.",
+      "mitigation_strategy": "Initiate an emergency protocol to abort the mission and initiate a safe return to the nearest safe location."
+    },
+    "decision": {
+      "actuator_command": "ABORT_MISSION",
+      "expected_outcome": "The mission will be aborted, and the vessel will return to a safe location."
+    },
+    "self_reflection": "The IMU drift spike is a critical anomaly that requires immediate attention. The decision to abort the mission is based on the potential for catastrophic failure if the issue is not resolved promptly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3401b7d8",
+    "scenario": "gps_denied_autonomous_boat_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "72d13a490d0c29cf9610aabf15f0864cf7545c8a832e58aa4bfb0628f73ff56c"
+  },
+  "sha256_proof": "9017a230c89fe1064a02dc210fc80f28f96eccfbb56ee01729fe895944d4ae1d"
+}

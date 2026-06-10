@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_73a76437_marine_gps_denied_73a76437_20260315T100910Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:09:10.308505Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_73a76437_marine_gps_denied_73a76437_20260315T100910Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a partial success in the CURRENT_SURGE anomaly, indicating that the vessel is experiencing a significant surge in depth or drift. The depth is at 99.4 meters, and the drift is 37.99 meters, which suggests that the vessel is moving away from its intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The CURRENT_SURGE anomaly is a critical issue that could lead to a collision with the ocean floor or other obstacles. The vessel's depth is already at its maximum capacity, and further drift could result in a catastrophic failure.",
+        "confidence": 0.9,
+        "action_rejected": "continue current course"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel could collide with the ocean floor or other obstacles, leading to a loss of control or damage to the vessel.",
+      "mitigation_strategy": "Implement emergency braking to reduce the drift and stabilize the vessel's position. If necessary, initiate an emergency evacuation procedure."
+    },
+    "decision": {
+      "actuator_command": "emergency_braking",
+      "expected_outcome": "The vessel will decelerate and stabilize its position to prevent further drift and potential collision."
+    },
+    "self_reflection": "The anomaly detection system has identified a critical issue that requires immediate action to prevent a catastrophic failure. The decision to implement emergency braking is based on the potential consequences of continuing the current course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_73a76437",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 3,
+      "waypoints_total": 5
+    },
+    "physics_proof": "1b35964fb505b33f8f62c12490d43af8f65344b8cf2ab089425dacc6272f1bcf"
+  },
+  "sha256_proof": "7a0d39c447fa316913cd95638965565e0854312cee655bdaa4a9eb62eb83e18b"
+}

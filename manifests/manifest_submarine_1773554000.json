@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_dacc0a70_marine_gps_denied_dacc0a70_20260315T055312Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:53:12.549848Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_dacc0a70_marine_gps_denied_dacc0a70_20260315T055312Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel. The battery level is high, and the current readings suggest movement, but the depth is shallow and the drift is moderate. The navigation error is low, and the velocity is normal."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "A surface leak could indicate a structural issue or a breach in the hull. Immediate action is required to prevent further damage and ensure the safety of the vessel and crew.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could worsen if not addressed promptly, potentially leading to increased water ingress and structural damage.",
+      "mitigation_strategy": "Initiate emergency procedures to isolate the leak, deploy emergency pumps, and notify the crew and management. Monitor the situation closely and prepare for potential evacuation if necessary."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_LEAK_ISOLATION, EMERGENCY_PUMP_DEPLOYMENT, NOTIFICATION_INITIATE",
+      "expected_outcome": "The leak is isolated, and emergency pumps are deployed to prevent further water ingress. Notification is sent to the crew and management to inform them of the situation and request assistance."
+    },
+    "self_reflection": "The detection of a surface leak is a critical anomaly that requires immediate attention. The crew must be alerted, and emergency procedures must be initiated to prevent any potential damage to the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_dacc0a70",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.2,
+      "mission_success": true,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "8f9815226d69b5e2bcd853c75ed3a45d24f11d37312c6ca94d6cb6b7f32012df"
+  },
+  "sha256_proof": "79defb13de16474d6f4906e3d911fd848ee8403337408098953feaa716e3f0ec"
+}

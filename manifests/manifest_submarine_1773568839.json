@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b220f8f0_marine_gps_denied_b220f8f0_20260315T100033Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:00:33.491517Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b220f8f0_marine_gps_denied_b220f8f0_20260315T100033Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with the seabed or another object, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid the surge."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL",
+      "expected_outcome": "The vessel will decelerate and attempt to stabilize its position."
+    },
+    "self_reflection": "The anomaly was detected promptly, and an emergency braking command was issued to mitigate the risk of mission failure. Further monitoring is required to ensure the vessel stabilizes safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b220f8f0",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "07ec941a786988dd3eb08179986275361f60320a476847bc47872c4664a6d781"
+  },
+  "sha256_proof": "990d69cfe5f9bae02aa3bb69f66b0c0adad5cbc701167584a03247fbd00834e9"
+}

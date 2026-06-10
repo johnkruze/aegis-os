@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_37a3df34_marine_gps_denied_37a3df34_20260316T020326Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:03:26.834882Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_37a3df34_marine_gps_denied_37a3df34_20260316T020326Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ALERT",
+        "DEPTH_ALERT",
+        "DRIFT_ALERT",
+        "NAV_ERROR_ALERT",
+        "POSITION_ALERT",
+        "TIME_ALERT",
+        "VELOCITY_ALERT",
+        "WAYPOINT_ALERT"
+      ],
+      "interpretation": "The system is experiencing critical battery degradation, with current readings indicating a significant power drain. Depth, drift, and navigation errors are within normal limits, but the battery is at a critical level, which could lead to mission failure if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.9,
+        "action_rejected": "continue mission"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down unexpectedly, causing the mission to be aborted.",
+      "mitigation_strategy": "Initiate emergency shutdown sequence and attempt to recover power from external sources if possible."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_SEQUENCE",
+      "expected_outcome": "The system will initiate an emergency shutdown to prevent mission failure due to battery degradation."
+    },
+    "self_reflection": "The system has detected a critical battery degradation, which is a severe risk to mission success. The decision to initiate an emergency shutdown is based on the critical nature of the battery state and the potential for mission failure if the system continues to operate."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_37a3df34",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 45.2,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 2,
+      "waypoints_total": 5
+    },
+    "physics_proof": "602b88c49fbc1c137ce4fb20b272cce1fda2589bcbe63a6c823cd3174ce4ec7b"
+  },
+  "sha256_proof": "fbf0ee530bf71ad297e2d55b35d1f1eaac3e27f7b07f75e1968c8f933768cbf6"
+}

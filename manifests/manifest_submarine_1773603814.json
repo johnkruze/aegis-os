@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_82699885_marine_gps_denied_82699885_20260315T194326Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:43:26.527832Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_82699885_marine_gps_denied_82699885_20260315T194326Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate a strong current",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 420 seconds",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift that could lead to a loss of position over time. The shallow depth and strong current suggest that the vehicle may be in a challenging environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is concerning but not immediately critical given the shallow depth and low navigation error. The battery is sufficient for the current operation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the vehicle to lose position over time, potentially leading to a mission failure if not corrected.",
+      "mitigation_strategy": "Monitor the drift and adjust the course if necessary. Ensure that the vehicle has sufficient battery to complete the mission."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current course and monitor drift. If drift continues to increase, adjust course accordingly."
+    },
+    "self_reflection": "The system is performing as expected, but the drift is a concern that should be monitored. The shallow depth and low navigation error suggest that the vehicle is in a manageable environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_82699885",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "0d0f2a6d95a03576b6758f8b95a268d6e9322e60e421a47d244a2a2717ca115e"
+  },
+  "sha256_proof": "82517039fdb1973f293269d9035a58697ade5d68130890bac6efe013728e8ad4"
+}

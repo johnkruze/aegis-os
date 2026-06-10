@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c9f3a6b9_marine_gps_denied_c9f3a6b9_20260316T054351Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:43:51.626455Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c9f3a6b9_marine_gps_denied_c9f3a6b9_20260316T054351Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is minimal",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is within normal operating parameters",
+        "waypoint is on course"
+      ],
+      "interpretation": "The system is functioning within normal parameters, with minor inconsistencies in current readings. The battery level is high, indicating sufficient power. Depth and drift are within acceptable limits, and the navigation error is minimal. The position is accurate, and the velocity is within normal operating parameters. The waypoint is on course, and the time is within expected range."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly inconsistent, but within expected parameters. The battery level is high, so power is not an issue. The system is performing as expected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted. The system is performing within normal parameters.",
+      "mitigation_strategy": "Continue monitoring current readings and battery level. If inconsistencies persist, perform a system reset."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to operate within normal parameters, maintaining the current course and waypoint."
+    },
+    "self_reflection": "The system is performing as expected with no immediate issues. The current readings are slightly inconsistent, but within expected parameters. The battery level is high, so power is not an issue. The system is performing as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c9f3a6b9",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 5,
+      "waypoints_total": 7
+    },
+    "physics_proof": "8bf5090211c646de34255bb45dbc13a86d224d06a8a3e01f22c41ce0da54a248"
+  },
+  "sha256_proof": "6cf864770b4ff86c158f931e668e13950245562ac46af16436746da6b0189539"
+}

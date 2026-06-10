@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_0be5af3a_marine_gps_denied_0be5af3a_20260315T040048Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:00:48.526866Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0be5af3a_marine_gps_denied_0be5af3a_20260315T040048Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current battery level is 95.3%, which is sufficient for immediate action, but the drift and navigation error suggest that the vessel is not on course."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent the vessel from drifting out of control. The current battery level is sufficient for a brief period of operation, but further action is needed to ensure the vessel's safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel may drift out of control and potentially collide with other vessels or structures in the ocean.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vessel and initiate a return to the last known safe waypoint."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vessel and initiate a return to the last known safe waypoint."
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate action to prevent the vessel from drifting out of control. The decision to override the thrusters is based on the critical nature of the failure and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0be5af3a",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 4.7,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "019c7f4d688cbd13744366b32f9609cae0f0b71a7d8026abd65ff737ac6d25c0"
+  },
+  "sha256_proof": "3b74d50f75c4f09350ad320a4a37ea0d9221e46a840e374c31f847517eb5105d"
+}

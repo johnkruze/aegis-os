@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_0e1454d3_marine_gps_denied_0e1454d3_20260314T231117Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:11:17.321434Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0e1454d3_marine_gps_denied_0e1454d3_20260314T231117Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are inconsistent, suggesting a possible fault in the current sensors. There is a slight depth error, which could be due to sensor drift or environmental factors. The high drift indicates the vessel is not following the intended course, and the waypoint has not been reached, which is critical for mission completion."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The current readings are concerning and may indicate a hardware fault. The drift and waypoint issues are critical for mission success.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potentially leading to loss of control and mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery and perform a system check to identify and fix the current sensor issue. If the issue persists, initiate emergency procedures to ensure the vessel's safety and attempt to reach the nearest safe location."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, system_check",
+      "expected_outcome": "Recharge the battery and perform a system check to identify and address the current sensor issue. If successful, the vessel should be able to continue its mission."
+    },
+    "self_reflection": "The anomaly highlights the importance of regular system checks and maintaining sufficient power levels to ensure mission success. The high cognitive load indicates the need for quick and decisive action to mitigate the risks."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0e1454d3",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "b7cab8c3c8c33649c357b9214114562eb7401816e6cfef36245c608f1700a014"
+  },
+  "sha256_proof": "e427bc88b37f430e23c9a79d417ca5981959a0b60f818cf74e74392bb3213019"
+}

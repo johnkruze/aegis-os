@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f35644b4_marine_gps_denied_f35644b4_20260315T010807Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:08:07.797750Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f35644b4_marine_gps_denied_f35644b4_20260315T010807Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 308.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but the current readings and drift suggest potential issues with the vehicle's orientation or movement. The shallow depth and slow velocity indicate that the vehicle is likely in a confined or slow-moving area. The slight position error and unusual current readings could be due to external factors or sensor inaccuracies."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a potential issue with the vehicle's orientation or movement. The shallow depth and slow velocity indicate that the vehicle is likely in a confined or slow-moving area. The slight position error and unusual current readings could be due to external factors or sensor inaccuracies.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to maintain its intended course or position due to the unusual current readings and drift. The shallow depth and slow velocity could also indicate that the vehicle is in an area with limited maneuverability.",
+      "mitigation_strategy": "Conduct a thorough sensor check to verify the accuracy of the current readings and drift. If the issue persists, consider adjusting the vehicle's orientation or movement to compensate for the drift. If the vehicle is in a confined or slow-moving area, consider changing the waypoint or adjusting the mission parameters to allow for more maneuverability."
+    },
+    "decision": {
+      "actuator_command": "conduct a thorough sensor check",
+      "expected_outcome": "Verify the accuracy of the current readings and drift. If the issue persists, adjust the vehicle's orientation or movement to compensate for the drift. If the vehicle is in a confined or slow-moving area, consider changing the waypoint or adjusting the mission parameters to allow for more maneuverability."
+    },
+    "self_reflection": "The vehicle is operating with high battery and low navigation error, but the current readings and drift suggest potential issues with the vehicle's orientation or movement. The shallow depth and slow velocity indicate that the vehicle is likely in a confined or slow-moving area. The slight position error and unusual current readings could be due to external factors or sensor inaccuracies. A thorough sensor check is recommended to verify the accuracy of the current readings and drift. If the issue persists, adjustments to the vehicle's orientation or movement may be necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f35644b4",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "bdee452a030633ea320bd99a0901faca1791400d845e4860a227bfcb6a79b617"
+  },
+  "sha256_proof": "46ee71c7438e59a67493a2a5328dc17b3fa6f1e82ad2341fac258ed019b918f5"
+}

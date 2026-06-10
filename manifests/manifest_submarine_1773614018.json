@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_30170186_marine_gps_denied_30170186_20260315T223330Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:33:30.840995Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_30170186_marine_gps_denied_30170186_20260315T223330Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 324.0",
+        "velocity is slightly positive",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery is at a high level, and the current readings are within expected ranges. The depth is shallow, which could be a concern if the mission requires deeper waters. The slight drift and navigation error suggest that the system may need to adjust its course to maintain accuracy."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is within operational parameters, but the slight drift and navigation error indicate a need for course correction. The battery is sufficient for the current mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may drift further if not corrected, potentially leading to a slight deviation from the intended path.",
+      "mitigation_strategy": "Adjust the course to correct the drift and maintain navigation accuracy."
+    },
+    "decision": {
+      "actuator_command": "adjust_course(0.1, -0.1)",
+      "expected_outcome": "The system will adjust its course to correct the drift and maintain navigation accuracy."
+    },
+    "self_reflection": "The system is performing well within normal parameters, but the slight drift and navigation error indicate a need for course correction. The battery is sufficient for the current mission, and the system is capable of adjusting its course to maintain accuracy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_30170186",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "e6d151321d5fc49f97bd1191ffac8d78401815b63e7f48022898f90bb6f7f5b4"
+  },
+  "sha256_proof": "bc799a72909269f02e4d8cc5d525f3aab4902e91ce84010b7c134f9b4f71d168"
+}

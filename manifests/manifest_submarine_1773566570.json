@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_e622de29_marine_gps_denied_e622de29_20260315T092233Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:22:33.289681Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e622de29_marine_gps_denied_e622de29_20260315T092233Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 351.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift and a slight deviation from the intended waypoint. The battery is nearly fully charged, which is good. The current readings are slightly negative, which could indicate a minor issue with the current sensors or the environment. The depth is shallow, which is expected in marine environments. The navigation error is low, suggesting that the system is performing well in terms of positioning. The time is 351.0, which is not a critical piece of information for this analysis. The velocity is slow, which is expected in marine environments. The waypoint is at 0, which suggests that the system is at the start of the mission or has not yet reached the first waypoint."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The drift and slight deviation from the waypoint are concerning, but the system is otherwise performing well. The battery is nearly fully charged, which is good. The current readings are slightly negative, which could indicate a minor issue with the current sensors or the environment. The depth is shallow, which is expected in marine environments. The navigation error is low, suggesting that the system is performing well in terms of positioning. The time is 351.0, which is not a critical piece of information for this analysis. The velocity is slow, which is expected in marine environments. The waypoint is at 0, which suggests that the system is at the start of the mission or has not yet reached the first waypoint.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may not reach the intended waypoint due to the drift and slight deviation. However, the battery is nearly fully charged, which is good. The current readings are slightly negative, which could indicate a minor issue with the current sensors or the environment. The depth is shallow, which is expected in marine environments. The navigation error is low, suggesting that the system is performing well in terms of positioning. The time is 351.0, which is not a critical piece of information for this analysis. The velocity is slow, which is expected in marine environments. The waypoint is at 0, which suggests that the system is at the start of the mission or has not yet reached the first waypoint.",
+      "mitigation_strategy": "Monitor the system closely and adjust the course if necessary. Check the current sensors for any issues. If the drift and deviation persist, consider recalibrating the system or adjusting the waypoints."
+    },
+    "decision": {
+      "actuator_command": "continue mission with caution",
+      "expected_outcome": "The system will continue to operate within normal parameters, but the drift and slight deviation from the waypoint may cause the system to miss the intended waypoint. Monitor the system closely and adjust the course if necessary."
+    },
+    "self_reflection": "The system is operating within normal parameters, but there is a significant drift and a slight deviation from the intended waypoint. The battery is nearly fully charged, which is good. The current readings are slightly negative, which could indicate a minor issue with the current sensors or the environment. The depth is shallow, which is expected in marine environments. The navigation error is low, suggesting that the system is performing well in terms of positioning. The time is 351.0, which is not a critical piece of information for this analysis. The velocity is slow, which is expected in marine environments. The waypoint is at 0, which suggests that the system is at the start of the mission or has not yet reached the first waypoint."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e622de29",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "f11f389c09eb9eea59b2b1abf8b4da68535b81ebb087f9d5e5fb858c8c1f3a48"
+  },
+  "sha256_proof": "20bba592c52719afe103d6fd400e56ef65a059676428baf677222e9ff4133cca"
+}

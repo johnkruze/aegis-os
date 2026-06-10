@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_fba078a1_marine_gps_denied_fba078a1_20260315T092931Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:29:31.909889Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fba078a1_marine_gps_denied_fba078a1_20260315T092931Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a sudden change in depth or a collision with an object. Immediate action is required to ensure the vessel's safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could collide with an object or become unstable due to the surge.",
+      "mitigation_strategy": "Activate emergency braking and perform a 360-degree scan to identify the source of the surge."
+    },
+    "decision": {
+      "actuator_command": "BRAKE; SCAN",
+      "expected_outcome": "The vessel will decelerate and perform a scan to identify the cause of the surge, ensuring safety."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate attention to prevent potential collisions or vessel instability. The decision to activate emergency braking and perform a scan is based on the high risk level and the need to ensure the vessel's safety."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fba078a1",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "4880fb68b937ab9fb198b86d4f6cb80c1c74f68d33390733addcf3a06c77d103"
+  },
+  "sha256_proof": "608ba6998c777a94ae8502278d151f9a7b21603b3094c20617995a268e66854f"
+}

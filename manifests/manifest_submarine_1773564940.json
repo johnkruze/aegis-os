@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5af85781_marine_gps_denied_5af85781_20260315T085532Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:55:32.628067Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5af85781_marine_gps_denied_5af85781_20260315T085532Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is healthy, the current is stable, the depth is within safe limits, and the drift is manageable. The navigation error is low, indicating the system is accurately tracking its position. The temperature is normal, and the velocity is slow, suggesting the system is moving at a controlled pace. The waypoint is at the start, which is expected at the beginning of a mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure is predicted. The system is within normal operating parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in parameters."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected until further instructions are received."
+    },
+    "self_reflection": "The system is functioning normally. No anomalies were detected, and the mission is proceeding as planned. Continuous monitoring is recommended to ensure the system remains stable throughout the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5af85781",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "805e4dbfdee73c7a5042978f133dcbce2655c688f4898596383fc220668feac0"
+  },
+  "sha256_proof": "961d82360b29b14f41d56c0848d9388474d32c4af4befe7203dbbbfb4bc7f330"
+}

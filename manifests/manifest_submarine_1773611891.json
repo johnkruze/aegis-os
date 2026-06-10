@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_cca7ad77_marine_gps_denied_cca7ad77_20260315T215805Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:58:05.208038Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cca7ad77_marine_gps_denied_cca7ad77_20260315T215805Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating potential issues with the navigation system or external forces affecting the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a navigation error or external factors like strong currents or waves. We need to verify the navigation system and adjust course if necessary.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift out of the designated area or collide with obstacles if the issue is not addressed promptly.",
+      "mitigation_strategy": "Verify the navigation system, adjust course if necessary, and monitor the vessel's position closely."
+    },
+    "decision": {
+      "actuator_command": "Verify navigation system and adjust course if necessary",
+      "expected_outcome": "The vessel's position will be confirmed and adjusted to maintain the intended course."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the vessel's safety and mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cca7ad77",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "cb55fa2ef6bf82dceff422e155624b5e9e9491cac907d4d6bf0d2274423f35ea"
+  },
+  "sha256_proof": "3dc683d1eb9e96cc3dbe2d60c37edaaac04550be6f9268666be3bf6b4f51de98"
+}

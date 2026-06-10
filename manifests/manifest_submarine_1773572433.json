@@ -1,0 +1,48 @@
+{
+  "mission_id": "marine_gps_denied_564b5a9d_marine_gps_denied_564b5a9d_20260315T110025Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:00:25.962311Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_564b5a9d_marine_gps_denied_564b5a9d_20260315T110025Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE",
+        "HIGH_NAV_ERROR"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift spike, which is causing a high navigation error. This suggests that the vehicle's orientation and position are becoming unreliable."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift spike indicates a critical failure in the IMU, which is essential for navigation. Immediate action is required to prevent further mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission may fail if the drift is not corrected, leading to potential collision with obstacles or loss of control.",
+      "mitigation_strategy": "Initiate emergency protocol to recalibrate the IMU and re-establish navigation. If recalibration fails, prepare for an emergency landing or return to base."
+    },
+    "decision": {
+      "actuator_command": "INITIATE_EMERGENCY_PROTOCOL",
+      "expected_outcome": "The vehicle will attempt to recalibrate the IMU and re-establish navigation. If successful, the mission can continue. If not, the vehicle will prepare for an emergency landing or return to base."
+    },
+    "self_reflection": "The IMU drift spike is a critical anomaly that requires immediate attention. The decision to initiate an emergency protocol is based on the high risk of mission failure if the issue is not resolved promptly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_564b5a9d",
+    "scenario": "gps_denied_submarine_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.2,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "3ff3c48f2bf6850c6d596a2c986193bda73bfccdde98aefc06b2e02162b2a02c"
+  },
+  "sha256_proof": "f7be64a8a9fbeb05f8eed5f0aca174e9c5fb2f754d7fd7e84c0c2ee1f2f8cf4b"
+}

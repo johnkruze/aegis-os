@@ -1,0 +1,72 @@
+{
+  "mission_id": "marine_gps_denied_a79c78ba_marine_gps_denied_a79c78ba_20260315T134531Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:45:31.930793Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a79c78ba_marine_gps_denied_a79c78ba_20260315T134531Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "drift within acceptable limits",
+        "small navigation error",
+        "waypoint not updated"
+      ],
+      "interpretation": "The system is operating with a slight battery drain, indicating that the power supply is nearing its end. The current readings are slightly off, which could be due to a minor fault or environmental interference. The slight depth error suggests a minor deviation from the intended path, but it is within the acceptable range. The drift is within expected limits, and the navigation error is minimal. The waypoint has not been updated, which could indicate a failure in the waypoint system or a deliberate decision to hold position."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is almost depleted, which could cause the system to fail if not addressed soon.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The current readings are slightly off, which could be a minor fault or environmental interference. Further investigation is needed.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The slight depth error suggests a minor deviation from the intended path, but it is within the acceptable range. No immediate action is required.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The drift is within expected limits, and the navigation error is minimal. No immediate action is required.",
+        "confidence": 0.5,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The waypoint has not been updated, which could indicate a failure in the waypoint system or a deliberate decision to hold position. Further investigation is needed.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could fail due to the low battery, leading to a loss of control or data integrity.",
+      "mitigation_strategy": "Immediately recharge the battery or switch to a backup power source. Investigate the current readings and depth error to determine if they are due to a fault or environmental interference. Update the waypoint system if necessary."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery will be recharged, extending the operational time of the system."
+    },
+    "self_reflection": "The system is operating within normal parameters, but the low battery is a significant concern. Immediate action is required to prevent a potential failure that could compromise the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a79c78ba",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "b68c6b008de368c3fbc0ff1aeb9d03239af9834bd81d98cac79b950ce8266ac6"
+  },
+  "sha256_proof": "1d2c4c155ab970f7e6dbeccb10b3dde71b9fb6718eb4b6e135a5766ce2112100"
+}

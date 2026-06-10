@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_17c53e23_marine_gps_denied_17c53e23_20260315T201517Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:15:17.678142Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_17c53e23_marine_gps_denied_17c53e23_20260315T201517Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings vary",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is zero",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is inconsistent",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system is experiencing low battery, inconsistent current readings, shallow depth, high drift, and high temperature. The navigation is stable with no error, but the position is slightly off and the velocity is inconsistent."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is high, need to adjust course to stay on track.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Temperature is high, need to monitor for overheating.",
+        "confidence": 0.7,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "Battery depletion or overheating could cause system failure.",
+      "mitigation_strategy": "Reduce power consumption, monitor temperature, and conserve battery."
+    },
+    "decision": {
+      "actuator_command": "Reduce power consumption, monitor temperature, and adjust course to minimize drift.",
+      "expected_outcome": "System performance will be maintained until battery is fully depleted or overheating occurs."
+    },
+    "self_reflection": "The system is operating within normal parameters but requires immediate attention to conserve power and monitor temperature to prevent potential failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_17c53e23",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 5.6,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "2fa746c25a54ff49e5fed2ab3ab1dbeac49c1919b75dfb72f9082cea403ff1ed"
+  },
+  "sha256_proof": "79f533854e8f88f42e76393ec40a579c539159a2220d594a83e8b5a370789dda"
+}

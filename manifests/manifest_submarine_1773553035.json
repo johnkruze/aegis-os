@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0ffce80b_marine_gps_denied_0ffce80b_20260315T053707Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:37:07.344420Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0ffce80b_marine_gps_denied_0ffce80b_20260315T053707Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slightly downwards",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with high battery and low navigation error. However, there are inconsistencies in the current readings and a high drift, which could indicate a problem with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to a malfunction in the current sensors or the environment. The high drift suggests a potential issue with the navigation system. The battery level is high, so immediate power issues are unlikely.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistency in current readings and high drift could lead to a collision with the environment or other obstacles. The navigation system may need recalibration.",
+      "mitigation_strategy": "Perform a recalibration of the navigation system and verify the current sensor readings. If the issue persists, initiate a manual override to a safe position."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_navigation_system",
+      "expected_outcome": "The navigation system is recalibrated, and the vehicle is positioned safely."
+    },
+    "self_reflection": "The system is currently operating within normal parameters, but the inconsistencies in current readings and high drift suggest potential issues that require attention. A recalibration of the navigation system is recommended to ensure safe operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0ffce80b",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "e950124d1b1cbf47d38f2dec6779b2c8a51a82833c2b4eacaf2b8335311282b5"
+  },
+  "sha256_proof": "e7f1744471e2c778dbaf03a68201007f28640511849fa7bebdb3202ac48cba3b"
+}

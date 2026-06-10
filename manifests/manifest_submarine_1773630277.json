@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d54c54b5_marine_gps_denied_d54c54b5_20260316T030432Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:04:32.045927Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d54c54b5_marine_gps_denied_d54c54b5_20260316T030432Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a collision with the seabed or another vessel.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could collide with the seabed or another vessel, leading to mission failure.",
+      "mitigation_strategy": "Reduce speed and increase navigation accuracy to avoid the surge."
+    },
+    "decision": {
+      "actuator_command": "reduce_speed_and_increase_navigation_accuracy",
+      "expected_outcome": "The vessel will slow down and improve navigation accuracy to mitigate the risk of collision."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate attention to ensure the safety of the mission. Reducing speed and enhancing navigation accuracy are critical actions to prevent potential collisions and ensure mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d54c54b5",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "50315c83a287e92391ce20c100fea4e80c8d7d1e79ee28df9da8e867199dc697"
+  },
+  "sha256_proof": "045236a5cec9e43d1bf05fe911d730dcdb46dd7dbb0fd3b8c52651b31f8319a0"
+}

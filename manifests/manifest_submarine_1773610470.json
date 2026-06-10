@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_62df8b08_marine_gps_denied_62df8b08_20260315T213421Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:34:21.440678Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_62df8b08_marine_gps_denied_62df8b08_20260315T213421Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the propellers or thrusters. The shallow depth and high drift suggest the vehicle may be struggling to maintain its position. The low navigation error and slow velocity suggest the system is not actively trying to correct its position. The waypoint is at the start, which could be a normal starting point for a mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a malfunction in the propellers or thrusters. The shallow depth and high drift suggest the vehicle may be struggling to maintain its position. The low navigation error and slow velocity suggest the system is not actively trying to correct its position. The waypoint is at the start, which could be a normal starting point.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may not be able to maintain its position and could drift away from the intended path.",
+      "mitigation_strategy": "Check the propellers and thrusters for any issues. Adjust the thruster settings to compensate for the drift. Monitor the vehicle's position and adjust as necessary."
+    },
+    "decision": {
+      "actuator_command": "Check propellers and thrusters. Adjust thruster settings. Monitor position.",
+      "expected_outcome": "The vehicle should be able to maintain its position and correct any drift issues."
+    },
+    "self_reflection": "The anomaly detected suggests a potential issue with the vehicle's propulsion system. It is important to address this issue to ensure the mission can be completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_62df8b08",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "7d8bf97769aad241b6dc7f7693eaa73537f18de42a98fd830fac86d175da4c19"
+  },
+  "sha256_proof": "2f63cc55cd3ed1e1498db0ca7d97156c755ed9c1522ad57750f97b51f5a53bf5"
+}

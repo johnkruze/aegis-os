@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0ae3742f_marine_gps_denied_0ae3742f_20260315T041451Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:14:51.215543Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0ae3742f_marine_gps_denied_0ae3742f_20260315T041451Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 169.04, -185.08, -0.73",
+        "time is 338.0",
+        "velocity is -0.03, 0.76, 0.56",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The shallow depth and low navigation error suggest that the system is still attempting to navigate, but the drift is significant enough to be a concern."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a GPS denial or interference. The shallow depth and low navigation error suggest that the system is still attempting to navigate, but the drift is significant enough to be a concern. The battery level is high, so power is not an issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and fail to reach the intended waypoint. The GPS denial could cause the system to lose its position and navigate incorrectly.",
+      "mitigation_strategy": "Verify the GPS signal and ensure it is not being denied or interfered with. Check the system's navigation algorithms and adjust them if necessary. Monitor the system's performance closely and make adjustments as needed."
+    },
+    "decision": {
+      "actuator_command": "Verify GPS signal and adjust navigation algorithms",
+      "expected_outcome": "The system should be able to verify the GPS signal and adjust its navigation algorithms to correct the drift and reach the intended waypoint."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a GPS denial or interference. The shallow depth and low navigation error suggest that the system is still attempting to navigate, but the drift is significant enough to be a concern. The battery level is high, so power is not an issue. The system should be able to verify the GPS signal and adjust its navigation algorithms to correct the drift and reach the intended waypoint."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0ae3742f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "cec0b9195b09af3fad091f49d6b10151760096ca8251d75214dffc843d0f82a8"
+  },
+  "sha256_proof": "53cf93f7167ae4972b3ae3f40a35520c1ebed2a22492f1a5ff17ccfa97aa20e1"
+}

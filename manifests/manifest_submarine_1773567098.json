@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7e1dc447_marine_gps_denied_7e1dc447_20260315T093129Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:31:29.322510Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7e1dc447_marine_gps_denied_7e1dc447_20260315T093129Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_OUT_OF_RANGE",
+        "DEPTH_OUT_OF_RANGE",
+        "DRIFT_OUT_OF_RANGE",
+        "NAV_ERROR_OUT_OF_RANGE",
+        "P_OUT_OF_RANGE",
+        "T_OUT_OF_RANGE",
+        "V_OUT_OF_RANGE",
+        "WAYPOINT_OUT_OF_RANGE"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including battery degradation, current out of range, depth out of range, drift out of range, navigation error out of range, P out of range, T out of range, V out of range, and waypoint out of range. These issues suggest that the system is not functioning as intended and is at risk of failure."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which is the primary cause of the mission failure. The current, depth, drift, navigation error, P, T, and V values are also out of range, indicating that the system is not operating within its expected parameters.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission will likely fail due to the battery degradation and the system's inability to maintain its intended parameters.",
+      "mitigation_strategy": "Immediately initiate a battery swap and recalibrate the system to ensure it operates within its expected parameters."
+    },
+    "decision": {
+      "actuator_command": "SWAP_BATTERY",
+      "expected_outcome": "The battery swap will restore power to the system, allowing it to recalibrate and potentially complete the mission."
+    },
+    "self_reflection": "The system's failure is a direct result of battery degradation, which highlights the importance of regular maintenance and battery management in marine operations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7e1dc447",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 41.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "057b6d7ae31198e8e0b461e717eb0342c64d3c8e42aa93771b43c8ab9074f18f"
+  },
+  "sha256_proof": "66c3da1e942b8a702233c85ba0c9904f8f5f985b4a06a2fbafbd3d3c208c4397"
+}

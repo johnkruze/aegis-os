@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_c93e6f41_marine_gps_denied_c93e6f41_20260315T083647Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:36:47.800483Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c93e6f41_marine_gps_denied_c93e6f41_20260315T083647Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 440.0",
+        "velocity is slightly off"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and slightly off position. The current readings are inconsistent, which could indicate a problem with the sensors or the environment."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and slightly off position are concerning, but the battery level is high and the navigation error is low. The current readings are inconsistent, which could be a false alarm or a real issue with the sensors.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could lead to a collision with the environment or other vessels. The inconsistent current readings could indicate a sensor failure or a change in the environment.",
+      "mitigation_strategy": "Perform a sensor calibration and check the environment for any potential hazards. If the issue persists, consider a manual override to adjust the position."
+    },
+    "decision": {
+      "actuator_command": "perform sensor calibration and check environment",
+      "expected_outcome": "The system will attempt to calibrate the sensors and assess the environment for any potential hazards."
+    },
+    "self_reflection": "The system is functioning within normal parameters, but the high drift and slightly off position are concerning. The inconsistent current readings could indicate a problem with the sensors or the environment. The decision to perform a sensor calibration and check the environment is based on the potential risks and the available resources."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c93e6f41",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "5f134877f3da36f5c1071045e8f253a04e0b0e7dff8c2961b3b22cf6e8acc212"
+  },
+  "sha256_proof": "8577a147d66450748bf6364008e29ab6becee1b5a3dc919881fef256606c43da"
+}

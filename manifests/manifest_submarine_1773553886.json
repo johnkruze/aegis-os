@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_6977edc5_marine_gps_denied_6977edc5_20260315T055116Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:51:16.962078Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6977edc5_marine_gps_denied_6977edc5_20260315T055116Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 421.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is moving in the expected direction. The shallow depth and moderate drift indicate the system is operating in a controlled environment. The low navigation error and moderate velocity suggest the system is maintaining its course. The slight off-position and off-waypoint indicate minor discrepancies that may require adjustment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is moving in the expected direction. The slight off-position and off-waypoint indicate minor discrepancies that may require adjustment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating within normal parameters, with minor adjustments to the position and waypoint to correct the slight discrepancies.",
+      "mitigation_strategy": "Adjust the position and waypoint to correct the slight discrepancies. Monitor the system for any further deviations."
+    },
+    "decision": {
+      "actuator_command": "Adjust position and waypoint to correct slight discrepancies",
+      "expected_outcome": "The system will correct the slight discrepancies and continue operating within normal parameters."
+    },
+    "self_reflection": "The system is operating within normal parameters, with only minor deviations from expected values. The slight off-position and off-waypoint indicate minor discrepancies that may require adjustment. The system is expected to continue operating within normal parameters, with minor adjustments to the position and waypoint to correct the slight discrepancies."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6977edc5",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "e381be4df449f2a5025c5d1dad5aaad6098fa4a7cb74dbb9346e736d67429f7d"
+  },
+  "sha256_proof": "55a51e4cafed64bdcb002862a2fbd7ad1852eec719506ea659bcb4bcab4fe7ac"
+}

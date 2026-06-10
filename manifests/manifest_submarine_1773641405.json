@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_8f5f150f_marine_gps_denied_8f5f150f_20260316T061000Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:10:00.209823Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8f5f150f_marine_gps_denied_8f5f150f_20260316T061000Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position and time data are accurate",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no critical issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current mission parameters and continue towards the next waypoint."
+    },
+    "self_reflection": "The system is performing within normal parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8f5f150f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.1,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "eab0450e2e8f0229038e02c58bfcec0bc09e454ffc11e032c0b7cf7c8fe2118b"
+  },
+  "sha256_proof": "a76ea563864f1731bfbb71810cb0c6fde3aaa34cd20d16ae365340a5a400f697"
+}

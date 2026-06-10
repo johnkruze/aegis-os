@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_a7f0d82e_marine_gps_denied_a7f0d82e_20260315T153640Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:36:40.032688Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a7f0d82e_marine_gps_denied_a7f0d82e_20260315T153640Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position and orientation data are stable",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected. The battery is healthy, the current is stable, the depth is within safe limits, and the navigation is on track. The system is not experiencing any drift or significant errors."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes are predicted. The system is stable and within normal operating parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in performance or anomalies."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned without any changes."
+    },
+    "self_reflection": "The system is currently stable and within normal operating parameters. No immediate action is required. The mission is proceeding as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a7f0d82e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "dff7fe9ed24a6e7a673a07c0700f2768b4d3b17fd445f276d788ac2877693d6c"
+  },
+  "sha256_proof": "f9f5f6344e915f4dfa4f4ce5ee5090e8447c9688db88dd8890676804fc90f344"
+}

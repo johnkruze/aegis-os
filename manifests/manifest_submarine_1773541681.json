@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_c8a1b10c_marine_gps_denied_c8a1b10c_20260315T022755Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:27:55.855698Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c8a1b10c_marine_gps_denied_c8a1b10c_20260315T022755Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak has been detected, which could compromise the vessel's integrity and safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause a loss of pressure, leading to a potential sinking of the vessel.",
+      "mitigation_strategy": "Initiate emergency procedures to isolate the leak and prepare for a potential evacuation."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_LEAK_ISOLATION",
+      "expected_outcome": "The leak is isolated to prevent further damage and potential sinking."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate attention to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c8a1b10c",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": true,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "6ad6692629474278bde24efbb770d419fed64d8d36ad0633b5115a1076e028e1"
+  },
+  "sha256_proof": "b3cc5f748343a9a19f61273998596a060318238e24048d7b5c9a1013598ab920"
+}

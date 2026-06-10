@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f17b1399_marine_gps_denied_f17b1399_20260315T063619Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:36:19.212259Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f17b1399_marine_gps_denied_f17b1399_20260315T063619Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak in the marine environment. The battery level is high, and the current readings suggest movement. The depth is shallow, and the drift is moderate. The navigation error is low, and the velocity is minimal. The waypoint is at the start of the mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "A leak has been detected in the marine environment. This could be a critical issue that requires immediate attention to prevent further damage or loss of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the system to fail, leading to potential loss of the mission or damage to the equipment.",
+      "mitigation_strategy": "Initiate emergency protocols, such as shutting down non-essential systems, and attempt to locate and repair the leak."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, EMERGENCY_BRAKES, INITIATE_LEAK_REPAIR_SEQUENCE",
+      "expected_outcome": "The mission will be paused to address the leak, and the system will attempt to repair itself or be shut down to prevent further damage."
+    },
+    "self_reflection": "The detection of a leak in the marine environment is a critical anomaly that requires immediate attention. The system's high battery level and minimal velocity suggest that the leak is not immediately life-threatening, but it is a significant risk that must be addressed to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f17b1399",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "9a3d6ebc867ae1587b8931b0b6472e8541f7a69d2a29ca1739066bca881b47ae"
+  },
+  "sha256_proof": "f0fcc637b6d356ccc728124bf2fc46feca5054fa8644878b3cb9f2f85e737bb1"
+}

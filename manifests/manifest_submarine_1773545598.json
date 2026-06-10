@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_8fa0cbc8_marine_gps_denied_8fa0cbc8_20260315T033312Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:33:12.424069Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8fa0cbc8_marine_gps_denied_8fa0cbc8_20260315T033312Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The current surge indicates an unexpected increase in water flow, which could be due to a sudden change in ocean currents or a local disturbance. This could affect the vessel's stability and navigation."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could cause the vessel to drift off course, potentially leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may drift off course and fail to reach the next waypoint, leading to mission failure.",
+      "mitigation_strategy": "Implement a course correction maneuver to compensate for the current surge and maintain the intended course."
+    },
+    "decision": {
+      "actuator_command": "execute_course_correction",
+      "expected_outcome": "The vessel will adjust its course to compensate for the current surge and maintain the intended path."
+    },
+    "self_reflection": "The current surge presents a challenge to the mission, but with a course correction, we can mitigate the risk and complete the mission successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8fa0cbc8",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "2de491c935fae0ae961ea69b5467158d7118153f264a09b06a5c2b7465533ee7"
+  },
+  "sha256_proof": "aed5859ae7e39c00aef0f3c8a636eb0bdf523515f4d3bf59ae95b89569c6ee37"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f36b988e_marine_gps_denied_f36b988e_20260314T230137Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:01:37.683906Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f36b988e_marine_gps_denied_f36b988e_20260314T230137Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 183.76 units in p-axis",
+        "time is 429.0",
+        "velocity is low in v-axis",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings, which could indicate a problem with the current sensors or the environment. The shallow depth and high drift suggest the vehicle may be in a challenging navigation environment. The low navigation error and low velocity indicate the vehicle is not moving aggressively. The position offset in the p-axis suggests a potential alignment issue. The time and waypoint indicate the system is functioning within expected parameters."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings could be due to a sensor failure or environmental interference. The shallow depth and high drift suggest a need to adjust the navigation parameters. The position offset in the p-axis indicates a need to recalibrate the system. The low navigation error and low velocity suggest the system is not in immediate danger.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistent current readings could lead to a loss of control if not addressed. The shallow depth and high drift could result in collision with underwater obstacles. The position offset could lead to navigation errors.",
+      "mitigation_strategy": "Perform a sensor calibration to verify the current readings. Adjust the navigation parameters to account for the shallow depth and high drift. Recalibrate the system to correct the position offset."
+    },
+    "decision": {
+      "actuator_command": "Calibrate sensors, adjust navigation parameters, recalibrate system",
+      "expected_outcome": "The system should be able to recover from the anomalies and continue the mission."
+    },
+    "self_reflection": "The system has detected anomalies that could impact mission success. By performing the recommended actions, the system should be able to mitigate these risks and continue the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f36b988e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "f90f14387032b9e16d6f54f0b4d400e1e96ca2b29c43c5b43132b5194686e1c4"
+  },
+  "sha256_proof": "515ed145556d7a61a3d685f46411f33d6a59480e8948abfd2a884c9467d09127"
+}

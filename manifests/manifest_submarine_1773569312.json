@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_7e3e1187_marine_gps_denied_7e3e1187_20260315T100826Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:08:26.394496Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7e3e1187_marine_gps_denied_7e3e1187_20260315T100826Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift and velocity, indicating an unexpected surge in the ocean current."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift significantly and may lead to a loss of control if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose control and drift out of the designated waypoint, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency steering adjustments to counteract the current surge and maintain control of the vessel."
+    },
+    "decision": {
+      "actuator_command": "steer left, increase speed slightly",
+      "expected_outcome": "The vessel should be able to counteract the current surge and maintain control of the mission."
+    },
+    "self_reflection": "The current surge is an unexpected challenge, but with quick action, we can mitigate the risk and continue the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7e3e1187",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 3.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c4236a1c866a88b6873ae6822fa3cc00d691f129550ceebe32b8f49b738d0183"
+  },
+  "sha256_proof": "b5262e67e426d2f3c922c7c8378b967edddac9993434ac45f70f90043d9d21dd"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_cb7aaaa2_marine_gps_denied_cb7aaaa2_20260315T204909Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:49:09.747536Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cb7aaaa2_marine_gps_denied_cb7aaaa2_20260315T204909Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 377.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift. The depth is shallow, which could indicate a potential issue with the depth sensor or the vehicle's position relative to the ocean floor."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to a faulty sensor or interference. The high drift suggests the vehicle is not following the intended course. The shallow depth could be a false reading or an indication of the vehicle being too close to the ocean floor.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be drifting off course or the depth sensor may be inaccurate, leading to potential damage to the vehicle or the ocean floor.",
+      "mitigation_strategy": "Perform a sensor calibration and check the vehicle's position relative to the intended course. If the issue persists, initiate a manual override to correct the course and depth."
+    },
+    "decision": {
+      "actuator_command": "calibrate_sensors, check_position, manual_override",
+      "expected_outcome": "The sensors will be calibrated, the vehicle's position will be verified, and the course will be corrected if necessary."
+    },
+    "self_reflection": "The system detected anomalies in the current readings and drift, which could indicate a sensor issue or environmental interference. The decision to calibrate sensors and check position is based on the potential risks and the need to ensure the vehicle's safety and mission integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cb7aaaa2",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "5a819227dff185d5f305430e8e69023b621d80ae1d4a99aa73d27fef7f26d6aa"
+  },
+  "sha256_proof": "6b7bde1d31241dd7e22c772ed5c47ee0e697711601c3a695d2aeb694e47ccc6c"
+}

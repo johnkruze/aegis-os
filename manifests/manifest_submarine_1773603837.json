@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_bf5d44a3_marine_gps_denied_bf5d44a3_20260315T194351Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:43:51.181970Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_bf5d44a3_marine_gps_denied_bf5d44a3_20260315T194351Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an anomaly in the navigation system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be a temporary phenomenon, but it requires immediate attention to ensure the safety of the mission and crew.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to a loss of control, causing the vessel to drift off course or collide with obstacles.",
+      "mitigation_strategy": "Initiate a manual override of the navigation system to stabilize the vessel and monitor the situation closely."
+    },
+    "decision": {
+      "actuator_command": "MANUAL_NAV_OVERRIDE",
+      "expected_outcome": "Stabilize the vessel and allow for a more controlled navigation to avoid potential hazards."
+    },
+    "self_reflection": "The anomaly requires immediate action to ensure the safety of the mission. The decision to override the navigation system is based on the potential risks and the need to maintain control of the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_bf5d44a3",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "176f5ba4fc333f8d5655615c4ec2de6a8759a991d05c1df0a8d9c5b11228a691"
+  },
+  "sha256_proof": "00a98ed787b4c865e8b19c79002f8c173df39a55b44f09f691ea950a133776a7"
+}

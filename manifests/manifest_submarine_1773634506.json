@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c26d8331_marine_gps_denied_c26d8331_20260316T041458Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:14:58.191678Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c26d8331_marine_gps_denied_c26d8331_20260316T041458Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ANOMALY",
+        "DEPTH_STABLE",
+        "DRIFT_MODERATE",
+        "NAV_ERROR_LOW",
+        "POSITION_STABLE",
+        "TIME_STABLE",
+        "VELOCITY_STABLE",
+        "WAYPOINT_REACHED"
+      ],
+      "interpretation": "The system is experiencing battery degradation, with current readings showing a slight imbalance. Depth and position are stable, drift is moderate, and the navigation error is low. The waypoint has been reached, and the system is operating within expected parameters."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "Battery degradation is a concern, but the system is still operating within operational parameters. The current imbalance could be due to a temporary fluctuation or a more serious issue. The waypoint has been reached, so the mission is progressing as planned.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "If battery degradation continues, the system may fail to operate correctly in the future. The current imbalance could indicate a more serious issue that needs to be addressed.",
+      "mitigation_strategy": "Monitor battery levels closely and perform a battery health check. If the imbalance persists, consider a system reboot or a manual intervention to stabilize the current readings."
+    },
+    "decision": {
+      "actuator_command": "NO_ACTION",
+      "expected_outcome": "Monitor system parameters and perform a battery health check."
+    },
+    "self_reflection": "The system is functioning within expected parameters, but battery degradation is a concern that requires close monitoring. The current imbalance could be a temporary fluctuation or a more serious issue that needs to be addressed."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c26d8331",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.5,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 4,
+      "waypoints_total": 7
+    },
+    "physics_proof": "bb5bb164890da630394ae31b2cbd9258beec6f9f06948b6ea154ea49ddf178f7"
+  },
+  "sha256_proof": "9885fb14bfc39189a4bd60fa75d07fa9be6768b26a25cd5e0a1982430cca17e1"
+}

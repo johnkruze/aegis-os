@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_56fb0056_marine_gps_denied_56fb0056_20260315T130108Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:01:08.205990Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_56fb0056_marine_gps_denied_56fb0056_20260315T130108Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 345.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is moving in the correct direction. The shallow depth and moderate drift indicate the system is operating in a controlled environment. The low navigation error and slow velocity suggest the system is maintaining its course accurately. The waypoint is at 0, which could indicate the start of a new mission or a reset point."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected with minor deviations. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally within the next few minutes.",
+      "mitigation_strategy": "No action needed at this time."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected."
+    },
+    "self_reflection": "The system is performing within expected parameters, and no immediate action is required. The minor deviations are within acceptable limits and suggest the system is functioning correctly in its current environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_56fb0056",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "1a738e5e671e0ff2640f0ab810b74f0098fe5b9137e5d78a3d99981cd42e6976"
+  },
+  "sha256_proof": "9faacc0fa23d5662dd7c84af50e7a42e56a7352d3ac47a7dab983b347a54c73d"
+}

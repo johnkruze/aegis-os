@@ -1,0 +1,50 @@
+{
+  "mission_id": "marine_gps_denied_2dbfa9d5_marine_gps_denied_2dbfa9d5_20260315T212503Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:25:03.650485Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2dbfa9d5_marine_gps_denied_2dbfa9d5_20260315T212503Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is experiencing low battery levels and unusual current readings, which could indicate a potential failure in the navigation system. There is a slight drift and a small navigation error, which suggests the vehicle may be off course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a critical issue that could lead to system failure if not addressed soon. The unusual current readings suggest a potential fault in the navigation system. The slight drift and navigation error indicate the vehicle is not on course, which could lead to mission failure if not corrected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose power and fail to navigate correctly, leading to mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery and perform a navigation recalibration to correct the drift and navigation error."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, recalibrate_navigation",
+      "expected_outcome": "The battery will be recharged, and the navigation system will be recalibrated to correct the drift and navigation error, allowing the mission to continue."
+    },
+    "self_reflection": "The anomaly highlights the importance of regular system checks and maintenance to prevent critical failures during missions. The low battery level and unusual current readings were critical indicators that required immediate attention to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2dbfa9d5",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.7,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "93f0d8ea1b33d5bef6e577aea06fe3b19fd34fe9347d2bddca5f4153e217521b"
+  },
+  "sha256_proof": "05a161259e283b8f1a4eff86bf298e85428212fc4f5e1909b6582b0b481ce68e"
+}

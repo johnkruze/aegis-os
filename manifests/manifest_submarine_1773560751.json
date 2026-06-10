@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_549df9a6_marine_gps_denied_549df9a6_20260315T074542Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:45:42.298237Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_549df9a6_marine_gps_denied_549df9a6_20260315T074542Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from the expected path. The battery is healthy, and the current and depth are within acceptable limits. The slight drift and low navigation error suggest that the system is maintaining its course, albeit with some minor adjustments needed. The very low velocity indicates that the system is not actively moving, which could be due to being stationary or at a waypoint. The waypoint is at the start, which is expected for the beginning of a mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters. The slight drift and low navigation error suggest that the system is maintaining its course. The waypoint is at the start, which is expected for the beginning of a mission. The very low velocity indicates that the system is not actively moving, which could be due to being stationary or at a waypoint.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally until the next waypoint or command is received.",
+      "mitigation_strategy": "Continue monitoring the system and await further instructions."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate normally until the next waypoint or command is received."
+    },
+    "self_reflection": "The system is performing as expected, with only minor deviations from the expected path. The slight drift and low navigation error suggest that the system is maintaining its course. The very low velocity indicates that the system is not actively moving, which could be due to being stationary or at a waypoint. The waypoint is at the start, which is expected for the beginning of a mission. The system is expected to continue operating normally until the next waypoint or command is received."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_549df9a6",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "450a9625eb917bb831ef770fc0a7accffbc0adc7fbab157027b877f5012d78e3"
+  },
+  "sha256_proof": "debdd50ae0e04d928aeb0c26d7068f757bcdbcd94a49a6c85872a1414581f447"
+}

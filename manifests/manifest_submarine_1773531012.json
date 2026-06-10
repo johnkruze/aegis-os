@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c9eb186b_marine_gps_denied_c9eb186b_20260314T233002Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:30:02.445530Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c9eb186b_marine_gps_denied_c9eb186b_20260314T233002Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 302.79, -77.34, -0.5",
+        "time is 360.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the sensors or the environment. The shallow depth and high drift suggest the vehicle may be in a challenging or unexpected location. The low navigation error and slightly off velocity suggest the system is still functioning, but the drift and current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to sensor failure or environmental factors. The shallow depth and high drift are concerning and could lead to a collision or loss of control. The navigation error is low, but the drift is significant. The velocity is slightly off, but not critical. The waypoint is at 0, which suggests the mission may be incomplete or the vehicle may be in an unexpected location.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may collide with the ocean floor or another object due to the high drift and shallow depth. The sensors may fail, leading to further anomalies.",
+      "mitigation_strategy": "Perform a sensor check to verify the current readings. If the sensors are confirmed to be faulty, recalibrate or replace them. If the environment is confirmed to be challenging, adjust the vehicle's course to avoid potential collisions."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check",
+      "expected_outcome": "The vehicle will perform a sensor check to verify the current readings and determine if the sensors are faulty or if the environment is challenging."
+    },
+    "self_reflection": "The anomaly detected suggests a potential risk to the mission. The vehicle's current state is stable, but the drift and shallow depth are concerning. A sensor check is necessary to determine the cause of the anomaly and ensure the mission can continue safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c9eb186b",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "5f71fc1ccfb65eb8c07327e6ded17eface1091da6e87eabed1b83d41d88e4b91"
+  },
+  "sha256_proof": "e30eb78bc498683f4e0b0acc5f0dcfea9d43df7328bcdec8b8b2207fa59a62ab"
+}

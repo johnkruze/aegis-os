@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_b43e96f7_marine_gps_denied_b43e96f7_20260315T034717Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:47:17.350731Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b43e96f7_marine_gps_denied_b43e96f7_20260315T034717Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "velocity is low"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is within expected operational limits. The navigation error is low, suggesting the system is still relatively accurate. The position is near the starting waypoint, which could be a point of reference for the anomaly. The velocity is low, which is expected in a marine environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a navigation issue. The system is near the starting waypoint, which could be a point of reference for the anomaly. The battery level is high, so power is not a concern. The depth is shallow, which is within expected operational limits. The navigation error is low, suggesting the system is still relatively accurate. The velocity is low, which is expected in a marine environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may be unable to maintain its intended course due to the high drift and abnormal current readings. This could result in the mission being delayed or potentially failing to reach the intended destination.",
+      "mitigation_strategy": "Perform a navigation recalibration to correct the drift and adjust the course. Monitor the system's performance closely to ensure the recalibration is effective."
+    },
+    "decision": {
+      "actuator_command": "recalibrate navigation",
+      "expected_outcome": "The system should be able to correct the drift and adjust the course, allowing the mission to continue."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation issue. The system is near the starting waypoint, which could be a point of reference for the anomaly. The battery level is high, so power is not a concern. The depth is shallow, which is within expected operational limits. The navigation error is low, suggesting the system is still relatively accurate. The velocity is low, which is expected in a marine environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b43e96f7",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "e7aebfa1459ba068b113bc522e4b7ba142956f07b7b74f606def3939b1b51f01"
+  },
+  "sha256_proof": "098f56e7ab886fa3fbffa14a1ae6f9ee257a21535b8597fbb4026dcde23291db"
+}

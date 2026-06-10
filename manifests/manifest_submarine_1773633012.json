@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_4da69ada_marine_gps_denied_4da69ada_20260316T035004Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:50:04.898235Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4da69ada_marine_gps_denied_4da69ada_20260316T035004Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minor",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing low battery, significant drift, and minor navigation error. The current readings suggest the vehicle is not on course and is drifting away from the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is significant, need to correct course.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Navigation error is minor, can be ignored for now.",
+        "confidence": 0.5,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "System may fail to maintain course and potentially drift out of control.",
+      "mitigation_strategy": "Reduce power consumption, correct course, and monitor navigation error."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, correct_course",
+      "expected_outcome": "System power is reduced and course is corrected to maintain mission integrity."
+    },
+    "self_reflection": "The system is operating under critical conditions. Immediate action is required to prevent mission failure. Power conservation and course correction are essential to maintain control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4da69ada",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.9,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "ce84a25baac897f05a0e7e7f79944d99895e82db93bb457eda8738de13030075"
+  },
+  "sha256_proof": "7f2d4a743aac9d93729754224558e202d1478007d41adde2b2371a81f29de868"
+}

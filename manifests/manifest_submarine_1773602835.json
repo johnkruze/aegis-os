@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_06ed24ec_marine_gps_denied_06ed24ec_20260315T192706Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:27:06.622425Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_06ed24ec_marine_gps_denied_06ed24ec_20260315T192706Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is low",
+        "waypoint is 2"
+      ],
+      "interpretation": "The system appears to be functioning normally with the exception of inconsistent current readings. The battery level is high, indicating sufficient power. Depth and drift are within safe and acceptable limits. Navigation error is low, and the position is accurate. The time is within expected range, and velocity is low, suggesting the vehicle is stationary or moving at a very slow speed. The waypoint is 2, indicating the vehicle is on course."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings could be due to a temporary glitch or a change in the environment. However, the battery level is high, and the vehicle is stationary or moving slowly, which suggests the system is stable. The navigation error is low, and the position is accurate, indicating the vehicle is on course. The waypoint is 2, which suggests the mission is progressing as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The inconsistent current readings could be a temporary glitch. However, the system is stable, and the vehicle is on course. The mission is progressing as expected.",
+      "mitigation_strategy": "Monitor the current readings for any further anomalies. If the issue persists, investigate the cause and take appropriate action."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The vehicle will continue on course and complete the mission as expected."
+    },
+    "self_reflection": "The system appears to be functioning normally, and the mission is progressing as expected. The inconsistent current readings could be a temporary glitch, and the system is stable. The vehicle is on course, and the mission is progressing as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_06ed24ec",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 2,
+      "waypoints_total": 4
+    },
+    "physics_proof": "5af51196f2bf7e3bd867609acb5910f2d684c8a2d89cd67ca81361c1fd05e85d"
+  },
+  "sha256_proof": "9469d1f79adceb46feabc803749c90ff16ae18fbcdcdd4c6dd16f1f44c461480"
+}

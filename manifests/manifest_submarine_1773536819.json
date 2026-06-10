@@ -1,0 +1,58 @@
+{
+  "mission_id": "marine_gps_denied_a78bf872_marine_gps_denied_a78bf872_20260315T010651Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:06:51.537299Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a78bf872_marine_gps_denied_a78bf872_20260315T010651Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is near waypoint",
+        "velocity is moderate"
+      ],
+      "interpretation": "The system is functioning well with high battery and low navigation error, but there are inconsistencies in the current readings and a significant drift from the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The drift could be due to external factors or a malfunction in the navigation system.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The drift could lead to the mission being off course, potentially causing the vehicle to miss waypoints or collide with obstacles.",
+      "mitigation_strategy": "Perform a recalibration of the current sensors and verify the navigation system. If the issue persists, consider a manual override to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "recalibrate current sensors and verify navigation system",
+      "expected_outcome": "The system should stabilize and the drift should be corrected, allowing the mission to continue on course."
+    },
+    "self_reflection": "The system is performing well, but the inconsistencies in the current readings and significant drift indicate potential issues that need to be addressed to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a78bf872",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "64100f4404eb1add2c438b96a5a3db67876b9c2b97c50f5b0ceb082597ddd341"
+  },
+  "sha256_proof": "4bcc774283f464cdb0242dded4a6b2ad69dbdd0712e7a5cf86f04721d44944d5"
+}

@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_29734dcd_marine_gps_denied_29734dcd_20260315T030856Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:08:56.478819Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_29734dcd_marine_gps_denied_29734dcd_20260315T030856Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift. The depth is shallow, which could be a concern in marine environments. The navigation error is low, but the drift suggests the system might be losing its position over time. The velocity is low, which could indicate a slow or stationary movement. The waypoint is at the start, which is normal for the beginning of a mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The slight drift suggests the system might be losing its position over time, which could lead to mission failure if not addressed.",
+        "confidence": 0.9,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The shallow depth could be a concern in marine environments, but it is not necessarily a critical issue.",
+        "confidence": 0.6,
+        "action_rejected": "string"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could lose its position over time, leading to mission failure.",
+      "mitigation_strategy": "Calibrate the sensors, increase the frequency of position updates, and monitor the system closely."
+    },
+    "decision": {
+      "actuator_command": "Calibrate sensors and increase position update frequency",
+      "expected_outcome": "The system should be able to maintain its position more accurately, reducing the risk of mission failure."
+    },
+    "self_reflection": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift. The shallow depth could be a concern in marine environments, but it is not necessarily a critical issue. The slight drift suggests the system might be losing its position over time, which could lead to mission failure if not addressed."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_29734dcd",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "88869d53e1001d6de86817d879053673eab445ee57b1357f4780ce2a2e5c697c"
+  },
+  "sha256_proof": "b877ac1d4407ec29ca525e7e035e78fa49ebfee4d4de1a0420bdbcd25436f3f2"
+}

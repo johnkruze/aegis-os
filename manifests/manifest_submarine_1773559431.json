@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_b0af6c71_marine_gps_denied_b0af6c71_20260315T072343Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:23:43.211860Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b0af6c71_marine_gps_denied_b0af6c71_20260315T072343Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and orientation are stable",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and a shallow depth. The battery is at a high level, and the navigation error is low, indicating that the system is capable of maintaining its position and orientation. However, the drift could potentially impact the accuracy of the mission if not addressed."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The drift could be due to external factors such as currents or wind. It is important to monitor the drift to ensure it does not become significant.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the system to deviate from its intended path, but it is unlikely to cause a complete failure.",
+      "mitigation_strategy": "Monitor the drift and adjust the course if necessary. Ensure that the system has sufficient battery to complete the mission."
+    },
+    "decision": {
+      "actuator_command": "monitor drift and adjust course if necessary",
+      "expected_outcome": "The system will continue to monitor the drift and adjust its course to maintain its intended path."
+    },
+    "self_reflection": "The system is performing within expected parameters, with a slight drift that could potentially impact the mission. The battery level is high, and the navigation error is low, indicating that the system is capable of maintaining its position and orientation. The drift should be monitored and adjusted if necessary to ensure the mission is completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b0af6c71",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "b934e725bb15fefe714cab6083f8da6f922746259a728152588e8af078f0e048"
+  },
+  "sha256_proof": "a198445f7f48b9547ad13dd68e7d0db1189f9d1df8a6acde6988c2aaf19eb4b1"
+}

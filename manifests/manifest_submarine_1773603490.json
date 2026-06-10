@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_5d5b4fe7_marine_gps_denied_5d5b4fe7_20260315T193803Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:38:03.839923Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5d5b4fe7_marine_gps_denied_5d5b4fe7_20260315T193803Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the mission being aborted or the vehicle drifting off course."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent the mission from being compromised.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may drift off course or become unresponsive, leading to mission failure.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vehicle and attempt to return to the waypoint."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vehicle and attempt to return to the waypoint."
+    },
+    "self_reflection": "The thruster failure is a significant anomaly that requires immediate attention to ensure the mission's success. The decision to override the thrusters is based on the critical nature of the failure and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5d5b4fe7",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "1e50828186e3bc7d145755c47f3ccceff53679274cd780d4acdc6392a41d3de8"
+  },
+  "sha256_proof": "26b54cd5bff6669e4444756599eb19221010c20df3037e3b1463b741dbe00a12"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_a58a23d8_marine_gps_denied_a58a23d8_20260315T200350Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:03:50.678224Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a58a23d8_marine_gps_denied_a58a23d8_20260315T200350Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vehicle."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could result in mission failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control and drift away from the intended path, potentially leading to a collision with the ocean floor or other hazards.",
+      "mitigation_strategy": "Initiate emergency braking and activate the emergency steering system to regain control of the vehicle."
+    },
+    "decision": {
+      "actuator_command": "emergency_braking, emergency_steering",
+      "expected_outcome": "The vehicle should slow down and attempt to regain control of its path."
+    },
+    "self_reflection": "The IMU drift spike is a critical anomaly that requires immediate attention to prevent mission failure. The decision to initiate emergency braking and steering is based on the potential for severe consequences if the issue is not addressed promptly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a58a23d8",
+    "scenario": "gps_denied_submarine_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "81c49d787e7a44e6139d8e38002de1dc44e260e943c517e4c16552522fe911ab"
+  },
+  "sha256_proof": "4a75eb119a40db4ad514b1a3300cb498d5438c5bf25ad21f7d1afe6aeb9bf348"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_2f5eba87_marine_gps_denied_2f5eba87_20260315T210501Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:05:01.175511Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2f5eba87_marine_gps_denied_2f5eba87_20260315T210501Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak, which is a critical anomaly in an underwater environment. The leak is surfacing, which could indicate a breach in the hull or a failure in the containment system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is surfacing, which could lead to rapid loss of pressure and potentially endanger the crew. Immediate action is required to prevent further damage and ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to rapid descent and potential sinking. The crew may also be exposed to harmful substances if the leak is not contained.",
+      "mitigation_strategy": "Activate emergency containment protocols, deploy emergency ballast tanks, and initiate a distress signal to nearby vessels or support teams."
+    },
+    "decision": {
+      "actuator_command": "ACTIVATE_EMERGENCY_CONTAINMENT; DEPLOY_EMERGENCY_BALLAST_TANKS; INITIATE_DISTRESS_SIGNAL",
+      "expected_outcome": "Contain the leak, stabilize the vessel, and initiate a distress response to seek assistance."
+    },
+    "self_reflection": "The detection of a leak in an underwater environment is a critical situation that requires immediate and decisive action to prevent further damage and ensure the safety of the mission and crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2f5eba87",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": true,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "fd987f08fcc2871de167a18d88472a64ab069422246f80de19364fcfeb5f3266"
+  },
+  "sha256_proof": "e8d229f7537639b75474e0f248867729d348165ccf2a37e754b18caa148c887a"
+}

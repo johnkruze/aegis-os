@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_660f002a_marine_gps_denied_660f002a_20260315T032030Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:20:30.017944Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_660f002a_marine_gps_denied_660f002a_20260315T032030Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is minimal",
+        "attitude and position are stable",
+        "velocity is within expected range",
+        "waypoint is being followed"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is fully charged, and the vehicle is maintaining its course and position accurately."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission is proceeding as expected with no anomalies detected.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes detected.",
+      "mitigation_strategy": "Continue monitoring system parameters."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current mission parameters and continue towards the next waypoint."
+    },
+    "self_reflection": "The system is performing as expected with no anomalies detected. The mission is proceeding as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_660f002a",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 1,
+      "waypoints_total": 3
+    },
+    "physics_proof": "42e81186d87df8ce6ee81410b94b336a8a661d259f4f6b3a3d71bc1a267252c8"
+  },
+  "sha256_proof": "b45f35e8575abf5c8bab2b13f281ef05f6451b51904e9da97c43931960585829"
+}

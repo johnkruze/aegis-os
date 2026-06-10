@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_ecf40da7_marine_gps_denied_ecf40da7_20260316T025008Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:50:08.942811Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ecf40da7_marine_gps_denied_ecf40da7_20260316T025008Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in depth, indicating a potential collision or navigational error."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge suggests an immediate threat to the vessel's safety. We must prioritize collision avoidance and stability.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with an obstacle or lose control.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision. Monitor depth and drift closely."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST_LEFT",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate action to prevent a collision. The decision to brake and adjust course is based on the high risk level and the potential for catastrophic failure if not addressed promptly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ecf40da7",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 3.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 2,
+      "waypoints_total": 4
+    },
+    "physics_proof": "4eaa381efd569e08c77bc51b673cba1912489b075312c08c599584f3568a1544"
+  },
+  "sha256_proof": "0ac335456d361f64ac653fa1da5f0c7eae2c29dac43c3f983e4a29d735b766f5"
+}

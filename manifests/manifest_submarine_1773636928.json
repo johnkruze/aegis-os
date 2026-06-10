@@ -1,0 +1,48 @@
+{
+  "mission_id": "marine_gps_denied_f1dee6f3_marine_gps_denied_f1dee6f3_20260316T045522Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:55:22.403330Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f1dee6f3_marine_gps_denied_f1dee6f3_20260316T045522Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery_degradation",
+        "low_battery"
+      ],
+      "interpretation": "The battery level is critically low, indicating that the system is running on minimal power. This could lead to a complete system failure if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is at 59.1% capacity, which is dangerously low. Immediate action is required to prevent a complete system failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail completely within the next few minutes, leading to mission failure.",
+      "mitigation_strategy": "Initiate emergency shutdown procedures and attempt to land or return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "The system will shut down to prevent further damage and ensure safety."
+    },
+    "self_reflection": "The critical battery level indicates a severe failure mode. Immediate action was necessary to prevent a complete system failure and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f1dee6f3",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.9,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "13147405502884668fff5eeb86c5a54fdbeb0b1dd4b45950266bdb13c8aaa076"
+  },
+  "sha256_proof": "6402a197e4bd194fed1224c1571bf26720c67863efc266be48a5e9dd98cfc4f5"
+}

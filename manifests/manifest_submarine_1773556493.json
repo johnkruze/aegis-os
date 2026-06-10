@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d48d9c5d_marine_gps_denied_d48d9c5d_20260315T063446Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:34:46.893419Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d48d9c5d_marine_gps_denied_d48d9c5d_20260315T063446Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "A leak has been detected on the surface. This could be a critical issue affecting the vessel's integrity and safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying lifeboats, and attempting to repair the leak."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_PROTOCOLS",
+      "expected_outcome": "Initiate emergency procedures to ensure the safety of the vessel and its crew."
+    },
+    "self_reflection": "The detection of a surface leak is a critical anomaly that requires immediate attention to prevent potential catastrophic failure. The decision to activate emergency protocols is based on the high risk level and the potential for loss of the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d48d9c5d",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": true,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "0afd9580acade9e80943122bb485be100e8e5d69f8c2086748a5e993ed9188ab"
+  },
+  "sha256_proof": "a933a0cfca220f6ed4c13ca3416292be4eb2f7a876664b7b9bf9bdb8d6a413f8"
+}

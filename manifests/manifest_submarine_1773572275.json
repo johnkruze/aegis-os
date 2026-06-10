@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_08808367_marine_gps_denied_08808367_20260315T105748Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:57:48.088209Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_08808367_marine_gps_denied_08808367_20260315T105748Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 280.29 units",
+        "time is 400.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an unusual current pattern and a significant drift from the intended position. Despite the low navigation error and high battery level, the drift suggests a potential failure in the positioning system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a failure in the positioning system.",
+        "confidence": 0.8,
+        "action_rejected": "ignore the anomaly"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The positioning system may fail, leading to a potential collision with the environment or other vessels.",
+      "mitigation_strategy": "Perform a system reset and reinitialize the navigation system."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The navigation system will be reinitialized, and the drift should be corrected."
+    },
+    "self_reflection": "The anomaly indicates a critical issue with the navigation system. A system reset is necessary to ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_08808367",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "fd1c10499a7fb09a1838ac5eb25179418f56828bbe079d3377e7858986eca4dd"
+  },
+  "sha256_proof": "d3fab88e0301be2bb0a2e547122e606aaf697ab6c18b7551b96682361f6eb744"
+}

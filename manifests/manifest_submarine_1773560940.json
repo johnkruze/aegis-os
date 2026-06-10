@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_cc0d4c54_marine_gps_denied_cc0d4c54_20260315T074852Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:48:52.970005Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cc0d4c54_marine_gps_denied_cc0d4c54_20260315T074852Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ALERT",
+        "DEPTH_ALERT",
+        "DRIFT_ALERT",
+        "NAV_ERROR_ALERT",
+        "POSITION_ALERT",
+        "TIME_ALERT",
+        "VELOCITY_ALERT",
+        "WAYPOINT_ALERT"
+      ],
+      "interpretation": "The system is experiencing critical battery degradation, with current readings indicating a significant power drain. Depth, drift, and navigation errors are within normal limits, but the battery is at a critical level, which could lead to mission failure if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is at 57.8% capacity, which is critically low. Immediate action is required to prevent mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission will likely fail due to insufficient battery power, potentially leading to a loss of control and potential damage to the system.",
+      "mitigation_strategy": "Initiate emergency power-saving mode and attempt to return to the last known waypoint with minimal power usage."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_POWER_SAVE",
+      "expected_outcome": "The system will enter emergency power-saving mode, reducing power consumption to conserve battery life."
+    },
+    "self_reflection": "The system has detected critical battery degradation and has taken immediate action to prevent mission failure. The next steps are to conserve power and attempt to return to a safe location."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cc0d4c54",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 42.2,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "e4190db43165ad11c84f40452bd2be08d22cf8908a32d6bc97b9d49f0dc1c0b3"
+  },
+  "sha256_proof": "f7107d0ab83f6f70cd211897b4b6f555f3267da8506500dfe9774b196e37c0ad"
+}

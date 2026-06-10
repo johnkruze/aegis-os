@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f3e78b59_marine_gps_denied_f3e78b59_20260315T200744Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:07:44.396120Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f3e78b59_marine_gps_denied_f3e78b59_20260315T200744Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 422.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the propulsion system or the sensors. The shallow depth and high drift suggest the vehicle may be in an unexpected location. The low navigation error and slow velocity suggest the system is still functioning, but the drift and abnormal currents are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a propulsion system failure or sensor error. The shallow depth and high drift suggest the vehicle may be in an unexpected location. The low navigation error and slow velocity suggest the system is still functioning, but the drift and abnormal currents are concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in an unexpected location and could be drifting away from the intended path. The propulsion system may be failing, leading to a loss of control.",
+      "mitigation_strategy": "Perform a system check to verify the propulsion system and sensors. If the issue persists, initiate an emergency protocol to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "system_check",
+      "expected_outcome": "The system will perform a check to verify the propulsion system and sensors. If the issue persists, the emergency protocol will be initiated."
+    },
+    "self_reflection": "The anomaly detected suggests a potential issue with the propulsion system or sensors. The system is still functioning, but the drift and abnormal currents are concerning. A system check is necessary to determine the cause of the anomaly and prevent further issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f3e78b59",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "bf714770135aa75f6b862aad8db9a85ddec826ab1ad25a4c685007eeac9a91e5"
+  },
+  "sha256_proof": "391848457e517cc6c3dce308d9d951b95d016c93c868eb05b8ba9d8e60ab99b5"
+}

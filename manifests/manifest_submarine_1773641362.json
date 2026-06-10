@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b44ede3d_marine_gps_denied_b44ede3d_20260316T060916Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:09:16.334863Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b44ede3d_marine_gps_denied_b44ede3d_20260316T060916Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with an obstacle or lose control if the surge is not mitigated.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision."
+    },
+    "self_reflection": "The anomaly was detected early, and the decision to implement emergency braking and course adjustment was made based on the potential for mission failure and the critical nature of the situation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b44ede3d",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "4c0588a1273e3b8bdac2ab97ec9670108907c0d254aee62d7cd48ba1f95369d7"
+  },
+  "sha256_proof": "6ff391cca88836ac642c365816a853d11de9de280d4710c015cc693105cc7f51"
+}

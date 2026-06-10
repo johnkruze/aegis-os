@@ -1,0 +1,58 @@
+{
+  "mission_id": "TH_OP_77_titanhauler_57144193_sand",
+  "environment": "Terran Resource Extraction - Sand Sector",
+  "timestamp": "2026-03-11T02:57:19.396124Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TH_OP_77_titanhauler_57144193_sand_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive track slip detected",
+        "Soil yielding beneath left tread",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The vehicle has experienced significant track slip on the left side, indicating severe soil compaction and instability. The communication link has been severed, and the Aegis Dark Window has been engaged, suggesting a high level of environmental hazard and potential threat."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "Evaluate the immediate threat level and potential for further damage.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Initiate emergency braking and stabilization procedures.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Attempt to re-establish communication with ground control.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "Further track slip could lead to vehicle overturn or structural failure. Communication loss could result in loss of control and potential mission failure.",
+      "mitigation_strategy": "Engage emergency braking, activate stabilization systems, and attempt re-establishment of communication with ground control."
+    },
+    "decision": {
+      "actuator_command": "Emergency braking, stabilization systems activate, attempt communication re-establishment",
+      "expected_outcome": "Stabilize vehicle, prevent further damage, and attempt to regain control of the mission."
+    },
+    "self_reflection": "The vehicle has encountered a critical anomaly in the Sand Sector. Immediate action is required to prevent further damage and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "titanhauler_57144193_sand",
+    "scenario": "sand_titanhauler",
+    "score": {
+      "compaction": 0.079,
+      "mission_success": false,
+      "pressure_yield_ratio": 1.79
+    },
+    "physics_proof": "e527524f4694dc75254738bae056c44926dbaac90f7b53c3f14904d8fe55f931"
+  },
+  "sha256_proof": "1ebec82123f181a6f536e276443af4d88f6dd9208dc6b64c9fe507149dac7be9"
+}

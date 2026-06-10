@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_073c7220_marine_gps_denied_073c7220_20260315T132414Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:24:14.442897Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_073c7220_marine_gps_denied_073c7220_20260315T132414Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within limits",
+        "drift within acceptable range",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery level and some anomalies in the current readings. The depth and drift are within acceptable limits, and the navigation error is minimal. The mission is at waypoint 0, which suggests the start of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a concern, but the current anomalies are minor and within expected ranges. The mission is at the start, so continuing with caution is advisable.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission could be delayed or paused due to the low battery, but the current anomalies are minor and do not indicate a critical failure.",
+      "mitigation_strategy": "Monitor the battery level and current readings closely. If the battery level drops further, consider pausing the mission to recharge. Continue monitoring the current anomalies and adjust the mission plan if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission with caution",
+      "expected_outcome": "The mission will continue, and the system will be monitored for any further issues."
+    },
+    "self_reflection": "The system is performing as expected, with minor anomalies that are within acceptable limits. The low battery level is the primary concern, and it will be monitored closely. The mission will continue with caution to ensure safety and system integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_073c7220",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "00370ecd098c2d072dd0f44dfce0fdbd4d35802758d52a5a1b9468424e45ac77"
+  },
+  "sha256_proof": "83ee744bbdc2ea52c4aae1c7eaec8900051205bf9d9b45b9b020321169b72e49"
+}

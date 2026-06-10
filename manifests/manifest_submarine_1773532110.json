@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_d43f0993_marine_gps_denied_d43f0993_20260314T234820Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:48:20.102100Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d43f0993_marine_gps_denied_d43f0993_20260314T234820Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is normal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the propulsion system or the sensors. The shallow depth and high drift suggest the vehicle may be in an unexpected location. The low navigation error and normal velocity indicate that the system is still functioning, but the drift and current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a propulsion system failure or sensor malfunction.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and high drift suggest the vehicle may be in an unexpected location, which could lead to a collision with the ocean floor or other obstacles.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The low navigation error and normal velocity indicate that the system is still functioning, but the drift and current readings are concerning.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in an unexpected location and could collide with the ocean floor or other obstacles. The propulsion system may be failing, leading to a loss of control.",
+      "mitigation_strategy": "Perform a system reset and reposition the vehicle to a safe location. Check the propulsion system for any faults and repair or replace as necessary."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will be reset and repositioned to a safe location. The propulsion system will be checked for any faults and repaired or replaced as necessary."
+    },
+    "self_reflection": "The anomaly in current readings and the high drift suggest that the vehicle may be in an unexpected location. The system is still functioning, but the drift and current readings are concerning. A system reset and repositioning to a safe location is necessary to mitigate the risk of collision with the ocean floor or other obstacles."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d43f0993",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "88702237e6a1bc3abfead26315e617d3a8a0ba40eca9726d53258e197f0ed158"
+  },
+  "sha256_proof": "bc910628a87acbf1fad57289de79eacc7087456c7abff9a5ed305400ff29fdad"
+}

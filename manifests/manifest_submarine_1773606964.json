@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_a4973be2_marine_gps_denied_a4973be2_20260315T203557Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:35:57.368095Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a4973be2_marine_gps_denied_a4973be2_20260315T203557Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is within normal range",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within normal range",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the position is stable, but there are slight inconsistencies in current, position, and velocity readings."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current, position, and velocity readings could be due to minor environmental factors or sensor inaccuracies. The system is otherwise stable.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and within normal parameters. The minor deviations are likely due to minor environmental factors or sensor inaccuracies.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary based on further data."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is stable and within normal parameters. The minor deviations are likely due to minor environmental factors or sensor inaccuracies. The mission should continue as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a4973be2",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "ef24e16498d39d9fa23cb29b9c330780a4aab461eb850d7857618cafd44ba710"
+  },
+  "sha256_proof": "28a993dd7cfc21e658cdb82a2ce31191360b44551897ee9b3b165a6e1af6f9d0"
+}

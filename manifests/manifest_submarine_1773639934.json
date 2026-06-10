@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_5d381aff_marine_gps_denied_5d381aff_20260316T054526Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:45:26.742453Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5d381aff_marine_gps_denied_5d381aff_20260316T054526Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is close to the intended location. The moderate velocity and slight position off indicate the vehicle is moving steadily towards the waypoint."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest the vehicle is experiencing some form of current anomaly, which could be affecting its navigation. However, the battery level is high and the navigation error is low, indicating the system is still capable of maintaining control.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may continue to drift slightly, but it is still within the operational parameters.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue straight",
+      "expected_outcome": "The vehicle will continue to move towards the waypoint, adjusting for the slight drift."
+    },
+    "self_reflection": "The system is performing as expected, with only minor issues that can be managed. The current anomaly is not critical and should not prevent the mission from continuing."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5d381aff",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "db0f72c4edfe5ec03accd42d8cac822947c4e52f6ce392302d6e607c99c4f3a3"
+  },
+  "sha256_proof": "08f8e197275469989081e72741893ef1f55b4f71f348bf9968d8f152843fc453"
+}

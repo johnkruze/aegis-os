@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7826b274_marine_gps_denied_7826b274_20260316T050022Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:00:22.477934Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7826b274_marine_gps_denied_7826b274_20260316T050022Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 200.78, 169.75, -0.7",
+        "time is 358.0",
+        "velocity is 0.08, 0.49, -1.01",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation error. The battery level is high, indicating sufficient power. The depth is shallow, which could be a factor in the drift. The navigation error is low, but the position is off by a significant amount, indicating a critical issue with the navigation system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and high drift suggest a navigation error. The position is off by a significant amount, which could lead to mission failure. The battery level is high, so power is not an issue. The depth is shallow, which could be a factor in the drift. The navigation error is low, but the position is off by a significant amount, indicating a critical issue with the navigation system.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission could fail due to the significant navigation error, leading to potential collision with obstacles or loss of control.",
+      "mitigation_strategy": "Perform a recalibration of the navigation system and verify the current readings. If the issue persists, initiate an emergency stop and await further instructions."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_navigation_system",
+      "expected_outcome": "The navigation system is recalibrated, and the position is corrected."
+    },
+    "self_reflection": "The system detected a critical issue with the navigation system, which could lead to mission failure. The decision was made to recalibrate the navigation system to ensure the mission can continue safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7826b274",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "38845456bbe66beb226d1330bd68b43487a2824fb0203c96e23f92e67c3c595e"
+  },
+  "sha256_proof": "d518ea4386fd911ee7d04f878c6c5c4e5b762b03b91c721d222a264ff4538141"
+}

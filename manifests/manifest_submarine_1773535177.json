@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_c506f2cd_marine_gps_denied_c506f2cd_20260315T003928Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:39:28.154505Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c506f2cd_marine_gps_denied_c506f2cd_20260315T003928Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 613.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slow velocity and low waypoint indicate the vehicle is stationary or moving very slowly."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external currents or inaccuracies in the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The inconsistent current readings might indicate a malfunction in the current sensors.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and low navigation error suggest the vehicle is in a controlled environment, which is good for mission safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The high drift could cause the vehicle to move unexpectedly, but the shallow depth and low navigation error suggest the vehicle is in a controlled environment. The inconsistent current readings might indicate a sensor issue.",
+      "mitigation_strategy": "Monitor the current readings closely and perform a sensor calibration if necessary. Continue monitoring the drift and adjust the navigation system if needed."
+    },
+    "decision": {
+      "actuator_command": "continue mission with caution",
+      "expected_outcome": "The vehicle will continue to operate within the current parameters, with close monitoring of the drift and current readings."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slow velocity and low waypoint indicate the vehicle is stationary or moving very slowly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c506f2cd",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "532ca6e35d9053173a9d3adab390617c0d8239893660863808e69a49ea1eb608"
+  },
+  "sha256_proof": "d24ac285df8d8aceaa8bcb49d62fd0de98f863ca574df9f1e81390ef2fb9e694"
+}

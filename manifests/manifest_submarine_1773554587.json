@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_5b5e2d5f_marine_gps_denied_5b5e2d5f_20260315T060259Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:02:59.694141Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5b5e2d5f_marine_gps_denied_5b5e2d5f_20260315T060259Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is near waypoint",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift that could lead to mission failure if not addressed. The current readings suggest a potential issue with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is concerning and could cause the mission to fail if not corrected. The current readings are inconsistent, which could indicate a problem with the navigation system or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail due to the significant drift, leading to the loss of the vehicle or the inability to reach the next waypoint.",
+      "mitigation_strategy": "Implement a correction maneuver to realign the vehicle with the intended course. Monitor the system closely to ensure the correction is effective."
+    },
+    "decision": {
+      "actuator_command": "execute correction maneuver",
+      "expected_outcome": "The vehicle will be realigned with the intended course, allowing the mission to continue."
+    },
+    "self_reflection": "The system is functioning within normal parameters, but the significant drift requires immediate attention to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5b5e2d5f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "0f7dc6fdd85dc8444482171d163fa42f20fec9fa0a5cd644f3df4b0e6a67870b"
+  },
+  "sha256_proof": "0250f13729df8468e36a55495e75a14c67cb9db25d858025c2671f739cec8730"
+}

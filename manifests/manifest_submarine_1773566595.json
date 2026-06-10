@@ -1,0 +1,67 @@
+{
+  "mission_id": "marine_gps_denied_351b24e1_marine_gps_denied_351b24e1_20260315T092307Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:23:07.424206Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_351b24e1_marine_gps_denied_351b24e1_20260315T092307Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "small depth",
+        "high drift",
+        "slight navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, unstable current readings, and slight drift. The depth is shallow, and there is a minor navigation error. The system is currently at waypoint 0."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery is critical, need to conserve power.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Current readings are unstable, could indicate a problem with the sensors.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is high, need to correct course.",
+        "confidence": 0.7,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Navigation error is minor, can be ignored for now.",
+        "confidence": 0.6,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "System may fail to maintain control due to low battery and unstable current readings.",
+      "mitigation_strategy": "Reduce power consumption, check sensor integrity, and correct drift."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, check_sensors, correct_drift",
+      "expected_outcome": "System power is reduced, sensors are checked, and drift is corrected."
+    },
+    "self_reflection": "The system is operating under critical conditions. Immediate action is required to prevent failure and ensure mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_351b24e1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "777e5a134a0257c5ad6f1752c1554c36e77cf757f606e8ddbf815ce5a6f7825c"
+  },
+  "sha256_proof": "f2713168c85c15ba489c1706cfd1cb6847c0d0bcec3ff082b8aaef2a55c0b626"
+}

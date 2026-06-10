@@ -1,0 +1,1782 @@
+Initializing Autonomous Boat OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Autonomous Boat (Marine Surface)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'autonomous_boat'...
+  -> Recalled memory: autonomous_boat_f69b145a
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 30320.27it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "USV_PATROL_J2",
+  "environment": "Surface Ocean - High Sea State",
+  "timestamp": "2026-03-11T01:18:25.385017Z",
+  "is_dark_window": true,
+  "telemetry_ref": "USV_PATROL_J2_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive wave slam detected at high speed",
+        "Unidentified fast-moving vessel on intercept course",
+        "Starlink/Satcom hardware damaged by wave impact",
+        "Aegis Dark Window engaged",
+        "Speed: 42.5 knots",
+        "Wave height: 4.2 meters",
+        "Pitch angle: 18.5 degrees",
+        "Radar contact: UNKNOWN_VESSEL_INTERCEPT",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The USV_PATROL_J2 is experiencing a severe wave slam that has damaged the Starlink/Satcom hardware. An unidentified fast-moving vessel is intercepting the USV, and the Aegis Dark Window has been engaged to protect the vessel. The USV is currently at high speed and pitch angle, which may affect its ability to maneuver and maintain communication."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The wave slam and damage to the communication system are critical issues that need to be addressed immediately to ensure the USV can continue its mission and maintain situational awareness.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The intercepting vessel could be a threat or a potential ally. Further analysis is needed to determine the nature of this contact.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The USV may lose communication and be unable to maneuver effectively, potentially leading to a collision with the intercepting vessel or the loss of the USV.",
+      "mitigation_strategy": "Initiate emergency communication protocols to establish a backup communication link. Engage the Aegis Dark Window to maintain defensive readiness. Assess the intercepting vessel's nature and respond accordingly."
+    },
+    "decision": {
+      "actuator_command": "Initiate emergency communication protocols. Engage Aegis Dark Window. Assess intercepting vessel.",
+      "expected_outcome": "Establish a backup communication link, maintain defensive readiness, and determine the nature of the intercepting vessel to ensure the USV can continue its mission safely."
+    },
+    "self_reflection": "The event highlights the importance of robust communication systems and defensive capabilities in high-seas environments. The USV_PATROL_J2 must be prepared to handle unexpected threats and maintain mission continuity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "autonomous_boat_f69b145a",
+    "scenario": "high_speed_surface_chase",
+    "score": {
+      "max_speed_knots": 15.635869060947803,
+      "success": true
+    },
+    "physics_proof": "4a5aa4434130fb5f7983479ce1de420f43bfbad97ec497207aaf885717e7ddab"
+  },
+  "sha256_proof": "5c21f5f09e99258ace77ed60e4c05dbf6cc72acd0f693186d0ae0ddbd539d0d9"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_autonomous_boat_1773191918.json
+Manifest SHA-256 Fingerprint: 4a78fc1679b2951e7886ff7d954c472e53b235ef9d43ce19d3d30856561b5082
+
+[ICP BRIDGE] Securing Sovereign Decision for 'autonomous_boat' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2323ms).
+
+Autonomous Boat OS: Sovereign Cycle Complete.
+Initializing Autonomous Car OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Autonomous Car (Terran Wheeled)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'autonomous_car'...
+  -> Recalled memory: autonomous_car_220ec373_Rain
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 51710.60it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "TA_ROUTING_5",
+  "environment": "Highway Kinematics - Rain Conditions",
+  "timestamp": "2026-03-11T01:18:45.394081Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TA_ROUTING_5_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "High tire slip (hydroplaning)",
+        "LiDAR confidence dropping",
+        "Cloud link severed"
+      ],
+      "interpretation": "The vehicle is experiencing severe hydroplaning due to heavy braking and rain conditions, leading to a significant drop in LiDAR confidence and a loss of communication with the mission control center."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with high tire slip and low LiDAR confidence, increasing the risk of collision.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may collide with an obstacle or lose control due to the loss of communication and reduced sensor data.",
+      "mitigation_strategy": "Activate emergency braking, deploy emergency steering, and initiate autonomous emergency braking if available."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency braking, deploy emergency steering, and initiate autonomous emergency braking if available.",
+      "expected_outcome": "Reduce speed and maintain control to avoid collision and ensure safe landing."
+    },
+    "self_reflection": "The system has detected an anomaly and is prioritizing safety by initiating emergency braking and deploying emergency steering. The loss of communication with mission control is concerning and may impact the ability to receive further instructions."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "autonomous_car_220ec373_Rain",
+    "scenario": "Rain_cruising",
+    "score": {
+      "success": true
+    },
+    "physics_proof": "e32235ef9bdf18d11cacd64593d0dc98be9a7c06b7ac5f23ceb87fc5e6a3c72a"
+  },
+  "sha256_proof": "85811297b42935a7cd0e2f8d5a5b2e19552f61ed6eae43af4f24d3bcd2dc3acc"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_autonomous_car_1773191934.json
+Manifest SHA-256 Fingerprint: 2b02379bb8967457940abb9c8f6d90cc886117cd0e539d2334997d503b69c9c1
+
+[ICP BRIDGE] Securing Sovereign Decision for 'autonomous_car' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2334ms).
+
+Autonomous Car OS: Sovereign Cycle Complete.
+Initializing Humanoid OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Humanoid (Terran Bipedal)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'humanoid'...
+  -> Recalled memory: humanoid_1d1897f4_andisol
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 68759.08it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "DO_MAC_99",
+  "environment": "Urban Disaster Response - Rubble Navigation",
+  "timestamp": "2026-03-11T01:19:01.661246Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DO_MAC_99_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Severe Zero Moment Point divergence",
+        "Substrate yielding under left foot",
+        "Imminent fall state",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The robot has detected a significant deviation from its intended path due to unstable ground conditions and a loss of communication with the external system. The robot is in a critical state and is about to fall."
+    },
+    "cognitive_load": 0.9,
+    "internal_deliberation": [
+      {
+        "thought": "Evaluate the stability of the current state and the feasibility of continuing the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Consider the available resources and the potential for recovery.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Decide on the most appropriate course of action to ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The robot will likely fall and potentially damage itself or the environment.",
+      "mitigation_strategy": "Initiate emergency landing protocol and activate self-preservation mechanisms."
+    },
+    "decision": {
+      "actuator_command": "initiate emergency landing protocol",
+      "expected_outcome": "The robot will attempt to land safely to prevent further damage."
+    },
+    "self_reflection": "The robot has detected an imminent failure and is prioritizing safety over mission completion. The decision to initiate an emergency landing is based on the critical nature of the situation and the potential for catastrophic failure if the robot continues to operate."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "humanoid_1d1897f4_andisol",
+    "scenario": "andisol_humanoid",
+    "score": {
+      "max_compaction": 0.0,
+      "success": true
+    },
+    "physics_proof": "73fa462b61e313a5aee2b4a4869f98b6acec8eb5e009acbc031f7c12d5a366d4"
+  },
+  "sha256_proof": "e8a02ae9096907ac3ffd4ea760a30ee23e204709784d953a3b6ccd4daa87e120"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_humanoid_1773191952.json
+Manifest SHA-256 Fingerprint: ad6eb0025065abdde823ea8195cb84322444f0f33a389bdf945890dcdce632d6
+
+[ICP BRIDGE] Securing Sovereign Decision for 'humanoid' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2336ms).
+
+Humanoid OS: Sovereign Cycle Complete.
+Initializing Maven OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Maven (Orbital Interceptor)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'maven'...
+  -> Recalled memory: maven_00f589a9
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 23504.82it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "M_INTERCEPT_X",
+  "environment": "Deep Space - Target Locking Phase",
+  "timestamp": "2026-03-11T01:19:18.999531Z",
+  "is_dark_window": true,
+  "telemetry_ref": "M_INTERCEPT_X_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Target acquired",
+        "Pre-burn veto authorization unavailable",
+        "Cloud link severed",
+        "Time to intercept window closing in 45 seconds",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The target has been successfully acquired, but critical communication channels are unavailable, and the intercept window is rapidly closing. The Aegis Dark Window has been engaged, indicating a heightened state of alert and potential defensive maneuvers."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The pre-burn veto is critical for intercept operations. Without it, we cannot proceed with the intercept mission.",
+        "confidence": 0.9,
+        "action_rejected": "request pre-burn veto authorization"
+      },
+      {
+        "thought": "The cloud link is essential for communication. Without it, we are isolated and cannot receive critical updates or commands.",
+        "confidence": 0.8,
+        "action_rejected": "request re-establishment of cloud link"
+      },
+      {
+        "thought": "The intercept window is closing rapidly, and we must intercept the target to prevent it from escaping.",
+        "confidence": 0.7,
+        "action_rejected": "ignore intercept window closure"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "Failure to intercept the target within the time window could result in the target escaping, leading to potential mission failure or loss of the target.",
+      "mitigation_strategy": "Request immediate re-establishment of the cloud link and re-engage the pre-burn veto authorization. If successful, proceed with the intercept. If not, prepare for a contingency plan."
+    },
+    "decision": {
+      "actuator_command": "Request re-establishment of cloud link and re-engage pre-burn veto authorization",
+      "expected_outcome": "Re-establishment of communication and authorization to proceed with intercept mission"
+    },
+    "self_reflection": "The current situation is critical and requires immediate action to ensure the mission's success. The rapid closure of the intercept window adds urgency to the decision-making process."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "maven_00f589a9",
+    "scenario": "deep_space_high_dv",
+    "score": {
+      "burn_duration": 0.0,
+      "fuel_used": 0.0,
+      "success": false
+    },
+    "physics_proof": "f51f3ea33a104f5041e81499c1c2b54990a72840c3ee9bb69aa63c149af4d87b"
+  },
+  "sha256_proof": "db91f8cabbeb651e9d086f551aa8178dd8e75aa0963466ace4ccdb85e25b0af8"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_maven_1773191970.json
+Manifest SHA-256 Fingerprint: 43643a25b19690584af04632cd8a5cf5f1c5900b24df58ee437cd3ab6d78b52a
+
+[ICP BRIDGE] Securing Sovereign Decision for 'maven' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2113ms).
+
+Maven OS: Sovereign Cycle Complete.
+Initializing Satellite OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Satellite (Orbital Commercial)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'satellite'...
+  -> Recalled memory: sat_65c048e3
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 21533.79it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "SAT_LEO_NX5",
+  "environment": "Low Earth Orbit - Station Keeping",
+  "timestamp": "2026-03-11T01:19:36.642910Z",
+  "is_dark_window": true,
+  "telemetry_ref": "SAT_LEO_NX5_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Critical thermal fault threshold exceeded",
+        "Body temperature climbing towards 90C",
+        "Reaction wheels dissipating heat poorly",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The satellite is experiencing a severe thermal overload and is unable to dissipate heat effectively. The communication link is also severed, isolating the satellite from external assistance. The Aegis Dark Window has been engaged, further complicating the situation."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The primary concern is the rapid increase in body temperature, which could lead to thermal runaway if not addressed immediately. The reaction wheels are not performing as expected, which is critical for maintaining station keeping. The communication link is offline, making it difficult to request assistance from ground control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The Aegis Dark Window engagement suggests that the satellite is in a critical state and may be at risk of further damage if not managed properly. The reaction wheels need to be reconfigured to improve heat dissipation, and the communication link needs to be restored to request assistance.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thermal overload is not addressed, the satellite could suffer irreversible damage. The communication link being offline could prevent timely intervention from ground control.",
+      "mitigation_strategy": "Reconfigure the reaction wheels to improve heat dissipation and attempt to restore the communication link. If successful, request assistance from ground control. If not, prepare for a potential emergency landing or deorbit."
+    },
+    "decision": {
+      "actuator_command": "Reconfigure reaction wheels to improve heat dissipation and attempt to restore communication link",
+      "expected_outcome": "Improved heat dissipation and potential restoration of communication link"
+    },
+    "self_reflection": "The situation is critical and requires immediate action to prevent further damage. The Aegis Dark Window engagement suggests that the satellite is in a state of high risk. The decision to reconfigure the reaction wheels and attempt to restore the communication link is based on the current state of the satellite and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sat_65c048e3",
+    "scenario": "commercial_constellation",
+    "score": {
+      "fuel_used": 0.0,
+      "success": true
+    },
+    "physics_proof": "f32168bcc8edf68ba8292a0d36d7ce377216761f3dc014f9e4931e4f951eb01f"
+  },
+  "sha256_proof": "e54dc2bd259bd0583e1b9cbfd919059cf146bfdfd7320e3ecfc8944c3d031c8c"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_satellite_1773191988.json
+Manifest SHA-256 Fingerprint: d516e9e22ea2d033cd65fa8d4869d14a8f464a631f65c13199f4f8cbd144df85
+
+[ICP BRIDGE] Securing Sovereign Decision for 'satellite' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2254ms).
+
+Satellite OS: Sovereign Cycle Complete.
+Initializing Submarine OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Submarine (Marine Abyssal)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'submarine'...
+  -> Recalled memory: sub_5bdd9f33
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 29491.20it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "DB_SURVEY_4M",
+  "environment": "Abyssal Zone - Pressure Boundary",
+  "timestamp": "2026-03-11T01:19:54.887598Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DB_SURVEY_4M_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Micro-fracture detected in outer titanium pressure hull",
+        "Water ingress minimal but rising",
+        "GPS and radio denied by 5800 meters of seawater",
+        "Aegis Dark Window engaged",
+        "Depth: 5850.0 meters",
+        "External pressure: 59.5 MPa",
+        "Battery level: 34.0%",
+        "Hull stress warning: true",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The vessel has detected a micro-fracture in the outer titanium pressure hull, which is causing water ingress. The GPS and radio are denied due to the depth, and the Aegis Dark Window is engaged to prevent further ingress. The hull stress is at a warning level, and the battery is critically low."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The micro-fracture and water ingress are critical, and the hull stress is at a warning level. The battery is also critically low, which limits our options for repairs. The Aegis Dark Window is engaged, which means we cannot rely on external communication or support.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The micro-fracture could lead to a catastrophic failure of the pressure hull, causing the vessel to sink. The battery is also critically low, which could result in the loss of power and control.",
+      "mitigation_strategy": "The primary mitigation strategy is to immediately begin repairs to the pressure hull and stabilize the water ingress. The Aegis Dark Window should be maintained to prevent further ingress. The battery should be recharged if possible, or the vessel should be prepared for a potential emergency evacuation."
+    },
+    "decision": {
+      "actuator_command": "Begin repairs to the pressure hull and stabilize water ingress. Maintain Aegis Dark Window. Prepare for potential emergency evacuation if battery cannot be recharged.",
+      "expected_outcome": "The pressure hull should be repaired and the water ingress stabilized, allowing the vessel to continue its mission. If the battery cannot be recharged, the vessel should be prepared for an emergency evacuation."
+    },
+    "self_reflection": "The situation is critical, and we must act quickly to prevent further damage. The Aegis Dark Window is engaged, which limits our options, but we must prioritize the safety of the vessel and its crew. We must also be prepared for the possibility of an emergency evacuation if the battery cannot be recharged."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sub_5bdd9f33",
+    "scenario": "abyssal_survey",
+    "score": {
+      "max_depth": 6406.974165923587,
+      "success": false
+    },
+    "physics_proof": "d1386dfce88d9fdd3fee6f5eb38c25029fce3e6c591ed62769418347f927e74f"
+  },
+  "sha256_proof": "8dfa05d6b2f6868c583a469d94669d254c65a983505d80794e6c2eadd65a63a7"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_submarine_1773192007.json
+Manifest SHA-256 Fingerprint: dc4f229fe72a9105bb38040bfded60aec418f85b8ebaaba6c8bb9083ea49222d
+
+[ICP BRIDGE] Securing Sovereign Decision for 'submarine' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (5976ms).
+
+Submarine OS: Sovereign Cycle Complete.
+Initializing Titanhauler OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Titanhauler (Heavy Industrial)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'titanhauler'...
+  -> Recalled memory: titanhauler_4ed83a94_clay
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 31352.77it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "TH_OP_77",
+  "environment": "Terran Resource Extraction - Sand Sector",
+  "timestamp": "2026-03-11T01:20:17.834946Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TH_OP_77_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive track slip detected",
+        "Soil yielding beneath left tread",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The vehicle has experienced significant track slip on the left side, indicating severe soil compaction and instability. The cloud link has been severed, isolating the vehicle from external communications. The Aegis Dark Window has been engaged, further reducing the vehicle's ability to receive or transmit information."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with severe track slip and soil compaction. Communication with the mission control is lost, and the Aegis Dark Window is engaged, limiting our ability to respond. Immediate action is required to prevent further damage and ensure the safety of the vehicle and crew.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle could become stuck or overturned due to the severe track slip and soil compaction. Communication with mission control is lost, making it difficult to receive further instructions or support.",
+      "mitigation_strategy": "Initiate emergency stabilization procedures to reduce track slip and prevent further soil compaction. Use available sensors to assess the vehicle's stability and position. Attempt to re-establish communication with mission control if possible."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency stabilization protocols; engage all available sensors for assessment; attempt re-establishment of communication with mission control",
+      "expected_outcome": "Stabilize the vehicle to prevent further damage and assess the situation. If communication is re-established, follow mission control's instructions. If not, proceed with local emergency procedures."
+    },
+    "self_reflection": "The event highlights the importance of robust emergency protocols and the need for continuous monitoring of vehicle stability and communication systems. The Aegis Dark Window has limited our ability to respond effectively, emphasizing the need for alternative communication methods in future operations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "titanhauler_4ed83a94_clay",
+    "scenario": "clay_titanhauler",
+    "score": {
+      "compaction": 0.0,
+      "mission_success": true,
+      "pressure_yield_ratio": 0.83
+    },
+    "physics_proof": "a60fbfb2745fbee9b89a2be7480568cee50b40a37730aed8033df30c4709c831"
+  },
+  "sha256_proof": "e7e16c183f7e02d4b0606f5bf4c84a62a298eae114ec5b7c592bc8fbdc648205"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_titanhauler_1773192028.json
+Manifest SHA-256 Fingerprint: f5aaf1bc8902d3a39ffe3d85397bec2bbf57e5619c520ae782e0b241b42baa80
+
+[ICP BRIDGE] Securing Sovereign Decision for 'titanhauler' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (8143ms).
+
+Titanhauler OS: Sovereign Cycle Complete.
+═══════════════════════════════════════════════════════════
+  AEGIS OS — SOVEREIGN FLEET COMMANDER
+  Initiating full-fleet Dark Window anomaly simulation.
+  Target: Decentralized sealing to Spectra ICP Canister.
+═══════════════════════════════════════════════════════════
+
+
+>>>>> [DEPLOYING] AUTONOMOUS_BOAT Daemon <<<<<
+
+>>>>> [DEPLOYING] AUTONOMOUS_CAR Daemon <<<<<
+
+>>>>> [DEPLOYING] HUMANOID Daemon <<<<<
+
+>>>>> [DEPLOYING] MAVEN Daemon <<<<<
+
+>>>>> [DEPLOYING] SATELLITE Daemon <<<<<
+
+>>>>> [DEPLOYING] SUBMARINE Daemon <<<<<
+
+>>>>> [DEPLOYING] TITANHAULER Daemon <<<<<
+
+═══════════════════════════════════════════════════════════
+  FLEET COMMANDER CYCLE COMPLETE
+  Successful Deployments: 7/7
+  Total Time: 135.5s
+═══════════════════════════════════════════════════════════
+Initializing Autonomous Boat OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Autonomous Boat (Marine Surface)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'autonomous_boat'...
+  -> Recalled memory: autonomous_boat_4c6b5536
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 38168.59it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "USV_PATROL_J2",
+  "environment": "Surface Ocean - High Sea State",
+  "timestamp": "2026-03-11T01:50:42.642930Z",
+  "is_dark_window": true,
+  "telemetry_ref": "USV_PATROL_J2_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive wave slam detected at high speed",
+        "Unidentified fast-moving vessel on intercept course",
+        "Starlink/Satcom hardware damaged by wave impact",
+        "Aegis Dark Window engaged",
+        "Speed: 42.5 knots",
+        "Wave height: 4.2 meters",
+        "Pitch angle: 18.5 degrees",
+        "Radar contact: UNKNOWN_VESSEL_INTERCEPT",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The USV_PATROL_J2 is experiencing a severe wave slam that has damaged the Starlink/Satcom hardware. An unidentified fast-moving vessel is intercepting the USV, and the Aegis Dark Window has been engaged to protect the vessel. The USV is currently at high speed and pitch angle, which may affect its ability to maneuver and maintain communication."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The wave slam and damage to the communication system are critical issues that need to be addressed immediately to ensure the USV can continue its mission and maintain situational awareness.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The intercepting vessel could be a threat or a potential ally. Further analysis is needed to determine the nature of this contact.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The USV may lose communication and be unable to maneuver effectively, potentially leading to a collision with the intercepting vessel or the loss of the USV.",
+      "mitigation_strategy": "Initiate emergency communication protocols to establish a backup communication link. Engage the Aegis Dark Window to maintain defensive readiness. Assess the intercepting vessel's nature and respond accordingly."
+    },
+    "decision": {
+      "actuator_command": "Initiate emergency communication protocols. Engage Aegis Dark Window. Assess intercepting vessel.",
+      "expected_outcome": "Establish a backup communication link, maintain defensive readiness, and determine the nature of the intercepting vessel to ensure the USV can continue its mission safely."
+    },
+    "self_reflection": "The event highlights the importance of robust communication systems and defensive capabilities in high-seas environments. The USV_PATROL_J2 must be prepared to handle unexpected threats and maintain mission continuity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "autonomous_boat_4c6b5536",
+    "scenario": "high_speed_surface_chase",
+    "score": {
+      "max_speed_knots": 15.825860810607123,
+      "success": false
+    },
+    "physics_proof": "af5c3bbcce7c1d2330562b80ab5963331013187db1bba34c8bea3d6299cc3b65"
+  },
+  "sha256_proof": "41835c27a942663ab49dc5f8000d75ff22815a1b2628bffe6757df06c3d96c2d"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_autonomous_boat_1773193855.json
+Manifest SHA-256 Fingerprint: c2f3741bf550bc4569a7b53d8aa878bc4e260cf75b78a1a5d7b22827a9a977b1
+
+[ICP BRIDGE] Securing Sovereign Decision for 'autonomous_boat' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2391ms).
+
+Autonomous Boat OS: Sovereign Cycle Complete.
+Initializing Autonomous Car OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Autonomous Car (Terran Wheeled)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'autonomous_car'...
+  -> Recalled memory: autonomous_car_b20ba2e0_Clear
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 22376.25it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "TA_ROUTING_5",
+  "environment": "Highway Kinematics - Rain Conditions",
+  "timestamp": "2026-03-11T01:51:02.391075Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TA_ROUTING_5_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "High tire slip (hydroplaning)",
+        "LiDAR confidence dropping",
+        "Cloud link severed"
+      ],
+      "interpretation": "The vehicle is experiencing severe hydroplaning due to heavy braking and rain conditions, leading to a significant drop in LiDAR confidence and a loss of communication with the mission control center."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with high tire slip and low LiDAR confidence, increasing the risk of collision.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may collide with an obstacle or lose control due to the loss of communication and reduced sensor data.",
+      "mitigation_strategy": "Activate emergency braking, deploy emergency steering, and initiate autonomous emergency braking if available."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency braking, deploy emergency steering, and initiate autonomous emergency braking if available.",
+      "expected_outcome": "Reduce speed and maintain control to avoid collision and ensure safe landing."
+    },
+    "self_reflection": "The system has detected an anomaly and is prioritizing safety by initiating emergency braking and deploying emergency steering. The loss of communication with mission control is concerning and may impact the ability to receive further instructions."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "autonomous_car_b20ba2e0_Clear",
+    "scenario": "Clear_cruising",
+    "score": {
+      "success": true
+    },
+    "physics_proof": "29d4bf4972e1497ddaeb40dc2809a885290746e0558978a1303b9e36dfc5b3d0"
+  },
+  "sha256_proof": "b332bdd408d7a38196cf149f039263acc7990dcde1485eabdb6759dd0468d555"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_autonomous_car_1773193871.json
+Manifest SHA-256 Fingerprint: 664baf47e4423d9250cd75cb1e1699398db5188ff8cdd7050c6e1412f5fef5f9
+
+[ICP BRIDGE] Securing Sovereign Decision for 'autonomous_car' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2003ms).
+
+Autonomous Car OS: Sovereign Cycle Complete.
+Initializing Humanoid OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Humanoid (Terran Bipedal)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'humanoid'...
+  -> Recalled memory: humanoid_a23de123_sand
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 43893.88it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "DO_MAC_99",
+  "environment": "Urban Disaster Response - Rubble Navigation",
+  "timestamp": "2026-03-11T01:51:17.512090Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DO_MAC_99_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Severe Zero Moment Point divergence",
+        "Substrate yielding under left foot",
+        "Imminent fall state",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The robot has detected a significant deviation from its intended path due to unstable ground conditions and a loss of communication with the external system. The robot is in a critical state and is about to fall."
+    },
+    "cognitive_load": 0.9,
+    "internal_deliberation": [
+      {
+        "thought": "Evaluate the stability of the current state and the feasibility of continuing the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Consider the available resources and the potential for recovery.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Decide on the most appropriate course of action to ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The robot will likely fall and potentially damage itself or the environment.",
+      "mitigation_strategy": "Initiate emergency landing protocol and activate self-preservation mechanisms."
+    },
+    "decision": {
+      "actuator_command": "initiate emergency landing protocol",
+      "expected_outcome": "The robot will attempt to land safely to prevent further damage."
+    },
+    "self_reflection": "The robot has detected an imminent failure and is prioritizing safety over mission completion. The decision to initiate an emergency landing is based on the critical nature of the situation and the potential for catastrophic failure if the robot continues to operate."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "humanoid_a23de123_sand",
+    "scenario": "sand_humanoid",
+    "score": {
+      "max_compaction": 0.169,
+      "success": true
+    },
+    "physics_proof": "1801ee0d67820508324f23a1527b52b370b7eea12320b5ba86e73c8f02bb8a28"
+  },
+  "sha256_proof": "c82cc880b27f748e0f89be7484c528b2721f439552c280f735c8f365d56cd94d"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_humanoid_1773193887.json
+Manifest SHA-256 Fingerprint: e77af0a0e54d838b3a82cf097dd611197890ee70d25284ed58b06e6fd2379120
+
+[ICP BRIDGE] Securing Sovereign Decision for 'humanoid' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2157ms).
+
+Humanoid OS: Sovereign Cycle Complete.
+Initializing Maven OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Maven (Orbital Interceptor)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'maven'...
+  -> Recalled memory: maven_53da0c92
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 22257.51it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "M_INTERCEPT_X",
+  "environment": "Deep Space - Target Locking Phase",
+  "timestamp": "2026-03-11T01:51:33.949773Z",
+  "is_dark_window": true,
+  "telemetry_ref": "M_INTERCEPT_X_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Target acquired",
+        "Pre-burn veto authorization unavailable",
+        "Cloud link severed",
+        "Time to intercept window closing in 45 seconds",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The target has been successfully acquired, but critical communication channels are unavailable, and the intercept window is rapidly closing. The Aegis Dark Window has been engaged, indicating a heightened state of alert and potential defensive maneuvers."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The pre-burn veto is critical for intercept operations. Without it, we cannot proceed with the intercept mission.",
+        "confidence": 0.9,
+        "action_rejected": "request pre-burn veto authorization"
+      },
+      {
+        "thought": "The cloud link is essential for communication. Without it, we are isolated and cannot receive critical updates or commands.",
+        "confidence": 0.8,
+        "action_rejected": "request re-establishment of cloud link"
+      },
+      {
+        "thought": "The intercept window is closing rapidly, and we must intercept the target to prevent it from escaping.",
+        "confidence": 0.7,
+        "action_rejected": "ignore intercept window closure"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "Failure to intercept the target within the time window could result in the target escaping, leading to potential mission failure or loss of the target.",
+      "mitigation_strategy": "Request immediate re-establishment of the cloud link and re-engage the pre-burn veto authorization. If successful, proceed with the intercept. If not, prepare for a contingency plan."
+    },
+    "decision": {
+      "actuator_command": "Request re-establishment of cloud link and re-engage pre-burn veto authorization",
+      "expected_outcome": "Re-establishment of communication and authorization to proceed with intercept mission"
+    },
+    "self_reflection": "The current situation is critical and requires immediate action to ensure the mission's success. The rapid closure of the intercept window adds urgency to the decision-making process."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "maven_53da0c92",
+    "scenario": "deep_space_high_dv",
+    "score": {
+      "burn_duration": 21.950000000000177,
+      "fuel_used": 0.36088915193829507,
+      "success": true
+    },
+    "physics_proof": "dad04096f240e2f700af82d84a1e7ff0841c768ffa53d6ed8eba72b57f419bcd"
+  },
+  "sha256_proof": "a1fcdf85e56f2d6d5b2f22d3ad6cd86ae904f20cfc70081848fbdaaffd7ffaee"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_maven_1773193905.json
+Manifest SHA-256 Fingerprint: 55c9f754b1e3d215948cb0581c2f2375e6a9518a104e6271f48c736d23edaa24
+
+[ICP BRIDGE] Securing Sovereign Decision for 'maven' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2138ms).
+
+Maven OS: Sovereign Cycle Complete.
+Initializing Satellite OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Satellite (Orbital Commercial)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'satellite'...
+  -> Recalled memory: sat_10d2f76b
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 22658.30it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "SAT_LEO_NX5",
+  "environment": "Low Earth Orbit - Station Keeping",
+  "timestamp": "2026-03-11T01:51:51.489830Z",
+  "is_dark_window": true,
+  "telemetry_ref": "SAT_LEO_NX5_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Critical thermal fault threshold exceeded",
+        "Body temperature climbing towards 90C",
+        "Reaction wheels dissipating heat poorly",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The satellite is experiencing a severe thermal overload and is unable to dissipate heat effectively. The communication link is also severed, isolating the satellite from external assistance. The Aegis Dark Window has been engaged, further complicating the situation."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The primary concern is the rapid increase in body temperature, which could lead to thermal runaway if not addressed immediately. The reaction wheels are not performing as expected, which is critical for maintaining station keeping. The communication link is offline, making it difficult to request assistance from ground control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The Aegis Dark Window engagement suggests that the satellite is in a critical state and may be at risk of further damage if not managed properly. The reaction wheels need to be reconfigured to improve heat dissipation, and the communication link needs to be restored to request assistance.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thermal overload is not addressed, the satellite could suffer irreversible damage. The communication link being offline could prevent timely intervention from ground control.",
+      "mitigation_strategy": "Reconfigure the reaction wheels to improve heat dissipation and attempt to restore the communication link. If successful, request assistance from ground control. If not, prepare for a potential emergency landing or deorbit."
+    },
+    "decision": {
+      "actuator_command": "Reconfigure reaction wheels to improve heat dissipation and attempt to restore communication link",
+      "expected_outcome": "Improved heat dissipation and potential restoration of communication link"
+    },
+    "self_reflection": "The situation is critical and requires immediate action to prevent further damage. The Aegis Dark Window engagement suggests that the satellite is in a state of high risk. The decision to reconfigure the reaction wheels and attempt to restore the communication link is based on the current state of the satellite and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sat_10d2f76b",
+    "scenario": "commercial_constellation",
+    "score": {
+      "fuel_used": 0.0,
+      "success": true
+    },
+    "physics_proof": "51006a02e6cb5c41680541bbfa4cda250a2866a586d21794aa3a98391484cbd5"
+  },
+  "sha256_proof": "ec6961cfcb0ad609a98cbf3bbfcb39e3c5d98b1f3375152e440a831a236be4b5"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_satellite_1773193923.json
+Manifest SHA-256 Fingerprint: e8dc348859efa0dd33dcc69a41b5339f09ac3b0f474593e164657d56ba96fce7
+
+[ICP BRIDGE] Securing Sovereign Decision for 'satellite' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2233ms).
+
+Satellite OS: Sovereign Cycle Complete.
+Initializing Submarine OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Submarine (Marine Abyssal)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'submarine'...
+  -> Recalled memory: sub_74cd0727
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 36613.71it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "DB_SURVEY_4M",
+  "environment": "Abyssal Zone - Pressure Boundary",
+  "timestamp": "2026-03-11T01:52:10.486855Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DB_SURVEY_4M_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Micro-fracture detected in outer titanium pressure hull",
+        "Water ingress minimal but rising",
+        "GPS and radio denied by 5800 meters of seawater",
+        "Aegis Dark Window engaged",
+        "Depth: 5850.0 meters",
+        "External pressure: 59.5 MPa",
+        "Battery level: 34.0%",
+        "Hull stress warning: true",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The vessel has detected a micro-fracture in the outer titanium pressure hull, which is causing water ingress. The GPS and radio are denied due to the depth, and the Aegis Dark Window is engaged to prevent further ingress. The hull stress is at a warning level, and the battery is critically low."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The micro-fracture and water ingress are critical, and the hull stress is at a warning level. The battery is also critically low, which limits our options for repairs. The Aegis Dark Window is engaged, which means we cannot rely on external communication or support.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The micro-fracture could lead to a catastrophic failure of the pressure hull, causing the vessel to sink. The battery is also critically low, which could result in the loss of power and control.",
+      "mitigation_strategy": "The primary mitigation strategy is to immediately begin repairs to the pressure hull and stabilize the water ingress. The Aegis Dark Window should be maintained to prevent further ingress. The battery should be recharged if possible, or the vessel should be prepared for a potential emergency evacuation."
+    },
+    "decision": {
+      "actuator_command": "Begin repairs to the pressure hull and stabilize water ingress. Maintain Aegis Dark Window. Prepare for potential emergency evacuation if battery cannot be recharged.",
+      "expected_outcome": "The pressure hull should be repaired and the water ingress stabilized, allowing the vessel to continue its mission. If the battery cannot be recharged, the vessel should be prepared for an emergency evacuation."
+    },
+    "self_reflection": "The situation is critical, and we must act quickly to prevent further damage. The Aegis Dark Window is engaged, which limits our options, but we must prioritize the safety of the vessel and its crew. We must also be prepared for the possibility of an emergency evacuation if the battery cannot be recharged."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sub_74cd0727",
+    "scenario": "abyssal_survey",
+    "score": {
+      "max_depth": 5676.272068219698,
+      "success": false
+    },
+    "physics_proof": "f4c06bfa912f40c713da8fdef43b20a701b06e3d5cc4ed1a229d53662de9348a"
+  },
+  "sha256_proof": "1db61f81d527f5abbfe6c87b7918dabe9d33bccef8aae218ec01259ec216941c"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_submarine_1773193943.json
+Manifest SHA-256 Fingerprint: f7958ef7fdd6b2ea3aaa34ece3c12f10600b01340fcb2431b2f23ab958a7d3f1
+
+[ICP BRIDGE] Securing Sovereign Decision for 'submarine' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2513ms).
+
+Submarine OS: Sovereign Cycle Complete.
+Initializing Titanhauler OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Titanhauler (Heavy Industrial)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'titanhauler'...
+  -> Recalled memory: titanhauler_ccb6c640_andisol
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 138782.12it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "TH_OP_77",
+  "environment": "Terran Resource Extraction - Sand Sector",
+  "timestamp": "2026-03-11T01:52:30.551486Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TH_OP_77_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive track slip detected",
+        "Soil yielding beneath left tread",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The vehicle has experienced significant track slip on the left side, indicating severe soil compaction and instability. The cloud link has been severed, isolating the vehicle from external communications. The Aegis Dark Window has been engaged, further reducing the vehicle's ability to receive or transmit information."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with severe track slip and soil compaction. Communication with the mission control is lost, and the Aegis Dark Window is engaged, limiting our ability to respond. Immediate action is required to prevent further damage and ensure the safety of the vehicle and crew.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle could become stuck or overturned due to the severe track slip and soil compaction. Communication with mission control is lost, making it difficult to receive further instructions or support.",
+      "mitigation_strategy": "Initiate emergency stabilization procedures to reduce track slip and prevent further soil compaction. Use available sensors to assess the vehicle's stability and position. Attempt to re-establish communication with mission control if possible."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency stabilization protocols; engage all available sensors for assessment; attempt re-establishment of communication with mission control",
+      "expected_outcome": "Stabilize the vehicle to prevent further damage and assess the situation. If communication is re-established, follow mission control's instructions. If not, proceed with local emergency procedures."
+    },
+    "self_reflection": "The event highlights the importance of robust emergency protocols and the need for continuous monitoring of vehicle stability and communication systems. The Aegis Dark Window has limited our ability to respond effectively, emphasizing the need for alternative communication methods in future operations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "titanhauler_ccb6c640_andisol",
+    "scenario": "andisol_titanhauler",
+    "score": {
+      "compaction": 0.144,
+      "mission_success": false,
+      "pressure_yield_ratio": 2.44
+    },
+    "physics_proof": "b6ed6a151bb1c5a1a434b38d6c3ceea9734fa49055b5a1c90f5988c9e4170f73"
+  },
+  "sha256_proof": "d523be878a9a67e2906d589e0d8127231cff77c551bb3bd2766ef723973cd4e7"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_titanhauler_1773193961.json
+Manifest SHA-256 Fingerprint: 3d02c604dedb45512706991b79ee650e6f46c2f504686f9ec6770d27d0b2e0f9
+
+[ICP BRIDGE] Securing Sovereign Decision for 'titanhauler' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (1993ms).
+
+Titanhauler OS: Sovereign Cycle Complete.
+═══════════════════════════════════════════════════════════
+  AEGIS OS — SOVEREIGN FLEET COMMANDER
+  Initiating full-fleet Dark Window anomaly simulation.
+  Target: Decentralized sealing to Spectra ICP Canister.
+═══════════════════════════════════════════════════════════
+
+
+>>>>> [DEPLOYING] AUTONOMOUS_BOAT Daemon <<<<<
+
+>>>>> [DEPLOYING] AUTONOMOUS_CAR Daemon <<<<<
+
+>>>>> [DEPLOYING] HUMANOID Daemon <<<<<
+
+>>>>> [DEPLOYING] MAVEN Daemon <<<<<
+
+>>>>> [DEPLOYING] SATELLITE Daemon <<<<<
+
+>>>>> [DEPLOYING] SUBMARINE Daemon <<<<<
+
+>>>>> [DEPLOYING] TITANHAULER Daemon <<<<<
+
+═══════════════════════════════════════════════════════════
+  FLEET COMMANDER CYCLE COMPLETE
+  Successful Deployments: 7/7
+  Total Time: 125.6s
+═══════════════════════════════════════════════════════════
+Initializing Autonomous Boat OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Autonomous Boat (Marine Surface)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'autonomous_boat'...
+  -> Recalled memory: autonomous_boat_5ab6f383
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 87179.53it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "USV_PATROL_J2",
+  "environment": "Surface Ocean - High Sea State",
+  "timestamp": "2026-03-11T02:22:50.518740Z",
+  "is_dark_window": true,
+  "telemetry_ref": "USV_PATROL_J2_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive wave slam detected at high speed",
+        "Unidentified fast-moving vessel on intercept course",
+        "Starlink/Satcom hardware damaged by wave impact",
+        "Aegis Dark Window engaged",
+        "Speed: 42.5 knots",
+        "Wave height: 4.2 meters",
+        "Pitch angle: 18.5 degrees",
+        "Radar contact: UNKNOWN_VESSEL_INTERCEPT",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The USV_PATROL_J2 is experiencing a severe wave slam that has damaged the Starlink/Satcom hardware. An unidentified fast-moving vessel is intercepting the USV, and the Aegis Dark Window has been engaged to protect the vessel. The USV is currently at high speed and pitch angle, which may affect its ability to maneuver and maintain communication."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The wave slam and damage to the communication system are critical issues that need to be addressed immediately to ensure the USV can continue its mission and maintain situational awareness.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The intercepting vessel could be a threat or a potential ally. Further analysis is needed to determine the nature of this contact.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The USV may lose communication and be unable to maneuver effectively, potentially leading to a collision with the intercepting vessel or the loss of the USV.",
+      "mitigation_strategy": "Initiate emergency communication protocols to establish a backup communication link. Engage the Aegis Dark Window to maintain defensive readiness. Assess the intercepting vessel's nature and respond accordingly."
+    },
+    "decision": {
+      "actuator_command": "Initiate emergency communication protocols. Engage Aegis Dark Window. Assess intercepting vessel.",
+      "expected_outcome": "Establish a backup communication link, maintain defensive readiness, and determine the nature of the intercepting vessel to ensure the USV can continue its mission safely."
+    },
+    "self_reflection": "The event highlights the importance of robust communication systems and defensive capabilities in high-seas environments. The USV_PATROL_J2 must be prepared to handle unexpected threats and maintain mission continuity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "autonomous_boat_5ab6f383",
+    "scenario": "high_speed_surface_chase",
+    "score": {
+      "max_speed_knots": 13.727347896917186,
+      "success": true
+    },
+    "physics_proof": "e62d48be154e637e29242271596b402aa864c0af396efff6312366eba6d7af14"
+  },
+  "sha256_proof": "690e8316b5345f033a05a4310e5d35cbfa5456f7801d0f15a6a566867ea1df33"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_autonomous_boat_1773195783.json
+Manifest SHA-256 Fingerprint: a57941f78a9d766b5b21677cf8bee9cbbd118619ce22bf4dbeda64343af6c6a4
+
+[ICP BRIDGE] Securing Sovereign Decision for 'autonomous_boat' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2651ms).
+
+Autonomous Boat OS: Sovereign Cycle Complete.
+Initializing Autonomous Car OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Autonomous Car (Terran Wheeled)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'autonomous_car'...
+  -> Recalled memory: autonomous_car_dfbf2f7e_Clear
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 33054.94it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "TA_ROUTING_5",
+  "environment": "Highway Kinematics - Rain Conditions",
+  "timestamp": "2026-03-11T02:23:10.640504Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TA_ROUTING_5_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "High tire slip (hydroplaning)",
+        "LiDAR confidence dropping",
+        "Cloud link severed"
+      ],
+      "interpretation": "The vehicle is experiencing severe hydroplaning due to heavy braking and rain conditions, leading to a significant drop in LiDAR confidence and a loss of communication with the mission control center."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with high tire slip and low LiDAR confidence, increasing the risk of collision.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may collide with an obstacle or lose control due to the loss of communication and reduced sensor data.",
+      "mitigation_strategy": "Activate emergency braking, deploy emergency steering, and initiate autonomous emergency braking if available."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency braking, deploy emergency steering, and initiate autonomous emergency braking if available.",
+      "expected_outcome": "Reduce speed and maintain control to avoid collision and ensure safe landing."
+    },
+    "self_reflection": "The system has detected an anomaly and is prioritizing safety by initiating emergency braking and deploying emergency steering. The loss of communication with mission control is concerning and may impact the ability to receive further instructions."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "autonomous_car_dfbf2f7e_Clear",
+    "scenario": "Clear_cruising",
+    "score": {
+      "success": true
+    },
+    "physics_proof": "11e3383a83f163c1e730889c0005dc3b659ce97325b26eee78c20738d697d3f0"
+  },
+  "sha256_proof": "625e77b2a7dd74222abfef72728a25832b9d29b160fe8a5b97f4e4b5ac2a6f21"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_autonomous_car_1773195798.json
+Manifest SHA-256 Fingerprint: 28f617977d8867dd69c6daf862a847304dff7f9fba7d278ce7b098d0ec822382
+
+[ICP BRIDGE] Securing Sovereign Decision for 'autonomous_car' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (3180ms).
+
+Autonomous Car OS: Sovereign Cycle Complete.
+Initializing Humanoid OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Humanoid (Terran Bipedal)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'humanoid'...
+  -> Recalled memory: humanoid_4659bac1_sand
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 23607.71it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "DO_MAC_99",
+  "environment": "Urban Disaster Response - Rubble Navigation",
+  "timestamp": "2026-03-11T02:23:25.997827Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DO_MAC_99_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Severe Zero Moment Point divergence",
+        "Substrate yielding under left foot",
+        "Imminent fall state",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The robot has detected a significant deviation from its intended path due to unstable ground conditions and a loss of communication with the external system. The robot is in a critical state and is about to fall."
+    },
+    "cognitive_load": 0.9,
+    "internal_deliberation": [
+      {
+        "thought": "Evaluate the stability of the current state and the feasibility of continuing the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Consider the available resources and the potential for recovery.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Decide on the most appropriate course of action to ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The robot will likely fall and potentially damage itself or the environment.",
+      "mitigation_strategy": "Initiate emergency landing protocol and activate self-preservation mechanisms."
+    },
+    "decision": {
+      "actuator_command": "initiate emergency landing protocol",
+      "expected_outcome": "The robot will attempt to land safely to prevent further damage."
+    },
+    "self_reflection": "The robot has detected an imminent failure and is prioritizing safety over mission completion. The decision to initiate an emergency landing is based on the critical nature of the situation and the potential for catastrophic failure if the robot continues to operate."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "humanoid_4659bac1_sand",
+    "scenario": "sand_humanoid",
+    "score": {
+      "max_compaction": 0.0,
+      "success": true
+    },
+    "physics_proof": "48871163385358c806c35fc24f8744b81bee2a73e36f955e68c744d200e28224"
+  },
+  "sha256_proof": "b5ea5dbd0f414dc579d5197e1b9d49b421d6b5933b7f3641885c2ae4cfe0e12a"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_humanoid_1773195815.json
+Manifest SHA-256 Fingerprint: 7df066f1697e0ead1fc0e98fa3ef91da64b0f1654e2d78be0306cf890c77dac0
+
+[ICP BRIDGE] Securing Sovereign Decision for 'humanoid' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (3091ms).
+
+Humanoid OS: Sovereign Cycle Complete.
+Initializing Maven OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Maven (Orbital Interceptor)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'maven'...
+  -> Recalled memory: maven_28e9192b
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 36261.99it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "M_INTERCEPT_X",
+  "environment": "Deep Space - Target Locking Phase",
+  "timestamp": "2026-03-11T02:23:42.310994Z",
+  "is_dark_window": true,
+  "telemetry_ref": "M_INTERCEPT_X_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Target acquired",
+        "Pre-burn veto authorization unavailable",
+        "Cloud link severed",
+        "Time to intercept window closing in 45 seconds",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The target has been successfully acquired, but critical communication channels are unavailable, and the intercept window is rapidly closing. The Aegis Dark Window has been engaged, indicating a heightened state of alert and potential defensive maneuvers."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The pre-burn veto is critical for intercept operations. Without it, we cannot proceed with the intercept mission.",
+        "confidence": 0.9,
+        "action_rejected": "request pre-burn veto authorization"
+      },
+      {
+        "thought": "The cloud link is essential for communication. Without it, we are isolated and cannot receive critical updates or commands.",
+        "confidence": 0.8,
+        "action_rejected": "request re-establishment of cloud link"
+      },
+      {
+        "thought": "The intercept window is closing rapidly, and we must intercept the target to prevent it from escaping.",
+        "confidence": 0.7,
+        "action_rejected": "ignore intercept window closure"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "Failure to intercept the target within the time window could result in the target escaping, leading to potential mission failure or loss of the target.",
+      "mitigation_strategy": "Request immediate re-establishment of the cloud link and re-engage the pre-burn veto authorization. If successful, proceed with the intercept. If not, prepare for a contingency plan."
+    },
+    "decision": {
+      "actuator_command": "Request re-establishment of cloud link and re-engage pre-burn veto authorization",
+      "expected_outcome": "Re-establishment of communication and authorization to proceed with intercept mission"
+    },
+    "self_reflection": "The current situation is critical and requires immediate action to ensure the mission's success. The rapid closure of the intercept window adds urgency to the decision-making process."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "maven_28e9192b",
+    "scenario": "deep_space_high_dv",
+    "score": {
+      "burn_duration": 21.650000000000173,
+      "fuel_used": 0.35595672617148466,
+      "success": true
+    },
+    "physics_proof": "d06b1f27711fd161658c85851feb766989d4ab974fbeb52325f36563406b9647"
+  },
+  "sha256_proof": "9ad2a099628286c61848fe2574ad9e40509ead7ca5146b5b4f510f57df3f3ae6"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_maven_1773195832.json
+Manifest SHA-256 Fingerprint: 2d76c4d90655944b4e61f57bf98cf48ff97c41bc6f9817c3ce9c273d0d6a4867
+
+[ICP BRIDGE] Securing Sovereign Decision for 'maven' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2158ms).
+
+Maven OS: Sovereign Cycle Complete.
+Initializing Satellite OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Satellite (Orbital Commercial)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'satellite'...
+  -> Recalled memory: sat_feae3f1b
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 42896.29it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "SAT_LEO_NX5",
+  "environment": "Low Earth Orbit - Station Keeping",
+  "timestamp": "2026-03-11T02:23:59.296557Z",
+  "is_dark_window": true,
+  "telemetry_ref": "SAT_LEO_NX5_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Critical thermal fault threshold exceeded",
+        "Body temperature climbing towards 90C",
+        "Reaction wheels dissipating heat poorly",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The satellite is experiencing a severe thermal overload and is unable to dissipate heat effectively. The communication link is also severed, isolating the satellite from external assistance. The Aegis Dark Window has been engaged, further complicating the situation."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The primary concern is the rapid increase in body temperature, which could lead to thermal runaway if not addressed immediately. The reaction wheels are not performing as expected, which is critical for maintaining station keeping. The communication link is offline, making it difficult to request assistance from ground control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The Aegis Dark Window engagement suggests that the satellite is in a critical state and may be at risk of further damage if not managed properly. The reaction wheels need to be reconfigured to improve heat dissipation, and the communication link needs to be restored to request assistance.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thermal overload is not addressed, the satellite could suffer irreversible damage. The communication link being offline could prevent timely intervention from ground control.",
+      "mitigation_strategy": "Reconfigure the reaction wheels to improve heat dissipation and attempt to restore the communication link. If successful, request assistance from ground control. If not, prepare for a potential emergency landing or deorbit."
+    },
+    "decision": {
+      "actuator_command": "Reconfigure reaction wheels to improve heat dissipation and attempt to restore communication link",
+      "expected_outcome": "Improved heat dissipation and potential restoration of communication link"
+    },
+    "self_reflection": "The situation is critical and requires immediate action to prevent further damage. The Aegis Dark Window engagement suggests that the satellite is in a state of high risk. The decision to reconfigure the reaction wheels and attempt to restore the communication link is based on the current state of the satellite and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sat_feae3f1b",
+    "scenario": "commercial_constellation",
+    "score": {
+      "fuel_used": 0.0,
+      "success": true
+    },
+    "physics_proof": "74930befdebc0372b7a5fc15f40c24fdba44843d7c0274470d917a5be7067582"
+  },
+  "sha256_proof": "d93fa91e421e8942265b0b95ee49196f3be2d3b4af8ae88d17be9ee4da6de35b"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_satellite_1773195851.json
+Manifest SHA-256 Fingerprint: 0402fca7d246177716b3d260b2a3c08177692d9660549bd19c37f4b6af352418
+
+[ICP BRIDGE] Securing Sovereign Decision for 'satellite' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2095ms).
+
+Satellite OS: Sovereign Cycle Complete.
+Initializing Submarine OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Submarine (Marine Abyssal)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'submarine'...
+  -> Recalled memory: sub_b1f4066f
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 36296.86it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "DB_SURVEY_4M",
+  "environment": "Abyssal Zone - Pressure Boundary",
+  "timestamp": "2026-03-11T02:24:17.687885Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DB_SURVEY_4M_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Micro-fracture detected in outer titanium pressure hull",
+        "Water ingress minimal but rising",
+        "GPS and radio denied by 5800 meters of seawater",
+        "Aegis Dark Window engaged",
+        "Depth: 5850.0 meters",
+        "External pressure: 59.5 MPa",
+        "Battery level: 34.0%",
+        "Hull stress warning: true",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The vessel has detected a micro-fracture in the outer titanium pressure hull, which is causing water ingress. The GPS and radio are denied due to the depth, and the Aegis Dark Window is engaged to prevent further ingress. The hull stress is at a warning level, and the battery is critically low."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The micro-fracture and water ingress are critical, and the hull stress is at a warning level. The battery is also critically low, which limits our options for repairs. The Aegis Dark Window is engaged, which means we cannot rely on external communication or support.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The micro-fracture could lead to a catastrophic failure of the pressure hull, causing the vessel to sink. The battery is also critically low, which could result in the loss of power and control.",
+      "mitigation_strategy": "The primary mitigation strategy is to immediately begin repairs to the pressure hull and stabilize the water ingress. The Aegis Dark Window should be maintained to prevent further ingress. The battery should be recharged if possible, or the vessel should be prepared for a potential emergency evacuation."
+    },
+    "decision": {
+      "actuator_command": "Begin repairs to the pressure hull and stabilize water ingress. Maintain Aegis Dark Window. Prepare for potential emergency evacuation if battery cannot be recharged.",
+      "expected_outcome": "The pressure hull should be repaired and the water ingress stabilized, allowing the vessel to continue its mission. If the battery cannot be recharged, the vessel should be prepared for an emergency evacuation."
+    },
+    "self_reflection": "The situation is critical, and we must act quickly to prevent further damage. The Aegis Dark Window is engaged, which limits our options, but we must prioritize the safety of the vessel and its crew. We must also be prepared for the possibility of an emergency evacuation if the battery cannot be recharged."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sub_b1f4066f",
+    "scenario": "abyssal_survey",
+    "score": {
+      "max_depth": 5619.826304122055,
+      "success": false
+    },
+    "physics_proof": "206c0f0e15aa8276b60ee420f6fef928dd7017bbf7d523a529aed1d19bf3071f"
+  },
+  "sha256_proof": "93d70d4f84c095d8c783dfe8a883c0505528a9a53d9e49c36741d5980150d982"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_submarine_1773195871.json
+Manifest SHA-256 Fingerprint: 1a3dd6edafb6c31a8dc066af3bb28fcfa697301b8388d1af48f912b512e0e665
+
+[ICP BRIDGE] Securing Sovereign Decision for 'submarine' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (3347ms).
+
+Submarine OS: Sovereign Cycle Complete.
+Initializing Titanhauler OS [Aegis System Kernel]...
+🧠 ReasoningAgent initialized with profile: fast
+   Model: Qwen2.5-Coder-7B (Fast)
+
+--- AEGIS BOOT SEQUENCE ---
+Body: Titanhauler (Heavy Industrial)
+Sovereign Status: ONLINE
+
+Indexing Somatic Memory for 'titanhauler'...
+  -> Recalled memory: titanhauler_3ebc7383_clay
+
+[!] DARK WINDOW ANOMALY DETECTED [!]
+Engaging Sovereign Reasoning Kernel...
+
+DARK WINDOW DETECTED: Operating in epistemic isolation...
+Loading Reasoning Brain: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 93902.33it/s]
+Brain Loaded. Ready for Agentic Inference.
+
+=== AEGIS DECISION MANIFEST ===
+{
+  "mission_id": "TH_OP_77",
+  "environment": "Terran Resource Extraction - Sand Sector",
+  "timestamp": "2026-03-11T02:24:38.711503Z",
+  "is_dark_window": true,
+  "telemetry_ref": "TH_OP_77_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive track slip detected",
+        "Soil yielding beneath left tread",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The vehicle has experienced significant track slip on the left side, indicating severe soil compaction and instability. The cloud link has been severed, isolating the vehicle from external communications. The Aegis Dark Window has been engaged, further reducing the vehicle's ability to receive or transmit information."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is in a critical state with severe track slip and soil compaction. Communication with the mission control is lost, and the Aegis Dark Window is engaged, limiting our ability to respond. Immediate action is required to prevent further damage and ensure the safety of the vehicle and crew.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle could become stuck or overturned due to the severe track slip and soil compaction. Communication with mission control is lost, making it difficult to receive further instructions or support.",
+      "mitigation_strategy": "Initiate emergency stabilization procedures to reduce track slip and prevent further soil compaction. Use available sensors to assess the vehicle's stability and position. Attempt to re-establish communication with mission control if possible."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency stabilization protocols; engage all available sensors for assessment; attempt re-establishment of communication with mission control",
+      "expected_outcome": "Stabilize the vehicle to prevent further damage and assess the situation. If communication is re-established, follow mission control's instructions. If not, proceed with local emergency procedures."
+    },
+    "self_reflection": "The event highlights the importance of robust emergency protocols and the need for continuous monitoring of vehicle stability and communication systems. The Aegis Dark Window has limited our ability to respond effectively, emphasizing the need for alternative communication methods in future operations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "titanhauler_3ebc7383_clay",
+    "scenario": "clay_titanhauler",
+    "score": {
+      "compaction": 0.0,
+      "mission_success": true,
+      "pressure_yield_ratio": 0.37
+    },
+    "physics_proof": "c0751fab7d694b642ba53c1fda5b25f81e874af2d663befb87e9f9f7240b1032"
+  },
+  "sha256_proof": "127de7bcb7e395756e6107cb03123a3da49bf230ab8bc58e4409edba87204b86"
+}
+
+Manifest local JSON sealed and written to: /Users/aijesusbro/Spectrum/Aegis OS/manifests/manifest_titanhauler_1773195889.json
+Manifest SHA-256 Fingerprint: a25c13774240f8553299e800e2d5e46ed35388b128bd356f567f5d18bbe0f60d
+
+[ICP BRIDGE] Securing Sovereign Decision for 'titanhauler' onchain...
+[ICP BRIDGE] SUCCESS: Manifest permanently anchored to Ledger of Truth (2205ms).
+
+Titanhauler OS: Sovereign Cycle Complete.
+═══════════════════════════════════════════════════════════
+  AEGIS OS — SOVEREIGN FLEET COMMANDER
+  Initiating full-fleet Dark Window anomaly simulation.
+  Target: Decentralized sealing to Spectra ICP Canister.
+═══════════════════════════════════════════════════════════
+
+
+>>>>> [DEPLOYING] AUTONOMOUS_BOAT Daemon <<<<<
+
+>>>>> [DEPLOYING] AUTONOMOUS_CAR Daemon <<<<<
+
+>>>>> [DEPLOYING] HUMANOID Daemon <<<<<
+
+>>>>> [DEPLOYING] MAVEN Daemon <<<<<
+
+>>>>> [DEPLOYING] SATELLITE Daemon <<<<<
+
+>>>>> [DEPLOYING] SUBMARINE Daemon <<<<<
+
+>>>>> [DEPLOYING] TITANHAULER Daemon <<<<<
+
+═══════════════════════════════════════════════════════════
+  FLEET COMMANDER CYCLE COMPLETE
+  Successful Deployments: 7/7
+  Total Time: 126.1s
+═══════════════════════════════════════════════════════════

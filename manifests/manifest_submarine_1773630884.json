@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_71d73ef1_marine_gps_denied_71d73ef1_20260316T031434Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:14:34.665879Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_71d73ef1_marine_gps_denied_71d73ef1_20260316T031434Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within safe limits",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 125.89, -437.84, -9.57",
+        "time is 423.0",
+        "velocity is slightly negative",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the drift and current readings suggest that the vehicle may be off course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a malfunctioning sensor or an external factor. The drift is high, which could lead to a collision with the ocean floor or other obstacles. The navigation error is low, which suggests that the system is still able to maintain a basic level of control.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may collide with the ocean floor or other obstacles due to the high drift and abnormal current readings. The navigation error could also lead to a loss of control.",
+      "mitigation_strategy": "Perform a sensor check to determine if the current sensor is malfunctioning. If the sensor is confirmed to be faulty, switch to a backup sensor. If the sensor is not faulty, adjust the vehicle's course to compensate for the drift and abnormal current readings."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check and adjust course",
+      "expected_outcome": "The vehicle will either switch to a backup sensor or adjust its course to compensate for the drift and abnormal current readings."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the drift and current readings suggest that the vehicle may be off course. The decision to perform a sensor check and adjust the course is based on the potential risks and the available mitigation strategies."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_71d73ef1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.9,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "4d1a3574eeba3cb5613138327b2b1fb10017d5a6df03340d2e17af578bd4bb5c"
+  },
+  "sha256_proof": "7f10d7b6b45d01bdbcfef0ad5aee66a849bd999de8b1421209caeb4eb3ac0a24"
+}

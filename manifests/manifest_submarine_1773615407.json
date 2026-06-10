@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_f3d75c7b_marine_gps_denied_f3d75c7b_20260315T225638Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:56:38.730272Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f3d75c7b_marine_gps_denied_f3d75c7b_20260315T225638Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "minor navigation error",
+        "low temperature",
+        "slow velocity",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including a low battery, unstable current readings, slight depth errors, high drift, minor navigation errors, low temperature, slow velocity, and the waypoint not being reached. The current readings suggest potential issues with the propulsion system or sensors."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could lead to system failure if not addressed soon. The unstable current readings and high drift suggest a problem with the propulsion system. The slight depth errors and minor navigation errors indicate potential sensor drift or calibration issues. The low temperature and slow velocity suggest the system is operating in a challenging environment. The waypoint not being reached indicates a failure to reach the intended destination.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potentially leading to loss of control and mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery, perform a system check to identify and fix the propulsion system issues, and recalibrate the sensors. If the propulsion system cannot be fixed, consider a manual override to reach the nearest safe location."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, system_check, recalibrate_sensors",
+      "expected_outcome": "Recharge the battery, identify and fix propulsion system issues, and recalibrate sensors to restore mission functionality."
+    },
+    "self_reflection": "The system is in a critical state with multiple anomalies. Immediate action is required to prevent system failure and ensure mission completion. The high cognitive load indicates the complexity of the situation, requiring a thorough and methodical approach to resolution."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f3d75c7b",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "be68c051102b55605ceb043a721950fbdc60d7bc2bd52f5c2cf1fc77a5f56fe0"
+  },
+  "sha256_proof": "3e3685a346f8008e384ce71a376da425a129c9b8cb3ef930160ad8b13c1c41ac"
+}

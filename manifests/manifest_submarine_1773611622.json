@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_686c4100_marine_gps_denied_686c4100_20260315T215332Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:53:32.455929Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_686c4100_marine_gps_denied_686c4100_20260315T215332Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 501.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is moving in a predictable manner. The shallow depth and moderate drift indicate the vehicle is operating in a controlled environment. The low navigation error and slow velocity suggest the system is maintaining its course accurately. The waypoint is at 0, which could indicate the start of a new mission or a reset point."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected with minor deviations. The battery is healthy, and the current readings are within normal limits. The shallow depth and moderate drift suggest the system is operating in a controlled environment. The low navigation error and slow velocity suggest the system is maintaining its course accurately. The waypoint is at 0, which could indicate the start of a new mission or a reset point.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing within normal parameters and is unlikely to fail. The minor deviations are within expected tolerances.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary. If the deviations persist, investigate further."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to operate as expected, maintaining its course and depth."
+    },
+    "self_reflection": "The system is performing as expected with minor deviations. The battery is healthy, and the current readings are within normal limits. The shallow depth and moderate drift suggest the system is operating in a controlled environment. The low navigation error and slow velocity suggest the system is maintaining its course accurately. The waypoint is at 0, which could indicate the start of a new mission or a reset point."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_686c4100",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "745511db11aa367c98c05ab4263c842fe3def991fcd067b2b8165b0ab2924863"
+  },
+  "sha256_proof": "6910cffbed15c2ca1c2fd4aeec59e1e1e3e7b56975472bb309c60ea725c453e1"
+}

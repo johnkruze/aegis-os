@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_f3da69d9_marine_gps_denied_f3da69d9_20260314T235111Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:51:11.063148Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f3da69d9_marine_gps_denied_f3da69d9_20260314T235111Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is negative",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift. The depth is shallow, which could be a concern for navigation. The navigation error is low, but the drift suggests the system might be losing its position over time. The velocity is negative, which could indicate a problem with the propulsion system. The waypoint is at the start, which is normal for the beginning of a mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to a sensor malfunction or environmental factors. The slight drift suggests the system might be losing its position over time. The velocity is negative, which could indicate a problem with the propulsion system. The waypoint is at the start, which is normal for the beginning of a mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system might lose its position over time due to drift and inconsistent current readings, which could lead to mission failure.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the sensors. Check the propulsion system for any issues. Monitor the system closely for any further anomalies."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will reset and recalibrate the sensors, and the propulsion system will be checked for any issues. The system will then be monitored closely for any further anomalies."
+    },
+    "self_reflection": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift. The depth is shallow, which could be a concern for navigation. The navigation error is low, but the drift suggests the system might be losing its position over time. The velocity is negative, which could indicate a problem with the propulsion system. The waypoint is at the start, which is normal for the beginning of a mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f3da69d9",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.14,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "e7cba525b65ef0879a4e6af99a964c7a4223f0d13b54844ebc521eccef480d21"
+  },
+  "sha256_proof": "aab95de3e23818558621137a515efbc41d1c80c376763291d492e08cd7d9fe25"
+}

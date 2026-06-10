@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b218f6c0_marine_gps_denied_b218f6c0_20260315T195024Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:50:24.438564Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b218f6c0_marine_gps_denied_b218f6c0_20260315T195024Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is high",
+        "velocity is slightly off",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, but there is a significant drift and velocity discrepancy that could indicate a navigation issue. The battery level is high, which is good, but the current readings suggest a potential issue with the propulsion system. The depth is shallow, which is expected for marine operations, but the drift and velocity suggest the vessel is not following the intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The drift and velocity discrepancies could be due to a malfunctioning thruster or a navigation error. The battery level is high, so immediate power issues are unlikely. The depth is shallow, which is expected, but the drift suggests a need to correct the course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may deviate from its intended course, leading to potential collision with obstacles or failure to reach the next waypoint.",
+      "mitigation_strategy": "Perform a navigation recalibration and check the thruster status. If the issue persists, initiate a manual override to correct the course."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_navigation",
+      "expected_outcome": "The vessel's course should be corrected, and it should be able to follow the intended path."
+    },
+    "self_reflection": "The system is performing within expected parameters, but the drift and velocity discrepancies suggest a need for immediate attention. The recalibration should help correct the course and prevent potential navigation issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b218f6c0",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "c01c0908a04bd07b484c0cdec7b8826cf41067b90ecd5b840f357dcccf66c134"
+  },
+  "sha256_proof": "d2b12f4548c8f3249c5405a7d68cb61e6aad5058608cd4ce07e42b868bad0c96"
+}

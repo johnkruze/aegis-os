@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_4ff25816_marine_gps_denied_4ff25816_20260316T011327Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:13:27.467765Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4ff25816_marine_gps_denied_4ff25816_20260316T011327Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings, slight depth error, high drift, and low navigation error. The current readings suggest a potential issue with the propulsion system, while the slight depth error and high drift indicate a need for course correction. The system is currently at waypoint 0, which may be a starting point or a known reference point."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is concerning and may impact system performance. The unusual current readings suggest a potential issue with the propulsion system. The slight depth error and high drift indicate a need for course correction. The system is currently at waypoint 0, which may be a starting point or a known reference point.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The low battery level may cause the system to shut down unexpectedly, leading to mission failure. The unusual current readings suggest a potential issue with the propulsion system, which could cause the vehicle to drift off course. The slight depth error and high drift indicate a need for course correction, which could lead to mission failure if not addressed.",
+      "mitigation_strategy": "Increase battery power, investigate the unusual current readings, and correct the course to maintain the desired depth and drift. Monitor the system closely and perform regular checks to ensure the system remains stable and functional."
+    },
+    "decision": {
+      "actuator_command": "Increase battery power, investigate current readings, correct course",
+      "expected_outcome": "The system's performance will be improved, and the mission will be more likely to succeed."
+    },
+    "self_reflection": "The system is experiencing multiple anomalies that could impact mission success. The low battery level and unusual current readings suggest potential issues with the propulsion system. The slight depth error and high drift indicate a need for course correction. The system is currently at waypoint 0, which may be a starting point or a known reference point. The decision to increase battery power, investigate current readings, and correct the course is based on the potential impact of these anomalies on mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4ff25816",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "1cd7a562ab14ba660368531b80f361fe1620264c53bac7629e2bc32dbb283b94"
+  },
+  "sha256_proof": "dde145e1bd802dbd57015873e13438d3ec8e0e904f7a011a5be72a2865866b22"
+}

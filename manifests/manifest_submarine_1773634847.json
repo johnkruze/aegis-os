@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_24295194_marine_gps_denied_24295194_20260316T042039Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:20:39.838707Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_24295194_marine_gps_denied_24295194_20260316T042039Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within safe range",
+        "drift within acceptable limits",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a slight battery drain and some minor current anomalies. The depth and drift are within acceptable limits, and the navigation error is minimal. The mission is at waypoint 0, which suggests the start of the mission or a potential issue with waypoint progression."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is sufficient for the current mission duration.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Current anomalies could be due to minor sensor drift or environmental factors.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Waypoint 0 indicates the start of the mission or a potential issue with waypoint progression.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission could potentially stall or drift off course if the current anomalies persist.",
+      "mitigation_strategy": "Monitor battery level and current anomalies closely. If the anomalies persist, initiate a manual course correction or waypoint reprogramming."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and monitor system parameters."
+    },
+    "self_reflection": "The system is performing as expected, with only minor anomalies that are within acceptable limits. The mission should continue with close monitoring of battery and current parameters."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_24295194",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "1b932e88032f6d0994a37388b9f2e7c175d0de0bedc6737b039b3545e24981e8"
+  },
+  "sha256_proof": "677edb535702518bec04f1da72ecea667c16f5aaee07a27fe721b216e8ae5bac"
+}

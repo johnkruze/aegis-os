@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f0ff292f_marine_gps_denied_f0ff292f_20260315T150804Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:08:04.118160Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f0ff292f_marine_gps_denied_f0ff292f_20260315T150804Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a sudden change in depth or a collision with an object. Immediate action is required to ensure the vessel's safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could collide with an object or be unable to maintain its course due to the surge.",
+      "mitigation_strategy": "Activate emergency braking and perform a 360-degree scan to identify the source of the surge. If the surge is due to a collision hazard, initiate evasive maneuvers."
+    },
+    "decision": {
+      "actuator_command": "BRAKE; SCAN_360",
+      "expected_outcome": "The vessel will decelerate and perform a 360-degree scan to identify the source of the surge, ensuring the vessel's safety."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to prevent potential collisions or loss of control. The decision to activate emergency braking and perform a scan is based on the high risk level and the potential failure modes identified."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f0ff292f",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "90ffb8940da104f4550d2c9c7f9e4a1f4d10dc3168c630d26e0d5325f0715fcb"
+  },
+  "sha256_proof": "47ea6435961c82e06c940f6db7b4cf09a2a9f10e946783b147c4bb56ad3ea83a"
+}

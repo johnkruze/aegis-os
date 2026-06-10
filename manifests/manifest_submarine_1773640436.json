@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_129a7f0a_marine_gps_denied_129a7f0a_20260316T055350Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:53:50.290986Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_129a7f0a_marine_gps_denied_129a7f0a_20260316T055350Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 444.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift and a slight negative velocity, which could indicate a potential issue with the navigation system or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The drift and negative velocity suggest a potential navigation error or environmental challenge.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to drift and lose position over time.",
+      "mitigation_strategy": "Increase navigation corrections and monitor drift more closely."
+    },
+    "decision": {
+      "actuator_command": "increase navigation corrections",
+      "expected_outcome": "Reduce drift and maintain position more accurately."
+    },
+    "self_reflection": "The system is performing well, but the drift and negative velocity indicate a need for closer monitoring and potential adjustments to the navigation system."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_129a7f0a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "1993b8c653367453d1dc86d24a7f2e120c6e54a3f8d5b79aead1a23828aa4fa6"
+  },
+  "sha256_proof": "814b9222fe683d6e0aa00249bb7b0beba621175e93d779da90c093bccb14d709"
+}

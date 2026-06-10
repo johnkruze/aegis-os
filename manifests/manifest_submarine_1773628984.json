@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_8c8d8f07_marine_gps_denied_8c8d8f07_20260316T024257Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:42:57.730398Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8c8d8f07_marine_gps_denied_8c8d8f07_20260316T024257Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be a temporary phenomenon, but it requires immediate attention to prevent potential damage to the vessel or crew safety.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to increased fuel consumption, potential engine strain, or even a loss of control if not managed properly.",
+      "mitigation_strategy": "Monitor the surge closely, adjust the propulsion settings if necessary, and prepare for potential emergency maneuvers."
+    },
+    "decision": {
+      "actuator_command": "Increase engine power to counteract the surge and stabilize the vessel.",
+      "expected_outcome": "Stabilization of the vessel and reduction of the surge."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and stability of the vessel. The decision to increase engine power is based on the need to counteract the surge and stabilize the vessel. The mission assurance check highlights the potential risks and the necessary mitigation strategies to prevent further complications."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8c8d8f07",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "2998f40a09d92c869ac00e04a922e0b6bde8fcc465f118d77b5880beb5bb39b1"
+  },
+  "sha256_proof": "f455e6b026d653dd9bc46dc0c5830a4106ad36ce925ccb1e89ff35105cd08ed1"
+}

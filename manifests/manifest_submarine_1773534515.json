@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f66aa8b1_marine_gps_denied_f66aa8b1_20260315T002826Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:28:26.486882Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f66aa8b1_marine_gps_denied_f66aa8b1_20260315T002826Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current battery level is 0.911, which is sufficient for a short period but may not be enough to complete the mission. The depth is 1.1 meters, and the drift is 36.35 meters, which suggests the vessel is not on course. The navigation error is 0.02, indicating a minor deviation from the intended path."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent the vessel from drifting out of control. The current battery level is sufficient for a short period, but we need to prioritize the repair of the thruster to ensure the mission can be completed.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thruster failure is not resolved, the vessel may drift out of control and potentially collide with other vessels or structures. The mission may be incomplete, and the vessel may be stranded in an unknown location.",
+      "mitigation_strategy": "The primary mitigation strategy is to repair the thruster as soon as possible. If the repair is not feasible, we may need to abort the mission and return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "REPAIR_THRUSTER",
+      "expected_outcome": "The thruster should be repaired, allowing the vessel to regain control and complete the mission."
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate attention. The current battery level is sufficient for a short period, but we must prioritize the repair of the thruster to ensure the mission can be completed. If the repair is not feasible, we may need to abort the mission and return to a safe location."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f66aa8b1",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 8.9,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "838b8054fb98f682cac87506012a76ab60ced861f9e4a51dbcc678747bcc16ae"
+  },
+  "sha256_proof": "354ffb4a5a917cc8ca6af66db27d53793d6894f1dbced53183b85f5bb6aa0b4a"
+}

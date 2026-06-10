@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_3bdad12f_marine_gps_denied_3bdad12f_20260315T122854Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:28:54.268072Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3bdad12f_marine_gps_denied_3bdad12f_20260315T122854Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation issue. The battery level is high, indicating sufficient power. The depth is shallow, which is expected in marine environments. The navigation error is low, but the drift is concerning. The temperature is normal, and the velocity is low, which is expected at the start of a mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and high drift suggest a navigation issue that could lead to mission failure if not addressed. The battery level is high, so power is not a concern. The depth is shallow, which is expected. The navigation error is low, but the drift is concerning. The temperature is normal, and the velocity is low, which is expected at the start of a mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail due to the high drift, which could cause the vehicle to drift away from the intended path and potentially collide with obstacles or the ocean floor.",
+      "mitigation_strategy": "Implement a navigation correction algorithm to adjust the vehicle's course and reduce drift. Monitor the current readings and adjust the vehicle's speed and direction as necessary."
+    },
+    "decision": {
+      "actuator_command": "execute navigation correction algorithm",
+      "expected_outcome": "The vehicle's course will be corrected, and drift will be reduced, allowing the mission to continue."
+    },
+    "self_reflection": "The system detected an anomaly in the current readings and drift, which could potentially lead to mission failure. The decision was made to implement a navigation correction algorithm to mitigate the risk and ensure the mission continues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3bdad12f",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.3,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "d70b20e493396a188000f795c016eedbe9720f44d2daae2bf2f5555b03ec6f16"
+  },
+  "sha256_proof": "f8da5a837862a775578adbd919adaa503980f2b45364d9a78e862d56d5e8822b"
+}

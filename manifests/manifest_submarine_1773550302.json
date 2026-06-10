@@ -1,0 +1,57 @@
+{
+  "mission_id": "marine_gps_denied_284e09cd_marine_gps_denied_284e09cd_20260315T045134Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:51:34.790879Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_284e09cd_marine_gps_denied_284e09cd_20260315T045134Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is within safe limits",
+        "drift is significant",
+        "navigation error is minimal",
+        "waypoint is 1"
+      ],
+      "interpretation": "The battery is low, indicating that the system may shut down soon. The current readings suggest that the vehicle is drifting, which could lead to navigation issues. The depth is within safe limits, and the navigation error is minimal, suggesting that the system is still performing well. The current waypoint is 1, which is the starting point."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critical and needs to be recharged soon to avoid mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The drift needs to be corrected to maintain the correct course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may shut down due to low battery, leading to mission failure.",
+      "mitigation_strategy": "Recharge the battery as soon as possible and correct the drift to maintain navigation."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, correct_drift",
+      "expected_outcome": "The battery will be recharged, and the drift will be corrected, allowing the mission to continue."
+    },
+    "self_reflection": "The system is facing critical battery levels and drift issues, which could lead to mission failure if not addressed promptly. The internal deliberation focused on recharging the battery and correcting the drift to ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_284e09cd",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 9.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 1,
+      "waypoints_total": 7
+    },
+    "physics_proof": "ea45812c5f4d9f3f405ee2a7f01cac75dd0685c4818d7182c1877e69a06c478a"
+  },
+  "sha256_proof": "eb8bb27377954855a9e748e5e86f6b67d5dd4a3288d7b8cfb59acfa0aff1c17f"
+}

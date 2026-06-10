@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f3320e07_marine_gps_denied_f3320e07_20260316T054729Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:47:29.189350Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f3320e07_marine_gps_denied_f3320e07_20260316T054729Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 167 meters in the x-direction and 148 meters in the y-direction",
+        "time is 407.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings, which could indicate a problem with the GPS or the sensors. The shallow depth and high drift suggest that the vehicle is not accurately following the intended path. The low navigation error and slow velocity suggest that the system is not in a critical state, but the drift and inconsistent current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings could be due to GPS denial or sensor failure. The high drift suggests that the vehicle is not following the intended path. The shallow depth could be a result of the vehicle being too close to the ocean floor. The low navigation error and slow velocity suggest that the system is not in a critical state, but the drift and inconsistent current readings are concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may continue to drift and not follow the intended path, potentially leading to a collision with the ocean floor or other obstacles.",
+      "mitigation_strategy": "Verify the GPS and sensor readings, recalibrate the system, and adjust the course to follow the intended path."
+    },
+    "decision": {
+      "actuator_command": "Verify GPS and sensor readings, recalibrate system, adjust course",
+      "expected_outcome": "The system will be verified and recalibrated, and the course will be adjusted to follow the intended path."
+    },
+    "self_reflection": "The system is experiencing some anomalies, but the risk level is manageable. The drift and inconsistent current readings are concerning, but the low navigation error and slow velocity suggest that the system is not in a critical state. The decision to verify the GPS and sensor readings, recalibrate the system, and adjust the course is based on the internal deliberation and mission assurance check."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f3320e07",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "6163c55a75ccc7d21a56cc405ecf1d51635269a5b732f769b6642f0650683e6f"
+  },
+  "sha256_proof": "48be6625f46b6f76df88facd74976a08b76c4ff4a2c6327f9fe48e3376fe70a2"
+}

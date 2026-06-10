@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_040e581f_marine_gps_denied_040e581f_20260315T031007Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:10:07.155923Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_040e581f_marine_gps_denied_040e581f_20260315T031007Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "negative current readings",
+        "depth of 2.1 meters",
+        "drift of 12.41 units",
+        "small navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery levels and negative current readings, which could indicate a malfunction or a need for maintenance. The depth and drift are within expected parameters, and the navigation error is minimal. The system is currently at waypoint 0."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery and negative current readings suggest a potential system failure if not addressed soon. The current is negative, which could be due to a short circuit or a battery issue. The navigation error is small, so the system is still on course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may fail if the battery is not charged soon, leading to a loss of control and potentially causing damage to the equipment.",
+      "mitigation_strategy": "Charge the battery immediately and perform a system check to identify the cause of the negative current readings."
+    },
+    "decision": {
+      "actuator_command": "charge_battery",
+      "expected_outcome": "The battery will be charged, and the system will be able to continue operation."
+    },
+    "self_reflection": "The system is experiencing critical issues that could lead to failure if not addressed promptly. Immediate action is required to prevent potential damage and ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_040e581f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 3.7,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "f468c472ef6f7a19cdff4ba786235c66781830d9163f00a88353883eaa9e32c7"
+  },
+  "sha256_proof": "990a8d32be163d201468e9682e8190ea4095eb561ac60f03bf09e4f361e2c7d3"
+}

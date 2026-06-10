@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c2d92ec8_marine_gps_denied_c2d92ec8_20260316T010744Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:07:44.828656Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c2d92ec8_marine_gps_denied_c2d92ec8_20260316T010744Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 497.0",
+        "velocity is slightly positive",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery level is high, indicating sufficient power. The current readings are slightly negative, which could be due to the direction of the current or a minor anomaly. The depth is shallow, which is expected in marine environments. The velocity is slightly positive, indicating movement in the intended direction. The waypoint is at 0, suggesting the mission has not yet begun or is at the start."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is within normal operational parameters. The slight drift and navigation error are within acceptable limits. The battery level is sufficient. The current readings are slightly negative, which could be a minor anomaly. The depth is shallow, which is expected. The velocity is slightly positive, indicating movement in the intended direction. The waypoint is at 0, suggesting the mission has not yet begun or is at the start.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is within normal parameters and should continue to operate without issues. The slight drift and navigation error are within acceptable limits.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary. Ensure that the mission parameters are correctly set and that the system is properly calibrated."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate within normal parameters and the mission will progress as intended."
+    },
+    "self_reflection": "The system is performing as expected. The slight drift and navigation error are within acceptable limits. The battery level is sufficient. The current readings are slightly negative, which could be a minor anomaly. The depth is shallow, which is expected. The velocity is slightly positive, indicating movement in the intended direction. The waypoint is at 0, suggesting the mission has not yet begun or is at the start."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c2d92ec8",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "4eaa7ef19db38a419199a50780fb2e2eb37d74808bef4de63eb11fd8d6d55216"
+  },
+  "sha256_proof": "87e147f4f583a021f53c72aaecfef45358bf7683ae79582d8b0bdc3225fb084d"
+}

@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_d3e8c820_marine_gps_denied_d3e8c820_20260315T212548Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:25:48.315615Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d3e8c820_marine_gps_denied_d3e8c820_20260315T212548Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in the current readings and a slight drift from the intended path. The depth is shallow, which could be a concern in marine environments. The navigation error is low, indicating the system is generally accurate. The temperature is normal, and the velocity is slow, suggesting the system is moving at a controlled pace. The waypoint is at the start, which is expected at the beginning of a mission."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the sensors or the environment.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The slight drift could be due to wind or currents, but it should be monitored closely.",
+        "confidence": 0.5,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth is within expected parameters for the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistent current readings could lead to a deviation from the planned path, potentially causing the mission to fail.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the course if necessary. Perform a system check to ensure the sensors are functioning correctly."
+    },
+    "decision": {
+      "actuator_command": "Monitor current readings and adjust course if necessary. Perform a system check.",
+      "expected_outcome": "The mission will continue with adjustments made to ensure the course is correct and the system is functioning properly."
+    },
+    "self_reflection": "The system is performing well, but the inconsistent current readings require close monitoring. A system check is recommended to ensure all components are functioning correctly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d3e8c820",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "ea6f220a10da5a0120d1c7e1da3f47659deda94207b84216248a6b064d2b53dd"
+  },
+  "sha256_proof": "243e2ca06df6b215ad268bb48946b2329c819562eb47a2260aac8a1dba05bf82"
+}

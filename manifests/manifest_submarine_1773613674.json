@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_62d0e1f0_marine_gps_denied_62d0e1f0_20260315T222746Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:27:46.367092Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_62d0e1f0_marine_gps_denied_62d0e1f0_20260315T222746Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with minor deviations in current readings and position. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its course and depth. However, the slight drift and negative velocity suggest that the system may be experiencing minor issues that could impact its performance over time."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current readings and position are within acceptable limits. The system is maintaining its course and depth, which is the primary concern. The slight drift and negative velocity could be due to minor environmental factors or system drift. No immediate action is required.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations are likely due to minor environmental factors or system drift. The system is expected to continue functioning within normal parameters.",
+      "mitigation_strategy": "Monitor the system for any further deviations. If the deviations persist, investigate the cause and take appropriate action."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to maintain its course and depth, with minor adjustments to account for any further drift or velocity changes."
+    },
+    "self_reflection": "The system is performing within expected parameters, with minor deviations that are likely due to minor environmental factors or system drift. No immediate action is required, and the system is expected to continue functioning as intended."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_62d0e1f0",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "65157ad12456bb74f785e79cb93e017a9cfd1d876038eb11b2ee85a7c1ece829"
+  },
+  "sha256_proof": "df232518eaf940d546a7729461c116609d6d743a73990f0f3e0860efc681b340"
+}

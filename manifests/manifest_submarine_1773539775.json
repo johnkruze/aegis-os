@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_4d17c2f2_marine_gps_denied_4d17c2f2_20260315T015609Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:56:09.770687Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4d17c2f2_marine_gps_denied_4d17c2f2_20260315T015609Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vehicle."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could result in mission failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control and drift away from the intended path, potentially leading to a collision with the ocean floor or other hazards.",
+      "mitigation_strategy": "Initiate emergency braking and activate the emergency steering system to regain control of the vehicle."
+    },
+    "decision": {
+      "actuator_command": "brake_full, steer_emergency",
+      "expected_outcome": "The vehicle should slow down and attempt to regain control of its path."
+    },
+    "self_reflection": "The anomaly detected is a critical failure in the navigation system. Immediate action is required to prevent further damage and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4d17c2f2",
+    "scenario": "gps_denied_submarine_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.27,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "d67bb793f9075c8d6603450d11d4bb11e19f5a98f7e7ef1c64fd502b2dd3d7e5"
+  },
+  "sha256_proof": "c70ae5abd5d309e2b31b7ae3006f389b0e31a04dd22d88b82e8910b50b551916"
+}

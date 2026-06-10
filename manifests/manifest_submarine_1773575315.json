@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_78027ef6_marine_gps_denied_78027ef6_20260315T114825Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:48:25.186358Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_78027ef6_marine_gps_denied_78027ef6_20260315T114825Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "pressure is normal",
+        "temperature is high",
+        "velocity is low",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low velocity suggest the vehicle is in a calm area. The high temperature and normal pressure indicate stable environmental conditions. The low navigation error suggests the system is accurately tracking its position."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to wind or current affecting the vehicle's movement.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The inconsistent current readings could indicate a change in the water flow or a malfunction in the current sensors.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and low velocity suggest the vehicle is in a safe and stable location.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The high drift could cause the vehicle to move away from its intended path, but the shallow depth and low velocity suggest this is unlikely to cause significant damage.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the vehicle's course if necessary. If the drift persists, consider using the thrusters to correct the course."
+    },
+    "decision": {
+      "actuator_command": "monitor current readings and adjust course if necessary",
+      "expected_outcome": "The vehicle will continue to monitor the current readings and adjust its course if the drift persists."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low velocity suggest the vehicle is in a calm area. The high temperature and normal pressure indicate stable environmental conditions. The low navigation error suggests the system is accurately tracking its position."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_78027ef6",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "8b7c68d91f71f5dcb03c05a39560547d2c5e2d58d5bd31a09b85be43288449f4"
+  },
+  "sha256_proof": "e1f9d74b61c0465b605c81cc184447207bd82ae71db65f29dfe844a18129a1d3"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f3cab876_marine_gps_denied_f3cab876_20260315T214534Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:45:34.049088Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f3cab876_marine_gps_denied_f3cab876_20260315T214534Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and normal temperature indicate that the system is otherwise performing well."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are concerning, but the system is otherwise stable. We should investigate the current readings further to determine the cause.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly in current readings could lead to a navigation error or a collision with the environment.",
+      "mitigation_strategy": "Perform a detailed diagnostic of the current readings and adjust the navigation parameters if necessary."
+    },
+    "decision": {
+      "actuator_command": "perform diagnostic on current readings",
+      "expected_outcome": "The diagnostic will help us understand the cause of the anomaly and allow us to take appropriate action."
+    },
+    "self_reflection": "The system is performing well overall, but the anomaly in current readings requires attention to ensure safe and accurate navigation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f3cab876",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "704a764bb2daed80fc251a3249487c5643a1f87c39e5fe3a94700bc51066f991"
+  },
+  "sha256_proof": "73050698f7dcc8edadbb71317a2b41cb23bb2e46c95e3df218de7094cfb9f4d2"
+}

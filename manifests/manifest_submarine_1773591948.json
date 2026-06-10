@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_b37f76d9_marine_gps_denied_b37f76d9_20260315T162539Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:25:39.677010Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b37f76d9_marine_gps_denied_b37f76d9_20260315T162539Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is negative",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery and low navigation error, but there are inconsistencies in the current readings and a significant drift. The depth is shallow, which could be a concern in marine environments. The velocity is negative, indicating a potential issue with the direction or speed of the vehicle."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the vehicle's orientation or propulsion system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and high drift could lead to collision with underwater obstacles.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The negative velocity indicates a need to correct the direction or speed.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may collide with underwater obstacles or become disoriented.",
+      "mitigation_strategy": "Correct the orientation and speed to maintain course and avoid collision."
+    },
+    "decision": {
+      "actuator_command": "correct orientation and increase speed",
+      "expected_outcome": "The vehicle will correct its orientation and speed, reducing the risk of collision and maintaining course."
+    },
+    "self_reflection": "The system is performing well in terms of battery and navigation error, but the inconsistencies in current readings and high drift require immediate attention to ensure safe operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b37f76d9",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "7a2e1b26997460aeac698334ae4bbcda1994579c675078631608c4097fdd5760"
+  },
+  "sha256_proof": "6c85d5b7ef385110a8966e5497e9509b7e27c986217e9078da7e2682952b995d"
+}

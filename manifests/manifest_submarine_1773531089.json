@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_eea20057_marine_gps_denied_eea20057_20260314T233121Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:31:21.741287Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_eea20057_marine_gps_denied_eea20057_20260314T233121Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the vehicle is moving at a slow speed. The depth is shallow, and the drift is minimal, indicating the vehicle is likely stationary or moving very slowly."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is concerning, but the vehicle appears to be stationary or moving very slowly. The battery level is high, so immediate power loss is unlikely. The current readings suggest the vehicle is not under significant stress.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could potentially cause damage to the vehicle's systems if left unchecked. The vehicle's slow movement and high battery level suggest it may be able to continue operating for a short period.",
+      "mitigation_strategy": "Monitor the leak closely and assess if the vehicle can continue to operate safely. If the leak persists or worsens, initiate a manual shutdown and await rescue."
+    },
+    "decision": {
+      "actuator_command": "CONTINUE",
+      "expected_outcome": "The vehicle will continue to operate and monitor the leak. If the leak worsens, a manual shutdown will be initiated."
+    },
+    "self_reflection": "The leak detection is a significant anomaly, but the vehicle's current state suggests it may be able to continue operating for a short period. The team should closely monitor the situation and be prepared to initiate a manual shutdown if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_eea20057",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": true,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "85fa56ab0d68b55a7ef7c46b81c031b8c0ccd4fbc0f21ccbbf9f2986ed7c880f"
+  },
+  "sha256_proof": "c7805410b6301c529905b7d63a5918960b2861fe940b5d0901b665ebe1b9f232"
+}

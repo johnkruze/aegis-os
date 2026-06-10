@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_652672d4_marine_gps_denied_652672d4_20260315T022316Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:23:16.700023Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_652672d4_marine_gps_denied_652672d4_20260315T022316Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_ALERT",
+        "DEPTH_ALERT",
+        "DRIFT_ALERT",
+        "NAV_ERROR_ALERT",
+        "POSITION_ALERT",
+        "TIME_ALERT",
+        "VELOCITY_ALERT",
+        "WAYPOINT_ALERT"
+      ],
+      "interpretation": "The system is experiencing critical battery degradation, with current readings indicating a significant drop in power. Depth, drift, and velocity are within normal operational parameters, but navigation errors are slightly elevated. The mission is incomplete, and the current waypoint is not being reached."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could lead to system failure if not addressed immediately. The current readings suggest that the system is still functional but at a reduced capacity. The mission is incomplete, and the waypoint is not being reached, which could result in mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to battery depletion, potentially leading to mission termination.",
+      "mitigation_strategy": "Initiate emergency shutdown sequence and attempt to land or return to base if possible."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_SEQUENCE",
+      "expected_outcome": "System will shut down gracefully, and the mission will be terminated to prevent further damage."
+    },
+    "self_reflection": "The system has detected a critical battery degradation, which is a severe anomaly. The decision to initiate an emergency shutdown is based on the potential for system failure if the battery continues to degrade. The mission is incomplete, and the waypoint is not being reached, which could result in mission failure if not addressed immediately."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_652672d4",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.7,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "124b5200fb0539f4bcbca117349761e74b2d872eb20a1811a8f5fcb58e3667c0"
+  },
+  "sha256_proof": "da12d696defaed4f108d5c31817bd46f4d11c87df3284d312626aac817f9aae0"
+}

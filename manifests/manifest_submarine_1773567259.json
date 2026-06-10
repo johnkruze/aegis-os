@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_98bb6fcd_marine_gps_denied_98bb6fcd_20260315T093411Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:34:11.692121Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_98bb6fcd_marine_gps_denied_98bb6fcd_20260315T093411Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 326.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, indicating potential issues with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a possible malfunction in the navigation system or the environment is affecting the sensors.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The navigation system may fail, leading to a loss of control or deviation from the intended course.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. If the issue persists, initiate an emergency protocol to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The navigation system will be recalibrated, and the vessel will attempt to return to the intended course."
+    },
+    "self_reflection": "The anomaly indicates a need for system recalibration to ensure safe and accurate navigation. The decision to reset the navigation system is based on the potential risks and the available mitigation strategies."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_98bb6fcd",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "3630ea2cea3d79d8d3a63f08f7677c9bb133d9217b5812052237226787e5b261"
+  },
+  "sha256_proof": "1b8ecc3c9832facddeb251612ee152aa397d15168c9bed3d8d097644a58af5e5"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_be4f4153_marine_gps_denied_be4f4153_20260315T200525Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:05:25.708817Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_be4f4153_marine_gps_denied_be4f4153_20260315T200525Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in the current, which is causing the vessel to drift and potentially lose control. The depth and drift values are concerning, indicating a potential risk to the mission."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift and potentially lose control. The depth and drift values are concerning, indicating a potential risk to the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may lose control and drift away from the intended path, potentially leading to a collision with other vessels or the ocean floor.",
+      "mitigation_strategy": "Implement emergency braking to slow down the vessel and reduce drift. Activate the emergency navigation system to maintain control of the vessel."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_BRAKING, EMERGENCY_NAVIGATION",
+      "expected_outcome": "The vessel will slow down and maintain control, reducing the risk of collision and ensuring the mission can be completed."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety of the mission. The emergency braking and navigation commands are being issued to mitigate the risk and maintain control of the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_be4f4153",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "1492935d8f72725d7b05c8386ab2fb9462d3b34542eca5d734cbea019c00d5b2"
+  },
+  "sha256_proof": "a5a88fe99a3e4cc177ba6b5c4f85092358ede3293c6361b5d54db6427993ebb0"
+}

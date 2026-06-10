@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_46eebc32_marine_gps_denied_46eebc32_20260315T022039Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:20:39.641651Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_46eebc32_marine_gps_denied_46eebc32_20260315T022039Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is minimal",
+        "position and time data are accurate",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is healthy, the current is stable, the depth is safe, the drift is minimal, and the navigation is accurate. The system is on track to complete the mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected. No immediate action is required.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No failure predicted within the current parameters.",
+      "mitigation_strategy": "No action needed."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned."
+    },
+    "self_reflection": "The system is functioning normally and is on track to complete the mission. No anomalies detected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_46eebc32",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "994c008212538f4a2949377a09648535b46c6299075499513e2a1f3b27ac997f"
+  },
+  "sha256_proof": "75c734da4e9b7259a7806489019aa49f8845fc0318506e35405d1cce0d439c8a"
+}

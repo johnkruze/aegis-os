@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_c94021cd_marine_gps_denied_c94021cd_20260315T090351Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:03:51.933933Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c94021cd_marine_gps_denied_c94021cd_20260315T090351Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is slightly above expected",
+        "drift is within normal range",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is within normal range",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the abnormal current readings which could indicate a potential issue with the propulsion system or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are concerning, but the system is otherwise stable. I should investigate the current readings further to determine the cause.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The abnormal current readings could lead to propulsion issues or environmental hazards.",
+      "mitigation_strategy": "Perform a thorough diagnostic of the propulsion system and check for any environmental factors that could be affecting the current readings."
+    },
+    "decision": {
+      "actuator_command": "Request propulsion system diagnostic",
+      "expected_outcome": "The propulsion system will be checked for any issues, and the current readings will be monitored to ensure they are within normal parameters."
+    },
+    "self_reflection": "The system is stable, but the abnormal current readings require further investigation to ensure safe operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c94021cd",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "dabade1e59718a6c70cfb6efee17044b59cf7606178673348f37cf1b68c62107"
+  },
+  "sha256_proof": "2dd2f9553de1772b0474c6a919533465edbdce059072f285455284851f4d9e08"
+}

@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_04c1f922_marine_gps_denied_04c1f922_20260314T221517Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:15:17.307978Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_04c1f922_marine_gps_denied_04c1f922_20260314T221517Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and minimal velocity suggest that the vehicle is likely in a calm or stationary environment. The slight position error and minimal velocity indicate that the vehicle is not actively engaged in navigation or movement."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest the vehicle is in a stationary or slow-moving environment. The drift could be due to wind or currents. The slight position error could be due to minor sensor inaccuracies. The minimal velocity and shallow depth suggest that the vehicle is not actively engaged in navigation or movement.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may be stationary or moving very slowly, which could be due to environmental factors. The slight position error could be due to minor sensor inaccuracies.",
+      "mitigation_strategy": "Monitor the current readings and position error closely. If the drift continues or the position error increases, investigate the cause and adjust the vehicle's position accordingly."
+    },
+    "decision": {
+      "actuator_command": "monitor",
+      "expected_outcome": "Monitor the current readings and position error to ensure the vehicle remains stationary or moving very slowly. If the drift continues or the position error increases, adjust the vehicle's position accordingly."
+    },
+    "self_reflection": "The vehicle appears to be in a stationary or slow-moving environment, which is within expected parameters. The slight position error could be due to minor sensor inaccuracies. The drift could be due to environmental factors. The vehicle is not actively engaged in navigation or movement, which is expected in a stationary or slow-moving environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_04c1f922",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "a58b0f728d1770a1ea67f3849e3cf804a1b4e95ecb24bbb34e35ea5d44f33ead"
+  },
+  "sha256_proof": "d5c7dee1e87c90c0746a969cdef4f7630818159bd47ffcd016957bf86f1cb566"
+}

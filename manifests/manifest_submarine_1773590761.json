@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_deea15c6_marine_gps_denied_deea15c6_20260315T160552Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:05:52.091533Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_deea15c6_marine_gps_denied_deea15c6_20260315T160552Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the inconsistent current readings and significant drift. The shallow depth and low navigation error suggest the vehicle is close to the intended path."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The significant drift suggests the vehicle is not following the intended course accurately.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and low navigation error are within acceptable limits, so the vehicle is likely on the correct path.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistent current readings could lead to a loss of control if not addressed. The significant drift could cause the vehicle to deviate from the intended path.",
+      "mitigation_strategy": "Calibrate the current sensors and adjust the course correction algorithm to account for the drift."
+    },
+    "decision": {
+      "actuator_command": "Calibrate current sensors and adjust course correction",
+      "expected_outcome": "The vehicle's current readings will be more consistent, and the course correction will be more accurate, reducing the drift and maintaining the intended path."
+    },
+    "self_reflection": "The system is performing well within normal parameters, but the inconsistencies in current readings and significant drift require immediate attention to ensure safe and accurate navigation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_deea15c6",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "5c2a6042762d52b92c38cc2bf50f9022285dfbecd9a942722b5d6aea2725f255"
+  },
+  "sha256_proof": "6c8ba9913ac70f8ff95cf37870e93c1fda51b245414f203e83948262b99e90c4"
+}

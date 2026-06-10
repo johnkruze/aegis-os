@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_ed081a59_marine_gps_denied_ed081a59_20260315T021643Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:16:43.135046Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ed081a59_marine_gps_denied_ed081a59_20260315T021643Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is normal",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "time is 460.0",
+        "velocity is normal"
+      ],
+      "interpretation": "The system is experiencing high drift, which could indicate a navigation issue. The current readings are unusual, possibly due to a magnetic anomaly or incorrect sensor data. The battery level is high, which is good. The depth is normal, and the navigation error is low, suggesting the system is generally performing well. The position is near waypoint 0, and the time is 460.0, which is not specified in the context but could be a timestamp."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to a magnetic anomaly or incorrect sensor data. The current readings are unusual, which could indicate a sensor failure or interference. The battery level is high, which is good. The depth is normal, and the navigation error is low, suggesting the system is generally performing well. The position is near waypoint 0, and the time is 460.0, which is not specified in the context but could be a timestamp.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could cause the system to lose track of its position, leading to mission failure. The unusual current readings could indicate a sensor failure or interference, which could also lead to mission failure.",
+      "mitigation_strategy": "Perform a sensor check to verify the accuracy of the current readings. If the sensor check confirms an issue, replace the faulty sensor. If the issue persists, perform a magnetic anomaly check to ensure the system is not being affected by a magnetic anomaly. If the magnetic anomaly check confirms an issue, adjust the system's magnetic field compensation parameters."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check",
+      "expected_outcome": "The sensor check will confirm whether the current readings are accurate or if there is a sensor failure. If the sensor check confirms an issue, the faulty sensor will be replaced. If the issue persists, the magnetic anomaly check will be performed to ensure the system is not being affected by a magnetic anomaly. If the magnetic anomaly check confirms an issue, the system's magnetic field compensation parameters will be adjusted."
+    },
+    "self_reflection": "The system is experiencing high drift, which could indicate a navigation issue. The current readings are unusual, which could indicate a sensor failure or interference. The battery level is high, which is good. The depth is normal, and the navigation error is low, suggesting the system is generally performing well. The position is near waypoint 0, and the time is 460.0, which is not specified in the context but could be a timestamp."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ed081a59",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 4.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "078a8611752a34719abc8ef86831daa62c7153f18ab2aceab73e93c9778eb8cc"
+  },
+  "sha256_proof": "90b34c5a53a401530d4a49af269ea4235e2f57cd601061f7963b2c3c77f520b7"
+}

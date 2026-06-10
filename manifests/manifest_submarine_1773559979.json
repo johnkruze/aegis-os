@@ -1,0 +1,61 @@
+{
+  "mission_id": "marine_gps_denied_2718cb8b_marine_gps_denied_2718cb8b_20260315T073248Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:32:48.703063Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2718cb8b_marine_gps_denied_2718cb8b_20260315T073248Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings are inconsistent, which could indicate a problem with the current sensors or the system's ability to accurately measure current. There is a slight drift in the system's position, which could be due to inaccuracies in the navigation system or external factors. The small navigation error suggests that the system is maintaining its position relatively well, but there is room for improvement. The system is currently at waypoint 0, which is expected at the beginning of a mission."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The inconsistent current readings could be due to a faulty sensor or a problem with the system's ability to measure current accurately.",
+        "confidence": 0.7,
+        "action_rejected": "replace the current sensor"
+      },
+      {
+        "thought": "The slight drift could be corrected by recalibrating the navigation system or adjusting the system's position.",
+        "confidence": 0.6,
+        "action_rejected": "recalibrate the navigation system"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down unexpectedly due to the low battery, leading to mission failure.",
+      "mitigation_strategy": "Recharge the battery and replace the current sensor to ensure the system can continue operating safely."
+    },
+    "decision": {
+      "actuator_command": "recharge the battery and replace the current sensor",
+      "expected_outcome": "The system should be able to continue operating safely with the battery recharged and the current sensor replaced."
+    },
+    "self_reflection": "The system is currently operating with some issues, but there are clear steps that can be taken to mitigate these risks and ensure the mission can continue. The low battery and inconsistent current readings are the most concerning issues, but they are both relatively easy to fix with the right actions."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2718cb8b",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "89638c2a09b13475d563324dfb617a12d39a4321ea1e24123b0973c71f75097b"
+  },
+  "sha256_proof": "2d3ec0c8272ea1ab0d56bdef095947ffb63ead69a1fadb47449bdacf94645c95"
+}

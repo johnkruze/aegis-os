@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_8ef269a1_marine_gps_denied_8ef269a1_20260315T103723Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:37:23.040900Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8ef269a1_marine_gps_denied_8ef269a1_20260315T103723Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "small navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings, slight depth error, high drift, small navigation error, and the waypoint has not been reached. The current readings suggest a potential issue with the propulsion system, while the drift and navigation error indicate a need for course correction."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that needs to be addressed immediately to prevent system failure. The unusual current readings suggest a potential problem with the propulsion system. The slight depth error and high drift indicate a need for course correction. The waypoint not being reached is a critical failure mode that needs to be mitigated.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery and potential propulsion system failure, leading to loss of control and potential collision with obstacles.",
+      "mitigation_strategy": "Immediately recharge the battery and perform a system check to identify and fix the propulsion system issue. If the propulsion system cannot be fixed, initiate an emergency protocol to return to the last known safe position."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, system_check, course_correction",
+      "expected_outcome": "Recharge the battery, perform a system check to identify and fix the propulsion system issue, and correct the course to reach the waypoint."
+    },
+    "self_reflection": "The anomaly highlights the importance of regular system checks and maintaining sufficient battery levels to ensure safe operation. The decision to recharge the battery and perform a system check is critical to prevent potential system failure and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8ef269a1",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "4faf343c7569e0004e4a595649c56d3eaae9490e0f08379695899bf6c9d1c096"
+  },
+  "sha256_proof": "78632040671a79e3481dc0907b9861debae0cf25c782cfca35b88d9419a52c60"
+}

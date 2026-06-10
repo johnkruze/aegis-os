@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_f62947a3_marine_gps_denied_f62947a3_20260315T193536Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:35:36.911008Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f62947a3_marine_gps_denied_f62947a3_20260315T193536Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is high",
+        "navigation error is low",
+        "position is at waypoint 0",
+        "velocity is zero"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation issue or a problem with the current sensors. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth and navigation error are within expected ranges, and the system is at the initial waypoint with zero velocity, which is normal for the start of a mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a potential navigation issue. The system should be repositioned to correct the drift and ensure accurate navigation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and lose accuracy, potentially leading to mission failure if not corrected.",
+      "mitigation_strategy": "Reposition the system to correct the drift and ensure accurate navigation. This can be done by adjusting the heading or using the thrusters to move the system back to the intended course."
+    },
+    "decision": {
+      "actuator_command": "adjust_heading(10 degrees) and move_forward(10 meters)",
+      "expected_outcome": "The system should correct its drift and move closer to the intended course, allowing for more accurate navigation and completion of the mission."
+    },
+    "self_reflection": "The system has detected an anomaly in the current readings and drift, which could impact the mission's success. By repositioning the system, we can mitigate this risk and ensure the mission can be completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f62947a3",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "c63903e34e3480929e749217179e7fc011fe665aa1c0add908958fa4064d04e5"
+  },
+  "sha256_proof": "91fd39fa4ac602a736f0c62d530817e7bee5ccce94f5b372edc1f66dd2e3b409"
+}

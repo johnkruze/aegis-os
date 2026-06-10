@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_498da41b_marine_gps_denied_498da41b_20260315T210932Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:09:32.276240Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_498da41b_marine_gps_denied_498da41b_20260315T210932Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "attitude is stable",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with high battery and stable attitude. However, the current readings are inconsistent, which could indicate a problem with the current sensors or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging navigation environment. The high temperature and slow velocity suggest that the vehicle is operating in a potentially hazardous area."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging navigation environment. The high temperature and slow velocity suggest that the vehicle is operating in a potentially hazardous area.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to maintain its course due to the inconsistent current readings and high drift. The shallow depth and high temperature suggest that the vehicle may be in a potentially hazardous area.",
+      "mitigation_strategy": "Perform a system check to verify the current sensors and the environment. If the issue persists, adjust the course to a safer location."
+    },
+    "decision": {
+      "actuator_command": "perform system check",
+      "expected_outcome": "The system check will help identify the cause of the inconsistent current readings and allow the vehicle to adjust its course if necessary."
+    },
+    "self_reflection": "The vehicle is functioning normally with high battery and stable attitude. However, the current readings are inconsistent, which could indicate a problem with the current sensors or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging navigation environment. The high temperature and slow velocity suggest that the vehicle is operating in a potentially hazardous area. A system check is recommended to identify the cause of the issue and adjust the course if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_498da41b",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c95d6680f61c91121f64f1a7f51d41bb2f9d3a4355a5e10c0fc6581a578aeae3"
+  },
+  "sha256_proof": "d6e4e21bfbfde4a58c50dc98f04acfe34b1cd243726325225872b8b86eccafce"
+}

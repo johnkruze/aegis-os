@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f9bd3f32_marine_gps_denied_f9bd3f32_20260316T003724Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:37:24.181966Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f9bd3f32_marine_gps_denied_f9bd3f32_20260316T003724Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minimal",
+        "position is slightly off",
+        "time is 369.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery and minimal navigation error, but there are inconsistencies in the current readings and a significant drift from the intended course. The depth is shallow, which could be a concern in marine environments. The slow velocity and minimal drift suggest the system is not actively engaged in navigation or exploration."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the system's orientation or sensor accuracy.",
+        "confidence": 0.8,
+        "action_rejected": "string"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may be unable to maintain its intended course due to the drift and inconsistent current readings.",
+      "mitigation_strategy": "Perform a recalibration of the system's orientation sensors and verify the current readings."
+    },
+    "decision": {
+      "actuator_command": "recalibrate orientation sensors",
+      "expected_outcome": "The system should be able to correct its orientation and maintain its intended course."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, but the inconsistencies in the current readings and significant drift suggest a potential issue with the system's orientation or sensor accuracy. A recalibration of the orientation sensors is recommended to ensure the system maintains its intended course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f9bd3f32",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "9b07a5048d2317548601f45ec799b8a85cd7b34cbba211edbf0e7288832cd2e8"
+  },
+  "sha256_proof": "347b00d66b498866826ef27a588756bd810a97545d909a3c20a055e5ca9d8de2"
+}

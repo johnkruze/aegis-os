@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_56522e6d_marine_gps_denied_56522e6d_20260315T135312Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:53:12.727928Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_56522e6d_marine_gps_denied_56522e6d_20260315T135312Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is 1.2 meters",
+        "drift is 34.09 meters",
+        "navigation error is 0.12 meters",
+        "position is [-6.58, -138.59, -1.18]",
+        "time is 452.0 seconds",
+        "velocity is [-0.04, 0.06, 1.96] meters per second",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters. The battery is at 98.7%, indicating sufficient power. The current readings are slightly negative, which could be due to the direction of the current or a sensor issue. The depth is within expected limits, and the drift is within acceptable bounds. The navigation error is low, and the position and velocity readings are stable. The system is currently at waypoint 0."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters. There are no immediate signs of failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted. The system is stable and within operational parameters.",
+      "mitigation_strategy": "Continue monitoring the system. If the battery level drops below 95%, consider initiating a battery check or recharging."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate as expected until the next waypoint or mission termination."
+    },
+    "self_reflection": "The system is currently stable and within operational parameters. No immediate action is required. Continue monitoring the system for any changes in parameters that may indicate a potential issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_56522e6d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "31ab268bd47037569eb186bbac68cd342bfee5400957675500cd410c777d6cd4"
+  },
+  "sha256_proof": "5695df001ef33dea8bcecc0662202cb4acb7ec32a6540b85a73faa2792df2de4"
+}

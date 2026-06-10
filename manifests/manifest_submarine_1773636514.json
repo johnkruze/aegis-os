@@ -1,0 +1,48 @@
+{
+  "mission_id": "marine_gps_denied_02f594d3_marine_gps_denied_02f594d3_20260316T044825Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:48:25.655206Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_02f594d3_marine_gps_denied_02f594d3_20260316T044825Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery_degradation",
+        "low_battery"
+      ],
+      "interpretation": "The battery level is critically low, indicating that the system is running on minimal power. The current readings suggest that the system is experiencing a significant power drain, which is likely due to the GPS denial and the mission's demands. The depth and drift values are within normal ranges, but the navigation error is slightly elevated, which could be a result of the reduced power affecting the system's performance."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low and the system is experiencing a significant power drain. The GPS denial and the mission's demands are likely the cause of this issue. The navigation error is slightly elevated, which could be a result of the reduced power affecting the system's performance.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down unexpectedly, leading to mission failure. The GPS denial and the mission's demands are likely the cause of this issue. The navigation error is slightly elevated, which could be a result of the reduced power affecting the system's performance.",
+      "mitigation_strategy": "The system should be powered down immediately to prevent further damage and ensure the safety of the mission. The system should be powered down immediately to prevent further damage and ensure the safety of the mission."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "The system will be powered down to prevent further damage and ensure the safety of the mission."
+    },
+    "self_reflection": "The system's battery is critically low and the system is experiencing a significant power drain. The GPS denial and the mission's demands are likely the cause of this issue. The navigation error is slightly elevated, which could be a result of the reduced power affecting the system's performance. The system should be powered down immediately to prevent further damage and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_02f594d3",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 45.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "94813a0f5506825207f5156803b81e4c8996ef848e6d866cc875641d3ac0198d"
+  },
+  "sha256_proof": "aecebf53b5c72c2bfe47699c3de9a1b1ed98fbc29d5c3e233ffe6ea787563ba9"
+}

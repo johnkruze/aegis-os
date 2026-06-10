@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_b110c55c_marine_gps_denied_b110c55c_20260315T225404Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:54:04.685686Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b110c55c_marine_gps_denied_b110c55c_20260315T225404Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minor",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing low battery, significant drift, and minor navigation error. The current readings suggest the vehicle is not on course and may be in a potentially dangerous position."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, must prioritize power management to prevent system failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Drift is significant, need to correct course to maintain mission integrity.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Navigation error is minor, can be ignored for now.",
+        "confidence": 0.5,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potentially leading to loss of control.",
+      "mitigation_strategy": "Reduce power usage, correct course, and monitor system health."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, correct_course",
+      "expected_outcome": "System power is reduced, course is corrected to maintain mission integrity."
+    },
+    "self_reflection": "The system is in a critical state due to low battery and significant drift. Immediate action is required to prevent system failure and ensure mission integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b110c55c",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 7.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0b2db2f0a6683099913ada8887b88831aceb1a3b25d227fabd54431793fd5323"
+  },
+  "sha256_proof": "5a080eceeac3889c1933c60f0d804f4ffe735c5f748adb5c1a69886cb9e7d942"
+}

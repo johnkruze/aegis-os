@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_4abd27f8_marine_gps_denied_4abd27f8_20260315T194140Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:41:40.477146Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4abd27f8_marine_gps_denied_4abd27f8_20260315T194140Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 76.19 units",
+        "time is 331.0",
+        "velocity is negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The shallow depth and low navigation error suggest that the vehicle is not significantly off course. The battery level is high, which is positive. The velocity is negative, which could indicate a problem with the thrusters or the direction of travel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a navigation error or a problem with the GPS system. The shallow depth and low navigation error suggest that the vehicle is not significantly off course. The battery level is high, which is positive. The velocity is negative, which could indicate a problem with the thrusters or the direction of travel.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be drifting off course or experiencing a navigation error, which could lead to a collision with the ocean floor or other obstacles.",
+      "mitigation_strategy": "Perform a navigation recalibration and check the GPS system for any issues. If the problem persists, consider switching to a backup navigation system or manual control."
+    },
+    "decision": {
+      "actuator_command": "Recalibrate navigation system and check GPS",
+      "expected_outcome": "The vehicle should be able to correct its drift and maintain its course. If the problem persists, the vehicle may need to be manually controlled to avoid potential hazards."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The shallow depth and low navigation error suggest that the vehicle is not significantly off course. The battery level is high, which is positive. The velocity is negative, which could indicate a problem with the thrusters or the direction of travel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4abd27f8",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.9,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "fa5ad3ea14460dffb4770b483470cca436535f288828a5b59314854b42fe1aab"
+  },
+  "sha256_proof": "092f25840ae3ba7a093588d1f45b5947389d8df1c32ec9b2db076e47b243813e"
+}

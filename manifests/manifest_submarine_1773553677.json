@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_a6457947_marine_gps_denied_a6457947_20260315T054751Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:47:51.864578Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a6457947_marine_gps_denied_a6457947_20260315T054751Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is minimal",
+        "position is accurate",
+        "velocity is zero",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be on track with no critical issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring the system for any changes."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is performing as expected with no anomalies detected. The mission is on track and should continue without issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a6457947",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "58feef24dfb9612c6c64e5c5223883b9a42e215bacbb460d0d927ff559872dde"
+  },
+  "sha256_proof": "e245dba2227fbc1f355ee734f8d79058d26a903765832eba7f505b88635e48a5"
+}

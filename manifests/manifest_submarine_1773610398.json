@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_e0dda915_marine_gps_denied_e0dda915_20260315T213310Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:33:10.096354Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e0dda915_marine_gps_denied_e0dda915_20260315T213310Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 399.0",
+        "velocity is slightly positive in the y-axis",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery is at full capacity, and the current readings are within expected ranges. The depth is shallow, which could be a concern if the mission requires deeper waters. The slight drift and navigation error suggest that the system may need calibration or adjustment to maintain precise positioning."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is within operational parameters, but drift and navigation error indicate potential issues with the positioning system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift and navigation error may cause the system to lose its position over time, potentially leading to mission failure if not addressed.",
+      "mitigation_strategy": "Calibrate the positioning system and adjust the waypoints to account for drift. Monitor the system closely and perform periodic recalibrations."
+    },
+    "decision": {
+      "actuator_command": "Calibrate positioning system and adjust waypoints",
+      "expected_outcome": "The system should maintain its position more accurately, reducing the risk of mission failure."
+    },
+    "self_reflection": "The system is currently performing within expected parameters, but the slight drift and navigation error suggest potential issues that need to be addressed to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e0dda915",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "15166b8e945ffc447d161fd07232f6dd491009c233c63d838f39d734fd05c728"
+  },
+  "sha256_proof": "38bcfd94b59b5f47490f894b55b47fce64e230f8dd5e7ebe57741865d34f775d"
+}

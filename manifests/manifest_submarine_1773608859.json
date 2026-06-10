@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_cf18c71f_marine_gps_denied_cf18c71f_20260315T210732Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:07:32.382645Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cf18c71f_marine_gps_denied_cf18c71f_20260315T210732Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "negative current values",
+        "depth of 9.7 meters",
+        "drift of 23.96 meters",
+        "small navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. Negative current values suggest a problem with the power supply or consumption. The depth and drift values are within expected ranges, but the small navigation error indicates a minor discrepancy that could affect mission accuracy."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The negative current values are concerning and may indicate a power supply problem. The small navigation error suggests a minor issue that could be corrected with recalibration.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery or power supply issues, potentially leading to mission termination.",
+      "mitigation_strategy": "Immediately recharge the battery or replace the power supply. Recalibrate the navigation system to correct the small error."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "Battery recharged, power supply issue resolved, navigation system recalibrated."
+    },
+    "self_reflection": "The anomaly highlights the importance of maintaining system health and addressing critical issues promptly to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cf18c71f",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "04483686d8cb33d5da0601e5090da9db7a7e2a7b33224b4a4031654e4de1fe02"
+  },
+  "sha256_proof": "d17c75e5144d5d00a1815bef77e42bbc962064cd3f3f8da461707dd4f335112e"
+}

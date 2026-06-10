@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_76b28369_marine_gps_denied_76b28369_20260315T035029Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:50:29.243670Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_76b28369_marine_gps_denied_76b28369_20260315T035029Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 462.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low velocity suggest the vehicle is in a calm and stable environment. The slight position error and low navigation error indicate the system is maintaining its course. The high drift could be due to external factors such as wind or currents."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be affecting the vehicle's accuracy. However, the battery level is high and the system is otherwise stable. The anomaly is not critical at this time.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The high drift could cause the vehicle to deviate from its intended course, but the system is otherwise stable.",
+      "mitigation_strategy": "Monitor the drift and adjust the course if necessary. Continue monitoring the system for any further anomalies."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The vehicle will continue on its current course with minimal deviation due to the high drift."
+    },
+    "self_reflection": "The system is performing within expected parameters, with the primary concern being the high drift. The anomaly is not critical at this time, and the system is stable. The decision to continue the current course is based on the low risk level and the system's stability."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_76b28369",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "0ec488e68b015f49b4083cfb90bf58298867375eead2fb9ac2ce849e9375f8e2"
+  },
+  "sha256_proof": "4a81e898882ad6e173ce76c9243a232f61bc6cb037f55837905de4b31d62cbcf"
+}

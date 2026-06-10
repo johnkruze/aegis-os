@@ -1,0 +1,63 @@
+{
+  "mission_id": "marine_gps_denied_372e3910_marine_gps_denied_372e3910_20260315T222219Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:22:19.776963Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_372e3910_marine_gps_denied_372e3910_20260315T222219Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint",
+        "velocity is near zero"
+      ],
+      "interpretation": "The system is operating with high battery and near-zero velocity, but there are inconsistencies in the current readings and a high drift. The navigation error is low, and the system is close to the current waypoint."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the current sensors or the system's orientation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift could be due to sensor drift or external forces.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The system is close to the waypoint, which could be a point of interest or a potential failure point.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may drift away from the intended path or fail to maintain its position near the waypoint.",
+      "mitigation_strategy": "Perform a sensor recalibration and adjust the system's orientation to minimize drift. Monitor the system's performance closely."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_sensors, adjust_orientation",
+      "expected_outcome": "The system's orientation and sensor readings should be corrected, reducing the drift and improving navigation accuracy."
+    },
+    "self_reflection": "The system is functioning within expected parameters, but the inconsistencies in current readings and high drift suggest potential issues that need to be addressed to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_372e3910",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "48eccb321164af0922c9ba4ba93424030cd98ce37b648ef9b08c498331ed3e1b"
+  },
+  "sha256_proof": "544cdb8bd78d25eb2d615e837758df93f556362d4aa2a43ca57157f53d16ac3f"
+}

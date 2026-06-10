@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_78a6bd02_marine_gps_denied_78a6bd02_20260315T021952Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:19:52.759696Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_78a6bd02_marine_gps_denied_78a6bd02_20260315T021952Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 533.0",
+        "velocity is slightly off"
+      ],
+      "interpretation": "The system is experiencing high drift and slightly off position, despite a high battery level and low navigation error. The current readings are abnormal, which could indicate a problem with the sensors or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and off position suggest a potential issue with the navigation system or the environment. The abnormal current readings could be due to a magnetic anomaly or a problem with the current sensors.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may continue to drift and lose position, potentially leading to mission failure.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. Check for any magnetic anomalies in the environment."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will reset and recalibrate, potentially resolving the drift and position issues."
+    },
+    "self_reflection": "The system is experiencing unexpected behavior, which could be due to a variety of factors. A system reset and recalibration are necessary to ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_78a6bd02",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "57c466e944685e421357f45b182212f28569c312779b19b2a9fdd11505ab599b"
+  },
+  "sha256_proof": "f132c259a2732f4a38773bfe1153382db33038f14fccd8b4defcaa61d98ca8f9"
+}

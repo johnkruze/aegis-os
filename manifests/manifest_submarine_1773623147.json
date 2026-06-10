@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_085cf9fe_marine_gps_denied_085cf9fe_20260316T010539Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:05:39.417786Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_085cf9fe_marine_gps_denied_085cf9fe_20260316T010539Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is operating with a slight battery drain, indicating that the power is being used efficiently. The current readings are unusual, suggesting potential issues with the propulsion system or the environment. The slight depth error and high drift indicate that the vehicle is not maintaining its intended course. The low navigation error suggests that the system is still performing adequately in terms of navigation. The waypoint has not been reached, which is a critical anomaly."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is sufficient for the current mission, but the unusual current readings and high drift suggest a potential issue with the propulsion system or the environment. The waypoint not being reached is a critical anomaly that needs to be addressed immediately.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may not reach the intended waypoint, leading to mission failure.",
+      "mitigation_strategy": "Perform a system check to identify the cause of the unusual current readings and high drift. If the issue is with the propulsion system, attempt to recalibrate or repair it. If the issue is with the environment, adjust the course to compensate for the drift."
+    },
+    "decision": {
+      "actuator_command": "perform system check",
+      "expected_outcome": "Identify the cause of the unusual current readings and high drift, allowing the vehicle to continue on course or adjust the course as necessary."
+    },
+    "self_reflection": "The system is performing within expected parameters, but the unusual current readings and high drift suggest potential issues that need to be addressed to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_085cf9fe",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "39d8c91233517e4587d30012f63c30bb159dccbc2cd048b879bf04968434bbf8"
+  },
+  "sha256_proof": "3f71d8f57e003e36841a694283ccba491582cecc2cbed44dbab86272fb408076"
+}

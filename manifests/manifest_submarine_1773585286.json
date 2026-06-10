@@ -1,0 +1,57 @@
+{
+  "mission_id": "marine_gps_denied_fed38a22_marine_gps_denied_fed38a22_20260315T143439Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:34:39.219848Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fed38a22_marine_gps_denied_fed38a22_20260315T143439Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings suggest the vehicle is drifting significantly, which could lead to navigation errors. The shallow depth and minimal navigation error suggest the vehicle is in a controlled environment, but the drift is concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is significant, need to correct course.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "Battery depletion or drift could lead to mission failure.",
+      "mitigation_strategy": "Reduce power usage and correct drift to maintain mission integrity."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, correct_drift",
+      "expected_outcome": "Power usage is reduced and drift is corrected, maintaining mission integrity."
+    },
+    "self_reflection": "The system is operating in a critical state with low battery and significant drift. Immediate action is required to mitigate risks and ensure mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fed38a22",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 9.2,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "538f72caec9ccc4323a622aa27c0262c4f33825b5810a78e26c3dbc346caf8a4"
+  },
+  "sha256_proof": "09fbae6002666de5c29c1c04e3c22d4ae964508e8392ec04e8d5f3b5fc635677"
+}

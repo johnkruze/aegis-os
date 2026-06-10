@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0836c9d1_marine_gps_denied_0836c9d1_20260315T153354Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:33:54.745834Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0836c9d1_marine_gps_denied_0836c9d1_20260315T153354Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is 96.3%",
+        "current readings are [-1.8, -0.35, -0.06]",
+        "depth is 0.7 meters",
+        "drift is 10.58 meters",
+        "navigation error is 0.0",
+        "position is [-37.11, -188.46, -0.75]",
+        "time is 356.0 seconds",
+        "velocity is [-0.33, -0.27, 0.22]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight negative current reading which could indicate a minor issue with the propulsion system. The depth and position are within expected ranges. The navigation error is zero, indicating accurate positioning. The drift is within acceptable limits, and the velocity is stable. The battery level is high, suggesting sufficient power for continued operation. The system is currently at waypoint 0, which is unusual as the mission should be complete."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight negative current reading could be a false positive or a minor issue. The system is otherwise performing well. The mission should be complete, but the anomaly suggests a potential issue with the propulsion system or waypoint handling.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The slight negative current reading could indicate a minor issue with the propulsion system, which could cause drift or reduced performance. The system could also be stuck at waypoint 0, preventing the mission from completing.",
+      "mitigation_strategy": "Monitor the current readings closely and check the propulsion system for any issues. If the current reading persists, investigate further. If the system is stuck at waypoint 0, attempt to manually advance to the next waypoint or reset the system."
+    },
+    "decision": {
+      "actuator_command": "Monitor current readings and propulsion system. If current reading persists, investigate further. If stuck at waypoint 0, attempt to manually advance to the next waypoint or reset the system.",
+      "expected_outcome": "The system will either resolve the current reading issue or progress to the next waypoint, allowing the mission to complete."
+    },
+    "self_reflection": "The system is performing well, but the anomaly suggests a potential issue with the propulsion system or waypoint handling. The mission should be complete, but the anomaly indicates a need for further investigation and action to ensure the mission completes successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0836c9d1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 3.7,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "da59ae4830f989727a244bb8d9c4c3bf9c145a443032cbf49531266599f9fac2"
+  },
+  "sha256_proof": "761379f284b0fbe7f48570faf36123ada8d5e7c1311b343019d51b856c468b8a"
+}

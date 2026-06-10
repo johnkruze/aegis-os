@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_43b9c224_marine_gps_denied_43b9c224_20260315T191943Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:19:43.784029Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_43b9c224_marine_gps_denied_43b9c224_20260315T191943Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 530.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The high battery level suggests sufficient power, and the low navigation error indicates that the system is maintaining its position relatively well. However, the high drift and slightly off velocity suggest that the system may be struggling to maintain its intended course."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations from expected values suggest that the system is still capable of performing its mission. However, the high drift and slightly off velocity may indicate that the system is not performing optimally. I should investigate further to determine if these deviations are significant enough to impact the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may be experiencing minor performance issues that could impact its ability to maintain its course over time. However, the system is still functioning within normal parameters.",
+      "mitigation_strategy": "Monitor the system's performance over the next few hours to determine if the minor deviations become more significant. If the system continues to perform poorly, consider implementing a course correction to bring the system back on track."
+    },
+    "decision": {
+      "actuator_command": "monitor system performance over the next few hours",
+      "expected_outcome": "The system's performance will be monitored to determine if any further action is needed."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The high drift and slightly off velocity suggest that the system may be struggling to maintain its intended course. However, the system is still functioning within normal parameters, and the minor deviations are not significant enough to impact the mission at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_43b9c224",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "e223909d235f91b4447aec55a4cbfef04767193fe34a9c991b1190129e783189"
+  },
+  "sha256_proof": "df6ae6a7fa670c7db5b697ed3ecb008eba665694e6c83b1fd1244c1a3e390e26"
+}

@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_d21639a1_marine_gps_denied_d21639a1_20260315T021220Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:12:20.374594Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d21639a1_marine_gps_denied_d21639a1_20260315T021220Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "negative current readings",
+        "high depth",
+        "drift",
+        "small navigation error",
+        "waypoint 1"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. Negative current readings suggest a problem with the power supply or consumption. High depth and drift indicate the vehicle is moving away from the intended path. A small navigation error suggests the system is still capable of maintaining its position."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The negative current readings and high depth suggest a potential power drain or system overload. The drift and small navigation error indicate the system is still functional but requires immediate attention.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potentially leading to loss of control and mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery or switch to a backup power source. Monitor system performance closely and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery is recharged, and the system is ready to continue mission."
+    },
+    "self_reflection": "The system is currently operating with critical issues that could lead to mission failure. Immediate action is required to prevent further complications."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d21639a1",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.0,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 1,
+      "waypoints_total": 6
+    },
+    "physics_proof": "2a1c51b0c9ff6c279d89e5dc0158fbcfe89fd6bd8dbc0e2650d3565cf2b455a8"
+  },
+  "sha256_proof": "eb432b2f83afc923bf312a40fed7a0a28ba6fa309129b13df76d01352ababba4"
+}

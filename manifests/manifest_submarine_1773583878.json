@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_555244aa_marine_gps_denied_555244aa_20260315T141110Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:11:10.383278Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_555244aa_marine_gps_denied_555244aa_20260315T141110Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The battery level is still high, but the drift is concerning."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a drift of 24.52 units, which is outside the safe operational range. The vessel is at a depth of 0.6 units, and the navigation error is minimal. The battery level is still at 96.2%, which suggests we have enough power to address the issue. However, the drift is a critical concern that could lead to mission failure if not corrected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "If the current surge is not corrected, the vessel may drift out of the designated area, leading to mission failure.",
+      "mitigation_strategy": "Implement a corrective maneuver to reduce the drift and bring the vessel back to the intended course."
+    },
+    "decision": {
+      "actuator_command": "execute_course_correction",
+      "expected_outcome": "The vessel will perform a course correction to reduce drift and return to the intended course."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention. The vessel's battery level is sufficient to address the issue, but the drift is a significant concern that could lead to mission failure if not corrected. The decision to execute a course correction is based on the need to maintain control of the vessel and ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_555244aa",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 3.8,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "e3a361ae75b2e117a8af21b51753d5445717e3c84a3642318d8131e7abdc1c48"
+  },
+  "sha256_proof": "0c0b79f6db49f30cd2ab2b7131ac69ad62659ce247eb877d50df7420f5ed9504"
+}

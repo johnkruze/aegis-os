@@ -1,0 +1,57 @@
+{
+  "mission_id": "marine_gps_denied_974cf4de_marine_gps_denied_974cf4de_20260315T084313Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:43:13.785614Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_974cf4de_marine_gps_denied_974cf4de_20260315T084313Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, and minor drift. The navigation error is low, and the system is at waypoint 0. The depth is shallow, which could indicate a potential issue with the depth sensor or the vehicle's position relative to the ocean floor."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery level is critical, and the current readings are unstable, which could lead to system failure if not addressed soon.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The small depth and high drift suggest potential issues with the depth sensor or the vehicle's positioning system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery and unstable current readings, potentially leading to loss of control and mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery and stabilize current readings. If the issue persists, initiate emergency recovery procedures."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, stabilize_current",
+      "expected_outcome": "Stabilize system and prevent further degradation, allowing for continued mission execution or emergency recovery."
+    },
+    "self_reflection": "The system is in a critical state due to low battery and unstable current readings. Immediate action is required to prevent system failure and ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_974cf4de",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "1ccc5c53f6a88020fcd5e54e6e50ff0f04856f27b679e7e42bc428da38d1017f"
+  },
+  "sha256_proof": "327e8f9734d8d92c00a6cef364d61db5f4e00ae0a5b7e6709cc961a74e50c6ec"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_37123f8a_marine_gps_denied_37123f8a_20260315T000422Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:04:22.640519Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_37123f8a_marine_gps_denied_37123f8a_20260315T000422Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is normal",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is normal",
+        "velocity is normal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for a slight drift and a minor deviation from the expected position. The battery level is high, which suggests sufficient power for continued operation."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight drift and deviation from the expected position could be due to minor sensor inaccuracies or environmental factors. The battery level is sufficient for continued operation. The mission is incomplete, but there are no critical anomalies reported.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally within the next few minutes.",
+      "mitigation_strategy": "Monitor the system for any further drift or deviation from the expected position. If the drift continues to increase, consider recalibrating the sensors."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate within normal parameters until further drift or deviation is detected."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations that are likely due to normal operation. The battery level is sufficient for continued operation, and the mission is not at risk of failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_37123f8a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "9cb9cb7f962338e08f615056c212e373e5575b3bfda3b93df91a7541a9936152"
+  },
+  "sha256_proof": "be32d260cc40ce302b898694d7ca4dabba93c35fe0c1dba80175216a22497042"
+}

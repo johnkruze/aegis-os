@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_000e7b47_marine_gps_denied_000e7b47_20260315T222720Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:27:20.591413Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_000e7b47_marine_gps_denied_000e7b47_20260315T222720Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current battery level is high, and the depth is relatively shallow, which suggests that the failure is not immediately life-threatening. However, the drift and navigation error are concerning, indicating that the vessel is not on course and may be losing control."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of control. The vessel is currently drifting and may be off course, which could lead to a collision or other hazards. The battery level is high, so there is some margin of safety. However, the drift and navigation error are concerning, and the vessel may be losing control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel may lose control, drift off course, or collide with other objects. The navigation error may increase, leading to further complications.",
+      "mitigation_strategy": "Activate emergency thrusters or use backup propulsion systems to regain control. Implement emergency navigation protocols to correct the vessel's course. Monitor the battery level and ensure it does not deplete during the emergency maneuver."
+    },
+    "decision": {
+      "actuator_command": "Activate emergency thrusters and implement emergency navigation protocols.",
+      "expected_outcome": "The vessel should regain control and correct its course. The emergency thrusters should provide sufficient power to overcome the drift and maintain control. The emergency navigation protocols should help correct the vessel's course and prevent further complications."
+    },
+    "self_reflection": "The thruster failure is a critical issue that requires immediate attention. The vessel is currently drifting and may be off course, which could lead to a collision or other hazards. The emergency thrusters and navigation protocols should help regain control and prevent further complications. The battery level is high, so there is some margin of safety. However, the drift and navigation error are concerning, and the vessel may be losing control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_000e7b47",
+    "scenario": "gps_denied_autonomous_boat_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.1,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "c98ee86d7527437677659ad754fd27241e24ac7df15b8358ab6236438ba3747a"
+  },
+  "sha256_proof": "a9398a883bb4a230c278b42b8058c699de3b07d1dfb890dde794c80b16138197"
+}

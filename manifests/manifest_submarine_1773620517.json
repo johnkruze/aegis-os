@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_387c572e_marine_gps_denied_387c572e_20260316T002147Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:21:47.752341Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_387c572e_marine_gps_denied_387c572e_20260316T002147Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 397.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its position and course. However, the slight drift and negative velocity suggest that the system may be experiencing minor issues with its movement or orientation."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within expected parameters, with only minor deviations. The battery is healthy, and the navigation error is low. The slight drift and negative velocity suggest that the system may be experiencing minor issues with its movement or orientation. However, the system is still capable of maintaining its position and course. Therefore, it is unlikely that the mission will be affected by these minor deviations.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may experience minor issues with its movement or orientation, but it is still capable of maintaining its position and course. The mission is unlikely to be affected by these minor deviations.",
+      "mitigation_strategy": "Monitor the system's performance closely and adjust the course or orientation as needed to minimize any potential impact on the mission."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to perform within expected parameters, and the mission will be completed successfully."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations from expected values. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its position and course. However, the slight drift and negative velocity suggest that the system may be experiencing minor issues with its movement or orientation. Therefore, it is unlikely that the mission will be affected by these minor deviations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_387c572e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "6c9ac06fb06922b032ef9fc96298059897c63837c7e740e290c7ff665d8168a1"
+  },
+  "sha256_proof": "2a820e50edd28cc9b685242a9f3e0e65d8790509992bc65f31750507cabe3049"
+}

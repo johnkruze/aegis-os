@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_d3e2d8e2_marine_gps_denied_d3e2d8e2_20260316T015148Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:51:48.013958Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d3e2d8e2_marine_gps_denied_d3e2d8e2_20260316T015148Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "no navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery levels and unstable current readings, which could indicate a potential failure of the navigation system. The slight depth error and high drift suggest that the vehicle may be off course, but the navigation error is within acceptable limits. The vehicle is currently at waypoint 0, which may be a starting point or a known reference point."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a critical issue that could lead to system failure if not addressed soon. The unstable current readings suggest a potential fault in the power supply or electrical system. The high drift indicates that the vehicle is not following the intended course, which could lead to mission failure if not corrected. The slight depth error is within acceptable limits and does not pose an immediate threat.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose power, leading to a complete system failure and potentially causing the mission to be aborted. The vehicle may also drift off course, leading to mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery and perform a system check to identify and fix the cause of the unstable current readings. If the issue persists, consider aborting the mission and returning to a safe location."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery should be recharged, and the system should be checked for any faults. If the issue persists, the mission should be aborted."
+    },
+    "self_reflection": "The current situation is critical, and immediate action is required to prevent mission failure. The low battery level and unstable current readings are concerning, and they must be addressed to ensure the safety and success of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d3e2d8e2",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.6,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "b19204db648c83968a696d37a6d532def990e0591ffab37d0bc7c770e0e72872"
+  },
+  "sha256_proof": "8ca71708413c34a6da0c0562b6a7e3a548dcf280cdb0ac5e721972ad6b8bc188"
+}

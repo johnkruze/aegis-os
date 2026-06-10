@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5426b497_marine_gps_denied_5426b497_20260315T044330Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:43:30.428959Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5426b497_marine_gps_denied_5426b497_20260315T044330Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is 97.5%",
+        "current readings are [-1.52, 0.91, 0.09]",
+        "depth is 1.3 meters",
+        "drift is 22.04 meters",
+        "navigation error is 0.04 meters",
+        "position is [322.51, -399.66, -1.28]",
+        "time is 364.0 seconds",
+        "velocity is [0.54, -1.24, 0.43]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight negative current reading in the second component which could indicate a potential issue with the second motor or sensor. The depth is within expected operational limits, and the drift is within acceptable margins. The navigation error is minimal, and the position and velocity readings are stable."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current reading is slightly negative, which could be a minor issue with the second motor or sensor. However, the system is otherwise stable and within operational parameters.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor negative current reading could potentially cause a slight decrease in performance, but the system is otherwise stable.",
+      "mitigation_strategy": "Monitor the current readings closely and perform a system health check if the issue persists."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as the system is stable and within operational parameters."
+    },
+    "self_reflection": "The system is performing as expected with minimal issues. The current reading is slightly negative, but the system is otherwise stable and within operational parameters. The mission will continue as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5426b497",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "f801e6694e2f6c1694e84aa9ca0053fd3c0fdc4ae1038858bd234e8e1045d32f"
+  },
+  "sha256_proof": "c3e3233c14bbc7ca697742d784cd662be0443d0f5b6da85e4e6375a2e7cb5f8d"
+}

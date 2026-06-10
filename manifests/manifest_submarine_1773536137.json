@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_337c31d4_marine_gps_denied_337c31d4_20260315T005531Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:55:31.678516Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_337c31d4_marine_gps_denied_337c31d4_20260315T005531Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest movement, but the depth is shallow and the drift is significant."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical anomaly that requires immediate attention. The battery is sufficient to maintain operations for a short period.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause a significant loss of buoyancy, leading to a potential sinking of the vessel.",
+      "mitigation_strategy": "Initiate emergency procedures to secure the vessel and attempt to repair the leak. If necessary, prepare for an evacuation."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_BALLAST_INJECT",
+      "expected_outcome": "Reduce the vessel's buoyancy to prevent sinking."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical event that requires immediate action to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_337c31d4",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": true,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "3c2e06d6c43b25bb243a3243a0bf6d4c1a0dd47502a9e7fa7ae269a2d46a5d08"
+  },
+  "sha256_proof": "58ebcdba579cbc20ba36d90eb5d2447887812ef1e56d40bbe9ec63e03bc8a4eb"
+}

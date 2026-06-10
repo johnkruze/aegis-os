@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_d45192a3_marine_gps_denied_d45192a3_20260315T063054Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:30:54.210997Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d45192a3_marine_gps_denied_d45192a3_20260315T063054Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 319.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings and drift, which could indicate a problem with the navigation system or the environment. The battery level is high, which is good, but the shallow depth and high drift suggest potential issues with the mission's trajectory."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a potential navigation error. The shallow depth and high drift could be due to the mission being too close to the surface or the environment being more complex than expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail to reach the intended waypoint due to the navigation error and drift. The shallow depth could also lead to potential hazards.",
+      "mitigation_strategy": "Recheck the mission parameters and adjust the waypoints to account for the shallow depth and potential navigation errors. Perform a navigation recalibration to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "recheck mission parameters, adjust waypoints, and perform navigation recalibration",
+      "expected_outcome": "The mission should be able to correct the drift and reach the intended waypoint despite the initial anomalies."
+    },
+    "self_reflection": "The anomaly detected suggests that the mission's parameters may need to be adjusted to account for the shallow depth and potential navigation errors. The system's ability to handle such anomalies is critical for mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d45192a3",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "fa6bc6bdbbb8301d156f2d2685b2320c300b587687033cb335acc0530006e7df"
+  },
+  "sha256_proof": "824fb5cf958b3cacc7adb6a458f7cc88feb12a1bfe183d9dcc2c4ab51432f093"
+}

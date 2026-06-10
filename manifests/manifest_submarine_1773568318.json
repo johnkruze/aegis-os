@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_cf1bb7ee_marine_gps_denied_cf1bb7ee_20260315T095150Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:51:50.573455Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cf1bb7ee_marine_gps_denied_cf1bb7ee_20260315T095150Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings indicating potential propulsion issues, slight depth error, high drift, and the waypoint has not been reached. The navigation error is low, suggesting the system is still relatively accurate."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The unusual current readings suggest a potential problem with the propulsion system. The slight depth error and high drift indicate that the vehicle is not maintaining its intended course. The waypoint has not been reached, which is a critical failure for the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail to maintain control, leading to potential loss of the vehicle or mission failure.",
+      "mitigation_strategy": "Immediately recharge the battery, investigate the propulsion system for any faults, and correct the course to reach the waypoint."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, investigate_propulsion, correct_course",
+      "expected_outcome": "The battery is recharged, the propulsion system is investigated, and the course is corrected to reach the waypoint."
+    },
+    "self_reflection": "The system is in a critical state with multiple failures. Immediate action is required to prevent further damage or mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cf1bb7ee",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "da37b6c35db7c69eb2b34ebeec20067ef5ccc6a81cdc861bc9fa7de500da178e"
+  },
+  "sha256_proof": "c8bfe42def7345139c480df8cc5fb00032e97fbc3912feb8cd74b76463cf7cb7"
+}

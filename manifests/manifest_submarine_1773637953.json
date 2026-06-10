@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_f1f22562_marine_gps_denied_f1f22562_20260316T051227Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:12:27.146457Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f1f22562_marine_gps_denied_f1f22562_20260316T051227Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "waypoint is on course"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is healthy, currents are stable, depth is appropriate, drift is minimal, and the navigation error is low. The waypoint is being followed accurately."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected. No immediate action is required.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes are predicted.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current mission parameters and continue towards the next waypoint."
+    },
+    "self_reflection": "The system is functioning normally and no corrective actions are necessary at this time. The mission is proceeding as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f1f22562",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 1,
+      "waypoints_total": 5
+    },
+    "physics_proof": "40564064c0c1c6679624596a88afe7503eb7737fb30fe3d635431b5c1a59f059"
+  },
+  "sha256_proof": "2d6ed45202afcae2cdec04be4bd802a46aa485e10cef5316c014a8e800447cd8"
+}

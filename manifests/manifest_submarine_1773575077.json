@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_84f36ed5_marine_gps_denied_84f36ed5_20260315T114426Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:44:26.835955Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_84f36ed5_marine_gps_denied_84f36ed5_20260315T114426Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 255.67 units in the x direction",
+        "temperature is 322.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in the current readings, which could indicate a malfunction in the navigation system or a magnetic interference issue. The shallow depth and high drift suggest that the vehicle is not accurately following the intended course. The position offset and low navigation error imply that the system is still attempting to navigate, but with significant deviation from the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential magnetic interference issue affecting the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and high drift indicate that the vehicle is not following the intended course, which could lead to a collision with the ocean floor or other obstacles.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The position offset and low navigation error suggest that the system is still attempting to navigate, but with significant deviation from the intended path.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may collide with the ocean floor or other obstacles due to the high drift and shallow depth. The navigation system may continue to drift off course, leading to further complications.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. Check for any magnetic interference sources and adjust the system accordingly. Monitor the vehicle's position and depth to ensure it remains within safe parameters."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate, and the vehicle will attempt to follow the intended course again."
+    },
+    "self_reflection": "The anomaly detected suggests a potential issue with the navigation system, which could lead to significant complications if not addressed promptly. The system's ability to maintain control and follow the intended course is critical for mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_84f36ed5",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "8c631685111a1cb3c5ace91b6b9c5bb864f1a34e9f292686d85dff5290ddcb52"
+  },
+  "sha256_proof": "7c274408260f9d1a6ab101f59b35836090adfa9316eb1045851ca9ed107b6845"
+}

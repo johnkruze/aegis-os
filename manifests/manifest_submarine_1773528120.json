@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_da37904d_marine_gps_denied_da37904d_20260314T224153Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:41:53.042368Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_da37904d_marine_gps_denied_da37904d_20260314T224153Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "negative current readings",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "high pitch",
+        "high temperature",
+        "small velocity",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, indicating potential power failure. Negative current readings suggest a malfunction in the power supply or electrical components. The small depth and high drift indicate the vehicle may be in an unexpected location or experiencing significant movement. The high pitch and high temperature suggest potential mechanical issues. The small velocity and waypoint 0 suggest the vehicle may be stationary or at the start of its mission."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure. Immediate action is needed to prevent further damage.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potentially leading to loss of control and data corruption.",
+      "mitigation_strategy": "Initiate emergency shutdown sequence and attempt to recover power from external sources if possible."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "System will shut down to prevent further damage and ensure safety."
+    },
+    "self_reflection": "The anomaly was detected due to the critical low battery level. Immediate action was taken to prevent potential system failure and ensure safety. The decision to shut down was made based on the high risk level and the potential consequences of continuing operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_da37904d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 5.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "c7d166700c60c1cf89e8066d4daa91aac03b763033a5f13fb71d21ec1d56445f"
+  },
+  "sha256_proof": "5109c2ec5a9954dd3474c1a87855627ca79958eb5ffd4ea8174dbc12ec314fff"
+}

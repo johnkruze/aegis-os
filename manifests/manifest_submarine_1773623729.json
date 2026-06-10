@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_a6691624_marine_gps_denied_a6691624_20260316T011521Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:15:21.400156Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a6691624_marine_gps_denied_a6691624_20260316T011521Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the propellers or thrusters. The shallow depth and high drift suggest the vehicle may be struggling to maintain its position. The low navigation error and normal temperature indicate that other systems are functioning as expected."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are concerning, but the navigation error is low and the temperature is normal. The vehicle is still at the start waypoint, so it has not yet completed any critical tasks.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to maintain its position and could drift further away from the intended path.",
+      "mitigation_strategy": "Increase the power to the thrusters to counteract the drift and adjust the navigation system to compensate for the current readings."
+    },
+    "decision": {
+      "actuator_command": "Increase thruster power by 10% and adjust navigation system",
+      "expected_outcome": "The vehicle should be able to counteract the drift and maintain its position more accurately."
+    },
+    "self_reflection": "The anomaly in current readings is concerning, but the vehicle is still at the start waypoint and has not yet completed any critical tasks. The increase in thruster power and adjustment of the navigation system should help mitigate the issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a6691624",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "fef449504c622dff7b8f93f7432943a83b58ebd3358adcb12e24343d5e96ae9f"
+  },
+  "sha256_proof": "32aa2977d4f4b53e0e47fa39f3a751f47714398b429dc4460e877c1aafec88b4"
+}

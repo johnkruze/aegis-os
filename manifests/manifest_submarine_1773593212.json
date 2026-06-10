@@ -1,0 +1,59 @@
+{
+  "mission_id": "marine_gps_denied_9bae410c_marine_gps_denied_9bae410c_20260315T164644Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:46:44.800566Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9bae410c_marine_gps_denied_9bae410c_20260315T164644Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "time is 309.0",
+        "velocity is low"
+      ],
+      "interpretation": "The system is operating near waypoint 0 with a high battery level and low navigation error, but the current readings and drift suggest potential issues with the vessel's orientation or movement."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest the vessel may be off course or experiencing unexpected currents.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high battery level indicates sufficient power to perform a correction.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may be off course or experiencing unexpected currents, leading to potential navigation errors.",
+      "mitigation_strategy": "Perform a course correction to align with the intended waypoint."
+    },
+    "decision": {
+      "actuator_command": "course_correction",
+      "expected_outcome": "The vessel will adjust its course to align with the intended waypoint, reducing the risk of navigation errors."
+    },
+    "self_reflection": "The system detected unusual current readings and drift, which may indicate a need for a course correction. The high battery level provides sufficient power to perform the correction, and the low navigation error suggests the vessel is otherwise performing well."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9bae410c",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "107620d97f9620cbe9b8f2efc46deb1976ad9688ca9082b1aeb815303381ed31"
+  },
+  "sha256_proof": "633b833f0375f34e4c6c3960db4714c06b7b2a9b163097e6418f6421e5e20c8f"
+}

@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_c020194d_marine_gps_denied_c020194d_20260315T152732Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:27:32.159725Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c020194d_marine_gps_denied_c020194d_20260315T152732Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 361.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, which suggests the vehicle may be off course or experiencing unexpected currents."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": "ignore the current readings"
+      },
+      {
+        "thought": "The high drift suggests the vehicle is not following the intended course, which could lead to mission failure.",
+        "confidence": 0.9,
+        "action_rejected": "continue with the current course"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may drift further from the intended course, potentially leading to mission failure.",
+      "mitigation_strategy": "Recheck the current sensor readings and adjust the course correction to compensate for the drift."
+    },
+    "decision": {
+      "actuator_command": "adjust_course 10 degrees left",
+      "expected_outcome": "The vehicle should correct its course and follow the intended path."
+    },
+    "self_reflection": "The system detected inconsistencies in the current readings and a high drift, which could indicate a problem with the current sensors or the environment. The decision to adjust the course is based on the need to maintain the mission's integrity and avoid potential failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c020194d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "19b083a9b4f6d48060abc1871eecf021bbbe20c6c3381ce2fd4c78ce3b233355"
+  },
+  "sha256_proof": "b34b16051a6812aed4f3f39b30bac2ce93fb62c5d04f1f1cea083e3e8c007fc6"
+}

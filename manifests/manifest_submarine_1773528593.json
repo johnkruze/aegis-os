@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_48217dbc_marine_gps_denied_48217dbc_20260314T224943Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:49:43.262028Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_48217dbc_marine_gps_denied_48217dbc_20260314T224943Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is within expected range",
+        "navigation error is low",
+        "position is within expected waypoint",
+        "time is within expected range",
+        "velocity is within expected range"
+      ],
+      "interpretation": "The system is experiencing abnormal current readings, which could indicate a problem with the propulsion system or the environment. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth, drift, navigation error, position, time, and velocity are all within expected ranges, which suggests that the system is functioning as intended in terms of its primary functions."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The abnormal current readings could be due to a malfunction in the propulsion system or an external environmental factor such as a strong current or a magnetic field interference.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The battery level is high, so there is no immediate risk of power failure.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The system is functioning as intended in terms of its primary functions, so the mission is not immediately at risk.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The abnormal current readings could cause the propulsion system to fail, leading to a loss of control and potentially causing the system to drift off course or sink.",
+      "mitigation_strategy": "Perform a system check to identify the cause of the abnormal current readings and take corrective action. If the issue is with the propulsion system, attempt to repair or replace the system. If the issue is with the environment, adjust the system's course or speed to compensate for the external factors."
+    },
+    "decision": {
+      "actuator_command": "Perform a system check",
+      "expected_outcome": "The system will be able to identify the cause of the abnormal current readings and take corrective action, ensuring that the mission is completed successfully."
+    },
+    "self_reflection": "The system is functioning as intended in terms of its primary functions, but the abnormal current readings could potentially cause a failure in the propulsion system. A system check is necessary to identify the cause of the issue and take corrective action."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_48217dbc",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "05bf41ac35b4cb0c6bafc9b98fb27238470a6b2f65fed9be1d3a6df2ad9051ff"
+  },
+  "sha256_proof": "11078b85ef940fdbbff59527caf3c537c67486b422e05e42eb8bcae65931c697"
+}

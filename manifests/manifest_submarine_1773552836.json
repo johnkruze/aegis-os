@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_1ce3c775_marine_gps_denied_1ce3c775_20260315T053348Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:33:48.731714Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1ce3c775_marine_gps_denied_1ce3c775_20260315T053348Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning well with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, which could indicate a problem with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to a malfunction in the current sensors or the environment. The high drift suggests a potential issue with the navigation system. The shallow depth and moderate velocity indicate that the system is operating within expected parameters. The waypoint is at the start, so there is no need to worry about reaching a destination.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistency in current readings and high drift could lead to a navigation error, causing the system to drift away from the intended path.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the current sensors. Check the navigation system for any errors or malfunctions."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the current sensors and navigation system, ensuring that it operates correctly."
+    },
+    "self_reflection": "The system is currently operating within expected parameters, but the inconsistencies in the current readings and high drift suggest a potential issue with the navigation system. A system reset and recalibration is necessary to ensure that the system operates correctly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1ce3c775",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "dd04d164950bd724d41e318083e6bf933a8f82e906826b208498afaabae56117"
+  },
+  "sha256_proof": "28bcd1259d99247af5a3b542584334940d5e1b608751fa8aa70e3e20acf6b33a"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_675dc36c_marine_gps_denied_675dc36c_20260315T062319Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:23:19.786447Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_675dc36c_marine_gps_denied_675dc36c_20260315T062319Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift and velocity, indicating an unexpected surge in the ocean current."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift significantly and may lead to a collision with the next waypoint.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may collide with the next waypoint or become disoriented.",
+      "mitigation_strategy": "Implement emergency braking to reduce speed and adjust course to stay on the intended path."
+    },
+    "decision": {
+      "actuator_command": "BRAKE",
+      "expected_outcome": "The vessel will slow down and attempt to maintain its course."
+    },
+    "self_reflection": "The anomaly was detected promptly, and an emergency braking command was issued to mitigate the risk of collision. The mission is still ongoing, but the vessel's safety is now the priority."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_675dc36c",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "2528c3d0273c06db456ea323180edb25139fe829f25909908d09025d2404e0cd"
+  },
+  "sha256_proof": "0bae9487e8d66584eeeb8f2fe430de028b3b6d176ed26f83968e20047390eb9d"
+}

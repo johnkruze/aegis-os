@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_010a9945_marine_gps_denied_010a9945_20260315T004100Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:41:00.272707Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_010a9945_marine_gps_denied_010a9945_20260315T004100Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in current, which is causing drift and potentially affecting navigation accuracy."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may drift out of the designated waypoint, leading to mission failure.",
+      "mitigation_strategy": "Implement a course correction to compensate for the current surge and adjust the waypoint to account for the drift."
+    },
+    "decision": {
+      "actuator_command": "course_correction(10 degrees right), adjust_waypoint(27.29 meters right)",
+      "expected_outcome": "The vessel will be redirected to the correct course and the waypoint will be adjusted to account for the drift, allowing the mission to continue."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure mission success. The course correction and waypoint adjustment are necessary to mitigate the risk of mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_010a9945",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "8773cfec925024b75c66702dcaca6402198e25455a663c3b0332ed3f6aa792be"
+  },
+  "sha256_proof": "9c2f8b66acd50f82b024c45c13dd8e06cf1733d5f73470e726c0dd787eca015b"
+}

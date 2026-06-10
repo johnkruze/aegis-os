@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_fa11d34c_marine_gps_denied_fa11d34c_20260316T050749Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:07:49.788236Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fa11d34c_marine_gps_denied_fa11d34c_20260316T050749Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 51.12 degrees",
+        "time is 571.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation error. The battery level is high, so power is not an issue. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, which suggests a critical issue with the navigation system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and inconsistent current readings suggest a navigation error. The position is off by a significant amount, which could lead to mission failure. The battery level is high, so power is not an issue. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, which suggests a critical issue with the navigation system.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission could fail due to the high drift and inconsistent current readings, which could lead to the aircraft being lost at sea.",
+      "mitigation_strategy": "Perform a manual override of the navigation system to correct the position. Check the current readings and adjust the course accordingly. Monitor the system closely to ensure that the issue is resolved."
+    },
+    "decision": {
+      "actuator_command": "manual override of navigation system",
+      "expected_outcome": "The aircraft should be able to correct its position and continue the mission."
+    },
+    "self_reflection": "The system is experiencing a critical issue with the navigation system. The high drift and inconsistent current readings suggest that the system is not functioning correctly. The position is off by a significant amount, which could lead to mission failure. The battery level is high, so power is not an issue. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, which suggests a critical issue with the navigation system."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fa11d34c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "025923fe74fd7f585d31e86ed3cd273568654d5f9d54285b430923b8adfc518a"
+  },
+  "sha256_proof": "8cce9f4c24450ac623588da120178ce313beda9f4bb70c0b4a0458708c478b94"
+}

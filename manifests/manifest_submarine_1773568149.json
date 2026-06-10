@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_2edbc238_marine_gps_denied_2edbc238_20260315T094900Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:49:00.572087Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2edbc238_marine_gps_denied_2edbc238_20260315T094900Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 330.0",
+        "velocity is slightly off"
+      ],
+      "interpretation": "The system is experiencing minor inconsistencies in current readings and slight drift, but the battery is still at a high level. The navigation error is low, indicating that the system is still on track, albeit with some drift. The depth is shallow, which could be a concern if the mission requires deeper waters."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a minor fault in the sensor system. However, the battery level is high, and the navigation error is low, suggesting that the system is still functional. The slight drift and velocity issues are minor and can be corrected with minor adjustments.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor inconsistencies in current readings and slight drift are unlikely to cause a critical failure. The system is still on track and functional.",
+      "mitigation_strategy": "Monitor the current readings and adjust the system parameters to minimize drift and velocity issues."
+    },
+    "decision": {
+      "actuator_command": "Adjust current readings and minimize drift",
+      "expected_outcome": "The system will continue to operate within acceptable parameters, and the mission will be completed successfully."
+    },
+    "self_reflection": "The system is performing within expected parameters, and the minor inconsistencies are manageable. The mission is on track, and the system is capable of completing the mission successfully with minor adjustments."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2edbc238",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "25420366266dc3a8d29e0b9013d69691f1b5109df1159435b53ffabc4596244c"
+  },
+  "sha256_proof": "b067b75190ee726dfe87361967ad2ca24cb6c59450036826f117198ced82730e"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_832a3f19_marine_gps_denied_832a3f19_20260315T024254Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:42:54.439203Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_832a3f19_marine_gps_denied_832a3f19_20260315T024254Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a collision with the seabed or another vessel if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could collide with the seabed or another vessel, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST_LEFT",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate action to prevent mission failure. The decision to implement emergency braking and adjust course is based on the potential for collision and the critical nature of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_832a3f19",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "fc89b1891125f462e6fa65816d0afe3a1c2e796f55c0137ad563fe092ce5e098"
+  },
+  "sha256_proof": "a162a9b54e1685b7ea74c5038df0d2a1194d7920417dc8dffddbdb69e95669d0"
+}

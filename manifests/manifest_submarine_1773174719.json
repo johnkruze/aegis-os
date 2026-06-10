@@ -1,0 +1,52 @@
+{
+  "mission_id": "DB_SURVEY_4M",
+  "environment": "Abyssal Zone - Pressure Boundary",
+  "timestamp": "2026-03-10T20:31:46.504284Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DB_SURVEY_4M_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Micro-fracture detected in outer titanium pressure hull",
+        "Water ingress minimal but rising",
+        "GPS and radio denied by 5800 meters of seawater",
+        "Aegis Dark Window engaged",
+        "Depth: 5850.0 meters",
+        "External pressure: 59.5 MPa",
+        "Battery level: 34.0%",
+        "Hull stress warning: true",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The vessel has detected a micro-fracture in the outer titanium pressure hull, which is causing water ingress. The GPS and radio are denied due to the depth, and the Aegis Dark Window is engaged to prevent further ingress. The hull stress is at a warning level, and the battery is critically low."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The micro-fracture and water ingress are critical, and the hull stress is at a warning level. The battery is also critically low, which limits our options for repairs. The Aegis Dark Window is engaged, which means we cannot rely on external communication or support.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The micro-fracture could lead to a catastrophic failure of the pressure hull, causing the vessel to sink. The battery is also critically low, which could result in the loss of power and control.",
+      "mitigation_strategy": "The primary mitigation strategy is to immediately begin repairs to the pressure hull and stabilize the water ingress. The Aegis Dark Window should be maintained to prevent further ingress. The battery should be recharged if possible, or the vessel should be prepared for a potential emergency evacuation."
+    },
+    "decision": {
+      "actuator_command": "Begin repairs to the pressure hull and stabilize water ingress. Maintain Aegis Dark Window. Prepare for potential emergency evacuation if battery cannot be recharged.",
+      "expected_outcome": "The pressure hull should be repaired and the water ingress stabilized, allowing the vessel to continue its mission. If the battery cannot be recharged, the vessel should be prepared for an emergency evacuation."
+    },
+    "self_reflection": "The situation is critical, and we must act quickly to prevent further damage. The Aegis Dark Window is engaged, which limits our options, but we must prioritize the safety of the vessel and its crew. We must also be prepared for the possibility of an emergency evacuation if the battery cannot be recharged."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "sub_be5bae33",
+    "scenario": "abyssal_survey",
+    "score": {
+      "max_depth": 10.0,
+      "success": true
+    },
+    "physics_proof": "90b4d7b8c2997e2c60d70de99039825457c55db2692050f61a8ca0d693a9c0bf"
+  },
+  "sha256_proof": "f8756c823ac587eab7fb1f50c24dfeab56b7d0f2adceefba0edb511c6f70dd32"
+}

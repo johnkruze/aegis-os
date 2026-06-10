@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_6356d1db_marine_gps_denied_6356d1db_20260315T234751Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:47:51.839065Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6356d1db_marine_gps_denied_6356d1db_20260315T234751Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the sensors or the environment. The shallow depth and high drift suggest the vehicle may be in a challenging or unexpected location. The high temperature and slow velocity are concerning, as they may indicate the vehicle is not functioning as intended."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to sensor failure or environmental factors. The shallow depth and high drift suggest the vehicle may be in a challenging or unexpected location. The high temperature and slow velocity are concerning, as they may indicate the vehicle is not functioning as intended.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to maintain its intended course or depth, leading to mission failure.",
+      "mitigation_strategy": "Perform a sensor calibration and check the vehicle's position and depth. If the issue persists, initiate a manual override to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "perform sensor calibration and check position and depth",
+      "expected_outcome": "The vehicle's sensors will be recalibrated, and its position and depth will be verified to ensure it is functioning correctly."
+    },
+    "self_reflection": "The anomaly detected suggests a potential issue with the vehicle's sensors or environment. A thorough sensor calibration and position check are necessary to ensure the mission can continue safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6356d1db",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "9c979d009048b2568c85e5608fe943dd14f06e71071cf91f3bed64c70dd1da30"
+  },
+  "sha256_proof": "87fb1e4ff496831d44cff55de660b1eb485bb4c66d4def6c3b7816fe17235a4b"
+}

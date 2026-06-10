@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_7bd9f01f_marine_gps_denied_7bd9f01f_20260316T000445Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:04:45.477052Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7bd9f01f_marine_gps_denied_7bd9f01f_20260316T000445Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery is healthy, and the current readings are slightly off, which could be due to minor sensor drift or environmental factors. The depth is shallow, which is expected in the ocean environment. The velocity is slow, which is consistent with the waypoint being at the start. The navigation error is low, indicating that the system is maintaining its course accurately."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected, with only minor issues that are unlikely to impact mission success.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor drift and navigation error are within acceptable limits and are unlikely to cause mission failure.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if drift becomes significant."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters, and there are no immediate threats to mission success. The minor issues are within acceptable limits and are being monitored."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7bd9f01f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "f10abb2fc964645cfef56fd11a5eea5cf7c14ce8fc5a4f673aa764d44a4ec1ac"
+  },
+  "sha256_proof": "b93af17d8a3f8617b9fa1b9f66c52ec07526e2d20d292b1d1381bfd302c948c8"
+}

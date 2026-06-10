@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7f70fb21_marine_gps_denied_7f70fb21_20260314T230418Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:04:18.408916Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7f70fb21_marine_gps_denied_7f70fb21_20260314T230418Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 404.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with high battery, but current readings are inconsistent, indicating potential issues with the current sensors or system. The shallow depth and high drift suggest the vehicle may be in a challenging environment. The low navigation error and slow velocity suggest the system is performing adequately for the current conditions. The waypoint is at 0, indicating the mission may be at the start or end."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to sensor malfunction or environmental factors. The high drift and shallow depth suggest the vehicle may be in a challenging environment. The mission is at the start or end, so the next step should be to verify the current position and adjust the mission plan if necessary.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistent current readings could lead to navigation errors or system failures if not addressed. The high drift could cause the vehicle to move away from the intended path.",
+      "mitigation_strategy": "Verify the current position using multiple sensors. Check the current battery level and ensure it is sufficient for the remaining mission. Adjust the mission plan if necessary to account for the high drift and shallow depth."
+    },
+    "decision": {
+      "actuator_command": "Verify current position using multiple sensors. Check battery level. Adjust mission plan if necessary.",
+      "expected_outcome": "The vehicle's position will be verified, the battery level will be confirmed, and the mission plan will be adjusted if needed to ensure safe and effective operation."
+    },
+    "self_reflection": "The system is performing adequately for the current conditions, but the inconsistent current readings and high drift suggest potential issues that need to be addressed to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7f70fb21",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "9bca46120f496f93b3428557d1f3a203f339c5e8a179b3608787b233476d0b22"
+  },
+  "sha256_proof": "552ded84ada98cec9521c554c5e275fdde3e0a836c6bbdf21325509ada881d16"
+}

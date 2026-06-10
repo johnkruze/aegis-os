@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_451745c9_marine_gps_denied_451745c9_20260316T024645Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:46:45.787587Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_451745c9_marine_gps_denied_451745c9_20260316T024645Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a collision with the seabed or another vessel if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel could collide with the seabed or another vessel, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate attention to prevent mission failure. The decision to implement emergency braking and adjust course is based on the potential for collision and the critical nature of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_451745c9",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "69f07fbf7c7a133e9da5d34ac97f3a113eb3734a9748eff26d4974bd7476af17"
+  },
+  "sha256_proof": "184cee76b41cad0cf4c6a281b1160140e7bf3b88cf087403113d5f5d488c76b4"
+}

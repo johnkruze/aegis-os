@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_d7335a59_marine_gps_denied_d7335a59_20260315T203247Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:32:47.292134Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d7335a59_marine_gps_denied_d7335a59_20260315T203247Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "large pitch and roll angles",
+        "high temperature",
+        "low velocity"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including a low battery, unstable current readings, slight depth errors, high drift, and large pitch and roll angles. The temperature is also high, which could be affecting the system's performance. The velocity is low, indicating that the vehicle may be struggling to maintain its position or move forward effectively."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that needs to be addressed immediately to prevent system failure. The unstable current readings suggest a potential issue with the power supply. The high drift and large pitch and roll angles indicate that the vehicle may be losing control. The high temperature could be affecting the system's performance and reliability. The low velocity suggests that the vehicle may be struggling to maintain its position or move forward effectively.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail due to the low battery, leading to a loss of control and potentially causing damage to the vehicle or the environment. The unstable current readings could also lead to system failure. The high drift and large pitch and roll angles suggest that the vehicle may be losing control, which could result in a collision with other objects or the environment. The high temperature could affect the system's performance and reliability, potentially leading to further issues.",
+      "mitigation_strategy": "The first priority should be to address the low battery issue by attempting to recharge the battery or switching to a backup power source. The unstable current readings should be investigated to determine the cause and take appropriate action to resolve it. The high drift and large pitch and roll angles suggest that the vehicle may be losing control, which should be addressed by adjusting the vehicle's orientation and position. The high temperature should be monitored and controlled to prevent further issues."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, stabilize_orientation, monitor_temperature",
+      "expected_outcome": "The system should be able to recover from the anomalies and continue to operate safely. The low battery should be resolved, the vehicle should be able to maintain its orientation and position, and the temperature should be monitored and controlled to prevent further issues."
+    },
+    "self_reflection": "The system is experiencing multiple anomalies that could potentially lead to system failure. The low battery is a critical issue that needs to be addressed immediately to prevent system failure. The unstable current readings suggest a potential issue with the power supply. The high drift and large pitch and roll angles indicate that the vehicle may be losing control. The high temperature could be affecting the system's performance and reliability. The low velocity suggests that the vehicle may be struggling to maintain its position or move forward effectively."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d7335a59",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 3.6,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "150ae74a458419044a80e133e400c18cdc8f5ee0479ab8a6b52f2fe8290fff1e"
+  },
+  "sha256_proof": "9aa9e0eb1a2f73d2eea47ef58d55158bd6cbcd44f4f281877200ccbca3230e78"
+}

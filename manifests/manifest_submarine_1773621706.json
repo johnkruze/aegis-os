@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_50bdba7f_marine_gps_denied_50bdba7f_20260316T004138Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:41:38.356863Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_50bdba7f_marine_gps_denied_50bdba7f_20260316T004138Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_OUT_OF_RANGE",
+        "DEPTH_STABLE",
+        "DRIFT_HIGH",
+        "NAV_ERROR_LOW",
+        "POSITION_UNSTABLE",
+        "TIME_STABLE",
+        "VELOCITY_LOW",
+        "WAYPOINT_AT_ZERO"
+      ],
+      "interpretation": "The battery is critically low, with current readings indicating an imbalance. Depth is stable, but drift is high, and the position is unstable. Navigation error is low, but the velocity is very low, and the waypoint is at zero."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which is a critical failure mode. The current readings suggest a potential short circuit or overdraw. The high drift and unstable position indicate a significant navigation error. The low velocity and zero waypoint suggest the mission is not progressing as expected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission will likely fail due to the critical battery degradation and the inability to maintain position or progress.",
+      "mitigation_strategy": "Initiate emergency shutdown and attempt to recover the battery or transfer control to a backup system if available."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN",
+      "expected_outcome": "The system will shut down to prevent further damage and conserve energy."
+    },
+    "self_reflection": "The critical battery degradation and high drift indicate a severe failure in the system's ability to maintain control and progress. Immediate action is required to prevent the mission from failing completely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_50bdba7f",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.8,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "3fe4f93346c81fa48ec612250d01c4dae49d36ab2c4d3df1e758a37ea3dae5ca"
+  },
+  "sha256_proof": "e13bc77068157e8a3fcaf9265f2962719b745c88028687b6bf18f4f4a12fe7f4"
+}

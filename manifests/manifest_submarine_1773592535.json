@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_770c5f3d_marine_gps_denied_770c5f3d_20260315T163527Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:35:27.170032Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_770c5f3d_marine_gps_denied_770c5f3d_20260315T163527Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the vessel is moving. The depth is shallow, and the drift is significant, indicating the vessel may be in a challenging navigation environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention to prevent further damage or loss of the vessel. The current readings suggest the vessel is moving, which complicates the situation. The depth is shallow, which may limit the options for repair or evacuation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause significant damage to the vessel, potentially leading to a loss of control or sinking. The vessel may also be at risk of grounding or collision with other objects.",
+      "mitigation_strategy": "Initiate emergency procedures to contain the leak, activate the emergency power system, and prepare for a potential evacuation or repair operation. Notify the mission control center and request assistance."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_LEAK_CONTAINMENT, EMERGENCY_POWER_ON, EVACUATION_PREPARE",
+      "expected_outcome": "Contain the leak, activate emergency power, and prepare for potential evacuation or repair. Notify mission control for assistance."
+    },
+    "self_reflection": "The detection of a leak on the surface of the water is a critical anomaly that requires immediate action to prevent further damage. The current readings suggest the vessel is moving, which complicates the situation. The depth is shallow, which may limit the options for repair or evacuation. Initiating emergency procedures is the best course of action to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_770c5f3d",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "32055d87d2604e305d93d2afbcfd73c4e6e4f91021d7ea1e8146a4c335df037e"
+  },
+  "sha256_proof": "3e639c5c885d4384f9ea6bb2353d4622797c2134683cf75afb14edac3e4261db"
+}

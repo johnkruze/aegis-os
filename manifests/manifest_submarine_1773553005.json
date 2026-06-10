@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_8d4d1e43_marine_gps_denied_8d4d1e43_20260315T053633Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:36:33.655694Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8d4d1e43_marine_gps_denied_8d4d1e43_20260315T053633Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and unusual current readings. The shallow depth and low velocity suggest the vehicle is in a calm area. The low navigation error indicates the system is accurately tracking its position. The current readings are concerning as they deviate from expected values, which could indicate a problem with the current sensors or the vehicle's orientation."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to a malfunction in the current sensors or the vehicle's orientation system. The unusual current readings suggest a potential issue with the vehicle's movement or orientation. The shallow depth and low velocity indicate the vehicle is in a calm area, which could be a false positive or a deliberate maneuver. The low navigation error suggests the system is accurately tracking its position, which is reassuring.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could cause the vehicle to move away from its intended path, leading to mission failure. The unusual current readings could indicate a problem with the vehicle's orientation or movement, which could also lead to mission failure.",
+      "mitigation_strategy": "Perform a system check to verify the current sensors and orientation system. If the issue persists, adjust the vehicle's orientation to correct the drift. If the issue is with the current sensors, recalibrate or replace them."
+    },
+    "decision": {
+      "actuator_command": "perform system check",
+      "expected_outcome": "The system check will verify the current sensors and orientation system, and if the issue persists, the vehicle's orientation will be adjusted to correct the drift."
+    },
+    "self_reflection": "The vehicle appears to be functioning within normal parameters, except for the high drift and unusual current readings. The shallow depth and low velocity suggest the vehicle is in a calm area. The low navigation error indicates the system is accurately tracking its position. The current readings are concerning as they deviate from expected values, which could indicate a problem with the current sensors or the vehicle's orientation system. The decision to perform a system check is based on the potential risks and the need to ensure the vehicle's orientation and movement are correct."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8d4d1e43",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "21af2bc9bf0f4c0b10b648670bb48c22f28e75b1bec4689f6191df1a90315869"
+  },
+  "sha256_proof": "184f6e17c17aaf64a3102e41c42b35b57c351bf5935fa6d68bc3140c899fb4ab"
+}

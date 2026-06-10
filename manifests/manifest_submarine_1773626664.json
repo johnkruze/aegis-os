@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_aed7f3fb_marine_gps_denied_aed7f3fb_20260316T020415Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:04:15.915511Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_aed7f3fb_marine_gps_denied_aed7f3fb_20260316T020415Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_OUT_OF_RANGE",
+        "DEPTH_OUT_OF_RANGE",
+        "DRIFT_OUT_OF_RANGE",
+        "NAV_ERROR_OUT_OF_RANGE",
+        "P_OUT_OF_RANGE",
+        "T_OUT_OF_RANGE",
+        "V_OUT_OF_RANGE",
+        "WAYPOINT_OUT_OF_RANGE"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including battery degradation, current out of range, depth out of range, drift out of range, navigation error out of range, P out of range, T out of range, V out of range, and waypoint out of range. These issues suggest that the system is not functioning as intended and is at risk of failure."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which is the primary cause of the mission failure. The current, depth, drift, navigation error, P, T, and V values are also out of range, indicating that the system is not operating within its expected parameters.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system will likely shut down or fail to operate correctly due to the battery degradation and other out-of-range parameters.",
+      "mitigation_strategy": "Immediately initiate a battery swap or power management protocol to stabilize the system. If the battery swap is not possible, prepare for an emergency shutdown and attempt to land or drift to a safe location."
+    },
+    "decision": {
+      "actuator_command": "SWAP_BATTERY",
+      "expected_outcome": "The system should stabilize and continue operating if the battery swap is successful. If not, the system will likely shut down and drift to a safe location."
+    },
+    "self_reflection": "The system has failed due to critical battery degradation and out-of-range parameters. Immediate action is required to prevent further failure and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_aed7f3fb",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 43.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "7bcdd8abde7ab39d2f3f0bfc47014d250cf5e623521ea0bb25db117855a4a789"
+  },
+  "sha256_proof": "379c98e502517bf1a9647784a4e6461b71a769ebb8caa3c2f55c9033f346a8a4"
+}

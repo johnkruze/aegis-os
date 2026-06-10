@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f7fdf361_marine_gps_denied_f7fdf361_20260316T052030Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:20:30.283445Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f7fdf361_marine_gps_denied_f7fdf361_20260316T052030Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is normal",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 77.21, -266.22, -2.08",
+        "time is 396.0",
+        "velocity is [-0.38, 0.6, 0.22]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and unusual current readings, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the drift is concerning. The navigation error is low, which is positive. The position is slightly off, but the depth is normal. The velocity is within expected ranges. The waypoint is at 0, which suggests the mission might be paused or waiting for a command."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and unusual current readings suggest a potential navigation issue. The battery level is high, so power is not a concern. The navigation error is low, so the system is not immediately failing. The position is slightly off, but the depth is normal. The velocity is within expected ranges. The waypoint is at 0, which suggests the mission might be paused or waiting for a command.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could lead to a collision with the environment or other vessels. The unusual current readings could indicate a problem with the current sensor or the environment itself.",
+      "mitigation_strategy": "Perform a manual override to check the current sensor readings and adjust the course if necessary. Ensure the environment is safe and there are no obstacles in the path. If the issue persists, initiate a backup navigation system or contact support for further assistance."
+    },
+    "decision": {
+      "actuator_command": "manual override current sensor readings and adjust course",
+      "expected_outcome": "The system will check the current sensor readings and adjust the course to avoid any potential collisions or navigation errors."
+    },
+    "self_reflection": "The system detected an anomaly in the current sensor readings and high drift, which could indicate a potential navigation issue. The decision was made to perform a manual override to check the current sensor readings and adjust the course. This decision is based on the high confidence in the system's ability to handle the situation and the potential risks associated with the anomaly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f7fdf361",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "f25c98f06bc24e18dfddad8378b61742b3b78e9ae542435e7a6e6ddf8a1c6315"
+  },
+  "sha256_proof": "9de2917d4b8ab7e680a52d60dd1031c8e4e3d56938b1d1cae569b66e949f267c"
+}

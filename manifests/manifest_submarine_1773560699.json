@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c5120d38_marine_gps_denied_c5120d38_20260315T074450Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:44:50.492318Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c5120d38_marine_gps_denied_c5120d38_20260315T074450Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is minimal",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is near zero",
+        "waypoint is active"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight anomaly in current readings. The battery level is high, indicating sufficient power. Depth and drift are within acceptable limits, and the navigation error is minimal. The position is accurate, and the velocity is near zero, suggesting the vehicle is stationary or moving very slowly. The waypoint is active, indicating the mission is proceeding as planned."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly inconsistent, but within expected ranges. The battery level is high, so power is not an issue. The vehicle is stationary or moving very slowly, and the navigation error is minimal. The waypoint is active, so the mission is proceeding as planned.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The current readings may be due to minor sensor drift or noise. The vehicle is stationary or moving very slowly, so the risk of collision or damage is low.",
+      "mitigation_strategy": "Monitor the current readings over the next few minutes to ensure they stabilize. If the readings continue to be inconsistent, perform a sensor recalibration."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned. If the current readings continue to be inconsistent, the vehicle will perform a sensor recalibration."
+    },
+    "self_reflection": "The system appears to be functioning normally with a slight anomaly in current readings. The battery level is high, indicating sufficient power. The depth and drift are within acceptable limits, and the navigation error is minimal. The position is accurate, and the velocity is near zero, suggesting the vehicle is stationary or moving very slowly. The waypoint is active, so the mission is proceeding as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c5120d38",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 1,
+      "waypoints_total": 5
+    },
+    "physics_proof": "72ce95f0fcf339bc8b47c3d1e4f40447f9a12e02f17e674f7f548169c4f2a005"
+  },
+  "sha256_proof": "2dbfa2c4712079922ef4ff16ebc0c53af2bbe7524009091cc63d3c911349a3e5"
+}

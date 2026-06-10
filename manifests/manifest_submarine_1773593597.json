@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_8804bd86_marine_gps_denied_8804bd86_20260315T165308Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:53:08.985649Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8804bd86_marine_gps_denied_8804bd86_20260315T165308Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, unusual current readings, slight depth error, high drift, and low navigation error. The current is inconsistent, with two negative values and one positive value. The depth is slightly off, and the drift is high, indicating the vehicle may be moving away from the intended path. The navigation error is low, suggesting the system is still relatively accurate. The vehicle is at waypoint 0, which may indicate a potential issue with the waypoint system or the mission plan."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that needs to be addressed immediately to prevent system failure. The unusual current readings and high drift suggest a potential issue with the propulsion system or the vehicle's orientation. The slight depth error and low navigation error indicate that the system is still functional but requires attention to maintain accuracy.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the battery is not charged, the system will fail, potentially leading to a loss of control and a potential collision with the ocean floor or other objects.",
+      "mitigation_strategy": "Charge the battery immediately and perform a system check to identify and address the source of the unusual current readings and high drift."
+    },
+    "decision": {
+      "actuator_command": "charge_battery",
+      "expected_outcome": "The battery will be charged, and the system will be ready for further operations."
+    },
+    "self_reflection": "The system is experiencing multiple anomalies that could potentially lead to a critical failure. Immediate action is required to address the low battery and investigate the source of the unusual current readings and high drift to ensure the safety and accuracy of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8804bd86",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "ea38c8d2077a2a1a931f99b407ffb9d179be0424d4c50ac4126a603c51bce08b"
+  },
+  "sha256_proof": "509511b563cfeac02848e7cfcfc1ab57482e20db329209c28200a06542be92f0"
+}

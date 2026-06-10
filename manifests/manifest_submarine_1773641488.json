@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_d1b7356d_marine_gps_denied_d1b7356d_20260316T061120Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:11:20.155209Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d1b7356d_marine_gps_denied_d1b7356d_20260316T061120Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 354.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is nearly fully charged, and the navigation error is low, indicating that the system is performing well. However, the slight drift and negative velocity suggest that the system may be slightly off course."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters, with only minor deviations. The battery is nearly fully charged, and the navigation error is low, indicating that the system is performing well. However, the slight drift and negative velocity suggest that the system may be slightly off course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may be slightly off course, but it is performing within normal parameters. The battery is nearly fully charged, and the navigation error is low, indicating that the system is performing well.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to monitor its performance and adjust course if necessary."
+    },
+    "self_reflection": "The system is performing within normal parameters, with only minor deviations. The battery is nearly fully charged, and the navigation error is low, indicating that the system is performing well. However, the slight drift and negative velocity suggest that the system may be slightly off course. The system will continue to monitor its performance and adjust course if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d1b7356d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "8ffee4171eae957214ada9b89870e5af96fcc8f530311e13870a95124596337e"
+  },
+  "sha256_proof": "31525ac3397c8972ea080def8e4ce8ecf204f01c9ad805bda72f55c7bb0a89d3"
+}

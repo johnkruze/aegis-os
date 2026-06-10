@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_6d91288a_marine_gps_denied_6d91288a_20260316T025925Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:59:25.309463Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6d91288a_marine_gps_denied_6d91288a_20260316T025925Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is near the end of the mission",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is nearing the end of the mission with a high battery level and low navigation error, but there are inconsistencies in the current readings and a significant drift from the intended path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": "ignore the current readings"
+      },
+      {
+        "thought": "The drift could be due to external factors or a malfunction in the navigation system.",
+        "confidence": 0.6,
+        "action_rejected": "ignore the drift"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail to complete due to the inconsistencies in the current readings and drift from the intended path.",
+      "mitigation_strategy": "Verify the current sensor readings and recalibrate the navigation system if necessary."
+    },
+    "decision": {
+      "actuator_command": "verify current sensor readings and recalibrate navigation system",
+      "expected_outcome": "The mission should be able to complete successfully after the verification and recalibration."
+    },
+    "self_reflection": "The system is nearing the end of the mission and has encountered some anomalies. It is important to ensure the accuracy of the current sensor readings and recalibrate the navigation system to avoid mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6d91288a",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.9,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "b34e70a34e7322e3fb7184042657b22d3329b896d77e892ac3be5e53529fe60f"
+  },
+  "sha256_proof": "768f39ed8c6b3257dbd67d43e03e35912935db025ff6b639f8b2fbc372910ed5"
+}

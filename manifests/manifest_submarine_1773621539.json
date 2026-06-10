@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b3e3260f_marine_gps_denied_b3e3260f_20260316T003853Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:38:53.027612Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b3e3260f_marine_gps_denied_b3e3260f_20260316T003853Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with an obstacle or lose control, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision, ensuring mission completion."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a decisive action was taken to mitigate the risk. The mission is now on hold until the surge is resolved."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b3e3260f",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "b94a8217fee4337e84d938ce4633148d4d55065d9c081339d005039b6bc351b1"
+  },
+  "sha256_proof": "283242cae5aa6bc711e8879423b94867519edb4fc2911831bd76373583c92e10"
+}

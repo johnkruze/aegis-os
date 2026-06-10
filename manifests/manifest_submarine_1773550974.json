@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_b208660f_marine_gps_denied_b208660f_20260315T050246Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:02:46.652561Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b208660f_marine_gps_denied_b208660f_20260315T050246Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, slight depth error, high drift, and low navigation error. The waypoint has not been reached, indicating a potential mission failure."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly. The unstable current readings suggest a potential issue with the power supply. The high drift and slight depth error indicate that the vehicle is not following the intended path accurately. The waypoint has not been reached, which is a critical failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down unexpectedly, leading to a loss of control and potential damage to the equipment. The vehicle may drift off course and fail to reach the intended waypoint, resulting in mission failure.",
+      "mitigation_strategy": "Immediately initiate a manual override to land the vehicle safely. If possible, switch to a backup power source. If the vehicle is too far from the intended path, attempt to correct the course using available controls."
+    },
+    "decision": {
+      "actuator_command": "manual_override",
+      "expected_outcome": "The vehicle will attempt to land safely. If the vehicle is too far from the intended path, the course will be corrected using available controls."
+    },
+    "self_reflection": "The system has detected critical anomalies that could lead to mission failure. Immediate action is required to ensure the safety of the vehicle and the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b208660f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "fde081fd31217c50b4e817d93e957f4b034e0f8272db2021cc2e7f559a4edd80"
+  },
+  "sha256_proof": "cad2785398198f676457bfc4ee6ab47e209058b7ee0b6f5698b42796344d87ff"
+}

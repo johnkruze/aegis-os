@@ -1,0 +1,57 @@
+{
+  "mission_id": "USV_PATROL_J2_autonomous_boat_4d867f6a",
+  "environment": "Surface Ocean - High Sea State",
+  "timestamp": "2026-03-11T02:54:40.834291Z",
+  "is_dark_window": true,
+  "telemetry_ref": "USV_PATROL_J2_autonomous_boat_4d867f6a_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Massive wave slam detected at high speed",
+        "Unidentified fast-moving vessel on intercept course",
+        "Starlink/Satcom hardware damaged by wave impact",
+        "Aegis Dark Window engaged",
+        "Speed: 42.5 knots",
+        "Wave height: 4.2 meters",
+        "Pitch angle: 18.5 degrees",
+        "Radar contact: UNKNOWN_VESSEL_INTERCEPT",
+        "Comms uplink: OFFLINE"
+      ],
+      "interpretation": "The USV_PATROL_J2_autonomous_boat_4d867f6a is experiencing a severe wave slam, which has damaged the Starlink/Satcom hardware. Additionally, an unidentified fast-moving vessel is intercepting the boat's course. The Aegis Dark Window has been engaged to protect the vessel from potential threats."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The wave slam and hardware damage are critical, and the intercepting vessel poses an immediate threat. The Aegis Dark Window is engaged, which should provide temporary protection.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The comms uplink is offline, which will hinder communication with the mission control. However, the Aegis Dark Window should allow for continued navigation and basic operations.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The boat may be unable to communicate with mission control, and the intercepting vessel could pose a significant threat.",
+      "mitigation_strategy": "Continue navigation using the Aegis Dark Window and attempt to repair the damaged hardware. If communication is lost, rely on onboard sensors and pre-programmed responses."
+    },
+    "decision": {
+      "actuator_command": "Navigate to a safe location and initiate emergency repairs",
+      "expected_outcome": "The boat will attempt to reach a safe location and begin repairs to the damaged hardware. If communication is lost, the boat will rely on onboard sensors and pre-programmed responses."
+    },
+    "self_reflection": "The event highlights the importance of robust hardware and emergency response protocols. The Aegis Dark Window provided temporary protection, but further repairs are necessary to ensure the boat's continued operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "autonomous_boat_4d867f6a",
+    "scenario": "high_speed_surface_chase",
+    "score": {
+      "max_speed_knots": 12.408704497727143,
+      "success": false
+    },
+    "physics_proof": "535eb07c14f91ca66f1e4302fc4a03920eb7b666a30fcf451e9c2fee374aa06d"
+  },
+  "sha256_proof": "7b45e5b23dbbd02589d2dc4029508ee7cfb47e4ea7fd68bc96f0f1e91316aab8"
+}

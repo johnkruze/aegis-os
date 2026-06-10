@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_481b11f6_marine_gps_denied_481b11f6_20260315T014142Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:41:42.729134Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_481b11f6_marine_gps_denied_481b11f6_20260315T014142Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The battery level is still high, but the drift is concerning."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a drift that could lead to mission failure if not addressed. The battery is sufficient for a short period, but the drift needs to be corrected immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift out of the designated area, leading to mission failure.",
+      "mitigation_strategy": "Implement a corrective maneuver to reduce drift and maintain course."
+    },
+    "decision": {
+      "actuator_command": "execute_course_correction",
+      "expected_outcome": "The vessel will be steered back on course, preventing mission failure."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a corrective action was taken to mitigate the risk. The system is designed to handle such situations, and the crew is trained to respond effectively."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_481b11f6",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "37e77ba8ea857d31974ca2990a6a5e6f2721839bc0b83f3160d5fa637cc9c0ed"
+  },
+  "sha256_proof": "bd5ea91e21f4ee5272f39740c840c1ca3e8f7c96f4e9e4b6e5a71b2c1e4ad6a9"
+}

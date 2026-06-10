@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_9945c652_marine_gps_denied_9945c652_20260315T072408Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:24:08.274033Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9945c652_marine_gps_denied_9945c652_20260315T072408Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is 93.4%",
+        "current readings are [0.36, 0.53, -0.04]",
+        "depth is 0.5 meters",
+        "drift is 49.55 meters",
+        "navigation error is 0.05 meters",
+        "position is [164.37, 189.66, -0.49]",
+        "time is 724.0 seconds",
+        "velocity is [-0.29, -0.08, -0.0] meters per second",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight drift and minor navigation error. The battery level is high, and the current readings are within expected ranges. The depth is shallow, and the velocity is slow, indicating a stationary or slow-moving object in the water."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is functioning normally with no critical anomalies detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring the system and maintain current operations."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "Maintain current operations and monitor system performance."
+    },
+    "self_reflection": "The system is performing as expected with no critical anomalies. The mission is on track, and no immediate action is required."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9945c652",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 6.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "94e388cdd18ff03c96ed9ba059ef0058cdc9a8e2ffed28689e3aac546d9607ab"
+  },
+  "sha256_proof": "ebb3109266839b1c3e3e6d48e69a93ff41101363def31b6c44541493e868e34c"
+}

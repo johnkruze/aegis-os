@@ -1,0 +1,48 @@
+{
+  "mission_id": "marine_gps_denied_1c8ef631_marine_gps_denied_1c8ef631_20260315T215117Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:51:17.714045Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1c8ef631_marine_gps_denied_1c8ef631_20260315T215117Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery_degradation",
+        "low_battery"
+      ],
+      "interpretation": "The battery level is critically low, indicating that the system is running on minimal power. The current readings suggest that the system is experiencing a significant power drain, which is likely due to the GPS denial anomaly. The depth, drift, and navigation error are within normal operational parameters, but the battery is the primary concern."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low and the system is experiencing a significant power drain. The GPS denial anomaly is the primary cause of this issue. The system needs to be powered down to prevent further damage. However, powering down the system will result in the mission being incomplete.",
+        "confidence": 0.9,
+        "action_rejected": "continue mission"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system will shut down due to the low battery, resulting in the mission being incomplete.",
+      "mitigation_strategy": "Power down the system immediately to prevent further damage and ensure the safety of the mission."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "The system will power down and the mission will be incomplete."
+    },
+    "self_reflection": "The critical battery degradation has forced an immediate shutdown to prevent further damage to the system. The mission is incomplete, but the safety of the system is the priority."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1c8ef631",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 42.0,
+      "mission_success": false,
+      "nav_error_m": 0.15,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "4d154ba9611d32853093018a2a1811c17dd9d6a98e2b5693b15710b33ce44ffe"
+  },
+  "sha256_proof": "c2ff94f8bc8b8e855afd8dacf239a5f3e57763fe9aa4227b147c1a44f2483390"
+}

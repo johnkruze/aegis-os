@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_54562f48_marine_gps_denied_54562f48_20260315T052854Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:28:54.946925Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_54562f48_marine_gps_denied_54562f48_20260315T052854Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is low",
+        "position is accurate",
+        "velocity is zero",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from expected values. The battery is at a high level, which is good. The current readings are slightly off, but within a normal range. The depth and position are within expected parameters. The drift is within acceptable limits, and the navigation error is low, indicating the system is accurately tracking its position. The velocity is zero, which is expected at a waypoint. The waypoint is at zero, suggesting the system is at the start of a mission or has completed a task."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected with only minor deviations. The battery level is high, which is a positive indicator. The current readings are slightly off, but within a normal range. The depth and position are within expected parameters. The drift is within acceptable limits, and the navigation error is low, indicating the system is accurately tracking its position. The velocity is zero, which is expected at a waypoint. The waypoint is at zero, suggesting the system is at the start of a mission or has completed a task.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing as expected with only minor deviations. The battery level is high, which is a positive indicator. The current readings are slightly off, but within a normal range. The depth and position are within expected parameters. The drift is within acceptable limits, and the navigation error is low, indicating the system is accurately tracking its position. The velocity is zero, which is expected at a waypoint. The waypoint is at zero, suggesting the system is at the start of a mission or has completed a task.",
+      "mitigation_strategy": "No action needed. The system is performing as expected."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to perform as expected, maintaining its current position and tracking its mission."
+    },
+    "self_reflection": "The system is performing as expected with only minor deviations. The battery level is high, which is a positive indicator. The current readings are slightly off, but within a normal range. The depth and position are within expected parameters. The drift is within acceptable limits, and the navigation error is low, indicating the system is accurately tracking its position. The velocity is zero, which is expected at a waypoint. The waypoint is at zero, suggesting the system is at the start of a mission or has completed a task."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_54562f48",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "48bf3fb767bd11487946914699b5ac4d9235c28428839828f53d609138120bc6"
+  },
+  "sha256_proof": "3cbeb314d3f30ffc44a7a4a12664751af64c7a8bdae230acebf13671121213c1"
+}

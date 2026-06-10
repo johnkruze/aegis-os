@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_33d9490b_marine_gps_denied_33d9490b_20260315T103409Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:34:09.701882Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_33d9490b_marine_gps_denied_33d9490b_20260315T103409Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current sensor readings suggest that the vessel is experiencing drift and may be off course."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel may lose control and drift away from the intended course, potentially leading to a collision or other hazards.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vessel and initiate a return to the last known safe position."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vessel and initiate a return to the last known safe position."
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate attention. The vessel's stability and control are paramount, and the emergency override is the most appropriate action to prevent further damage or loss of control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_33d9490b",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "cf4a4564abeef0cea08c18831331d73ce39c0deb45bfbb986b11c52d0d6c210e"
+  },
+  "sha256_proof": "271d4ae8b19c124b3254d96e2dae66d42152c32e1197d61817d4d2e86155fde8"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_0a7b9387_marine_gps_denied_0a7b9387_20260315T011711Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:17:11.634173Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0a7b9387_marine_gps_denied_0a7b9387_20260315T011711Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with the seabed or another object, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE; ADJUST_COURSE",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision, allowing the mission to continue."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a decisive action was taken to mitigate the risk. The mission is still ongoing, but the vessel's safety is now the priority."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0a7b9387",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 5.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "8c41ef5a32bf7099505b40470ebac520ced0549e7be433e6212dbfc7b55a5b1a"
+  },
+  "sha256_proof": "cd9fcfbed9068c3415f34ec215f2f8c2c48f7bd8de4648183f89ed28a6c69ca8"
+}

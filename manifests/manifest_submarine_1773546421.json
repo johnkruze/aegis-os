@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_d688e99c_marine_gps_denied_d688e99c_20260315T034644Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:46:44.118622Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d688e99c_marine_gps_denied_d688e99c_20260315T034644Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 554.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery level is high, which is good. The current readings are slightly off, which could indicate a minor issue with the current sensors. The depth is shallow, which is expected for marine operations. The drift is high, which could be affecting the accuracy of the position. The navigation error is low, which is good. The time is 554.0, which is not a specific time, but could be a timestamp. The velocity is low, which is expected for marine operations. The waypoint is at 0, which could indicate the start of the mission or a specific point in the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery level is high, which is good. The current readings are slightly off, which could indicate a minor issue with the current sensors. The depth is shallow, which is expected for marine operations. The drift is high, which could be affecting the accuracy of the position. The navigation error is low, which is good. The time is 554.0, which is not a specific time, but could be a timestamp. The velocity is low, which is expected for marine operations. The waypoint is at 0, which could indicate the start of the mission or a specific point in the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the system to lose position accuracy over time, but the navigation error is low, which is good. The battery level is high, which is good. The current readings are slightly off, which could indicate a minor issue with the current sensors. The depth is shallow, which is expected for marine operations. The velocity is low, which is expected for marine operations. The waypoint is at 0, which could indicate the start of the mission or a specific point in the mission.",
+      "mitigation_strategy": "Monitor the drift and navigation error closely. If the drift becomes too high, consider adjusting the system's position. If the current readings become too off, consider recalibrating the current sensors. If the depth becomes too deep, consider adjusting the system's depth. If the velocity becomes too high, consider adjusting the system's speed. If the waypoint becomes too far from the intended location, consider adjusting the system's waypoint."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate within normal parameters, with a slight drift and minor navigation error. The battery level is high, which is good. The current readings are slightly off, which could indicate a minor issue with the current sensors. The depth is shallow, which is expected for marine operations. The drift is high, which could be affecting the accuracy of the position. The navigation error is low, which is good. The time is 554.0, which is not a specific time, but could be a timestamp. The velocity is low, which is expected for marine operations. The waypoint is at 0, which could indicate the start of the mission or a specific point in the mission."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery level is high, which is good. The current readings are slightly off, which could indicate a minor issue with the current sensors. The depth is shallow, which is expected for marine operations. The drift is high, which could be affecting the accuracy of the position. The navigation error is low, which is good. The time is 554.0, which is not a specific time, but could be a timestamp. The velocity is low, which is expected for marine operations. The waypoint is at 0, which could indicate the start of the mission or a specific point in the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d688e99c",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 4.7,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "4d091bbefac1b8c88b45fd4164eeb579371854f14e0566fb4ebe894b177b17c9"
+  },
+  "sha256_proof": "3df6d2927aba6bc4ea09c282567875092a77180c7fd518cba91542f814cbd639"
+}

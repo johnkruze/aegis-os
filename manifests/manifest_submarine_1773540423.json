@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_e0de042c_marine_gps_denied_e0de042c_20260315T020655Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:06:55.947848Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e0de042c_marine_gps_denied_e0de042c_20260315T020655Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest movement. The depth is shallow, and the drift is significant, indicating the vessel may be moving away from the intended location."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vessel is moving, which complicates the response. The battery is sufficient for a short period of operation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause significant damage to the vessel and potentially lead to a loss of control if not addressed promptly.",
+      "mitigation_strategy": "Initiate emergency procedures to contain the leak, activate the emergency communication system, and prepare for a potential evacuation if necessary."
+    },
+    "decision": {
+      "actuator_command": "EMERGENCY_LEAK_CONTAINMENT, EMERGENCY_COMMUNICATION_INITIATE",
+      "expected_outcome": "Contain the leak and initiate communication to seek assistance."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate action to prevent further damage. The vessel's movement complicates the response, but the high battery level provides a temporary buffer. Initiating emergency procedures is the best course of action to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e0de042c",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": true,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "7329f4812518022e9d737f04c5b4434728e8787da0203072938e866ec39cdbb2"
+  },
+  "sha256_proof": "4d96352f86238eaef96cb6f046c79ee2556558641b8722d167a92054812552e4"
+}

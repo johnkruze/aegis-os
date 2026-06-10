@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_3a89d285_marine_gps_denied_3a89d285_20260315T213248Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:32:48.619347Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3a89d285_marine_gps_denied_3a89d285_20260315T213248Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected current or wave impact."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift significantly, which could lead to navigation errors and potentially mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose its position, leading to mission failure.",
+      "mitigation_strategy": "Implement a course correction maneuver to stabilize the vessel's position."
+    },
+    "decision": {
+      "actuator_command": "execute_course_correction(10 degrees left, 5 knots forward)",
+      "expected_outcome": "Stabilize the vessel's position and prevent mission failure."
+    },
+    "self_reflection": "The current surge is an unexpected challenge, but with a course correction, we can mitigate the risk and complete the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3a89d285",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a000c541ea6ebca4795b370901c1545da8e7b7a66ccc41d8d743e831f90c18f0"
+  },
+  "sha256_proof": "e96c337e653b2ab84c55a8dbed39c8604c337f81192b16c421fe14c80f6c726e"
+}

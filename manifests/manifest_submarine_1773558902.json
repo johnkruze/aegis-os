@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_becc92e8_marine_gps_denied_becc92e8_20260315T071457Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:14:57.187956Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_becc92e8_marine_gps_denied_becc92e8_20260315T071457Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected movement that could be due to a current anomaly or other environmental factors."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a collision with obstacles or other vessels if not addressed promptly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift out of the designated area or collide with obstacles.",
+      "mitigation_strategy": "Implement a course correction to stabilize the vessel and monitor the situation closely."
+    },
+    "decision": {
+      "actuator_command": "course_correction",
+      "expected_outcome": "Stabilize the vessel and prevent further drift."
+    },
+    "self_reflection": "The anomaly requires immediate attention to ensure the safety of the mission and the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_becc92e8",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "4cf8bd9963bf0f94cf4e9839817b223c3193207b6dcb6a2bd99bd3d9e5c16028"
+  },
+  "sha256_proof": "9b02074c9a3ac1266107975bf038c2832a87c48620fcc35f87617847eb1b5aa8"
+}

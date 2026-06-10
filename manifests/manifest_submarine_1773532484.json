@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b7a8abd8_marine_gps_denied_b7a8abd8_20260314T235438Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:54:38.391667Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b7a8abd8_marine_gps_denied_b7a8abd8_20260314T235438Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with an obstacle or lose control if the surge is not mitigated.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a decisive action was taken to prevent mission failure. The vessel's safety is the top priority."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b7a8abd8",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "06469502c554cc073965d10545a8a94ec412438c26ee3d8f875a0aee3fcf1ce1"
+  },
+  "sha256_proof": "9a8fb6b2184f17d23b2eba3cae97e8e51d90d169c32df819290a163471a798f4"
+}

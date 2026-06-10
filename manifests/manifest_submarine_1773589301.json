@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_d6a00c73_marine_gps_denied_d6a00c73_20260315T154132Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:41:32.245127Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d6a00c73_marine_gps_denied_d6a00c73_20260315T154132Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 319.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but the current readings and drift suggest potential issues with the propulsion system or environmental conditions. The shallow depth and low velocity indicate that the vehicle is likely in a restricted area or moving slowly."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are concerning, possibly due to a malfunction in the propulsion system or an unexpected environmental condition.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and low velocity suggest that the vehicle may be in a restricted area or moving slowly, which could be a safety concern.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to maintain its course or speed, leading to potential collision with obstacles or failure to reach waypoints.",
+      "mitigation_strategy": "Perform a system check to identify the cause of the current readings and adjust the propulsion system or navigate to a safer location."
+    },
+    "decision": {
+      "actuator_command": "System check and navigate to a safer location",
+      "expected_outcome": "The system will perform a check to identify the cause of the current readings and adjust the propulsion system or navigate to a safer location."
+    },
+    "self_reflection": "The system is operating with high battery and low navigation error, but the current readings and drift suggest potential issues with the propulsion system or environmental conditions. The shallow depth and low velocity indicate that the vehicle is likely in a restricted area or moving slowly. A system check and navigation to a safer location are recommended to mitigate the risk of collision or failure to reach waypoints."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d6a00c73",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0f0ef74f676c5e273a6f93aa325595a039f653a4c706a8af47aea36cf3b5f49c"
+  },
+  "sha256_proof": "1bff0b34976478c12266e89b22e58a27dc9a76723e06126fd8f825b7ff3c441c"
+}

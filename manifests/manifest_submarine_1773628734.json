@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_5fcf6a18_marine_gps_denied_5fcf6a18_20260316T023843Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:38:43.149092Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5fcf6a18_marine_gps_denied_5fcf6a18_20260316T023843Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift. The depth is shallow, which could be a concern in marine environments. The navigation error is low, but the drift suggests the system might be struggling to maintain its position accurately. The velocity is slow, which could indicate a lack of power or efficiency. The waypoint is at the start, which is normal at the beginning of a mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the sensors or the system's ability to interpret them. The slight drift and slow velocity suggest the system might be underpowered or not performing optimally. The shallow depth could be a concern, especially if the mission involves deeper waters. The navigation error is low, which is good, but the drift is concerning. The waypoint is at the start, which is normal. The battery level is high, which is good, but the system's performance is questionable.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system might be underpowered or experiencing sensor issues, leading to drift and slow velocity. The shallow depth could be a concern if the mission involves deeper waters.",
+      "mitigation_strategy": "Check sensor readings for any anomalies. Increase power to the system to improve performance. Monitor the system's performance closely and adjust power levels as needed. If the issue persists, consider a system reboot or a manual override to ensure safety."
+    },
+    "decision": {
+      "actuator_command": "Increase power to the system and monitor performance closely. If the issue persists, consider a system reboot or a manual override.",
+      "expected_outcome": "The system's performance should improve, and the drift and velocity should stabilize. If the issue persists, the system may need to be rebooted or a manual override may be necessary to ensure safety."
+    },
+    "self_reflection": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift. The shallow depth could be a concern, especially if the mission involves deeper waters. The navigation error is low, but the drift is concerning. The waypoint is at the start, which is normal. The battery level is high, which is good, but the system's performance is questionable. The decision to increase power and monitor performance closely is based on the current telemetry and the potential risks associated with the system's performance."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5fcf6a18",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "52cdb525d6aea3f5cbe3c38ae78869229c7d3bf6cb7fd0573799fa05aa68a52e"
+  },
+  "sha256_proof": "10d59f7191b951219489515a5df8b3ca51c921685420a48a3a54658484209d26"
+}

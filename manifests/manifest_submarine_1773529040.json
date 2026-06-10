@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_696a8ae9_marine_gps_denied_696a8ae9_20260314T225712Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:57:12.506111Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_696a8ae9_marine_gps_denied_696a8ae9_20260314T225712Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within safe limits",
+        "drift within acceptable range",
+        "small navigation error",
+        "position and time data available",
+        "velocity within expected range",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery level and some anomalies in the current readings. The depth and drift are within acceptable limits, and the navigation error is minimal. The position and time data are available, and the velocity is within expected range. The mission is at waypoint 0, which suggests the start of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a concern, but the system is otherwise performing within normal parameters. The anomalies in the current readings could be due to temporary environmental factors. The mission is at the start, so there is no immediate risk of failure.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission could be delayed or paused due to the low battery level, but it is unlikely to fail immediately.",
+      "mitigation_strategy": "Monitor the battery level and current readings closely. If the battery level drops further, consider pausing the mission or seeking a safe location to recharge."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with the system monitoring the battery level and current readings closely."
+    },
+    "self_reflection": "The system is performing within normal parameters, except for a low battery level and some anomalies in the current readings. The mission is at the start, so there is no immediate risk of failure. The system will continue to monitor the battery level and current readings closely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_696a8ae9",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 6.2,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "99c0d769dfc725f4dea26be10482d29b09b5412b19905a889b96e7c4679d51f4"
+  },
+  "sha256_proof": "ad6d1894784acac09af243a8dd77bbdfcd91c4bf1c87f84defa557c2824563f1"
+}

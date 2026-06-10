@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_08631d47_marine_gps_denied_08631d47_20260315T031919Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:19:19.761712Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_08631d47_marine_gps_denied_08631d47_20260315T031919Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings, which could indicate a problem with the current sensors or the environment. The shallow depth and high drift suggest the vehicle may be in a challenging navigation area. The low navigation error and proximity to waypoint 0 suggest the vehicle is on track, but the drift and inconsistent currents could lead to navigation issues."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings could be due to a malfunctioning sensor or environmental factors. The high drift and shallow depth are concerning for navigation. The vehicle is on track, but the drift could cause it to miss the intended path.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle could drift off course or become stuck in the shallow water, leading to mission failure.",
+      "mitigation_strategy": "Verify the current sensor readings and adjust the navigation parameters to compensate for drift. Monitor the vehicle's position closely and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "Verify current sensor readings and adjust navigation parameters",
+      "expected_outcome": "The vehicle will be able to compensate for drift and maintain its course, preventing mission failure."
+    },
+    "self_reflection": "The vehicle is experiencing some anomalies, but the mission is still on track. The high cognitive load is due to the need to interpret and respond to the anomalies. The internal deliberation and mission assurance check indicate that the vehicle is at a moderate risk of failure, but the mitigation strategy should help prevent this."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_08631d47",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "a8e33a110c9811e00b9b87df69db2f61b9a6368433fb2a32da6cc96db8ec3454"
+  },
+  "sha256_proof": "e782a02ddf7f806ebb604801b16b8b38745142ef0343546288ff041f2ff1a7b9"
+}

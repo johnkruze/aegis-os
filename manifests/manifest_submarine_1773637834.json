@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_a0ce674e_marine_gps_denied_a0ce674e_20260316T051026Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:10:26.587830Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a0ce674e_marine_gps_denied_a0ce674e_20260316T051026Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 424.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, which suggests potential issues with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift suggests that the system is not accurately tracking its position, which could lead to mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail due to the high drift and inconsistent current readings, leading to a loss of control or deviation from the intended path.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation sensors. If the issue persists, consider manual intervention to adjust the position."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the navigation sensors, potentially resolving the drift and current inconsistencies."
+    },
+    "self_reflection": "The system is currently operating within normal parameters, but the inconsistencies in the current readings and high drift indicate potential issues that could compromise the mission. A system reset and recalibration are necessary to mitigate these risks."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a0ce674e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "6752a3d27a34bedaa96f1c359d180ddc777119dbc31c726b7378092b0a5da3bc"
+  },
+  "sha256_proof": "861c2cb0cb2b6a869b61a14b998621bb3bf954750b0235b3b9fe85677e9f445f"
+}

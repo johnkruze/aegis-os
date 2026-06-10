@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_e0b9d68b_marine_gps_denied_e0b9d68b_20260315T094410Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:44:10.232247Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e0b9d68b_marine_gps_denied_e0b9d68b_20260315T094410Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are inconsistent, which could indicate a problem with the current sensors or the system's ability to accurately measure current. There is a slight error in depth, which might be due to sensor drift or environmental factors. The high drift suggests the system is not maintaining its position accurately, which could be due to navigation errors or external forces. The low navigation error indicates the system is performing well in terms of navigation, but the drift and current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could cause the system to fail. The inconsistent current readings and high drift are also concerning and could lead to further issues if not addressed. The slight depth error is manageable but should be monitored. The navigation error is low, which is good.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could fail due to the low battery, leading to a loss of control and potentially causing damage to the equipment or the environment. The inconsistent current readings and high drift could lead to the system drifting away from its intended path, which could result in navigation errors and potentially causing harm to the environment.",
+      "mitigation_strategy": "Immediately recharge the battery. Investigate the cause of the inconsistent current readings and address any issues with the current sensors or the system's ability to accurately measure current. Monitor the depth error and address any issues that arise. Continue monitoring the navigation error and adjust the system as necessary to maintain its position."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery should be recharged, and the system should be able to continue operating without immediate failure."
+    },
+    "self_reflection": "The system is operating with some concerning issues, but the navigation error is low. The immediate priority is to recharge the battery to prevent the system from failing. The inconsistent current readings and high drift should be investigated to ensure the system's ability to accurately measure current and maintain its position."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e0b9d68b",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "e654a9c081a6e13cfa38854a4c035b870d5c52a562c2eada393199903bf37ba6"
+  },
+  "sha256_proof": "596d54a20153580913512a6ab64bcb7010521ccb3fce83eda1d44e80a8ac222c"
+}

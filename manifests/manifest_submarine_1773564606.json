@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8b034aac_marine_gps_denied_8b034aac_20260315T084950Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:49:50.911944Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8b034aac_marine_gps_denied_8b034aac_20260315T084950Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate a strong current",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 315.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight drift and low navigation error. The current is strong, which could affect the vessel's movement. The shallow depth suggests the vessel is near the ocean floor. The battery level is high, indicating sufficient power. The velocity is slow, which is expected for a marine GPS denied environment. The waypoint is at 0, suggesting the mission has not started or is at the beginning."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current is strong, which could affect the vessel's movement. However, the navigation error is low, and the battery level is high. The mission has not started or is at the beginning. The waypoint is at 0. The vessel is near the ocean floor, which could be a concern for navigation. The velocity is slow, which is expected for a marine GPS denied environment. The mission is incomplete, but there is no anomaly reported. The system is operating within normal parameters, with a slight drift and low navigation error. The current is strong, which could affect the vessel's movement. However, the navigation error is low, and the battery level is high. The mission has not started or is at the beginning. The waypoint is at 0. The vessel is near the ocean floor, which could be a concern for navigation. The velocity is slow, which is expected for a marine GPS denied environment. The mission is incomplete, but there is no anomaly reported.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vessel may be affected by the strong current, which could cause drift or deviation from the intended path. The shallow depth could also be a concern for navigation. However, the navigation error is low, and the battery level is high, indicating that the system is capable of handling the current conditions.",
+      "mitigation_strategy": "Monitor the vessel's movement closely and adjust the course if necessary. Ensure that the vessel is equipped with a backup navigation system in case the GPS is denied. Check the vessel's stability and adjust the speed if necessary to avoid excessive drift."
+    },
+    "decision": {
+      "actuator_command": "Monitor vessel movement and adjust course if necessary. Ensure backup navigation system is ready. Check vessel stability and adjust speed if necessary.",
+      "expected_outcome": "The vessel will continue to operate within normal parameters, with a slight drift and low navigation error. The mission will be monitored closely, and any necessary adjustments will be made to ensure the vessel's safety and stability."
+    },
+    "self_reflection": "The system is operating within normal parameters, with a slight drift and low navigation error. The current is strong, which could affect the vessel's movement. However, the navigation error is low, and the battery level is high. The mission has not started or is at the beginning. The waypoint is at 0. The vessel is near the ocean floor, which could be a concern for navigation. The velocity is slow, which is expected for a marine GPS denied environment. The mission is incomplete, but there is no anomaly reported. The system is capable of handling the current conditions, and any necessary adjustments will be made to ensure the vessel's safety and stability."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8b034aac",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "5a17f78a35b9988fd058d12be66be68e1c34d2390984bac96c12db97ae88359b"
+  },
+  "sha256_proof": "1498c4cf02a8449c0d65cb888ebd5ce7f58f81bf87addd938e8dc19d0244a90f"
+}

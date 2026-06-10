@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_6de209b5_marine_gps_denied_6de209b5_20260315T094715Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:47:15.410113Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6de209b5_marine_gps_denied_6de209b5_20260315T094715Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within expected range",
+        "drift within expected range",
+        "small navigation error",
+        "waypoint 1 active"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a slight battery drain and minor current anomalies. The depth and drift are within expected ranges, and the navigation error is minimal. The current is slightly negative, which could indicate a minor issue with the current sensors or the system's orientation."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, should be monitored closely.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Current anomalies are minor and within expected range.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Navigation error is small and within acceptable limits.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "Battery depletion could cause the system to shut down unexpectedly.",
+      "mitigation_strategy": "Monitor battery level and consider a planned shutdown if necessary."
+    },
+    "decision": {
+      "actuator_command": "monitor_battery",
+      "expected_outcome": "Battery level to be monitored and reported."
+    },
+    "self_reflection": "The system is performing as expected with minor anomalies. The battery level is critical and should be monitored closely to prevent unexpected shutdowns."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6de209b5",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 1,
+      "waypoints_total": 3
+    },
+    "physics_proof": "a376f8d300428cc40cb3b9d7db6f71206eb6150bfc08c28a2820b9c494230f20"
+  },
+  "sha256_proof": "f05d088a89dad17e8227a15426ebe743d41f2ea986e7fe09f26dda3615bb511f"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_43a35030_marine_gps_denied_43a35030_20260316T052718Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:27:18.794558Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_43a35030_marine_gps_denied_43a35030_20260316T052718Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 73.51, -128.25, -0.7",
+        "time is 344.0",
+        "velocity is slightly negative",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and slightly negative velocity suggest that the vehicle is moving in the correct direction but at a slow pace."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a malfunction in the navigation system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and slightly negative velocity suggest that the vehicle is moving in the correct direction but at a slow pace.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to reach the intended waypoint due to the high drift and shallow depth. The navigation system may also be compromised, leading to further anomalies.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. Check the environment for any obstacles or hazards that may be causing the drift. If the issue persists, consider aborting the mission and returning to a safe location."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will be reset and recalibrated, and the vehicle will attempt to reposition itself."
+    },
+    "self_reflection": "The anomaly detected suggests that the vehicle may be in a challenging or unexpected location. The high drift and shallow depth suggest that the vehicle may be unable to reach the intended waypoint. The low navigation error and slightly negative velocity suggest that the vehicle is moving in the correct direction but at a slow pace. The system reset and recalibration should help to resolve the issue and allow the vehicle to continue its mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_43a35030",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "86fd397061a791207d378d8a9c688472372eed19b83d62c24a95b1cbbdce0457"
+  },
+  "sha256_proof": "7c6f92ded98af4fb3978dd603735fdb9309c6662c43336ac4bc51b8bd924180e"
+}

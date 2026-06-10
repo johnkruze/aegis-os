@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_c37e5e90_marine_gps_denied_c37e5e90_20260315T223939Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:39:39.053355Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c37e5e90_marine_gps_denied_c37e5e90_20260315T223939Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and orientation are stable",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally, but there is an unusual current reading that could indicate a problem with the propulsion system or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and stable position indicate that the system is maintaining its course accurately."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are concerning, but the system is otherwise stable. I should investigate the current readings further to determine if they are a false alarm or a real issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The unusual current readings could cause the vehicle to lose control or drift off course.",
+      "mitigation_strategy": "Perform a thorough diagnostic of the propulsion system and environment to determine the cause of the current readings. If the issue is confirmed, adjust the course or propulsion settings accordingly."
+    },
+    "decision": {
+      "actuator_command": "diagnostic_mode",
+      "expected_outcome": "The system will perform a diagnostic check of the propulsion system and environment to determine the cause of the unusual current readings."
+    },
+    "self_reflection": "The system appears to be functioning normally, but there is an unusual current reading that could indicate a problem with the propulsion system or the environment. I should investigate the current readings further to determine if they are a false alarm or a real issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c37e5e90",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "983f8723f4d4afc2e5299efbfda4ba8f2d407896e1230ea551efe5e810165f65"
+  },
+  "sha256_proof": "5b3d518f6d356312320c660511da712206bb5478fa56abfc9d6d09d8327c4b27"
+}

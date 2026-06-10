@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_59f14dae_marine_gps_denied_59f14dae_20260315T112719Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:27:19.156051Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_59f14dae_marine_gps_denied_59f14dae_20260315T112719Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, and high drift. The depth is shallow and the navigation error is minimal, indicating the system is close to the intended waypoint. However, the unstable current readings and high drift suggest potential issues with the system's stability and control."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to fail soon. The unstable current readings and high drift suggest the system is not handling the environment well. The shallow depth and low navigation error indicate the system is close to the intended waypoint, but the instability could prevent it from reaching the waypoint safely.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail due to the low battery and unstable current readings, potentially causing it to drift away from the intended waypoint.",
+      "mitigation_strategy": "Increase the battery power and stabilize the current readings to ensure the system can reach the waypoint safely."
+    },
+    "decision": {
+      "actuator_command": "increase battery power, stabilize current readings",
+      "expected_outcome": "The system's battery power and current readings will be stabilized, allowing it to reach the intended waypoint safely."
+    },
+    "self_reflection": "The system is experiencing critical issues that could lead to failure. Immediate action is required to mitigate the risks and ensure the mission completes successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_59f14dae",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "0a4dc08c590f2baeb17334d6f239c1e39e290f3c36372d0f31783917384ac880"
+  },
+  "sha256_proof": "e320eaff9a8859cd58f7a4343ce60a31885b2347b73a4412822c84ecd1da5f0a"
+}

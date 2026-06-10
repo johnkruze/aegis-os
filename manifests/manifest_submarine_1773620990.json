@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_3bdef694_marine_gps_denied_3bdef694_20260316T002943Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:29:43.258215Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3bdef694_marine_gps_denied_3bdef694_20260316T002943Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is close to the intended location. The slow velocity and start waypoint indicate the vehicle is stationary or moving very slowly."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external factors such as wind or currents. The inconsistent current readings need to be investigated further.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may be drifting away from the intended path, but it is still close to the waypoint.",
+      "mitigation_strategy": "Monitor the current readings and adjust the course if necessary. Ensure the vehicle's orientation is correct."
+    },
+    "decision": {
+      "actuator_command": "monitor current readings and adjust course if necessary",
+      "expected_outcome": "The vehicle will continue to monitor the current readings and adjust its course to stay on the intended path."
+    },
+    "self_reflection": "The system is performing as expected, with only minor issues related to drift and current readings. The vehicle is close to the intended waypoint and is stationary or moving very slowly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3bdef694",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "99654a4950c6acc3134b4af08b57f5644ec7232183a6ff18d87158a2926ad207"
+  },
+  "sha256_proof": "898eab699c9345236bd9c535fd0d08a040398d1a3f19826af452401e83ead376"
+}

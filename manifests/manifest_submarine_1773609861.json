@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_8b3f1b62_marine_gps_denied_8b3f1b62_20260315T212409Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:24:09.291768Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8b3f1b62_marine_gps_denied_8b3f1b62_20260315T212409Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and orientation are stable",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for a slight drift and current readings that are slightly off. The battery level is high, indicating sufficient power. The depth is shallow, which could be a concern if the mission requires deeper waters. The navigation error is low, suggesting the system is accurately tracking its position. The velocity is low, which is expected at the start of a mission. The waypoint is at the beginning, indicating the mission has not yet progressed."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight drift and current readings could be due to environmental factors or sensor inaccuracies. The shallow depth is a potential issue if the mission requires deeper waters. The battery level is high, so power is not a concern. The navigation error is low, so the system is accurately tracking its position. The velocity is low, which is expected at the start of a mission. The waypoint is at the beginning, indicating the mission has not yet progressed.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission is expected to continue as planned, with the slight drift and current readings being minor issues that can be addressed if they persist. The shallow depth is a potential issue if the mission requires deeper waters, but it is not a critical failure mode.",
+      "mitigation_strategy": "Monitor the drift and current readings closely. If they persist, adjust the course to compensate. If the depth becomes an issue, consider using a different route or increasing the depth of the mission."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with the slight drift and current readings being minor issues that can be addressed if they persist. The shallow depth is a potential issue if the mission requires deeper waters, but it is not a critical failure mode."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for a slight drift and current readings that are slightly off. The battery level is high, indicating sufficient power. The depth is shallow, which could be a concern if the mission requires deeper waters. The navigation error is low, suggesting the system is accurately tracking its position. The velocity is low, which is expected at the start of a mission. The waypoint is at the beginning, indicating the mission has not yet progressed."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8b3f1b62",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "e7af0679fd98a30050e3ee544343c9ea6dc83d7180a5b848dcf8354589dc2391"
+  },
+  "sha256_proof": "2d42e2ba5aab784a2c7a9765a23cbd4d79873e50181c5dae8732cadfa15eac7e"
+}

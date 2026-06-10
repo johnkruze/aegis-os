@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_62112caf_marine_gps_denied_62112caf_20260315T200233Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:02:33.367505Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_62112caf_marine_gps_denied_62112caf_20260315T200233Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery is healthy, and the depth is appropriate for the mission. However, the drift could potentially impact the accuracy of the mission if not corrected."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The drift could be due to external factors such as currents or wind. It is within acceptable limits for the current mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause a slight deviation from the planned path, but it is unlikely to result in a mission failure.",
+      "mitigation_strategy": "Monitor the drift closely and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with the drift being monitored and adjusted if necessary."
+    },
+    "self_reflection": "The system is performing well within the current parameters. The slight drift is within acceptable limits and does not pose an immediate threat to the mission. The battery is healthy, and the depth is appropriate for the mission. The navigation error is low, and the position is slightly off, but this is expected at the start of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_62112caf",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "7631fafb917d8b192754a4917f2d81f9e49ae3c8d9453d7da46c7971906fd121"
+  },
+  "sha256_proof": "22102155cb832554e175da8f34c92153d6e0a753088f65baad2a533d9af1f75f"
+}

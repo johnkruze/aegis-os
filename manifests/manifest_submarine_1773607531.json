@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_cbc52b49_marine_gps_denied_cbc52b49_20260315T204519Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:45:19.716396Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cbc52b49_marine_gps_denied_cbc52b49_20260315T204519Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 99.6 units",
+        "time is 306.0",
+        "velocity is slightly negative"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation error. The battery level is high, indicating sufficient power. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, which could be due to the drift. The time and velocity readings are normal."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and high drift suggest a navigation error. The position is off by a significant amount, which could be due to the drift. The battery level is high, indicating sufficient power. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, which could be due to the drift. The time and velocity readings are normal.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The navigation error could cause the mission to fail if not corrected. The position is off by a significant amount, which could be due to the drift. The battery level is high, indicating sufficient power. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, which could be due to the drift. The time and velocity readings are normal.",
+      "mitigation_strategy": "Correct the navigation error by recalculating the position and adjusting the course. Monitor the battery level and ensure it does not deplete during the mission. Continue monitoring the depth and velocity readings to ensure they remain within expected parameters."
+    },
+    "decision": {
+      "actuator_command": "Recalculate position and adjust course",
+      "expected_outcome": "The navigation error will be corrected, and the mission will continue as planned."
+    },
+    "self_reflection": "The system is experiencing inconsistent current readings and a high drift, which suggests a potential navigation error. The position is off by a significant amount, which could be due to the drift. The battery level is high, indicating sufficient power. The depth is shallow, which is expected in marine environments. The navigation error is low, but the position is off by a significant amount, which could be due to the drift. The time and velocity readings are normal."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cbc52b49",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "e06b215119020967a835e746e3468d6bef0efa1eb8eadd885f01e40ea398a730"
+  },
+  "sha256_proof": "9c2f5c0ebaa949452bbf682a9b9129c45bb8533cb2185d0b42c924d7999f61f3"
+}

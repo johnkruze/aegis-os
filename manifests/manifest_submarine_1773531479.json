@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_39eb25ec_marine_gps_denied_39eb25ec_20260314T233751Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:37:51.773157Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_39eb25ec_marine_gps_denied_39eb25ec_20260314T233751Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 374.0",
+        "velocity is very low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and unusual current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the low velocity and shallow depth suggest that the vehicle may be stuck or in an unexpected location."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a navigation issue. The GPS system may be denied or malfunctioning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be stuck or in an unexpected location, leading to mission failure.",
+      "mitigation_strategy": "Perform a manual override to correct the drift and re-establish GPS lock."
+    },
+    "decision": {
+      "actuator_command": "override navigation to correct drift and re-establish GPS lock",
+      "expected_outcome": "The vehicle should be able to correct its drift and re-establish GPS lock, allowing the mission to continue."
+    },
+    "self_reflection": "The system detected an anomaly in the navigation system, which could be due to GPS denial or malfunction. A manual override was initiated to correct the issue and ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_39eb25ec",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "7ad9d82a1044197efff1fbed226e7d9bb8316311a7ee8a475ece01b313a1b467"
+  },
+  "sha256_proof": "199e2c2e96b91accb5dba1e959ca1bde0cb0e5abb72e9ee712d1097559f0fe74"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5720df19_marine_gps_denied_5720df19_20260315T201407Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:14:07.222842Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5720df19_marine_gps_denied_5720df19_20260315T201407Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and minimal velocity suggest the vehicle is likely in a calm or stationary area. The slight position error and minimal velocity indicate the vehicle is not actively engaged in navigation or exploration."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest the vehicle is in a stationary or slow-moving area, which could be due to a calm ocean or a navigation error. The drift is concerning and may indicate a need to recalibrate the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The drift could lead to the vehicle moving away from the intended path or getting stuck in a stationary position, which could result in mission failure.",
+      "mitigation_strategy": "Perform a recalibration of the navigation system and monitor the current readings closely. If the drift persists, initiate a manual override to correct the position."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_navigation_system",
+      "expected_outcome": "The navigation system will be recalibrated, and the vehicle will attempt to correct its position."
+    },
+    "self_reflection": "The vehicle appears to be in a stationary or slow-moving area, which could be due to a calm ocean or a navigation error. The drift is concerning and may indicate a need to recalibrate the navigation system. The mission is not at risk, but the drift could lead to mission failure if not addressed."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5720df19",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "5bef9b0edceec413e5c7754bcf94e779644708c857390e6febda41e778b8906a"
+  },
+  "sha256_proof": "e60942713d8f6c50b62c20bedc35740ca673db7c02c2615ee19009a5c2ed6f41"
+}

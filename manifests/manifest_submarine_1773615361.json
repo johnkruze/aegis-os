@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_e7ce7744_marine_gps_denied_e7ce7744_20260315T225555Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:55:55.535733Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e7ce7744_marine_gps_denied_e7ce7744_20260315T225555Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minor",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing low battery, significant drift, and minor navigation error. The current readings suggest the vehicle is not on course and may be in a potentially dangerous position."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery is critical, need to conserve power and prioritize safety.",
+        "confidence": 0.9,
+        "action_rejected": "continue mission"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System may fail to maintain control and potentially drift further from the intended course.",
+      "mitigation_strategy": "Reduce power consumption, initiate emergency protocol, and prepare for potential rescue."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, initiate_emergency_protocol",
+      "expected_outcome": "System power is reduced and emergency protocol is initiated to ensure safety."
+    },
+    "self_reflection": "The system is in a critical state due to low battery and significant drift. Immediate action is required to prevent further complications and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e7ce7744",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 5.7,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "40e5723b05d61e89a2e7d239143a07f7c072a13c5d4f8718b1bd88b329240077"
+  },
+  "sha256_proof": "57a0c79389d576363512da12802b337d0bf57eaeff191d9c22e9fd80b3f61b81"
+}

@@ -1,0 +1,67 @@
+{
+  "mission_id": "marine_gps_denied_99aa640a_marine_gps_denied_99aa640a_20260315T011753Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:17:53.416891Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_99aa640a_marine_gps_denied_99aa640a_20260315T011753Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "depth within expected range",
+        "drift within expected range",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating with a low battery level and some instability in current readings. The depth and drift are within expected ranges, and there is a small navigation error. The mission is at waypoint 0, which suggests the start of the mission."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Current readings are unstable, could indicate a problem with the sensors.",
+        "confidence": 0.7,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Navigation error is small, within acceptable limits.",
+        "confidence": 0.6,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Waypoint 0 suggests the start of the mission, need to ensure proper initialization.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "Battery depletion or sensor failure could lead to mission failure.",
+      "mitigation_strategy": "Reduce power consumption, perform sensor diagnostics, and ensure proper initialization."
+    },
+    "decision": {
+      "actuator_command": "reduce_power",
+      "expected_outcome": "Conservation of battery power to prevent depletion."
+    },
+    "self_reflection": "The system is operating within expected parameters but requires immediate attention to battery levels and sensor stability to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_99aa640a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "5c47a3a9f2609c061c5fae4fd974830f272e6ff0927f8cd9f49964979468fadd"
+  },
+  "sha256_proof": "a17d604cb0ad0f5a58a62b1134d63f405f4fba24bb88cbd41dcc0f801d37c956"
+}

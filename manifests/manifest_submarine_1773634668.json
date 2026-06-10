@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_3b535a4d_marine_gps_denied_3b535a4d_20260316T041740Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:17:40.994532Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3b535a4d_marine_gps_denied_3b535a4d_20260316T041740Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 438.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning well with high battery and low navigation error, but there are inconsistencies in the current readings and a significant drift from the intended path. The shallow depth and slow velocity suggest the vehicle is in a stable environment, but the drift indicates a potential deviation from the planned route."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a minor deviation from the planned route, but the system is otherwise stable. The battery is sufficient to continue operations for the foreseeable future.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may drift further from the intended path, but it is unlikely to cause a critical failure.",
+      "mitigation_strategy": "Monitor the current readings and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue straight",
+      "expected_outcome": "The vehicle will continue on its current course, maintaining stability and battery levels."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations from the planned route. The battery level is sufficient to continue operations, and the navigation error is low. The current readings suggest a stable environment, and the vehicle is unlikely to cause a critical failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3b535a4d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a885c21ad2fde83e7370838981a17665932e1fc562eb5b8134e6849dfa0535fe"
+  },
+  "sha256_proof": "bb0929d333e0979fb70c076b22a224c392fec102b2932e16c5095b14e62bb98a"
+}

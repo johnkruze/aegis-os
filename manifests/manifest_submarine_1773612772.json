@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_b3ebe4ac_marine_gps_denied_b3ebe4ac_20260315T221244Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:12:44.316733Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b3ebe4ac_marine_gps_denied_b3ebe4ac_20260315T221244Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is high",
+        "navigation error is low",
+        "position is at waypoint 0",
+        "time is 437.0"
+      ],
+      "interpretation": "The system is experiencing high current readings and significant drift, which could indicate a malfunction or external interference affecting the navigation system. The battery level is high, suggesting sufficient power for continued operation. The depth and navigation error are within expected ranges, indicating that the system is not experiencing issues with these parameters."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high current readings and drift suggest a potential issue with the navigation system or external interference. The battery level is high, so immediate power issues are unlikely. The depth and navigation error are within expected ranges, so the system is not experiencing issues with these parameters.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may experience a failure in navigation, leading to potential collision with obstacles or loss of control.",
+      "mitigation_strategy": "Perform a system reset and reinitialize the navigation system to ensure accurate positioning and reduce drift."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The navigation system will be reset, and the system will attempt to reinitialize and correct the drift and current readings."
+    },
+    "self_reflection": "The system has detected an anomaly in the current readings and drift, which could indicate a malfunction or external interference. A system reset is being initiated to mitigate the risk of failure and ensure safe operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b3ebe4ac",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a5f2f2ab203cbed9c6f091d84a153331bf460e791500eb4c983d815411d811c6"
+  },
+  "sha256_proof": "00d0620356facfbd6f15cb1731e8d5af514f0847d8a9fc06748a8cc38ed42b6a"
+}

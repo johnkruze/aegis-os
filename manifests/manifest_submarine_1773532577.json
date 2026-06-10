@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_3e3e2f95_marine_gps_denied_3e3e2f95_20260314T235609Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:56:09.443575Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3e3e2f95_marine_gps_denied_3e3e2f95_20260314T235609Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 530.0",
+        "velocity is very low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and low navigation error. The battery level is high, indicating sufficient power. However, the current readings are slightly off, which could indicate a minor issue with the current sensors. The shallow depth and low velocity suggest that the system is in a calm and controlled environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight drift could be due to minor sensor inaccuracies or environmental factors. The current readings are slightly off, but within acceptable limits. The system is otherwise stable.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and within normal parameters. The slight drift and current readings are minor and unlikely to cause a critical failure.",
+      "mitigation_strategy": "Continue monitoring the system and adjust the course if the drift persists or the current readings become more off than expected."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to operate within normal parameters and maintain its current course."
+    },
+    "self_reflection": "The system is performing as expected with no critical anomalies detected. The slight drift and current readings are within acceptable limits and do not require immediate action."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3e3e2f95",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.3,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "957bdb7bc1b086c112ff2bfee3fdf67150362f0b55256160723e39328e4e00e1"
+  },
+  "sha256_proof": "5fe1988e4b3ed45bc1e0bce402f99684f637929c440682d554bd3a68fd9d598c"
+}

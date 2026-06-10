@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_1bbe8735_marine_gps_denied_1bbe8735_20260315T155235Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:52:35.195419Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1bbe8735_marine_gps_denied_1bbe8735_20260315T155235Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is healthy, the current is stable, the depth is within safe limits, and the navigation is accurate. The slow velocity suggests the system is stationary or moving at a very low speed. The waypoint is at the start, indicating the beginning of the mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be progressing as expected. No immediate issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted. The system is within normal operating parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in parameters."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The mission will continue as planned."
+    },
+    "self_reflection": "The system is performing as expected. No anomalies detected. The mission is on track."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1bbe8735",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "d38c64ad28ea9fa1fc796be6ac3f175feec3ecfc7c4ed40d845dc913caa619f5"
+  },
+  "sha256_proof": "ed39e548dfc8c0485168b1687920137698376619a7216302bd92955ddc25b652"
+}

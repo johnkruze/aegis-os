@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d6274d5f_marine_gps_denied_d6274d5f_20260315T065021Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:50:21.156246Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d6274d5f_marine_gps_denied_d6274d5f_20260315T065021Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control to complete the mission."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the mission can be completed safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d6274d5f",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.9,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "214c8820fbe9a5577f60592fca7e234c03ba1613415c981c177173dc57f90ac9"
+  },
+  "sha256_proof": "2a850e8a8e315d9a21fa253991d4d920d933f884853a69b4ac339d63caebe774"
+}

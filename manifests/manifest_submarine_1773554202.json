@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_ab257ba4_marine_gps_denied_ab257ba4_20260315T055636Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:56:36.366108Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ab257ba4_marine_gps_denied_ab257ba4_20260315T055636Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate movement",
+        "depth is 58.5 meters",
+        "drift is 29.84 meters",
+        "navigation error is low",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is operating within normal parameters. The vessel is moving, but there is no indication of a mission failure. The battery is at a high level, and the navigation error is within acceptable limits."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted. The system is performing within normal parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in parameters."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected."
+    },
+    "self_reflection": "The system is functioning normally. No anomalies detected at this time. The mission is proceeding as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ab257ba4",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "861ac460e26591cc448fe996f09b9c125f2f17ab73642be5eded509f9b52011c"
+  },
+  "sha256_proof": "af336578a2cc83960d20f8d5437fbe31ad85ceaa4b8f9dcc7a9276575f0a57b2"
+}

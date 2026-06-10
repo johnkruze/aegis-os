@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_a0be9144_marine_gps_denied_a0be9144_20260315T022603Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:26:03.398802Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a0be9144_marine_gps_denied_a0be9144_20260315T022603Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION"
+      ],
+      "interpretation": "The battery level is critically low, indicating that the system is running on very little power. This is a significant concern as it could lead to a complete system failure if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is at 55.9% capacity, which is dangerously low. Immediate action is required to prevent a complete system failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail completely within the next few minutes, leading to mission failure.",
+      "mitigation_strategy": "Initiate emergency power management protocols and attempt to land or return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "initiate_emergency_power_management",
+      "expected_outcome": "Reduce power consumption and attempt to stabilize the system."
+    },
+    "self_reflection": "The critical battery level is a severe anomaly that requires immediate attention. The system must be stabilized to prevent a complete failure, which could result in mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a0be9144",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 44.1,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "f0b6c2dae26fea964b6158a1c797a9607f2a7aca4c2d178458a8e505fcca2762"
+  },
+  "sha256_proof": "8ac16f2bbbd9e71f276c7ec9e6dc5e18253dc364a664160a076b536c11d886e5"
+}

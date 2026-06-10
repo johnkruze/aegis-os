@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_fffa9d29_marine_gps_denied_fffa9d29_20260315T164510Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:45:10.204384Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fffa9d29_marine_gps_denied_fffa9d29_20260315T164510Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are negative and vary",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 318.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with high battery, but current readings are inconsistent and negative, indicating potential issues with the propulsion system. The shallow depth and slight drift suggest the vehicle may be in a challenging environment. The low navigation error and slightly negative velocity suggest the vehicle is moving in the intended direction, but with some instability."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are concerning and may indicate a problem with the propulsion system. The slight drift and navigation error suggest the vehicle may be off course. The battery level is high, so immediate power issues are unlikely.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to maintain its course and could drift further from the intended path. The propulsion system may be compromised, leading to reduced performance or failure.",
+      "mitigation_strategy": "Perform a system health check to verify the propulsion system and adjust course if necessary. Monitor the vehicle's performance closely and prepare for potential emergency maneuvers."
+    },
+    "decision": {
+      "actuator_command": "perform system health check",
+      "expected_outcome": "The propulsion system will be verified, and the vehicle's course will be adjusted if necessary."
+    },
+    "self_reflection": "The vehicle is operating with high battery, but the current readings are concerning. A system health check is necessary to ensure the propulsion system is functioning correctly and to adjust the course if needed."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fffa9d29",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.13,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "53be6193fdb3ae932ffd7c825e8ef20690319d98b8115a36211952056a63341b"
+  },
+  "sha256_proof": "cded3be5bba11a1e91e79bbac5c907556f09a6eeaf56ad263f6af7735186285f"
+}

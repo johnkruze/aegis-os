@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_95106bac_marine_gps_denied_95106bac_20260315T152030Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:20:30.590054Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_95106bac_marine_gps_denied_95106bac_20260315T152030Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 108.45, -188.97, -0.5",
+        "time is 451.0",
+        "velocity is slow",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the drift and current readings suggest that the vehicle is not on course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a navigation issue. The GPS system is likely denied or malfunctioning.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may continue to drift and potentially collide with obstacles or other vessels.",
+      "mitigation_strategy": "Attempt to re-establish GPS lock or use alternative navigation methods. If GPS is confirmed denied, use dead reckoning or manual navigation to correct drift."
+    },
+    "decision": {
+      "actuator_command": "re-establish_gps_lock",
+      "expected_outcome": "Attempt to re-establish GPS lock to correct drift and ensure safe navigation."
+    },
+    "self_reflection": "The system is experiencing a critical anomaly with the GPS system, which is essential for navigation. Immediate action is required to prevent potential collisions or mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_95106bac",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "f73545c3c230e7f8a4a43f55c92899cd9e89ca8c1bb400d97cee7810cda29aea"
+  },
+  "sha256_proof": "2c0da3be3bbcda142f90fce5c373ff6fcded185ba6e9fbcbe1dec6e2e5ce66cc"
+}

@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_7b6c090d_marine_gps_denied_7b6c090d_20260315T050031Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:00:31.276836Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7b6c090d_marine_gps_denied_7b6c090d_20260315T050031Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minor",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings suggest the vehicle is drifting significantly, which could lead to navigation errors. The shallow depth and minor navigation error suggest the vehicle is in a stable position relative to the seabed."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is significant, need to correct course.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Waypoint is at 0, need to determine next waypoint.",
+        "confidence": 0.7,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "Battery depletion could cause system failure, drift could lead to navigation errors, and lack of waypoint could result in mission termination.",
+      "mitigation_strategy": "Reduce power consumption, correct drift, and determine next waypoint."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, correct_drift, determine_next_waypoint",
+      "expected_outcome": "System power is conserved, drift is corrected, and next waypoint is determined."
+    },
+    "self_reflection": "The system is operating within expected parameters but requires immediate attention to prevent potential failures. The low battery level is a critical issue that must be addressed to ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7b6c090d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 3.3,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "a8c40b256214ada13452e8463e7652c37499b99e99645b40ad16862b0bda8fd6"
+  },
+  "sha256_proof": "8e4895793b1cbc07a0eea1b7b09d0cf41a007015b641b703952629328707e448"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_46822a3d_marine_gps_denied_46822a3d_20260315T023823Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:38:23.431616Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_46822a3d_marine_gps_denied_46822a3d_20260315T023823Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current battery level is high, but the drift and navigation error suggest that the vessel is not maintaining its course accurately."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent the vessel from drifting out of control. The current battery level is sufficient to perform a quick diagnostic and potentially a simple repair.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thruster failure is not resolved, the vessel could drift away from its intended course, potentially leading to a collision with other vessels or the ocean floor.",
+      "mitigation_strategy": "Perform a quick diagnostic to identify the cause of the thruster failure and attempt a simple repair. If the repair is not possible, initiate an emergency protocol to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "INITIATE_QUICK_DIAGNOSTIC",
+      "expected_outcome": "The diagnostic should identify the cause of the thruster failure and provide a course of action to either repair it or initiate an emergency return."
+    },
+    "self_reflection": "The thruster failure is a significant anomaly that requires immediate attention. The current battery level is sufficient to perform a quick diagnostic, but the drift and navigation error suggest that the vessel is not maintaining its course accurately. The decision to initiate a quick diagnostic is based on the critical nature of the issue and the potential consequences of not addressing it promptly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_46822a3d",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "36066d343a5f13327b47f32976f5e0e6393e62c414c49c0e8fa5b1350fb66ddc"
+  },
+  "sha256_proof": "38bd68e845c5a4c6016fef444dde4c40e0bd1995b727ec8ae8af606a5ad8d6c8"
+}

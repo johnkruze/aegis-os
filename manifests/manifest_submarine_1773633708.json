@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_171b5337_marine_gps_denied_171b5337_20260316T040137Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:01:37.378951Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_171b5337_marine_gps_denied_171b5337_20260316T040137Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift. The depth is shallow, which could indicate a potential issue with the depth sensor or the vehicle's position relative to the ocean floor. The slow velocity suggests that the vehicle is moving at a leisurely pace, which could be due to the high drift or the vehicle's design."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a sensor failure or a problem with the vehicle's orientation. The high drift suggests that the vehicle is not tracking its course accurately. The shallow depth could be a false reading or an indication of the vehicle being in an unexpected location.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle could be in an unexpected location or the sensors could be malfunctioning, leading to a loss of control or a collision with the ocean floor.",
+      "mitigation_strategy": "Perform a sensor check to verify the accuracy of the current readings and the depth sensor. If the sensors are found to be malfunctioning, perform a system reset and recalibrate the sensors. If the sensors are accurate, adjust the vehicle's course to correct the drift and ensure that it is tracking its course accurately."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check and recalibrate if necessary, then adjust course to correct drift",
+      "expected_outcome": "The vehicle will either correct the drift and continue on course or perform a system reset and recalibrate the sensors to ensure that it is operating correctly."
+    },
+    "self_reflection": "The vehicle is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift. The shallow depth could be a false reading or an indication of the vehicle being in an unexpected location. The decision to perform a sensor check and recalibrate if necessary, then adjust the course to correct drift, is based on the potential risks and the expected outcomes of the actions taken."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_171b5337",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "786e83bf1d844ef81219e203888769de873261f0e79fd6e8b11168afc16e6d08"
+  },
+  "sha256_proof": "67b0fb576b610fdb88235ef81c3b4d06d0735600e0effe6bbe161710341942c6"
+}

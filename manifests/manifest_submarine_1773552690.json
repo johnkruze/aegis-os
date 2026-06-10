@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ecf36480_marine_gps_denied_ecf36480_20260315T053123Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:31:23.460339Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ecf36480_marine_gps_denied_ecf36480_20260315T053123Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 395.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight deviation in current readings and drift. The battery level is high, indicating sufficient power. The shallow depth and low navigation error suggest the system is operating in a controlled environment. The slight drift and negative velocity suggest the system may be experiencing minor movement issues."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is within operational parameters, but minor adjustments may be needed to maintain stability.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may experience minor drift or velocity issues, but these are within acceptable limits.",
+      "mitigation_strategy": "Monitor system performance closely and adjust parameters as needed to maintain stability."
+    },
+    "decision": {
+      "actuator_command": "adjust current readings and drift compensation",
+      "expected_outcome": "Stabilize system performance and maintain mission integrity."
+    },
+    "self_reflection": "The system is currently stable and within operational parameters. However, minor adjustments are necessary to maintain optimal performance."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ecf36480",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "adf0c48f4347ee61ade1bbefae5f102ae2bec5c9835cccf6854a81c8fd2e603c"
+  },
+  "sha256_proof": "485e5fae2e7287b086037826fe76d0bdaae9b6ae00efbd0764a20e5e160c3a79"
+}

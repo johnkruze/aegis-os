@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_667f3dda_marine_gps_denied_667f3dda_20260315T002309Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:23:09.308701Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_667f3dda_marine_gps_denied_667f3dda_20260315T002309Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the other anomalies suggest a potential issue with the navigation system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a navigation error. The battery level is high, so power is not an issue. The current sensor may be faulty or the waypoint may be incorrect.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The navigation system may fail to maintain the correct course, leading to a potential collision with obstacles or the wrong waypoint.",
+      "mitigation_strategy": "Perform a manual override to correct the course and verify the current sensor readings. If the issue persists, check the current sensor for calibration or replacement."
+    },
+    "decision": {
+      "actuator_command": "override_course 180 degrees",
+      "expected_outcome": "The course is corrected, and the system should be able to maintain the correct path."
+    },
+    "self_reflection": "The system detected anomalies in the navigation system, which could lead to a mission failure if not addressed. A manual override was performed to correct the course, and the current sensor should be checked for accuracy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_667f3dda",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "7d80d74de4e9eba164a6ba91f703df058b13011a6b8e52554675aa823e2a0a44"
+  },
+  "sha256_proof": "ca620839333a37f18b122646720b308512994e35881f6132e396b465d4354715"
+}

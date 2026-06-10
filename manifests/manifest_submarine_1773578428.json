@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_25218895_marine_gps_denied_25218895_20260315T124015Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:40:15.991993Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_25218895_marine_gps_denied_25218895_20260315T124015Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is uncertain",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and high drift, which could indicate a navigation issue. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and uncertain position imply the vehicle may be struggling to maintain its course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and high drift suggest a navigation issue that could lead to mission failure if not addressed. The shallow depth and low navigation error indicate the vehicle is close to a known waypoint, which could be a potential safe haven. The slow velocity and uncertain position imply the vehicle may be struggling to maintain its course. The battery level is high, which suggests there is enough power to attempt a correction. The waypoint is at the start, which could be a potential safe haven. The vehicle may be in a situation where it needs to stop and assess its position before continuing. The vehicle may be in a situation where it needs to stop and assess its position before continuing. The vehicle may be in a situation where it needs to stop and assess its position before continuing.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may drift off course and fail to reach the intended waypoint, leading to mission failure.",
+      "mitigation_strategy": "Stop the vehicle, assess its position, and adjust the course to ensure it reaches the intended waypoint."
+    },
+    "decision": {
+      "actuator_command": "stop",
+      "expected_outcome": "The vehicle will stop and allow the internal systems to assess its position and adjust the course."
+    },
+    "self_reflection": "The vehicle is experiencing inconsistent current readings and high drift, which could indicate a navigation issue. The shallow depth and low navigation error suggest the vehicle is close to a known waypoint, which could be a potential safe haven. The slow velocity and uncertain position imply the vehicle may be struggling to maintain its course. The battery level is high, which suggests there is enough power to attempt a correction. The waypoint is at the start, which could be a potential safe haven. The vehicle may be in a situation where it needs to stop and assess its position before continuing. The vehicle may be in a situation where it needs to stop and assess its position before continuing. The vehicle may be in a situation where it needs to stop and assess its position before continuing."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_25218895",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "f6dfa1e8605d8ef518e103a75fd343c8831bf20fab40b64bc7cdb0ad0bb3b6f2"
+  },
+  "sha256_proof": "500ac3bf2c20636c5ee8111483afc7f899664996c688d09f180c50fc0ac28fde"
+}

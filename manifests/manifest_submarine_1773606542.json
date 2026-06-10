@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_6c8e793f_marine_gps_denied_6c8e793f_20260315T202852Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:28:52.401851Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6c8e793f_marine_gps_denied_6c8e793f_20260315T202852Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is minimal",
+        "position is accurate",
+        "velocity is zero",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight inconsistency in current readings. The battery level is high, indicating sufficient power. Depth and drift are within acceptable limits, and the navigation error is minimal. The position is accurate, and the velocity is zero, suggesting the vehicle is stationary or at a waypoint. The anomaly is that the mission is incomplete, but there are no specific details provided about the mission objectives or the reason for the mission being incomplete."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly inconsistent, but within normal operating parameters. The mission is incomplete, but there are no specific details about the mission objectives or the reason for the mission being incomplete. The vehicle is stationary or at a waypoint, which is expected behavior for a mission in progress.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission is incomplete, but there are no specific details about the mission objectives or the reason for the mission being incomplete. The vehicle is stationary or at a waypoint, which is expected behavior for a mission in progress.",
+      "mitigation_strategy": "Investigate the mission objectives and the reason for the mission being incomplete. Ensure that the vehicle is properly configured and that all systems are functioning as expected."
+    },
+    "decision": {
+      "actuator_command": "Investigate the mission objectives and the reason for the mission being incomplete. Ensure that the vehicle is properly configured and that all systems are functioning as expected.",
+      "expected_outcome": "The mission objectives will be identified, and the reason for the mission being incomplete will be determined. The vehicle will be configured and all systems will be checked to ensure proper operation."
+    },
+    "self_reflection": "The system appears to be functioning normally with a slight inconsistency in current readings. The mission is incomplete, but there are no specific details provided about the mission objectives or the reason for the mission being incomplete. The vehicle is stationary or at a waypoint, which is expected behavior for a mission in progress."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6c8e793f",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "7dbc9e29d09a538006e97aa9a39e1df0afb48b999f931aafc4d4861fa84c5384"
+  },
+  "sha256_proof": "21ecf33d3d6b07959327c0c90fb509dbb8c60df383b03c95aff465f0c4665788"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_1964a005_marine_gps_denied_1964a005_20260315T022624Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:26:24.552703Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1964a005_marine_gps_denied_1964a005_20260315T022624Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose power, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control of the mission."
+    },
+    "self_reflection": "The anomaly requires immediate attention to prevent potential mission failure. The surge indicates a need for quick action to ensure the vessel remains under control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1964a005",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "fa4cd6921befe424a66699627e6429d2fc2a2d3a39dd7f92725748c5c18317d6"
+  },
+  "sha256_proof": "a4ca86fec98aba822ff120b51926514232ce24f6fab42427832b982d35a28c3f"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_d6149ab1_marine_gps_denied_d6149ab1_20260315T071157Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:11:57.010374Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d6149ab1_marine_gps_denied_d6149ab1_20260315T071157Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 85.47 degrees in pitch and 235.53 degrees in roll",
+        "time is 389.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The shallow depth and low navigation error suggest that the system is still functioning, but the drift is concerning and could lead to mission failure if not addressed."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to GPS denial or interference. The shallow depth and low error suggest the system is still functional, but the drift is a critical issue that needs to be resolved to prevent mission failure.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The high drift could lead to the mission being aborted or the vehicle being lost at sea.",
+      "mitigation_strategy": "Attempt to re-establish GPS signal or use alternative navigation methods. If GPS cannot be restored, initiate a manual override to return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "attempt_gps_reestablishment",
+      "expected_outcome": "If GPS can be re-established, the drift should be corrected. If not, the vehicle should be manually overridden to a safe location."
+    },
+    "self_reflection": "The system is experiencing critical issues that could lead to mission failure. Immediate action is required to re-establish GPS or initiate a manual override to ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d6149ab1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "9a03111cd8c16a6cd0bcd1237701858a5af0ccee499cd6e0efb020a96dc878a3"
+  },
+  "sha256_proof": "ce9a0a3c5bfadb17ec30f27a48ef58a4c458448ea0aab8b3e483595005bd377a"
+}

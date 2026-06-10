@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_e4e9431c_marine_gps_denied_e4e9431c_20260315T134204Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:42:04.664159Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e4e9431c_marine_gps_denied_e4e9431c_20260315T134204Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position and time data are accurate",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no critical issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current mission parameters and continue towards the next waypoint."
+    },
+    "self_reflection": "The system is performing within expected parameters and no immediate corrective actions are required."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e4e9431c",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 4.2,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "d400dcc4c1913be7c5adc5eb7f75b71e8437a999bc8cabb790e903fc299aceb5"
+  },
+  "sha256_proof": "db80a926dd9215ac897334414b6cefb01b9fcdbdea6c417df9d01de5011d1d16"
+}

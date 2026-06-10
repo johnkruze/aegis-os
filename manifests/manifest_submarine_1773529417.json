@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_8b19606e_marine_gps_denied_8b19606e_20260314T230331Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:03:31.182032Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8b19606e_marine_gps_denied_8b19606e_20260314T230331Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak, which is a critical anomaly in an underwater environment. The leak is surfacing, which could indicate a breach in the hull or a failure in the containment system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is surfacing, which could lead to rapid loss of pressure and potentially cause the vessel to sink. Immediate action is required to prevent this.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy and sink, leading to potential loss of life and equipment.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying emergency ballast tanks, and initiating a distress signal."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_ALL_NON_ESSENTIAL_SYSTEMS, DEPLOY_EMERGENCY_BALLAST_TANKS, INITIATE_DISTRESS_SIGNAL",
+      "expected_outcome": "The vessel will attempt to stabilize and prevent further damage from the leak."
+    },
+    "self_reflection": "The detection of a leak in an underwater environment is a critical situation that requires immediate and decisive action to prevent further damage and potential loss of life."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8b19606e",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": true,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "6378d90bcb97abfb2096e349ec91f0624a8e8dfbf5e08b3ec28bd62a661a42b9"
+  },
+  "sha256_proof": "b72fd21cdc7cde145da6e09f216dfc7dff2fa25c1ec9108ab01a4ada6f4b50e1"
+}

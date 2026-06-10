@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f146fa4d_marine_gps_denied_f146fa4d_20260316T013526Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:35:26.383435Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f146fa4d_marine_gps_denied_f146fa4d_20260316T013526Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "attitude is stable",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is well-charged, and the current readings suggest a stable power supply. The depth is shallow, which could be a concern in marine environments. The moderate drift and low navigation error indicate that the system is maintaining its course. The high temperature and slow velocity suggest that the system is operating in a potentially challenging environment. The waypoint is at the start, which is expected at the beginning of a mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within expected parameters, with only minor deviations. The battery is sufficient, and the current readings are stable. The depth is shallow, which could be a concern in marine environments. The moderate drift and low navigation error indicate that the system is maintaining its course. The high temperature and slow velocity suggest that the system is operating in a potentially challenging environment. The waypoint is at the start, which is expected at the beginning of a mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing within expected parameters, with only minor deviations. The battery is sufficient, and the current readings are stable. The depth is shallow, which could be a concern in marine environments. The moderate drift and low navigation error indicate that the system is maintaining its course. The high temperature and slow velocity suggest that the system is operating in a potentially challenging environment. The waypoint is at the start, which is expected at the beginning of a mission.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary. Monitor the battery level and current readings to ensure they remain stable. Monitor the depth and adjust course if necessary to avoid potential hazards. Monitor the temperature and velocity to ensure the system remains within safe operating parameters."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate within expected parameters, with only minor deviations. The battery will remain sufficient, and the current readings will remain stable. The depth will be monitored and adjusted if necessary to avoid potential hazards. The temperature and velocity will be monitored to ensure the system remains within safe operating parameters."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations. The battery is sufficient, and the current readings are stable. The depth is shallow, which could be a concern in marine environments. The moderate drift and low navigation error indicate that the system is maintaining its course. The high temperature and slow velocity suggest that the system is operating in a potentially challenging environment. The waypoint is at the start, which is expected at the beginning of a mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f146fa4d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "bd07f394b7cf74ef625954dcf5b052781018c245a35e35e6e3e3626fc7528e27"
+  },
+  "sha256_proof": "4b4025c185c86770370b98960ca0b0c66e1e29f8f7cad7d5fbe6419775f12683"
+}

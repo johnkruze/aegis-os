@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_9d5aef05_marine_gps_denied_9d5aef05_20260316T011836Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:18:36.736766Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9d5aef05_marine_gps_denied_9d5aef05_20260316T011836Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current values suggest that the vessel is drifting and may be unable to maintain its position or navigate to the next waypoint."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of control. The vessel is currently drifting and may be unable to reach the next waypoint. The battery level is still high, so there is some power available for emergency maneuvers.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel may drift away from its intended course and be unable to reach the next waypoint. There is a risk of collision with other vessels or obstacles in the water.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vessel. If the override is successful, attempt to navigate to the next waypoint using the remaining thrusters. If the override fails, initiate a manual override to control the vessel using the rudder and propellers."
+    },
+    "decision": {
+      "actuator_command": "override thrusters to stabilize vessel",
+      "expected_outcome": "Stabilize the vessel and allow for manual control if the override is successful. If the override fails, initiate manual control to navigate to the next waypoint."
+    },
+    "self_reflection": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of control. The vessel is currently drifting and may be unable to reach the next waypoint. The battery level is still high, so there is some power available for emergency maneuvers. The decision to initiate emergency thruster override is based on the critical nature of the issue and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9d5aef05",
+    "scenario": "gps_denied_autonomous_boat_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.2,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "b0bf430c1013f5e02020fadeae3999a66b5a699679467d993ba11d1ac27d9f71"
+  },
+  "sha256_proof": "8b231a2b54ca9022e6b53765c91176f29319fdc3f7c5c2c6729522dc879cbe43"
+}

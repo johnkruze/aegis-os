@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_0faa5257_marine_gps_denied_0faa5257_20260315T040953Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:09:53.991614Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0faa5257_marine_gps_denied_0faa5257_20260315T040953Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slow velocity and start waypoint indicate the vehicle is stationary or moving very slowly."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external currents or wind. The inconsistent current readings might indicate a change in the environment. The shallow depth and low error suggest the vehicle is in a controlled environment. The slow velocity and start waypoint indicate the vehicle is stationary or moving very slowly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may be affected by external currents or wind, causing drift. The inconsistent current readings could indicate a change in the environment, which could affect navigation.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the course if necessary. Ensure the vehicle is equipped with sensors to detect and respond to changes in the environment."
+    },
+    "decision": {
+      "actuator_command": "monitor current readings and adjust course if necessary",
+      "expected_outcome": "The vehicle will continue to monitor the current readings and adjust its course if necessary to maintain its intended path."
+    },
+    "self_reflection": "The vehicle appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slow velocity and start waypoint indicate the vehicle is stationary or moving very slowly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0faa5257",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "317e045611b79880a2e6a55ba787383cdf7683da95029c7a8ff0814071d9ced3"
+  },
+  "sha256_proof": "2c516b961d63aa959599f2b9e1ca2a319f43f7004ca2398b8796e5a99a2dbafa"
+}

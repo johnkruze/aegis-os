@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_7ab70741_marine_gps_denied_7ab70741_20260316T011111Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:11:11.325395Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7ab70741_marine_gps_denied_7ab70741_20260316T011111Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with an obstacle or lose control, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid collision, ensuring mission completion."
+    },
+    "self_reflection": "The anomaly was detected promptly, and a decisive action was taken to mitigate the risk. The mission is now on hold until the surge is resolved."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7ab70741",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "8376fc237c012bf222d13fbf6264808302324c53857ce9975daf3906ff8baa42"
+  },
+  "sha256_proof": "031fb9643a805c56a94ad3e6f32ce9eddf6a7276fb50a6efae95704dceb05b31"
+}

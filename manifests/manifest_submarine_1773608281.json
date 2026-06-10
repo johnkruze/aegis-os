@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ead83373_marine_gps_denied_ead83373_20260315T205754Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:57:54.091214Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ead83373_marine_gps_denied_ead83373_20260315T205754Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is normal",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is normal",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the sensors or the environment. The drift is high, which suggests the vehicle is not accurately following the intended path. Despite the low navigation error and normal depth, the drift and current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings are critical issues that need to be addressed immediately to prevent further damage or loss of control.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control or drift further from the intended path, potentially leading to a collision or other hazardous situation.",
+      "mitigation_strategy": "Perform a sensor recalibration and adjust the vehicle's course to correct the drift. Monitor the system closely for any further anomalies."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_sensors, adjust_course",
+      "expected_outcome": "The system will attempt to recalibrate the sensors and adjust the course to correct the drift. This should help mitigate the anomaly and prevent further issues."
+    },
+    "self_reflection": "The anomaly detected in the current readings and drift suggests a potential issue with the vehicle's sensors or the environment. Immediate action is required to ensure the safety and stability of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ead83373",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "f2992f10cfa13d30dfb644438e772adc2367c49c74d42244c66e9668b00b1ecb"
+  },
+  "sha256_proof": "30e70a9ba3ce33c6acc93f1a87af6dc53a8224f07d46bc223e322e97f0687d9d"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d78e185f_marine_gps_denied_d78e185f_20260316T054908Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:49:08.115196Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d78e185f_marine_gps_denied_d78e185f_20260316T054908Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction in the propulsion system, which is essential for maintaining the vessel's position and navigation. This failure could lead to the vessel drifting away from its intended course and potentially causing damage to the vessel or its equipment."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage and ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel will continue to drift away from its intended course, potentially leading to a collision with other vessels or structures, or causing the vessel to run aground.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vessel's position. If the override is not successful, initiate emergency propulsion shutdown and await rescue."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vessel's position and prevent further drift."
+    },
+    "self_reflection": "The thruster failure is a significant anomaly that requires immediate attention. The decision to override the thrusters is based on the critical nature of the failure and the potential consequences of allowing the vessel to drift. The mission assurance check highlights the high risk level and the need for a robust mitigation strategy to prevent further damage."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d78e185f",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "8da1c92e930782a8598a23596b898e374c789096d0fd9bae9dbd5d64ca34199e"
+  },
+  "sha256_proof": "9442ffa44e158381d6cb10d7b6823268626bb63991ab859034f3642307ee8ac3"
+}

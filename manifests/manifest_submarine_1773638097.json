@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_35a5e025_marine_gps_denied_35a5e025_20260316T051450Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:14:50.028046Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_35a5e025_marine_gps_denied_35a5e025_20260316T051450Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current sensor readings suggest that the vessel is experiencing drift and navigation errors, which are exacerbated by the failure of the primary propulsion system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent the vessel from drifting out of control. The current battery level is still high, so there is some power available for emergency maneuvers.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the thruster failure is not resolved, the vessel could drift away from its intended course, potentially leading to a collision with other vessels or structures, or even running aground.",
+      "mitigation_strategy": "Initiate emergency thruster override to engage backup thrusters if available. If backup thrusters are also unavailable, prepare for manual control using rudder and propellers if possible."
+    },
+    "decision": {
+      "actuator_command": "override primary thrusters to backup thrusters",
+      "expected_outcome": "If backup thrusters are available, they should provide sufficient power to counteract the drift and maintain control of the vessel. If backup thrusters are also unavailable, manual control will be necessary to navigate the vessel."
+    },
+    "self_reflection": "The thruster failure is a significant challenge, but with the available backup systems, there is a chance to mitigate the risk. The crew must remain vigilant and prepared to take manual control if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_35a5e025",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "198a3f7b75a8710df69992d394bc10afbf633b7c96ea0066450c848900a65a48"
+  },
+  "sha256_proof": "acba96d498e96aa9199a0390a852e9f0e34d93acb8ad39f02b3d2bdc1977df19"
+}

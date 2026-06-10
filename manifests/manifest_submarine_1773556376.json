@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_1a116793_marine_gps_denied_1a116793_20260315T063242Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:32:42.753333Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1a116793_marine_gps_denied_1a116793_20260315T063242Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 376.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the unusual current readings and significant drift. The battery level is high, which suggests sufficient power for continued operation. The shallow depth and low navigation error indicate that the system is likely in a controlled environment. The slight position off and moderate velocity suggest that the system is moving in a predictable manner. The current readings being unusual could indicate a potential issue with the current sensors or the environment itself."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The unusual current readings could be due to a change in the water flow or a malfunction in the current sensors. The significant drift suggests that the system may be losing its position over time. The shallow depth and low navigation error indicate that the system is likely in a controlled environment, which could mitigate the impact of the drift. The battery level is high, which suggests sufficient power for continued operation. The slight position off and moderate velocity suggest that the system is moving in a predictable manner. The current readings being unusual could indicate a potential issue with the current sensors or the environment itself.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to drift over time, potentially leading to a loss of position. The unusual current readings could indicate a potential issue with the current sensors or the environment itself.",
+      "mitigation_strategy": "Monitor the current readings and position over time. If the drift continues, consider implementing a correction algorithm to adjust the position. If the current readings continue to be unusual, consider recalibrating the current sensors or investigating the environment."
+    },
+    "decision": {
+      "actuator_command": "Monitor current readings and position over time. If the drift continues, consider implementing a correction algorithm to adjust the position. If the current readings continue to be unusual, consider recalibrating the current sensors or investigating the environment.",
+      "expected_outcome": "The system will continue to operate within normal parameters, except for the potential issue with the current sensors or the environment itself. If the drift continues, the system will be able to adjust its position. If the current readings continue to be unusual, the system will be able to recalibrate the current sensors or investigate the environment."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the unusual current readings and significant drift. The battery level is high, which suggests sufficient power for continued operation. The shallow depth and low navigation error indicate that the system is likely in a controlled environment. The slight position off and moderate velocity suggest that the system is moving in a predictable manner. The current readings being unusual could indicate a potential issue with the current sensors or the environment itself."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1a116793",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "44afaef0fdeae9f4ce7a5a31df369a11b3aaa22b45b20b2414f705ba93910fe1"
+  },
+  "sha256_proof": "0f8cf77e564e5a53c756fc3849baecdd9045d82c06dc2b8d8465d985d8011504"
+}

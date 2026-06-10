@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_7786833b_marine_gps_denied_7786833b_20260315T063422Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:34:22.119665Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7786833b_marine_gps_denied_7786833b_20260315T063422Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "time is 417.0",
+        "velocity is low"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift. The depth is shallow and the system is near the starting waypoint, which suggests a potential issue with the current vector or a need for recalibration."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a possible issue with the current vector or the magnetic field.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift could be due to a magnetic anomaly or incorrect heading.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and near waypoint suggest a potential need for recalibration or a change in course.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may drift off course or fail to maintain its position due to magnetic anomalies or incorrect heading.",
+      "mitigation_strategy": "Perform a recalibration of the magnetic compass and verify the current vector. If the issue persists, adjust the course to compensate for drift."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_magnetic_compass",
+      "expected_outcome": "The system should stabilize and maintain its position more accurately."
+    },
+    "self_reflection": "The system is performing well in terms of battery and navigation error, but the inconsistencies in current readings and high drift suggest a potential issue that requires immediate attention to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7786833b",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "c4d44e3ba82895c6d22ad8c0978b789ae68f7211aecef3d4b9f7458e364a54ad"
+  },
+  "sha256_proof": "f1bc741bb63bf2a1be93806b8a86b28d8e8601e10d75aad69aa9028fe0ac19f5"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_25b86767_marine_gps_denied_25b86767_20260316T024037Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:40:37.111724Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_25b86767_marine_gps_denied_25b86767_20260316T024037Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 338.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the vehicle is moving in a slightly off course. The depth is shallow, which could be a concern if the vehicle is not designed for shallow waters. The drift is moderate, and the navigation error is low, indicating the system is maintaining a relatively stable position. The time and velocity readings are within expected ranges, and the vehicle is at the initial waypoint."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations from expected values suggest a potential issue with the current readings or the vehicle's position.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may be slightly off course or in shallow water, which could lead to navigation issues or potential damage to the vehicle.",
+      "mitigation_strategy": "Monitor the current readings and position closely. If the drift continues or the depth increases, adjust the course or return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "monitor current readings and position closely",
+      "expected_outcome": "The vehicle will continue to operate within its operational parameters until further action is required."
+    },
+    "self_reflection": "The system is performing within expected parameters, but minor deviations suggest potential issues that should be monitored closely. The vehicle is in a safe location and should continue to operate until further action is required."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_25b86767",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "8caf505304af2bc86c43f8043767bacc3e3eec589e57b7edcd11ffecb4da9a45"
+  },
+  "sha256_proof": "17b1a7b30d51a8e2ea8f780953f2acab5711d56b61ef91d578e0fa2a84d685e1"
+}

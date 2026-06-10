@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_fcf29a05_marine_gps_denied_fcf29a05_20260315T054452Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:44:52.785346Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fcf29a05_marine_gps_denied_fcf29a05_20260315T054452Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 67.85, -145.22, -0.49",
+        "time is 452.0",
+        "velocity is low",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the other indicators suggest a potential issue with the mission's progress."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a navigation error, possibly due to GPS denial or interference. The shallow depth and low velocity indicate that the vehicle is not moving as expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be stuck or moving in an unintended direction, leading to mission failure.",
+      "mitigation_strategy": "Perform a manual override to correct the navigation error and ensure the vehicle is on the correct course."
+    },
+    "decision": {
+      "actuator_command": "override navigation to waypoint 1",
+      "expected_outcome": "The vehicle should correct its course and move towards the intended waypoint."
+    },
+    "self_reflection": "The anomaly indicates a potential navigation error due to GPS denial or interference. The decision to override navigation is based on the high drift and abnormal current readings. The mission assurance check suggests a medium risk level and a manual override as the mitigation strategy."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fcf29a05",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "2058ee4305a88d698126114ebcda01249134f0074c7aaff41611b1f70bb4db17"
+  },
+  "sha256_proof": "b4b1359f532fe865abfa96553d75d3a766c6456bd11d06fccc846ea3e15801cb"
+}

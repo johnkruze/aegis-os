@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_23096da1_marine_gps_denied_23096da1_20260315T130658Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:06:58.752953Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_23096da1_marine_gps_denied_23096da1_20260315T130658Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and time data are valid",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location. The low navigation error and valid position data suggest that the system is still functioning correctly, but the current readings are concerning."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a sensor failure or environmental issue. The shallow depth and high drift suggest a potential hazard. The system is still functioning correctly, but the anomaly requires investigation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly could lead to a loss of control or a collision with the environment. The system may also require recalibration or repair of the sensors.",
+      "mitigation_strategy": "Perform a sensor check to verify the readings. If the anomaly persists, initiate a manual override to return to a safe location. If the anomaly is confirmed, initiate a repair or recalibration of the sensors."
+    },
+    "decision": {
+      "actuator_command": "sensor_check",
+      "expected_outcome": "Verification of sensor readings and confirmation of the anomaly. If confirmed, initiate a manual override or repair strategy."
+    },
+    "self_reflection": "The system has detected an anomaly in the current readings, which could indicate a problem with the sensors or the environment. The shallow depth and high drift suggest a potential hazard. The system is still functioning correctly, but the anomaly requires investigation. The decision to perform a sensor check is based on the potential risks and the need to ensure the safety of the system and the environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_23096da1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "43a5b4e5358e3fbbde6465b6b514b455d5084bd9f977d1c9b2f7fb78777f4fc5"
+  },
+  "sha256_proof": "dfddf86e6d2ff4d3f7d31aa9b10a57ddca98011a5d9eb11911620d7f07825d13"
+}

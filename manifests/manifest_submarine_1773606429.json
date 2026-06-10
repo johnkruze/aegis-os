@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_79214407_marine_gps_denied_79214407_20260315T202704Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:27:04.528347Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_79214407_marine_gps_denied_79214407_20260315T202704Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "velocity is normal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no critical issues.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission."
+    },
+    "self_reflection": "The system is performing within expected parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_79214407",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "ff73165dc7b7c5713a0b10fe01a295d685e10b30d5fbd7557ca0b5785b19ed6e"
+  },
+  "sha256_proof": "13b09840dba228cad61501b962bd508e17b49a80b4d3968bf58b764d93c34cf5"
+}

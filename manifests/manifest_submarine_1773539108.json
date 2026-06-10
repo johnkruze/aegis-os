@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d4dded7f_marine_gps_denied_d4dded7f_20260315T014459Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:44:59.317888Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d4dded7f_marine_gps_denied_d4dded7f_20260315T014459Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel. The battery level is high, and the current readings suggest a slight imbalance, possibly due to the leak. The depth is normal, and the drift is within acceptable limits. The navigation error is low, and the velocity is normal. The waypoint is at 0, indicating the vessel is at the start of its route."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention to prevent further damage or loss of the vessel. The current readings suggest that the leak is not severe, but it is still a significant concern. The battery level is high, which provides some margin for error. The vessel is currently at the start of its route, which may limit the impact of the leak if it is not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "If the leak is not addressed, it could lead to increased water ingress, potentially causing structural damage or even sinking of the vessel. The leak could also affect the vessel's buoyancy, leading to a loss of control.",
+      "mitigation_strategy": "Initiate a leak isolation procedure to contain the leak and prevent further damage. Notify the crew and initiate emergency procedures if necessary. Monitor the leak and water ingress levels closely."
+    },
+    "decision": {
+      "actuator_command": "LEAK_ISOLATION_INITIATE",
+      "expected_outcome": "The leak isolation procedure will be initiated, and the crew will be notified. The vessel will be monitored closely to ensure that the leak is contained and that the situation does not worsen."
+    },
+    "self_reflection": "The detection of a leak on the surface of the vessel is a critical event that requires immediate attention. The crew must be notified and the leak isolation procedure initiated to prevent further damage. The vessel's stability and safety are paramount, and the crew must act quickly and decisively to address the situation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d4dded7f",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": true,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "87e004b21acc59854243fddaad118cadc606395e0c253f70b9f48f632ce61b1c"
+  },
+  "sha256_proof": "db028e9b4e64d93d316c3ce2b6c58cd1df501deb8075181aff1e93db8e03f0a4"
+}

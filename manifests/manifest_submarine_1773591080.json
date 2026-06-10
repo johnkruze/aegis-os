@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b745296a_marine_gps_denied_b745296a_20260315T161113Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:11:13.911796Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b745296a_marine_gps_denied_b745296a_20260315T161113Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "attitude is stable",
+        "temperature is normal",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected. The aircraft is in a stable position and on course."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No significant issues detected. The system is stable and on course.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in performance."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. No immediate action is required. The mission is proceeding as intended."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b745296a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "e767b17ddd076c3abd9630af3f137ac2bfaed664d70a08b04ea0549fd56bcd09"
+  },
+  "sha256_proof": "c60e035f6be2ed3ba0425d212e2dfbf44efd5cc9345294f8ce9723753bdd7386"
+}

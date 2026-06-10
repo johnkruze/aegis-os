@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_dfcbc447_marine_gps_denied_dfcbc447_20260315T004508Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:45:08.779943Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_dfcbc447_marine_gps_denied_dfcbc447_20260315T004508Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 334.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high current readings and slight drift, which could indicate a malfunction or interference with the GPS system. The shallow depth and low navigation error suggest the vehicle is operating in a controlled environment. The low velocity and position at waypoint 0 imply the vehicle is stationary or at the start of a mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high current readings and drift suggest a potential GPS denial or interference issue. The shallow depth and low velocity indicate the vehicle is stationary or at the start of a mission. The low navigation error suggests the vehicle is not significantly off course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to accurately determine its position or navigate correctly, leading to mission failure.",
+      "mitigation_strategy": "Verify GPS signal integrity, check for interference, and attempt to re-establish GPS lock."
+    },
+    "decision": {
+      "actuator_command": "RETRY GPS LOCK",
+      "expected_outcome": "The vehicle should attempt to re-establish GPS lock to ensure accurate navigation and mission completion."
+    },
+    "self_reflection": "The system detected an anomaly in the GPS signal, which could be due to interference or a malfunction. The decision to retry GPS lock is based on the potential impact on mission success and the available resources."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_dfcbc447",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "ac251ba68d55b025bfcadeedf1edc0ff3dde026b4ca46d6526a901e25a4bd0b4"
+  },
+  "sha256_proof": "7b5b5bd16fb70427093e30f638129c00574f515b8836ff614bb2ea8a708a121b"
+}

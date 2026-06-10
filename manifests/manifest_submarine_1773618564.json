@@ -1,0 +1,49 @@
+{
+  "mission_id": "marine_gps_denied_36c097f6_marine_gps_denied_36c097f6_20260315T234916Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:49:16.021879Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_36c097f6_marine_gps_denied_36c097f6_20260315T234916Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "DEEP_OCEAN_NAVIGATION",
+        "LOW_BATTERY_WARNING"
+      ],
+      "interpretation": "The battery level is critically low, indicating a high risk of mission failure due to insufficient power for navigation and communication. The vessel is operating in a deep ocean environment, which adds complexity to the mission. The navigation error is within acceptable limits, but the drift and velocity suggest the vessel is not on course."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low and the vessel is in a deep ocean environment, which increases the risk of mission failure. Immediate action is required to ensure the vessel can return to safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel may lose power and be unable to communicate or navigate, leading to a potential loss of the mission.",
+      "mitigation_strategy": "Initiate emergency power management protocols, including shutting down non-essential systems and attempting to return to the surface or a safe location."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, INITIATE_EMERGENCY_POWER_MANAGEMENT, ATTEMPT_SURFACE_NAVIGATION",
+      "expected_outcome": "The vessel will attempt to conserve power and navigate to a safe location, increasing the chances of mission completion."
+    },
+    "self_reflection": "The mission is incomplete due to critical battery degradation. Immediate action is necessary to ensure the vessel can return to safety and complete the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_36c097f6",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.3,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "e9ca91e8358dac7b12535b877ad9fa541f1c8d11e18a34ea056e831a9ca8a938"
+  },
+  "sha256_proof": "2082ec6e0df4a81c10fceef097d69a0c258afbc1b9d63e830811689264e5ca50"
+}

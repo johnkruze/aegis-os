@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_800ac65c_marine_gps_denied_800ac65c_20260315T225118Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:51:18.233691Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_800ac65c_marine_gps_denied_800ac65c_20260315T225118Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 316.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift in position. The depth is shallow, which could be a concern in marine environments. The navigation error is low, but the drift suggests the system may be struggling to maintain its course accurately."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the sensors or the system's ability to interpret them. The slight drift and navigation error suggest the system may be compensating for an issue. The shallow depth could be a concern, but it's not immediately critical.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may be unable to maintain its course accurately, leading to potential navigation errors and increased drift over time. The shallow depth could also be a concern if the system is not designed to operate in such conditions.",
+      "mitigation_strategy": "Perform a sensor calibration to ensure the current readings are accurate. Monitor the system's performance closely and adjust the course as necessary. If the system continues to drift, consider implementing a more robust navigation algorithm."
+    },
+    "decision": {
+      "actuator_command": "Calibrate sensors and adjust course",
+      "expected_outcome": "The system should be able to maintain its course more accurately and reduce drift. The calibration should also help to ensure that the system is interpreting the current readings correctly."
+    },
+    "self_reflection": "The system is functioning with high battery, but there are inconsistencies in current readings and a slight drift in position. The shallow depth is a concern, but it's not immediately critical. The system should be able to maintain its course more accurately and reduce drift after calibration and course adjustment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_800ac65c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "605b27e7219c657bc034e2ac6112d560939238c8d2fcdd75329ba9423afab9bd"
+  },
+  "sha256_proof": "76ceb3da9a249d6d4d887e660dcee0fedf26ad87eee76c61dad9853bd1d59aa3"
+}

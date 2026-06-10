@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_0c4811e4_marine_gps_denied_0c4811e4_20260315T114404Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:44:04.265089Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0c4811e4_marine_gps_denied_0c4811e4_20260315T114404Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and minimal velocity suggest that the vehicle is likely in a calm or stationary environment. The slight position error and minimal velocity indicate that the vehicle is not actively engaged in navigation or exploration."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest the vehicle is in a stationary or slow-moving environment. The drift could be due to wind or currents. The slight position error could be due to minor sensor drift or calibration issues.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may continue to drift slightly or experience minor sensor drift over time.",
+      "mitigation_strategy": "Monitor the drift and position error closely. If drift becomes significant, adjust the vehicle's orientation or use external reference points to correct the position."
+    },
+    "decision": {
+      "actuator_command": "monitor",
+      "expected_outcome": "Continue monitoring the vehicle's position and orientation to ensure it remains within acceptable limits."
+    },
+    "self_reflection": "The system appears to be operating within normal parameters, with only minor issues that are unlikely to cause a critical failure. The drift and position error are within acceptable ranges, and the vehicle is not engaged in any potentially dangerous activities."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0c4811e4",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "9c9eaa0f57f27ce114089223e2faf256f01f8861d292c5c7da17a7ac425f15a5"
+  },
+  "sha256_proof": "b5028059f32f1d52881f6b808cf7afad9ca0ca3e2254e9637fc2476d829a72d9"
+}

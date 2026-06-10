@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_a92f2288_marine_gps_denied_a92f2288_20260315T091510Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:15:10.786257Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a92f2288_marine_gps_denied_a92f2288_20260315T091510Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is near zero",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected. The battery is healthy, the current readings are within expected parameters, and the depth is shallow, which is typical for marine operations. The slight drift and low navigation error suggest the system is maintaining its course accurately. The velocity is near zero, indicating the system is stationary or moving very slowly, which is consistent with being at a waypoint. The waypoint is at zero, which is the expected starting point for the mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes are predicted. The system is stable and within operational parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in parameters that may indicate a potential issue."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected, maintaining its current course and waypoint."
+    },
+    "self_reflection": "The system is performing as expected with no anomalies detected. The battery is healthy, and the current readings are within normal parameters. The slight drift and low navigation error suggest the system is maintaining its course accurately. The velocity is near zero, indicating the system is stationary or moving very slowly, which is consistent with being at a waypoint. The waypoint is at zero, which is the expected starting point for the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a92f2288",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.2,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "1bc426ddb24e45e83e4e5034963150e92b68e7dd6d2be349033bd62de406a23f"
+  },
+  "sha256_proof": "05642865b57db04de07c8fe14356d9565c72ededf42028a43236930e97d18bfa"
+}

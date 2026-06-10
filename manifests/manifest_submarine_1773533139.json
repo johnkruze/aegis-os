@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b4ef1791_marine_gps_denied_b4ef1791_20260315T000531Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:05:31.615696Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b4ef1791_marine_gps_denied_b4ef1791_20260315T000531Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thrusters have failed, causing the vehicle to drift and potentially lose control. The battery level is still high, but the drift and navigation error suggest a critical issue with the propulsion system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical anomaly that could lead to mission failure if not addressed immediately. The vehicle is drifting and the navigation error is increasing. The battery is still functional, so there is some time to act.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control and drift further, potentially leading to a collision with the ocean floor or other obstacles.",
+      "mitigation_strategy": "Activate emergency thrusters or use backup propulsion systems if available. If not, prepare for a manual override to control the vehicle's movement."
+    },
+    "decision": {
+      "actuator_command": "activate emergency thrusters",
+      "expected_outcome": "The vehicle should be able to counteract the drift and stabilize its position. If emergency thrusters are not available, prepare for manual control."
+    },
+    "self_reflection": "The thruster failure is a significant anomaly that requires immediate attention. The vehicle's stability is compromised, and the risk of collision is high. The decision to activate emergency thrusters is based on the critical nature of the situation and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b4ef1791",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "23ad3ee7f164e00d97fc650e73a2339ee5b8d1cae6019b23960013babd368ac4"
+  },
+  "sha256_proof": "f3a563334b2be029bc0461e319a5096ffd6a54fc58c40f9b115d1712f9796805"
+}

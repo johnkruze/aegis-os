@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_4a3bd9bf_marine_gps_denied_4a3bd9bf_20260315T030920Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:09:20.683024Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4a3bd9bf_marine_gps_denied_4a3bd9bf_20260315T030920Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "position is within waypoint",
+        "velocity is near zero"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be on track with no critical issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4a3bd9bf",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.4,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a1dc154bc588bcc987babfab4ba3739775eba98efd62b3247b84a48970f1726e"
+  },
+  "sha256_proof": "979b5c20e35eeaddc1ae243171f50ba512654eea43f1d140184880f9ee204835"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_56948f09_marine_gps_denied_56948f09_20260315T221919Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:19:19.568315Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_56948f09_marine_gps_denied_56948f09_20260315T221919Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 246.4, -362.09, -0.49",
+        "time is 308.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the shallow depth and slow velocity suggest that the vehicle may be in a potentially dangerous or unexpected location."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a navigation error, possibly due to GPS denial or interference. The shallow depth and slow velocity indicate that the vehicle may be in a potentially dangerous or unexpected location. The battery level is high, which is good, but the shallow depth and slow velocity suggest that the vehicle may be in a potentially dangerous or unexpected location.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in a potentially dangerous or unexpected location due to the high drift and abnormal current readings. The GPS system may be denied or interfered with, causing the vehicle to drift off course.",
+      "mitigation_strategy": "Perform a manual override of the navigation system to correct the drift and ensure the vehicle is on the correct course. Check the GPS system for any signs of interference or denial and attempt to re-establish a connection."
+    },
+    "decision": {
+      "actuator_command": "override navigation system to correct drift and ensure vehicle is on correct course",
+      "expected_outcome": "The vehicle will be corrected to the correct course and the navigation system will be re-established to prevent further drift or interference."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the shallow depth and slow velocity suggest that the vehicle may be in a potentially dangerous or unexpected location. The decision to override the navigation system and check the GPS system for any signs of interference or denial is based on the potential risks and the need to ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_56948f09",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "23eb6fb8050355efadba34f98803f00467cbc89797dc4d10576ad29a51067646"
+  },
+  "sha256_proof": "b7031c6e29ce8226c6f3e3857248d86f1590636ec7ae1eb6f7b3bfb733a5167a"
+}

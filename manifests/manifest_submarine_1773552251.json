@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_0162f93e_marine_gps_denied_0162f93e_20260315T052403Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:24:03.457191Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0162f93e_marine_gps_denied_0162f93e_20260315T052403Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing high current readings and slight drift, which could indicate a problem with the propulsion system or navigation sensors. The shallow depth and low velocity suggest the vehicle is in a potentially hazardous area. The low navigation error and starting waypoint indicate the system is not in a critical failure state."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high current readings and drift suggest a propulsion issue. The shallow depth and low velocity indicate a potential collision risk. The system is not in a critical failure state, but the anomaly requires immediate attention.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The propulsion system may be failing, leading to a collision with the ocean floor or other obstacles.",
+      "mitigation_strategy": "Initiate emergency braking and perform a safety check of the propulsion system. If the issue persists, initiate a manual override to return to the surface."
+    },
+    "decision": {
+      "actuator_command": "emergency_braking, safety_check",
+      "expected_outcome": "The vehicle will attempt to slow down and perform a safety check to ensure the propulsion system is functioning correctly. If the issue persists, the vehicle will initiate a manual override to return to the surface."
+    },
+    "self_reflection": "The anomaly requires immediate attention to prevent potential damage to the vehicle and ensure the safety of the mission. The high current readings and drift suggest a problem with the propulsion system, which must be addressed to prevent a collision with the ocean floor or other obstacles."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0162f93e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "bb532dc7549fd5bb301d8a75441b7a3ed22948cde38221787b957ee41c349fa1"
+  },
+  "sha256_proof": "fa8dcee47471a3a74ccb189ce19e6ed0729b4d5d1f8e8058688b398ed25bf072"
+}

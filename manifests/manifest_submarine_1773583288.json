@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5fb6281c_marine_gps_denied_5fb6281c_20260315T140119Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:01:19.804294Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5fb6281c_marine_gps_denied_5fb6281c_20260315T140119Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 337.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is nearly fully charged, and the current readings suggest a slight deviation from the expected path. The depth is shallow, which could be a concern depending on the mission requirements. The drift is moderate, and the navigation error is low, indicating that the system is maintaining a relatively stable position. The time and velocity readings are within expected ranges, and the waypoint is at 0, suggesting that the mission is at the start or beginning of the route."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations from expected values are within acceptable limits. The system is stable and on track.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and on track. The minor deviations are within acceptable limits.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with minor adjustments to the course if necessary."
+    },
+    "self_reflection": "The system is performing well within normal parameters. The minor deviations are within acceptable limits, and the system is stable and on track. The mission will continue as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5fb6281c",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "58747399bde324c6bab3e22acd56c36171da4044b07532b20dd6c43641a734aa"
+  },
+  "sha256_proof": "00a1d09fc02fea9a356fb2d3702ddb197c126f10833d236494dfbc8c48b16d55"
+}

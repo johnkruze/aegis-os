@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_a3407ebc_marine_gps_denied_a3407ebc_20260315T021617Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:16:17.588559Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a3407ebc_marine_gps_denied_a3407ebc_20260315T021617Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in the current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery level is high, which suggests that the vessel is still operational but may be at risk of losing control due to the surge."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift, which could lead to a collision with the ocean floor or other obstacles. The battery level is high, so there is enough power to attempt a correction. However, the drift is significant and could be difficult to correct without additional information.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose control and collide with the ocean floor or other obstacles if the current surge is not corrected. The battery level is high, so there is enough power to attempt a correction, but the drift is significant and could be difficult to correct without additional information.",
+      "mitigation_strategy": "Attempt to correct the drift by adjusting the vessel's heading and speed. If the drift is too significant to correct, consider initiating an emergency evacuation procedure."
+    },
+    "decision": {
+      "actuator_command": "Adjust heading to counteract the current surge and reduce drift. If drift is too significant, initiate emergency evacuation procedure.",
+      "expected_outcome": "The vessel should be able to counteract the current surge and reduce drift. If the drift is too significant, the emergency evacuation procedure should be initiated to ensure the safety of the vessel and its crew."
+    },
+    "self_reflection": "The current surge is a significant threat to the vessel's safety. The battery level is high, so there is enough power to attempt a correction, but the drift is significant and could be difficult to correct without additional information. The decision to attempt to correct the drift or initiate an emergency evacuation procedure is critical to the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a3407ebc",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "e6eb3fb4c17443591f7b4b56da7e430b18e92568f0dd9b7d571b9cd1105108cf"
+  },
+  "sha256_proof": "33b03db348eb712272405712c444ef56c8819bb67fe7c268e9f72aca059c1923"
+}

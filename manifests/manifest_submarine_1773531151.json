@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_776b3164_marine_gps_denied_776b3164_20260314T233223Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:32:23.491166Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_776b3164_marine_gps_denied_776b3164_20260314T233223Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are inconsistent, suggesting a possible fault in the current sensors. There is a slight error in depth, which could be due to sensor drift. The high drift indicates the vessel is not following the intended course, and the waypoint has not been reached, which is critical for mission completion."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could cause the system to fail. The current readings are inconsistent, which could indicate a hardware fault. The high drift and unmet waypoint suggest a navigation error. The slight depth error is less critical but should be addressed to maintain accuracy.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system could fail, leading to mission termination or loss of control.",
+      "mitigation_strategy": "Immediately recharge the battery, check the current sensors for faults, and correct the navigation error to reach the waypoint."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, check_current_sensors, correct_navigation",
+      "expected_outcome": "The system will be recharged, the current sensors will be checked for faults, and the navigation error will be corrected, allowing the mission to continue."
+    },
+    "self_reflection": "The anomaly highlights the importance of regular system checks and maintenance to prevent critical failures. The high cognitive load indicates the need for a more robust system to handle unexpected anomalies without manual intervention."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_776b3164",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "84a6abe97ca967ad9e611153e0794695af73e42ede92cd1bbc9ac6e8592c1648"
+  },
+  "sha256_proof": "94996cc8d3ac0e0794aa718ffe81b5024c337d5ece21f7b593c131f77e53907e"
+}

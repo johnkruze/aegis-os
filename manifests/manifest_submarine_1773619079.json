@@ -1,0 +1,49 @@
+{
+  "mission_id": "marine_gps_denied_98b02f55_marine_gps_denied_98b02f55_20260315T235739Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:57:39.401327Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_98b02f55_marine_gps_denied_98b02f55_20260315T235739Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "ANOMALY_DETECTED",
+        "TELEMETRY_VARIANCE_HIGH",
+        "LINK_STATUS_BLACKOUT"
+      ],
+      "interpretation": "[Isolated (Dark Window)] System detecting non-nominal state: LEAK_SURFACED_OK: LEAK_DETECTED. Sensors reporting divergence from expected trajectory."
+    },
+    "cognitive_load": 0.85,
+    "internal_deliberation": [
+      {
+        "thought": "Trajectory exceeds 2-sigma deviation. No external link available. Parameters may be compromised.",
+        "confidence": 0.9,
+        "action_rejected": "MAINTAIN_CURRENT_ATTITUDE"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "Potential uncontrolled drift or system degradation.",
+      "mitigation_strategy": "Engage stabilization. Prioritize power conservation."
+    },
+    "decision": {
+      "actuator_command": "HOLD_POSITION",
+      "expected_outcome": "Maintain stability and wait for conditions to improve."
+    },
+    "self_reflection": "Operating in epistemic isolation. Physical intuition suggests conservative action."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_98b02f55",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "1fa53493de9ad86e50697ca30e5271ae7985ab91cab8988661c50c53da5b436a"
+  },
+  "sha256_proof": "be79aa740dd7d1f59e24530ab9a39cb9257acb8a9007dfd9e75870fc59dbed4b"
+}

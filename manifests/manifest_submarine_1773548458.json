@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_987663c7_marine_gps_denied_987663c7_20260315T042049Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:20:49.734054Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_987663c7_marine_gps_denied_987663c7_20260315T042049Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "attitude is stable",
+        "temperature is normal",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning within normal parameters, except for the significant drift and inconsistent current readings. The battery is nearly fully charged, and the navigation error is minimal, indicating that the system is capable of maintaining its position. However, the drift suggests that the system may be losing its reference point, which could lead to mission failure if not addressed."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest that the system may be experiencing magnetic interference or a change in the magnetic field.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The drift could be due to a failure in the gyroscope or a change in the magnetic field.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The system should be recalibrated to ensure accurate navigation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may lose its reference point and drift away from the intended course, leading to mission failure.",
+      "mitigation_strategy": "Recalibrate the system and monitor the current readings closely. If the drift continues, initiate a manual override to correct the course."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_system",
+      "expected_outcome": "The system should be able to maintain its reference point and continue on the intended course."
+    },
+    "self_reflection": "The system is currently operating within normal parameters, but the significant drift suggests that there may be an issue with the magnetic field or the gyroscope. Recalibrating the system should mitigate this issue and allow the mission to continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_987663c7",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "47aff475f5048774cb96ed1d4a97e93e8cbce2f4c9bae8f4777288453fce1845"
+  },
+  "sha256_proof": "411390e32f3e26cf0846f7547564c6868574b193c2198dadd537b73d51fc3709"
+}

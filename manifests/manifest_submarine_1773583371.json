@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_fdbd1002_marine_gps_denied_fdbd1002_20260315T140242Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:02:42.937607Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fdbd1002_marine_gps_denied_fdbd1002_20260315T140242Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest that the device is moving at a slow speed. The depth is shallow, and the drift is minimal, indicating that the device is likely in a stable position."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The device is in a stable position, which is good for assessing the leak. However, the slow speed and shallow depth suggest that the leak might be small and not immediately dangerous.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could potentially worsen if not addressed, leading to increased water ingress and potential damage to the device.",
+      "mitigation_strategy": "Initiate a manual leak assessment and attempt to locate the source of the leak. If the leak is confirmed, prepare to deploy a repair kit or seek assistance from a support vessel."
+    },
+    "decision": {
+      "actuator_command": "INITIATE_LEAK_ASSESSMENT",
+      "expected_outcome": "The device will perform a manual leak assessment to determine the extent and location of the leak."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical event that requires immediate attention. The device is in a stable position, which is a positive indicator, but the slow speed and shallow depth suggest that the leak might be small and not immediately dangerous. The decision to initiate a manual leak assessment is based on the current telemetry and the potential risks associated with the leak."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fdbd1002",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": true,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "2a8f17ca93e29d88d954dbfae5fcae9e5e092ec985f4b6302f3c3145dfd9d343"
+  },
+  "sha256_proof": "26131825eb59f1f0a206648caa19bf9b7971df74cb58d01d571ef2d7f23c3c21"
+}

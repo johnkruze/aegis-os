@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_fa3c7bed_marine_gps_denied_fa3c7bed_20260315T222914Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:29:14.666027Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fa3c7bed_marine_gps_denied_fa3c7bed_20260315T222914Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift and potentially lose control. The depth is shallow, and the battery is nearly fully charged, which suggests that the system has enough power to handle the anomaly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift, which could lead to a collision with the ocean floor or other obstacles. The depth is shallow, which increases the risk of such an event. The battery is nearly fully charged, which suggests that the system has enough power to handle the anomaly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could collide with the ocean floor or other obstacles due to the current surge.",
+      "mitigation_strategy": "Reduce the current by adjusting the vessel's speed and direction to stay within safe parameters. Monitor the depth and battery level closely."
+    },
+    "decision": {
+      "actuator_command": "reduce_speed_and_adjust_direction",
+      "expected_outcome": "The vessel will slow down and adjust its direction to avoid collision with the ocean floor or other obstacles."
+    },
+    "self_reflection": "The anomaly was detected in a timely manner, and the internal deliberation process led to a clear decision to mitigate the risk. The decision was based on the current state of the system and the potential consequences of the anomaly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fa3c7bed",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "bdc186a9c5c7e4a4868a8e046d6219e9152d548ccb511771fd463c18026bf7bb"
+  },
+  "sha256_proof": "242b69893707d2335e27917e2655d2ab0056c556e5e9af91df4e9fb77921dda7"
+}

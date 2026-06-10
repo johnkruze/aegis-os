@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_9a973af3_marine_gps_denied_9a973af3_20260315T202512Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:25:12.137747Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_9a973af3_marine_gps_denied_9a973af3_20260315T202512Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight drift and high temperature. The battery is fully charged, and the navigation error is minimal. The current readings are slightly negative, which could indicate a minor issue with the current sensors or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly negative, but within expected parameters. The battery is fully charged, and the navigation error is minimal. The system appears to be functioning correctly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted. The system is within normal operating parameters.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if drift becomes significant."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is performing as expected with no immediate issues. The slight negative current readings are within expected parameters and do not indicate a critical failure. The battery is fully charged, and the navigation error is minimal. The system is ready to continue the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_9a973af3",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "380b3df77d6e12d2b41adad2cc43399d57b00bdb6b9aa096943195bf4fad8d08"
+  },
+  "sha256_proof": "2e6a858ecbf93e22b6d325c8f72fc13c841c1e30c05d054e54c8af038a16b9c1"
+}

@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_6e40cfe5_marine_gps_denied_6e40cfe5_20260315T033051Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:30:51.570761Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6e40cfe5_marine_gps_denied_6e40cfe5_20260315T033051Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within safe limits",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning well with high battery and low error, but there are some anomalies in the current readings and slight drift. The position is slightly off, but within acceptable limits. The mission is at the start, and the system is ready to proceed."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "Verify the current readings for any sensor malfunctions.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Monitor the drift and adjust course if necessary.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Continue mission as planned until further issues are identified.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted, but current readings should be verified.",
+      "mitigation_strategy": "Check current sensor readings and adjust course if drift is significant."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Mission continues with minor adjustments as needed."
+    },
+    "self_reflection": "The system is performing well, but anomalies in current readings and slight drift require verification and monitoring. The mission is on track, and adjustments will be made as necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6e40cfe5",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "ef60f6f384650a9d922c26f2c046f10480b7b506242a0122dd415113a8ab48ff"
+  },
+  "sha256_proof": "ef0a65ee32c2217bb64232ce15df66964f2b461a960d43ee961faa18eec24d00"
+}

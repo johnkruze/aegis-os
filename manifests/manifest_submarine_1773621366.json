@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_17d3f303_marine_gps_denied_17d3f303_20260316T003601Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:36:01.105954Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_17d3f303_marine_gps_denied_17d3f303_20260316T003601Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose power, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust the course to compensate for the surge."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "The vessel will attempt to stabilize and adjust course to mitigate the surge."
+    },
+    "self_reflection": "The surge is an unexpected challenge, but with quick action, we can mitigate the risk and continue the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_17d3f303",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.4,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "8ebd4838e9ae11e379ec1d9451f221e18a30b6b9a3954a9ef9f3879bcc508340"
+  },
+  "sha256_proof": "10bae053f0ebe483e49991ce049efcef5cbc0cd0a56b6971ad03943a91a53e51"
+}

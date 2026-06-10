@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_d202a89c_marine_gps_denied_d202a89c_20260315T165446Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:54:46.899673Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d202a89c_marine_gps_denied_d202a89c_20260315T165446Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak has been detected, which could compromise the vessel's integrity and safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The leak could lead to a loss of pressure, causing the vessel to sink or lose control.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying emergency ballast tanks, and initiating distress signals."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, DEPLOY_EMERGENCY_BALLAST_TANKS, INITIATE_DISTRESS_SIGNALS",
+      "expected_outcome": "The vessel will attempt to mitigate the leak and ensure safety."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate attention to prevent potential catastrophic failure. The decision to activate emergency protocols is based on the high risk level and the potential consequences of inaction."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d202a89c",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 6.9,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "e140913bc9f92165e6743e4dbe5c7e669c64eb0f398578c127499d0f14d18d7b"
+  },
+  "sha256_proof": "e90d5988e1aee104618a2810c3b65f3f352411b940103c0668428ad14c838475"
+}

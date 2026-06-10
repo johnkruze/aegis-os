@@ -1,0 +1,48 @@
+{
+  "mission_id": "marine_gps_denied_3d096125_marine_gps_denied_3d096125_20260315T064912Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:49:12.416895Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3d096125_marine_gps_denied_3d096125_20260315T064912Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery_degradation",
+        "low_battery"
+      ],
+      "interpretation": "The battery level is critically low, indicating a significant risk of mission failure due to insufficient power for continued operation."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is at 57.6% capacity, which is dangerously low for continued operation. Immediate action is required to prevent mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission will likely fail due to insufficient power, potentially leading to data loss and mission termination.",
+      "mitigation_strategy": "Initiate emergency shutdown procedures and attempt to recover data before power is completely depleted."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "The system will shut down gracefully, preserving any critical data and preventing further damage to the equipment."
+    },
+    "self_reflection": "The critical battery degradation has been detected, and an immediate shutdown is necessary to prevent mission failure. The system has prioritized safety and data integrity over continued operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3d096125",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 42.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "14c6058b672d818784854a0142a4794eaa6c0698e1816517d9847886ab2ecc52"
+  },
+  "sha256_proof": "0a36e39627b475f642f26ce72f461b0c2a2b5816be97d75d1c8f2e335cfe7222"
+}

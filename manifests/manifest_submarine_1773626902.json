@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_6cbd974c_marine_gps_denied_6cbd974c_20260316T020816Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:08:16.584667Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6cbd974c_marine_gps_denied_6cbd974c_20260316T020816Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating potential instability or external forces affecting the navigation."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge suggests a potential failure in the navigation system or external interference.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may lose control and drift further from the intended course, potentially leading to a collision or loss of mission objectives.",
+      "mitigation_strategy": "Initiate emergency navigation protocol, including manual override of the autopilot, and contact support for assistance."
+    },
+    "decision": {
+      "actuator_command": "override_autopilot, manual_navigation",
+      "expected_outcome": "The vessel will be taken out of autonomous mode and placed under manual control to regain stability and navigate safely."
+    },
+    "self_reflection": "The anomaly highlights the importance of robust navigation systems and the need for fallback procedures in critical situations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6cbd974c",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "346c70940b1edbbc9ce9d990d2756513c98804c7d89a48b1d66e1846dfe0204f"
+  },
+  "sha256_proof": "565e6ca054bc8402ad4986cef848abcf2a5c51c36bb4f8fd5c523779ee790e52"
+}

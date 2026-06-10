@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_6a920c96_marine_gps_denied_6a920c96_20260315T050159Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:01:59.896973Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6a920c96_marine_gps_denied_6a920c96_20260315T050159Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current and velocity readings suggest that the vessel is drifting and may be unable to maintain its position or navigate towards waypoints."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of control. The vessel is currently drifting and may be unable to reach waypoints. The battery level is still high, so immediate power is available for critical systems.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel may drift away from its intended path, potentially leading to collision with obstacles or loss of control.",
+      "mitigation_strategy": "Activate emergency thrusters or use backup power sources to stabilize the vessel. Initiate a manual override to control the vessel's movement."
+    },
+    "decision": {
+      "actuator_command": "activate emergency thrusters; initiate manual override",
+      "expected_outcome": "Stabilize the vessel and allow for manual control to navigate towards waypoints or return to a safe location."
+    },
+    "self_reflection": "The thruster failure is a significant anomaly that requires immediate attention. The vessel's current state is unstable, and action must be taken to prevent further damage or loss of control. The decision to activate emergency thrusters and initiate manual override is based on the critical nature of the situation and the available resources."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6a920c96",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.1,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "6cd065d6f60a5b347dcebf60abd7fab328522f4b843e5059fe77bb673194afc3"
+  },
+  "sha256_proof": "eb45c9c97fc96cf438efafa984b91ab8daacdc894771134057360961c1de67c0"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_cf30ddd4_marine_gps_denied_cf30ddd4_20260315T092847Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:28:47.810131Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cf30ddd4_marine_gps_denied_cf30ddd4_20260315T092847Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak, which is a critical anomaly in an underwater environment. The leak is surfacing, which could indicate a breach in the hull or a failure in the containment system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is surfacing, which could lead to rapid loss of pressure and potentially cause the vehicle to sink. Immediate action is required to prevent this.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vehicle to lose buoyancy and sink, leading to potential loss of the mission and crew.",
+      "mitigation_strategy": "Activate emergency containment protocols, including shutting down power systems and deploying emergency flotation devices."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_ALL_SYSTEMS, DEPLOY_FLOATATION_DEVICES",
+      "expected_outcome": "Emergency containment protocols are activated to prevent the leak from causing further damage and to increase the chances of survival."
+    },
+    "self_reflection": "The detection of a leak in an underwater environment is a critical situation that requires immediate action to prevent catastrophic failure. The decision to activate emergency protocols is based on the potential for rapid loss of buoyancy and the need to increase the chances of survival."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cf30ddd4",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": true,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "457594ad2deecb888740412be3c10fe2341cbf28c48baed15ec3fda138d4b6f8"
+  },
+  "sha256_proof": "bedfc8549df303a5ad54aa4d2d1e5949db3a4677eec6d3de52eee831b511faee"
+}

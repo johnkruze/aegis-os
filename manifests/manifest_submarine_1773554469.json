@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_51575208_marine_gps_denied_51575208_20260315T060103Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:01:03.650862Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_51575208_marine_gps_denied_51575208_20260315T060103Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak has been detected, which could compromise the vessel's integrity and safety.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause a loss of pressure, leading to a potential sinking of the vessel.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems and preparing for a possible evacuation."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_ALL_NON_ESSENTIAL_SYSTEMS, PREPARE_EVASION_PLAN",
+      "expected_outcome": "Emergency protocols are initiated to mitigate the risk of the leak causing further damage."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate attention to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_51575208",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": true,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 2,
+      "waypoints_total": 5
+    },
+    "physics_proof": "fe73f03ddfad2bfb8e3c6c65d6a3ef4d51bcb81d92aa54a9e526a803b65f2e92"
+  },
+  "sha256_proof": "63c1782a722d7be8dcb7bb80bb43f58012fb38e030197f6605daeae342b0bab8"
+}

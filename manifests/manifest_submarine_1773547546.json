@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_8af6dcd1_marine_gps_denied_8af6dcd1_20260315T040540Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:05:40.825951Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8af6dcd1_marine_gps_denied_8af6dcd1_20260315T040540Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with the ocean floor or another object, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking to reduce speed and stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "BRAKE",
+      "expected_outcome": "The vessel will decelerate and stabilize, allowing the mission to continue."
+    },
+    "self_reflection": "The anomaly was detected promptly, and an appropriate action was taken to mitigate the risk. The mission is still ongoing, but the vessel's stability has been restored."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8af6dcd1",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "7bf14d8e5595d0cc1550a346a6e1490e60c3c23fbc4c7dfb9ec4517cc532162f"
+  },
+  "sha256_proof": "603aa168f873d64a58c0a4db565b95a56462f9bb1e2d0bbcf801b53309643f06"
+}

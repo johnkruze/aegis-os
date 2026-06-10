@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b15f3293_marine_gps_denied_b15f3293_20260315T070915Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:09:15.747643Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b15f3293_marine_gps_denied_b15f3293_20260315T070915Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 316.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, indicating potential issues with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a possible malfunction in the navigation system or the environment is affecting the sensor readings.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The navigation system may be misinterpreting the environment, leading to drift and potential collision with obstacles.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system. If the issue persists, perform a manual override to the next waypoint."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The navigation system will be recalibrated, and the drift should be corrected."
+    },
+    "self_reflection": "The anomaly indicates a need for system recalibration to ensure accurate navigation in the marine environment."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b15f3293",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "4eaf859f97c0b6a757c556fd4e1ca715d1851ea466fb3c443901c8e995ac3b43"
+  },
+  "sha256_proof": "c2ddc82e54a9520a171eb83e0647561640d754739a6def5c40abb56b4a000605"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_f535f059_marine_gps_denied_f535f059_20260316T004932Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:49:32.161158Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f535f059_marine_gps_denied_f535f059_20260316T004932Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is within normal operating parameters",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from expected values. The battery is healthy, and the position is accurate. However, there is a slight discrepancy in the current readings."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The slight deviation in current readings could be due to minor sensor drift or environmental factors. No immediate action is required.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviation in current readings is unlikely to cause a critical failure.",
+      "mitigation_strategy": "Monitor current readings over the next few minutes to ensure they stabilize. If they continue to drift, consider recalibrating the sensors."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned without any changes."
+    },
+    "self_reflection": "The system is performing within expected parameters, and there is no immediate cause for concern. The minor deviation in current readings is within acceptable limits and does not warrant any action at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f535f059",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "df1e107ce9425f359dcea5e1fcd131a298d59ca629f70de5d955f6c5e1bc2ac3"
+  },
+  "sha256_proof": "de873a11293275545f06e2bd4fc4ba444b277414553a027fb4710cd847fccc1f"
+}

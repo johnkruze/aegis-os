@@ -1,0 +1,61 @@
+{
+  "mission_id": "marine_gps_denied_28480cdd_marine_gps_denied_28480cdd_20260316T001204Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:12:04.100965Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_28480cdd_marine_gps_denied_28480cdd_20260316T001204Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings suggest an imbalance, possibly due to a malfunctioning sensor or component. There is a slight drift in the navigation, which could be affecting the accuracy of the mission. The small navigation error indicates that the system is still performing within acceptable limits. The waypoint has not been reached, which is a critical anomaly."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, potentially leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The unusual current readings could indicate a sensor failure or a problem with the power supply.",
+        "confidence": 0.7,
+        "action_rejected": "check sensor integrity"
+      },
+      {
+        "thought": "The slight drift and small navigation error suggest that the system is still functional, but the waypoint not being reached is a critical issue.",
+        "confidence": 0.9,
+        "action_rejected": "adjust navigation parameters"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail if the battery drains completely or if the sensor malfunction persists, leading to a loss of control.",
+      "mitigation_strategy": "Recharge the battery and check the sensor integrity to ensure the system remains functional."
+    },
+    "decision": {
+      "actuator_command": "recharge battery, check sensor integrity, adjust navigation parameters",
+      "expected_outcome": "The system should be able to continue operating with the battery recharged and the sensor integrity checked, allowing the mission to proceed."
+    },
+    "self_reflection": "The anomaly highlights the importance of regular system checks and maintaining sufficient power levels to ensure mission success. The slight drift and small navigation error suggest that the system is still functional, but the critical issue of the waypoint not being reached requires immediate attention."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_28480cdd",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "8ea1501363146bb3b26de4ad4836ed268971925a10456b4158dfdb80a5417d9e"
+  },
+  "sha256_proof": "073f943a45f135478fc7dcb66e264d15b6d14b6bd65e8e3ee42ec5457c927317"
+}

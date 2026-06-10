@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_1951cf02_marine_gps_denied_1951cf02_20260315T095303Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:53:03.580561Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1951cf02_marine_gps_denied_1951cf02_20260315T095303Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "depth and drift within normal parameters",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is experiencing low battery levels and unusual current readings, which could indicate a potential failure of the navigation system. The depth and drift are within expected parameters, and the navigation error is minimal. The mission is currently at waypoint 0, which suggests the mission has not started or has been paused."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a critical issue that could lead to system failure if not addressed soon. The unusual current readings suggest a potential fault in the navigation system. The mission should be paused to ensure safety and allow for battery recharging and system diagnostics.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potentially leading to mission termination.",
+      "mitigation_strategy": "Pause the mission, recharge the battery, and perform system diagnostics before resuming."
+    },
+    "decision": {
+      "actuator_command": "pause mission, recharge battery, perform diagnostics",
+      "expected_outcome": "Safety is prioritized, and the mission can be resumed once the system is stable."
+    },
+    "self_reflection": "The anomaly highlights the importance of system monitoring and proactive maintenance to prevent critical failures during missions. The decision to pause the mission and address the battery issue is crucial to ensure the safety of the system and the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1951cf02",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 4.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "1604efd225e6ae22a32abf89d56a7fb9a0806babef223ba2bc558cdd82c87517"
+  },
+  "sha256_proof": "b03e57410b7a28f2d2afe1e03d228c99073ddab7a36d8faf613e2f4d19bdd93a"
+}

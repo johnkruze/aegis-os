@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_41480ce9_marine_gps_denied_41480ce9_20260315T031236Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:12:36.797909Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_41480ce9_marine_gps_denied_41480ce9_20260315T031236Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking to reduce speed and stabilize the vessel. Monitor the surge and adjust course as necessary."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking",
+      "expected_outcome": "Reduce speed and stabilize the vessel to mitigate the risk of mission failure."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_41480ce9",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "2d1fcc7c3b675eb377fed043d9c75b188778dc2849393e765899aa15c17c1a5e"
+  },
+  "sha256_proof": "1f3a8fcfe59b7c5fbd75eee0f15423b1761208e75fa9d0e059d0300050b65078"
+}

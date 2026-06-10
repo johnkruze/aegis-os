@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_838699e8_marine_gps_denied_838699e8_20260315T065648Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:56:48.510676Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_838699e8_marine_gps_denied_838699e8_20260315T065648Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is at 100.2 meters",
+        "drift is 13.43 meters",
+        "navigation error is minimal",
+        "position is at [13.6, -195.93, -100.23]",
+        "time is 422.0",
+        "velocity is [0.0, 0.0, 0.0]",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minimal navigation error. The battery level is high, indicating sufficient power. The current readings are slightly off, which could be due to minor environmental factors. The depth and position are within expected ranges."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is stable and within operational parameters. The slight drift could be due to minor currents or inaccuracies in the navigation system. The battery level is high, so there is no immediate concern about power.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and within operational parameters. The slight drift could be due to minor currents or inaccuracies in the navigation system. The battery level is high, so there is no immediate concern about power.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if drift becomes significant."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current course and continue mission"
+    },
+    "self_reflection": "The system is stable and within operational parameters. The slight drift could be due to minor currents or inaccuracies in the navigation system. The battery level is high, so there is no immediate concern about power. The mission is proceeding as expected."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_838699e8",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "59996871481d92e74fb85f388d183ca1a85655bb199466c82b499bfc97467a0f"
+  },
+  "sha256_proof": "adf6538c5dfc04817c812647913420b78134b59f6cf674a446a6d085366b52da"
+}

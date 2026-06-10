@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_85e0baf4_marine_gps_denied_85e0baf4_20260315T114734Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:47:34.329510Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_85e0baf4_marine_gps_denied_85e0baf4_20260315T114734Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, slight depth error, high drift, and low navigation error. The waypoint has not been reached, indicating a potential mission failure."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly. The unstable current readings suggest a potential issue with the power supply. The high drift and slight depth error indicate that the vehicle is not following the intended path accurately. The waypoint has not been reached, which is a critical failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down unexpectedly, leading to a loss of control and potential damage to the vehicle.",
+      "mitigation_strategy": "Increase battery power, stabilize current readings, correct drift and depth error, and ensure the vehicle reaches the waypoint."
+    },
+    "decision": {
+      "actuator_command": "increase battery power, stabilize current readings, correct drift and depth error, and ensure the vehicle reaches the waypoint",
+      "expected_outcome": "The system should be able to recover from the anomalies and complete the mission."
+    },
+    "self_reflection": "The system is experiencing multiple critical anomalies that could lead to a mission failure. Immediate action is required to mitigate these risks and ensure the mission completes successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_85e0baf4",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 5.2,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "8eac829e562a439990bbce3322a968b012094902e4790d50f3016b10c7d322f0"
+  },
+  "sha256_proof": "df4227bf78259a906487a8d15c17c4be8034aadce93ccdf897b18d70c09a2dcb"
+}

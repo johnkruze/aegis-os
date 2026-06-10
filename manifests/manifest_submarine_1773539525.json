@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c7dd8293_marine_gps_denied_c7dd8293_20260315T015149Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:51:49.317025Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c7dd8293_marine_gps_denied_c7dd8293_20260315T015149Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 653.0",
+        "velocity is zero",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for a slight drift and a slightly off position. The battery is at full capacity, and the current readings are slightly inconsistent. The depth is shallow, which could be a concern if the mission requires deeper waters. The navigation error is low, indicating that the system is maintaining a relatively accurate course. The velocity is zero, suggesting that the vehicle is stationary or moving very slowly. The waypoint is at zero, which could indicate that the mission has not started or has been paused."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight drift and off position could be due to minor sensor inaccuracies or environmental factors. The shallow depth is concerning, but the navigation error is low, so the vehicle is likely still on course. The battery is at full capacity, so power is not an issue. The velocity is zero, which could be intentional or due to a malfunction. The waypoint is at zero, which suggests that the mission has not started or has been paused. The current readings are slightly off, but not significantly so, so the system is likely still functioning correctly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The slight drift and off position could be due to minor sensor inaccuracies or environmental factors. The shallow depth is concerning, but the navigation error is low, so the vehicle is likely still on course. The battery is at full capacity, so power is not an issue. The velocity is zero, which could be intentional or due to a malfunction. The waypoint is at zero, which suggests that the mission has not started or has been paused. The current readings are slightly off, but not significantly so, so the system is likely still functioning correctly.",
+      "mitigation_strategy": "Monitor the system closely and check for any changes in the sensor readings. If the drift and off position persist, investigate the cause and adjust the system accordingly. If the shallow depth is a concern, consider adjusting the mission parameters to a shallower depth. If the velocity is zero, investigate the cause and adjust the system accordingly. If the waypoint is at zero, start the mission or pause it as necessary."
+    },
+    "decision": {
+      "actuator_command": "Monitor the system closely and check for any changes in the sensor readings. If the drift and off position persist, investigate the cause and adjust the system accordingly. If the shallow depth is a concern, consider adjusting the mission parameters to a shallower depth. If the velocity is zero, investigate the cause and adjust the system accordingly. If the waypoint is at zero, start the mission or pause it as necessary.",
+      "expected_outcome": "The system will continue to monitor the sensor readings and adjust the system as necessary to ensure that the mission is completed successfully."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for a slight drift and a slightly off position. The battery is at full capacity, and the current readings are slightly inconsistent. The depth is shallow, which could be a concern if the mission requires deeper waters. The navigation error is low, indicating that the system is maintaining a relatively accurate course. The velocity is zero, suggesting that the vehicle is stationary or moving very slowly. The waypoint is at zero, which could indicate that the mission has not started or has been paused. The current readings are slightly off, but not significantly so, so the system is likely still functioning correctly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c7dd8293",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "fc00baeea0bbcb60962bc4f384c6e8cb271694e798248f0a68b60df92aa81bc3"
+  },
+  "sha256_proof": "9d51a8a0664a6ebffd016d9d324ef5e0e4665c737a92f880616ad85e2ff8a9a2"
+}

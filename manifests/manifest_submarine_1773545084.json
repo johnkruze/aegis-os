@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_60146d36_marine_gps_denied_60146d36_20260315T032436Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:24:36.716691Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_60146d36_marine_gps_denied_60146d36_20260315T032436Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 475.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with high battery and low navigation error. However, the current readings and drift suggest potential issues with the navigation system. The shallow depth and slightly negative velocity indicate that the vehicle may be in an unexpected location or facing water currents."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a potential navigation error. The vehicle may be off course or facing unexpected currents.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be off course or facing unexpected currents, leading to mission failure.",
+      "mitigation_strategy": "Perform a navigation recalibration and check for any water currents or obstacles in the area."
+    },
+    "decision": {
+      "actuator_command": "recalibrate navigation system",
+      "expected_outcome": "The vehicle should be able to correct its course and continue on the intended path."
+    },
+    "self_reflection": "The system appears to be functioning normally, but the current readings and drift suggest potential issues with the navigation system. A recalibration is necessary to ensure the mission can be completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_60146d36",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "e146a306e756aab0b999b51d06c111521b86d4325e300b5c68b76cf745fcbcc6"
+  },
+  "sha256_proof": "fb268585e558ea28ef58354a65a4358819abd9f28c533954b5c6d99db62f084c"
+}

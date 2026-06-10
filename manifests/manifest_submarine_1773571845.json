@@ -1,0 +1,72 @@
+{
+  "mission_id": "marine_gps_denied_378a8c66_marine_gps_denied_378a8c66_20260315T105033Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:50:33.773113Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_378a8c66_marine_gps_denied_378a8c66_20260315T105033Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings are unusual, possibly due to an external magnetic field or sensor malfunction. There is a slight depth error, which could be due to water currents or sensor drift. The high drift suggests the vehicle is not maintaining its course accurately. The low navigation error indicates the system is still performing well in terms of navigation. The waypoint has not been reached, which is a critical anomaly."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The unusual current readings could indicate a magnetic interference or sensor failure, which needs to be investigated.",
+        "confidence": 0.7,
+        "action_rejected": "check sensor integrity"
+      },
+      {
+        "thought": "The slight depth error could be due to water currents, but it should not significantly impact the mission.",
+        "confidence": 0.5,
+        "action_rejected": "monitor depth"
+      },
+      {
+        "thought": "The high drift is concerning and needs to be addressed to maintain the mission.",
+        "confidence": 0.9,
+        "action_rejected": "adjust course"
+      },
+      {
+        "thought": "The waypoint not being reached is a critical failure, as it indicates the mission objectives are not being met.",
+        "confidence": 1.0,
+        "action_rejected": "replan mission"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission could fail due to the low battery, sensor malfunction, or high drift, leading to the waypoint not being reached.",
+      "mitigation_strategy": "Recharge the battery, investigate sensor integrity, adjust course, and replan the mission."
+    },
+    "decision": {
+      "actuator_command": "recharge battery, check sensors, adjust course, replan mission",
+      "expected_outcome": "The system will be prepared for the next phase of the mission, with the battery recharged, sensors verified, course adjusted, and mission objectives reassessed."
+    },
+    "self_reflection": "The anomaly highlights the importance of robust power management, sensor integrity checks, and continuous mission monitoring. The high cognitive load indicates the need for a systematic approach to address each issue to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_378a8c66",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "fe9a967696561ef757a9d8ef9d4265bc39501d1fa3f01b20cfa70c436aac01d2"
+  },
+  "sha256_proof": "3d7d5cebc214157c5fa759801ed257d53a2f9745647cd31a0e50f3f527e260ed"
+}

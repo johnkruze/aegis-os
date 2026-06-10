@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_7a04100d_marine_gps_denied_7a04100d_20260315T130724Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:07:24.638288Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7a04100d_marine_gps_denied_7a04100d_20260315T130724Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 351.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is in a controlled environment. The slow velocity and low waypoint indicate the vehicle is stationary or moving very slowly."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external currents or inaccuracies in the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The inconsistent current readings might indicate a malfunction in the current sensors.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the vehicle to move out of the designated area, but the shallow depth and low navigation error suggest it is unlikely to cause significant damage.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the navigation system if necessary."
+    },
+    "decision": {
+      "actuator_command": "monitor current sensors and adjust navigation if drift persists",
+      "expected_outcome": "The vehicle will continue to monitor the current sensors and adjust its navigation if the drift becomes problematic."
+    },
+    "self_reflection": "The system is performing as expected, with only minor issues that can be addressed through monitoring and adjustments."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7a04100d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "3a2aecd2ba99c33dadc61ccf1b9e8207771d52323098d99db99008a6630338e2"
+  },
+  "sha256_proof": "1e406145ae92ab34efe746a64a26cbd14b10e3523f1b85df99052d3c320a244d"
+}

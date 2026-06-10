@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_90779389_marine_gps_denied_90779389_20260315T222031Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:20:31.212744Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_90779389_marine_gps_denied_90779389_20260315T222031Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "time is 322.0",
+        "velocity is negative"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is normal for marine operations. The navigation error is low, suggesting the system is still tracking the waypoint. The time and velocity readings are normal for the mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a navigation issue that needs to be addressed to prevent mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail if the navigation issue is not resolved, leading to potential damage to the equipment or loss of the mission.",
+      "mitigation_strategy": "Adjust the navigation parameters to correct the drift and ensure the system stays on course."
+    },
+    "decision": {
+      "actuator_command": "adjust navigation parameters",
+      "expected_outcome": "The system will correct the drift and maintain the mission course."
+    },
+    "self_reflection": "The system detected an anomaly in the current readings, which could indicate a navigation issue. The decision was made to adjust the navigation parameters to ensure the mission continues as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_90779389",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "43f2435be2c3d2aa0f111edaf09d714d1c66d329d866ef34e7da839fe69bfe27"
+  },
+  "sha256_proof": "f856c7e82356e9aab17315c6b3c29c2a6c9cc4a7661738f062ab35e65a4d226d"
+}

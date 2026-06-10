@@ -1,0 +1,57 @@
+{
+  "mission_id": "marine_gps_denied_ece8e7a3_marine_gps_denied_ece8e7a3_20260315T033558Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:35:58.853587Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ece8e7a3_marine_gps_denied_ece8e7a3_20260315T033558Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "depth within expected range",
+        "drift within expected range",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for the low battery level and unusual current readings. The depth and drift are within expected ranges, and the navigation error is minimal. The system is at the initial waypoint."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level may cause the system to shut down unexpectedly, potentially leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The unusual current readings could indicate a problem with the propulsion system or an external interference.",
+        "confidence": 0.7,
+        "action_rejected": "check propulsion system and surroundings"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may shut down unexpectedly, causing the mission to be incomplete.",
+      "mitigation_strategy": "Recharge the battery and check the propulsion system for any issues. If the problem persists, consider manual control to reach the next waypoint."
+    },
+    "decision": {
+      "actuator_command": "recharge battery",
+      "expected_outcome": "The battery level will be restored, allowing the system to continue operating."
+    },
+    "self_reflection": "The system is functioning within normal parameters, but the low battery level is a concern. Immediate action is needed to prevent mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ece8e7a3",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "04d9fceecd802a0cc9a4b001abf9fbe88304d2c3cbcd110e405475d809fe1d04"
+  },
+  "sha256_proof": "7391a294861f022f6130a1acb4af6798470a7703e1d758475746f6502e10a5aa"
+}

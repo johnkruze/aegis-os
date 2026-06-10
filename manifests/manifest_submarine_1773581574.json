@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ef53ce24_marine_gps_denied_ef53ce24_20260315T133245Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:32:45.722150Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ef53ce24_marine_gps_denied_ef53ce24_20260315T133245Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 732.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with minor deviations in current readings, drift, and velocity. The battery level is high, indicating sufficient power. The shallow depth and low navigation error suggest the system is operating in a controlled environment. The high drift and slightly off velocity indicate the system may be struggling to maintain its position accurately."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current readings and drift suggest a potential issue with the system's orientation or positioning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to drift slightly, potentially leading to a loss of position accuracy over time.",
+      "mitigation_strategy": "Monitor the system's performance closely and adjust the orientation or positioning algorithms if necessary."
+    },
+    "decision": {
+      "actuator_command": "monitor orientation and positioning algorithms",
+      "expected_outcome": "The system will continue to monitor its orientation and positioning to ensure accurate navigation."
+    },
+    "self_reflection": "The system appears to be operating within normal parameters, with minor deviations that are likely due to normal operation in a controlled environment. The high battery level suggests sufficient power, and the low navigation error indicates the system is performing well. The high drift and slightly off velocity suggest a potential issue with the system's orientation or positioning, which will be monitored closely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ef53ce24",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "b7d4b96e2427a9aad4ae898229f5b3e4ccbe08cbc7c2bc4c0d3f135fc1f02c08"
+  },
+  "sha256_proof": "4ad5439aa997f2e65396699ff24ab34f0ac5d9e067e226485ff4d3f056bf45dd"
+}

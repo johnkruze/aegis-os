@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_3d2e6561_marine_gps_denied_3d2e6561_20260315T214232Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:42:32.665219Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3d2e6561_marine_gps_denied_3d2e6561_20260315T214232Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control to complete the mission."
+    },
+    "self_reflection": "The surge is a critical anomaly that requires immediate attention to ensure the mission can be completed safely."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3d2e6561",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "552fd3aabd84c62f272bbf88f5bf78ca23ea79080d7077091f6d50cda885745e"
+  },
+  "sha256_proof": "95d4f5667f29affd86b52d719d9c53afaaed1e758ee099cfab104692fb1cb1b9"
+}

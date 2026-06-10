@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_fceda893_marine_gps_denied_fceda893_20260314T231813Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:18:13.536690Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fceda893_marine_gps_denied_fceda893_20260314T231813Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "small navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are inconsistent, suggesting a possible fault in the navigation system. The slight depth error and high drift indicate that the vehicle is not maintaining its intended course. The small navigation error suggests that the system is still functioning, but there is room for improvement. The waypoint has not been reached, which is a critical failure in the mission."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The inconsistent current readings and slight depth error suggest a potential fault in the navigation system that needs to be investigated. The high drift and small navigation error indicate that the vehicle is not maintaining its intended course, which is a critical failure in the mission. The waypoint has not been reached, which is a critical failure in the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system could fail completely, leading to the mission being aborted. The vehicle could drift further away from the intended course, potentially leading to a collision with other vessels or the ocean floor.",
+      "mitigation_strategy": "Immediately recharge the battery, investigate the inconsistent current readings and slight depth error, and correct the high drift and small navigation error. If the issue persists, abort the mission and return to base."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery should be recharged, allowing the system to continue operating."
+    },
+    "self_reflection": "The mission is incomplete due to critical issues with the system. The low battery and inconsistent current readings are concerning, and the high drift and small navigation error indicate that the vehicle is not maintaining its intended course. The waypoint has not been reached, which is a critical failure in the mission. Immediate action is required to address these issues and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fceda893",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "a41f8af43b457c4e1228be70189d07c77604a7af2baa0adcb793fabf5b7d46fc"
+  },
+  "sha256_proof": "dbe9967210e18170bb588da8e72c86fb606558e767d9a7276793d2ff41e8e0b9"
+}

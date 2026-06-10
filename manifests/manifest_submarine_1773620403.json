@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_6ebe4152_marine_gps_denied_6ebe4152_20260316T001956Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:19:56.198373Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6ebe4152_marine_gps_denied_6ebe4152_20260316T001956Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minor",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing low battery, significant drift, and minor navigation error. The current readings suggest the vehicle is not on course and may be in a potentially dangerous position."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery is critical, need to conserve power and prioritize safety.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is significant, need to correct course to avoid potential hazards.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Navigation error is minor, can be ignored for now.",
+        "confidence": 0.5,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "System may fail to maintain course and potentially collide with obstacles.",
+      "mitigation_strategy": "Reduce power consumption, correct course, and monitor navigation error."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, correct_course",
+      "expected_outcome": "System power is reduced and course is corrected to maintain safety."
+    },
+    "self_reflection": "The system is in a critical state with low battery and significant drift. Immediate action is required to prevent potential failure and ensure safety."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6ebe4152",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.7,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "69a4bc0bceecc683a484a9faea6af2780a8c97348fc69cc83bdbc7359cc249eb"
+  },
+  "sha256_proof": "3034e68fa9071042bab7174f7282f165f76b9b7b402665ddc1e6d2fe412b2e26"
+}

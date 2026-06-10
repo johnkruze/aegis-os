@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_b7c97956_marine_gps_denied_b7c97956_20260315T150349Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:03:49.466889Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b7c97956_marine_gps_denied_b7c97956_20260315T150349Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL",
+      "expected_outcome": "The vessel will decelerate and stabilize, allowing for a safer course correction."
+    },
+    "self_reflection": "The anomaly was detected promptly, and an immediate action was taken to mitigate the risk. The decision was based on the current state of the vessel and the potential consequences of the anomaly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b7c97956",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 1,
+      "waypoints_total": 7
+    },
+    "physics_proof": "793f2da20bffb38a66eb91f5cebe8684f1efb8a5b0265375c7bebf130d0bff5a"
+  },
+  "sha256_proof": "a354923bd77bce81f7cc65ce9e03583c94cb9eb1ddc9f98297181c2a3754725a"
+}

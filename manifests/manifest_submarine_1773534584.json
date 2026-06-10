@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_3d325bf1_marine_gps_denied_3d325bf1_20260315T002936Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:29:36.314320Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3d325bf1_marine_gps_denied_3d325bf1_20260315T002936Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_OUT_OF_RANGE",
+        "DEPTH_STABLE",
+        "DRIFT_HIGH",
+        "NAV_ERROR_LOW",
+        "POSITION_ERROR",
+        "TIME_STABLE",
+        "VELOCITY_LOW",
+        "WAYPOINT_AT_ZERO"
+      ],
+      "interpretation": "The battery level is critically low, with current readings indicating an imbalance. The depth is stable, but drift is high, and the navigation error is minimal. The position is slightly off, and the velocity is low, with the waypoint at zero."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which will soon lead to a complete shutdown if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The current readings suggest a potential fault in the power system, which could be causing the battery drain.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift and low velocity indicate that the vehicle is not maintaining its course, which could lead to further issues if not corrected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle will shut down due to battery depletion, potentially leading to a loss of control and mission failure.",
+      "mitigation_strategy": "Initiate emergency shutdown procedures and attempt to recover the vehicle using external power sources if available."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN",
+      "expected_outcome": "The vehicle will shut down safely, preventing further damage and ensuring the safety of the mission."
+    },
+    "self_reflection": "The critical battery degradation and high drift indicate a severe failure in the power and navigation systems. Immediate action is required to prevent a complete mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3d325bf1",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "d631a7809ee9a8778e027d66969c8cee399fd5fcb1188e31489c46d68302ce76"
+  },
+  "sha256_proof": "a7f27aabfb279fba8ed34bfbff47de5f282b115f3b8096b3603d4d41a580f702"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b69a00c1_marine_gps_denied_b69a00c1_20260315T031350Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:13:50.184698Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b69a00c1_marine_gps_denied_b69a00c1_20260315T031350Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 107.86, -614.36, -0.49",
+        "time is 350.0",
+        "velocity is 0.76, -1.23, 0.0",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is experiencing high drift and unusual current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the drift and current readings suggest that the vehicle may be off course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a navigation error. The GPS system may be denied or malfunctioning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may continue to drift and potentially collide with obstacles or other vessels.",
+      "mitigation_strategy": "Attempt to re-establish GPS lock or use alternative navigation methods. If GPS is denied, use dead reckoning or other onboard sensors to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "re-establish_gps_lock",
+      "expected_outcome": "Attempt to re-establish GPS lock and correct the drift."
+    },
+    "self_reflection": "The system is experiencing high drift and unusual current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the drift and current readings suggest that the vehicle may be off course. The decision to re-establish GPS lock is based on the assumption that the GPS system is denied or malfunctioning. If the GPS lock is not re-established, alternative navigation methods will be used to correct the drift."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b69a00c1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "019d79daea8276e22bc941b6b87f8039128237ba9935bc1eec03bb02cf8245a4"
+  },
+  "sha256_proof": "187e09b48ce82d7493ab35f3f5d3542453cfa01d81b0cdda6d587a73822c9068"
+}

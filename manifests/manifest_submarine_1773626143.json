@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_2751e903_marine_gps_denied_2751e903_20260316T015533Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:55:33.198559Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2751e903_marine_gps_denied_2751e903_20260316T015533Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 449.43, -391.25, -0.49",
+        "time is 525.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the drift and current readings suggest that the vehicle may be off course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a malfunctioning sensor or an external factor. The drift is high, which could lead to a collision with the ocean floor or other obstacles. The navigation error is low, which is good, but the drift suggests that the vehicle is not following the intended path.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may collide with the ocean floor or other obstacles due to high drift. The navigation system may become unreliable if the current sensor continues to malfunction.",
+      "mitigation_strategy": "Perform a sensor check to determine if the current sensor is malfunctioning. If confirmed, replace the sensor. If not, adjust the navigation parameters to compensate for the drift."
+    },
+    "decision": {
+      "actuator_command": "perform sensor check",
+      "expected_outcome": "The sensor check will determine if the current sensor is malfunctioning. If confirmed, the sensor will be replaced. If not, the navigation parameters will be adjusted to compensate for the drift."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the current sensor. The battery level is high, which is good, but the drift and current readings suggest that the vehicle may be off course. The decision to perform a sensor check is based on the potential risks and the need to ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2751e903",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "762c5c97f5323e6eb39225c5b6b5609bd7f05361b3c2a45edc60717188c4ab00"
+  },
+  "sha256_proof": "58718cd245041f1d9533d266b13a1f4133dd0baa67d8a4d25c87f5687d290657"
+}

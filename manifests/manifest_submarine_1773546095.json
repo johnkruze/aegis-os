@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_7ab35590_marine_gps_denied_7ab35590_20260315T034127Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:41:27.265139Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7ab35590_marine_gps_denied_7ab35590_20260315T034127Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "camera position is slightly off",
+        "temperature is normal",
+        "velocity is low"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the inconsistent current readings and high drift. The shallow depth and low navigation error suggest the vehicle is close to its intended destination. The slight camera position off-center may indicate a minor calibration issue."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to a sensor malfunction or environmental factors. The high drift suggests the vehicle is not following the intended course accurately. The shallow depth and low navigation error indicate the vehicle is close to its destination. The slight camera position off-center may indicate a minor calibration issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may not reach its intended destination due to the high drift. The inconsistent current readings could indicate a sensor failure or environmental interference.",
+      "mitigation_strategy": "Verify the current readings by recalibrating the sensors. Adjust the course correction to reduce drift. Monitor the vehicle's progress closely."
+    },
+    "decision": {
+      "actuator_command": "Recalibrate sensors and adjust course correction",
+      "expected_outcome": "The vehicle should be able to correct its course and reach its intended destination."
+    },
+    "self_reflection": "The system is performing within expected parameters, but the high drift and inconsistent current readings require immediate attention to ensure mission completion."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7ab35590",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "5841b9c7257a5a7b0c4de21ac1524dd519bf5e793ba63693cf165bdd3bca7a6f"
+  },
+  "sha256_proof": "a23facd3ab1aa76d960c025902a12797a36c1403f7bf48c75b788a28b1363739"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_7da2e668_marine_gps_denied_7da2e668_20260315T055614Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:56:14.460629Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7da2e668_marine_gps_denied_7da2e668_20260315T055614Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose power, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to maintain control."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "The vessel will attempt to regain control and maintain course."
+    },
+    "self_reflection": "The anomaly requires immediate attention to prevent potential mission failure. The decision to apply emergency braking and adjust course is based on the current sensor inputs and the potential risks associated with the surge."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7da2e668",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 4.3,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "ad6aae3fb480f262a208d1dccd8f6b416b6eb6fa168fad76860b62867c6ef30e"
+  },
+  "sha256_proof": "4e4212ad33b85ba15130720fafd626b3d681bf55b599e38ade9341fba45ec847"
+}

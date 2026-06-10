@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_3f9abecf_marine_gps_denied_3f9abecf_20260316T032038Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:20:38.679165Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_3f9abecf_marine_gps_denied_3f9abecf_20260316T032038Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 376.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning well with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, which could indicate a problem with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the navigation system or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The drift is high, which could lead to a significant deviation from the intended course.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could cause the mission to fail if not corrected in time.",
+      "mitigation_strategy": "Perform a recalibration of the navigation system and monitor the current readings closely."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_navigation_system",
+      "expected_outcome": "The navigation system should be more accurate, reducing the drift and improving the mission's success."
+    },
+    "self_reflection": "The system is performing well, but the high drift is a concern. Recalibrating the navigation system should mitigate this risk and allow the mission to continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_3f9abecf",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "36fb4677422e3002c213970e70fc5139ed0d7059300567f339ba6ae1077b78bc"
+  },
+  "sha256_proof": "56bc9a418892645216fabbd18a9a16b08871e902ca3893a94a8b579779f637e7"
+}

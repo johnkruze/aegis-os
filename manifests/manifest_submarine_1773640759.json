@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_1f711c60_marine_gps_denied_1f711c60_20260316T055900Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:59:00.273251Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_1f711c60_marine_gps_denied_1f711c60_20260316T055900Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slightly negative",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the system is moving in the intended direction. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating the system is maintaining its course accurately. The position is slightly off, but this is within the expected range for a marine GPS system. The temperature is high, which could affect battery performance. The velocity is slightly negative, which could indicate a slight change in direction or a potential issue with the system's orientation. The waypoint is at the start, which is expected for the beginning of a mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is moving in the intended direction. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating the system is maintaining its course accurately. The position is slightly off, but this is within the expected range for a marine GPS system. The temperature is high, which could affect battery performance. The velocity is slightly negative, which could indicate a slight change in direction or a potential issue with the system's orientation. The waypoint is at the start, which is expected for the beginning of a mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is performing within normal parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is moving in the intended direction. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating the system is maintaining its course accurately. The position is slightly off, but this is within the expected range for a marine GPS system. The temperature is high, which could affect battery performance. The velocity is slightly negative, which could indicate a slight change in direction or a potential issue with the system's orientation. The waypoint is at the start, which is expected for the beginning of a mission.",
+      "mitigation_strategy": "Monitor the system's performance closely, especially the battery level and temperature. If the temperature continues to rise, consider implementing a cooling strategy. If the drift continues to increase, adjust the system's orientation to maintain course accuracy."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to perform within normal parameters, with only minor deviations. The battery will remain healthy, and the current readings will suggest the system is moving in the intended direction. The depth will remain shallow, which could be a concern if the mission requires deeper waters. The drift will remain moderate, which is within acceptable limits. The navigation error will remain low, indicating the system is maintaining its course accurately. The position will remain slightly off, but this is within the expected range for a marine GPS system. The temperature will remain high, which could affect battery performance. The velocity will remain slightly negative, which could indicate a slight change in direction or a potential issue with the system's orientation. The waypoint will remain at the start, which is expected for the beginning of a mission."
+    },
+    "self_reflection": "The system is performing within normal parameters, with only minor deviations. The battery is healthy, and the current readings suggest the system is moving in the intended direction. The depth is shallow, which could be a concern if the mission requires deeper waters. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating the system is maintaining its course accurately. The position is slightly off, but this is within the expected range for a marine GPS system. The temperature is high, which could affect battery performance. The velocity is slightly negative, which could indicate a slight change in direction or a potential issue with the system's orientation. The waypoint is at the start, which is expected for the beginning of a mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_1f711c60",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.9,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "13b76df36f18cfe4ea124ecb0115aca1a033483bcf80ac9eb1af9039aac51f4c"
+  },
+  "sha256_proof": "b8e230781682635d9ea01afdf3a8cc55449b5f615d77aa225d25ff1a6796ee48"
+}

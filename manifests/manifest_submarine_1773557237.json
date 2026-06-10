@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_0f0267bc_marine_gps_denied_0f0267bc_20260315T064707Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:47:07.353746Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0f0267bc_marine_gps_denied_0f0267bc_20260315T064707Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally, but there are some anomalies in the current readings and drift. The shallow depth and minimal velocity suggest that the vehicle is likely in a calm or stationary area. The slight navigation error and high drift could indicate that the vehicle is not accurately following its intended path."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are unusual, but the battery level is high. The vehicle is in a calm area, which could explain the low velocity and drift. The slight navigation error and high drift suggest that the vehicle is not accurately following its intended path. The waypoint is at the start, which could explain the low velocity and drift.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may continue to drift slightly and not accurately follow its intended path, but it is unlikely to cause a critical failure.",
+      "mitigation_strategy": "Monitor the current readings and adjust the vehicle's course if necessary. Ensure that the vehicle is following its intended path and adjust the waypoints if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The vehicle will continue to drift slightly and not accurately follow its intended path, but it is unlikely to cause a critical failure."
+    },
+    "self_reflection": "The vehicle appears to be functioning normally, but there are some anomalies in the current readings and drift. The shallow depth and minimal velocity suggest that the vehicle is likely in a calm or stationary area. The slight navigation error and high drift could indicate that the vehicle is not accurately following its intended path. The waypoint is at the start, which could explain the low velocity and drift."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0f0267bc",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "9ce98cf62b71230aa7b3b0dbd19d6a5beea7e9b3a960b2e243899a931d745673"
+  },
+  "sha256_proof": "7ec3568faf71cc0113ac0edbade1605398c37173950fd95677137303e8e4fe91"
+}

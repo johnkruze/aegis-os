@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_2fe7d20e_marine_gps_denied_2fe7d20e_20260315T134958Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:49:58.752887Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2fe7d20e_marine_gps_denied_2fe7d20e_20260315T134958Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an anomaly in the navigation system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be a result of a sudden change in the ocean currents or a navigation error. We need to verify the navigation system and adjust the course if necessary.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to a collision with other vessels or the vessel could be damaged if not properly managed.",
+      "mitigation_strategy": "Verify the navigation system, adjust the course if necessary, and monitor the vessel's stability."
+    },
+    "decision": {
+      "actuator_command": "Verify navigation system, adjust course if necessary",
+      "expected_outcome": "The vessel will be able to navigate safely through the surge."
+    },
+    "self_reflection": "The current surge is an unexpected event that requires immediate attention to ensure the safety of the vessel and the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2fe7d20e",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "d56c079557665f3d0d0dca1c516485b709b16ac5af90d76a97ab031ab467771a"
+  },
+  "sha256_proof": "877bf196a159181f81ce281faa262f3076b9de28d15e7a1232ed5eb71d612d08"
+}

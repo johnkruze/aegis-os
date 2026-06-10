@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_d1f6144d_marine_gps_denied_d1f6144d_20260316T023634Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:36:34.262956Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d1f6144d_marine_gps_denied_d1f6144d_20260316T023634Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate movement",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is functioning normally with a slight drift and low navigation error. The battery is at a high level, and the current readings suggest the vehicle is moving. The depth is shallow, and the vehicle is near its starting waypoint."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is on course and within expected parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted. The system is within normal operating parameters.",
+      "mitigation_strategy": "Continue monitoring and maintain current course."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "Maintain current course and continue mission."
+    },
+    "self_reflection": "The system is performing as expected with no anomalies detected. The vehicle is on course and within safe parameters."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d1f6144d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "4113b869af4e3d0d1f0d2a880f73c0b2db7c9fb8dfb8838a25078243cdf9e3e5"
+  },
+  "sha256_proof": "b17c6e9b78766d8d85b3d95aa1149f25dd92b23c755715bf8fa9cb3affa1a63f"
+}

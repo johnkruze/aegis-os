@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_323df9fd_marine_gps_denied_323df9fd_20260315T151724Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T15:17:24.591301Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_323df9fd_marine_gps_denied_323df9fd_20260315T151724Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the loss of control over the vessel. The current readings suggest that the vessel is drifting and may be unable to maintain its position or navigate to the next waypoint."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of control. The vessel is currently drifting and may be unable to reach the next waypoint. The battery level is still high, so there is some power available for emergency maneuvers.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vessel may drift away from its intended course and potentially collide with other vessels or obstacles. The navigation error could increase, leading to a loss of control.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vessel. If the override is successful, attempt to navigate to the next waypoint using the remaining thrusters. If the override fails, prepare for a manual override or emergency landing."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vessel and attempt to navigate to the next waypoint"
+    },
+    "self_reflection": "The thruster failure is a critical anomaly that requires immediate attention. The vessel's current state is unstable, and the mission may be at risk. The decision to override the thrusters is based on the potential for stabilizing the vessel and continuing the mission. However, if the override fails, the vessel may be at risk of collision or loss of control."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_323df9fd",
+    "scenario": "gps_denied_autonomous_boat_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "ffc0f0c231d720854b12a156299e816a77987310b93af7116c203bae7b9d97ff"
+  },
+  "sha256_proof": "59172eb1d3b313f89b884fa04b26eb72503ac7971c8950617a45e1e332029aab"
+}

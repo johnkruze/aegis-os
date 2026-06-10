@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_4f490a3c_marine_gps_denied_4f490a3c_20260316T030036Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:00:36.751680Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4f490a3c_marine_gps_denied_4f490a3c_20260316T030036Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the magnetic sensors or the magnetic field in the area. The shallow depth and slight drift suggest that the vehicle may be in a challenging environment, possibly near a magnetic anomaly or in a shallow water area. The low navigation error and normal temperature indicate that the system is performing well in other aspects."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to a magnetic anomaly or sensor malfunction. The shallow depth and slight drift suggest a challenging environment. The navigation error is low, so the system is still able to maintain its position. The battery level is high, so there is enough power to continue operation. The waypoint is at the start, so there is no need to change the course. The temperature is normal, so there is no need to worry about overheating. The velocity is slow, so there is no need to worry about excessive wear on the propellers. The system is performing well in other aspects, so the most likely cause of the anomaly is a magnetic anomaly or sensor malfunction. The system should be able to continue operation, but the anomaly should be investigated to ensure that it does not cause further issues.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly could cause the system to drift further from the intended course or to lose its position. The anomaly could also cause the system to malfunction or to fail to complete the mission.",
+      "mitigation_strategy": "The system should be monitored closely to ensure that the anomaly does not cause further issues. The magnetic sensors should be calibrated or replaced if necessary. The system should be checked for any other potential issues that could cause the anomaly. The system should be able to continue operation, but the anomaly should be investigated to ensure that it does not cause further issues."
+    },
+    "decision": {
+      "actuator_command": "continue operation",
+      "expected_outcome": "The system should be able to continue operation, but the anomaly should be investigated to ensure that it does not cause further issues."
+    },
+    "self_reflection": "The system is performing well in other aspects, but the anomaly in current readings is concerning. The anomaly could cause the system to drift further from the intended course or to lose its position. The anomaly could also cause the system to malfunction or to fail to complete the mission. The system should be monitored closely to ensure that the anomaly does not cause further issues. The magnetic sensors should be calibrated or replaced if necessary. The system should be checked for any other potential issues that could cause the anomaly. The system should be able to continue operation, but the anomaly should be investigated to ensure that it does not cause further issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4f490a3c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "56ba385470d1bb2a11fa36f8421c32e7aebeb8ad6f363ff2cd8803ce1b2d2425"
+  },
+  "sha256_proof": "5a1a2d809bd417b5e6353616974ad43bd9bb2566e97959285c4cd88a75059776"
+}

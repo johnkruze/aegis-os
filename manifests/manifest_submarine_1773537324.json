@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_06ed57f4_marine_gps_denied_06ed57f4_20260315T011515Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:15:15.702726Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_06ed57f4_marine_gps_denied_06ed57f4_20260315T011515Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "current anomalies",
+        "depth within safe range",
+        "drift within acceptable limits",
+        "small navigation error",
+        "waypoint 0 active"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery level and some minor current anomalies. The depth and drift are within acceptable ranges, and the navigation error is minimal. The current is slightly negative, which could indicate a problem with the current sensors or the system's orientation."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level is a concern, but the system is otherwise performing well. The current anomalies could be a temporary issue or a more serious problem. The system should be monitored closely to ensure the current anomalies do not persist.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The low battery could cause the system to shut down unexpectedly, leading to mission failure. The current anomalies could indicate a more serious issue that needs to be addressed.",
+      "mitigation_strategy": "Monitor the current anomalies closely and perform a battery check. If the current anomalies persist, investigate the cause and take appropriate action. If the battery level drops below a critical threshold, initiate a safe shutdown procedure."
+    },
+    "decision": {
+      "actuator_command": "monitor current anomalies, perform battery check",
+      "expected_outcome": "The system will continue to operate while the current anomalies are monitored and the battery level is checked. If necessary, a safe shutdown procedure will be initiated."
+    },
+    "self_reflection": "The system is performing well, but the low battery level is a concern. The current anomalies should be investigated to ensure they do not indicate a more serious problem. The system should be monitored closely to ensure the current anomalies do not persist."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_06ed57f4",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 8.0,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "f208db1f6dc988d3866891f9b9540c44117301d42e9093eaa80a0051e6301b69"
+  },
+  "sha256_proof": "048387535a433b1a02a695a6531b267a3c40cb20e24f1bcdaa50daa08821bae1"
+}

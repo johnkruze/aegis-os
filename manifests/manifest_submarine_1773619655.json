@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_323fe25d_marine_gps_denied_323fe25d_20260316T000724Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:07:24.485986Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_323fe25d_marine_gps_denied_323fe25d_20260316T000724Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings suggest drift",
+        "depth is stable",
+        "drift is significant",
+        "navigation error is minimal",
+        "position is slightly off",
+        "velocity indicates descent",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The battery is nearly depleted, indicating a potential power failure. The current readings suggest the vehicle is drifting, which could lead to a loss of position accuracy. The depth is stable, but the drift is significant, which could cause the vehicle to move away from the intended path. The navigation error is minimal, but the position is slightly off, which could lead to a collision with the seafloor or other obstacles. The velocity indicates descent, which could be a normal part of the mission or an anomaly if not expected. The waypoint is at 0, which suggests the vehicle is at the start of the mission or has completed a loop."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is nearly depleted, which could cause a power failure and result in mission termination.",
+        "confidence": 0.9,
+        "action_rejected": "continue mission"
+      },
+      {
+        "thought": "The significant drift could lead to a loss of position accuracy and potentially a collision with the seafloor or other obstacles.",
+        "confidence": 0.8,
+        "action_rejected": "continue mission"
+      },
+      {
+        "thought": "The velocity indicates descent, which could be a normal part of the mission or an anomaly if not expected.",
+        "confidence": 0.7,
+        "action_rejected": "continue mission"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle could lose power, causing it to drift and potentially collide with the seafloor or other obstacles.",
+      "mitigation_strategy": "Initiate emergency power shutdown and perform a safe descent to the seafloor to prevent damage to the vehicle and potential harm to the environment."
+    },
+    "decision": {
+      "actuator_command": "shutdown power and initiate safe descent",
+      "expected_outcome": "The vehicle will safely descend to the seafloor and power will be shut down to prevent any further damage."
+    },
+    "self_reflection": "The mission is incomplete due to the critical battery level and significant drift. The vehicle must be safely shut down to prevent any potential damage to the vehicle and the environment. The decision to initiate an emergency shutdown and safe descent is based on the critical nature of the situation and the potential risks involved."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_323fe25d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "1e065970a675725c8d28458a9fca5c84ddda3b56642ae98ee393f4025cb19cc6"
+  },
+  "sha256_proof": "17760a8a9a64ae82d18741db8865dbd7f330df34e2c1427f6f8c0c133df41b68"
+}

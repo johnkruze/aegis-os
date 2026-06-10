@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_709a5b8e_marine_gps_denied_709a5b8e_20260315T014410Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:44:10.293346Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_709a5b8e_marine_gps_denied_709a5b8e_20260315T014410Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 354.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings, which could indicate a problem with the propulsion system or the sensors. The shallow depth and high drift suggest the vehicle may be in an unexpected location. The low navigation error and low velocity indicate the system is not actively moving towards its intended destination. The battery level is high, which is positive. The time is at 354.0, which is not a standard time format and could be an error. The waypoint is at 0, which suggests the vehicle is not on its intended route."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a propulsion system issue. The shallow depth and high drift suggest an unexpected location. The vehicle is not actively moving towards its intended destination. The battery level is high, which is positive. The time is at 354.0, which is not a standard time format and could be an error. The waypoint is at 0, which suggests the vehicle is not on its intended route.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be in an unexpected location and not moving towards its intended destination. The propulsion system may be malfunctioning.",
+      "mitigation_strategy": "Perform a system check to verify the propulsion system and sensors. Navigate to the correct waypoint and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "System check",
+      "expected_outcome": "The propulsion system and sensors will be verified. The vehicle will be navigated to the correct waypoint if necessary."
+    },
+    "self_reflection": "The anomaly detected suggests a need for a system check to ensure the propulsion system and sensors are functioning correctly. The vehicle is not actively moving towards its intended destination, which could indicate an error in the navigation system. The battery level is high, which is positive. The time is at 354.0, which is not a standard time format and could be an error. The waypoint is at 0, which suggests the vehicle is not on its intended route."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_709a5b8e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "9600d93bcb04561904e2454cdbfa62b7c87899ae866564458466d1b463d43f8c"
+  },
+  "sha256_proof": "904a84e28f41f27f3f35376d91bdc69e4347614db604f2ef38999a46aef12a5b"
+}

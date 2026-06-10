@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0cae0f5d_marine_gps_denied_0cae0f5d_20260315T043100Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:31:00.818029Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0cae0f5d_marine_gps_denied_0cae0f5d_20260315T043100Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within expected range",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high current readings and a significant drift, which could indicate a malfunction or external interference affecting the navigation system. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is within expected range, and the navigation error is low, indicating that the system is still able to maintain a relatively accurate position. The time is within expected range, and the velocity is within expected range, suggesting that the system is still able to move within the environment. The waypoint is at 0, which suggests that the system is not currently following a specific route."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high current readings and drift suggest a potential issue with the navigation system. The system has sufficient power to continue operation, but the drift could cause the system to lose its position over time. The system is still able to maintain a relatively accurate position, but the drift could cause the system to lose its position over time. The system is not currently following a specific route, which could make it more susceptible to drift. The system has sufficient power to continue operation, but the drift could cause the system to lose its position over time.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could lose its position over time due to the high drift, which could cause the mission to be incomplete. The system could also be affected by external interference, which could cause the navigation system to malfunction.",
+      "mitigation_strategy": "The system should be monitored closely to ensure that the drift does not cause the system to lose its position over time. The system should also be checked for any external interference that could be affecting the navigation system. If the drift continues to increase, the system should be re-initialized to ensure that it is able to maintain its position."
+    },
+    "decision": {
+      "actuator_command": "re-initialize navigation system",
+      "expected_outcome": "The system should be able to maintain its position and continue the mission."
+    },
+    "self_reflection": "The system is experiencing high current readings and a significant drift, which could indicate a malfunction or external interference affecting the navigation system. The system has sufficient power to continue operation, but the drift could cause the system to lose its position over time. The system is not currently following a specific route, which could make it more susceptible to drift. The system has sufficient power to continue operation, but the drift could cause the system to lose its position over time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0cae0f5d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "ff69b990c69155ff8f5f228bf15395aa231807fd2ebd1bc902752dbe9c6e4b7a"
+  },
+  "sha256_proof": "9b5fc698f3e8dced9aa9884ef060c706502ffa2644a4c9c6fc5b72f584ed55a6"
+}

@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_2bfa725c_marine_gps_denied_2bfa725c_20260315T090032Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:00:32.004490Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2bfa725c_marine_gps_denied_2bfa725c_20260315T090032Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery is at a high level, and the current readings are within expected ranges. The depth is shallow, which could be a concern if the mission requires deeper waters. The velocity is slow, which is expected for a marine GPS system. The waypoint is at the start, indicating the beginning of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected, with only minor issues. The battery is sufficient for the mission duration.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue functioning without issues.",
+      "mitigation_strategy": "No action needed at this time."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned without interruption."
+    },
+    "self_reflection": "The system is performing within expected parameters, and there are no immediate issues that require intervention. The mission is on track to complete successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2bfa725c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "daee0e935d3c11d37b5b6fe07975d22a52822b35e2e8a55d1cf7def5b2baf79f"
+  },
+  "sha256_proof": "f6ae8ba359891973d4cdb62a34c09b7e1962f9d42ea45b468fc814f35b8f8201"
+}

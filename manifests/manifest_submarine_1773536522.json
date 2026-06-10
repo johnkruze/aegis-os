@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_6b77f988_marine_gps_denied_6b77f988_20260315T010150Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:01:50.987004Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6b77f988_marine_gps_denied_6b77f988_20260315T010150Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 24.72 meters in the x-direction",
+        "time is 307.0 seconds",
+        "velocity is slightly negative in the y-direction",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in the current readings, which could indicate a problem with the magnetic field sensors or the navigation system. The shallow depth and high drift suggest that the vehicle may be in a challenging environment, possibly near a coastline or in a strong current. The low navigation error and position offset suggest that the system is still able to maintain a basic level of control."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could indicate a magnetic field anomaly or a problem with the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and high drift suggest that the vehicle may be in a challenging environment, possibly near a coastline or in a strong current.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The low navigation error and position offset suggest that the system is still able to maintain a basic level of control.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly in the current readings could cause the vehicle to drift off course or lose control, potentially leading to a collision with the ocean floor or other obstacles.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the magnetic field sensors. If the issue persists, perform a manual override to navigate to a safe location."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the magnetic field sensors, and if the issue persists, the vehicle will be manually overridden to navigate to a safe location."
+    },
+    "self_reflection": "The anomaly in the current readings suggests that there may be a problem with the magnetic field sensors or the navigation system. The shallow depth and high drift suggest that the vehicle may be in a challenging environment, possibly near a coastline or in a strong current. The low navigation error and position offset suggest that the system is still able to maintain a basic level of control. The decision to reset and recalibrate the system is based on the potential risk of losing control and the need to ensure the safety of the vehicle and its occupants."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6b77f988",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "493fb898f31bbc63da6bbeb5689256566b042125b9dab229a88d067d09f26dc6"
+  },
+  "sha256_proof": "f8d5524419f2cc98d76d09eb93994aaecbe6e8708fd146c0b62d70a6cae3583a"
+}

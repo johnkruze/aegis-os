@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_68dc896a_marine_gps_denied_68dc896a_20260315T164617Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:46:17.458761Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_68dc896a_marine_gps_denied_68dc896a_20260315T164617Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "depth anomaly",
+        "high drift",
+        "small navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies. The battery is low, indicating a potential power failure. The current readings are inconsistent, suggesting a possible malfunction. The depth is slightly off, which could be due to sensor drift. The high drift indicates the vehicle is not following the intended course. The small navigation error is within acceptable limits. The waypoint has not been reached, which is critical for mission completion."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly. The current readings are concerning and may indicate a hardware issue. The depth and drift are within acceptable limits, but the waypoint not being reached is a critical failure. The navigation error is small, but the high drift suggests a more serious problem with the course correction system.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down unexpectedly, leading to mission failure. The current readings could indicate a hardware failure that could spread to other systems. The high drift could result in the vehicle being lost at sea.",
+      "mitigation_strategy": "Immediately initiate a power save mode to conserve battery. Perform a system health check to identify and isolate the current readings anomaly. Implement a manual override to correct the course and reach the waypoint. If the system fails to recover, prepare for an emergency recovery plan."
+    },
+    "decision": {
+      "actuator_command": "power_save_mode, system_health_check, manual_course_correction",
+      "expected_outcome": "The system will attempt to conserve power, identify the anomaly, and correct the course to reach the waypoint. If the system fails, an emergency recovery plan will be initiated."
+    },
+    "self_reflection": "The anomaly is critical and requires immediate attention. The system is experiencing multiple issues that could lead to mission failure. The decision to initiate power save mode and perform a system health check is based on the critical nature of the battery and current readings. The manual course correction is a last resort to ensure the vehicle reaches the waypoint. The emergency recovery plan is a safeguard in case the system fails to recover."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_68dc896a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 15.1,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "fd5fdf5083f6ea6dcb765273ec0f48f895c6f088683d00ce92f58e4b486c7a53"
+  },
+  "sha256_proof": "626f5b70948623af1231de4fb85dff9ae7b12147026408dad2460cae19f99c84"
+}

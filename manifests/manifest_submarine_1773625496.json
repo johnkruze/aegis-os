@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_642467da_marine_gps_denied_642467da_20260316T014449Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:44:49.799638Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_642467da_marine_gps_denied_642467da_20260316T014449Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, and high drift. The navigation error is low, and the system is at waypoint 0. The depth is small, which could indicate a shallow water area."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly. The unstable current readings suggest potential issues with the power supply. The high drift indicates the system is not maintaining its position accurately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down, leading to mission failure.",
+      "mitigation_strategy": "Increase power supply, stabilize current readings, and adjust navigation parameters."
+    },
+    "decision": {
+      "actuator_command": "increase_power_supply",
+      "expected_outcome": "Stabilize power and prevent system shutdown"
+    },
+    "self_reflection": "The system is in a critical state due to low battery and unstable current readings. Immediate action is required to prevent mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_642467da",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 7.8,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "44bb10c8dd7de664771613a09d1e51f3ca16cd8420c758b539c4e952a01750ac"
+  },
+  "sha256_proof": "d7449f82cf667f59d4da9d4acc4d525dd7cf72d51af7f5d9dd86b37da8a18279"
+}

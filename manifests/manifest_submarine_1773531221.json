@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8b0cb238_marine_gps_denied_8b0cb238_20260314T233333Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:33:33.928267Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8b0cb238_marine_gps_denied_8b0cb238_20260314T233333Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position and orientation are stable",
+        "time is 331.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the inconsistent current readings which could indicate a potential issue with the navigation system or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could be due to a navigation error or an issue with the environment. However, the navigation error is low and the position is stable, so the system is likely still on course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The inconsistent current readings could cause the system to drift off course, but the navigation error is low and the position is stable, so the system is likely still on course.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue_course",
+      "expected_outcome": "The system will continue on its current course based on the stable position and low navigation error."
+    },
+    "self_reflection": "The system is functioning within normal parameters, except for the inconsistent current readings. The navigation error is low and the position is stable, so the system is likely still on course. The inconsistent current readings should be monitored closely to ensure the system does not drift off course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8b0cb238",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "886ba836a9969c0c4fd6344f0d069f6a87be89335b7a3d03aa5b83bf856d634a"
+  },
+  "sha256_proof": "b6693d37490f089ced683543dd9e3399e3d2d69813d58b03adc70b40ecf011b9"
+}

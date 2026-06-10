@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_efdb0393_marine_gps_denied_efdb0393_20260315T143503Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:35:03.778666Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_efdb0393_marine_gps_denied_efdb0393_20260315T143503Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is very low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from the expected path. The battery is healthy, and the current readings suggest the vehicle is moving in the correct direction. The slight drift and low navigation error indicate that the system is maintaining its course, albeit with some minor adjustments needed. The velocity is very low, which could be due to the vehicle being stationary or moving at a very slow speed. The waypoint is at the start, which is expected at the beginning of a mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within expected parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system will continue to operate normally until the next waypoint or mission termination.",
+      "mitigation_strategy": "No action needed at this time."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as intended until the next waypoint or mission termination."
+    },
+    "self_reflection": "The system is performing as expected with no critical anomalies detected. The minor deviations from the expected path are within acceptable limits and do not require immediate intervention."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_efdb0393",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.5,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "c72cf137631e168a13a3f0d9b9ff7199c8619901e8cd62901ae0c33651d5478b"
+  },
+  "sha256_proof": "ec9a9cf1efc8bb009b71232bf592eade60836764b778803def1f36885f0db875"
+}

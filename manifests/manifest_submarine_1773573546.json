@@ -1,0 +1,48 @@
+{
+  "mission_id": "marine_gps_denied_070824fe_marine_gps_denied_070824fe_20260315T111858Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:18:58.499399Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_070824fe_marine_gps_denied_070824fe_20260315T111858Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery_degradation",
+        "low_battery"
+      ],
+      "interpretation": "The battery level is critically low, indicating that the system is running on minimal power. The current readings suggest that the system is experiencing a significant power drain, which is likely due to the GPS denial and other critical functions. The depth and drift values are within normal ranges, but the navigation error is slightly higher than expected."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low and the system is experiencing a significant power drain. The GPS denial is a critical issue that needs to be resolved immediately to prevent further degradation. The system must be powered down to conserve energy and prevent further damage.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system will likely shut down completely due to the low battery, leading to mission failure.",
+      "mitigation_strategy": "Power down the system immediately to conserve energy and prevent further damage. Once the system is powered down, perform a battery check and replace the battery if necessary."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "The system will power down to conserve energy and prevent further damage. Once the system is powered down, perform a battery check and replace the battery if necessary."
+    },
+    "self_reflection": "The critical battery degradation and GPS denial are significant issues that require immediate attention. The system must be powered down to prevent further damage and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_070824fe",
+    "scenario": "gps_denied_autonomous_boat_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 41.0,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "ed33a99a1276bbffaafa7ed02c382129efea4e9e1aac5baca96a1db3d7c9cc0f"
+  },
+  "sha256_proof": "d5acfaf9ea957f2a0a3eb79f809d74fbf9cfcf07d8818ea422120e3aa729afdc"
+}

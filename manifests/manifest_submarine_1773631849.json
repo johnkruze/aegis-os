@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_c6bcaed7_marine_gps_denied_c6bcaed7_20260316T033043Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:30:43.193608Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c6bcaed7_marine_gps_denied_c6bcaed7_20260316T033043Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak, which is a critical anomaly in an oceanic environment. The leak is surfacing, which suggests it may be a significant issue that requires immediate attention."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is surfacing, indicating a potential safety hazard. Immediate action is required to prevent further damage or loss of the vessel.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking or loss of control.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying emergency flotation devices, and initiating a distress call."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_ALL_NON_ESSENTIAL_SYSTEMS; DEPLOY_EMERGENCY_FLOTATION_DEVICES; INITIATE_DISTRESS_CALL",
+      "expected_outcome": "The vessel will attempt to stabilize and prevent further damage while initiating a distress signal to nearby vessels or authorities."
+    },
+    "self_reflection": "The detection of a leak in an oceanic environment is a critical situation that requires immediate and decisive action to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c6bcaed7",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": true,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "f19bb2191ddbc9cad7868a4c0320f26ecd02becc18069521658fe25f2f6f3dc9"
+  },
+  "sha256_proof": "b13aae50492462f437ad4d5d449838dc87ab063a4a11b411020fa58bc265b030"
+}

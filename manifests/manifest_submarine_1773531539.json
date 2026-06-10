@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f6aa5fa1_marine_gps_denied_f6aa5fa1_20260314T233852Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:38:52.238613Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f6aa5fa1_marine_gps_denied_f6aa5fa1_20260314T233852Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel. The battery level is high, and the current readings suggest the vessel is experiencing some drift. The depth is shallow, and the navigation error is minimal."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vessel is in a potentially dangerous situation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking. The navigation error could cause the vessel to drift further from its intended course.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, deploying emergency flotation devices, and initiating a distress signal. Monitor the leak and current readings closely."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, DEPLOY_FLOATATION_DEVICES, INITIATE_DISTRESS_SIGNAL",
+      "expected_outcome": "The vessel will be prepared for a potential emergency, and the distress signal will be sent to rescue services."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate action to ensure the safety of the vessel and its crew. The decision to activate emergency protocols is based on the potential risks and the need to prioritize the safety of the vessel and its occupants."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f6aa5fa1",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.2,
+      "mission_success": true,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "f804bb27ed95576c32fcaa07bfe8077e20894ef269e0b368f5c9fdd1e74383ed"
+  },
+  "sha256_proof": "89b41b074509e83168203ecd1884ac68df45382170e805ff4bfccc2e143f0ba9"
+}

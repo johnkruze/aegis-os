@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_cd7c2d05_marine_gps_denied_cd7c2d05_20260315T042754Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:27:54.966915Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cd7c2d05_marine_gps_denied_cd7c2d05_20260315T042754Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel. The battery level is high, and the current readings suggest a potential issue with the propulsion system. The depth is relatively shallow, and the drift is significant, indicating that the vessel may be moving away from the intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vessel is in a potentially dangerous situation, and the propulsion system may be compromised. The current readings suggest that the vessel is moving away from the intended course, which could lead to further complications if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the leak is not addressed, it could lead to a loss of propulsion, causing the vessel to drift further away from the intended course. This could result in the vessel being stranded in an unknown location, potentially leading to further complications.",
+      "mitigation_strategy": "The primary action to mitigate this risk is to immediately stop the propulsion system and investigate the source of the leak. This should be done as soon as possible to prevent further damage and ensure the safety of the vessel and its crew."
+    },
+    "decision": {
+      "actuator_command": "STOP_PROPULSION",
+      "expected_outcome": "The propulsion system will be stopped, and the vessel will come to a halt. This will allow the crew to investigate the source of the leak and take appropriate action to fix it."
+    },
+    "self_reflection": "The detection of a leak on the surface of the vessel is a critical event that requires immediate attention. The crew must prioritize the safety of the vessel and its crew by stopping the propulsion system and investigating the source of the leak. This decision is based on the current telemetry and the potential risks associated with the leak."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cd7c2d05",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "27cf0d00e9c767125b02e38d29935dddc0562d6f73344601b13ad97393d460b3"
+  },
+  "sha256_proof": "6677e28f09eed909fb8b3fd5bc6e48e1173a741cb53b5356066e2b71d58c6b68"
+}

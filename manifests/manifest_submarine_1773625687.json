@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0e35cf28_marine_gps_denied_0e35cf28_20260316T014759Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:47:59.919132Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0e35cf28_marine_gps_denied_0e35cf28_20260316T014759Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight anomaly in current readings. The battery is at a high level, indicating sufficient power. Depth and drift are within acceptable limits, and the navigation error is low, suggesting accurate positioning. The velocity is minimal, and the waypoint is at the start, indicating the mission has not yet begun."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, but within expected ranges. The battery is sufficient, and the navigation error is low. The mission has not yet begun, so there is no immediate risk.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission is expected to proceed as planned without immediate issues.",
+      "mitigation_strategy": "Continue monitoring current readings and maintain power levels."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The mission will continue as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. The slight anomaly in current readings is within acceptable limits and does not pose an immediate threat to the mission. The battery level is sufficient, and the navigation error is low, indicating accurate positioning. The mission has not yet begun, so there is no immediate risk."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0e35cf28",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a6b2cd9fb1c6266c57ce73206ada8de2711d368aed437910fea18c3cae91eddd"
+  },
+  "sha256_proof": "5e1e727647a17274deb2fc787ca0d573a588afa99e155f069999fdd541aa14d9"
+}

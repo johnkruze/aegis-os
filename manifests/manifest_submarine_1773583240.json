@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_34a68a66_marine_gps_denied_34a68a66_20260315T140032Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:00:32.035098Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_34a68a66_marine_gps_denied_34a68a66_20260315T140032Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The battery is at a healthy level, and the navigation error is minimal. The system is at the start of the mission, and the temperature is within acceptable limits."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to external factors such as currents or wind. The inconsistent current readings suggest potential issues with the current sensors. The shallow depth and moderate velocity indicate that the system is operating in a stable environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to drift, potentially leading to a deviation from the planned route. The inconsistent current readings could indicate a sensor failure or calibration issue.",
+      "mitigation_strategy": "Monitor the system closely and perform a sensor calibration check. If the drift persists, consider adjusting the system's heading to compensate for the drift."
+    },
+    "decision": {
+      "actuator_command": "monitor sensors, perform calibration check, adjust heading if necessary",
+      "expected_outcome": "The system will continue to monitor its sensors and perform a calibration check to ensure accurate navigation. If the drift persists, the heading will be adjusted to compensate for the drift."
+    },
+    "self_reflection": "The system is currently operating within normal parameters, but the high drift and inconsistent current readings require close monitoring and potential adjustments to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_34a68a66",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "33333a75a2f9f3e277174e90600d906ec275eea65ac61ed3d37f9ab9359f7d68"
+  },
+  "sha256_proof": "deed6fa6471af7d174f8e06db4488e91c5af7503892c5febdecffd5b83f64d20"
+}

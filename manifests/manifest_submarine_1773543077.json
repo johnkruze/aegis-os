@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f0d7ddaf_marine_gps_denied_f0d7ddaf_20260315T025109Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T02:51:09.997851Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f0d7ddaf_marine_gps_denied_f0d7ddaf_20260315T025109Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the water. The battery level is high, and the current readings suggest the device is moving at a slow speed. The depth is shallow, and the drift is minimal, indicating the device is likely in a stable position."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The device is in a stable position, which is good for assessing the leak's impact. However, the slow speed and shallow depth suggest the leak might be small and localized.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The leak could cause the device to sink or lose power, potentially leading to a loss of mission data or equipment failure.",
+      "mitigation_strategy": "Initiate a manual override to increase the device's speed and depth to a safe distance from the leak. Monitor the battery level and current readings closely to ensure the device remains operational."
+    },
+    "decision": {
+      "actuator_command": "increase_speed_and_depth",
+      "expected_outcome": "The device will move away from the leak and increase its depth to a safe distance, allowing for further assessment and potential repair."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate action. The device's current state is stable, which is a positive indicator, but the potential consequences of the leak must be carefully managed to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f0d7ddaf",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 1.9,
+      "mission_success": true,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "6e8edc29a5ad5b709fae2ccbd1553b8d7edacf848e6bd4c65dc5b15be091b6d3"
+  },
+  "sha256_proof": "b682af8860437d4d487599c4f37748869e5bff7adb3a9f737dc405bd3d5f2ff4"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_68f294ef_marine_gps_denied_68f294ef_20260315T213844Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:38:44.742617Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_68f294ef_marine_gps_denied_68f294ef_20260315T213844Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 311.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the vehicle is moving in a predictable manner. The shallow depth and moderate drift indicate the vehicle is operating in a controlled environment. The low navigation error and moderate velocity suggest the vehicle is on course. The slight position and time discrepancies could be due to minor sensor drift or external factors."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within expected parameters, with only minor deviations. The battery is healthy, and the current readings suggest the vehicle is moving in a predictable manner. The slight position and time discrepancies could be due to minor sensor drift or external factors. The vehicle is on course and the mission is incomplete, but there are no critical anomalies that would prevent the mission from continuing.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The minor deviations could be due to sensor drift or external factors, but the system is otherwise performing within expected parameters.",
+      "mitigation_strategy": "Monitor the system for any further deviations and adjust course if necessary. Perform a system reset if the deviations persist."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with the vehicle maintaining its current course and performing within expected parameters."
+    },
+    "self_reflection": "The system is performing within expected parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the vehicle is moving in a predictable manner. The slight position and time discrepancies could be due to minor sensor drift or external factors. The vehicle is on course and the mission is incomplete, but there are no critical anomalies that would prevent the mission from continuing."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_68f294ef",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "ff6281c78778d88314e3bc3fa5847173291b0c8cf37e3db4a072fab0c49b27f9"
+  },
+  "sha256_proof": "8914a65494d3640dfce034acd6bb97310dfc4a793c243c07d97d0764ac6cd560"
+}

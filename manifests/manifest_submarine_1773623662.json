@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_d5d027d7_marine_gps_denied_d5d027d7_20260316T011415Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:14:15.231001Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d5d027d7_marine_gps_denied_d5d027d7_20260316T011415Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 186.44, -199.04, -0.5",
+        "time is 368.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which is good, but the drift and current readings suggest that the vehicle is not on course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a navigation issue. The GPS system might be denied or malfunctioning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle could continue to drift and potentially collide with obstacles or other vessels.",
+      "mitigation_strategy": "Attempt to re-establish GPS lock or use alternative navigation methods. If GPS is denied, use dead reckoning or other onboard sensors to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "re-establish GPS lock or use dead reckoning",
+      "expected_outcome": "Correct the drift and maintain course"
+    },
+    "self_reflection": "The system is experiencing unexpected behavior due to a potential GPS denial or malfunction. Immediate action is required to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d5d027d7",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "c6b4d008fafcfe500f3476158f01b02ad70122c9e56e53a9dbc6fc9753518a37"
+  },
+  "sha256_proof": "f37f5bfde731be1c368c72bd90273e5ae8265d12c12426f782942b792430a5f4"
+}

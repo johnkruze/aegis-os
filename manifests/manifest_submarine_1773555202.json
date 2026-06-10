@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7dd6b30b_marine_gps_denied_7dd6b30b_20260315T061311Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:13:11.503487Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7dd6b30b_marine_gps_denied_7dd6b30b_20260315T061311Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is at 39.7 meters",
+        "drift is 15.22 meters",
+        "navigation error is minimal",
+        "position is at (-232.05, 83.4, -39.66)",
+        "time is 339.0 seconds",
+        "velocity is very low",
+        "waypoint is 0"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is fully charged, and the current readings are within expected ranges. The depth and position are stable, and the navigation error is minimal. However, the slight negative current readings and low velocity suggest a potential issue with the propulsion system or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The slight negative current readings could indicate a minor issue with the thrusters or the environment's resistance. The low velocity suggests the vehicle is not actively moving towards the next waypoint. However, the navigation error is minimal, and the battery is fully charged, which reduces the risk of immediate failure.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle may be drifting slightly and not advancing towards the next waypoint. However, the navigation error is minimal, and the battery is fully charged, which reduces the risk of immediate failure.",
+      "mitigation_strategy": "Monitor the current readings and velocity closely. If the issue persists, consider initiating a manual override to adjust the thrusters."
+    },
+    "decision": {
+      "actuator_command": "monitor current readings and velocity",
+      "expected_outcome": "The system will continue to monitor the current readings and velocity to ensure the vehicle is not drifting or not advancing towards the next waypoint."
+    },
+    "self_reflection": "The system is operating within normal parameters, but the slight negative current readings and low velocity suggest a potential issue with the propulsion system or the environment. The navigation error is minimal, and the battery is fully charged, which reduces the risk of immediate failure. The system will continue to monitor the current readings and velocity to ensure the vehicle is not drifting or not advancing towards the next waypoint."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7dd6b30b",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "894f3781d8abf1ac9230b50eac0d530d7eaf2f24d21295b304200cd4e041b06d"
+  },
+  "sha256_proof": "37b19235b58d790dc64c253b842f207d1308cf3f78884f3bbb5ccdd6c39c568d"
+}

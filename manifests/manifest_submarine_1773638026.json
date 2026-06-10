@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_ecd1790f_marine_gps_denied_ecd1790f_20260316T051339Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:13:39.032982Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ecd1790f_marine_gps_denied_ecd1790f_20260316T051339Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "time is 335.0 seconds",
+        "velocity is near zero"
+      ],
+      "interpretation": "The system is operating with high battery and near-zero velocity, but there are inconsistencies in the current readings and a high drift. The navigation error is low, and the system is close to the starting waypoint. The time is 335.0 seconds, which suggests the system has been running for approximately 5 minutes."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the system's orientation or sensors.",
+        "confidence": 0.8,
+        "action_rejected": "string"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may be experiencing sensor drift or orientation issues, which could lead to mission failure if not addressed.",
+      "mitigation_strategy": "Perform a sensor recalibration and check for any physical obstructions that could be causing the drift."
+    },
+    "decision": {
+      "actuator_command": "recalibrate_sensors",
+      "expected_outcome": "The system's orientation and sensor readings should be corrected, allowing the mission to continue."
+    },
+    "self_reflection": "The system is functioning within expected parameters, but the inconsistencies in the current readings and high drift suggest a potential issue that requires immediate attention to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ecd1790f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "48398031b6e7fb6f58eb11461da6ca03c123ed2236f6435f8ce13e8d611bfe55"
+  },
+  "sha256_proof": "2e8fcc1978fd6b92282bae85ea6eaa9792a3a4557d3a382d33a16f05e3529e45"
+}

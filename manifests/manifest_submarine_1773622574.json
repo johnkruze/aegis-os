@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_5c54dc38_marine_gps_denied_5c54dc38_20260316T005605Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:56:05.118211Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5c54dc38_marine_gps_denied_5c54dc38_20260316T005605Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint",
+        "temperature is high",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is experiencing inconsistent current readings and high drift, which could indicate a navigation issue. The battery level is high, and the depth is shallow, suggesting the system is operating in a potentially hazardous area. The temperature is high, which could affect system performance. The velocity is slow, which is expected near waypoints."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings and high drift suggest a navigation issue that could lead to mission failure if not addressed. The shallow depth and high temperature are concerning but not immediately critical. The slow velocity near waypoints is expected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could drift out of the designated area, leading to mission failure.",
+      "mitigation_strategy": "Adjust the navigation parameters to correct the drift and ensure the system stays within the designated area."
+    },
+    "decision": {
+      "actuator_command": "adjust navigation parameters",
+      "expected_outcome": "The system will correct its drift and stay within the designated area, allowing the mission to continue."
+    },
+    "self_reflection": "The system is experiencing some anomalies, but the current battery level and shallow depth suggest that the system is still functional. The high temperature and slow velocity near waypoints are expected, and the navigation issue is the primary concern that needs to be addressed to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5c54dc38",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "13a0c01d28baca2a4b8e0bccbaec16737a821951f3aa4d7cff13fb5fe687cd0c"
+  },
+  "sha256_proof": "b75156c90e59620882d873eedcb3404bbf9ea502da4c6cc3a88bebb1cc262cca"
+}

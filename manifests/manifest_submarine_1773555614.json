@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_0ce66ddc_marine_gps_denied_0ce66ddc_20260315T062007Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:20:07.325171Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0ce66ddc_marine_gps_denied_0ce66ddc_20260315T062007Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 305.0",
+        "velocity is very low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the vehicle is moving slightly off course. The shallow depth and low velocity indicate a stationary or slow-moving object in the water. The low navigation error and slight drift suggest the system is maintaining its position with minimal deviation."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations from expected values are within acceptable limits. The system is stable and capable of maintaining its position. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system will continue to operate within normal parameters for the foreseeable future.",
+      "mitigation_strategy": "No action required at this time."
+    },
+    "decision": {
+      "actuator_command": "none",
+      "expected_outcome": "The system will continue to operate as intended."
+    },
+    "self_reflection": "The system is performing as expected with only minor deviations from the norm. No immediate action is required to maintain mission integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0ce66ddc",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "ae1112a4b8663d7eecfe3f548aecf129d9082dcd825dd7cf776c338bb5c61670"
+  },
+  "sha256_proof": "d0bd04e472f52b75cd4db47c48f6abf30520b3be215a8d45421c9cbe417a60b5"
+}

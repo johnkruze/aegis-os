@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_8fd28e23_marine_gps_denied_8fd28e23_20260316T021838Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T02:18:38.124207Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8fd28e23_marine_gps_denied_8fd28e23_20260316T021838Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 317.0",
+        "velocity is slightly off",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning with high battery, but there are inconsistencies in current readings and drift. The depth is shallow, which could be a concern. The navigation error is low, but the position is slightly off. The time and velocity are within expected ranges. The waypoint is at 0, which suggests the mission might be at the start or end."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are inconsistent, which could indicate a problem with the sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and high drift suggest potential issues with the mission's planned route.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The slight position off and low navigation error suggest the system is still capable of maintaining control.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistent current readings and high drift could lead to a loss of control or deviation from the planned route.",
+      "mitigation_strategy": "Perform a sensor calibration and re-evaluate the mission route to ensure safety and accuracy."
+    },
+    "decision": {
+      "actuator_command": "Calibrate sensors and re-evaluate mission route",
+      "expected_outcome": "The system will attempt to correct the sensor readings and re-plan the mission route to ensure safety and accuracy."
+    },
+    "self_reflection": "The system is currently operating within expected parameters, but the inconsistencies in current readings and high drift suggest potential issues that require attention. A sensor calibration and route re-evaluation are recommended to mitigate risks and ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8fd28e23",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "1ba41b877281d1aedf7bc7aa0862db8919d2dd82ed41564992f02914accb7a49"
+  },
+  "sha256_proof": "64d17f2019e51bbe6bcad6f39a2e4c98d05ebc0e2c60e63ba85e788d9e448ada"
+}

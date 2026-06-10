@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_16f59b54_marine_gps_denied_16f59b54_20260314T223523Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T22:35:23.946830Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_16f59b54_marine_gps_denied_16f59b54_20260314T223523Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing an anomaly in current readings and drift, which could indicate a problem with the navigation system or the environment. The battery level is high, which is good, but the shallow depth and high drift suggest that the vehicle may be in a challenging or unexpected location."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings and drift suggest a potential navigation error or environmental challenge.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high temperature and slow velocity indicate that the system may be operating in a thermal or low-energy environment.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may be unable to maintain its course or navigate through the environment, leading to mission failure.",
+      "mitigation_strategy": "Perform a system reset and reinitialize the navigation system. Check the environment for any obstacles or hazards."
+    },
+    "decision": {
+      "actuator_command": "reset_navigation_system",
+      "expected_outcome": "The system will attempt to reinitialize and correct the navigation error."
+    },
+    "self_reflection": "The anomaly detected suggests a need for system recalibration or environmental reassessment. The decision to reset the navigation system is based on the potential for mission failure and the available resources."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_16f59b54",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "56def0037c5bf7872938246bc10d314c72de1d8f41e05120dac580125eb235a6"
+  },
+  "sha256_proof": "5b0f457f1a2eec3e9997081106fc3c37461feb47f18ab301b5e00c393ae92fa7"
+}

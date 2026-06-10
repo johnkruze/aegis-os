@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_98b4e71e_marine_gps_denied_98b4e71e_20260315T034405Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:44:05.436756Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_98b4e71e_marine_gps_denied_98b4e71e_20260315T034405Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "minor navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including a low battery, unstable current readings, slight depth errors, high drift, minor navigation errors, and the waypoint not being reached. The current readings suggest potential issues with the propulsion system or the navigation system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery level is critical, and the current readings are unstable, which could indicate a problem with the propulsion system. The slight depth errors and high drift suggest issues with the navigation system. The waypoint not being reached is a critical failure mode.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission may fail to complete due to the low battery and unstable current readings, which could lead to a loss of control or propulsion failure.",
+      "mitigation_strategy": "Immediately initiate a battery recharge sequence and perform a system health check to identify and address the issues with the propulsion and navigation systems."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, system_health_check",
+      "expected_outcome": "The battery will be recharged, and the system health will be assessed to determine the cause of the anomalies."
+    },
+    "self_reflection": "The system is in a critical state, and immediate action is required to prevent a complete failure of the mission. The low battery and unstable current readings are concerning, and the navigation errors suggest potential issues with the propulsion system. The waypoint not being reached is a critical failure mode that must be addressed to ensure the mission completes successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_98b4e71e",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "d51efc92b0c0065a515de035bd390eb8c06e59346f3b14cefdfb4f6b4a6398b0"
+  },
+  "sha256_proof": "989012292e1ab70a07497bb8ef374854d56c2670534c0f2786061cf02187d1ba"
+}

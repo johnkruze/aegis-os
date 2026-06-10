@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_e7e5a72c_marine_gps_denied_e7e5a72c_20260315T220613Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:06:13.030749Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e7e5a72c_marine_gps_denied_e7e5a72c_20260315T220613Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate a strong current",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minimal",
+        "attitude and position data are normal",
+        "time is 346.0 seconds",
+        "velocity is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, but the significant drift suggests potential issues with the navigation system or external factors affecting the vessel's movement."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The drift could be due to external currents or inaccuracies in the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vessel may be displaced from its intended course, but the navigation error is minimal and the battery level is high.",
+      "mitigation_strategy": "Monitor the drift closely and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "monitor_course_and_adjust_if_needed",
+      "expected_outcome": "Maintain course or adjust as needed to compensate for drift."
+    },
+    "self_reflection": "The system appears to be functioning correctly, but the significant drift requires close monitoring to ensure the vessel remains on course."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e7e5a72c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "6f0b448980d131af78ee9cb5eb82ffb29591c90511e5f53b0fa072f0b7cfe11f"
+  },
+  "sha256_proof": "ca67c7f6836b07ef8073917749bcb697681af99b4fb561306104bcbfd0dde040"
+}

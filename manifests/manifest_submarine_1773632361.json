@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_0675efd9_marine_gps_denied_0675efd9_20260316T033915Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:39:15.940825Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0675efd9_marine_gps_denied_0675efd9_20260316T033915Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could lead to a loss of control if not managed properly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could cause the vessel to drift off course or lose control, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "apply emergency braking and adjust course",
+      "expected_outcome": "Stabilize the vessel and maintain control of the mission."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0675efd9",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "b455645084546f9a033018c464edb219635e4bb0e66ff45f39cf7bdecee6dd18"
+  },
+  "sha256_proof": "efdde3c7c585834479e33606e39cf14d2381175f49280ba86f11d6ad1a21195e"
+}

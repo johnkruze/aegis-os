@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_dc80f49f_marine_gps_denied_dc80f49f_20260315T112437Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:24:37.506718Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_dc80f49f_marine_gps_denied_dc80f49f_20260315T112437Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_OUT_OF_RANGE",
+        "DEPTH_OUT_OF_RANGE",
+        "DRIFT_OUT_OF_RANGE",
+        "NAV_ERROR_OUT_OF_RANGE"
+      ],
+      "interpretation": "The system is experiencing critical battery degradation, with current readings indicating an imbalance and drift out of normal operational parameters. Depth is within acceptable limits, but the navigation error is high, suggesting potential issues with the GPS or sensor accuracy."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could lead to system failure if not addressed immediately. The current readings suggest a potential fault in the power distribution system. The high drift and navigation error indicate a significant issue with the GPS or sensor accuracy.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to battery depletion or sensor failure, potentially leading to mission termination.",
+      "mitigation_strategy": "Initiate emergency shutdown sequence and attempt to recover power from external sources if possible. If recovery is not feasible, prepare for mission termination and initiate emergency evacuation procedures."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_SEQUENCE",
+      "expected_outcome": "System will attempt to shut down gracefully, preserving data and attempting to recover power if possible."
+    },
+    "self_reflection": "The system has detected critical anomalies that could lead to mission failure. Immediate action is required to prevent further damage and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_dc80f49f",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 41.0,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "2eef95250ef443f60d685e5b6c2e4fac3ca6317ade3e29fdf3dfe4d32873c5a7"
+  },
+  "sha256_proof": "950f975f8a23b44ff50abd747fa871bff12c250da2cb2b49e34931d571cc8776"
+}

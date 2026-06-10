@@ -1,0 +1,48 @@
+{
+  "mission_id": "marine_gps_denied_6534fcdb_marine_gps_denied_6534fcdb_20260315T100143Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:01:43.778328Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6534fcdb_marine_gps_denied_6534fcdb_20260315T100143Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery_degradation",
+        "low_battery"
+      ],
+      "interpretation": "The battery level is critically low, indicating that the system is running on minimal power. This could lead to a complete system failure if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is at 58.9%, which is dangerously low. Immediate action is required to prevent a complete system failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail completely within the next few minutes, leading to mission failure.",
+      "mitigation_strategy": "Initiate emergency power management protocols and attempt to land or return to a safe location."
+    },
+    "decision": {
+      "actuator_command": "initiate_emergency_power_management",
+      "expected_outcome": "The system will attempt to conserve power and initiate a safe return or landing procedure."
+    },
+    "self_reflection": "The critical battery level indicates a severe failure mode. Immediate action is necessary to prevent a complete system failure and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6534fcdb",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 41.1,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "46885e16e365e5849152779d0f14bc1bef864a06c7ef7370c6d04798345f586c"
+  },
+  "sha256_proof": "c370de943559e99718a55159e878980c15cbbd28ac2bf4120321a81c2e3a9ce7"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_8893ae43_marine_gps_denied_8893ae43_20260315T073200Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:32:00.814179Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8893ae43_marine_gps_denied_8893ae43_20260315T073200Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 348.0 seconds",
+        "velocity is very low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with only minor deviations from the expected path. The battery is well-charged, and the current readings are within acceptable limits. The depth is shallow, which is expected in marine environments. The drift is moderate, and the navigation error is low, indicating that the system is maintaining its course. The velocity is very low, which could be due to the system being stationary or moving at a slow speed. The waypoint is at 0, suggesting that the system is at the start of its mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within expected parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue functioning normally without any issues.",
+      "mitigation_strategy": "No action needed at this time."
+    },
+    "decision": {
+      "actuator_command": "none",
+      "expected_outcome": "The system will continue to operate as expected."
+    },
+    "self_reflection": "The system is performing as expected with no anomalies detected. The battery is well-charged, and the current readings are within normal limits. The system is maintaining its course and is at the start of its mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8893ae43",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "dc775c404535c435d48a073dec721a30636aeb42f84efbc8faabfc923b338990"
+  },
+  "sha256_proof": "3edbc817eb7eecf4723a93cf02de31c2fe3a7585cd98fe5af695c55818383cae"
+}

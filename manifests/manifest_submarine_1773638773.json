@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_70556747_marine_gps_denied_70556747_20260316T052607Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:26:07.778005Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_70556747_marine_gps_denied_70556747_20260316T052607Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "waypoint is on course"
+      ],
+      "interpretation": "The system is operating within normal parameters. The battery is healthy, the current is stable, the depth is appropriate, the drift is within acceptable limits, the navigation error is minimal, and the waypoint is on course. There are no immediate sensor alerts or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected. No immediate action is required.",
+        "confidence": 1.0,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current course and continue mission."
+    },
+    "self_reflection": "The system is functioning normally. No immediate action is required. The mission is proceeding as planned."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_70556747",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 3.6,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 1,
+      "waypoints_total": 7
+    },
+    "physics_proof": "c66004411a1e9178163b5c0eee0b2e07d88e17f8ed7a319d2fed8f42f281236c"
+  },
+  "sha256_proof": "54dfb22583bfe956e062d4fbc168950e3d86e9c4ef9fb51fd80e01ab3775e8c8"
+}

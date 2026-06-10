@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_963b7cf7_marine_gps_denied_963b7cf7_20260315T141432Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:14:32.216483Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_963b7cf7_marine_gps_denied_963b7cf7_20260315T141432Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are unusual",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally, but there are some anomalies in the current readings and drift. The shallow depth and low navigation error suggest that the system is in a controlled environment. The slow velocity and slight drift indicate that the system is not actively engaged in a mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are unusual, but the system is not in a critical state. The shallow depth and low error suggest that the system is in a controlled environment. The slight drift and slow velocity indicate that the system is not actively engaged in a mission. The battery level is high, so there is no immediate concern about power.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is in a controlled environment and not actively engaged in a mission. The slight drift and slow velocity suggest that the system is not in a critical state.",
+      "mitigation_strategy": "Continue monitoring the system and ensure that the current readings are not indicative of a larger issue. If the drift or velocity becomes more significant, investigate further."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to monitor the environment and ensure that the current readings are not indicative of a larger issue."
+    },
+    "self_reflection": "The system appears to be functioning normally, but there are some anomalies in the current readings and drift. The shallow depth and low error suggest that the system is in a controlled environment. The slight drift and slow velocity indicate that the system is not actively engaged in a mission. The battery level is high, so there is no immediate concern about power. The system will continue to monitor the environment and ensure that the current readings are not indicative of a larger issue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_963b7cf7",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "b3e088447a4c43da7691589562e96a09cdbf4691db9295ac0a67d4b61eb77a8d"
+  },
+  "sha256_proof": "537830458267d4f2d6f0a7de04a0bcf27c69118f9b0c45b93a4702816dd15e8e"
+}

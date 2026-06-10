@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_5b29290d_marine_gps_denied_5b29290d_20260315T192644Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:26:44.128238Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5b29290d_marine_gps_denied_5b29290d_20260315T192644Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift that could lead to waypoint misalignment. The current readings suggest a potential issue with the magnetic compass or sensor drift."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is concerning and could cause the mission to fail if not addressed. The current readings are inconsistent, which could indicate a sensor issue.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could fail if the drift is not corrected, leading to a waypoint miss.",
+      "mitigation_strategy": "Calibrate the magnetic compass or adjust the sensor readings to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "Calibrate magnetic compass",
+      "expected_outcome": "Correct the drift and allow the mission to continue on course."
+    },
+    "self_reflection": "The system is performing well, but the drift is a significant concern that requires immediate attention to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5b29290d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "23a5eb435f0841a87473638c57539a88c40923e482af4971a1373f4a56c96f14"
+  },
+  "sha256_proof": "b3a3c6870e94dfa66d148cf1633ccbda8b0c1993cc01ffb031d58ad49de502f6"
+}

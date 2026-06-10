@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ef4c0f37_marine_gps_denied_ef4c0f37_20260315T083810Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:38:10.645806Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ef4c0f37_marine_gps_denied_ef4c0f37_20260315T083810Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is minimal",
+        "position is accurate",
+        "time is within expected range",
+        "velocity is minimal",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be on track with no critical issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring and maintain current course."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission as planned."
+    },
+    "self_reflection": "The system is performing within expected parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ef4c0f37",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "32bf964231cb57c62e0346416bfe24e2d5efdb2254b6293bc93acfa12b04e3ad"
+  },
+  "sha256_proof": "9cca6ffffa3d8d8ed97d7e500810b833700babf03a0f45ddbdf851f84c662ba9"
+}

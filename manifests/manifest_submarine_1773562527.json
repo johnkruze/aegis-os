@@ -1,0 +1,57 @@
+{
+  "mission_id": "marine_gps_denied_eac7c564_marine_gps_denied_eac7c564_20260315T081519Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:15:19.957336Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_eac7c564_marine_gps_denied_eac7c564_20260315T081519Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level low",
+        "current readings indicate drift",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings suggest the vehicle is drifting significantly, which could lead to navigation errors and loss of control. The shallow depth and minimal navigation error suggest the vehicle is in a stable position relative to the seabed."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, need to conserve power to avoid shutdown.",
+        "confidence": 0.9,
+        "action_rejected": "None"
+      },
+      {
+        "thought": "Drift is significant, need to correct course to maintain waypoint accuracy.",
+        "confidence": 0.8,
+        "action_rejected": "None"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "System may shut down due to low battery, leading to loss of control and potential collision with the seabed.",
+      "mitigation_strategy": "Reduce power consumption, correct drift to maintain waypoint, and monitor battery level closely."
+    },
+    "decision": {
+      "actuator_command": "reduce_power, correct_drift",
+      "expected_outcome": "Power consumption reduced, drift corrected, and system stability maintained."
+    },
+    "self_reflection": "The system is operating in a critical state with low battery and significant drift. Immediate action is required to prevent system failure and ensure safe operation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_eac7c564",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 8.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "594fc12a0ce8cf30f77d6e0840476a5e63475ec906d0f81492811f969110eff5"
+  },
+  "sha256_proof": "34dc226536eee781f35252665f2671847325538d85360b88d7cd9f2d47c491cf"
+}

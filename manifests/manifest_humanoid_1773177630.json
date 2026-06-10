@@ -1,0 +1,58 @@
+{
+  "mission_id": "DO_MAC_99",
+  "environment": "Urban Disaster Response - Rubble Navigation",
+  "timestamp": "2026-03-10T21:20:20.782604Z",
+  "is_dark_window": true,
+  "telemetry_ref": "DO_MAC_99_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "Severe Zero Moment Point divergence",
+        "Substrate yielding under left foot",
+        "Imminent fall state",
+        "Cloud link severed",
+        "Aegis Dark Window engaged"
+      ],
+      "interpretation": "The robot has detected a significant deviation from its intended path due to unstable ground conditions and a loss of communication with the external system. The robot is in a critical state and is about to fall."
+    },
+    "cognitive_load": 0.9,
+    "internal_deliberation": [
+      {
+        "thought": "Evaluate the stability of the current state and the feasibility of continuing the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Consider the available resources and the potential for recovery.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "Decide on the most appropriate course of action to ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The robot will likely fall and potentially damage itself or the environment.",
+      "mitigation_strategy": "Initiate emergency landing protocol and activate self-preservation mechanisms."
+    },
+    "decision": {
+      "actuator_command": "initiate emergency landing protocol",
+      "expected_outcome": "The robot will attempt to land safely to prevent further damage."
+    },
+    "self_reflection": "The robot has detected an imminent failure and is prioritizing safety over mission completion. The decision to initiate an emergency landing is based on the critical nature of the situation and the potential for catastrophic failure if the robot continues to operate."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "humanoid_1d8a5045_clay",
+    "scenario": "clay_humanoid",
+    "score": {
+      "max_compaction": 0.0,
+      "success": true
+    },
+    "physics_proof": "c1f212f2fa60ce585d96127c90e0ffcde5807318ca6d18e6153dc512ea41d823"
+  },
+  "sha256_proof": "d16238ac850839d9987f0249926bb6526c167aa55a1835959582cf09fe2f45d0"
+}

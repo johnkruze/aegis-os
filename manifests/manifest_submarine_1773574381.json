@@ -1,0 +1,56 @@
+{
+  "mission_id": "marine_gps_denied_39dfa37c_marine_gps_denied_39dfa37c_20260315T113252Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:32:52.855985Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_39dfa37c_marine_gps_denied_39dfa37c_20260315T113252Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "depth and drift within normal parameters",
+        "small navigation error",
+        "waypoint at 0"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery level and unusual current readings. The current readings suggest a potential issue with the propulsion system or the navigation system is compensating for an unknown force."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery level could cause the system to shut down unexpectedly, leading to mission failure.",
+        "confidence": 0.8,
+        "action_rejected": "recharge the battery"
+      },
+      {
+        "thought": "The unusual current readings could indicate a problem with the thrusters or the navigation system is compensating for an unknown force.",
+        "confidence": 0.7,
+        "action_rejected": "check thrusters and navigation system"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down unexpectedly, leading to mission failure.",
+      "mitigation_strategy": "Recharge the battery and check the thrusters and navigation system."
+    },
+    "decision": {
+      "actuator_command": "recharge battery",
+      "expected_outcome": "The battery will be recharged, allowing the system to continue operating."
+    },
+    "self_reflection": "The system is operating within normal parameters, except for a low battery level and unusual current readings. The current readings suggest a potential issue with the propulsion system or the navigation system is compensating for an unknown force. The decision to recharge the battery is based on the potential risk of the system shutting down unexpectedly, leading to mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_39dfa37c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "42ac4a7f5a2749a09b80f64960f4951a727a3d1ebca28bc894918394c56dfa90"
+  },
+  "sha256_proof": "dbb6a851b8a16b6380337771e27d28b7316bbdde33955ed785638fa865b38579"
+}

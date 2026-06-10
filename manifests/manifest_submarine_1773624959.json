@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_38e75048_marine_gps_denied_38e75048_20260316T013553Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:35:53.732264Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_38e75048_marine_gps_denied_38e75048_20260316T013553Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "depth and drift within expected parameters",
+        "small navigation error",
+        "waypoint 1 completed"
+      ],
+      "interpretation": "The system is operating within normal parameters, except for a low battery level and some unusual current readings. The depth and drift are within expected ranges, and the navigation error is minimal. The current waypoint has been completed successfully."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "Battery level is critical, requiring immediate action to prevent shutdown.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "System may shut down unexpectedly if battery is not replenished soon.",
+      "mitigation_strategy": "Initiate battery recharge sequence immediately."
+    },
+    "decision": {
+      "actuator_command": "RECHARGE_BATTERY",
+      "expected_outcome": "Battery level will be restored, allowing the system to continue operation."
+    },
+    "self_reflection": "The system has completed the current waypoint and is operating within normal parameters. However, the low battery level is a critical issue that requires immediate attention to prevent system failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_38e75048",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 1,
+      "waypoints_total": 3
+    },
+    "physics_proof": "13602db99e80106f7479624b8ccd8b359e9e763a50d3721b6034a48a3fb81087"
+  },
+  "sha256_proof": "26461a7d348599ca810e97caab6549260b775d2959f39a60319baa4ce198e221"
+}

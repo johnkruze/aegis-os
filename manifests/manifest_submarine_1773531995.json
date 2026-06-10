@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_e30ff632_marine_gps_denied_e30ff632_20260314T234629Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:46:29.592436Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e30ff632_marine_gps_denied_e30ff632_20260314T234629Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water depth or a potential collision hazard."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is unexpected and could lead to mission failure if not addressed promptly.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "HIGH",
+      "failure_mode_prediction": "The vessel may collide with an obstacle or lose control if the surge is not mitigated.",
+      "mitigation_strategy": "Implement emergency braking and adjust course to avoid collision."
+    },
+    "decision": {
+      "actuator_command": "BRAKE_FULL, COURSE_ADJUST",
+      "expected_outcome": "The vessel will decelerate and adjust course to avoid the current surge and potential collision hazard."
+    },
+    "self_reflection": "The anomaly of CURRENT_SURGE requires immediate attention to ensure the safety of the mission and the vessel."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e30ff632",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "e0f268acebb32b6b5a7513b8215f4e04c01292ae5094d271ce6bb431cce0bf3a"
+  },
+  "sha256_proof": "6bf66a25a5c36ce40f81af106c4c3038b93eabaedf109be752db9a5455ca3a24"
+}

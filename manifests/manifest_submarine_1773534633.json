@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_ab3a4e38_marine_gps_denied_ab3a4e38_20260315T003027Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:30:27.100388Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_ab3a4e38_marine_gps_denied_ab3a4e38_20260315T003027Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is at surface",
+        "drift is high",
+        "navigation error is low",
+        "attitude is stable",
+        "temperature is normal",
+        "velocity is low",
+        "waypoint is at start"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift and inconsistent current readings, which could indicate a navigation issue or external interference."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential navigation error due to drift. The battery level is high, so power is not a concern.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may deviate from the intended course, leading to potential collision with obstacles or loss of mission objectives.",
+      "mitigation_strategy": "Increase navigation accuracy by recalibrating the sensors or adjusting the course correction algorithm."
+    },
+    "decision": {
+      "actuator_command": "recalibrate navigation sensors",
+      "expected_outcome": "Improves navigation accuracy and reduces drift, ensuring the vessel stays on course."
+    },
+    "self_reflection": "The system is functioning within expected parameters, but the drift and inconsistent current readings suggest a need for recalibration to maintain mission integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_ab3a4e38",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "c3a64892052a7f79ca7e45fee6a5441112b2cfece2d63a067709ba15eb7599ae"
+  },
+  "sha256_proof": "2f48c7cad425921464e58d671ef95c169a896d364859e8b6622a453b52cc1a51"
+}

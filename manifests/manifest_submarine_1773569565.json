@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_c543ba9d_marine_gps_denied_c543ba9d_20260315T101238Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:12:38.712467Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c543ba9d_marine_gps_denied_c543ba9d_20260315T101238Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a sudden increase in drift, indicating an unexpected change in the current or a potential navigational error."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a change in the ocean current or a navigational error. We need to verify the current position and adjust the course if necessary.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift out of the designated waypoint or collide with obstacles.",
+      "mitigation_strategy": "Verify the current position using the GPS and adjust the course if necessary. Monitor the drift and adjust the speed and direction as needed."
+    },
+    "decision": {
+      "actuator_command": "Verify GPS position and adjust course if necessary",
+      "expected_outcome": "The vessel will either remain on course or adjust to avoid the current surge."
+    },
+    "self_reflection": "The current surge is an unexpected event that requires immediate attention to ensure the safety and completion of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c543ba9d",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "06b3896da2fc58549c84a6e5f218f4fb6a3c98fa44c370d7af09786e2207c161"
+  },
+  "sha256_proof": "234e43b31dfca47fe1e04a47aa26e2c6190eb947f42686b7c50e1b9f2e0f9023"
+}

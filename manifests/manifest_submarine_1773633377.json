@@ -1,0 +1,48 @@
+{
+  "mission_id": "marine_gps_denied_5496a70c_marine_gps_denied_5496a70c_20260316T035611Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T03:56:11.993465Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5496a70c_marine_gps_denied_5496a70c_20260316T035611Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery_degradation",
+        "low_battery"
+      ],
+      "interpretation": "The battery level is critically low, indicating a significant risk to mission completion. The current draw is high, and the depth and drift suggest the vehicle is operating in challenging conditions."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is at 59.6%, which is dangerously low for continued operation. Immediate action is required to prevent mission failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The mission will likely fail due to insufficient battery power to complete the current waypoint and return to the base.",
+      "mitigation_strategy": "Initiate emergency shutdown and prepare for recovery or rescue operations."
+    },
+    "decision": {
+      "actuator_command": "shutdown",
+      "expected_outcome": "The vehicle will safely shut down and await rescue or recovery."
+    },
+    "self_reflection": "The critical battery degradation has forced an immediate shutdown to prevent mission failure. The team must prioritize safety and prepare for potential rescue operations."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5496a70c",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "aff8c0a97b1cc0d1a4d26d845a7db88b293eab4bc5cc9d6934e884eb05be8c33"
+  },
+  "sha256_proof": "21413b9f0550b1b0f68b334138cb62ec391e780396af5e3e3d44eee38b6b0074"
+}

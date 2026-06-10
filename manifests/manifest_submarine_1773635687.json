@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_87a56adf_marine_gps_denied_87a56adf_20260316T043441Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:34:41.996579Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_87a56adf_marine_gps_denied_87a56adf_20260316T043441Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with no immediate threats or anomalies detected."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with no critical issues detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "Maintain current course and continue mission."
+    },
+    "self_reflection": "The system is performing within expected parameters. No action is required at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_87a56adf",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.7,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "f17e666eb16e0b3e4cb32a6e6a5143cfeaf103d49b38f180840dc3683625b225"
+  },
+  "sha256_proof": "7b45fe7148f32ed32ef61e018b53303e5c43a0bef66e4c8151d16e901bdb2090"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_b61f84a7_marine_gps_denied_b61f84a7_20260315T075230Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:52:30.527984Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_b61f84a7_marine_gps_denied_b61f84a7_20260315T075230Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 199.38, -69.37, -0.5",
+        "time is 538.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation error or a problem with the GPS system. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is shallow, which could be a normal condition for the mission. The navigation error is low, which suggests that the system is still able to maintain a relatively accurate position. The velocity is slow, which could indicate that the system is moving at a reduced speed. The waypoint is at 0, which suggests that the system is at the start of the mission."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a problem with the GPS system or the navigation algorithm. The system is still able to maintain a relatively accurate position, but the drift is high, which could indicate that the system is not able to compensate for the drift. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is shallow, which could be a normal condition for the mission. The velocity is slow, which could indicate that the system is moving at a reduced speed. The waypoint is at 0, which suggests that the system is at the start of the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could continue to drift and lose its position, which could result in the mission being incomplete. The system could also continue to move at a reduced speed, which could result in the mission being delayed.",
+      "mitigation_strategy": "The system should be re-initialized to reset the navigation algorithm and the GPS system. The system should also be monitored to ensure that the drift is being corrected and that the position is being maintained. The system should also be monitored to ensure that the velocity is being maintained at a normal level."
+    },
+    "decision": {
+      "actuator_command": "re-initialize navigation and GPS system",
+      "expected_outcome": "The system should be able to reset the navigation algorithm and the GPS system, which should correct the drift and maintain the position. The system should also be able to maintain a normal velocity."
+    },
+    "self_reflection": "The system is experiencing high drift and abnormal current readings, which could indicate a problem with the GPS system or the navigation algorithm. The system is still able to maintain a relatively accurate position, but the drift is high, which could indicate that the system is not able to compensate for the drift. The battery level is high, which suggests that the system has sufficient power to continue operation. The depth is shallow, which could be a normal condition for the mission. The velocity is slow, which could indicate that the system is moving at a reduced speed. The waypoint is at 0, which suggests that the system is at the start of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_b61f84a7",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.1,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "34f9aba25a5d10a47848083a57f86fb408d8dde311e8f5e27f9c093de060a088"
+  },
+  "sha256_proof": "1a271a4424b89476ffee048682de2657fde6adf9f74f7b3fe3e4658c673eae3b"
+}

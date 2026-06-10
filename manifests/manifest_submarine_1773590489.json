@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_d3b3678d_marine_gps_denied_d3b3678d_20260315T160117Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:01:17.347639Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_d3b3678d_marine_gps_denied_d3b3678d_20260315T160117Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and normal temperature indicate the system is not under significant stress. The current readings being inconsistent could indicate a potential issue with the current sensors or the vehicle's orientation."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to a malfunction in the navigation system or the vehicle's orientation sensors. The inconsistent current readings suggest a possible issue with the current sensors or the vehicle's orientation. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and normal temperature indicate the system is not under significant stress. The current readings being inconsistent could indicate a potential issue with the current sensors or the vehicle's orientation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could cause the vehicle to deviate from its intended path, potentially leading to a collision with the ocean floor or other obstacles. The inconsistent current readings could indicate a sensor failure or a change in the vehicle's orientation, which could also lead to navigation errors.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation and orientation sensors. If the issue persists, perform a more thorough inspection of the current sensors and the vehicle's orientation system."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the navigation and orientation sensors, which should help to resolve the high drift and inconsistent current readings."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and normal temperature indicate the system is not under significant stress. The current readings being inconsistent could indicate a potential issue with the current sensors or the vehicle's orientation. The decision to reset and recalibrate the navigation and orientation sensors is based on the potential risks and the expected outcome of the action."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_d3b3678d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "1497c15b2cfbe48ef46ca32c9849864961c8680b6c956fc6a1ab569360a272c0"
+  },
+  "sha256_proof": "233b4415790bddcb8665dc19728a4660c340e202f4d056c0300042abc90069b6"
+}

@@ -1,0 +1,59 @@
+{
+  "mission_id": "marine_gps_denied_e32e9832_marine_gps_denied_e32e9832_20260315T213356Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T21:33:56.052788Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e32e9832_marine_gps_denied_e32e9832_20260315T213356Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position and time data are accurate",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with the exception of inconsistent current readings. The battery level is high, indicating sufficient power. Depth and drift are within safe and acceptable limits. Navigation error is low, and position and time data are accurate. Velocity is within expected range, and the waypoint is at 0. However, the current readings suggest potential issues that may need further investigation."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings could be due to a temporary glitch or a more serious issue with the current sensors.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The battery level is high, which is good, but the current readings should be investigated to ensure they are not indicative of a larger problem.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The inconsistent current readings could lead to a failure in the current system if not addressed promptly.",
+      "mitigation_strategy": "Perform a thorough check of the current sensors and ensure they are functioning correctly. If the issue persists, consider a system reset or backup system activation."
+    },
+    "decision": {
+      "actuator_command": "perform sensor diagnostics",
+      "expected_outcome": "The current sensors will be checked for any issues, and the system will be monitored for any further anomalies."
+    },
+    "self_reflection": "The system appears to be functioning normally, but the inconsistent current readings require further investigation to ensure the safety and reliability of the system."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e32e9832",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a6c94ef135acfca9a523b5fbe8fdc83f1662ac6f35aabeadd4ef35e407ddc74e"
+  },
+  "sha256_proof": "db59d3dcc0f64e8f3abfa0164dde7010a60d6e5d898881eb3ac135224414c7b3"
+}

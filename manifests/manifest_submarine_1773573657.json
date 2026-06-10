@@ -1,0 +1,64 @@
+{
+  "mission_id": "marine_gps_denied_be298a01_marine_gps_denied_be298a01_20260315T112044Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:20:44.664109Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_be298a01_marine_gps_denied_be298a01_20260315T112044Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The shallow depth and low navigation error suggest the vehicle is close to the surface or a known waypoint. The slow velocity and slightly off position indicate the vehicle may be struggling to maintain its intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest the vehicle may be in a strong current or near a strong current source. This could be affecting the vehicle's drift and position.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The slight navigation error could be due to the vehicle's inability to compensate for the drift. This could lead to a deviation from the intended course.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The vehicle's slow velocity and slightly off position suggest it may be struggling to maintain its intended course. This could be due to the current affecting its speed and direction.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may deviate from its intended course due to the current affecting its speed and direction. It may also struggle to maintain its position if the current is too strong.",
+      "mitigation_strategy": "Monitor the current readings closely and adjust the vehicle's course as necessary. If the current is too strong, consider using thrusters to compensate for the drift."
+    },
+    "decision": {
+      "actuator_command": "Adjust course to compensate for current drift",
+      "expected_outcome": "The vehicle should be able to maintain its intended course despite the current affecting its speed and direction."
+    },
+    "self_reflection": "The vehicle appears to be functioning within normal parameters, except for the significant drift and inconsistent current readings. The slight navigation error could be due to the vehicle's inability to compensate for the drift. The slow velocity and slightly off position suggest it may be struggling to maintain its intended course. The current readings suggest the vehicle may be in a strong current or near a strong current source. This could be affecting the vehicle's drift and position. The slight navigation error could be due to the vehicle's inability to compensate for the drift. The slow velocity and slightly off position suggest it may be struggling to maintain its intended course. The current readings suggest the vehicle may be in a strong current or near a strong current source. This could be affecting the vehicle's drift and position."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_be298a01",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "25e23e09da09fab2626cabb4caa8ddc2cf22b1c1fe49ccab3b49187f38cb46d0"
+  },
+  "sha256_proof": "98a79f2028e4e290806388ae70f05fbf53ff8de9b2f2177b9c7a602bcaf6ddaa"
+}

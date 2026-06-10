@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_0252bfec_marine_gps_denied_0252bfec_20260315T123329Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T12:33:29.039833Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0252bfec_marine_gps_denied_0252bfec_20260315T123329Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position and time data are accurate",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with the exception of the current readings, which may indicate an issue with the propellers or thrusters."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential problem with the propellers or thrusters, which could lead to a loss of control if not addressed promptly.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The anomaly could result in a loss of control if the issue with the current readings is not resolved.",
+      "mitigation_strategy": "Perform a system check to verify the propellers and thrusters are functioning correctly. If the issue persists, initiate a manual override to maintain control."
+    },
+    "decision": {
+      "actuator_command": "perform system check",
+      "expected_outcome": "The system check will confirm if the issue is with the propellers or thrusters and allow for appropriate action to be taken."
+    },
+    "self_reflection": "The anomaly detected requires immediate attention to ensure the safety of the mission. A system check is the most prudent action to take at this time."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0252bfec",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "70a003b79c2cb555de007fde58c3e3f9e15c16838eb20f640fda8f1e56e29df1"
+  },
+  "sha256_proof": "6bb2870ef9121a8896f0fea7488d371ece383bda64f345be4d5efbeb2fefbb41"
+}

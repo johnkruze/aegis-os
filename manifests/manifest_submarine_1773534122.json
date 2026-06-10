@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_933154f1_marine_gps_denied_933154f1_20260315T002154Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:21:54.428896Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_933154f1_marine_gps_denied_933154f1_20260315T002154Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest the vehicle is moving in a predictable manner. The shallow depth and moderate drift indicate the vehicle is likely in a controlled environment. The low navigation error and moderate velocity suggest the vehicle is on course. The waypoint being at the start implies the mission has not yet begun."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The vehicle is operating within expected parameters, with only minor deviations. The mission has not yet begun, so there is no immediate risk of failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle is likely to continue operating as intended until the mission begins.",
+      "mitigation_strategy": "Continue monitoring the system and prepare for the start of the mission."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to operate within expected parameters until the mission begins."
+    },
+    "self_reflection": "The system is currently stable and within expected parameters. The mission has not yet begun, so there is no immediate risk of failure. The vehicle is prepared to begin the mission once the start signal is received."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_933154f1",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "265bad9f02fe94863dfa13984363fe940cf17de76ca23ab848ca1fccee16576f"
+  },
+  "sha256_proof": "9c3366aa5f9376bcfa2e24bf68de0d9d9cb7f83dce300da513d4133a6ef9129a"
+}

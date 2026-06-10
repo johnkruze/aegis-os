@@ -1,0 +1,50 @@
+{
+  "mission_id": "marine_gps_denied_0f88355e_marine_gps_denied_0f88355e_20260315T041834Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:18:34.973982Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0f88355e_marine_gps_denied_0f88355e_20260315T041834Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "high drift",
+        "slight navigation error"
+      ],
+      "interpretation": "The system is experiencing low battery, inconsistent current readings, significant drift, and minor navigation errors. These anomalies suggest potential issues with the GPS system or the overall stability of the marine vessel."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The high drift and navigation error indicate that the vessel is not accurately following its course, which could be dangerous in marine environments. The unusual current readings suggest potential issues with the vessel's propulsion system.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the battery is not charged soon, the system could fail, leading to potential loss of control of the vessel. The high drift and navigation error could result in collision with other vessels or structures.",
+      "mitigation_strategy": "Charge the battery immediately and perform a system check to identify and fix the issues with the current readings and navigation error."
+    },
+    "decision": {
+      "actuator_command": "charge_battery",
+      "expected_outcome": "The battery will be charged, and the system will be more stable."
+    },
+    "self_reflection": "The anomaly indicates a critical need for immediate action to prevent potential failure of the system and ensure the safety of the vessel. The high cognitive load is due to the urgency of the situation and the need to quickly assess and address multiple issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0f88355e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "7212d81e6894f34436341c0657d7f13618594b7a8fa78f24870e83f77af87e20"
+  },
+  "sha256_proof": "bd5cf8c6afa0a9b9d7019f777c467f68cd1dcfe9885d6835b5accc686792f627"
+}

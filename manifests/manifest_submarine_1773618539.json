@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_7a196647_marine_gps_denied_7a196647_20260315T234851Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:48:51.707297Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7a196647_marine_gps_denied_7a196647_20260315T234851Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak on the surface of the vessel. The battery level is high, and the current readings suggest the vessel is experiencing some drift. The depth is relatively shallow, and the navigation error is minimal."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The leak detection is a critical issue that requires immediate attention. The vessel is in a potentially dangerous situation.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking. The current readings suggest the vessel is not in a stable position.",
+      "mitigation_strategy": "Activate emergency protocols, including shutting down non-essential systems, and prepare for a possible evacuation. Notify the bridge and initiate a distress call if necessary."
+    },
+    "decision": {
+      "actuator_command": "SHUTDOWN_NON_ESSENTIAL_SYSTEMS, INITIATE_EVACUATION, SEND_DISTRESS_CALL",
+      "expected_outcome": "The vessel will attempt to stabilize and prepare for potential evacuation. A distress call will be sent to nearby vessels or authorities."
+    },
+    "self_reflection": "The detection of a leak on the surface is a critical anomaly that requires immediate action to ensure the safety of the vessel and its crew. The current readings suggest the vessel is not in a stable position, and activation of emergency protocols is necessary to mitigate the risk of sinking."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7a196647",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.6,
+      "mission_success": true,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "7671d716bb99ec4c3c379e1272a4406af79b1f7f653be9ea402f7df370e78cb9"
+  },
+  "sha256_proof": "7bdc46d8a2c581b4824792d9132769076dd079802c1319641db8d65becc312ea"
+}

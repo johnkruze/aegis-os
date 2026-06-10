@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_e1ec2d32_marine_gps_denied_e1ec2d32_20260315T090817Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:08:17.325812Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e1ec2d32_marine_gps_denied_e1ec2d32_20260315T090817Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "negative pitch and roll values",
+        "high temperature",
+        "slow velocity",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including a low battery, unusual current readings, slight depth error, high drift, and negative pitch and roll values. The temperature is high, and the velocity is slow. The system is currently at waypoint 0."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could cause the system to fail. The unusual current readings and high drift suggest potential mechanical issues. The high temperature could be affecting the system's performance. The slow velocity and negative pitch and roll values indicate the system is not functioning as intended.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail due to the low battery, leading to a loss of control and potentially causing damage to the equipment.",
+      "mitigation_strategy": "Immediately recharge the battery and perform a system check to identify and address the mechanical issues. Monitor the temperature and adjust the system's performance if necessary."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery is recharged, and the system is checked for mechanical issues."
+    },
+    "self_reflection": "The system is experiencing multiple anomalies that could lead to a failure. Immediate action is required to address the low battery and perform a system check to identify and address the mechanical issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e1ec2d32",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 7.4,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "61a83dc083ac48796e613e30e17b9bd1fe1ede2792c823aea7722e77b380a891"
+  },
+  "sha256_proof": "e8bb779b1f4b372e5a273091bc6bfd5118aedbca3f530cf5db0e2c59e7b506f8"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_e47e5f52_marine_gps_denied_e47e5f52_20260315T055031Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:50:31.956335Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e47e5f52_marine_gps_denied_e47e5f52_20260315T055031Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in the current, which is causing the vessel to drift excessively. This is a critical anomaly that could lead to mission failure if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing the vessel to drift beyond the safe operational limits. Immediate action is required to stabilize the vessel and prevent further drift.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the current surge is not mitigated, the vessel may drift out of the designated area, leading to mission failure.",
+      "mitigation_strategy": "Implement emergency steering to counteract the current surge and stabilize the vessel."
+    },
+    "decision": {
+      "actuator_command": "steer left, increase speed",
+      "expected_outcome": "Stabilize the vessel and prevent further drift."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention. The vessel's stability is paramount to mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e47e5f52",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "6a7600fe38b78665d4b5130285e3c9d57f9e8a2f7f867bb5687e60aaff08c3df"
+  },
+  "sha256_proof": "e0868c27cfdaafb0f2df79365ba71134ed719d10a16752cde228d2e4cf2d7292"
+}

@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_e61fad55_marine_gps_denied_e61fad55_20260315T130811Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:08:11.133408Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e61fad55_marine_gps_denied_e61fad55_20260315T130811Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a significant surge in current, which is causing the vessel to drift excessively. This is a critical anomaly that could lead to mission failure if not addressed promptly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge is causing a drift of 60.65 meters, which is beyond the acceptable range. This could result in the vessel being out of position by the time the next waypoint is reached.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "If the current surge is not mitigated, the vessel may be out of position by the time the next waypoint is reached, leading to mission failure.",
+      "mitigation_strategy": "Implement a course correction maneuver to reduce the drift and bring the vessel back on course."
+    },
+    "decision": {
+      "actuator_command": "execute_course_correction",
+      "expected_outcome": "The vessel will be brought back on course, allowing the mission to continue."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention. The decision to execute a course correction maneuver is based on the potential for mission failure if the anomaly is not addressed promptly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e61fad55",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 2.1,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "aee82c4cabd98a22fc919ec46a891e4e52081ffff047e4fd45127b11187846df"
+  },
+  "sha256_proof": "96d8803b795b7efa7b1b3dd9bc6ef82c9947bba7267032a0ae04ef98f47a99f7"
+}

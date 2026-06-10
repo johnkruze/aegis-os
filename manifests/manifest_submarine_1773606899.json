@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_603bf91e_marine_gps_denied_603bf91e_20260315T203451Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:34:51.584252Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_603bf91e_marine_gps_denied_603bf91e_20260315T203451Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 309.0",
+        "velocity is slightly positive in the z-direction",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery is at a high level, and the current readings are within expected ranges. The depth is shallow, which could be a concern depending on the mission requirements. The velocity is slightly positive in the z-direction, which is normal for forward movement. The waypoint is at 0, indicating the start of the mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The mission appears to be proceeding as expected with minor issues. The drift and navigation error are within acceptable limits. The battery level is high, so there is no immediate concern about power.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The mission is expected to continue as planned with minor adjustments to the course to compensate for the drift.",
+      "mitigation_strategy": "Monitor the drift and adjust the course as necessary. Continue monitoring the battery level to ensure it remains high."
+    },
+    "decision": {
+      "actuator_command": "continue mission with minor adjustments to course",
+      "expected_outcome": "The mission will continue as planned with adjustments to the course to compensate for the drift."
+    },
+    "self_reflection": "The system is performing within expected parameters, and the minor issues are manageable. The mission is expected to continue successfully with some adjustments."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_603bf91e",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "10bb9d45ff117c39449943cd5ded2fa3b96bd2907d490a4c09f58210910d2273"
+  },
+  "sha256_proof": "a7a81c9bf37500aa545b3f814a5d4b77e8bc0c48943eb1e908e6264380650704"
+}

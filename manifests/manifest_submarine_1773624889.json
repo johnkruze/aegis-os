@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_de5d1e2c_marine_gps_denied_de5d1e2c_20260316T013434Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:34:34.773399Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_de5d1e2c_marine_gps_denied_de5d1e2c_20260316T013434Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 362.0",
+        "velocity is low",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low velocity suggest the vehicle is in a calm and stable environment. The slight position error and low navigation error indicate the system is maintaining its course. The battery level is high, which is positive. The current readings are concerning and may indicate an issue with the propulsion system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift could be due to a malfunction in the propulsion system or an external force affecting the vehicle. The inconsistent current readings suggest a potential issue with the navigation system or the environment. The shallow depth and low velocity indicate the vehicle is in a calm and stable environment, which is positive. The slight position error and low navigation error indicate the system is maintaining its course. The battery level is high, which is positive. The current readings are concerning and may indicate an issue with the propulsion system or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could cause the vehicle to deviate from its intended course, leading to a potential collision with obstacles or the loss of control. The inconsistent current readings could indicate a failure in the propulsion system or the navigation system, leading to a loss of control or a deviation from the intended course.",
+      "mitigation_strategy": "Perform a system check to verify the integrity of the propulsion system and the navigation system. If the issue persists, initiate a manual override to control the vehicle's movement and ensure it remains on course. If the issue cannot be resolved, initiate an emergency stop and report the anomaly to the mission control team."
+    },
+    "decision": {
+      "actuator_command": "perform system check",
+      "expected_outcome": "The system check will verify the integrity of the propulsion system and the navigation system. If the issue persists, initiate a manual override to control the vehicle's movement and ensure it remains on course. If the issue cannot be resolved, initiate an emergency stop and report the anomaly to the mission control team."
+    },
+    "self_reflection": "The system appears to be functioning within normal parameters, except for the high drift and inconsistent current readings. The shallow depth and low velocity suggest the vehicle is in a calm and stable environment. The slight position error and low navigation error indicate the system is maintaining its course. The battery level is high, which is positive. The current readings are concerning and may indicate an issue with the propulsion system or the environment. The high drift could cause the vehicle to deviate from its intended course, leading to a potential collision with obstacles or the loss of control. The inconsistent current readings could indicate a failure in the propulsion system or the navigation system, leading to a loss of control or a deviation from the intended course. The system check will verify the integrity of the propulsion system and the navigation system. If the issue persists, initiate a manual override to control the vehicle's movement and ensure it remains on course. If the issue cannot be resolved, initiate an emergency stop and report the anomaly to the mission control team."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_de5d1e2c",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "51d29e8577b327e75b1292cc3d5d98ab08eaa62ec25e8a38679ccc805ad7d619"
+  },
+  "sha256_proof": "0854355de86371583dadfe75a315407fc383658e33563ce0c382d0fbc0ba009a"
+}

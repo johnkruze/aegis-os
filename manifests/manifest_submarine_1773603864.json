@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_506d698a_marine_gps_denied_506d698a_20260315T194415Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T19:44:15.783777Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_506d698a_marine_gps_denied_506d698a_20260315T194415Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 304.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and a shallow depth. The battery is at a high level, and the navigation error is low, indicating that the system is performing well despite the high drift. The current readings are slightly negative, which could be due to the orientation of the sensors or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing well, but the high drift could be affecting the accuracy of the position and navigation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the system to lose track of the waypoint or navigate to an incorrect location.",
+      "mitigation_strategy": "Monitor the drift and adjust the course if necessary. Ensure that the system has sufficient battery to maintain operation for the duration of the mission."
+    },
+    "decision": {
+      "actuator_command": "continue mission with caution",
+      "expected_outcome": "The system will continue to operate within normal parameters, but the pilot should monitor the drift and adjust the course if necessary."
+    },
+    "self_reflection": "The system is performing well, but the high drift could be affecting the accuracy of the position and navigation. The pilot should monitor the drift and adjust the course if necessary to ensure the mission is completed successfully."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_506d698a",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.0,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "a3dc93c86a16c18b5fe4ecf274fe1f631393ce780245150342338037c3cab06f"
+  },
+  "sha256_proof": "40cc3c12ab98a8673618189a8bb9c1a227ea1b5c12d7cedcd6ddf19dc1ac75e4"
+}

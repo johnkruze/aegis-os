@@ -1,0 +1,60 @@
+{
+  "mission_id": "marine_gps_denied_a7252e99_marine_gps_denied_a7252e99_20260315T064325Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T06:43:25.500198Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_a7252e99_marine_gps_denied_a7252e99_20260315T064325Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 332.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning well with high battery and low navigation error, but there are inconsistencies in the current readings and a high drift, which could indicate a problem with the navigation system or the environment."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the navigation system or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The drift is high, which could lead to a significant deviation from the intended course.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The high drift could cause the mission to fail if not addressed promptly.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the navigation system."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system should stabilize and the mission should continue with reduced drift."
+    },
+    "self_reflection": "The system is performing well, but the high drift is a concern. A system reset and recalibration are necessary to ensure the mission's success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_a7252e99",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "51033af54d485d235e7f6c65784fb88756dcf71393e3d37b9e2cd55bf52b71ee"
+  },
+  "sha256_proof": "a5a38f802a550c0c090693c0493b7788a02021799c51cad798a480bfc439c8e9"
+}

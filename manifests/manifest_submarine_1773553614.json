@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_64834585_marine_gps_denied_64834585_20260315T054643Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T05:46:43.584713Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_64834585_marine_gps_denied_64834585_20260315T054643Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is off by 48.59 degrees in the p-axis",
+        "time is 443.0",
+        "velocity is slightly negative in the v-axis",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is experiencing an anomaly in the current readings, which could indicate a problem with the magnetic sensors or the environment. The shallow depth and high drift suggest that the vehicle may be in a challenging navigation environment. The position offset and slightly negative velocity indicate that the vehicle is not on course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal and could be due to magnetic interference or sensor failure. The shallow depth and high drift suggest a challenging navigation environment. The position offset and slightly negative velocity indicate that the vehicle is not on course. The battery level is high, so power is not an immediate concern.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vehicle may continue to drift and potentially collide with obstacles in the shallow water environment. The magnetic interference could cause further navigation errors.",
+      "mitigation_strategy": "Perform a magnetic field scan to identify any sources of interference. Adjust the vehicle's heading to compensate for the drift. Increase the depth to avoid shallow water hazards."
+    },
+    "decision": {
+      "actuator_command": "MAGNETIC_FIELD_SCAN, ADJUST_HEADING, INCREASE_DEPTH",
+      "expected_outcome": "The magnetic field scan will help identify any sources of interference. Adjusting the heading will help compensate for the drift. Increasing the depth will help avoid shallow water hazards."
+    },
+    "self_reflection": "The anomaly in the current readings suggests a potential issue with the magnetic sensors or the environment. The shallow depth and high drift indicate a challenging navigation environment. The position offset and slightly negative velocity indicate that the vehicle is not on course. The battery level is high, so power is not an immediate concern. The decision to perform a magnetic field scan, adjust the heading, and increase the depth is based on the internal deliberation and mission assurance check."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_64834585",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "76dfcc47549766567bab6acaae64e4ac4cfd8efc58eff100dd745b7fe050b499"
+  },
+  "sha256_proof": "0e0e79b17757622bfa2d5b6f6e197646d011df22be358bff45470d84ce1af02c"
+}

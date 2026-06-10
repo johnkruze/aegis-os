@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_2271cbc9_marine_gps_denied_2271cbc9_20260315T015459Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:54:59.296983Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2271cbc9_marine_gps_denied_2271cbc9_20260315T015459Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "IMU_DRIFT_SPIKE"
+      ],
+      "interpretation": "The IMU (Inertial Measurement Unit) has detected a significant drift, indicating a potential failure in the navigation system. This could lead to a loss of control over the vehicle."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is severe and could result in mission failure if not addressed immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may lose control and drift away from the intended path, potentially leading to a collision with the ocean floor or other hazards.",
+      "mitigation_strategy": "Initiate emergency braking and activate the emergency steering system to regain control of the vehicle."
+    },
+    "decision": {
+      "actuator_command": "brake_full, steer_center",
+      "expected_outcome": "The vehicle should slow down and stabilize its position to prevent further drift."
+    },
+    "self_reflection": "The anomaly highlights the critical nature of the navigation system and the importance of immediate action to prevent mission failure."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2271cbc9",
+    "scenario": "gps_denied_autonomous_boat_imu_drift_spike",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.14,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "8baf2dd0fa9f1ed31ed48afb5a122375a84333fa4c30cfd8b09a30554ac2ac5b"
+  },
+  "sha256_proof": "9f86d95e7c9527441ecdc9ef587adc89b0f4dc5c77bc5e7d5d0830418c286b0a"
+}

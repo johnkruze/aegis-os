@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_cc7c8d97_marine_gps_denied_cc7c8d97_20260316T054328Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:43:28.579606Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_cc7c8d97_marine_gps_denied_cc7c8d97_20260316T054328Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint 0",
+        "time is 364.0 seconds",
+        "velocity is slow"
+      ],
+      "interpretation": "The system is experiencing high drift and abnormal current readings, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, which is within expected parameters for the mission. The navigation error is low, suggesting the system is still on course. The position is near the starting waypoint, and the velocity is slow, which is consistent with the mission requirements."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and abnormal current readings suggest a potential navigation issue. The system is still on course and the battery is sufficient, so immediate action is not necessary. However, I should monitor the system closely to ensure the issue does not escalate.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may continue to drift and experience abnormal current readings, which could lead to a navigation error if not addressed.",
+      "mitigation_strategy": "Continue monitoring the system and adjust the course if necessary. If the issue persists, initiate a manual override to correct the drift."
+    },
+    "decision": {
+      "actuator_command": "monitor",
+      "expected_outcome": "The system will continue to monitor the navigation parameters and adjust the course if necessary."
+    },
+    "self_reflection": "The system is experiencing some anomalies, but the battery level is high and the navigation error is low. The system is still on course and the velocity is slow, which is consistent with the mission requirements. I will continue to monitor the system and adjust the course if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_cc7c8d97",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "9ae9f6b2d441afcdcbcd26ae14d02cdc19f0c8ffbae8485b87dfdd415688e1f9"
+  },
+  "sha256_proof": "8975ae9b8d776cff31a2e896e2e898b8976d3b6866798c88e9288ece09331b04"
+}

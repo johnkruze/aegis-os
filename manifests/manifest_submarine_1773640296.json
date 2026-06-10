@@ -1,0 +1,51 @@
+{
+  "mission_id": "marine_gps_denied_0d16639d_marine_gps_denied_0d16639d_20260316T055127Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:51:27.739248Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0d16639d_marine_gps_denied_0d16639d_20260316T055127Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. The current readings are inconsistent, suggesting a possible fault in the current sensors or system. There is a slight drift and small navigation error, which could be due to minor system inaccuracies or environmental factors. The waypoint has not been reached, which is a critical anomaly."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The inconsistent current readings and slight drift suggest a potential system fault that needs to be diagnosed and corrected. The waypoint not being reached is a critical failure that must be resolved immediately.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "System failure due to low battery, potential system fault, and failure to reach waypoint.",
+      "mitigation_strategy": "Immediately recharge the battery, perform a system diagnostics to identify and fix the current sensor issue, and adjust the navigation system to reach the waypoint."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery, perform_system_diagnostics, adjust_navigation",
+      "expected_outcome": "System battery recharged, system fault identified and fixed, navigation adjusted to reach waypoint."
+    },
+    "self_reflection": "The anomaly highlights the importance of regular system checks and maintenance to prevent critical failures. The decision to recharge the battery and perform diagnostics is crucial to ensure the system's reliability and safety."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0d16639d",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.14,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "4eedb2a3285fc6219ec79a8ad91d2b2a42c07166757c0a083f6db57b5f4f9482"
+  },
+  "sha256_proof": "21b6e2766ed5b7eb47d53d84502468e7e6065d7a1966f8a705413572b42288ac"
+}

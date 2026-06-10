@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_7165d1a1_marine_gps_denied_7165d1a1_20260315T230541Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:05:41.619473Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_7165d1a1_marine_gps_denied_7165d1a1_20260315T230541Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are negative",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "pitch and roll angles are extreme",
+        "temperature is high",
+        "velocity is low",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is experiencing high drift and extreme pitch and roll angles, which could indicate a navigation issue. The battery level is high, so power is not a concern. The current readings are negative, which could be due to the direction of the current or a malfunction. The depth is shallow, which is expected in the ocean environment. The temperature is high, which could be due to the environment or a malfunction. The velocity is low, which could indicate that the system is not moving or is moving slowly. The navigation error is low, which suggests that the system is performing well in terms of navigation. The waypoint is at the start, which suggests that the mission has not yet begun."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and extreme pitch and roll angles suggest a navigation issue. The current readings are negative, which could be due to the direction of the current or a malfunction. The depth is shallow, which is expected in the ocean environment. The temperature is high, which could be due to the environment or a malfunction. The velocity is low, which could indicate that the system is not moving or is moving slowly. The navigation error is low, which suggests that the system is performing well in terms of navigation. The waypoint is at the start, which suggests that the mission has not yet begun.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may be unable to maintain control due to the high drift and extreme pitch and roll angles. The current readings are negative, which could indicate a malfunction. The temperature is high, which could be due to the environment or a malfunction. The velocity is low, which could indicate that the system is not moving or is moving slowly.",
+      "mitigation_strategy": "Perform a system reset and reinitialize the navigation system. Check the current readings and adjust the system as necessary. Monitor the temperature and adjust the system as necessary. Increase the velocity to ensure that the system is moving. Monitor the navigation error and adjust the system as necessary."
+    },
+    "decision": {
+      "actuator_command": "reset_system",
+      "expected_outcome": "The system will be reset and reinitialized. The navigation system will be adjusted to ensure that the system is able to maintain control. The current readings will be checked and adjusted as necessary. The temperature will be monitored and adjusted as necessary. The velocity will be increased to ensure that the system is moving. The navigation error will be monitored and adjusted as necessary."
+    },
+    "self_reflection": "The system is experiencing high drift and extreme pitch and roll angles, which could indicate a navigation issue. The current readings are negative, which could be due to the direction of the current or a malfunction. The depth is shallow, which is expected in the ocean environment. The temperature is high, which could be due to the environment or a malfunction. The velocity is low, which could indicate that the system is not moving or is moving slowly. The navigation error is low, which suggests that the system is performing well in terms of navigation. The waypoint is at the start, which suggests that the mission has not yet begun. The system will be reset and reinitialized to ensure that the system is able to maintain control. The current readings will be checked and adjusted as necessary. The temperature will be monitored and adjusted as necessary. The velocity will be increased to ensure that the system is moving. The navigation error will be monitored and adjusted as necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_7165d1a1",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 4.9,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "b6fbc5d0c1920d68be4d74505c3a57c17249fe86b0fe77b70f2731a96df34cbc"
+  },
+  "sha256_proof": "5dc5b29b7c4a8ee336e3a4422ea20414326c44f88e4a01819b3ab2708497dfd5"
+}

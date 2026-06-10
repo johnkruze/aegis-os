@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_0639a14f_marine_gps_denied_0639a14f_20260315T011454Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T01:14:54.095979Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0639a14f_marine_gps_denied_0639a14f_20260315T011454Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "camera position is off",
+        "temperature is high",
+        "velocity is moderate",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning mostly within normal parameters, but there are some inconsistencies and potential issues that could impact mission success."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a possible issue with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The high drift could lead to a significant deviation from the intended course.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The shallow depth and high temperature might indicate a potential hazard or environmental challenge.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The mission could be delayed or aborted due to the high drift and potential environmental hazards.",
+      "mitigation_strategy": "Conduct a thorough environmental scan and adjust the course to minimize drift. If necessary, request a manual override to ensure safety."
+    },
+    "decision": {
+      "actuator_command": "request_course_adjustment",
+      "expected_outcome": "The course is adjusted to minimize drift and ensure safety."
+    },
+    "self_reflection": "The system is performing well, but there are potential risks that require immediate attention to ensure mission success."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0639a14f",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "e5000666f1df01faebe3a6f89511e627f1f2a95cebed4a3b20a030fdc30c9117"
+  },
+  "sha256_proof": "4a3496b63d5dd2a5b0d3becc6747684b819200d6ac0d533e27844904fb80ea63"
+}

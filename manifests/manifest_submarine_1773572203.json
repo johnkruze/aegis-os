@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5db1318d_marine_gps_denied_5db1318d_20260315T105635Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T10:56:35.809439Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5db1318d_marine_gps_denied_5db1318d_20260315T105635Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is within safe limits",
+        "drift is within acceptable range",
+        "navigation error is low",
+        "position is accurate",
+        "temperature is normal",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with the exception of inconsistent current readings. The battery level is high, indicating sufficient power. Depth and drift are within safe and acceptable limits. Navigation error is low, and the position is accurate. The temperature is normal, and the velocity is within expected range. The waypoint is at 0, suggesting the mission has not started."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The inconsistent current readings could be due to a temporary sensor issue or environmental factors. However, the system is otherwise stable and within operational parameters.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The inconsistent current readings could cause a minor deviation from the planned path, but the system is otherwise stable.",
+      "mitigation_strategy": "Monitor the current readings closely and perform a system reset if the issue persists."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, with the system monitoring the current readings for any further issues."
+    },
+    "self_reflection": "The system is stable and within operational parameters. The inconsistent current readings are a minor concern that can be monitored and addressed if necessary."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5db1318d",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "c33e1780d2dd0892dc660482fad41fb3bc92f6fb76df5573f1859323876d55b3"
+  },
+  "sha256_proof": "8a8753c8f0629c07bf30faf370bb6d8388907f6e5868f4665974eb835c2e8429"
+}

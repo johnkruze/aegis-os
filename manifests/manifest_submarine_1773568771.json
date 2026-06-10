@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_fc2e1634_marine_gps_denied_fc2e1634_20260315T095917Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:59:17.413830Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_fc2e1634_marine_gps_denied_fc2e1634_20260315T095917Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate movement",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 453.0",
+        "velocity is minimal",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning normally with a slight deviation from the intended waypoint. The battery is healthy, and the current readings suggest the vehicle is moving. The depth is within expected limits, and the drift is manageable. The navigation error is low, indicating the system is maintaining its course. The time is at 453.0, and the velocity is minimal, suggesting the vehicle is stationary or moving very slowly. The waypoint is at 0, which could indicate the start of the mission or a reset point."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system appears to be operating within normal parameters. The slight deviation from the waypoint could be due to minor navigation errors or drift. The battery is healthy, and the current readings suggest the vehicle is moving. The depth is within expected limits, and the drift is manageable. The navigation error is low, indicating the system is maintaining its course. The time is at 453.0, and the velocity is minimal, suggesting the vehicle is stationary or moving very slowly. The waypoint is at 0, which could indicate the start of the mission or a reset point.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is operating within normal parameters. The slight deviation from the waypoint could be due to minor navigation errors or drift. The battery is healthy, and the current readings suggest the vehicle is moving. The depth is within expected limits, and the drift is manageable. The navigation error is low, indicating the system is maintaining its course. The time is at 453.0, and the velocity is minimal, suggesting the vehicle is stationary or moving very slowly. The waypoint is at 0, which could indicate the start of the mission or a reset point.",
+      "mitigation_strategy": "Continue monitoring the system. If the deviation from the waypoint persists, investigate the cause and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to operate within normal parameters. If the deviation from the waypoint persists, investigate the cause and adjust the course if necessary."
+    },
+    "self_reflection": "The system appears to be operating within normal parameters. The slight deviation from the waypoint could be due to minor navigation errors or drift. The battery is healthy, and the current readings suggest the vehicle is moving. The depth is within expected limits, and the drift is manageable. The navigation error is low, indicating the system is maintaining its course. The time is at 453.0, and the velocity is minimal, suggesting the vehicle is stationary or moving very slowly. The waypoint is at 0, which could indicate the start of the mission or a reset point."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_fc2e1634",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "64bbe7d3aaf6ed5d2fe4698edb7606702ed4adfc6068e1086492f8629d9029f2"
+  },
+  "sha256_proof": "18cb0448ffa10d2655908ad749e5376e5ee30fc1f9f0218b138300d802062c35"
+}

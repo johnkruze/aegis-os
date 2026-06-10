@@ -1,0 +1,62 @@
+{
+  "mission_id": "marine_gps_denied_585eb654_marine_gps_denied_585eb654_20260315T033117Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:31:17.192882Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_585eb654_marine_gps_denied_585eb654_20260315T033117Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight depth error",
+        "high drift",
+        "minor navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is operating with a slight battery drain, indicating that the power is sufficient for the current mission. The current readings are slightly off, which could be due to minor disturbances or a need for recalibration. The slight depth error suggests that the system may be slightly off course, but the drift is manageable. The navigation error is minor, and the waypoint has not been reached yet."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is sufficient for the current mission, so there is no immediate risk of power failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The current readings are slightly off, which could indicate a need for recalibration or minor disturbances. The drift is manageable, so the system is still on course.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The slight depth error and minor navigation error suggest that the system is still performing within acceptable limits. The waypoint has not been reached yet, which is expected.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is still performing within acceptable limits, and the mission is expected to continue as planned.",
+      "mitigation_strategy": "Continue monitoring the system and recalibrate if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The mission will continue as planned, and the system will be monitored for any further issues."
+    },
+    "self_reflection": "The system is performing within acceptable limits, and the mission is expected to continue as planned. The slight battery drain and minor current readings suggest that the system is still functioning correctly."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_585eb654",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.17,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "8493d15863d12af52257ebba0184ad26f8021e2753f3e0402aa6af2173839b04"
+  },
+  "sha256_proof": "1b65a447e027b9cc2fc2e90d37032d5816a2d4655dc10a80f76bc61f947daf8c"
+}

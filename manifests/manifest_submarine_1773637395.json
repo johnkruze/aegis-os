@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_27350fa3_marine_gps_denied_27350fa3_20260316T050306Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:03:06.211280Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_27350fa3_marine_gps_denied_27350fa3_20260316T050306Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "negative current values",
+        "small depth",
+        "high drift",
+        "low navigation error",
+        "waypoint 0"
+      ],
+      "interpretation": "The system is operating with a low battery, indicating potential power issues. Negative current values suggest a problem with the power supply or consumption. The small depth and high drift indicate the vehicle may be in an unexpected location. The low navigation error suggests the system is performing well in terms of navigation."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery is a critical issue that could lead to system failure if not addressed soon. The negative current values and high drift suggest a potential problem with the power supply or the vehicle's position. The small depth and low navigation error indicate the system is performing well in terms of navigation. The waypoint is at 0, which could be a starting point or a malfunction. The system is in a potentially dangerous situation due to the high drift and the low battery.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may fail due to the low battery, leading to a loss of control and potentially causing damage to the vehicle or the environment. The high drift could lead to the vehicle being in an unsafe location.",
+      "mitigation_strategy": "Immediately recharge the battery and check the power supply. If the battery cannot be recharged, initiate an emergency protocol to return to a safe location. Monitor the vehicle's position and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery is recharged, and the system is ready to continue operation."
+    },
+    "self_reflection": "The system is in a critical state due to a low battery and negative current values. Immediate action is required to prevent system failure and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_27350fa3",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "73791c694b0b4f49809c551645d4dcb295eef1c16f3586a01da48f73c8b058d0"
+  },
+  "sha256_proof": "eafa1a0f7ba2b5b5b4ebf1b3962a0cc48e1e52f3e697d9895c6765e9e7ef8bc3"
+}

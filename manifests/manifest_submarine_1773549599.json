@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_c6053e06_marine_gps_denied_c6053e06_20260315T043945Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T04:39:45.532221Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_c6053e06_marine_gps_denied_c6053e06_20260315T043945Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is zero",
+        "waypoint is at zero"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight deviation in position. The battery is healthy, and the current readings are within expected parameters. The depth is shallow, which is typical for marine operations. The drift is moderate, which may indicate minor adjustments are needed. The navigation error is low, suggesting the system is maintaining its course accurately. The velocity is zero, indicating the vehicle is stationary or at rest. The waypoint is at zero, which could indicate the start of a new mission or a reset."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters, with only minor adjustments needed for drift. The battery is healthy, and the current readings are within expected parameters. The depth is shallow, which is typical for marine operations. The navigation error is low, suggesting the system is maintaining its course accurately. The velocity is zero, indicating the vehicle is stationary or at rest. The waypoint is at zero, which could indicate the start of a new mission or a reset.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally with minor adjustments for drift. The battery is healthy, and the current readings are within expected parameters. The depth is shallow, which is typical for marine operations. The navigation error is low, suggesting the system is maintaining its course accurately. The velocity is zero, indicating the vehicle is stationary or at rest. The waypoint is at zero, which could indicate the start of a new mission or a reset.",
+      "mitigation_strategy": "Monitor the system for any changes in drift or navigation error. If drift becomes significant, adjust the course accordingly. If the navigation error increases, recalibrate the system. If the velocity changes, investigate the cause and adjust the system as necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission with minor adjustments for drift",
+      "expected_outcome": "The system will continue to operate normally with minor adjustments for drift. The battery will remain healthy, and the current readings will remain within expected parameters. The depth will remain shallow, which is typical for marine operations. The navigation error will remain low, suggesting the system is maintaining its course accurately. The velocity will remain zero, indicating the vehicle is stationary or at rest. The waypoint will remain at zero, which could indicate the start of a new mission or a reset."
+    },
+    "self_reflection": "The system is operating within normal parameters, with only minor adjustments needed for drift. The battery is healthy, and the current readings are within expected parameters. The depth is shallow, which is typical for marine operations. The navigation error is low, suggesting the system is maintaining its course accurately. The velocity is zero, indicating the vehicle is stationary or at rest. The waypoint is at zero, which could indicate the start of a new mission or a reset."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_c6053e06",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "97e1ad1ca81aa37bba0ca238278c5757704dd3ba9f36a577c2f07d5ee0ec4af0"
+  },
+  "sha256_proof": "4d146d0cb7918bc231f5d14b3f74eae1016b83efd391bbc8938b00706d70ab74"
+}

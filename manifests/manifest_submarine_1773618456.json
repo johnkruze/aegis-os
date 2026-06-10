@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_f42539bc_marine_gps_denied_f42539bc_20260315T234729Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:47:29.826362Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_f42539bc_marine_gps_denied_f42539bc_20260315T234729Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "THRUSTER_FAILURE"
+      ],
+      "interpretation": "The thruster failure indicates a critical malfunction that could lead to the mission being aborted or the vehicle drifting uncontrollably. The battery level is still high, but the drift and navigation error suggest that the vehicle is not in a stable position."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The thruster failure is a critical issue that must be addressed immediately to prevent further damage or loss of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may drift away from the intended path and potentially collide with obstacles or other vessels.",
+      "mitigation_strategy": "Initiate emergency thruster override to stabilize the vehicle and attempt to return to the last known waypoint."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "Stabilize the vehicle and attempt to return to the last known waypoint."
+    },
+    "self_reflection": "The thruster failure is a significant anomaly that requires immediate attention. The vehicle's stability is compromised, and the mission is at risk of being compromised. Initiating emergency thruster override is the best course of action to mitigate the risk and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_f42539bc",
+    "scenario": "gps_denied_submarine_thruster_failure",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "c51e49ad47c98b62db3366361c13f70ad2bf7712c994825716f864d512dae200"
+  },
+  "sha256_proof": "c2434897046778b9499c3e3615273efc1653182c65addd73f4e600e0875432da"
+}

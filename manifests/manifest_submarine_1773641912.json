@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_031b9b59_marine_gps_denied_031b9b59_20260316T061821Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:18:21.693624Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_031b9b59_marine_gps_denied_031b9b59_20260316T061821Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 402.0",
+        "velocity is slightly negative",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight deviation in position and velocity. The battery is healthy, and the current readings suggest the vehicle is moving in a predictable manner. The depth is shallow, which could be a concern if the vehicle is not designed for deep water operations. The drift is moderate, which is within acceptable limits. The navigation error is low, indicating the system is maintaining its course accurately. The time and waypoint suggest the vehicle is on a predefined path, which is expected for this mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are slightly inconsistent, but within expected parameters. The vehicle is on course and the battery is healthy. The depth is shallow, which could be a concern. The drift is moderate and the navigation error is low. The vehicle is on a predefined path, which is expected for this mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The vehicle is expected to continue on its predefined path without significant issues. The shallow depth could be a concern if the vehicle is not designed for deep water operations, but it is within expected parameters.",
+      "mitigation_strategy": "Monitor the vehicle's performance closely, especially the depth and current readings. If the depth becomes a concern, consider adjusting the vehicle's course or depth settings."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The vehicle will continue on its predefined path without significant issues. The shallow depth could be a concern, but it is within expected parameters."
+    },
+    "self_reflection": "The vehicle is performing within expected parameters, with a slight deviation in position and velocity. The battery is healthy, and the current readings suggest the vehicle is moving in a predictable manner. The depth is shallow, which could be a concern if the vehicle is not designed for deep water operations. The drift is moderate and the navigation error is low. The vehicle is on a predefined path, which is expected for this mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_031b9b59",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "f2ec4aed0d113a8e652daa1233d96f1eb8f4197202de477b4cde39c46d56478f"
+  },
+  "sha256_proof": "4df9e791fc866d35316307bc414aef723e8cae7b3c1d276aff977db22912ffdb"
+}

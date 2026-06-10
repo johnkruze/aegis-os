@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_5af225ad_marine_gps_denied_5af225ad_20260316T042304Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:23:04.279727Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5af225ad_marine_gps_denied_5af225ad_20260316T042304Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is 135.1 meters",
+        "drift is 30.93 meters",
+        "navigation error is low",
+        "position is at waypoint 2",
+        "time is 412.0 seconds",
+        "velocity is slightly negative"
+      ],
+      "interpretation": "The system is operating within normal parameters, with a slight negative current and velocity, indicating a minor drift towards the west. The navigation error is low, and the system is at the correct waypoint. The battery level is high, suggesting sufficient power for continued operation."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing as expected with no critical anomalies detected.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure predicted based on current telemetry.",
+      "mitigation_strategy": "Continue monitoring system performance."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current course and continue mission."
+    },
+    "self_reflection": "The system is functioning normally with no critical issues detected. The minor drift and negative current readings are within expected parameters and do not require immediate intervention."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5af225ad",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.7,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 2,
+      "waypoints_total": 5
+    },
+    "physics_proof": "ad6edef25972d3e4d7c43dcf25eb8bd091ce6360d788affade6ffece71290efe"
+  },
+  "sha256_proof": "6dce958ae999dae9b92605c2e84c6aea3be001a9e985feb21471d0fbefd66d90"
+}

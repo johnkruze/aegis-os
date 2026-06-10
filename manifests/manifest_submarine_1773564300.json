@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_31ea3492_marine_gps_denied_31ea3492_20260315T084451Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T08:44:51.242910Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_31ea3492_marine_gps_denied_31ea3492_20260315T084451Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are normal",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is normal",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight deviation from the intended waypoint. The battery is healthy, and the current readings suggest stable conditions. The depth is within safe limits, and the drift is manageable. The navigation error is low, indicating the system is on a generally correct course. The temperature is normal, and the velocity is slow, which is expected in marine environments. The waypoint is at the start, suggesting the mission has not yet begun."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters. The slight deviation from the waypoint is expected at the start of a mission. The battery is healthy, and there are no immediate signs of failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue operating normally until the waypoint is reached and the mission begins.",
+      "mitigation_strategy": "Continue monitoring the system and prepare for the start of the mission."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate normally until the mission begins."
+    },
+    "self_reflection": "The system is performing as expected, and there are no immediate issues to address. The slight deviation from the waypoint is expected at the start of the mission. The battery is healthy, and the system is ready to begin the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_31ea3492",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.11,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "0f5bde96129067bc4d6d4c9b23e490d2b08724b2227cd6a2a2e784c9ba08fe30"
+  },
+  "sha256_proof": "2b03ce7d7c595b174baa9e8c05d071ed19a47b42f9b5865e5a6ab6050fbf4bfd"
+}

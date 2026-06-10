@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_879cb1ba_marine_gps_denied_879cb1ba_20260316T060134Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T06:01:34.259260Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_879cb1ba_marine_gps_denied_879cb1ba_20260316T060134Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak, which is a critical anomaly in an oceanic environment. The leak is surfacing, which suggests it may be a significant issue that requires immediate attention."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is surfacing, indicating a potential safety hazard. Immediate action is required to prevent further damage or loss of the vessel.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to a potential sinking or loss of control.",
+      "mitigation_strategy": "Activate emergency leak containment protocols, initiate a distress signal, and prepare for a possible evacuation."
+    },
+    "decision": {
+      "actuator_command": "ACTIVATE_EMERGENCY_LEAK_CONTAINMENT; INITIATE_DISTRESS_SIGNAL; PREPARE_FOR_EVASION",
+      "expected_outcome": "Contain the leak, alert nearby vessels, and prepare for potential evacuation if necessary."
+    },
+    "self_reflection": "The detection of a leaking vessel in an oceanic environment is a critical situation that requires immediate and decisive action to ensure the safety of the vessel and its crew."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_879cb1ba",
+    "scenario": "gps_denied_autonomous_boat_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": true,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "339772ff42176a5616c1f2a11c757c5ce9c0b0c4840b5435f69f27d077985346"
+  },
+  "sha256_proof": "1fbbe5fa1780b987d804f92bb8bdd8426508073b13e17dbdcd7ec0d4559d1063"
+}

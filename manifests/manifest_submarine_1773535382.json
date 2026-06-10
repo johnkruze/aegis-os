@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_2f89ffd2_marine_gps_denied_2f89ffd2_20260315T004254Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:42:54.596714Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_2f89ffd2_marine_gps_denied_2f89ffd2_20260315T004254Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "LEAK_DETECTED"
+      ],
+      "interpretation": "The system has detected a leak, which is a critical anomaly in an underwater environment. The leak is surfacing, which could indicate a breach in the hull or a failure in the containment system."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The leak is surfacing, which could lead to rapid loss of pressure and potentially endanger the crew. Immediate action is required to prevent further damage and ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The leak could cause the vessel to lose buoyancy, leading to rapid descent and potential sinking. The crew may also be exposed to hazardous conditions.",
+      "mitigation_strategy": "Activate emergency containment protocols, deploy emergency ballast tanks, and initiate a distress signal to nearby vessels or support teams."
+    },
+    "decision": {
+      "actuator_command": "ACTIVATE_EMERGENCY_CONTAINMENT; DEPLOY_EMERGENCY_BALLAST_TANKS; INITIATE_DISTRESS_SIGNAL",
+      "expected_outcome": "The emergency protocols will be activated to contain the leak and prevent further damage. The distress signal will be sent to nearby vessels for assistance."
+    },
+    "self_reflection": "The detection of a leak in an underwater environment is a critical situation that requires immediate and decisive action to ensure the safety of the mission and the crew. The activation of emergency protocols and the initiation of a distress signal are necessary steps to mitigate the risk and prevent further damage."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_2f89ffd2",
+    "scenario": "gps_denied_submarine_leak_detected",
+    "score": {
+      "energy_consumed_pct": 0.3,
+      "mission_success": true,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "88d3cf0a23719fcf8cfe992057f3124ef0bd99378a8f097e6a8cb0245177b972"
+  },
+  "sha256_proof": "856221cf48f7ce8c8da767275a16e55cf6190e901b118fa5fd5f67fc4d44af78"
+}

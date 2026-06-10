@@ -1,0 +1,52 @@
+{
+  "mission_id": "marine_gps_denied_00c105cb_marine_gps_denied_00c105cb_20260315T230613Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T23:06:13.627257Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_00c105cb_marine_gps_denied_00c105cb_20260315T230613Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing low battery, unstable current readings, slight depth error, high drift, and low navigation error. The waypoint has not been reached, indicating a potential mission failure."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly. The unstable current readings suggest a potential issue with the power supply. The high drift and slight depth error indicate that the vehicle is not following the intended path accurately. The waypoint has not been reached, which is a critical failure.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system may shut down unexpectedly, leading to a loss of control and potential damage to the equipment. The vehicle may drift off course and fail to reach the intended waypoint, resulting in mission failure.",
+      "mitigation_strategy": "Immediately initiate a manual override to land the vehicle safely. If possible, switch to a backup power source. If the vehicle is too far from the intended path, attempt to correct the drift using thrusters. If the vehicle is too close to the intended path, attempt to reach the waypoint using thrusters."
+    },
+    "decision": {
+      "actuator_command": "manual override, land safely, switch to backup power if available, correct drift if possible, reach waypoint if possible",
+      "expected_outcome": "The vehicle will attempt to land safely, switch to a backup power source if available, correct drift if possible, and reach the waypoint if possible. If the vehicle is too far from the intended path, it may not be able to reach the waypoint."
+    },
+    "self_reflection": "The system is experiencing multiple critical issues that could lead to mission failure. Immediate action is required to ensure the safety of the vehicle and the mission. The internal agent has assessed the risks and developed a mitigation strategy to increase the chances of a successful outcome."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_00c105cb",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 2.0,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 5
+    },
+    "physics_proof": "db1858ae1b39c5244938826115eb17ea87c12ff072cceaa18a09509fd7c45c96"
+  },
+  "sha256_proof": "7a54c41749ee622dda993e38da27666b2a32bfb6e31a52bc406c682953a861f8"
+}

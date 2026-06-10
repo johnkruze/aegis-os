@@ -1,0 +1,50 @@
+{
+  "mission_id": "marine_gps_denied_975aa861_marine_gps_denied_975aa861_20260316T044509Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:45:09.999604Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_975aa861_marine_gps_denied_975aa861_20260316T044509Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unusual current readings",
+        "slight drift",
+        "small navigation error"
+      ],
+      "interpretation": "The system is operating with a slightly low battery, indicating potential power issues. The current readings are inconsistent, with two negative values and one positive value, which could indicate a problem with the current sensors or the system's power distribution. There is a slight drift in the system's position, and a small navigation error suggests that the system may be struggling to maintain its intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The low battery could cause the system to shut down unexpectedly, leading to mission failure. The inconsistent current readings suggest a potential hardware issue that needs to be addressed. The slight drift and navigation error indicate that the system's position is not being accurately maintained, which could lead to mission failure if not corrected.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system could shut down unexpectedly, leading to mission failure. The inconsistent current readings could indicate a hardware failure that could affect the system's performance. The slight drift and navigation error could lead to the system not reaching its intended waypoint, resulting in mission failure.",
+      "mitigation_strategy": "Monitor the battery level and current readings closely. If the battery level drops below a certain threshold, initiate a safe shutdown sequence. If the current readings remain inconsistent, investigate the cause and take corrective action. If the drift and navigation error continue, adjust the system's course to compensate for the drift."
+    },
+    "decision": {
+      "actuator_command": "Monitor battery and current readings. If battery level drops below 0.95, initiate safe shutdown sequence. If current readings remain inconsistent, investigate and correct the issue. If drift and navigation error continue, adjust course to compensate.",
+      "expected_outcome": "The system will continue to operate until the battery level drops below 0.95, at which point it will initiate a safe shutdown sequence. If the current readings remain inconsistent, the issue will be investigated and corrected. If the drift and navigation error continue, the system will adjust its course to compensate for the drift."
+    },
+    "self_reflection": "The system is operating with a slightly low battery and inconsistent current readings, which could indicate a potential hardware issue. The slight drift and navigation error suggest that the system may be struggling to maintain its intended course. The system will continue to operate until the battery level drops below 0.95, at which point it will initiate a safe shutdown sequence. If the current readings remain inconsistent, the issue will be investigated and corrected. If the drift and navigation error continue, the system will adjust its course to compensate for the drift."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_975aa861",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.6,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "f1c3bef156988e73906c740fa2ed061f293bb266790a011c740a33eff43b984d"
+  },
+  "sha256_proof": "4d9828154dd2d833697cfaf749785348877018d58dbc9fb0c785251ab4ede1ab"
+}

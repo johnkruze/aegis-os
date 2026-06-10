@@ -1,0 +1,18 @@
+{
+  "compute_time_ms": 1,
+  "domain": "Orbital",
+  "final_state": {
+    "v_x": 264.9999999998417,
+    "v_y": 0.0,
+    "v_z": -39860414.19027674,
+    "x": 8400.124999996853,
+    "y": 0.0,
+    "z": -2391624748.5096197
+  },
+  "integration_frequency": "1000Hz",
+  "recovery_time_s": 60.0,
+  "sovereignty_seal": "46f9e3e81efaa40cbdde9ae216f0358601bd1f80bc09a40bffa8a7aec5350eb7",
+  "status": "OUROBOROS_RECOVERY_COMPLETE",
+  "mission_id": "ouroboros_orbital_mission_theta_pilot_strike_orbital_01_20260325T214821Z",
+  "anomaly_desc": "Total sensor blackout encountered in orbital theater. Engaging dead-reckoning protocols."
+}

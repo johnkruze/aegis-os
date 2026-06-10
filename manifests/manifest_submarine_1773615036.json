@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_51a6f557_marine_gps_denied_51a6f557_20260315T225028Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T22:50:28.034997Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_51a6f557_marine_gps_denied_51a6f557_20260315T225028Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 622.0",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with a slight drift and minor navigation error. The battery is healthy, and the current readings suggest the system is moving through the water. The depth is shallow, which could be a concern if the system is not designed for deep water operations. The velocity is slow, which is expected for a marine GPS system. The waypoint is at 0, indicating the system is at the start of its mission."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is within operational parameters, with only minor issues. The drift and navigation error are manageable.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is expected to continue functioning normally, with the drift and navigation error gradually decreasing as the system progresses through its mission.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "continue mission",
+      "expected_outcome": "The system will continue to operate as intended, with the drift and navigation error gradually decreasing."
+    },
+    "self_reflection": "The system is performing as expected, with only minor issues that are within the system's operational parameters. The drift and navigation error are manageable, and the system is expected to continue functioning normally."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_51a6f557",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 3.2,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "39a20727658406d998ad22e2308ed4f44a90f5b727eecbbe7339a2c016739bea"
+  },
+  "sha256_proof": "58302b77cd32c78002630ad902b4b0022a9b696c854dced5ecfe5325e8bd2670"
+}

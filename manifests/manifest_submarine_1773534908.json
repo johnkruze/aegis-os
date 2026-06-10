@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_6dd07257_marine_gps_denied_6dd07257_20260315T003500Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:35:00.817387Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_6dd07257_marine_gps_denied_6dd07257_20260315T003500Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is within normal range",
+        "navigation error is minimal",
+        "position is accurate",
+        "time is synchronized",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with minor deviations in current readings. The battery is at a healthy level, and the position is stable. The navigation error is low, and the system is synchronized with time. The velocity is within expected parameters, and the waypoint is at 0, indicating the start of the mission."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No significant issues detected. The system is stable and within expected parameters.",
+      "mitigation_strategy": "Continue monitoring the system for any changes in performance."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "The system will continue to operate as expected."
+    },
+    "self_reflection": "The system is performing as expected with no critical anomalies detected. The battery level is high, and the position is stable. The navigation error is minimal, and the system is synchronized with time. The velocity is within expected parameters, and the waypoint is at 0, indicating the start of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_6dd07257",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.9,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "a2d108cb9fd84149625916d2a6ca59e4f5f1999a9e96672eb383a4b711c92710"
+  },
+  "sha256_proof": "161dacbc6e6f76e706d82b18512151d74cfdccab2b148bf056c090f8b6803844"
+}

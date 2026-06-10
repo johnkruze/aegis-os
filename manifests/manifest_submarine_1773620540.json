@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_aefe3708_marine_gps_denied_aefe3708_20260316T002213Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:22:13.374903Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_aefe3708_marine_gps_denied_aefe3708_20260316T002213Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate movement",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position and time data are available",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight drift and moderate velocity. The battery level is high, indicating sufficient power. The navigation error is low, suggesting accurate positioning. The current readings indicate movement, and the depth is shallow, which is expected in marine environments. The drift is significant, which may impact the accuracy of the position over time."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters, but the drift could impact waypoint accuracy over time.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the system to lose its position over time, potentially leading to mission failure if not corrected.",
+      "mitigation_strategy": "Implement a drift correction algorithm to maintain accurate position over time."
+    },
+    "decision": {
+      "actuator_command": "apply drift correction algorithm",
+      "expected_outcome": "The system's position will be corrected, maintaining mission accuracy."
+    },
+    "self_reflection": "The system is currently operating within expected parameters, but the drift could impact mission accuracy over time. Implementing a drift correction algorithm will mitigate this risk."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_aefe3708",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "9e0e5698517afac29ca70b130677e30b04b4bff272ebde92f181d26550d58ab3"
+  },
+  "sha256_proof": "d63da069c46200b3e234249372d76e6d01a623ff9a1e696bb5b0e3979ab158b9"
+}

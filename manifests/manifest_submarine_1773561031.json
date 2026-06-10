@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_0e1fdf88_marine_gps_denied_0e1fdf88_20260315T075025Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:50:25.512886Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_0e1fdf88_marine_gps_denied_0e1fdf88_20260315T075025Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an obstacle in the path."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could cause the vessel to drift off course or collide with an obstacle. Immediate action is required to ensure the safety of the mission.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel could drift off course or collide with an obstacle, potentially leading to mission failure.",
+      "mitigation_strategy": "Implement emergency steering to counteract the surge and adjust the course to the nearest safe waypoint."
+    },
+    "decision": {
+      "actuator_command": "steer left, increase speed",
+      "expected_outcome": "The vessel will be steered to counteract the surge and adjust its course to the nearest safe waypoint."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety of the mission. The decision to steer left and increase speed is based on the need to counteract the surge and adjust the course to the nearest safe waypoint."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_0e1fdf88",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 1.0,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "5b4c6262df91e33681d0522627f5010ab66e841f80bb942143ac6c88684e023f"
+  },
+  "sha256_proof": "0c6ca9731f286257b183f10021bb8aa270115d47efc0a763e2b16a734d28415f"
+}

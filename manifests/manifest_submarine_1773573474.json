@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_957532d1_marine_gps_denied_957532d1_20260315T111746Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T11:17:46.313239Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_957532d1_marine_gps_denied_957532d1_20260315T111746Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The system has detected a partial success in the CURRENT_SURGE anomaly, indicating that the vessel is experiencing unexpected movement or drift. The current is slightly negative in the first component, which could be due to a sudden change in the water current or a malfunction in the thrusters. The depth is stable at 28.0 meters, and the drift is 54.18 meters, suggesting that the vessel is moving away from its intended course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The anomaly is partially successful, which means the vessel is still moving, albeit not as expected. The current is slightly negative, which could be a temporary issue or a result of a malfunction. The depth is stable, which is positive. The drift is significant, which is concerning.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The vessel may continue to drift away from its intended course, potentially leading to a loss of control or collision with other vessels or structures.",
+      "mitigation_strategy": "Increase the frequency of sensor checks and perform a manual override of the thrusters to correct the drift. Monitor the current and depth to ensure stability."
+    },
+    "decision": {
+      "actuator_command": "override_thrusters",
+      "expected_outcome": "The thrusters will be manually overridden to correct the drift and stabilize the vessel."
+    },
+    "self_reflection": "The anomaly is partially successful, but the drift is concerning. The vessel must be stabilized to prevent further issues. Manual intervention is necessary to correct the drift and ensure the safety of the mission."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_957532d1",
+    "scenario": "gps_denied_autonomous_boat_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 3,
+      "waypoints_total": 5
+    },
+    "physics_proof": "aff9d90147f9273628327e64008f279ace38126eb093b02cd6337d0e7a30f2b0"
+  },
+  "sha256_proof": "362fbde1510b0ed71111f840aee3438710c152f2edcf1178bbf738cd2a030e22"
+}

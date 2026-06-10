@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_772e9034_marine_gps_denied_772e9034_20260316T013854Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T01:38:54.730225Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_772e9034_marine_gps_denied_772e9034_20260316T013854Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly negative",
+        "depth is slightly above expected",
+        "drift is within normal range",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is slightly positive",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with only minor deviations from expected values. The battery is healthy, and the current readings suggest a stable environment. The slight drift and position error are within acceptable limits. The velocity is positive, indicating movement in the expected direction. The waypoint is at 0, suggesting the mission has not yet begun."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is stable and within expected parameters. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "No immediate failure modes predicted. The system is stable and within expected parameters.",
+      "mitigation_strategy": "Continue monitoring the system and maintain current course."
+    },
+    "decision": {
+      "actuator_command": "continue",
+      "expected_outcome": "Maintain current course and continue monitoring the system."
+    },
+    "self_reflection": "The system is stable and within expected parameters. No immediate action is required. The mission appears to be on track."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_772e9034",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 2.2,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "b55decf3f95659a1ad4166eebcf93255d924d503948b4afb5844800adbea045a"
+  },
+  "sha256_proof": "05372c78a4859b53a64a92c136ab05021f18dc7b15e27b0f1f16c0ec313c54d0"
+}

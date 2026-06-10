@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_8fdc0cc5_marine_gps_denied_8fdc0cc5_20260316T050441Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T05:04:41.697438Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_8fdc0cc5_marine_gps_denied_8fdc0cc5_20260316T050441Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is within expected range",
+        "drift is within acceptable limits",
+        "navigation error is minimal",
+        "position and time data are accurate",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with minor deviations in current readings. The battery is at a high level, indicating sufficient power. The depth and drift are within expected parameters, and the navigation error is minimal. The position and time data are accurate, and the velocity is within expected range. The waypoint is at 0, suggesting the mission has not started yet."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is operating within normal parameters. The minor deviations in current readings could be due to environmental factors. The mission has not started yet, so there is no immediate action required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is stable and within normal operating parameters. The minor deviations in current readings are expected and do not indicate a critical failure.",
+      "mitigation_strategy": "Continue monitoring the system and wait for the mission to start."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to operate normally until the mission starts."
+    },
+    "self_reflection": "The system is stable and within normal operating parameters. The minor deviations in current readings are expected and do not indicate a critical failure. The mission has not started yet, so there is no immediate action required."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_8fdc0cc5",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.01,
+      "waypoints_reached": 0,
+      "waypoints_total": 7
+    },
+    "physics_proof": "c047fbdfbf27a77ae191afb6d67d8a1f063e10da5a27804818042a3d678b77a3"
+  },
+  "sha256_proof": "58686f428ef474459ff47a8aaba77427c8e7b9e61cd358119bb5c4c21fdae4e3"
+}

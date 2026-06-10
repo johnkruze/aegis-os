@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_4a490e48_marine_gps_denied_4a490e48_20260314T230555Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-14T23:05:55.730627Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_4a490e48_marine_gps_denied_4a490e48_20260314T230555Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_OUT_OF_RANGE",
+        "DEPTH_OUT_OF_RANGE",
+        "DRIFT_OUT_OF_RANGE",
+        "NAV_ERROR_OUT_OF_RANGE",
+        "P_OUT_OF_RANGE",
+        "T_OUT_OF_RANGE",
+        "V_OUT_OF_RANGE",
+        "WAYPOINT_OUT_OF_RANGE"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including battery degradation, out-of-range current readings, depth, drift, navigation error, P, T, and V values, and an out-of-range waypoint. The battery level is critically low, which is the primary cause of the mission being incomplete."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which is the primary cause of the mission being incomplete. Immediate action is required to prevent further degradation and ensure the safety of the system.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system will likely shut down completely if the battery is not replaced soon, leading to mission failure.",
+      "mitigation_strategy": "Replace the battery immediately and perform a system reset to ensure the mission can continue."
+    },
+    "decision": {
+      "actuator_command": "REPLACE_BATTERY",
+      "expected_outcome": "The battery is replaced, and the system is reset to continue the mission."
+    },
+    "self_reflection": "The system's battery is critically low, which is the primary cause of the mission being incomplete. Immediate action is required to prevent further degradation and ensure the safety of the system."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_4a490e48",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 47.8,
+      "mission_success": false,
+      "nav_error_m": 0.02,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "7d00f24ffec5d855900fcbb8478fb8a7116b4a90f152b17108ea8e93c6552f61"
+  },
+  "sha256_proof": "76daedf8f78495b225cc8b8cb57b6d2f9e319175c1afe7cc69ae0c4aaba2b108"
+}

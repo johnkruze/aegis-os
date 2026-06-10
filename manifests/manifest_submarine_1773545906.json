@@ -1,0 +1,53 @@
+{
+  "mission_id": "marine_gps_denied_582850ff_marine_gps_denied_582850ff_20260315T033819Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T03:38:19.542585Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_582850ff_marine_gps_denied_582850ff_20260315T033819Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is near waypoint",
+        "velocity is low"
+      ],
+      "interpretation": "The system is experiencing high drift and inconsistent current readings, which could indicate a navigation issue. The battery level is high, so power is not a concern. The depth is shallow, and the navigation error is low, suggesting the system is close to the intended waypoint. The velocity is low, which is expected near a waypoint."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The high drift and inconsistent current readings suggest a navigation issue. The system is close to the waypoint, so the drift could be due to local currents or inaccuracies in the navigation system.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may fail to reach the waypoint due to the high drift and inconsistent current readings, leading to mission failure.",
+      "mitigation_strategy": "Adjust the navigation parameters to account for local currents and recalibrate the system if necessary."
+    },
+    "decision": {
+      "actuator_command": "adjust navigation parameters",
+      "expected_outcome": "The system should be able to compensate for the drift and reach the waypoint successfully."
+    },
+    "self_reflection": "The system is experiencing unexpected behavior due to high drift and inconsistent current readings. The navigation system needs to be recalibrated to ensure accurate positioning."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_582850ff",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.1,
+      "mission_success": false,
+      "nav_error_m": 0.12,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "6d5ec81afaf84cb043921677b7ec85475b052a41387fc8f1f4f60483199cd4f0"
+  },
+  "sha256_proof": "92dd9dfc454139a413278dd873b12a9936defea0a59f8a32552a2dd0634521a9"
+}

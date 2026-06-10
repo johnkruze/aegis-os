@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_5412899f_marine_gps_denied_5412899f_20260316T000222Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T00:02:22.918745Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5412899f_marine_gps_denied_5412899f_20260316T000222Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within safe limits",
+        "drift is moderate",
+        "navigation error is low",
+        "position is accurate",
+        "temperature is normal",
+        "velocity is within expected range",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system is functioning normally with high battery, moderate drift, and low error. However, the current readings are abnormal, which could indicate a problem with the current sensors or the environment."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal, which could indicate a problem with the current sensors or the environment.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The abnormal current readings could cause the system to drift or lose accuracy over time.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the current sensors."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the current sensors, potentially resolving the issue."
+    },
+    "self_reflection": "The system is currently operating within normal parameters, but the abnormal current readings suggest a potential issue that needs to be addressed to maintain mission integrity."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5412899f",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.4,
+      "mission_success": false,
+      "nav_error_m": 0.05,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "1328e41efb9e1f78ef0b96ce7aaba354cc0942ae1b00b743ba89d351d46493d3"
+  },
+  "sha256_proof": "089b4799d796c7420b5fc85de4f38a8d91e6f0acd7ef166aef01d3bd6032cc1b"
+}

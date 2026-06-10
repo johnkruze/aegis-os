@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_39e57d63_marine_gps_denied_39e57d63_20260315T164129Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T16:41:29.808167Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_39e57d63_marine_gps_denied_39e57d63_20260315T164129Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings indicate a strong current",
+        "depth is shallow",
+        "drift is significant",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is slow",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is operating within normal parameters, but there is a significant drift that could lead to waypoint deviation. The shallow depth and strong current suggest potential navigation challenges."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The drift is concerning but not immediately critical given the shallow depth and low navigation error. The battery is sufficient for the current operation.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The drift could cause the system to miss the waypoint, but the shallow depth and low error suggest a low risk of a catastrophic failure.",
+      "mitigation_strategy": "Monitor the drift and adjust the course if necessary. Continue monitoring battery and navigation parameters."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "Maintain current course and monitor drift and navigation parameters."
+    },
+    "self_reflection": "The system is performing as expected, but the drift should be closely monitored to ensure accurate waypoint navigation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_39e57d63",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.9,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "aa34cb618eae8960cc198c44fb8cb6eabff53aad0dfdcec267b2f1112b74f6e9"
+  },
+  "sha256_proof": "89e6df2a6c091407468d85e7bd143f6bb8bb93c61688aafbb519c4f92d0f967f"
+}

@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_823ced4b_marine_gps_denied_823ced4b_20260315T135423Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T13:54:23.244224Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_823ced4b_marine_gps_denied_823ced4b_20260315T135423Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are slightly off",
+        "depth is stable",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is within expected range",
+        "velocity is slow",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning within normal parameters, with minor deviations in current readings and position. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its course and depth. The drift is moderate, which could be due to environmental factors or system inaccuracies. The velocity is slow, which is expected in a marine environment. The waypoint is at 0, suggesting that the mission has not yet begun or has been paused."
+    },
+    "cognitive_load": 0.2,
+    "internal_deliberation": [
+      {
+        "thought": "The minor deviations in current readings and position are within acceptable limits. The system is maintaining its course and depth, which is a positive indicator. The drift is moderate, which could be due to environmental factors or system inaccuracies. The velocity is slow, which is expected in a marine environment. The waypoint is at 0, suggesting that the mission has not yet begun or has been paused.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system is maintaining its course and depth, and the minor deviations are within acceptable limits. The drift is moderate, which could be due to environmental factors or system inaccuracies. The velocity is slow, which is expected in a marine environment. The waypoint is at 0, suggesting that the mission has not yet begun or has been paused.",
+      "mitigation_strategy": "Continue monitoring the system and adjust course if necessary. If the drift persists, consider recalibrating the system or adjusting the course to compensate for drift."
+    },
+    "decision": {
+      "actuator_command": "continue monitoring",
+      "expected_outcome": "The system will continue to monitor its performance and adjust course if necessary. If the drift persists, the system will be recalibrated or the course will be adjusted to compensate for drift."
+    },
+    "self_reflection": "The system is functioning within normal parameters, with minor deviations in current readings and position. The battery is healthy, and the navigation error is low, indicating that the system is maintaining its course and depth. The drift is moderate, which could be due to environmental factors or system inaccuracies. The velocity is slow, which is expected in a marine environment. The waypoint is at 0, suggesting that the mission has not yet begun or has been paused."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_823ced4b",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.3,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "bf1638f6409643c519313e26a1f0f5beeb1c454c5afcf722d257dab9b3056110"
+  },
+  "sha256_proof": "36ec4ed70bc3d39e5b9ae51adc2ee23f1de59224a81470b864a8efba81359679"
+}

@@ -1,0 +1,63 @@
+{
+  "mission_id": "marine_gps_denied_16be7393_marine_gps_denied_16be7393_20260315T142459Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T14:24:59.661043Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_16be7393_marine_gps_denied_16be7393_20260315T142459Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "BATTERY_DEGRADATION",
+        "CURRENT_OUT_OF_RANGE",
+        "DEPTH_STABLE",
+        "DRIFT_LOW",
+        "NAV_ERROR_LOW",
+        "POSITION_ACCURATE",
+        "SPEED_LOW"
+      ],
+      "interpretation": "The battery level is critically low, and the current readings are inconsistent. The depth is stable, and the drift is within acceptable limits. Navigation error is low, and the position is accurate. Speed is very low, indicating the vehicle may be stationary or moving very slowly."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is degrading rapidly, which could lead to a complete failure of the system if not addressed soon.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The current readings are inconsistent, which could indicate a fault in the current sensors.",
+        "confidence": 0.7,
+        "action_rejected": ""
+      },
+      {
+        "thought": "The depth is stable, which is good, but the drift is low, which could indicate the vehicle is not moving forward.",
+        "confidence": 0.6,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The vehicle may shut down unexpectedly, leading to mission failure.",
+      "mitigation_strategy": "Increase power output to the battery, check current sensor integrity, and ensure the vehicle is moving forward."
+    },
+    "decision": {
+      "actuator_command": "INCREASE_BATTERY_POWER, CHECK_CURRENT_SENSORS, INCREASE_SPEED",
+      "expected_outcome": "The battery power will be increased, the current sensors will be checked, and the vehicle will be directed to move forward to prevent mission failure."
+    },
+    "self_reflection": "The critical battery degradation requires immediate action to prevent the vehicle from shutting down. The inconsistent current readings and low drift suggest potential issues that need to be addressed to ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_16be7393",
+    "scenario": "gps_denied_submarine_battery_degradation",
+    "score": {
+      "energy_consumed_pct": 40.9,
+      "mission_success": false,
+      "nav_error_m": 0.08,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "212892dc74bd947dfb1b5d195a762d210d061058c9e65ef3d1366e6cf7ddf467"
+  },
+  "sha256_proof": "4d4f56e562f2b4f838a499493a6ead46dbfafed2060f7362295da84bfdbfff44"
+}

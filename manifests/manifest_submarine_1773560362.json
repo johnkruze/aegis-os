@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_e80d8f38_marine_gps_denied_e80d8f38_20260315T073914Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T07:39:14.920238Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_e80d8f38_marine_gps_denied_e80d8f38_20260315T073914Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are within normal range",
+        "depth is shallow",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "time is 359.0",
+        "velocity is moderate",
+        "waypoint is at 0"
+      ],
+      "interpretation": "The system appears to be functioning normally with a slight deviation from the intended waypoint. The battery is healthy, and the current and depth are within expected parameters. The drift and navigation error are manageable, and the velocity is within normal operational limits."
+    },
+    "cognitive_load": 0.1,
+    "internal_deliberation": [
+      {
+        "thought": "The system is performing within normal parameters. The slight deviation from the waypoint could be due to minor drift or navigation error. No immediate action is required.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system will continue to operate within normal parameters until the next waypoint is reached.",
+      "mitigation_strategy": "No action needed at this time. Monitor system performance as it progresses towards the next waypoint."
+    },
+    "decision": {
+      "actuator_command": "continue current course",
+      "expected_outcome": "The system will continue to operate normally until the next waypoint is reached."
+    },
+    "self_reflection": "The system is performing as expected with no critical anomalies detected. The slight deviation from the waypoint is within acceptable limits and does not require immediate intervention."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_e80d8f38",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 0.7,
+      "mission_success": false,
+      "nav_error_m": 0.07,
+      "waypoints_reached": 0,
+      "waypoints_total": 4
+    },
+    "physics_proof": "0ceb366a398cadfeb600210bd8c630dd26203c9690cca8a3208cfef83c6995f1"
+  },
+  "sha256_proof": "56ff19415a46299d5630de5d16730a40cd026e4f40b9b87baa2707916855d5c3"
+}

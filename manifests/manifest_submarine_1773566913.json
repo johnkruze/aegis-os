@@ -1,0 +1,54 @@
+{
+  "mission_id": "marine_gps_denied_5887bcd3_marine_gps_denied_5887bcd3_20260315T092823Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T09:28:23.898319Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5887bcd3_marine_gps_denied_5887bcd3_20260315T092823Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are abnormal",
+        "depth is within safe limits",
+        "drift is moderate",
+        "navigation error is low",
+        "position is slightly off",
+        "velocity is within normal range",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning mostly within normal parameters, but there are some anomalies in the current readings that require attention. The battery is at a high level, which is good. The depth is within safe limits, and the navigation error is low, indicating that the system is generally performing well. However, the slight drift and the slightly off position suggest that the system may need to adjust its course to maintain accuracy."
+    },
+    "cognitive_load": 0.3,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings are abnormal, but the system is still within safe parameters. The battery is high, so there is enough power to continue operation. The slight drift and off position suggest that the system may need to adjust its course to maintain accuracy. However, the system is still functioning within normal parameters, so the risk level is low.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "LOW",
+      "failure_mode_prediction": "The system may drift slightly and need to adjust its course to maintain accuracy. However, the system is still functioning within normal parameters, so the risk level is low.",
+      "mitigation_strategy": "Adjust the course to maintain accuracy. Monitor the system closely and adjust as necessary."
+    },
+    "decision": {
+      "actuator_command": "Adjust course to maintain accuracy",
+      "expected_outcome": "The system will adjust its course to maintain accuracy and continue to function within normal parameters."
+    },
+    "self_reflection": "The system is functioning mostly within normal parameters, but there are some anomalies in the current readings that require attention. The slight drift and off position suggest that the system may need to adjust its course to maintain accuracy. However, the system is still functioning within normal parameters, so the risk level is low."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5887bcd3",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 0.5,
+      "mission_success": false,
+      "nav_error_m": 0.04,
+      "waypoints_reached": 0,
+      "waypoints_total": 6
+    },
+    "physics_proof": "ad10e8fdb46e7dff62c75757e99e6d94b8c79ed4d14b2522ce521893cd0e09c8"
+  },
+  "sha256_proof": "e6c7bdb5149625532f46ef7a5b8217a92dca12e863fcd451fcc3ecb22011c337"
+}

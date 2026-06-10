@@ -1,0 +1,47 @@
+{
+  "mission_id": "marine_gps_denied_5c3be2c0_marine_gps_denied_5c3be2c0_20260315T000334Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T00:03:34.828856Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_5c3be2c0_marine_gps_denied_5c3be2c0_20260315T000334Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "CURRENT_SURGE"
+      ],
+      "interpretation": "The vessel is experiencing a significant surge, which could indicate a sudden change in water conditions or an issue with the propulsion system."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current surge could be due to a sudden change in water conditions or a problem with the propulsion system. Immediate action is needed to ensure the safety of the mission.",
+        "confidence": 0.8,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The surge could lead to a loss of control, causing the vessel to drift off course or potentially collide with other objects.",
+      "mitigation_strategy": "Activate the emergency propulsion system to counteract the surge and stabilize the vessel. Monitor the situation closely and adjust course if necessary."
+    },
+    "decision": {
+      "actuator_command": "activate_emergency_propulsion",
+      "expected_outcome": "The emergency propulsion system will counteract the surge and stabilize the vessel."
+    },
+    "self_reflection": "The current surge is a critical anomaly that requires immediate attention to ensure the safety of the mission. The emergency propulsion system has been activated to counteract the surge and stabilize the vessel. The mission will be monitored closely to ensure that the vessel remains on course and that the surge does not cause any further issues."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_5c3be2c0",
+    "scenario": "gps_denied_submarine_current_surge",
+    "score": {
+      "energy_consumed_pct": 0.8,
+      "mission_success": false,
+      "nav_error_m": 0.06,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "006530dc7e7b0157e25183f6e2880c80bc64a0f2cd3bc84d756440b4785e12cf"
+  },
+  "sha256_proof": "8de6838ca9f2e940112e4160bce58614321be713f3ec80a4b69bdc555ee2c559"
+}

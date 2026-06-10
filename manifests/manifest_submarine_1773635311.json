@@ -1,0 +1,55 @@
+{
+  "mission_id": "marine_gps_denied_77ef807e_marine_gps_denied_77ef807e_20260316T042821Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-16T04:28:21.657423Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_77ef807e_marine_gps_denied_77ef807e_20260316T042821Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "low battery",
+        "unstable current readings",
+        "slight depth error",
+        "high drift",
+        "low navigation error",
+        "unstable position readings",
+        "high temperature",
+        "low velocity",
+        "waypoint not reached"
+      ],
+      "interpretation": "The system is experiencing multiple anomalies, including low battery, unstable current readings, slight depth error, high drift, and low velocity. The temperature is high, which could indicate overheating. The navigation system is performing well, but the position readings are unstable. The waypoint has not been reached, which suggests a potential failure in the mission."
+    },
+    "cognitive_load": 0.8,
+    "internal_deliberation": [
+      {
+        "thought": "The battery is critically low, which could cause the system to shut down unexpectedly. The unstable current readings and high drift suggest a potential failure in the propulsion system. The high temperature could indicate overheating, which could further damage the system. The waypoint has not been reached, which suggests a potential failure in the navigation system.",
+        "confidence": 0.9,
+        "action_rejected": ""
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "CRITICAL",
+      "failure_mode_prediction": "The system could shut down unexpectedly, causing the mission to fail. The propulsion system could fail, causing the vehicle to drift off course. The navigation system could fail, causing the vehicle to not reach the intended waypoint.",
+      "mitigation_strategy": "Immediately recharge the battery, check the propulsion system for any issues, and verify the navigation system. If any issues are found, take corrective action to fix them before continuing the mission."
+    },
+    "decision": {
+      "actuator_command": "recharge_battery",
+      "expected_outcome": "The battery will be recharged, and the system will be able to continue the mission."
+    },
+    "self_reflection": "The system is experiencing multiple anomalies, which could cause the mission to fail. The battery is critically low, which could cause the system to shut down unexpectedly. The propulsion system and navigation system are also experiencing issues. Immediate action is needed to recharge the battery and check the propulsion and navigation systems to ensure the mission can continue."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_77ef807e",
+    "scenario": "gps_denied_autonomous_boat_none",
+    "score": {
+      "energy_consumed_pct": 1.8,
+      "mission_success": false,
+      "nav_error_m": 0.03,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "fc8f4da7acd56eb9d21bc5eb9faeab226668288736e3c8b8a433c003a105ae71"
+  },
+  "sha256_proof": "5dc3be76a94a74da049a9368f036a19fe1394d28409f096ddbd4521264cf7f57"
+}

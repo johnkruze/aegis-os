@@ -1,0 +1,65 @@
+{
+  "mission_id": "marine_gps_denied_18c489e5_marine_gps_denied_18c489e5_20260315T204608Z",
+  "environment": "Ocean/Marine",
+  "timestamp": "2026-03-15T20:46:08.697321Z",
+  "is_dark_window": true,
+  "telemetry_ref": "marine_gps_denied_18c489e5_marine_gps_denied_18c489e5_20260315T204608Z_telemetry.json",
+  "epistemic_status": "503_BLACKOUT",
+  "agent_reasoning": {
+    "sensory_synthesis": {
+      "inputs": [
+        "battery level is high",
+        "current readings are inconsistent",
+        "depth is shallow",
+        "drift is high",
+        "navigation error is low",
+        "position is slightly off",
+        "temperature is high",
+        "velocity is slightly negative",
+        "waypoint is at the start"
+      ],
+      "interpretation": "The system is functioning with high battery and temperature, but there are inconsistencies in the current readings and a high drift. The navigation error is low, and the position is close to the starting waypoint. The velocity is slightly negative, which could indicate a slowdown or a need to adjust course."
+    },
+    "cognitive_load": 0.7,
+    "internal_deliberation": [
+      {
+        "thought": "The current readings suggest a potential issue with the current sensors or the system's ability to interpret them correctly.",
+        "confidence": 0.8,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The high drift could be due to a navigation error or an external force affecting the system.",
+        "confidence": 0.7,
+        "action_rejected": "string"
+      },
+      {
+        "thought": "The temperature is high, which could affect the system's performance if it is not designed to handle such conditions.",
+        "confidence": 0.6,
+        "action_rejected": "string"
+      }
+    ],
+    "mission_assurance_check": {
+      "risk_level": "MEDIUM",
+      "failure_mode_prediction": "The system may fail to accurately navigate or interpret the current readings, leading to a potential collision or loss of control.",
+      "mitigation_strategy": "Perform a system reset and recalibrate the current sensors. Monitor the system's performance closely and adjust the course if necessary."
+    },
+    "decision": {
+      "actuator_command": "reset_and_recalibrate",
+      "expected_outcome": "The system will reset and recalibrate the current sensors, improving its ability to accurately navigate and interpret the environment."
+    },
+    "self_reflection": "The system is currently experiencing some inconsistencies and drift, which could be due to a variety of factors. A system reset and recalibration is necessary to ensure safe and accurate navigation."
+  },
+  "trajectory_context": {
+    "parent_trajectory_id": "marine_gps_denied_18c489e5",
+    "scenario": "gps_denied_submarine_none",
+    "score": {
+      "energy_consumed_pct": 1.2,
+      "mission_success": false,
+      "nav_error_m": 0.09,
+      "waypoints_reached": 0,
+      "waypoints_total": 3
+    },
+    "physics_proof": "a4136bfc59c839a2872a7d385a62ae4eaa8c48e8b6d6cb414eedd35c73aa044c"
+  },
+  "sha256_proof": "30a5a7da7e08947e7d8fded039646321219cf3f205143cdf10b92039db1b962d"
+}
