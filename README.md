@@ -83,9 +83,9 @@ Manifests are anchored on ICP mainnet via `record_aegis_manifest` on `ad7wi-4aaa
 
 ---
 
-## SOMA Staking Gate
+## SOMA Attunement Gate
 
-`aegis_kernel.py` checks SOMA balance at boot. Daemons require a minimum SOMA stake to operate — physics proof is the authentication layer.
+`aegis_kernel.py` checks SOMA balance at boot. Daemons require a minimum SOMA stake to operate — physics proof is the attestation layer that tunes the agent's identity.
 
 ---
 
@@ -94,7 +94,7 @@ Manifests are anchored on ICP mainnet via `record_aegis_manifest` on `ad7wi-4aaa
 - [genesis-core](https://github.com/johnkruze/genesis-core) — Physics engine
 - [kid-cosmo](https://github.com/johnkruze/kid-cosmo) — Reasoning kernel
 - [spectra-genesis](https://github.com/johnkruze/spectra-genesis) — ICP canister (manifest target)
-- [zero-trust-physics](https://github.com/johnkruze/zero-trust-physics) — ZTP auditors
+- [zero-trust-physics](https://github.com/johnkruze/zero-trust-physics) — Somatic Grounding loops
 - [Datasets](https://huggingface.co/spiderpilot89) — HuggingFace
 
 ---
