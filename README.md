@@ -85,7 +85,7 @@ Manifests are anchored on ICP mainnet via `record_aegis_manifest` on `ad7wi-4aaa
 
 ## SOMA Attunement Gate
 
-`aegis_kernel.py` checks SOMA balance at boot. Daemons require a minimum SOMA stake to operate — physics proof is the attestation layer that tunes the agent's identity.
+SOMA is a physics proof token minted by the SPECTRA-1 canister — the only way to earn it is by sealing a physics trajectory on-chain. `aegis_kernel.py` checks SOMA balance at boot. Daemons require a minimum SOMA stake to operate — physics proof is the attestation layer that tunes the agent's identity.
 
 ---
 
