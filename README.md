@@ -6,14 +6,14 @@
 [![Physics Engine](https://img.shields.io/badge/Engine-genesis--core-black?style=flat-square)](https://github.com/johnkruze/genesis-core)
 [![ICP](https://img.shields.io/badge/ICP-Mainnet-blue?style=flat-square)](https://github.com/johnkruze/spectra-genesis)
 
-Aegis OS is Layer 3 of the G^G stack. Each body — humanoid, drone, submarine, satellite, vehicle, boat — runs a dedicated daemon that pulls physics trajectories from the G^G corpus, makes decisions through Kid Cosmo, and seals every decision as an immutable manifest on the Internet Computer.
+Aegis OS is Layer 3 of the G^G stack. Each body — humanoid, drone, submarine, satellite, vehicle, boat — runs a dedicated daemon that pulls physics trajectories from the G^G corpus, makes decisions through Kid Cosmo, and signs every decision as an immutable record on the Internet Computer.
 
 ---
 
 ## Stack Position
 
 ```
-ICP Mainnet  ←── sealed manifests, SOMA proofs
+ICP Mainnet  ←── signed decision records, SOMA attestations
      ↑
 Aegis OS     ←── you are here
      ↑
@@ -43,7 +43,7 @@ Eight autonomous daemons, one per body type:
 
 ## Fleet Commander
 
-`fleet_commander.py` dispatches all 8 daemons sequentially. One call → eight autonomous decisions, each sealed on-chain.
+`fleet_commander.py` dispatches all 8 daemons sequentially. One call → eight autonomous decisions, each signed on-chain.
 
 ```bash
 python3 fleet_commander.py
@@ -53,7 +53,7 @@ python3 fleet_commander.py
 
 ## Pulse Reactor
 
-`pulse_reactor.py` runs the autonomous loop: `body_sweep` (Rust physics) → `fleet_commander` → MLX reasoning → ICP seal. 30-minute cycle.
+`pulse_reactor.py` runs the autonomous loop: `body_sweep` (Rust physics) → `fleet_commander` → MLX reasoning → ICP signature. 30-minute cycle.
 
 ```bash
 python3 pulse_reactor.py           # continuous loop
@@ -64,7 +64,7 @@ python3 pulse_reactor.py --test-mode  # single cycle
 
 ## Decision Manifests
 
-Every daemon decision produces a cryptographically sealed manifest:
+Every daemon decision produces a cryptographically signed decision record:
 
 ```json
 {
@@ -85,7 +85,7 @@ Manifests are anchored on ICP mainnet via `record_aegis_manifest` on `ad7wi-4aaa
 
 ## SOMA Attunement Gate
 
-SOMA is a physics proof token minted by the SPECTRA-1 canister — the only way to earn it is by sealing a physics trajectory on-chain. `aegis_kernel.py` checks SOMA balance at boot. Daemons require a minimum SOMA stake to operate — physics proof is the attestation layer that tunes the agent's identity.
+SOMA is a physics attestation token minted by the SPECTRA-1 canister — the only way to earn it is by signing a physics trajectory on-chain. `aegis_kernel.py` checks SOMA balance at boot. Daemons require a minimum SOMA stake to operate — the SHA-256 attestation chain is the signature layer that tunes the agent's identity.
 
 ---
 
