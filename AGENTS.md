@@ -1,7 +1,10 @@
-# CLAUDE.md — Aegis OS
+# AGENTS.md — Aegis OS
 
-**Status:** FUNCTIONAL — dormant, will run again. 7 bodies, IC mainnet, SOMA staking.
-**Layer:** 3 of 3 (G^G → Kid Cosmo → Aegis OS)
+**Operator:** John Kruze  
+**Root Node:** KRUZE  
+**Last Verified Audit:** August 4, 2026  
+**Status:** FUNCTIONAL — 8 body daemons, IC mainnet, SOMA staking.  
+**Layer:** 3 of 3 (G^G → Kid Cosmo → Aegis OS)  
 **Rust port:** `G^G/aegis_kernel/` — fleet_commander.rs + pulse_reactor.rs dispatch the Python body daemons via subprocess. Not a replacement — MLX reasoning still runs through Python.
 
 ---
@@ -24,17 +27,18 @@ Aegis OS/
 │                              - Dark Window handler (trigger_dark_window)
 │                              - Manifest sealing (SHA-256 → local JSON + ICP)
 │
-├── bodies/                   # 7 body daemons (inherit kernel, body-specific telemetry only)
+├── bodies/                   # 8 body daemons (inherit kernel, body-specific telemetry only)
 │   ├── titanhauler/          # Terran — 20-200T tracked hauler
 │   ├── humanoid/             # Terran — bipedal locomotion
 │   ├── autonomous_car/       # Terran — road dynamics
 │   ├── satellite/            # Orbital — LEO station-keeping
 │   ├── maven/                # Orbital — interceptor
 │   ├── submarine/            # Marine — abyssal pressure
-│   └── autonomous_boat/      # Marine — surface vessel
+│   ├── autonomous_boat/      # Marine — surface vessel
+│   └── drone/                # Aerial — canopy rotor aerodynamics & vortex state
 │
 ├── fleet_commander.py        # Master dispatcher
-│                              - Runs all 7 daemons sequentially via subprocess
+│                              - Runs all 8 daemons sequentially via subprocess
 │                              - 2s sleep between MLX inferences
 │                              - Reports success count and total time
 │
