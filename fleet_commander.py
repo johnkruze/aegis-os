@@ -16,6 +16,7 @@ def command_fleet():
     bodies = [
         "autonomous_boat/autonomous_boat_daemon.py",
         "autonomous_car/autonomous_car_daemon.py",
+        "drone/drone_daemon.py",
         "humanoid/humanoid_daemon.py",
         "maven/maven_daemon.py",
         "satellite/satellite_daemon.py",

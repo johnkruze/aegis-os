@@ -99,4 +99,4 @@ SOMA is a physics attestation token minted by the SPECTRA-1 canister — the onl
 
 ---
 
-John Kruze · [ZeroTrustPhysics.com](https://ZeroTrustPhysics.com) · kruze@zerotrustphysics.com
+[zerotrustphysics.com](https://zerotrustphysics.com)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AEGIS OS — Workspace Identity Probe
-Diagnostic script to test administrative API access to the aijesusbro.com Workspace.
+Diagnostic script to test administrative API access to Google Workspace (zerotrustphysics.com).
 
 Requirements:
 pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib

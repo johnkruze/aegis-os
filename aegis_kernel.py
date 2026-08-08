@@ -110,9 +110,11 @@ class AegisSystemKernel:
             print(f"  -> Recalled memory: {memory_trajectory.get('id', 'UNKNOWN')}")
             trajectory_context = {
                 "parent_trajectory_id": memory_trajectory.get('id'),
-                "scenario": memory_trajectory.get('scenario'),
+                "scenario": memory_trajectory.get('scenario', condition),
                 "score": memory_trajectory.get('score'),
-                "physics_proof": memory_trajectory.get('proof_hash')
+                "physics_proof": memory_trajectory.get('proof_hash'),
+                "is_binary_stream": memory_trajectory.get('is_binary_stream', False),
+                "somatic_frame": memory_trajectory.get('frame', {})
             }
         else:
             print("  -> No memory found. Operating with zero prior.")
